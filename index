@@ -31,91 +31,168 @@ var universesConfig=`Marvel
 		Vibranium
 		Adamantium
 	Unique
-		Камень Душ
-		Камень Времени
-		Камень Пространства
-		Камень Энергии
-		Камень Реальности
-		Камень Разума
-		Молот Тора
-		Скипетр Локи
+		Space
+		Soul
+		Reality
+		Time
+		Power
+		Mind
+		Loki's Sceptre
+		Thor's Mjolnir
 	Tech
-		Костюм железного человека
-		Церебро
+		Iron Man Suit
+		Cerebro
+My
+	Level
+		Nomage	Not	Demon	0 G	[Rudazov-Sumer]
+		Weak	Lower	Demon	1 F	(Student)    
+		Simple	Low	Demon	2 E	(Apprentice)
+		Normal	Medium	Demon	3 D	(Master)
+		High	High	Demon	4 C	(Postmaster) 
+		Higher	Higher	Demon	5 B	(Archimage)
+		Arch	Arch	demon	6 A	(Higher Mage)
+		God	God	Demon	7 S	(Mage-God)
+	Energy
+		Force			0
+		Prana	Ki	Kiuser	1
+		Spirita	Reatsu	Reatser	2
+		Ema	Emana	Emotic	3
+		Psy	Esperi	Psyhic	4
+		Mrana	Mana	Magic	5
+		Ba-Hion		God	7
+	Shell
+		Core			0
+		Vital			1
+		Astral			2
+		Person	Feels		3
+		Mind	Logic		4
+		Magical	Creative	5
+		Invincible		6
+		God	Real-turn	7
+	Body
+		Core			0
+		Matter			1
+		Ether			2
+		Feeling			3
+		Informatic		4
+		Magical			5
+	Direction
+		//Type
+		Verbomagic	Leximancy
+		Numeromagic	Arifmancy
+		Motusmagic	Cheiromoniamancy
+		//Matter
+		Tempomagic	Horomancy
+		Spacomagic	Hronomancy
+		//Element
+		Ignismagic	Pyromancy
+		Aquamagic	Hydromancy
+		Terramagic	Geomancy
+		Caelimagic	Aeromancy
+		Frigusmagic	Cryomancy
+		Electromagic	Ilectrikosmancy	
+		//Misc
 Rudazov
 	Ability
 		Magic
 		Mentaty
-		Духовное оружие
+		Spiritual Weapon
 	Energy
-		Мана
-		Прана
-		Ба-Хионь
+		Mana
+		Prana
+		Ba-Hion
 	School
-		Серых
-		Шумера
-		Киигов
-		Парифата
+		Gray
+		Sumer
+		Kiig
+		Parifat
 	Feature
-		Ме
-		Бог
-		Демон
-		Ангел
-		Бессмертный
+		Mye
+		God
+		Demon
+		Angel
+		Invincible
+		Undead
+		Vampire
+		Werewolf
+		Changeling
+		Ghost
+	Level
+		Nomage		0
+		Student		1
+		Apprentice	2
+		Master		3
+		Pastmaster	4
+		Archmage	5
+		Higher		6
+		//
+		Light Blue	1.5
+		Blue		2
+		Purple		2.5
+		Green		3
+		Yellow		3.5
+		Orange		4
+		Red		4.5
+		Gray		5
 	Unique
-		Жезл Креола
-		Амулет Креола
-		Посох Креола
-		Жаровня Креола
-		Гримуар Креола
-		Амулет Слуги
+		Kreol's Rod
+		Kreol's Staff
+		Kreol's Amulet
+		Kreol's Grimoire
+		Kreol's Roaster
+		Valet Amulet
 		Organization Objects
 		Stone of Gate
 	Artefact
 		Staff
 		Rod
 	Tech
-		Плонетские
+		Plonet's
 	Direction
-		Пиромантия
-		Гидромантия
-		Геомантия
-		Аэромантия
-		Криомантия
-		Электромантия
-		Зельеварение
-		Эликсиромагия
+		Vampire
+		Pyromancy
+		Hydromancy
+		Geomancy
+		Airomancy
+		Cryomancy
+		Electromancy
+		Potion
+		Eleksir
 		Магия Духа
-		Трансфигурация
-		Аниморфизм
-		Магия Слова
+		Transfiguration
+		Animorph
+		Metamorph
+		Word Magic
 		Проклятия
 		Благославения
 		Клятвы
 		Менталистика
 		Зачарования
-		Артефакторика
+		Artefact
 		Прорицание
 		Магозоология
 		Флористика
 		Големостроение
-		Алхимия
+		Alchemy
 		Руны
-		Призыв
-		Доппели
-		Сенсорика
+		Doppel
+		Sensor
 		Поглощение
 		Печати
-		Магия Тени
-		Магия Крови
-		Магия Зеркал
-		Иллюзии
-		Полет
-		Телекинез
-		Телепортация
-		Магия Пространства
-		Магия Времени
-		Автоматы
+		Shadow
+		Blood
+		Mirror
+		Illusion
+		Flying
+		Telekinesis
+		Teleport
+		Space
+		Time
+		Automate
+		Summon
+		Curse
+		Hex
+		Spell
 	Material
 		Adamant
 		Adamantium
@@ -131,44 +208,45 @@ Naruto
 	Energy
 		Ki+Reatsu
 	Feature
-		Додзюцу Бьякуган
-		Додзюцу Тенсейган
-		Додзюцу Шаринган
-		Додзюцу Мангеке Шаринган
-		Додзюцу Риннешаринган
-		Додзюцу Риннеган
-		Додзюцу Ранмару
-		Стихия Взрыва
-		Стихия Кристалла
-		Стихия Жара
-		Стихия Льда
-		Стихия Дерева
+		Dojutsu Byakugan
+		Dojutsu Tenseigan
+		Dojutsu Sharingan
+		Dojutsu Mangeke Sharingan
+		Dojutsu Rinnesharingan
+		Dojutsu Rinnegan
+		Dojutsu of Ranmaru
+		Element of Explosion
+		Element of Crystall
+		Element of Heat
+		Element of Ice
+		Element of Tree
 	Direction
-		Пиромантия
-		Гидромантия
-		Геомантия
-		Аэромантия
-		Электромантия
-		Техники
-		Элементы
-		Доппели
-		Сенсорика
+		Pyromancy
+		Hydromancy
+		Geomancy
+		Airomancy
+		Electromancy
+		Techniques
+		Elements
+		Doppel
+		Sensor
 		Поглощение
 		Печати
+		Fuin
 		Запечатывание
 		Перемещение
 		Рукопашка
 		Холодное оружие
-		Артефакторика
-		Иллюзии
-		Полет
+		Artefact
+		Illusion
+		Flying
 		Марионетки
-		Призыв
+		Summon
 	Unique
 		Мечи Тумана
 		Шар Хокаге
 	Creature
-		Биджуу
+		Bijuu
 Fate
 	Ability
 		Magic
@@ -176,46 +254,52 @@ Fate
 		Mana
 		Prana
 	Artefact
-		Грааль
+		The Holy Grail
 	Creature
-		Слуги
-Kleymor
+		Servant
+Claymore
 	Energy
 		Yoki
 	Creature
-		Йому
-		Клейморы
+		Yomu
+		Claymore
+HPMoR
+	Unique
+		Eye of Vance
+		Left Leg of Vance
+Warcraft
 Potteriana
 	Ability
 		Wizarding
 	Energy
 		Mana+Ema
 	Direction
-		Зельеварение
-		Трансфигурация
-		Аниморфизм
-		Заклинания
-		Проклятия
+		Potion
+		Transfiguration
+		Animorph
+		Spell
+		Hex
+		Curse
 		Благославения
 		Клятвы
 		Легиллименция
 		Окклюменция
 		Зачарования
-		Вложение (3)
-		Арифмантика
-		Лексомантика (3)
+		Eleksir putting (3)
+		Arithmancy
+		Lexomancy (3)
 		Прорицание
-		Магозоология
-		Гербология
+		Magezoology
+		Herbology
 		Големостроение
-		Алхимия
+		Alchemy
 		Руны
-		Призыв (4)
+		Summon (4)
 	Unique
 		Истинная Мантия Невидимости
 		Воскрешающий Камень
 		Бузинная Палочка
-		Глаз Хмури
+		Moody's Eye
 		Философский Камень
 		Карта Мародеров
 		Дневник Тома Риддла
@@ -229,15 +313,15 @@ Potteriana
 		Прыткопишущее Перо
 		Зеркало Еиналеж
 	Artefact
-		Маховики Времени
+		Time-Turner
 		Объекты Отделов Тайн
-		Метлы
+		Broomstick
 		Исчезательные шкафы
-		Порт-ключи
+		Portkey
 		Мантии Невидимости
 		Летающий Транспорт
 		Хранилища с Незримым Расширением
-		Волшебные Палочки
+		Wand
 		Снитчи
 		Бладжеры
 		Самопишущее Перо
@@ -549,27 +633,29 @@ Potteriana
 			expelliarmus - обезоружение
 			fulgari - связывание	
 	Creature
-		Human
-		Домовики
-		Giant
-		Кентавры
-		Низшие Гномы
-		Goblin
-		Русалки
 		Виверны
 		Василиски
 		Акромантулы
-		Troll
 		Dementor
+		Phoenix
 		Саламандры
 		Мантикоры
 		Мандрагоры
 		Огненные Крабы
 		Боггарты
-		Полтергейсты
-		Призраки
 		Церберы
+	Race
+		Human
+		Giant
+		Goblin
+		Troll
+		Домовики
+		Кентавры
+		Низшие Гномы
+		Русалки
 	Feature
+		Полтергейсты
+		Ghost
 		Взгляд Василиска
 		Wizard
 		Muggle
