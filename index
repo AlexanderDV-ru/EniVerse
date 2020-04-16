@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>EniVerses - Universes</title>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="UTF-8">
+	<title>Scripts aren't working If you see this message.</title>
 
 	<style>
 		body {
@@ -11,18 +11,26 @@
 		</style>
 		</head>
 	<body>
-		<textarea id="byUniverses">
-Марвел
-	Способности
-		Магия
-	Энергии
-		Магическая?
-	Особенности
-		Люди-Икс
-	Материалы
-		Вибраниум
-		Адамантий
-	Уникальные Артефакты
+		<textarea id="byUniverses"></textarea>
+		<br>
+		<input id="tabulationSymbol">
+		<br>
+		<textarea id="byElements"></textarea>
+
+		<!-- Scripts -->
+		<!-- Properties script, can be changed to your script -->
+		<script type="text/javascript">
+var universesConfig=`Marvel
+	Ability
+		Magic
+	Energy
+		Magical?
+	Feature
+		X-Man
+	Material
+		Vibranium
+		Adamantium
+	Unique
 		Камень Душ
 		Камень Времени
 		Камень Пространства
@@ -31,40 +39,44 @@
 		Камень Разума
 		Молот Тора
 		Скипетр Локи
-	Технологии
+	Tech
 		Костюм железного человека
 		Церебро
-Рудазов
-	Способности
-		Магия
-		Ментатика
+Rudazov
+	Ability
+		Magic
+		Mentaty
 		Духовное оружие
-	Энергии
+	Energy
 		Мана
 		Прана
 		Ба-Хионь
-	Школы
+	School
 		Серых
 		Шумера
 		Киигов
 		Парифата
-	Особенности
+	Feature
 		Ме
 		Бог
 		Демон
 		Ангел
 		Бессмертный
-	Уникальные Артефакты
+	Unique
 		Жезл Креола
 		Амулет Креола
 		Посох Креола
 		Жаровня Креола
 		Гримуар Креола
 		Амулет Слуги
-		Объекты Организации
-	Технологии
+		Organization Objects
+		Stone of Gate
+	Artefact
+		Staff
+		Rod
+	Tech
 		Плонетские
-	Направления
+	Direction
 		Пиромантия
 		Гидромантия
 		Геомантия
@@ -104,21 +116,21 @@
 		Магия Пространства
 		Магия Времени
 		Автоматы
-	Материалы
-		Адамант
-		Адамантий
-		Флогистон
-		Тепорий
-		Регенерин
-СЦП Фоундэйшн
-	Артефакты
-		Объекты СЦП
-Наруто
-	Способности
-		Чакра
-	Энергии
-		Ки+Реацу
-	Особенности
+	Material
+		Adamant
+		Adamantium
+		Flogiston
+		Teporiy
+		Regenerin
+SCP Foundation
+	Artefact
+		SCP Objects
+Naruto
+	Ability
+		Chakra
+	Energy
+		Ki+Reatsu
+	Feature
 		Додзюцу Бьякуган
 		Додзюцу Тенсейган
 		Додзюцу Шаринган
@@ -131,7 +143,7 @@
 		Стихия Жара
 		Стихия Льда
 		Стихия Дерева
-	Направления
+	Direction
 		Пиромантия
 		Гидромантия
 		Геомантия
@@ -152,33 +164,33 @@
 		Полет
 		Марионетки
 		Призыв
-	Уникальные Артефакты
+	Unique
 		Мечи Тумана
 		Шар Хокаге
-	Существа
+	Creature
 		Биджуу
-Фэйт
-	Способности
-		Магия
-	Энергии
-		Мана
-		Прана
-	Артефакты
+Fate
+	Ability
+		Magic
+	Energy
+		Mana
+		Prana
+	Artefact
 		Грааль
-	Существа
+	Creature
 		Слуги
-Клеймор
-	Энергии
-		Йоки
-	Существа
+Kleymor
+	Energy
+		Yoki
+	Creature
 		Йому
 		Клейморы
-Поттериана
-	Способности
-		Волшебство
-	Энергии
-		Мана+Эма
-	Направления
+Potteriana
+	Ability
+		Wizarding
+	Energy
+		Mana+Ema
+	Direction
 		Зельеварение
 		Трансфигурация
 		Аниморфизм
@@ -199,7 +211,7 @@
 		Алхимия
 		Руны
 		Призыв (4)
-	Уникальные Артефакты
+	Unique
 		Истинная Мантия Невидимости
 		Воскрешающий Камень
 		Бузинная Палочка
@@ -216,7 +228,7 @@
 		Выручай-Комната
 		Прыткопишущее Перо
 		Зеркало Еиналеж
-	Артефакты
+	Artefact
 		Маховики Времени
 		Объекты Отделов Тайн
 		Метлы
@@ -229,7 +241,8 @@
 		Снитчи
 		Бладжеры
 		Самопишущее Перо
-	Заклинания
+	Hex
+	Spell
 		"aberto-" - отпирает дверь.
 		"avis-" - Заклятие призыва птиц. Создаёт стайку птиц.
 		"aviforce-" (2) — противник превращается в птицу/стаю птиц/стаю летучих мышей.[4]
@@ -436,29 +449,30 @@
 		"colorum-" — цвет неживого (в тч волос и ногтей)
 		"defodio-" (2) — долото
 		
-		"-subiecti-" - предмет
-		"-obiecti-" - объект
-		"--corpus-" — тело
+		"-subiecti-" - subject
+		"-obiecti-" - object
+		"--corpus-" — body
 		"--atramentum-" — чернила
-		"--hominum-" - люди
+		"--hominem-" - human
+		"--hominum-" - people
+		"--animagis-" - animagus
 		"--fumos-" (2) - дым
 		"--vipera-" (1) — змея
 		"--portus-" - порт-ключ
-		"--cross-" - крест
-		"--patronum-" - патронус
-		"--hominem-" - человек
+		"--cross-" - cross
+		"--patronum-" - patronus
 		"--arbus-" — деревянное
-		"--incantationem-" - заклинание
+		"--incantationem-" - spell
 		"--slagus-" - слизень
-		"--ignis-" - огонь
-		"--aqua-" - вода
-		"--bombardo-" - бомба
+		"--ignis-" - fire
+		"--aqua-" - water
+		"--bombardo-" - bomb
 		"--piertotum-" — движение големов
 		"--capacius-" — емкость
-		"--magicus-" - магическое
+		"--magicus-" - magical
 		
 		"-wingardi" - крылообразная
-		"-inferni" - адский
+		"-inferni" - hell, cursed
 		"-diabolica" - огненный щит
 		"-horribilis" - антитемный щит
 		
@@ -484,18 +498,69 @@
 		
 		//Общая формула заклинания: [modum] [subject] [object] [adjectivum (optionem/scopus/tempus/potentium)]
 		//Общая формула зачарования: [subject] [object] [modum-ing] [adjectivum (optionem/scopus/tempus/potentium)]
-	Существа
+	Complex
+		finding
+			accio
+			revelare
+				animagis
+				hominum
+				specialis
+			aparekium
+		protecting
+			silencio - обеззвчиние
+			impervius - непроницаемость
+			muffliato - заглушающий шум
+			protego
+				maxima - щит максимум
+				totalis - щит вокруг
+				horribilis - защита от темного
+			cave inimicum - невидимость сверху
+			fianto duri - усиление защиты
+			salvio hexia - невидимость сбоку
+			""воздушый пузырь - удаление запахов
+			repello inimicum - защита от врагов
+			""дизиллюминация - камуфляж
+			""неприметность -
+			glisseo - отключение трения
+			fidelius - заклятие доверия
+			revelare - выявление / гомунгуловы чары?
+			colloportus - запирание
+			""запечатывание комнаты
+			""ненаносимость
+			""неразбиваемость
+			expecto patronum
+		binding
+			confundus - помутнение разума
+			stupefy - оглушение
+			sopporo - усыпление
+			incarcero - связывание
+			petrificus totalis - полное обездвиживание
+			silencio - немота
+			impedimenta - помеха
+			arresto momentum - остановка
+			immobilus - отключение действия
+			obskuro - ослепление
+			conjuctivitus - нарушение зрения, боль в глазах
+			colloshu - приклеивание обуви к полу
+			lokomotor vibbli - ватноножие
+			lokomotor mortis - обезноживание
+			mimbl vimbl - косноязычие
+			langlock - оьбезъяз
+			expelliarmus - обезоружение
+			fulgari - связывание	
+	Creature
+		Human
 		Домовики
-		Великаны
+		Giant
 		Кентавры
 		Низшие Гномы
-		Гоблины
+		Goblin
 		Русалки
 		Виверны
 		Василиски
 		Акромантулы
-		Тролли
-		Дементоры
+		Troll
+		Dementor
 		Саламандры
 		Мантикоры
 		Мандрагоры
@@ -504,32 +569,32 @@
 		Полтергейсты
 		Призраки
 		Церберы
-	Особенности
+	Feature
 		Взгляд Василиска
-		Волшебник
-		Маггл
+		Wizard
+		Muggle
 		Сквиб
-		Аниморф
-		Метаморф
+		Animorph
+		Metamorph
 		Змееуст
-		Оборотень
-		Вампир
-Ведьмак
-	Существа
+		Werewolf
+		Vampire
+Witcher
+	Creature
 		Кокатриксы
 		Василиски
 		Ведьмаки
-	Способности
-		Магия
-Покемон
-	Существа
+	Ability
+		Magic
+Pokemon
+	Creature
 		Покемоны
-	Артефакты
+	Artefact
 		Покеболы
-Охотники на приведений
-	Технологии
+Ghost Busters
+	Tech
 		Ловушки призраков
-	Существа
+	Creature
 		Призраки
 Хранитель Вечности
 Рэйв Мастер
@@ -537,117 +602,118 @@
 Закон Уэки
 Хантер х Хантер
 Небо и земля
-Моя геройская академия
-	Особенности
+My hero academy
+	Feature
 		Причуда
-Берсерк
-Торико
-Академия Магии
-	Способности
-		Магия
-Демоны старшей школы
-	Способности
-		Магия
-	Артефакты
+Berserk
+Toriko
+Magic Adacademy
+	Ability
+		Magic
+High School Demons
+	Ability
+		Magic
+	Artefact
 		Фигуры Зла
 		Святые Механизмы
-	Особенности
-		Маг
-		Демон
-		Ангел
+	Feature
+		Mage
+		Demon
+		Angel
 		Падший
-		Бог
-Звездный путь
-	Способности
-		Псионика
-	Энергии
-		Пси?
-	Особенности
-		Псионик
-Сейлор Мун
-	Уникальные Артефакты
-		Диадема Луны
-Драгонболл
-	Способности
-		Ки
-	Энергии
-		Ки?
-	Артефакты
-		Жемчужины Дракона
-Властелин Колец
-	Способности
-		Магия
-	Энергии
-		Магическая?
-	Особенности
-		Бог
-		Валар
-		Айнур
-		Маг
-	Существа
-		Эльфы
-		Гномы
-		Орки
-		Тролли
-		Люди
-		Драконы
-		Балроги
-	Уникальные Артефакты
+		God
+Startrack
+	Ability
+		Psyonic
+	Energy
+		Psy?
+	Feature
+		Psyonic
+Seilor Moon
+	Unique
+		Moon Diadema
+Dragonball
+	Ability
+		Ki
+	Energy
+		Ki?
+	Artefact
+		Dragon Ball
+The Lord of the Rings
+	Ability
+		Magic
+	Energy
+		Magical?
+	Feature
+		God
+		Valar
+		Ainur
+		Mage
+	Creature
+		Human
+		Elv
+		Gnome
+		Orc
+		Troll
+		Dragon
+		Balrog
+	Unique
 		Кольцо Всевластия
-	Артефакты
+	Artefact
 		Кольца
 		Сильмариллы
-	Материалы
-		Мифрил
-Ник
-	Способности
-		Магия
-		Инфомагия
+	Material
+		Mithrill
+Nick
+	Ability
+		Magic
+		Infomagic
 		Чародейство
-		Псионика
-	Энергии
-		Мана
-		Прана
-		Инфомана
-	Направления
-		Конструкты
+		Psyonic
+	Energy
+		Mana
+		Prana
+		Infomana
+		Psy
+	Direction
+		Construct
 		Плетения
 		Инфоструктуры
-	Школы
+	School
 		Искусство
 		Чародейство
 		Магическая
 		Атловская
 		Атлантская
-	Особенности
+	Feature
 		Одаренность
-Звездные войны
-	Способности
-		Сила
-	Энергии
-		Сила?
-	Особенности
-		Форсюзер
-	Школы
+Star Wars
+	Ability
+		Force
+	Energy
+		Force?
+	Feature
+		Forceuser
+	School
 		Джедайская
 		Ситхская
-	Артефакты
+	Artefact
 		Световые Мечи
-	Технологии
+	Tech
 		Галактические
-Вархаммер
-	Способности
+Warhammer
+	Ability
 		Псайкерство
-	Энергии
-		Пси?
-	Особенности
+	Energy
+		Psy?
+	Feature
 		Псайкер
-Подручный Нуля
-	Способности
-		Волшебство
-	Энергии
-		Мана+Эма
-	Направления
+Zero no Tsukaima
+	Ability
+		Wizarding
+	Energy
+		Mana?
+	Direction
 		Пиромантия
 		Гидромантия
 		Аэромантия
@@ -657,138 +723,173 @@
 		Алхимия
 		Зельеварение
 		Фамильяризм
-	Артефакты
+	Artefact
 		Волшебные Палочки
 		Летучие Корабли
 		Кольцо Воды
 		Кольцо Воздуха
-	Особенности
+	Feature
 		Волшебник
 		Гандальв
 		Лифрасир
 		Сидальв
-	Существа
-		Эльфы
+	Creature
+		Human
+		Elv
+		Changeling
 		Духи
-		Люди
 		Виверны
 		Саламандры
 		Бехолдеры
-Магический Индекс
-	Способности
-		Магия
-		Эсперика
-	Энергии
-		Мана
-		Телезма
-	Оболочки
+To Aru Majutsu no Index
+	Ability
+		Magic
+		Esper
+	Energy
+		Mana
+		Telesma
+	Shell
 		АИМ-поле
-	Направления
+	Direction
 		Ритуалы
 		Руны
 		Зачарования
 		Заклинания
-	Особенности
-		Ангел
-		Бог
-		Эспер
-		Маг
-		Разрушитель Иллюзий
-Блич
-	Способности
-		Реацу
+	Feature
+		Angel
+		God
+		Esper
+		Mage
+		Imagine Breaker
+Bleach
+	Ability
+		Reatsu
 		Меч Души
-	Энергии
-		Реацу
-	Особенности
+	Energy
+		Reatsu
+	Feature
 		Пустой
 		Квинки
 		Шинигами
-Ван пис
-	Особенности
+One Piece
+	Feature
 		Фрукты
-Масс эффект
-	Способности
-		Биотика
-	Энергии
-		Пси?
-	Особенности
-		Биотик
-Терминатор
-	Технологии
-		Скайнетские
-		ИИ
+Mass Effect
+	Ability
+		Biotic
+	Energy
+		Psy?
+	Feature
+		Biotic
+Terminator
+	Tech
+		Skynet's
+		AI
 		Дроны
-		Ти-1
-		Ти-800
-		Ти-1000
-		Ти-Экс
-		Машина Времени
-		Киборг
-Цитадель зла
-	Существа
+		T-1
+		T-800
+		T-1000
+		T-Ex
+		Time-Machine
+		Cyborg
+Resident Evil
+	Creature
 		Вирусные Зомби
-	Особенности
+	Feature
 		Сверхспособности?
-Норагами
-	Способности
+Noragami
+	Ability
 		Меч-Душа
 Рубаки
-	Способности
-		Магия
-	Энергии
-		Магическая?
-Хвост Феи
-	Способности
-		Магия
-	Энергии
-		Магическая?
-ДиСи
-	Способности
-		Магия
-	Энергии
-		Магическая?
-	Особенности
+	Ability
+		Magic
+	Energy
+		Magical?
+Fairy Tale
+	Ability
+		Magic
+	Energy
+		Magical?
+DC
+	Ability
+		Magic
+	Energy
+		Magical?
+	Feature
 		Метачеловек
 		Спидюзер
-	Технологии
+	Tech
 		Бетменские
 		Люторские
 		Криптонские
-Аватар
-	Способности
-		Магия
-	Энергии
-		Мана
-	Направления
+Avatar
+	Ability
+		Magic
+	Energy
+		Mana
+	Direction
 		Пиромантия
 		Гидромантия
 		Геомантия
 		Аэромантия
-	Особенности
-		Маг
-		Аватар
-Цельнометаллический алхимик
-	Способности
-		Алхимия
-	Особенности
+	Feature
+		Mage
+		Avatar
+Fullmetal Alchemist
+	Ability
+		Alchemy
+	Feature
 		Врата Истины
-	Энергии
+	Energy
 		Алхимическая?
-Код гиас
-	Особенности
-		Гиас
-		Код Гиас
-	Материалы
+Dozor
+	Creature
+		Human
+	Feature
+		Other
+		Vampire
+		Werewolf
+		Changeling
+	Dimension
+		World
+		Twilight
+Code Geass
+	Feature
+		Geass
+		Code Geass
+	Material
 		Сакурадайт
-	Технологии
-		Найтмеры
-</textarea>
-		<br>
-		<input id="tabulationSymbol">
-		<br>
-		<textarea id="byElements"></textarea>
-		<script>
+	Tech
+		Nightmare`
+		</script>
+		<!-- Main scripts -->
+		<script type="text/javascript">
+			//--- Name: EniVerses/Vesion: 0.0.8a/Authors: AlexanderDV/Description: Main EniVerses script. ---
+			//--- Start of standard initialization
+			//Program info
+			var programInfo={
+				"packet" : "eniVerses",
+				"name" : "EniVerses",
+				"version" : "0.0.8a",
+				"authors" : "AlexanderDV"
+			}
+			programInfo.title= programInfo.name + " v" + programInfo.version + " by " + programInfo.authors
+			document.title=programInfo.title
+
+			// Universal local storage initialization
+			var storage = window.localStorage
+
+			// Messages language initialization by default value
+			var messagesLanguage='ru'
+			// Function for getting message by key
+			var getMsg=function(key, lang)
+			{
+				return props.msgs[lang||messagesLanguage][key]
+			}
+			// End of standard initialization ---
+
+
+			byUniverses.value=universesConfig
 			var tabSym=tabulationSymbol.value="\t"
 			tabulationSymbol.oninput=function(){tabSym=tabulationSymbol.value}
 			var toJSON=function(text)
