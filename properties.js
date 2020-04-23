@@ -1,11 +1,12 @@
-var universesConfig=`
+//--- Name: EniVerses/Vesion: 0.1.2a/Authors: AlexanderDV/Description: Properties EniVerses script. ---
+var universesConfig	=	`
 Marvel
 	Race
 		Human
 	Ability
 		Magic
-	Energy
-		Magical?
+	Force
+		5	=	Magical?
 	Feature
 		X-Man
 	Material
@@ -24,48 +25,93 @@ Marvel
 		Iron Man Suit
 		Cerebro
 My
+	Artefact
+		Wand
+		Rod
+		Staff
 	Level
-		0 = Nomage	//	G	Not	Demon				[Rudazov-Sumer]
-		1 = Weak		//	F	Lower	Demon			(Student)
-		2 = Simple	//	E	Low	Demon				(Apprentice)
-		3 = Normal	//	D	Medium	Demon		(Master)
-		4 = High		//	C	High	Demon			(Postmaster)
-		5 = Higher	//	B	Higher	Demon		(Archimage)
-		6 = Arch		//	A	Arch	demon			(Higher Mage)
-		7 = God			//	S	God	Demon				(Mage-God)
+		0	=	Nomage	//	G	Not	Demon				[Rudazov-Sumer]
+		1	=	Weak		//	F	Lower	Demon			(Student)
+		2	=	Simple	//	E	Low	Demon				(Apprentice)
+		3	=	Normal	//	D	Medium	Demon		(Master)
+		4	=	High		//	C	High	Demon			(Postmaster)
+		5	=	Higher	//	B	Higher	Demon		(Archimage)
+		6	=	Arch		//	A	Arch	demon			(Higher Mage)
+		7	=	God			//	S	God	Demon				(Mage-God)
 	Energy
-		Force			0
-		Prana	Ki	Kiuser	1
-		Spirita	Reatsu	Reatser	2
-		Ema	Emana	Emotic	3
-		Psy	Esperi	Psyhic	4
-		Mrana	Mana	Magic	5
-		Ba-Hion		God	7
-		Chakra=?+?
-		Wizardy=Mana+Emana
+		1	=	Prana
+		2	=	Spirita
+		3	=	Ema
+		4	=	Psy
+		5	=	Mrana
+	Force
+		0	=	Force
+		1	=	Ki
+		2	=	Reatsu
+		3	=	Emana
+		4	=	Esperi
+		5	=	Mana
+		7	=	Ba-Hion
+		1+2	=	Chakra
+		3+5	=	Wizardy
+	User
+		1	=	Kiuser
+		2	=	Reatser
+		3	=	Emotic
+		4	=	Psyhic
+		5	=	Mage
+		7	=	God
+		1+2	=	Shinobi
+		3+5	=	Wizard
 	Shell
-		Core			0
-		Vital			1
-		Astral			2
-		Person	Feels		3
-		Mind	Logic		4
-		Magical	Creative	5
-		Invincible		6
-		God	Real-turn	7
+		0	=	Core
+		1	=	Vital
+		2	=	Astral
+		3	=	Person
+		4	=	Mind
+		5	=	Magical
+		6	=	Invincible
+		7	=	God
+	Function
+		3	=	Feels
+		4	=	Logic
+		5	=	Creative
+		6	=	Invincibility
+		7	=	Real-turn
 	Body
-		Core			0
-		Matter			1
-		Ether			2
-		Feeling			3
-		Informatic		4
-		Magical			5
+		0	=	Core
+		1	=	Matter
+		2	=	Ether
+		3	=	Feeling
+		4	=	Informatic
+		5	=	Magical
+	Creature
+		Demon
+		Immortal
+		Angel
+		Undead
+		God
+		Ghost
+		Loa
+		Vampire
+		Holem
+		Automate
+		Animal
+		Bestia
+		Flora
+		Chimera
+		Phantom
+		Doppel
 	Direction
 		Universal
-			Word		= Verbomagic	Leximancy
-			Number	= Numeromagic	Arifmancy
-			Gesture = Motusmagic	Cheiromoniamancy
+			Word	=	Verbomagic	Leximancy
+			Number	=	Numeromagic	Arifmancy
+			Gesture	=	Motusmagic	Cheiromoniamancy
+			Spell
+			Ritual
+			Rune
 		SpaceAndTime
-			Time		= Tempomagic	Horomancy
+			Time	=	Tempomagic	Horomancy
 				Tempoflucation
 				Back
 				Petlya
@@ -73,16 +119,32 @@ My
 				Prerivanye
 				Vicherkivanye
 				Jump
-			Space 	= Spacomagic	Hronomancy
+			Space 	=	Spacomagic	Hronomancy
 		Element
-			Fire		= Ignismagic	Pyromancy
-			Water		= Aquamagic	Hydromancy
-			Dirt		= Terramagic	Geomancy
-			Air			= Caelimagic	Aeromancy
-			Ice 		= Frigusmagic	Cryomancy
-			Electrizity	= Electromagic	Ilectrikosmancy
+			//Basic
+			Fire	=	Ignismagic	Pyromancy
+			Water	=	Aquamagic	Hydromancy
+			Dirt	=	Terramagic	Geomancy
+			Air		=	Caelimagic	Aeromancy
+			Ice 	=	Frigusmagic	Cryomancy
+			Electrizity	=	Electromagic	Ilectrikosmancy
+			//First
+			Darkness
+			Light
+			Chaos
+			Order
+			Death
+			Life
+			//Add
+			Tree
+			Metal
+			//Misc
+			Blood
+			Mirror
+			Shadow
 		Misc
-			Illusion=
+			Name
+			Illusion	=
 				Optic
 				Holo
 				Genjutsu
@@ -94,13 +156,6 @@ My
 			Materialization
 				Creating
 				Removing
-			Doppel
-				Material
-				Plotniye
-				Magical
-				Full
-				Energed
-				Illusor
 			Flying
 				Walking
 				Planing
@@ -124,7 +179,7 @@ My
 				this is not matter
 				Slepoye pyatno
 				Zabinaniye
-			Otedeleniye
+			Otdeleniye
 				Emotional
 				Bakullumist
 			Versusmagic
@@ -208,37 +263,43 @@ My
 				From chastits
 				By Soul
 				From universe
-			darkness
-			Light
-			Chaos
-			Necro
-			Curses
-			Blagosloveniya
+			Creature
+				Necro
+				Demon
+				Immortal
+				Angel
+				Spirit
+				Shaman
+				Vampire
+				Holem
+				Automate
+				Animagic
+					Talk
+				Bestia
+				Flora
+				Bio
+				Dream
+					Creating
+					Entering
+				Doppel
+					Material
+					Plotniye
+					Magical
+					Full
+					Energed
+					Illusor
+			Curse
+			Blessing
+			Vow
 			Apostol
-			Koldun
+			Warlock
 			Hooly
-			Death
 			Love
-			Vampire
-			Demonic
 			Summon
-			Spirit
-			Shaman Loa
 			Music
-			Bitovaya
+			Domestic
 			Mirror
 			Blood
-			Element
-				Fire
-				Water
-				Dirt
-				Ice
-				Air
-				Electro
-				Blood
-				Mirror
-				Shadow
-				Chaos
 			Meteo
 				Weather
 				Klimat
@@ -246,9 +307,7 @@ My
 			Battle
 			Protect
 			Artefact
-			Holem
-			Automate
-			Eliksir
+			Elixir
 				Potion
 				Putting
 			Alchemy
@@ -261,48 +320,33 @@ My
 				Material
 				Structure
 			Volt
-				Vudu
+				Voodoo
 				Volt
 			Estestvennaya
 			Mental
-				Protect
+				Protection
 				Battle
 				Work
 				Control
-				Pronicnoveniye
-				Self
-				Other
+				Penetration
 				Create
 				Remove
 				Connect
-				Soedineniye
-				Pamyat
+				Merge
+				Memory
 			Duha
-			Videniye
+			Clairvoyance
+				True prophecy
 				Past
 				Present
 				Future
-			Runic
-			Ritual
-			Name
-			Animagic
-				Talk
 			Metamorph
 				Totem
 				Changing
 				Turning
-				Chastichniy
-			Bestia
-			Flora
+				Partial
 			Yoga
-			Biomagic
 			Health
-			Live
-			Tree
-			Metal
-			Son
-				Creating
-				Entering
 Hellsing ultimate
 	Race
 		Human
@@ -317,79 +361,93 @@ Rudazov
 		Devkatsi
 		Eist
 		Titan
-		Jeen
+		Genie
 		Kiig
 	Ability
 		Magic
 		Mentaty
 		Spiritual Weapon
 	Energy
-		Mana
-		Prana
-		Ba-Hion
+		1	=	Prana
+	Force
+		7	=	Mana
+		9	=	Ba-Hion
 	School
-		Gray
+		Gray land
 		Sumer
 		Kiig
 		Parifat
 	Spell
-		Clone of Chaos
-		Sphere of zhazhda
-		Dlani
-			Inanna
-			Shamash
-			Marduk
-			Ea
-			Anu
-			Nergal
-		GrayEarth
-			TUman smerti
-			Grohot hashibi
-			Molniya
-			Full zero
-			Fifth spell
-		Protection
-			Absolute
-			Universal
-			Lichnaya
-		Mirror Shield
+		Gray Land
+			Mirror Shield
+			Clone of Chaos
+			Sphere of Thirst
+			Spells A+
+				Fog of Death
+				Lightning of the Gods
+				Rumble of Hashiba
+				Total Zero
+				Fifth spell
+		Sumer
+			Protection
+				Absolute
+				Universal
+				Personal
+			GodHands
+				Inanna
+				Shamash
+				Marduk
+				Ea
+				Anu
+				Nergal
+				Adad
+				Enlil
+				Tammuz
+		Kiig
+			Antimagic-tatoo
 	Feature
 		Mye
 		God
-		Domovoy
-		Demon
-		Angel
 		Invincible
+			Demon
+			Angel
+			Neutral
 		Undead
 		Vampire
 		Werewolf
 		Changeling
-		Ghost
+		Spirit
+			Brownie
+			Boggart
+			Ghost
 	Level
-		Nomage		0
-		Student		1
-		Apprentice	2
-		Master		3
-		Pastmaster	4
-		Archmage	5
-		Higher		6
-		//
-		Light Blue	1.5
-		Blue		2
-		Purple		2.5
-		Green		3
-		Yellow		3.5
-		Orange		4
-		Red		4.5
-		Gray		5
+		//Sumer
+		0		=	Nomage
+		1		=	Student
+		2		=	Apprentice
+		3		=	Master
+		4		=	Pastmaster
+		5		=	Archmage
+		6		=	Higher
+		//Gray land
+		1		=	Student
+		1.5	=	Light Blue
+		2		=	Blue
+		2.5	=	Purple
+		3		=	Green
+		3.5	=	Yellow
+		4		=	Orange
+		4.5	=	Red
+		5		=	Gray
 	Unique
-		Kreol's Rod
-		Kreol's Staff
-		Kreol's Amulet
-		Kreol's Grimoire
-		Kreol's Roaster
+		Kreol's
+			Rod
+			Staff
+			Amulet
+			Grimoire
+			Roaster
 		Valet Amulet
-		Organization Objects
+		Organization's
 		Stone of Gate
 	Artefact
 		Staff
@@ -398,35 +456,46 @@ Rudazov
 		Plonet's
 	Direction
 		Vampire
-		Pyromancy
-		Hydromancy
-		Geomancy
-		Airomancy
-		Cryomancy
-		Electromancy
-		Potion
-		Eleksir
-		Магия Духа
-		Transfiguration
-		Animorph
+		Element
+			Fire	=	Pyromancy
+			Water	=	Hydromancy
+			Earth	=	Geomancy
+			Air	=	Airomancy
+			Ice	=	Cryomancy
+			Electrizity	=	Electromancy
+		Elexir
+			Potion
+			...
+		Magic of Ghost
+		Transformation
+			Material
+			Figure
+			Form
+			Structure
 		Metamorph
-		Word Magic
-		Проклятия
-		Благославения
-		Клятвы
-		Менталистика
-		Зачарования
+			Turning
+			Changing
+			Totem	=	Felgi
+			Partial
+		Universal
+			Word
+			Rune
+		Curse
+		Blessing
+		Vow
+		Mental
+		Enchantment
 		Artefact
-		Прорицание
-		Магозоология
-		Флористика
-		Големостроение
+		Clairvoyance
+			True prophecy
+		Bestia
+		Flora
+		Holem
 		Alchemy
-		Руны
 		Doppel
 		Sensor
-		Поглощение
-		Печати
+		Seal
+		Absorption
 		Shadow
 		Blood
 		Mirror
@@ -438,9 +507,6 @@ Rudazov
 		Time
 		Automate
 		Summon
-		Curse
-		Hex
-		Spell
 	Material
 		Adamant
 		Adamantium
@@ -450,53 +516,56 @@ Rudazov
 SCP Foundation
 	Race
 		Human
-	Artefact
-		SCP Objects
+	Unique
+		SCP's
 Naruto
 	Race
 		Human
 	Ability
 		Chakra
-	Energy
-		Ki+Reatsu
+	Force
+		1+2	=	Ki+Reatsu
 	Feature
-		Dojutsu Byakugan
-		Dojutsu Tenseigan
-		Dojutsu Sharingan
-		Dojutsu Mangeke Sharingan
-		Dojutsu Rinnesharingan
-		Dojutsu Rinnegan
-		Dojutsu of Ranmaru
-		Element of Explosion
-		Element of Crystall
-		Element of Heat
-		Element of Ice
-		Element of Tree
+		Dojutsu
+			Byakugan
+			Tenseigan
+			Sharingan
+			Mangeke Sharingan
+			Rinnesharingan
+			Rinnegan
+			of Ranmaru
+		Element
+			Explosion
+			Crystall
+			Heat
+			Ice
+			Tree
 	Direction
-		Pyromancy
-		Hydromancy
-		Geomancy
-		Airomancy
-		Electromancy
-		Techniques
-		Elements
+		Element
+			Fire
+			Water
+			Earth
+			Air
+			Electrizity
+		Technique
 		Doppel
 		Sensor
-		Поглощение
-		Печати
+		Absorption
 		Fuin
-		Запечатывание
-		Перемещение
-		Рукопашка
-		Холодное оружие
+		Sealing
+		Displacement
+		Arms
+		Steel arms
 		Artefact
 		Illusion
+			Genjutsu
 		Flying
-		Марионетки
+		Marionette
 		Summon
+	Spell
+		Telescope
 	Unique
-		Мечи Тумана
-		Шар Хокаге
+		Swords of Fog
 	Creature
 		Bijuu
 Fate
@@ -505,24 +574,26 @@ Fate
 	Ability
 		Magic
 	Energy
-		Mana
-		Prana
+		1	=	Prana
+	Force
+		5	=	Mana
 	Artefact
 		The Holy Grail
 	Creature
 		Servant
 Claymore
+	Force
+		yo	=	Yoki
 	Race
 		Human
-	Energy
-		Yoki
-	Creature
-		Yomu
+		Yoma
 		Claymore
-HPMoR
+HPMoR(Potteriana
 	Unique
 		Eye of Vance
 		Left Leg of Vance
+	Artefact
+		Quotes Quill
 Warcraft
 	Race
 		Human
@@ -530,61 +601,72 @@ Warcraft
 Potteriana
 	Ability
 		Wizarding
-	Energy
-		Mana+Ema
+		Parseltongue
+	Force
+		3+5	=	Wirardy?
 	Direction
-		Potion
-		Transfiguration
-		Animorph
-		Spell
+		Elexir
+			Potion
+			Putting//3
+		Transformation
+			Form
+			Figure
+			Material
+			Structure
+		Universal
+			Rune
+			Spell
+			Ritual
 		Hex
 		Curse
-		Благославения
-		Клятвы
-		Легиллименция
-		Окклюменция
-		Зачарования
-		Eleksir putting (3)
+		Blessing
+		Vow
+		Mental
+			Protection	=	occlumency
+			Penetration	=	ligillimency
+		Enchantment
 		Arithmancy
-		Lexomancy (3)
-		Прорицание
-		Magezoology
-		Herbology
+		Lexomancy//3
+		Clairvoyance
+			True prophecy
+		Bestia
+		Flora
 		Holem
 		Alchemy
-		Runic
-		Summon (4)
+		Summon//4
+		Metamorph
+			Totem
 	Unique
-		Истинная Мантия Невидимости
-		Воскрешающий Камень
-		Бузинная Палочка
+		Deathly Hallows
+			Cloak of Invisibility
+			Resurrection Stone
+			Elder Wand
 		Moody's Eye
-		Философский Камень
-		Карта Мародеров
-		Дневник Тома Риддла
-		Диадема Рэйвенкло
-		Меч Гриффиндора
-		Чаша Хаффлпафф
-		Медальон Слизерина
-		Распределяющая Шляпа
-		Делюминатор
-		Выручай-Комната
-		Прыткопишущее Перо
-		Зеркало Еиналеж
+		Philosopher's Stone
+		Marauder's Map
+		Diary of Tom Riddle
+		Ravenclaw's Diadem
+		Gryffindor's Sword
+		Hufflepuff's Cup
+		Slytherin's Locket
+		Sorting Hat
+		Deluminator
+		Room of Requirement
+		Quick-Quotes Quill
+		Mirror of Erised
+		Mysteries Department's
+		Weasley's Ford
+		Knight Bus
 	Artefact
 		Time-Turner
-		Объекты Отделов Тайн
 		Broomstick
-		Исчезательные шкафы
+		Vanishing Cabinet
 		Portkey
-		Мантии Невидимости
-		Летающий Транспорт
-		Хранилища с Незримым Расширением
+		Invisibility Cloak
+		Mokeskin pouch
 		Wand
-		Снитчи
-		Бладжеры
-		Самопишущее Перо
-	Hex
+		Golden Snitch
+		Bludger
 	Spell
 		"aberto-" - отпирает дверь.
 		"avis-" - Заклятие призыва птиц. Создаёт стайку птиц.
@@ -644,7 +726,7 @@ Potteriana
 		"ectomatis" (2) — заклинание, которое позволяет выпустить из конца палочки небольшой кубик эктоплазмы[4].
 		"emacipare" — заклинание, освобождающее от пут.[11]
 		"entomorphium" (2) — ненадолго превращает в муравья[12].
-
+		//
 		Трансмогрифианская Пытка
 		Синие искры (2)
 		заклинание Хватательное
@@ -687,10 +769,10 @@ Potteriana
 		Зелёное специальное заклинание
 		Заклинание Жалящее
 		«Сито из котла» (2)
-
+		//
 		"contra-" (3) - нарушение работы заклинаний
 		"spangify-" (2) — батут
-		"steelclaw-" (2) — стальные когти
+		"steelclaw-" (2) — steel claw
 		"tarantalegro-" — танцы
 		"titillando-" — щекотку и ослабление
 		"fenestram-" — разбивает стекло.[2]
@@ -791,7 +873,7 @@ Potteriana
 		"duro-" — затвердевание
 		"colorum-" — цвет неживого (в тч волос и ногтей)
 		"defodio-" (2) — долото
-
+		//
 		"-subiecti-" - subject
 		"-obiecti-" - object
 		"--corpus-" — body
@@ -813,16 +895,16 @@ Potteriana
 		"--piertotum-" — движение големов
 		"--capacius-" — емкость
 		"--magicus-" - magical
-
+		//
 		"-wingardi" - крылообразная
 		"-inferni" - hell, cursed
 		"-diabolica" - огненный щит
 		"-horribilis" - антитемный щит
-
+		//
 		"-totalis" - полный
 		"-directum" (3) - направленное действие
 		"-skullus" (2) - действует на голову
-
+		//
 		"-momentum" - моментальное действие
 		"-postea" - спустя
 		"-temporus" - временное действие
@@ -831,14 +913,14 @@ Potteriana
 		"--diesum" (3) - заклинание длительностью в сутки
 		"--prolonga" (3) - заклинание с более долгим эффектом
 		"--aeternum" (3) - заклинание с "вечным" эффектом
-
+		//
 		"-potentio" - мощность
 		"--tertium" - заклинание в треть силы
 		"--dimidium" - заклинание в половину силы
 		"--duo" - заклинание удвоенной силы
 		"--tria" - заклинание утроенной силы
 		"--maxima" - максимально сильное для вас заклинание
-
+		//
 		//Общая формула заклинания: [modum] [subject] [object] [adjectivum (optionem/scopus/tempus/potentium)]
 		//Общая формула зачарования: [subject] [object] [modum-ing] [adjectivum (optionem/scopus/tempus/potentium)]
 	Complex
@@ -873,7 +955,7 @@ Potteriana
 			""неразбиваемость
 			expecto patronum
 		binding
-			confundus - помутнение разума
+			confundus - confusion of mind
 			stupefy - оглушение
 			sopporo - усыпление
 			incarcero - связывание
@@ -892,88 +974,92 @@ Potteriana
 			expelliarmus - обезоружение
 			fulgari - связывание
 	Creature
-		Виверны
-		Василиски
-		Акромантулы
+		Wyvern
+		Basilisk
+		Acromantula
 		Dementor
 		Phoenix
-		Edinorog
-		Саламандры
-		Мантикоры
-		Мандрагоры
-		Огненные Крабы
-		Боггарты
+		Unicorn
+		Salamander
+		Manticore
+		Mandrake
+		Fire Crab
 		Церберы
 	Race
 		Human
 		Giant
 		Goblin
 		Troll
-		Домовики
-		Кентавры
+		Centaur
 		Gnome(2)
-		Русалки
+		Merpeople
 	Feature
-		Полтергейсты
-		Ghost
-		Взгляд Василиска
+		Spirit
+			Ghost
+			Boggart
+			Brownie Elv
+		Poltergeist
+		Eye of Basilisk
 		Wizard
 			Dark
 			Normal
 			Light
 		Muggle
-		Skvib
-		Animorph
+		Squib
 		Metamorph
-		Змееуст
+			Partial
+			Totem
+		Parselmouth
 		Werewolf
 		Vampire
 Witcher
 	Race
 		Human
+		Witcher
 	Creature
-		Кокатриксы
-		Василиски
-		Ведьмаки
+		Cockatrice
+		Basilisk
 	Ability
 		Magic
 Pokemon
 	Race
 		Human
 	Creature
-		Покемоны
+		Pokemon
 	Artefact
-		Покеболы
+		Pokeball
 Ghost Busters
 	Race
 		Human
 	Tech
-		Ловушки призраков
+		Ghost trap
 	Creature
-		Призраки
-Хранитель Вечности
+		Ghost
+UQ Holder
 	Race
 		Human
-Рэйв Мастер
+Rave Master
 	Race
 		Human
-Розарио+Вампир
+Rosario to Vampire
 	Race
 		Human
-Закон Уэки
+	Feature
+		Vampire
+The Law of Ueki
 	Race
 		Human
-Хантер х Хантер
+Hunter x Hunter
 	Race
 		Human
-Небо и земля
+Tenjou Tenge
 	Race
 		Human
 My hero academy
 	Race
 		Human
 	Feature
-		Причуда
+		Quirk
 Berserk
 	Race
 		Human
@@ -985,27 +1071,29 @@ Magic Adacademy
 		Human
 	Ability
 		Magic
-High School Demons
+High School DxD
 	Race
 		Human
+		Dragon
 	Ability
 		Magic
 	Artefact
-		Фигуры Зла
-		Святые Механизмы
+		Evil Pieces
+		Sacred Gear
+		Holy Swords
 	Feature
 		Mage
 		Demon
 		Angel
-		Падший
+		Fallen
 		God
 Startrack
 	Race
 		Human
 	Ability
 		Psyonic
-	Energy
-		Psy?
+	Force
+		4	=	Psy?
 	Feature
 		Psyonic
 Seilor Moon
@@ -1018,15 +1106,15 @@ Dragonball
 		Human
 	Ability
 		Ki
-	Energy
-		Ki?
+	Force
+		1	=	Ki?
 	Artefact
 		Dragon Ball
 The Lord of the Rings
 	Ability
 		Magic
-	Energy
-		Magical?
+	Force
+		5	=	Mana?
 	Feature
 		God
 		Valar
@@ -1041,10 +1129,10 @@ The Lord of the Rings
 		Dragon
 		Balrog
 	Unique
-		Кольцо Всевластия
+		One Ring
 	Artefact
-		Кольца
-		Сильмариллы
+		Rings
+		Silmarils
 	Material
 		Mithrill
 Nick
@@ -1057,100 +1145,105 @@ Nick
 	Ability
 		Magic
 		Infomagic
-		Чародейство
+		Sorcery
 		Psyonic
-	Energy
-		Mana
-		Prana
-		Infomana
-		Psy
+	Force
+		5	=	Mana
+		1	=	Prana
+		im	=	Infomana
+		4	=	Psy
 	Direction
 		Construct
-		Плетения
-		Инфоструктуры
+		Weaving
+		Infostructure
 	School
-		Искусство
-		Чародейство
-		Магическая
-		Атловская
-		Атлантская
+		Adeptness
+		Sorcery
+		Magic
+		Atl
+		Atlant
 	Feature
-		Одаренность
+		Cleverness
 Star Wars
 	Race
 		Human
 	Ability
 		Force
-	Energy
-		Force?
+	Force
+		gf	=	Great Force?
 	Feature
 		Forceuser
 	School
-		Джедайская
-		Ситхская
+		Jedi
+		Sith
 	Artefact
-		Световые Мечи
+		Lightsaber
 	Tech
-		Галактические
+		Galaxy's
 Warhammer
 	Race
 		Human
 	Ability
-		Псайкерство
-	Energy
-		Psy?
+		Psyker
+	Force
+		4	=	Psy?
 	Feature
-		Псайкер
+		Psyker
 Zero no Tsukaima
 	Ability
 		Wizarding
-	Energy
-		Mana?
+	Force
+		5	=	Mana?
 	Direction
-		Пиромантия
-		Гидромантия
-		Аэромантия
-		Геомантия
-		Призыв
-		Заклинания
-		Алхимия
-		Зельеварение
-		Фамильяризм
+		Element
+			Fire
+			Water
+			Air
+			Earth
+		Summon
+		Spell
+		Alchemy
+		Elexir
+			Potion
+		Animagic
+			Familiar
 	Artefact
-		Волшебные Палочки
-		Летучие Корабли
-		Кольцо Воды
-		Кольцо Воздуха
+		Wand
+		Flying Ships
+		Ring of Water
+		Ring of Air
 	Feature
-		Волшебник
-		Гандальв
-		Лифрасир
-		Сидальв
+		Wizard
+		Gandalf
+		Lifrasir
+		Sidalf
 	Race
 		Human
 		Elv
 		Changeling
-		Духи
+	Feature
+		Spirit
 	Creature
-		Виверны
-		Саламандры
-		Бехолдеры
+		Wyvern
+		Salamander
+		Beholder
 To Aru Majutsu no Index
 	Race
 		Human
 	Ability
 		Magic
 		Esper
-	Energy
-		Mana
-		Telesma
+	Force
+		5	=	Mana
+		t	=	Telesma
 	Shell
-		АИМ-поле
+		AIM-field
 	Direction
-		Ритуалы
-		Руны
-		Зачарования
-		Заклинания
+		Universal
+			Ritual
+			Rune
+			Spell
+		Enchantment
 	Feature
 		Angel
 		God
@@ -1162,34 +1255,32 @@ Bleach
 		Human
 	Ability
 		Reatsu
-		Меч Души
-	Energy
-		Reatsu
+		Sword of Soul
+	Force
+		2	=	Reatsu
 	Feature
-		Пустой
-		Квинки
-		Шинигами
+		Hollow
+		Quincy
+		Shinigami
 One Piece
 	Race
 		Human
 	Feature
-		Фрукты
+		Fruits
 Mass Effect
 	Race
 		Human
 	Ability
 		Biotic
-	Energy
-		Psy?
-	Feature
-		Biotic
+	Force
+		4	=	Psy?
 Terminator
 	Race
 		Human
 	Tech
 		Skynet's
 		AI
-		Дроны
+		Drone
 		T-1
 		T-800
 		T-1000
@@ -1200,57 +1291,58 @@ Resident Evil
 	Race
 		Human
 	Creature
-		Вирусные Зомби
+		Virused Zombie
 	Feature
-		Сверхспособности?
+		Superabilities
 Noragami
 	Race
 		Human
 	Ability
-		Меч-Душа
+		Sword-Soul
 	Feature
-		God
-		Ghost
-Рубаки
+		Spirit
+			Ghost
+			God
+Slayers
 	Race
 		Human
 	Ability
 		Magic
-	Energy
-		Magical?
+	Force
+		5	=	Magical?
 Fairy Tale
 	Race
 		Human
 	Ability
 		Magic
-	Energy
-		Magical?
+	Force
+		5	=	Magical?
 DC
 	Race
 		Human
 	Ability
 		Magic
-	Energy
-		Magical?
+	Force
+		5	=	Magical?
 	Feature
-		Метачеловек
-		Спидюзер
+		Metahuman
+		Speeduser
 	Tech
-		Бетменские
-		Люторские
-		Криптонские
+		Batman's
+		Luthor's
+		Crypton's
 Avatar
 	Race
 		Human
 	Ability
 		Magic
-	Energy
-		Mana
+	Force
+		5	=	Mana?
 	Direction
-		Fire	= Fire
-		Water = Water
-		Dirt	= Dirt
-		Air	 = Air
+		Fire	=	Fire
+		Water	=	Water
+		Earth	=	Earth
+		Air		=	Air
 	Feature
 		Mage
 			Fire
@@ -1264,9 +1356,9 @@ Fullmetal Alchemist
 	Ability
 		Alchemy
 	Feature
-		Врата Истины
-	Energy
-		Алхимическая?
+		Gate of Truth
+	Force
+		al	=	Alchemycal?
 Dozor
 	Race
 		Human
@@ -1276,7 +1368,11 @@ Dozor
 			Light
 		Vampire
 		Werewolf
-		Changeling
+	Spell
+		Freeze
+	Direction
+		Metamorph
+			Turning
 	Dimension
 		World
 		Twilight
@@ -1290,6 +1386,6 @@ Code Geass
 		Geass
 		Code Geass
 	Material
-		Сакурадайт
+		Sakuradait
 	Tech
-		Nightmare`
+		Knightmare`

@@ -1,10 +1,10 @@
-//--- Name: EniVerses/Vesion: 0.1.1a/Authors: AlexanderDV/Description: Main EniVerses script. ---
+//--- Name: EniVerses/Vesion: 0.1.2a/Authors: AlexanderDV/Description: Main EniVerses script. ---
 //--- Start of standard initialization
 //Program info
 var programInfo={
 	"packet" : "eniVerses",
 	"name" : "EniVerses",
-	"version" : "0.1.1a",
+	"version" : "0.1.2a",
 	"authors" : "AlexanderDV"
 }
 programInfo.title= programInfo.name + " v" + programInfo.version + " by " + programInfo.authors
@@ -55,7 +55,23 @@ var toJSON=function(text)
 var onChange=function()
 {
 	var json=toJSON(byUniverses.value)
-	//console.log(json);
+	function ffr(par,cur){
+		var n={}
+		for(var v in par)
+			n[v]=ffr(n[v],cur[v])
+		return n
+	}
+	for(var v in json)
+		if(v.split("(")[1])
+			json[v]=ffr(json[v],json[v.split("(")[1]])
+	function assembleSt(n,c){
+		var r=""
+		for(var v in n)
+			r+="\n"+c+v+(Object.keys(n[v]).length>1?assembleSt(n[v],c+"\t"):"")
+		return r
+	}
+	byUniverses.value=assembleSt(json,"")
+	console.log(json);
 	var newJson={}
 	for(var v in json)
 	{
