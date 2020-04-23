@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="UTF-8">
-	<title>Scripts aren't working If you see this message.</title>
-
-	<style>
-		body {
-			background-color: #333;
-		}
-		</style>
-		</head>
-	<body>
-		<textarea id="byUniverses"></textarea>
-		<br>
-		<input id="tabulationSymbol">
-		<br>
-		<textarea id="byElements"></textarea>
-
-		<!-- Scripts -->
-		<!-- Properties script, can be changed to your script -->
-		<script type="text/javascript">
-var universesConfig=`Marvel
+var universesConfig=`
+Marvel
+  Race
+    Human
 	Ability
 		Magic
 	Energy
@@ -44,14 +25,14 @@ var universesConfig=`Marvel
 		Cerebro
 My
 	Level
-		Nomage	Not	Demon	0 G	[Rudazov-Sumer]
-		Weak	Lower	Demon	1 F	(Student)    
-		Simple	Low	Demon	2 E	(Apprentice)
-		Normal	Medium	Demon	3 D	(Master)
-		High	High	Demon	4 C	(Postmaster) 
-		Higher	Higher	Demon	5 B	(Archimage)
-		Arch	Arch	demon	6 A	(Higher Mage)
-		God	God	Demon	7 S	(Mage-God)
+		0 = Nomage	//	G	Not	Demon				[Rudazov-Sumer]
+		1 = Weak		//	F	Lower	Demon			(Student)
+		2 = Simple	//	E	Low	Demon				(Apprentice)
+		3 = Normal	//	D	Medium	Demon		(Master)
+		4 = High		//	C	High	Demon			(Postmaster)
+		5 = Higher	//	B	Higher	Demon		(Archimage)
+		6 = Arch		//	A	Arch	demon			(Higher Mage)
+		7 = God			//	S	God	Demon				(Mage-God)
 	Energy
 		Force			0
 		Prana	Ki	Kiuser	1
@@ -60,6 +41,8 @@ My
 		Psy	Esperi	Psyhic	4
 		Mrana	Mana	Magic	5
 		Ba-Hion		God	7
+		Chakra=?+?
+		Wizardy=Mana+Emana
 	Shell
 		Core			0
 		Vital			1
@@ -78,21 +61,264 @@ My
 		Magical			5
 	Direction
 		//Type
-		Verbomagic	Leximancy
-		Numeromagic	Arifmancy
-		Motusmagic	Cheiromoniamancy
+		Word		= Verbomagic	Leximancy
+		Number	= Numeromagic	Arifmancy
+		Gesture = Motusmagic	Cheiromoniamancy
 		//Matter
-		Tempomagic	Horomancy
-		Spacomagic	Hronomancy
+		Time		= Tempomagic	Horomancy
+      Tempoflucation
+      Back
+      Petlya
+      Stop
+      Prerivanye
+      Vicherkivanye
+      Jump
+		Space 	= Spacomagic	Hronomancy
 		//Element
-		Ignismagic	Pyromancy
-		Aquamagic	Hydromancy
-		Terramagic	Geomancy
-		Caelimagic	Aeromancy
-		Frigusmagic	Cryomancy
-		Electromagic	Ilectrikosmancy	
+		Fire		= Ignismagic	Pyromancy
+		Water		= Aquamagic	Hydromancy
+		Dirt		= Terramagic	Geomancy
+		Air			= Caelimagic	Aeromancy
+		Ice 		= Frigusmagic	Cryomancy
+		Electr	= Electromagic	Ilectrikosmancy
 		//Misc
+		Illusion=
+      Optic
+      Holo
+      Genjutsu
+      Emo
+      Mental
+      Material
+      Dimension
+      Reality
+    Materialization
+      Creating
+      Removing
+    Doppel
+      Material
+      Plotniye
+      Magical
+      Full
+      Energed
+      Illusor
+		Flying
+      Walking
+      Planing
+      Levitation
+      Teleport
+      Wings
+      Reactive
+      Gravity
+      Archimeds law
+      Magic
+      Vector
+    Invisible
+      Illusion
+      Delumionation
+      Space
+      Sokritiye
+    Otvod glaz
+      Standard
+      Other think
+      All ok
+      this is not matter
+      Slepoye pyatno
+      Zabinaniye
+    Otedeleniye
+      Emotional
+      Bakullumist
+    Versusmagic
+      Razveivaniye
+      Finita
+      Time
+      Space
+      Mirror
+      Vector
+      Shield
+      Prisvoyeniye
+      Razrusheniye
+      Unenerging
+      Eating
+      Nonmaterial
+      Otoyti
+      zapechativaniye
+      kletka
+      stop
+      neutalizing
+      material
+      teleport
+      turning
+      Razrivaniye
+      Deactivation
+      Kontrspell
+      Antimagic
+      Resist
+      Impossible
+      Derealising
+      Razvoplosheniye
+      Fire
+      Ice
+      Make to illusion
+      Razdavit
+      Magagasitel
+      Magazakuporivatel
+      Obolochka
+      Gravitation
+      Antimagic
+		Telekinesis
+      Levitation
+      Shupaltsa
+      Field
+      Vector
+		Teleport
+      Hyperspace
+      Time
+      Space zip
+      Space change
+      Space cut
+      Space connection
+      Superspeed
+      Apparation
+      Photon
+      Body select
+      Nonmaterial
+      Disintegration and assembling
+      Obmen
+      Twilight
+      Vector
+    Portal
+    Tech
+    Invincible
+      Undead/Robot
+      Bio
+      Soul in body
+      Regen
+      Filactery
+      Reincarnation
+      Meta
+      Soul/Mental copy
+      Soul in world
+      Mye
+    Regen
+      Bio
+      Stvolovie kletki
+      Konechnosti
+      From pieces
+      From kletok
+      From chastits
+      By Soul
+      From universe
+    darkness
+    Light
+    Chaos
+    Necro
+    Curses
+    Blagosloveniya
+    Apostol
+    Koldun
+    Hooly
+    Death
+    Love
+    Vampire
+    Demonic
+    Summon
+    Spirit
+    Shaman Loa
+    Music
+    Bitovaya
+    Mirror
+    Blood
+    Element
+      Fire
+      Water
+      Dirt
+      Ice
+      Air
+      Electro
+      Blood
+      Mirror
+      Shadow
+      Chaos
+    Meteo
+      Weather
+      Klimat
+      Kataklism
+    Battle
+    Protect
+    Artefact
+    Holem
+    Automate
+    Eliksir
+      Potion
+      Putting
+    Alchemy
+      Astral
+      Physical
+      Full
+    Transformation
+      Form
+      Figure
+      Material
+      Structure
+    Volt
+      Vudu
+      Volt
+    Estestvennaya
+    Mental
+      Protect
+      Battle
+      Work
+      Control
+      Pronicnoveniye
+      Self
+      Other
+      Create
+      Remove
+      Connect
+      Soedineniye
+      Pamyat
+    Duha
+    Videniye
+      Past
+      Present
+      Future
+    Runic
+    Ritual
+    Name
+    Animagic
+      Talk
+    Metamorph
+      Totem
+      Changing
+      Turning
+      Chastichniy
+    Bestia
+    Flora
+    Yoga
+    Biomagic
+    Health
+    Live
+    Tree
+    Metal
+    Son
+      Creating
+      Entering
+Hellsing ultimate
+  Race
+    Human
+  Feature
+    Vampire
 Rudazov
+  Race
+    Human
+    Elv(2)
+    Sid
+    Dev
+    Devkatsi
+    Eist
+    Titan
+    Jeen
+    Kiig
 	Ability
 		Magic
 		Mentaty
@@ -106,9 +332,31 @@ Rudazov
 		Sumer
 		Kiig
 		Parifat
+  Spell
+    Clone of Chaos
+    Sphere of zhazhda
+    Dlani
+      Inanna
+      Shamash
+      Marduk
+      Ea
+      Anu
+      Nergal
+    GrayEarth
+      TUman smerti
+      Grohot hashibi
+      Molniya
+      Full zero
+      Fifth spell
+    Protection
+      Absolute
+      Universal
+      Lichnaya
+    Mirror Shield
 	Feature
 		Mye
 		God
+    Domovoy
 		Demon
 		Angel
 		Invincible
@@ -200,9 +448,13 @@ Rudazov
 		Teporiy
 		Regenerin
 SCP Foundation
+  Race
+    Human
 	Artefact
 		SCP Objects
 Naruto
+  Race
+    Human
 	Ability
 		Chakra
 	Energy
@@ -248,6 +500,8 @@ Naruto
 	Creature
 		Bijuu
 Fate
+  Race
+    Human
 	Ability
 		Magic
 	Energy
@@ -258,6 +512,8 @@ Fate
 	Creature
 		Servant
 Claymore
+  Race
+    Human
 	Energy
 		Yoki
 	Creature
@@ -268,6 +524,9 @@ HPMoR
 		Eye of Vance
 		Left Leg of Vance
 Warcraft
+  Race
+    Human
+    Orc(2)
 Potteriana
 	Ability
 		Wizarding
@@ -291,9 +550,9 @@ Potteriana
 		Прорицание
 		Magezoology
 		Herbology
-		Големостроение
+		Holem
 		Alchemy
-		Руны
+		Runic
 		Summon (4)
 	Unique
 		Истинная Мантия Невидимости
@@ -385,7 +644,7 @@ Potteriana
 		"ectomatis" (2) — заклинание, которое позволяет выпустить из конца палочки небольшой кубик эктоплазмы[4].
 		"emacipare" — заклинание, освобождающее от пут.[11]
 		"entomorphium" (2) — ненадолго превращает в муравья[12].
-		
+
 		Трансмогрифианская Пытка
 		Синие искры (2)
 		заклинание Хватательное
@@ -428,7 +687,7 @@ Potteriana
 		Зелёное специальное заклинание
 		Заклинание Жалящее
 		«Сито из котла» (2)
-		
+
 		"contra-" (3) - нарушение работы заклинаний
 		"spangify-" (2) — батут
 		"steelclaw-" (2) — стальные когти
@@ -532,7 +791,7 @@ Potteriana
 		"duro-" — затвердевание
 		"colorum-" — цвет неживого (в тч волос и ногтей)
 		"defodio-" (2) — долото
-		
+
 		"-subiecti-" - subject
 		"-obiecti-" - object
 		"--corpus-" — body
@@ -554,16 +813,16 @@ Potteriana
 		"--piertotum-" — движение големов
 		"--capacius-" — емкость
 		"--magicus-" - magical
-		
+
 		"-wingardi" - крылообразная
 		"-inferni" - hell, cursed
 		"-diabolica" - огненный щит
 		"-horribilis" - антитемный щит
-		
+
 		"-totalis" - полный
 		"-directum" (3) - направленное действие
 		"-skullus" (2) - действует на голову
-		
+
 		"-momentum" - моментальное действие
 		"-postea" - спустя
 		"-temporus" - временное действие
@@ -572,14 +831,14 @@ Potteriana
 		"--diesum" (3) - заклинание длительностью в сутки
 		"--prolonga" (3) - заклинание с более долгим эффектом
 		"--aeternum" (3) - заклинание с "вечным" эффектом
-		
+
 		"-potentio" - мощность
 		"--tertium" - заклинание в треть силы
 		"--dimidium" - заклинание в половину силы
 		"--duo" - заклинание удвоенной силы
 		"--tria" - заклинание утроенной силы
 		"--maxima" - максимально сильное для вас заклинание
-		
+
 		//Общая формула заклинания: [modum] [subject] [object] [adjectivum (optionem/scopus/tempus/potentium)]
 		//Общая формула зачарования: [subject] [object] [modum-ing] [adjectivum (optionem/scopus/tempus/potentium)]
 	Complex
@@ -631,13 +890,14 @@ Potteriana
 			mimbl vimbl - косноязычие
 			langlock - оьбезъяз
 			expelliarmus - обезоружение
-			fulgari - связывание	
+			fulgari - связывание
 	Creature
 		Виверны
 		Василиски
 		Акромантулы
 		Dementor
 		Phoenix
+    Edinorog
 		Саламандры
 		Мантикоры
 		Мандрагоры
@@ -651,21 +911,26 @@ Potteriana
 		Troll
 		Домовики
 		Кентавры
-		Низшие Гномы
+		Gnome(2)
 		Русалки
 	Feature
 		Полтергейсты
 		Ghost
 		Взгляд Василиска
 		Wizard
+      Dark
+      Normal
+      Light
 		Muggle
-		Сквиб
+		Skvib
 		Animorph
 		Metamorph
 		Змееуст
 		Werewolf
 		Vampire
 Witcher
+  Race
+    Human
 	Creature
 		Кокатриксы
 		Василиски
@@ -673,30 +938,56 @@ Witcher
 	Ability
 		Magic
 Pokemon
+  Race
+    Human
 	Creature
 		Покемоны
 	Artefact
 		Покеболы
 Ghost Busters
+  Race
+    Human
 	Tech
 		Ловушки призраков
 	Creature
 		Призраки
 Хранитель Вечности
+  Race
+    Human
 Рэйв Мастер
+  Race
+    Human
 Розарио+Вампир
+  Race
+    Human
 Закон Уэки
+  Race
+    Human
 Хантер х Хантер
+  Race
+    Human
 Небо и земля
+  Race
+    Human
 My hero academy
+  Race
+    Human
 	Feature
 		Причуда
 Berserk
+  Race
+    Human
 Toriko
+  Race
+    Human
 Magic Adacademy
+  Race
+    Human
 	Ability
 		Magic
 High School Demons
+  Race
+    Human
 	Ability
 		Magic
 	Artefact
@@ -709,6 +1000,8 @@ High School Demons
 		Падший
 		God
 Startrack
+  Race
+    Human
 	Ability
 		Psyonic
 	Energy
@@ -716,9 +1009,13 @@ Startrack
 	Feature
 		Psyonic
 Seilor Moon
+  Race
+    Human
 	Unique
 		Moon Diadema
 Dragonball
+  Race
+    Human
 	Ability
 		Ki
 	Energy
@@ -735,11 +1032,11 @@ The Lord of the Rings
 		Valar
 		Ainur
 		Mage
-	Creature
+	Race
 		Human
 		Elv
 		Gnome
-		Orc
+		Orc(3)
 		Troll
 		Dragon
 		Balrog
@@ -751,6 +1048,12 @@ The Lord of the Rings
 	Material
 		Mithrill
 Nick
+  Race
+    Human
+    Elv
+    Gnome
+    Orc(0)
+    Demon(0)
 	Ability
 		Magic
 		Infomagic
@@ -774,6 +1077,8 @@ Nick
 	Feature
 		Одаренность
 Star Wars
+  Race
+    Human
 	Ability
 		Force
 	Energy
@@ -788,6 +1093,8 @@ Star Wars
 	Tech
 		Галактические
 Warhammer
+  Race
+    Human
 	Ability
 		Псайкерство
 	Energy
@@ -819,15 +1126,18 @@ Zero no Tsukaima
 		Гандальв
 		Лифрасир
 		Сидальв
-	Creature
+	Race
 		Human
 		Elv
 		Changeling
 		Духи
+  Creature
 		Виверны
 		Саламандры
 		Бехолдеры
 To Aru Majutsu no Index
+  Race
+    Human
 	Ability
 		Magic
 		Esper
@@ -848,6 +1158,8 @@ To Aru Majutsu no Index
 		Mage
 		Imagine Breaker
 Bleach
+  Race
+    Human
 	Ability
 		Reatsu
 		Меч Души
@@ -858,9 +1170,13 @@ Bleach
 		Квинки
 		Шинигами
 One Piece
+  Race
+    Human
 	Feature
 		Фрукты
 Mass Effect
+  Race
+    Human
 	Ability
 		Biotic
 	Energy
@@ -868,6 +1184,8 @@ Mass Effect
 	Feature
 		Biotic
 Terminator
+  Race
+    Human
 	Tech
 		Skynet's
 		AI
@@ -879,24 +1197,37 @@ Terminator
 		Time-Machine
 		Cyborg
 Resident Evil
+  Race
+    Human
 	Creature
 		Вирусные Зомби
 	Feature
 		Сверхспособности?
 Noragami
+  Race
+    Human
 	Ability
 		Меч-Душа
+  Feature
+    God
+    Ghost
 Рубаки
+  Race
+    Human
 	Ability
 		Magic
 	Energy
 		Magical?
 Fairy Tale
+  Race
+    Human
 	Ability
 		Magic
 	Energy
 		Magical?
 DC
+  Race
+    Human
 	Ability
 		Magic
 	Energy
@@ -909,19 +1240,27 @@ DC
 		Люторские
 		Криптонские
 Avatar
+  Race
+    Human
 	Ability
 		Magic
 	Energy
 		Mana
 	Direction
-		Пиромантия
-		Гидромантия
-		Геомантия
-		Аэромантия
+		Fire  = Fire
+		Water = Water
+		Dirt  = Dirt
+		Air   = Air
 	Feature
 		Mage
+      Fire
+      Water
+      Dirt
+      Air
 		Avatar
 Fullmetal Alchemist
+  Race
+    Human
 	Ability
 		Alchemy
 	Feature
@@ -929,17 +1268,24 @@ Fullmetal Alchemist
 	Energy
 		Алхимическая?
 Dozor
-	Creature
-		Human
+  Race
+    Human
 	Feature
 		Other
+      Dark
+      Light
 		Vampire
 		Werewolf
 		Changeling
 	Dimension
 		World
 		Twilight
+      1
+      2
+      3
 Code Geass
+  Race
+    Human
 	Feature
 		Geass
 		Code Geass
@@ -947,105 +1293,3 @@ Code Geass
 		Сакурадайт
 	Tech
 		Nightmare`
-		</script>
-		<!-- Main scripts -->
-		<script type="text/javascript">
-			//--- Name: EniVerses/Vesion: 0.0.8a/Authors: AlexanderDV/Description: Main EniVerses script. ---
-			//--- Start of standard initialization
-			//Program info
-			var programInfo={
-				"packet" : "eniVerses",
-				"name" : "EniVerses",
-				"version" : "0.0.8a",
-				"authors" : "AlexanderDV"
-			}
-			programInfo.title= programInfo.name + " v" + programInfo.version + " by " + programInfo.authors
-			document.title=programInfo.title
-
-			// Universal local storage initialization
-			var storage = window.localStorage
-
-			// Messages language initialization by default value
-			var messagesLanguage='ru'
-			// Function for getting message by key
-			var getMsg=function(key, lang)
-			{
-				return props.msgs[lang||messagesLanguage][key]
-			}
-			// End of standard initialization ---
-
-
-			byUniverses.value=universesConfig
-			var tabSym=tabulationSymbol.value="\t"
-			tabulationSymbol.oninput=function(){tabSym=tabulationSymbol.value}
-			var toJSON=function(text)
-			{
-				var json={}
-				var last
-				for(var v in text.split("\n"))
-				{
-					if(!text.split("\n")[v].startsWith(tabSym))
-						json[last=text.split("\n")[v]]=""
-					else if(last)
-						if(!json[last])
-							json[last]=text.split("\n")[v].substr(1)
-						else json[last]+="\n"+text.split("\n")[v].substr(1)
-				}
-				for(var v in json)
-					if(json[v].split("\n").length>1)
-					{
-						json[v]=toJSON(json[v])
-					}
-					else
-					{
-						var vv=json[v]
-						json[v]={}
-						json[v][vv]={}
-					}
-				return json
-			}
-			var onChange=function()
-			{
-				var json=toJSON(byUniverses.value)
-				var newJson={}
-				for(var v in json)
-				{
-					for(var v2 in json[v])
-					{
-						if(!newJson[v2])
-							newJson[v2]={}
-						for(var v3 in json[v][v2])
-						{
-							if(!newJson[v2][v3])
-								newJson[v2][v3]={}
-							newJson[v2][v3][v]={}
-							if(!newJson[v2][v3][""])
-							newJson[v2][v3][""]={}
-							for(var v4 in json[v][v2][v3])
-								newJson[v2][v3][""][v4]=json[v][v2][v3][v4]
-						}
-					}	 
-				}
-				byElements.value=""
-				for(var v in newJson)
-				{
-					byElements.value+=("\n"+v).replace("\n","\n")
-					for(var v2 in newJson[v])
-					{
-						byElements.value+=("\n"+v2).replace("\n","\n"+tabSym)
-						byElements.value+=": "
-						for(var v3 in newJson[v][v2])
-							byElements.value+=v3+", "
-						if(newJson[v][v2][""])
-							for(var v4 in newJson[v][v2][""])
-								if(v4.replace(" ","").replace("\t","")!="")
-									byElements.value+=("\n"+v4).replace("\n","\n"+tabSym+tabSym)
-					}
-				}
-				byElements.value=byElements.value.substr(1)
-			}
-			onChange()
-			console.log(toJSON(byUniverses.value))
-		</script>
-	</body>
-</html>
