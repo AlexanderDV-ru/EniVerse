@@ -1,7 +1,7 @@
 var universesConfig=`
 Marvel
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 	Energy
@@ -60,265 +60,265 @@ My
 		Informatic		4
 		Magical			5
 	Direction
-		//Type
-		Word		= Verbomagic	Leximancy
-		Number	= Numeromagic	Arifmancy
-		Gesture = Motusmagic	Cheiromoniamancy
-		//Matter
-		Time		= Tempomagic	Horomancy
-      Tempoflucation
-      Back
-      Petlya
-      Stop
-      Prerivanye
-      Vicherkivanye
-      Jump
-		Space 	= Spacomagic	Hronomancy
-		//Element
-		Fire		= Ignismagic	Pyromancy
-		Water		= Aquamagic	Hydromancy
-		Dirt		= Terramagic	Geomancy
-		Air			= Caelimagic	Aeromancy
-		Ice 		= Frigusmagic	Cryomancy
-		Electr	= Electromagic	Ilectrikosmancy
-		//Misc
-		Illusion=
-      Optic
-      Holo
-      Genjutsu
-      Emo
-      Mental
-      Material
-      Dimension
-      Reality
-    Materialization
-      Creating
-      Removing
-    Doppel
-      Material
-      Plotniye
-      Magical
-      Full
-      Energed
-      Illusor
-		Flying
-      Walking
-      Planing
-      Levitation
-      Teleport
-      Wings
-      Reactive
-      Gravity
-      Archimeds law
-      Magic
-      Vector
-    Invisible
-      Illusion
-      Delumionation
-      Space
-      Sokritiye
-    Otvod glaz
-      Standard
-      Other think
-      All ok
-      this is not matter
-      Slepoye pyatno
-      Zabinaniye
-    Otedeleniye
-      Emotional
-      Bakullumist
-    Versusmagic
-      Razveivaniye
-      Finita
-      Time
-      Space
-      Mirror
-      Vector
-      Shield
-      Prisvoyeniye
-      Razrusheniye
-      Unenerging
-      Eating
-      Nonmaterial
-      Otoyti
-      zapechativaniye
-      kletka
-      stop
-      neutalizing
-      material
-      teleport
-      turning
-      Razrivaniye
-      Deactivation
-      Kontrspell
-      Antimagic
-      Resist
-      Impossible
-      Derealising
-      Razvoplosheniye
-      Fire
-      Ice
-      Make to illusion
-      Razdavit
-      Magagasitel
-      Magazakuporivatel
-      Obolochka
-      Gravitation
-      Antimagic
-		Telekinesis
-      Levitation
-      Shupaltsa
-      Field
-      Vector
-		Teleport
-      Hyperspace
-      Time
-      Space zip
-      Space change
-      Space cut
-      Space connection
-      Superspeed
-      Apparation
-      Photon
-      Body select
-      Nonmaterial
-      Disintegration and assembling
-      Obmen
-      Twilight
-      Vector
-    Portal
-    Tech
-    Invincible
-      Undead/Robot
-      Bio
-      Soul in body
-      Regen
-      Filactery
-      Reincarnation
-      Meta
-      Soul/Mental copy
-      Soul in world
-      Mye
-    Regen
-      Bio
-      Stvolovie kletki
-      Konechnosti
-      From pieces
-      From kletok
-      From chastits
-      By Soul
-      From universe
-    darkness
-    Light
-    Chaos
-    Necro
-    Curses
-    Blagosloveniya
-    Apostol
-    Koldun
-    Hooly
-    Death
-    Love
-    Vampire
-    Demonic
-    Summon
-    Spirit
-    Shaman Loa
-    Music
-    Bitovaya
-    Mirror
-    Blood
-    Element
-      Fire
-      Water
-      Dirt
-      Ice
-      Air
-      Electro
-      Blood
-      Mirror
-      Shadow
-      Chaos
-    Meteo
-      Weather
-      Klimat
-      Kataklism
-    Battle
-    Protect
-    Artefact
-    Holem
-    Automate
-    Eliksir
-      Potion
-      Putting
-    Alchemy
-      Astral
-      Physical
-      Full
-    Transformation
-      Form
-      Figure
-      Material
-      Structure
-    Volt
-      Vudu
-      Volt
-    Estestvennaya
-    Mental
-      Protect
-      Battle
-      Work
-      Control
-      Pronicnoveniye
-      Self
-      Other
-      Create
-      Remove
-      Connect
-      Soedineniye
-      Pamyat
-    Duha
-    Videniye
-      Past
-      Present
-      Future
-    Runic
-    Ritual
-    Name
-    Animagic
-      Talk
-    Metamorph
-      Totem
-      Changing
-      Turning
-      Chastichniy
-    Bestia
-    Flora
-    Yoga
-    Biomagic
-    Health
-    Live
-    Tree
-    Metal
-    Son
-      Creating
-      Entering
+		Universal
+			Word		= Verbomagic	Leximancy
+			Number	= Numeromagic	Arifmancy
+			Gesture = Motusmagic	Cheiromoniamancy
+		SpaceAndTime
+			Time		= Tempomagic	Horomancy
+				Tempoflucation
+				Back
+				Petlya
+				Stop
+				Prerivanye
+				Vicherkivanye
+				Jump
+			Space 	= Spacomagic	Hronomancy
+		Element
+			Fire		= Ignismagic	Pyromancy
+			Water		= Aquamagic	Hydromancy
+			Dirt		= Terramagic	Geomancy
+			Air			= Caelimagic	Aeromancy
+			Ice 		= Frigusmagic	Cryomancy
+			Electrizity	= Electromagic	Ilectrikosmancy
+		Misc
+			Illusion=
+				Optic
+				Holo
+				Genjutsu
+				Emo
+				Mental
+				Material
+				Dimension
+				Reality
+			Materialization
+				Creating
+				Removing
+			Doppel
+				Material
+				Plotniye
+				Magical
+				Full
+				Energed
+				Illusor
+			Flying
+				Walking
+				Planing
+				Levitation
+				Teleport
+				Wings
+				Reactive
+				Gravity
+				Archimeds law
+				Magic
+				Vector
+			Invisible
+				Illusion
+				Delumionation
+				Space
+				Sokritiye
+			Otvod glaz
+				Standard
+				Other think
+				All ok
+				this is not matter
+				Slepoye pyatno
+				Zabinaniye
+			Otedeleniye
+				Emotional
+				Bakullumist
+			Versusmagic
+				Razveivaniye
+				Finita
+				Time
+				Space
+				Mirror
+				Vector
+				Shield
+				Prisvoyeniye
+				Razrusheniye
+				Unenerging
+				Eating
+				Nonmaterial
+				Otoyti
+				zapechativaniye
+				kletka
+				stop
+				neutalizing
+				material
+				teleport
+				turning
+				Razrivaniye
+				Deactivation
+				Kontrspell
+				Antimagic
+				Resist
+				Impossible
+				Derealising
+				Razvoplosheniye
+				Fire
+				Ice
+				Make to illusion
+				Razdavit
+				Magagasitel
+				Magazakuporivatel
+				Obolochka
+				Gravitation
+				Antimagic
+			Telekinesis
+				Levitation
+				Shupaltsa
+				Field
+				Vector
+			Teleport
+				Hyperspace
+				Time
+				Space zip
+				Space change
+				Space cut
+				Space connection
+				Superspeed
+				Apparation
+				Photon
+				Body select
+				Nonmaterial
+				Disintegration and assembling
+				Obmen
+				Twilight
+				Vector
+			Portal
+			Tech
+			Invincible
+				Undead/Robot
+				Bio
+				Soul in body
+				Regen
+				Filactery
+				Reincarnation
+				Meta
+				Soul/Mental copy
+				Soul in world
+				Mye
+			Regen
+				Bio
+				Stvolovie kletki
+				Konechnosti
+				From pieces
+				From kletok
+				From chastits
+				By Soul
+				From universe
+			darkness
+			Light
+			Chaos
+			Necro
+			Curses
+			Blagosloveniya
+			Apostol
+			Koldun
+			Hooly
+			Death
+			Love
+			Vampire
+			Demonic
+			Summon
+			Spirit
+			Shaman Loa
+			Music
+			Bitovaya
+			Mirror
+			Blood
+			Element
+				Fire
+				Water
+				Dirt
+				Ice
+				Air
+				Electro
+				Blood
+				Mirror
+				Shadow
+				Chaos
+			Meteo
+				Weather
+				Klimat
+				Kataklism
+			Battle
+			Protect
+			Artefact
+			Holem
+			Automate
+			Eliksir
+				Potion
+				Putting
+			Alchemy
+				Astral
+				Physical
+				Full
+			Transformation
+				Form
+				Figure
+				Material
+				Structure
+			Volt
+				Vudu
+				Volt
+			Estestvennaya
+			Mental
+				Protect
+				Battle
+				Work
+				Control
+				Pronicnoveniye
+				Self
+				Other
+				Create
+				Remove
+				Connect
+				Soedineniye
+				Pamyat
+			Duha
+			Videniye
+				Past
+				Present
+				Future
+			Runic
+			Ritual
+			Name
+			Animagic
+				Talk
+			Metamorph
+				Totem
+				Changing
+				Turning
+				Chastichniy
+			Bestia
+			Flora
+			Yoga
+			Biomagic
+			Health
+			Live
+			Tree
+			Metal
+			Son
+				Creating
+				Entering
 Hellsing ultimate
-  Race
-    Human
-  Feature
-    Vampire
+	Race
+		Human
+	Feature
+		Vampire
 Rudazov
-  Race
-    Human
-    Elv(2)
-    Sid
-    Dev
-    Devkatsi
-    Eist
-    Titan
-    Jeen
-    Kiig
+	Race
+		Human
+		Elv(2)
+		Sid
+		Dev
+		Devkatsi
+		Eist
+		Titan
+		Jeen
+		Kiig
 	Ability
 		Magic
 		Mentaty
@@ -332,31 +332,31 @@ Rudazov
 		Sumer
 		Kiig
 		Parifat
-  Spell
-    Clone of Chaos
-    Sphere of zhazhda
-    Dlani
-      Inanna
-      Shamash
-      Marduk
-      Ea
-      Anu
-      Nergal
-    GrayEarth
-      TUman smerti
-      Grohot hashibi
-      Molniya
-      Full zero
-      Fifth spell
-    Protection
-      Absolute
-      Universal
-      Lichnaya
-    Mirror Shield
+	Spell
+		Clone of Chaos
+		Sphere of zhazhda
+		Dlani
+			Inanna
+			Shamash
+			Marduk
+			Ea
+			Anu
+			Nergal
+		GrayEarth
+			TUman smerti
+			Grohot hashibi
+			Molniya
+			Full zero
+			Fifth spell
+		Protection
+			Absolute
+			Universal
+			Lichnaya
+		Mirror Shield
 	Feature
 		Mye
 		God
-    Domovoy
+		Domovoy
 		Demon
 		Angel
 		Invincible
@@ -448,13 +448,13 @@ Rudazov
 		Teporiy
 		Regenerin
 SCP Foundation
-  Race
-    Human
+	Race
+		Human
 	Artefact
 		SCP Objects
 Naruto
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Chakra
 	Energy
@@ -500,8 +500,8 @@ Naruto
 	Creature
 		Bijuu
 Fate
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 	Energy
@@ -512,8 +512,8 @@ Fate
 	Creature
 		Servant
 Claymore
-  Race
-    Human
+	Race
+		Human
 	Energy
 		Yoki
 	Creature
@@ -524,9 +524,9 @@ HPMoR
 		Eye of Vance
 		Left Leg of Vance
 Warcraft
-  Race
-    Human
-    Orc(2)
+	Race
+		Human
+		Orc(2)
 Potteriana
 	Ability
 		Wizarding
@@ -897,7 +897,7 @@ Potteriana
 		Акромантулы
 		Dementor
 		Phoenix
-    Edinorog
+		Edinorog
 		Саламандры
 		Мантикоры
 		Мандрагоры
@@ -918,9 +918,9 @@ Potteriana
 		Ghost
 		Взгляд Василиска
 		Wizard
-      Dark
-      Normal
-      Light
+			Dark
+			Normal
+			Light
 		Muggle
 		Skvib
 		Animorph
@@ -929,8 +929,8 @@ Potteriana
 		Werewolf
 		Vampire
 Witcher
-  Race
-    Human
+	Race
+		Human
 	Creature
 		Кокатриксы
 		Василиски
@@ -938,56 +938,56 @@ Witcher
 	Ability
 		Magic
 Pokemon
-  Race
-    Human
+	Race
+		Human
 	Creature
 		Покемоны
 	Artefact
 		Покеболы
 Ghost Busters
-  Race
-    Human
+	Race
+		Human
 	Tech
 		Ловушки призраков
 	Creature
 		Призраки
 Хранитель Вечности
-  Race
-    Human
+	Race
+		Human
 Рэйв Мастер
-  Race
-    Human
+	Race
+		Human
 Розарио+Вампир
-  Race
-    Human
+	Race
+		Human
 Закон Уэки
-  Race
-    Human
+	Race
+		Human
 Хантер х Хантер
-  Race
-    Human
+	Race
+		Human
 Небо и земля
-  Race
-    Human
+	Race
+		Human
 My hero academy
-  Race
-    Human
+	Race
+		Human
 	Feature
 		Причуда
 Berserk
-  Race
-    Human
+	Race
+		Human
 Toriko
-  Race
-    Human
+	Race
+		Human
 Magic Adacademy
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 High School Demons
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 	Artefact
@@ -1000,8 +1000,8 @@ High School Demons
 		Падший
 		God
 Startrack
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Psyonic
 	Energy
@@ -1009,13 +1009,13 @@ Startrack
 	Feature
 		Psyonic
 Seilor Moon
-  Race
-    Human
+	Race
+		Human
 	Unique
 		Moon Diadema
 Dragonball
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Ki
 	Energy
@@ -1048,12 +1048,12 @@ The Lord of the Rings
 	Material
 		Mithrill
 Nick
-  Race
-    Human
-    Elv
-    Gnome
-    Orc(0)
-    Demon(0)
+	Race
+		Human
+		Elv
+		Gnome
+		Orc(0)
+		Demon(0)
 	Ability
 		Magic
 		Infomagic
@@ -1077,8 +1077,8 @@ Nick
 	Feature
 		Одаренность
 Star Wars
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Force
 	Energy
@@ -1093,8 +1093,8 @@ Star Wars
 	Tech
 		Галактические
 Warhammer
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Псайкерство
 	Energy
@@ -1131,13 +1131,13 @@ Zero no Tsukaima
 		Elv
 		Changeling
 		Духи
-  Creature
+	Creature
 		Виверны
 		Саламандры
 		Бехолдеры
 To Aru Majutsu no Index
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 		Esper
@@ -1158,8 +1158,8 @@ To Aru Majutsu no Index
 		Mage
 		Imagine Breaker
 Bleach
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Reatsu
 		Меч Души
@@ -1170,13 +1170,13 @@ Bleach
 		Квинки
 		Шинигами
 One Piece
-  Race
-    Human
+	Race
+		Human
 	Feature
 		Фрукты
 Mass Effect
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Biotic
 	Energy
@@ -1184,8 +1184,8 @@ Mass Effect
 	Feature
 		Biotic
 Terminator
-  Race
-    Human
+	Race
+		Human
 	Tech
 		Skynet's
 		AI
@@ -1197,37 +1197,37 @@ Terminator
 		Time-Machine
 		Cyborg
 Resident Evil
-  Race
-    Human
+	Race
+		Human
 	Creature
 		Вирусные Зомби
 	Feature
 		Сверхспособности?
 Noragami
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Меч-Душа
-  Feature
-    God
-    Ghost
+	Feature
+		God
+		Ghost
 Рубаки
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 	Energy
 		Magical?
 Fairy Tale
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 	Energy
 		Magical?
 DC
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 	Energy
@@ -1240,27 +1240,27 @@ DC
 		Люторские
 		Криптонские
 Avatar
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Magic
 	Energy
 		Mana
 	Direction
-		Fire  = Fire
+		Fire	= Fire
 		Water = Water
-		Dirt  = Dirt
-		Air   = Air
+		Dirt	= Dirt
+		Air	 = Air
 	Feature
 		Mage
-      Fire
-      Water
-      Dirt
-      Air
+			Fire
+			Water
+			Dirt
+			Air
 		Avatar
 Fullmetal Alchemist
-  Race
-    Human
+	Race
+		Human
 	Ability
 		Alchemy
 	Feature
@@ -1268,24 +1268,24 @@ Fullmetal Alchemist
 	Energy
 		Алхимическая?
 Dozor
-  Race
-    Human
+	Race
+		Human
 	Feature
 		Other
-      Dark
-      Light
+			Dark
+			Light
 		Vampire
 		Werewolf
 		Changeling
 	Dimension
 		World
 		Twilight
-      1
-      2
-      3
+			1
+			2
+			3
 Code Geass
-  Race
-    Human
+	Race
+		Human
 	Feature
 		Geass
 		Code Geass
