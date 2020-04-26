@@ -1,10 +1,10 @@
-//--- Name: EniVerses/Vesion: 0.1.3a/Authors: AlexanderDV/Description: Main EniVerses script. ---
+//--- Name: EniVerses/Vesion: 0.1.4a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
 //--- Start of standard initialization
 //Program info
 var programInfo={
 	"packet" : "eniVerses",
 	"name" : "EniVerses",
-	"version" : "0.1.3a",
+	"version" : "0.1.4a",
 	"authors" : "AlexanderDV"
 }
 programInfo.title= programInfo.name + " v" + programInfo.version + " by " + programInfo.authors
@@ -26,35 +26,9 @@ var getMsg=function(key, lang)
 byUniverses.value=universesConfig
 var tabSym=tabulationSymbol.value="\t"
 tabulationSymbol.oninput=function(){tabSym=tabulationSymbol.value}
-var toJSON=function(text)
-{
-	var json={}
-	var last
-	for(var v in text.split("\n"))
-	{
-		if(!text.split("\n")[v].startsWith(tabSym))
-			json[last=text.split("\n")[v]]=""
-		else if(last)
-			if(!json[last])
-				json[last]=text.split("\n")[v].substr(1)
-			else json[last]+="\n"+text.split("\n")[v].substr(1)
-	}
-	for(var v in json)
-		if(json[v].split("\n").length>1)
-		{
-			json[v]=toJSON(json[v])
-		}
-		else
-		{
-			var vv=json[v]
-			json[v]={}
-			json[v][vv]={}
-		}
-	return json
-}
 var onChange=function()
 {
-	var json=toJSON(byUniverses.value)
+	var json=parsePythonic(byUniverses.value)
 	function ffr(par,cur){
 		var n={}
 		for(var v in par)
@@ -80,7 +54,6 @@ var onChange=function()
 		return r
 	}
 	byUniverses.value=assembleSt(json,"")
-	console.log(json);
 	var newJson={}
 	for(var v in json)
 	{
@@ -122,13 +95,10 @@ var onChange=function()
 							else for(var vvv in na[v2.split("=")[0].replace(/\s+$/g,"")])
 								if(na[v2.split("=")[0].replace(/\s+$/g,"")][vvv].startsWith(v3))
 									na[v2.split("=")[0].replace(/\s+$/g,"")].splice(vvv)
-					//byElements.value+=("\n"+v2.split("=")[0].replace(/\s+$/g,"")).replace("\n","\n"+c)+": "+universes.replace(/\s+/g," ")
-					//if(n[v2][""])
-					//	ff2("",n[v2][""],c+"\t")
 				}
 			for(var v2 in na)
 			{
-				byElements.value+=("\n"+v2.split("=")[0].replace(/\s+$/g,"")).replace("\n","\n"+c)+": "+na[v2].join("; ").replace(/\s+/g," ")
+				byElements.value+=("\n"+(!v2.endsWith("[no")?v2:v2.substr(0,v2.length-"[no".length)).split("=")[0].replace(/\s+$/g,"")).replace("\n","\n"+c)+(!v2.endsWith("[no")?": "+na[v2].join("; ").replace(/\s+/g," "):"")
 				for(var v22 in n)
 					if(v22.split("=")[0].replace(/\s+$/g,"")==v2)
 						if(n[v22][""])
@@ -140,4 +110,3 @@ var onChange=function()
 	byElements.value=byElements.value.substr(1)
 }
 onChange()
-//console.log(toJSON(byUniverses.value))
