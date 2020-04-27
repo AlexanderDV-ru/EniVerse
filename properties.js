@@ -6,7 +6,10 @@ function add(adding){
 }
 add(`My
 	About
-		Author[no	=	Me
+		Author[no
+			Me
+		Language[no
+			Russian
 	Artefact
 		s0[no
 		s1[no
@@ -563,6 +566,9 @@ add(`My
 					Life	=	Arch
 				Light	=	Angel_0`)
 add(`Marvel
+	About
+		Language[no
+			English
 	Multiverse
 		Original
 	Race
@@ -602,26 +608,43 @@ add(`Marvel
 				Reactor
 			Cerebro`)
 add(`Sword Art Online
+	About
+		Language[no
+			Japanese
 	Artefact
 		s4[no
 			Neurohelmet
 			Amusphere`)
 add(`Hellsing ultimate
+	About
+		Language[no
+			Japanese
 	Feature
 		s5[no
 			Vampire
 		s4[no
 			Undead`)
-add(`Dark souls`)
+add(`Dark souls
+	About
+		Language[no
+			English`)
 add(`Devil may cry
+	About
+		Language[no
+			English
 	Person
 		Dante`)
-add(`Bio shock`)
+add(`Bio shock
+	About
+		Language[no
+			English`)
 add(`New horizonts
 	About
-		Author[no	=	Shetel-Sorken
-		Language[no	=	Russian
-		Mark
+		Author[no
+			Shetel-Sorken
+		Language[no
+			Russian
+		Mark[no
 			AU
 			Вымышленные существа
 			Дарк
@@ -639,7 +662,7 @@ add(`New horizonts
 			Психические расстройства
 			Фантастика
 			Фэнтези
-		Spoiler
+		Spoiler[no
 			Смерть второстепенных персонажей
 			Смерть основных персонажей
 	Multiverse
@@ -660,13 +683,21 @@ add(`New horizonts
 	Ability
 		s5[no
 			Biokinesis`)
-add(`Voshozhdeniye geroya shita`)
-add(`Men in black`)
+add(`Voshozhdeniye geroya shita
+	About
+		Language[no
+			Japanese`)
+add(`Men in black
+	About
+		Language[no
+			English`)
 add(`Bad choice
 	About
-		Author[no	=	N.B.
-		Language[no	=	Russian
-		Mark
+		Author[no
+			N.B.
+		Language[no
+			Russian
+		Mark[no
 			AU
 			Вымышленные существа
 			Мэри Сью (Марти Стью)
@@ -796,15 +827,32 @@ add(`Bad choice
 			Hapsiel`)
 add(`Orderly
 	About
+		Language
+			Russian
 		Author
 			Nick Perumov`)
-add(`Azimov
+add(`of Azimov
+	About
+		Author[no
+			Azik Azimov
+		Language[no
+			English
 	Dimension
 		Hyper`)
-add(`efremov
+add(`of efremov
+	About
+		Author[no
+			Eferemov
+		Language[no
+			Russian
 	Dimension
 		Hyper	=	zero-space`)
-add(`hainline
+add(`of hainline
+	About
+		Author[no
+			Robert Hainline
+		Language[no
+			English
 	Dimension
 		Hyper	=	Cherenkov drive`)
 add(`Hyperion
@@ -814,9 +862,12 @@ add(`vavilon5
 	Dimension
 		Hyper`)
 add(`Star Gate
+	About
+		Language[no
+			English
 	Dimension
 		Hyper`)
-add(`Rudazov
+add(`of Rudazov
 	Metaverse
 		Original
 			Worldtype
@@ -832,21 +883,23 @@ add(`Rudazov
 			World
 				Rari
 				Quetzol-Iin
-				Eikr\n				Hvitachi\n				Worldtown
-				Lang\n				Kaabar\n				Nine Heavens
-				Hell\n				Our	=	Earth-2006\n				Heaven
-				Golus	\n				Dotembria
-				Pargoron\n				Parifat\n				Salvan
-				Patala	\n				Dovos
-				Jahannam	\n				Kaf	\n				Janna
-				Shemussen	\n				Plonet	\n				N	\n				Labirint	\n				Svarog	\n				Deorg Academy
-				X	\n				Z	\n				A	\n				Y	\n				O	\n				Caves Sheymullin
-				M	\n				K	\n				H	\n				G	\n				F	\n				E	\n				D	\n				C	\n				B	\n				P	\n				Earth-7112
-				Proxima Centaura	\n				Proxima Hell	\n				Proxima Heaven
+				Eikr\n\t\t\t	Hvitachi\n\t\t\t	Worldtown
+				Lang\n\t\t\t	Kaabar\n\t\t\t	Nine Heavens
+				Hell\n\t\t\t	Our	=	Earth-2006\n\t\t\t	Heaven
+				Golus	\n\t\t\t	Dotembria
+				Pargoron\n\t\t\t	Parifat\n\t\t\t	Salvan
+				Patala	\n\t\t\t	Dovos
+				Jahannam	\n\t\t\t	Kaf	\n\t\t\t	Janna
+				Shemussen	\n\t\t\t	Plonet	\n\t\t\t	N	\n\t\t\t	Labirint	\n\t\t\t	Svarog	\n\t\t\t	Deorg Academy
+				X	\n\t\t\t	Z	\n\t\t\t	A	\n\t\t\t	Y	\n\t\t\t	O	\n\t\t\t	Caves Sheymullin
+				M	\n\t\t\t	K	\n\t\t\t	H	\n\t\t\t	G	\n\t\t\t	F	\n\t\t\t	E	\n\t\t\t	D	\n\t\t\t	C	\n\t\t\t	B	\n\t\t\t	P	\n\t\t\t	Earth-7112
+				Proxima Centaura	\n\t\t\t	Proxima Hell	\n\t\t\t	Proxima Heaven
 				World of Yehudin =	Dodekaedr
 	About
-		Author[no	=	Alexander Rudazov
-		Language[no	=	Russian
+		Author[no
+			Alexander Rudazov
+		Language[no
+			Russian
 	Race
 		Human
 		Elv_2
@@ -1116,6 +1169,9 @@ add(`Siyatelniy
 		Metal
 			Coldiron	//Anti mage`)
 add(`SCP Foundation
+	About
+		Language[no
+			English
 	Unique
 		SCP's`)
 add(`Naruto
@@ -1263,7 +1319,10 @@ add(`of Kitsune Miyato
 	Person
 		Harry Potter	=	Uzumaki Naruto
 		Albus Dumbledore	=	Albus Persival Vulfric Brian Potter,Dumbledore`)
-add(`Guren Lagan`)
+add(`Guren Lagan
+	About
+		Language[no
+			Japanese`)
 add(`HPMoR
 	About
 		Author[no
@@ -1306,6 +1365,9 @@ add(`HPMoR
 	Person
 		Harry Potter	=	Harry James Potter-Evans-Verres`)
 add(`Warcraft
+	About
+		Language
+			English
 	Race
 		Human
 		Orc_2`)
@@ -1805,19 +1867,7 @@ add(`Potteriana
 				Totem
 			Parselmouth
 			Werewolf
-			Vampire
-test1
-	test1.1
-		test1.2=Test1.2
-			test1.2.1	=	test1.2.1
-test2
-	test1.1
-		test1.2=Test2.2
-			test1.2.1	=	test2.2.1
-
-
-
-			`)
+			Vampire`)
 add(`Witcher
 	About
 		Author[no
@@ -1852,6 +1902,9 @@ add(`Pokemon
 		s5[no
 			Pokeball`)
 add(`Ghost Busters
+	About
+		Language[no
+			English
 	Artefact
 		s4[no
 			Ghost trap
@@ -2450,7 +2503,7 @@ add(`Fullmetal Alchemist
 		Gate of Truth
 	Energy
 		al	=	Alchemycal?`)
-add(`Dozor
+add(`Dozory
 	About
 		Language[no
 			Russian
