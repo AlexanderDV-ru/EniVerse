@@ -1,10 +1,84 @@
-	//--- Name: EniVerses/Vesion: 0.1.5a/Author[nos: AlexanderDV/Description: Properties EniVerses .js. ---
+	//--- Name: EniVerses/Vesion: 0.1.6a/Authors: AlexanderDV/Description: Properties EniVerses .js. ---
 var universesConfig	=	"",universes=[],tab="\t"
 function add(adding){
 	universesConfig+=adding.replace(/\t/g,tab)+"\n"
 	universes.push(adding.split("\n")[0])
 }
 add(`HP and future know
+	What can use
+		временные петли
+		анти петлевые чары
+		анти аппарационные чары
+		зелье удачи
+		сыворотка правды
+		оборотное зелье
+		анимаги
+		метаморфомаги
+		Магловское оружие
+		компьютеры
+		телефоны
+		полет на спрятанных метлах
+		легилименция
+		окклюменция
+		обливиэйт
+		ложная память
+		омут памяти
+		теневые копии
+		гибель воров
+		граната по почте
+		трансфигурация замороженного яда/кислоты в воду
+		трансфигурация большого в маленькое
+		импервиус
+		империо
+		игры на цене золота
+		аппарация
+		передача сообщений сквозными зеркалами/патронуса и и другим
+		трансфигурация антивещества
+		Трансфигурацию ядерной бомбы
+		трансфигурация радиоактивных веществ
+		книзл
+		части тела, например кости, для магии - метлы, палочки
+		невербальное заклинание и фраза, например псевдо авада
+		напиток живой смерти
+		невербальная магия
+		Безжестовая магия
+		Беспалочковая магия
+		домовые эльфы
+		круциатус
+		Авада кедавра
+		анти сыворотка правды
+		трансфигурация
+		невидимость
+		неслышимость
+		протеевы чары
+		исчезательный шкаф
+		магловский яды
+		магловское наркотики
+		непреложный обет
+		философский камень постоянства
+		мантия невидимка
+		змеиный язык
+		бузинная палочка
+		воскрешающий камень
+		карта мародеров
+		меч гриффиндора
+		тайная комната
+		яд василиска
+		проклятое пламя
+		выручай комната
+	Artefact
+		Хроноворот// (6 часов интервалов)	Rare	Rare	мин ~50 Макс ~10000	Закольцовывает время, перемещая назад	Хроно-Артефакты: Хроноворот	?	Министерство магии Британии: отдел тайн, другие министерства магии, нелегалы
+		Меч Гриффиндора//	Epic	Epic	Уникальный (1)	Зачарован на лёгкость, Сам себя заколет, режет магией	Оружие: Холодно-Магическое	Годрик Гриффиндор & Гоблины	-
+		Диадема Когтевран//	Unusual	Unusual	Уникальный (1)	Стимулирует мозговую деятельность, приводит сознание к ясности	Ментальные: Стимулятор	Ровенна Когтевран &?	-
+		Медальон Слизерина//	?	?	Уникальный (1)	?		Салазар Слизерин &?	-
+		Чаша Хаффлпафф//	?		Уникальный (1)	?		Хельга Хаффлпафф &?	-
+		Мантия-Невидимка Игнотуса Певерела//	Epic	Legendary	Уникальный (1)	Делает вас совершенно невидимым, вас нельзя обнаружить напрямую, для хозяина мантия прозрачна, если вы уже дали магическое согласие на обнаружение вас можно будет найти, но не увидеть, вас можно видеть изнутри мантии	Мантия-Невидимка, Прячущие, Дар Смерти	Игнотус Певерел & Другие Певерелы? &?	-
+		Бузинная Палочка Певерела//	Epic	Legendary	Уникальный (1)	Самая совершенная палочка, может подходить любому магу, ищет себе наиболее сильного хозяина, подчиняется победившему магу	Трансформаторы Магии: Волшебные Палочки, Дар Смерти	Игнотус Певерел & Другие Певерелы? &?	-
+		Воскрешающий Камень Кадма Певерела//	Epic	Legendary	Уникальный (1)	Создаёт псевдоматериальные тело и разум человека с помощью информации магического ядра, сознания и некромантической информации	Информационные, Некромантические: Информационные, Псевдо-Материализационные, Дар Смерти	Кадм Певерел & Другие Певерелы? &?	-
+		Глаз Венока//	Legendary	Legendary	Уникальный (2)	Сканирует пространство на 360° во все стороны, показывает обладатели образ, позволяет смотреть сквозь вещи, показывает магию	Информационные: Сканирующие, Вещь Венока	Венок?	-
+		Карта Мародеров//	Unusual	Unusual	Уникальный (1)	Карта Хогвартса и окрестностей с подписью имен Родовой магии в тех местах, где находится разумное существо в любой форме	Инфлрмационные: Картографические, Родовая Магия: Удаленная Идентификация	Мародеры (Джеймс Поттер? & Сириус Блэк? & Римус Люпин? & Питер Петтигрю?)	-
+		Филовский Камень (Материализатор)//	Legendary	Divine	Уникальный (мин 1)	Преобразует созданное магией в реальную материю		Николас Фламмель?
+		Зеркало Еиналеж//	Epic	Divine	Уникальный	Создаёт портал в кусок мира, в котором находится единственный отражающийся в зеркале, в том виде, в котором он видит исполнение своих самых глубоких желаний. Портал находится внутри зеркала, в него нельзя просто пройти из-за защиты. Неизстно способа уничтожения зеркала. Зеркало может открывать портал в часть куска мира, при определенных условиях этого куска мира и при этом в этой части куска мира будет находиться заранее вложенные вещи	Информационные, Ментальные: Обходные, Пространственные: Портальные, Пространственные: Измеренческие, Неразрушимые	?	-
 	Artefact levels
 		0	=	Unmagic		//	Немагический
 		A	=	Mediocre	//	Заурядный
@@ -31,12 +105,6 @@ add(`HP and future know
 		упокоение
 		магическое ядро (сокр. ядро)
 		мана (магическая энергия) - малоизученный с точки зрения науки вид энергии, поддерживающий магическое ядро и позволяющий использовать магию. плохо изучен из-за того, что: 1. большая часть магии в ее деактивированном виде, который почти ни с чем не взаимодействует 2. статут о секретности не позволяет магам дать учёным возможность изучения активной магии 3. среди магов почти нет ученых
-	Spells
-		Проклятья (Боевые) - летят до противника	Заклинания - действуют моментально или пока удерживаешь, сразу в нужной области	Чары - после наложения действуют, пока не будут сняты или пока не кончится мана	Ритуалы - используют заранее созданные, гораздо более сложные конструкции
-		Локомотор Виббли (красное) - накладывает чары ватноножия		Ватноножие - ноги становятся "ватными"
-		Локомотор Мортис (фиолетовое) - накладывает чары обезноживания		Обезноживание - соединяет ноги и не даёт ими двигать
-		Сомниум (бесцветное) - усыпляет
-		Ступефай (красный) - оглушает
 	Idei
 		волди не совсем злодей, он просто больший "слизиренец", чем салазар, он также боится смерти, как и в книге, поэтому ни за что не остановится, долгая война была ему выгодна, он мог под шумок использовать свои ритулалы.
 		Гарри учтет ошибку исколечнного ритулами волди и заменит его на этом деле, он не будет использовать ритуалы сам, волди не мог так делать изза своей любви-проблемы. Гарри учтет ошибку волди, так как он имеет память выросшего в магловском мире и знающего новые достижения техники, он соединит силу маглов и силу магов и станет властелином обоих миров
@@ -131,12 +199,46 @@ add(`HP and future know
 		Воскрешающий Камень
 		проклятое пламя
 	`)
-add(`My
+add(`Myverse
 	About
 		Author[no
 			Me
 		Language[no
 			Russian
+	Reality
+		Virtuality
+			Zero
+				0.01-0.99	=	Info
+		Potentiality
+			Wild
+				1-2	=	Chaos
+			Quiet
+				3	=	Limbo
+		Reality
+			Pre
+				4-5		=	cold ether
+				6-10	=	energy
+				10-15	=	Solid ether
+				15-20	=	Spirits
+				20-25	=	Pseudo Matter
+				25-30	=	Alchemy Matter
+			Normal
+				30-40	=	Matter
+				40-45	=	2 	Shells
+				45-50	=	3	Shells
+				50-55	=	4	Shells
+			Post
+				55-65	=	4-5	Shells
+				65-80	=	5-6	Shells
+				80-90	=	6-7	Shells
+			Super
+				90-95	=	7	Shells
+				95-99	=	Xtonics
+			Higher
+				99	=	First Elements
+		Full
+			Full
+				100	=	Atman
 	Artefact
 		s0[no
 		s1[no
@@ -147,6 +249,20 @@ add(`My
 			Wand
 			Rod
 			Staff
+			Grimoire
+		s6[no
+		s7[no
+	Unique
+		s0[no
+		s1[no
+		s2[no
+		s3[no
+		s4[no
+		s5[no
+			Wand
+			Rod
+			Staff
+			Grimoire
 		s6[no
 		s7[no
 	Without//Entity without shell, how names
@@ -157,7 +273,8 @@ add(`My
 		+2	=	Unentity
 		+3	=	Unperson
 		+4	=	Unmind
-		+5	=	Unmage	//not equal to muggle, nomage
+		+5	=	Unmage
+		//not equal to muggle, nomage
 		+6	=	Unimmortal, Mortal
 		+7	=	Ungod
 	Shell
@@ -199,39 +316,48 @@ add(`My
 			pr	=	Pride of Gold?
 			pf	=	Pathos of Gray?
 	Level
-		0.0	=	Nomage		//	G	Not	Demon
+		0.0	=	Nomage
+		//	G	Not	Demon
 		0.3	=	...
 		0.5	=	...
 		0.7	=	...
-		1.0	=	Weak			//	F	Lower	Demon
+		1.0	=	Weak
+		//	F	Lower	Demon
 		1.3	=	...
 		1.5	=	...
 		1.7	=	...
-		2.0	=	Simple		//	E	Low	Demon
+		2.0	=	Simple
+		//	E	Low	Demon
 		2.3	=	...
 		2.5	=	...
 		2.7	=	...
-		3.0	=	Normal		//	D	Medium	Demon
+		3.0	=	Normal
+		//	D	Medium	Demon
 		3.3	=	...
 		3.5	=	...
 		3.7	=	...
-		4.0	=	High			//	C	High	Demon
+		4.0	=	High
+		//	C	High	Demon
 		4.3	=	...
 		4.5	=	...
 		4.7	=	...
-		5.0	=	Higher		//	B	Higher	Demon
+		5.0	=	Higher
+		//	B	Higher	Demon
 		5.3	=	...
 		5.5	=	...
 		5.7	=	...
-		6.0	=	Arch			//	A	Arch	demon
+		6.0	=	Arch
+		//	A	Arch	demon
 		6.3	=	...
 		6.5	=	...
 		6.7	=	...
-		7.0	=	God				//	S	God	Demon
+		7.0	=	God
+		//	S	God	Demon
 		7.3	=	...
 		7.5	=	...
 		7.7	=	...
-		8.0	=	Demiurg				//	X	Demiurg
+		8.0	=	Demiurg
+		//	X	Demiurg
 		8.3	=	...
 		8.5	=	...
 		8.7	=	...
@@ -279,6 +405,7 @@ add(`My
 			Technique
 			Fuin
 			Seal
+			Mudra
 		//Type of ability using
 		Type[no
 			Straight
@@ -362,14 +489,20 @@ add(`My
 				Mirror
 				Shadow
 				Picture
+				Void
+				Ethervoid
 				//
 				Desecration
+				Grace
 				Desintegration
 				Unemboding
 				Spirit
 				Thirst
 			Emotion
 				Pain
+				Love
+				Hate
+				Sad
 			Material
 			Other
 				Tech
@@ -395,7 +528,18 @@ add(`My
 					Bubble
 		Misc[no
 			Name
-			Physical//Technomage of Rudazov
+			Physical
+			//Technomage of Rudazov
+			Warlock
+			Apostol
+			Hooly
+			Love
+			Music
+			Domestic
+			Meteo
+				Weather
+				Klimat
+				Kataklism
 			Volt
 				Voodoo
 				Volt
@@ -425,30 +569,63 @@ add(`My
 				Turning
 				Partial
 			Yoga
-			Health
 		Creature[no
 			Demon
+				Control
+				Anti
 			Immortal
+				Control
+				Anti
 			Angel_0
+				Control
+				Anti
 			Undead
+				Control
+				Anti
 			God_1
+				Control
+				Anti
 			Ghost
+				Control
+				Anti
 			Loa
+				Control
+				Anti
 			Vampire
+				Control
+				Anti
 			Holem
+				Control
+				Anti
 			Automate
+				Control
+				Anti
 			Marionette
+				Control
+				Anti
 			Animal
 				Talk
 				Control
+				Anti
+				Familiar
 			Bestia
+				Control
+				Anti
 			Flora
+				Control
+				Anti
 			Chimera
+				Control
+				Anti
 				Create
 			Phantom
+				Control
+				Anti
 				Create
 				Enter
 			Doppel
+				Control
+				Anti
 				Material
 				Plotniye
 				Magical
@@ -456,6 +633,9 @@ add(`My
 				Energed
 				Illusor
 		Action[no
+			Vampire
+			Absorption
+			Heal
 			Sealing
 			Illusion
 				Optic
@@ -576,22 +756,16 @@ add(`My
 				From universe
 			Curse
 			Vow
-			Blessing
-			//
-			Warlock
-			Apostol
-			//
-			Hooly
-			Love
+			Bless
 			Summon
-			Music
-			Domestic
-			Meteo
-				Weather
-				Klimat
-				Kataklism
-			Battle
+			Atack
 			Protection
+			Transformation
+				Form
+				Figure
+				Material
+				Structure
+		Object[no
 			Artefact
 			Elixir
 				Potion
@@ -600,15 +774,24 @@ add(`My
 				Astral
 				Physical
 				Full
-			Transformation
-				Form
-				Figure
-				Material
-				Structure
 	Metaverse
 		Rudazov
 		...All
 		Original
+			World Type
+				Element
+					Basic
+						Fire
+						Water
+						Air
+						Earth
+						Electrizity
+						Ice
+					First
+						Dark
+						Light
+					Misc
+						Void
 			Structure
 				Multiverse
 					Multispace
@@ -637,6 +820,70 @@ add(`My
 					Multitime
 				Chaos
 				Limbo
+	Abilities
+		разное
+			ультимативки
+			телепортация
+			темпофлюкация
+			дезилюминация
+			переход в эфирное состояниие
+			переход по четвертому измерению
+			другие операции с четвертым измерением
+			эфирное изменение размеров/формы
+			эфирные ускоренные перемещения
+			фильтрация запахов и других частиц в воздухе
+			сокрытие магии
+			темные и хаос атаки
+			порталы
+			манипуляции пространства
+			иллюзии
+			иллюзорная и псевдоматерия
+			магия развма
+			ясновидение и телепатия
+			манипуляции реальностью
+			сокрытие магии
+			сокрытие ауры
+			фальшивая аура
+			работа с ноосферой
+			ускоренные/замедленные ВП
+			изпользование химического
+			использование биологического
+			использование радиации
+			использование порталов в опасные места
+			звукогаситель
+			универсальная защита
+			личная защита
+			иллюзия потери магии
+			брокировка магических узлов
+			работа с душами
+			демонология
+			артефакты
+			антимагия
+			использование магии существа против него самого
+			аутоиммунные атаки (в т.ч. на магию и разум и прочее)
+			использование големов
+			использование элементалей
+			анимагия
+			метаморфомагия
+			использование демонов
+			использование небожителей
+			духовная сила
+			джинны
+			использование биотварей (кадавров?)
+			векторная защита
+			хилинг
+			ускорение сознания
+			доппели
+			длани
+			телекинез
+			атака по пране
+			хладное железо
+			кровавое железо и святые вещи
+			демонические вещи
+			магия слова
+			скрытие излучения невидимого спектра
+	Ability
+		Fake Spell
 	Dimension
 		Core
 		Hyper
@@ -657,6 +904,18 @@ add(`My
 		Mental
 		Limbo
 		Chaos
+	Spell
+		s0[no
+		s1[no
+		s2[no
+		s3[no
+		s4[no
+		s5[no
+			Element<Myverse.Direction.Element
+			l5
+				Element<Myverse.Direction.Element
+		s6[no
+		s7[no
 	Feature
 		s4[no
 			Poltergeist
@@ -839,16 +1098,26 @@ add(`Bad choice
 			Юмор
 	Metaverse
 		Original
-			Worldtype
-				Fire
-				Water
-				Air
-				Earth
-				Electrizity
-				Ice
-				Dark
-				Light
-				Void
+			World
+				Leer
+				Sixth Department
+				Magical Rus
+				Kostyan
+				Unknown Crap
+			World Type
+				Element
+					Basic
+						Fire
+						Water
+						Air
+						Earth
+						Electrizity
+						Ice
+					First
+						Dark
+						Light
+					Misc
+						Void
 		Voshozhdeniye geroya shita
 		Naruto
 		Toriko
@@ -892,12 +1161,41 @@ add(`Bad choice
 		+7	=	Ba-Hion
 		+1+2	=	Ki+Reatsu
 		+3+5	=	Emana+Mana
+	Elixir
+		Hooch
+			Energy
+			Element
+				Basic
+					Fire
+					Water
+					Earth
+					Air
+					Electrizity
+					Ice
+				First
+					Dark
+					Light
+					Death
+					Life
+					Chaos
+				Emotion
+					Love
+					Hate
+					Sad
 	Spell
-		l5	=	Higher circle
-			Fire	=	Armageddon
-			Water	=	Taifun
-			Air	=	Tornado?
-			Earth	=	?
+		s5[no
+			l5
+				:Name	=	Higher circle
+				Element
+					Basic
+						Fire
+							Uncontrolled	=	Armageddon
+						Water
+							Uncontrolled	=	Taifun
+						Air
+							Uncontrolled	=	Tornado?
+						Earth
+							Uncontrolled	=	?
 	User
 		s5[no
 			e1	=	Kiuser
@@ -994,19 +1292,32 @@ add(`Star Gate
 			English
 	Dimension
 		Hyper`)
+add(`Vlast magii/Put naverh?
+	Spell
+		s5[no
+			l5
+				:Name	=	GodHands
+				Element
+					Add
+						Plasma
+							Uncontrolled	=	Hors`)
 add(`of Rudazov
 	Metaverse
 		Original
-			Worldtype
-				Fire
-				Water
-				Air
-				Earth
-				Electrizity
-				Ice
-				Dark
-				Light
-				Void
+			World Type
+				Element
+					Basic
+						Fire
+						Water
+						Air
+						Earth
+						Electrizity
+						Ice
+					First
+						Dark
+						Light
+					Misc
+						Void
 			World
 				Rari
 				Quetzol-Iin
@@ -1059,7 +1370,7 @@ add(`of Rudazov
 		s4[no
 			e0+e2	=	Spiritual Weapon
 	Level
-			//Sumer
+		:School	=	Sumer
 		0.0	=	Nomage
 		1.0	=	Student
 		2.0	=	Apprentice
@@ -1067,7 +1378,8 @@ add(`of Rudazov
 		4.0	=	Pastmaster
 		5.0	=	Archmage
 		6.0	=	Higher
-			//Gray land
+	Level
+		:School	=	Gray land
 		0.0	=	Grechka
 		1.0	=	Student
 		1.5	=	Purple
@@ -1079,51 +1391,59 @@ add(`of Rudazov
 		4.5	=	Red
 		5.0	=	Gray
 	School
-		Gray land
+		Grayland
 		Sumer
 		Kiig
 		Mysteria
 		Lka-Nandasi
 		Deorg Academy
 	Spell
-		//Gray Land
-		Protection
-			Mirror	=	Mirror Shield
-		Atack
-			Clone of Chaos
-		Sphere of Thirst
-		l5	=	Spells A+
-			Desecration =	Fog of Death
-			Lightning	=	Lightning of the Gods
-			Earth	=	Rumble of Hashiba
-			Void	=	Total Zero
-			Ethervoid	=	Fifth spell
-		//Sumer
-		Protection
-			Absolute
-			Universal
-			Personal
-		l5	=	GodHands
-			Health	=	Inanna
-			//Clear and health place Needs: soul of light
-			Fire	=	Shamash
-			//Needs: result is neuromagic overwork
-			Antidemon	=	Marduk
-			//Incarcered archdemon, higher mortal demonolog
-			Getmye	=	Ea
-			//Drop of ihor
-			Teleport	=	Anu
-			//Exhange of two places Needs: magical line around place, hited teeth of user
-			Undeadmake	=	Nergal
-			//3 masters nectromancers
-			Air	=	Adad
-			//Controlled klimat Needs: salt mud lake
-			Earth	=	Enlil
-			//Controlled earth
-			Protect	=	Tammuz
-			//Needs: egg of Phoenix
-		//Kiig
-		Antimagic-tatoo
+		s5[no
+			Action
+				Protection
+					Mirror	=	Mirror Shield
+					Absolute	=	Sumer.
+					Universal	=	Sumer.
+					Personal	=	Sumer.
+				Atack
+					Clone of Chaos	=	Grayland.
+			Misc
+				Sphere of Thirst	=	Grayland.
+				Antimagic-tatoo	=	Kiig.
+			l5
+				:Name	=	Grayland.Spells A+,Sumer.GodHands
+				Element
+					Misc
+						Grace
+							Uncontrolled	=	Sumer.Inanna	//Clear and health place Needs: soul of light
+						Desecration
+							Halfcontrolled	=	Grayland.Fog of Death	//Desecration fog
+						Void
+							Uncontrolled	=	Grayland.Total Zero	//Desintegration of all matter
+						Ethervoid
+							Halfcontrolled	=	Grayland.Fifth spell	//Full eating of all ether (mana, prana, ...)
+					Basic
+						Fire
+							Uncontrolled	=	Sumer.Shamash	//Needs: result is neuromagic overwork
+						Air
+							Controlled		=	Sumer.Adad	//Controlled klimat Needs: salt mud lake
+						Electrizity
+							Uncontrolled	=	Grayland.Lightning of the Gods	//Insane Lightning
+						Earth
+							Controlled		=	Sumer.Enlil	//Controlled earth
+							Uncontrolled	=	Grayland.Rumble of Hashiba	//Earthquake
+					Other
+						Space
+							Controlled		=	Sumer.Anu		//Exhange of two places Needs: magical line around place, hited teeth of user
+					Misc
+						Getmye		=	Sumer.Ea		//Needs: Drop of ihor
+				Creature[no
+					Demon
+						Anti	=	Sumer.Marduk	//Needs: Incarcered archdemon, higher mortal demonolog
+					Undead
+						Create	=	Sumer.Nergal	//Needs: 3 masters nectromancers
+				Action[no
+					Protection	=	Sumer.Tammuz	//Needs: egg of Phoenix
 	Dimension
 		Chaos	=	non-embodied
 		Limbo	=	gray world
@@ -1209,18 +1529,20 @@ add(`of Rudazov
 			Plonet's Tech
 	Direction
 		Element
-			Fire	=	Pyromancy
-			Water	=	Hydromancy
-			Earth	=	Geomancy
-			Air	=	Airomancy
-			Ice	=	Cryomancy
-			Electrizity	=	Electromancy
-			//
-			Space
-			Time
-			Shadow
-			Blood
-			Mirror
+			Basic
+				Fire	=	Pyromancy
+				Water	=	Hydromancy
+				Earth	=	Geomancy
+				Air	=	Airomancy
+				Ice	=	Cryomancy
+				Electrizity	=	Electromancy
+			Other
+				Space
+				Time
+			Misc
+				Shadow
+				Blood
+				Mirror
 		Language[no
 			Word
 			Rune
@@ -1234,7 +1556,7 @@ add(`of Rudazov
 		Object[no
 			Magic of Ghost
 			Alchemy
-			Elexir
+			Elixir
 				Potion
 				...
 			Artefact
@@ -1242,35 +1564,62 @@ add(`of Rudazov
 			Automate
 			Doppel
 			Holem
+			Phantom
+			Demon
+			Immortal
+			Animal
+			Angel_0
+			God
 			Bestia
 			Flora
 			Vampire
+			Loa
+			Ghost
+			Chimera
 		Action[no
 			Vampire
+			Absorption
 			Curse
 			Transformation
 				Material
 				Figure
 				Form
 				Structure
-			Metamorph
-				Turning
-				Changing
-				Totem	=	Felgi
-				Partial
 			Blessing
 			Vow
-			Mental
-			Clairvoyance
-				True prophecy
 			Summon
-			Absorption
 			Sensor
 			Illusion
 			Flying
 			Telekinesis
 			Teleport
 			Enchantment
+		Misc[no
+			Name
+			Physical	=	Technomagic
+			Warlock
+			Apostol
+			Hooly
+			Love
+			Music
+			Domestic
+			Soul
+			Meteo
+				Weather
+				Klimat
+				Kataklism
+			Volt
+				Voodoo
+				Volt
+			Estestvennaya
+			Metamorph
+				Turning
+				Changing
+				Totem	=	Felgi
+				Partial
+			Clairvoyance
+				True prophecy
+			Mental
 	Material
 		Metal
 			Adamant		//Anti superreal
@@ -1360,32 +1709,40 @@ add(`Naruto
 				Tree
 	Direction
 		Element
-			Fire
-			Water
-			Earth
-			Air
-			Electrizity
+			Basic
+				Fire	=	Katon
+				Water	=	Suiton
+				Earth	=	Doton
+				Air		=	Fuuton
+				Electrizity	=	Raiton
+			Misc
+				In	=	Inton
+				Yan	=	Yanton
+				Inyan	=	Inyanton
 		Language[no
 			Technique
 			Fuin
+			Mudra
 		Creature[no
-			Doppel
+			Doppel	=	Kage Bunshin
 		Object[no
 			Marionette
 			Artefact
 		Action[no
 			Summon
-			Sensor
+			Sensor	=	Kanchi
 			Absorption
 			Displacement
-			Arms
-			Steel arms
+			Arms	=	Tai
+			Steel arms	=	Ken
 			Flying
 			Sealing in
 			Illusion
-				Genjutsu
+				Genjutsu	=	Gen
 	Spell
-		Telescope
+		s5[no
+			Misc
+				Telescope
 	Unique
 		s5[no
 			Swords of Fog`)
@@ -1405,7 +1762,10 @@ add(`Fate
 		s6[no
 			Servant
 	Spell
-		Blood Citadel?`)
+		s5[no
+			Action
+				Vampire
+					Blood Citadel?`)
 add(`Claymore
 	About
 		Language[no
@@ -1474,16 +1834,26 @@ add(`HPMoR
 		s6[no
 			Time-Turner	=	6 hours max, with many turners too
 	Spell
-		Anti-Time-Turner
-		Anti-Transgrassion
-		Momental Sleep	=	"somnium-"	//Sleep, weak battle magic
-		"mahasu"	//Sumer simple hit
-		"lagan"	//Shield breaker
-		"defendo"	//Weak shield
-		"prizmatis"	//Prizmatic shield
-		"stupofy"	//AutoAim stupefy
-		"luminos"	//Lumination hex
-		Ritual Blood Citadel?
+		s5[no
+			Action
+				Atack
+					"stupofy"	//AutoAim stupefy
+					"luminos"	//Lumination hex
+					"lagan"	//Shield breaker
+					"mahasu"	//Sumer simple hit
+					Momental Sleep	=	"somnium-"	//Sleep, weak battle magic
+				Protection
+					"prizmatis"	//Prizmatic shield
+					"defendo"	//Weak shield
+					Anti-Time-Turner
+					Anti-Transgrassion
+				Vampire
+					Ritual Blood Citadel?
+	Ability
+		Patronus 2.0
+		Avadakedavra 2.0
+		Dementor control
+		Partial Transformation
 	Complex
 		27 spells for important topic talk
 			Anti-Time-Turner
@@ -1562,43 +1932,53 @@ add(`Potteriana
 	Ability
 		Wizarding
 		Parseltongue
+		Nonverbal
+		Without wand
+	Material
+		Liquid
+			Basilisk Poison
+			Phoenix Cry
+		Powder
+			Momental Dark Powder
+	Elixir
+		Potion
+			Feliks Feliciss
 	Energy
 		+3+5	=	Wirardy?
 	Direction
 		Object[no
-			Elexir
+			Elixir
 				Potion
 				Putting	//3
 			Alchemy
 		Action[no
-			Transformation
+			Transformation	=	Transfiguration
 				Form
 				Figure
 				Material
 				Structure
 			Summon	//4||1
+			Curse
+			Blessing
+			Vow
+			Enchantment
 		Language[no
 			Rune
 			Spell
 			Ritual
-		Hex
-		Curse
-		Blessing
-		Vow
-		Enchantment
-		Arithmancy
-		Lexomancy	//3
 		Misc
+			Arithmancy
+			Lexomancy	//3
 			Mental
-				Protection	=	occlumency
-				Penetration	=	ligillimency
-			Clairvoyance
+				Protection	=	Occlumency
+				Penetration	=	Legilimency
+			Clairvoyance	=	Divination
 				True prophecy
 			Metamorph
-				Totem
+				Totem	=	Animagic
 		Creature[no
-			Bestia
-			Flora
+			Bestia	=	Magezoology
+			Flora	=	Herbology
 			Holem
 	Unique
 		s5[no
@@ -1637,269 +2017,275 @@ add(`Potteriana
 		s6[no
 			Time-Turner
 	Spell
-		Protection
-		Atack
-			"Alarte askendare" //(1)	 — подбрасывает объекты вверх[6].
-			"Arania exumi" //(1)	 — использовал Гарри для отпугивания акромантулов во втором фильме. Заклинание действует на одного паука[6].
-			"Baubillius"	// — заклинание, которое выпускает из конца волшебной палочки яркую бело-жёлтую молнию[9].
-			"Brahiabindo"	// — связывающее заклинание.[11]
-			"Vaddivasi"	// — заставляет лететь предмет в противника.
-		bitovie
-			Opendoor	=	"aberto-"	// - отпирает дверь.
-		Summon
-			Bird	=	"avis-"	// - Заклятие призыва птиц. Создаёт стайку птиц.
-		Transformation
-			"Vermiculus" //(2)	 — превращает объект в червя[5].
-			"Aviforce-"//(2)	 — противник превращается в птицу/стаю птиц/стаю летучих мышей.[4]
-		Misc
-			"Ascendio" //(1)	 — выталкивает человека из воды[8].
-		Health
-			"Brahiam emendo" //(1)	 — убирает кости. Это заклинание применял Златопуст Локонс, когда Гарри сломал руку во время матча по квиддичу[6].
-		"Verdimilius" //(2)	 — выстреливает зелёными искрами во врага или освещает и делает видимыми и осязаемыми объекты скрытые темной магией. В игре «Гарри Поттер и Тайная комната» позволяет обнаружить невидимые объекты (как Люмос в других версиях игры)[4].
-		"Garmonia necture pasus" //(1)	 — заклинание для активации Исчезательного шкафа. Использовалось Малфоем[13].
-		"Herbivicus" //(2)	 — заклинание роста растений. Выращивает растения и оглушает тепличных врагов[5].
-		«Гибель воров»	// — зачаровывает воду (в частности водопад в подземельях банка «Гринготтс»). Зачарованная вода смывает любые чары (Империус и Конфундус в том числе) и любую магическую маскировку.
-		"Dacliforce" //(2)	 — превращает объект в резиновую утку[5][17].
-		"Dantissimus"	// — заклинание быстрого роста передних зубов[3].
-		заклинание Дезиллюминационное	// — заклинание, делающее объект неотличимым от окружающей среды.
-		"Deletrius"	// — заклинание способно расщеплять или удалять объекты[3].
-		неприметность (3)
-		"Draconiforce" (2)	// — оживляет статую мини-дракончика в настоящего мини-дракончика или превращает в мини-дракончика предметы небольшой массы[15].
-		"Incarciforce" (2)	// — превращает люстру в клетку[9].
-		"Inflatus" (2)	// — заставляет объект надуваться, как воздушный шар[5].
-		"Informus" (2)	// — показывает информацию о существе-цели в GBA версии игры «Гарри Поттер и узник Азкабана»[21].
-		"Cave inimicum"	// — защитное заклинание. Делает защищаемый объект невидимым сверху.
-		"Calvorio" (2)	// — заклинание выпадения волос[12].
-		"Cantis" (2)	// — заклинание, которое заставляет поражённую им цель петь[12].
-		"Carpe retractum" (2)	// — Чары Захвата и Притяжения. Притягивает человека к цели (или цель к человеку). В игре «Гарри Поттер и узник Азкабана» это заклинание использовал Рон на первых же занятиях по Защите от Тёмных Искусств[15].
-		"Lapiforce" (2)	// — превращает предмет небольшой массы в кролика или оживляет его статуэтку[15].
-		"Meloforce" (2)	// — тыквоголовое заклятие. Превращает голову объекта в тыкву[15].
-		"Meteo recanto"	// — останавливает некоторые атмосферные осадки.
-		"Mimbl vimbl" (2)	// — Заклинание Косноязычия. Мешает противнику правильно произнести заклинание тем, что связывает язык в узел[22].
-		"Mucus ad nosem"	// — Проклятье Призраков. Вызывает сильный насморк[16].
-		"Mutatio-"	// — мутация
-		"Pointme"	// — заклинание-компас. Показывает направление на север.
-		"Oppunio"	// — атакующее заклинание (приказ атаковать для вызванных волшебником существ).
-		"Orbis" (2)	// — «закапывает живьём» противника под землю[5].
-		"Orhideus"	// — создаёт букет орхидей или превращает объекты в лепестки орхидей.
-		«Патентованные чары	// — грёзы наяву»	// — товар из магазина близнецов Уизли: «Одно простое заклинание, и вы погружаетесь в высококачественную, сверхреалистическую грезу наяву продолжительностью тридцать минут».
-		"Periculum"	// — создаёт сноп красных искр. Использовал Гарри в лабиринте для сигнала о выбывании Флёр Делакур из поединка.
-		"Portoberto"	// — заклинание, разбивающее висящий замок и оставляющее дымящуюся дыру на месте замочной скважины[19].
-		чары Протеевы	// — позволяет группе предметов частично менять свою форму, при изменении формы одного из них.
-		"Pullus" (2)	// — превращает объект в курицу[5].
-		"Pack" (2)	// — заклинание, позволяющее быстро сложить вещи[7].
-		"Relashio"	// — снятие оков, цепей, освобождение объекта или отброс оппонента (Боб Огден отбросил Марволо Мракса). На суше это сноп желтых искр, под водой	// — струя кипятка.
-		"System aperio" (1)	// — этим заклинанием во втором фильме Том Реддл открыл сундук Хагрида, в котором сидел Арагог[6].
-		"Skribbliforce" (2)	// — заклинание, превращающее объект в перо[9].
-		"Skurge" (2)	// — заклинание, удаляющее эктоплазму[22].
-		"Snaffliforce" (2)	// — заклинание, превращающее объекты в мышей[15].
-		"Herbiforce" (2)	// — превращает волосы жертвы в цветы[12].
-		"Ebublio" (2)	// — превращает объект в мыльные пузыри[5].
-		"Everte Statum" (1)	// — отталкивает противника[6].
-		"Expelliarmus"	// — заклинание разоружения, выбивает палочку или другое оружие из рук противника.
-		"Expellimillius"	// — поджигающее заклинание.
-		"Ectomatis" (2)	// — заклинание, которое позволяет выпустить из конца палочки небольшой кубик эктоплазмы[4].
-		"Emacipare"	// — заклинание, освобождающее от пут.[11]
-		"Entomorphium" (2)	// — ненадолго превращает в муравья[12].
-			//
-		Formula unknown
-			чары Тормозящие Хортона-Кейтча	// — запатентованные чары, применяемые к мётлам фирмы «Комета».
-			Трансмогрифианская Пытка
-			Синие искры (2)
-			заклинание Хватательное
-			Чары Ябеда
-			Чары горячего воздуха
-			Чары заморозки огня
-			Чары осушения
-			Чары подчинения - не империо
-			Чары зелёного дыма
-			Чары рессорной подушки
-			Веселящие чары
-			Взрывающее заклятие
-			Сезам откройся	// — заклятие, сносящее двери с петель[19].
-			Гомункуловы чары (2)	// — неизвестное заклятие (или группа чар), следящие за людьми на определённой территории[16].
-			Воющие сигнализационные чары
-			Залинание Губрайтов огонь
-			Заклинание вечного приклеивания
-			Заклинание головного воздушного пузыря
-			Заклинание для очистки картофеля
-			Заклинание заметания следов
-			Заклинание запечатывания комнаты
-			Заклинание запечатывания пергамента
-			Заклинание невидимого хлыста (2)
-			Заклятие ненаносимости
-			Заклятие Неразбиваемости
-			Заклинание Обращения	// — оборотня в человека.
-			Заклинание открывания дверей
-			Заклинание пальцекусания
-			Заклинание против списывания
-			Заклинание роста ногтей на ногах
-			Заклинание телепортации
-			Заклятие Пылающей руки
-			Проклятие воришки
-			Парящие чары
-			Облегчающие чары
-			Летучемышиный сглаз
-			Кишечно-опорожнительное заклятие
-			Зелёные искры
-			Зелёное специальное заклинание
-			Заклинание Жалящее
-			«Сито из котла» (2)
-		Muggle Repelling	=	"Repello Muggletum"
-		//Muggle Repelling charms
-		Absolute Submission	=	"Imperio-"	// - подвластие
-		Verbal Formula
-			"Contra-" (3)	// - нарушение работы заклинаний
-			"Spangify-" (2)	// — батут
-			"Steelclaw-" (2)	// — steel claw
-			"Tarantalegro-"	// — танцы
-			"Titillando-"	// — щекотку и ослабление
-			"Fenestram-"	// — разбивает стекло.[2]
-			"Fera Verto" (1)	// — живых в сосуды
-			"Ferula-"	// — шина
-			"Fianto duri" (1)	// — мощное защитное заклинание, укрепляющее действие сопутствующих защитных чар[27].
-			"Fulgari-"	// — связывающее заклинание.[11]
-			"Furunculus-"	// — появление на теле противника нарывов.
-			"Impedimenta-"	// — Помехи движению
-			"Vomitare viridis" (2)	// — рвотное заклинание[12].
-			"Erecto-"	// — раскрывает раздвижные предметы (например, палатку).
-			"Vulnera Sanentur" (1)	// — лечивания магических ран
-			"Glacius-" (2)	// — замораживает, тушит пожары[15].
-			"Inanimatus Conjurus"	// — заклинание созидания.
-			"Reparifargo-"	// — заклинание, которое придаёт объекту, подвергнутому неполной трансфигурации, первоначальный вид[16].
-			Otvod glaz	=	"repello-"	//Repelling hex
-			"-Inimicum"	// — чары, защищающие какое-либо место от врагов.
-			"Ridiculus-"	// — против боггарта
-			"Rictusempra-"	// — щекотка
-			"Salvio Hexia"	// — защитное заклинание, делает местность невидимой.
-			"Sectumsempra-"	// — темный меч
-			"Serpensortia-" (1)	// — призыва змеи[6].
-			"Anapneo-"	// — прочищает дыхательные пути.
-			"Appareo-"	// — проявление невидимого
-			"Scripto--" (3)	// - чары письма
-			"Inebriat-" (3)	// - чары впитывания жидкости в предмет
-			"Formalucis-" (3)	// - свет в форму
-			"Calori-" (4)	// - нагреть
-			"Frigido-" (4)	// - охладить
-			"Finita-"	// - закончить
-			"Priore-"	// - предыдущий
-			"Eructo-"	// - выплевывать\выкидывать
-			"Accio-"	// - призывать
-			"Revelare-"	// - выявлять
-			"Abrupto-" (3)	// - отвергать
-			"Confundito-"	// - сбивать с толку
-			"Expecto-"	// - отправлять вызов
-			"Creatio-"	// - создавать
-			"Reparo-"	// - чинить
-			"Protego-"	// - защищать
-			"Episkey-"	// - исцелять
-			"Reducto-"	// - разрушение
-			"Reducio-"	// - уменьшение
-			"Engorgio-"	// - увеличение
-			"Tergeo-"	// - мелкое ощищение
-			"Excuro-"	// - большое очищение от грязи
-			"Pulso-" (3)	// - мелкого толчка
-			"Flippendo-"	// - большого толчка
-			"Expulso-"	// - отбрасывающего мелкого взрыва
-			"Confringo-"	// - огненный взрыв
-			"Petrificus-"	// - паралич
-			"Silencio-"	// - беззвучие
-			"Quietus-"	// - тишина, отмена соноруса
-			"Sonorus-"	// - громкость, отмена квиетуса
-			"Evanesco-"	// - удаление сотворенного
-			"Flagreit-"	// - светящаяся метка
-			Sleep	=	"sopporo-"	// - усыпление
-			"Partis-"	// - проход
-			"Stupefy-"	// - оглушение
-			"Muffliato-"	// - оглохни
-			"Obliviate-"	// - забвение
-			"Rennerveit-"	// - оживи
-			"Obskuro-"	// - ослепление
-			"Conjuctivitus-"	// - боль в глазах
-			"Nox-"	// - нокс
-			"Lumos-"	// - люмос
-			"Langlock-"	// - обезъяз
-			"Crucio-"	// - пыточное
-			"Avadakedavra-"	// - убивающее
-			"Depulso-"	// - отбрасывающее
-			"Immobilus-"	// - остановка действия
-			"Impervius-"	// - непроницаемость
-			"Arresto-" (1)	// — задержание
-			"Alohomora-"	// — Отпирающее магию
-			"Incarcero-"	// — связывает верёвками.
-			"Insendio-"	// — огонь
-			"Collosho-"	// — приклеивает обувь противника к полу[16].
-			"Colloportus-"	// — запирающее заклинание.
-			"Lacarnum Inflamare" (1)	// — создание небольшого огня в фильме «Гарри Поттер и Философский камень». В книге есть похожее заклинание, но оно не произносится[14].
-			"Levi-"	// — подвешивание в воздухе
-			"Levioso-"	// — левитация
-			"Legillimenso-"	// — чтение мыслей
-			"Libera-"	// - освобождает от действия
-			"Locomotor-"	// — передвижение предметов
-			"-Wibbly" (2)	// — заклинание ватных ног. Ноги придётся волочить[16].
-			"-Mortis"	// — заклинание обезноживания. Склеивает обе ноги.
-			"Extremis-" (2)	// — расширяет
-			"Mobili-"	// — движение
-			"Morsmordre-"	// — Запускает в небо Черную метку.
-			"Glisseo-"	// — скольжение
-			"Deprimo-"	// — убирает препятствие[18].
-			"Descendo-"	// — заклинание, опускающее объекты.
-			"Geminio-"— копирование
-			"Diminuendo-" (1)	// — уменьшает
-			"Dissendo-"	// — открывает механизмы
-			"Diffindo-"	// - разрезание
-			"Duro-"	// — затвердевание
-			"Colorum-"	// — цвет неживого (в тч волос и ногтей)
-			"Defodio-" (2)	// — долото
-		Object
-			"-Subiecti-"	// - subject
-			"-Obiecti-"	// - object
-			"--Corpus-"	// — body
-			"--Atramentum-"	// — чернила
-			"--Hominem-"	// - human
-			"--Hominum-"	// - people
-			"--Animagis-"	// - animagus
-			"--Fumos-" (2)	// - дым
-			"--Vipera-" (1)	// — змея
-			"--Portus-"	// - порт-ключ
-			"--Cross-"	// - cross
-			"--Patronum-"	// - patronus
-			"--Arbus-"	// — деревянное
-			"--Incantationem-"	// - spell
-			"--Slagus-"	// - слизень
-			"--Ignis-"	// - fire
-			"--Aqua-"	// - water
-			"--Bombardo-"	// - bomb
-			"--Piertotum-"	// — движение големов
-			"--Capacius-"	// — емкость
-			"--Magicus-"	// - magical
-		Type
-			"-Wingardi"	// - крылообразная
-			"-Inferni"	// - hell, cursed
-			"-Diabolica"	// - огненный щит
-			"-Horribilis"	// - антитемный щит
-		Area
-			"-Totalis"	// - полный
-			"-Directum" (3)	// - направленное действие
-			"-Skullus" (2)	// - действует на голову
-		Time
-			"-Momentum"	// - моментальное действие
-			"-Postea"	// - спустя
-			"-Temporus"	// - временное действие
-			"--Minutum" (3)	// - заклинание длительностью в минуту
-			"--Horum" (3)	// - Заклинание длительностью в час
-			"--Diesum" (3)	// - заклинание длительностью в сутки
-			"--Prolonga" (3)	// - заклинание с более долгим эффектом
-			"--Aeternum" (3)	// - заклинание с "вечным" эффектом
-		Power
-			"-Potentio"	// - мощность
-			"--Tertium"	// - заклинание в треть силы
-			"--Dimidium"	// - заклинание в половину силы
-			"--Duo"	// - заклинание удвоенной силы
-			"--Tria"	// - заклинание утроенной силы
-			"--Maxima"	// - максимально сильное для вас заклинание
-			//Общая формула заклинания: [modum] [subject] [object] [adjectivum (optionem/scopus/tempus/potentium)]
-			//Общая формула зачарования: [subject] [object] [modum-ing] [adjectivum (optionem/scopus/tempus/potentium)]
+		s5[no
+			Action
+				Invisible
+					заклинание Дезиллюминационное	// — заклинание, делающее объект неотличимым от окружающей среды.
+				Heal
+					"Brahiam emendo" //(1)	 — убирает кости. Это заклинание применял Златопуст Локонс, когда Гарри сломал руку во время матча по квиддичу[6].
+				Protection
+					"Cave inimicum"	// — защитное заклинание. Делает защищаемый объект невидимым сверху.
+				Atack
+					"Alarte askendare" //(1)	 — подбрасывает объекты вверх[6].
+					"Arania exumi" //(1)	 — использовал Гарри для отпугивания акромантулов во втором фильме. Заклинание действует на одного паука[6].
+					"Baubillius"	// — заклинание, которое выпускает из конца волшебной палочки яркую бело-жёлтую молнию[9].
+					"Brahiabindo"	// — связывающее заклинание.[11]
+					"Vaddivasi"	// — заставляет лететь предмет в противника.
+					"Oppunio"	// — атакующее заклинание (приказ атаковать для вызванных волшебником существ).
+					"Relashio"	// — снятие оков, цепей, освобождение объекта или отброс оппонента (Боб Огден отбросил Марволо Мракса). На суше это сноп желтых искр, под водой	// — струя кипятка.
+					"Expelliarmus"	// — заклинание разоружения, выбивает палочку или другое оружие из рук противника.
+				Summon
+					Bird	=	"avis-"	// - Заклятие призыва птиц. Создаёт стайку птиц.
+			Transformation
+				"Vermiculus" //(2)	 — превращает объект в червя[5].
+				"Aviforce-"//(2)	 — противник превращается в птицу/стаю птиц/стаю летучих мышей.[4]
+			Misc
+				Soul
+					Horcrux
+				Domestic
+					Opendoor	=	"aberto-"	// - отпирает дверь.
+				"Ascendio" //(1)	 — выталкивает человека из воды[8].
+			"Verdimilius" //(2)	 — выстреливает зелёными искрами во врага или освещает и делает видимыми и осязаемыми объекты скрытые темной магией. В игре «Гарри Поттер и Тайная комната» позволяет обнаружить невидимые объекты (как Люмос в других версиях игры)[4].
+			"Garmonia necture pasus" //(1)	 — заклинание для активации Исчезательного шкафа. Использовалось Малфоем[13].
+			"Herbivicus" //(2)	 — заклинание роста растений. Выращивает растения и оглушает тепличных врагов[5].
+			«Гибель воров»	// — зачаровывает воду (в частности водопад в подземельях банка «Гринготтс»). Зачарованная вода смывает любые чары (Империус и Конфундус в том числе) и любую магическую маскировку.
+			"Dacliforce" //(2)	 — превращает объект в резиновую утку[5][17].
+			"Dantissimus"	// — заклинание быстрого роста передних зубов[3].
+			"Deletrius"	// — заклинание способно расщеплять или удалять объекты[3].
+			неприметность (3)
+			"Draconiforce" (2)	// — оживляет статую мини-дракончика в настоящего мини-дракончика или превращает в мини-дракончика предметы небольшой массы[15].
+			"Incarciforce" (2)	// — превращает люстру в клетку[9].
+			"Inflatus" (2)	// — заставляет объект надуваться, как воздушный шар[5].
+			"Informus" (2)	// — показывает информацию о существе-цели в GBA версии игры «Гарри Поттер и узник Азкабана»[21].
+			"Calvorio" (2)	// — заклинание выпадения волос[12].
+			"Cantis" (2)	// — заклинание, которое заставляет поражённую им цель петь[12].
+			"Carpe retractum" (2)	// — Чары Захвата и Притяжения. Притягивает человека к цели (или цель к человеку). В игре «Гарри Поттер и узник Азкабана» это заклинание использовал Рон на первых же занятиях по Защите от Тёмных Искусств[15].
+			"Lapiforce" (2)	// — превращает предмет небольшой массы в кролика или оживляет его статуэтку[15].
+			"Meloforce" (2)	// — тыквоголовое заклятие. Превращает голову объекта в тыкву[15].
+			"Meteo recanto"	// — останавливает некоторые атмосферные осадки.
+			"Mimbl vimbl" (2)	// — Заклинание Косноязычия. Мешает противнику правильно произнести заклинание тем, что связывает язык в узел[22].
+			"Mucus ad nosem"	// — Проклятье Призраков. Вызывает сильный насморк[16].
+			"Mutatio-"	// — мутация
+			"Pointme"	// — заклинание-компас. Показывает направление на север.
+			"Orbis" (2)	// — «закапывает живьём» противника под землю[5].
+			"Orhideus"	// — создаёт букет орхидей или превращает объекты в лепестки орхидей.
+			«Патентованные чары	// — грёзы наяву»	// — товар из магазина близнецов Уизли: «Одно простое заклинание, и вы погружаетесь в высококачественную, сверхреалистическую грезу наяву продолжительностью тридцать минут».
+			"Periculum"	// — создаёт сноп красных искр. Использовал Гарри в лабиринте для сигнала о выбывании Флёр Делакур из поединка.
+			"Portoberto"	// — заклинание, разбивающее висящий замок и оставляющее дымящуюся дыру на месте замочной скважины[19].
+			чары Протеевы	// — позволяет группе предметов частично менять свою форму, при изменении формы одного из них.
+			"Pullus" (2)	// — превращает объект в курицу[5].
+			"Pack" (2)	// — заклинание, позволяющее быстро сложить вещи[7].
+			"System aperio" (1)	// — этим заклинанием во втором фильме Том Реддл открыл сундук Хагрида, в котором сидел Арагог[6].
+			"Skribbliforce" (2)	// — заклинание, превращающее объект в перо[9].
+			"Skurge" (2)	// — заклинание, удаляющее эктоплазму[22].
+			"Snaffliforce" (2)	// — заклинание, превращающее объекты в мышей[15].
+			"Herbiforce" (2)	// — превращает волосы жертвы в цветы[12].
+			"Ebublio" (2)	// — превращает объект в мыльные пузыри[5].
+			"Everte Statum" (1)	// — отталкивает противника[6].
+			"Expellimillius"	// — поджигающее заклинание.
+			"Ectomatis" (2)	// — заклинание, которое позволяет выпустить из конца палочки небольшой кубик эктоплазмы[4].
+			"Emacipare"	// — заклинание, освобождающее от пут.[11]
+			"Entomorphium" (2)	// — ненадолго превращает в муравья[12].
+				//
+			Formula unknown
+				чары Тормозящие Хортона-Кейтча	// — запатентованные чары, применяемые к мётлам фирмы «Комета».
+				Трансмогрифианская Пытка
+				Синие искры (2)
+				заклинание Хватательное
+				Чары Ябеда
+				Чары горячего воздуха
+				Чары заморозки огня
+				Чары осушения
+				Чары зелёного дыма
+				Чары рессорной подушки
+				Веселящие чары
+				Взрывающее заклятие
+				Сезам откройся	// — заклятие, сносящее двери с петель[19].
+				Гомункуловы чары (2)	// — неизвестное заклятие (или группа чар), следящие за людьми на определённой территории[16].
+				Воющие сигнализационные чары
+				Залинание Губрайтов огонь
+				Заклинание вечного приклеивания
+				Заклинание головного воздушного пузыря
+				Заклинание для очистки картофеля
+				Заклинание заметания следов
+				Заклинание запечатывания комнаты
+				Заклинание запечатывания пергамента
+				Заклинание невидимого хлыста (2)
+				Заклятие ненаносимости
+				Заклятие Неразбиваемости
+				Заклинание Обращения	// — оборотня в человека.
+				Заклинание открывания дверей
+				Заклинание пальцекусания
+				Заклинание против списывания
+				Заклинание роста ногтей на ногах
+				Заклинание телепортации
+				Заклятие Пылающей руки
+				Проклятие воришки
+				Парящие чары
+				Облегчающие чары
+				Летучемышиный сглаз
+				Кишечно-опорожнительное заклятие
+				Зелёные искры
+				Зелёное специальное заклинание
+				Заклинание Жалящее
+				«Сито из котла» (2)
+			Muggle Repelling	=	"Repello Muggletum"
+			//Muggle Repelling charms
+			Mental
+				Чары подчинения - не империо
+				Absolute Submission	=	"Imperio-"	// - подвластие
+			Verbal Formula
+				"Contra-" (3)	// - нарушение работы заклинаний
+				"Spangify-" (2)	// — батут
+				"Steelclaw-" (2)	// — steel claw
+				"Tarantalegro-"	// — танцы
+				"Titillando-"	// — щекотку и ослабление
+				"Fenestram-"	// — разбивает стекло.[2]
+				"Fera Verto" (1)	// — живых в сосуды
+				"Ferula-"	// — шина
+				"Fianto duri" (1)	// — мощное защитное заклинание, укрепляющее действие сопутствующих защитных чар[27].
+				"Fulgari-"	// — связывающее заклинание.[11]
+				"Furunculus-"	// — появление на теле противника нарывов.
+				"Impedimenta-"	// — Помехи движению
+				"Vomitare viridis" (2)	// — рвотное заклинание[12].
+				"Erecto-"	// — раскрывает раздвижные предметы (например, палатку).
+				"Vulnera Sanentur" (1)	// — лечивания магических ран
+				"Glacius-" (2)	// — замораживает, тушит пожары[15].
+				"Inanimatus Conjurus"	// — заклинание созидания.
+				"Reparifargo-"	// — заклинание, которое придаёт объекту, подвергнутому неполной трансфигурации, первоначальный вид[16].
+				Otvod glaz	=	"repello-"	//Repelling hex
+				"-Inimicum"	// — чары, защищающие какое-либо место от врагов.
+				"Ridiculus-"	// — против боггарта
+				"Rictusempra-"	// — щекотка
+				"Salvio Hexia"	// — защитное заклинание, делает местность невидимой.
+				"Sectumsempra-"	// — темный меч
+				"Serpensortia-" (1)	// — призыва змеи[6].
+				"Anapneo-"	// — прочищает дыхательные пути.
+				"Appareo-"	// — проявление невидимого
+				"Scripto--" (3)	// - чары письма
+				"Inebriat-" (3)	// - чары впитывания жидкости в предмет
+				"Formalucis-" (3)	// - свет в форму
+				"Calori-" (4)	// - нагреть
+				"Frigido-" (4)	// - охладить
+				"Finita-"	// - закончить
+				"Priore-"	// - предыдущий
+				"Eructo-"	// - выплевывать\выкидывать
+				"Accio-"	// - призывать
+				"Revelare-"	// - выявлять
+				"Abrupto-" (3)	// - отвергать
+				"Confundito-"	// - сбивать с толку
+				"Expecto-"	// - отправлять вызов
+				"Creatio-"	// - создавать
+				"Reparo-"	// - чинить
+				"Protego-"	// - защищать
+				"Episkey-"	// - исцелять
+				"Reducto-"	// - разрушение
+				"Reducio-"	// - уменьшение
+				"Engorgio-"	// - увеличение
+				"Tergeo-"	// - мелкое ощищение
+				"Excuro-"	// - большое очищение от грязи
+				"Pulso-" (3)	// - мелкого толчка
+				"Flippendo-"	// - большого толчка
+				"Expulso-"	// - отбрасывающего мелкого взрыва
+				"Confringo-"	// - огненный взрыв
+				"Petrificus-"	// - паралич
+				"Silencio-"	// - беззвучие
+				"Quietus-"	// - тишина, отмена соноруса
+				"Sonorus-"	// - громкость, отмена квиетуса
+				"Evanesco-"	// - удаление сотворенного
+				"Flagreit-"	// - светящаяся метка
+				Sleep	=	"sopporo-"	// - усыпление
+				"Partis-"	// - проход
+				"Stupefy-"	// - оглушение
+				"Muffliato-"	// - оглохни
+				"Obliviate-"	// - забвение
+				"Rennerveit-"	// - оживи
+				"Obskuro-"	// - ослепление
+				"Conjuctivitus-"	// - боль в глазах
+				"Nox-"	// - нокс
+				"Lumos-"	// - люмос
+				"Langlock-"	// - обезъяз
+				"Crucio-"	// - пыточное
+				"Avadakedavra-"	// - убивающее
+				"Depulso-"	// - отбрасывающее
+				"Immobilus-"	// - остановка действия
+				"Impervius-"	// - непроницаемость
+				"Arresto-" (1)	// — задержание
+				"Alohomora-"	// — Отпирающее магию
+				"Incarcero-"	// — связывает верёвками.
+				"Insendio-"	// — огонь
+				"Collosho-"	// — приклеивает обувь противника к полу[16].
+				"Colloportus-"	// — запирающее заклинание.
+				"Lacarnum Inflamare" (1)	// — создание небольшого огня в фильме «Гарри Поттер и Философский камень». В книге есть похожее заклинание, но оно не произносится[14].
+				"Levi-"	// — подвешивание в воздухе
+				"Levioso-"	// — левитация
+				"Legillimenso-"	// — чтение мыслей
+				"Libera-"	// - освобождает от действия
+				"Locomotor-"	// — передвижение предметов
+				"-Wibbly" (2)	// — заклинание ватных ног. Ноги придётся волочить[16].
+				"-Mortis"	// — заклинание обезноживания. Склеивает обе ноги.
+				"Extremis-" (2)	// — расширяет
+				"Mobili-"	// — движение
+				"Morsmordre-"	// — Запускает в небо Черную метку.
+				"Glisseo-"	// — скольжение
+				"Deprimo-"	// — убирает препятствие[18].
+				"Descendo-"	// — заклинание, опускающее объекты.
+				"Geminio-"— копирование
+				"Diminuendo-" (1)	// — уменьшает
+				"Dissendo-"	// — открывает механизмы
+				"Diffindo-"	// - разрезание
+				"Duro-"	// — затвердевание
+				"Colorum-"	// — цвет неживого (в тч волос и ногтей)
+				"Defodio-" (2)	// — долото
+			Object
+				"-Subiecti-"	// - subject
+				"-Obiecti-"	// - object
+				"--Corpus-"	// — body
+				"--Atramentum-"	// — чернила
+				"--Hominem-"	// - human
+				"--Hominum-"	// - people
+				"--Animagis-"	// - animagus
+				"--Fumos-" (2)	// - дым
+				"--Vipera-" (1)	// — змея
+				"--Portus-"	// - порт-ключ
+				"--Cross-"	// - cross
+				"--Patronum-"	// - patronus
+				"--Arbus-"	// — деревянное
+				"--Incantationem-"	// - spell
+				"--Slagus-"	// - слизень
+				"--Ignis-"	// - fire
+				"--Aqua-"	// - water
+				"--Bombardo-"	// - bomb
+				"--Piertotum-"	// — движение големов
+				"--Capacius-"	// — емкость
+				"--Magicus-"	// - magical
+			Type
+				"-Wingardi"	// - крылообразная
+				"-Inferni"	// - hell, cursed
+				"-Diabolica"	// - огненный щит
+				"-Horribilis"	// - антитемный щит
+			Area
+				"-Totalis"	// - полный
+				"-Directum" (3)	// - направленное действие
+				"-Skullus" (2)	// - действует на голову
+			Time
+				"-Momentum"	// - моментальное действие
+				"-Postea"	// - спустя
+				"-Temporus"	// - временное действие
+				"--Minutum" (3)	// - заклинание длительностью в минуту
+				"--Horum" (3)	// - Заклинание длительностью в час
+				"--Diesum" (3)	// - заклинание длительностью в сутки
+				"--Prolonga" (3)	// - заклинание с более долгим эффектом
+				"--Aeternum" (3)	// - заклинание с "вечным" эффектом
+			Power
+				"-Potentio"	// - мощность
+				"--Tertium"	// - заклинание в треть силы
+				"--Dimidium"	// - заклинание в половину силы
+				"--Duo"	// - заклинание удвоенной силы
+				"--Tria"	// - заклинание утроенной силы
+				"--Maxima"	// - максимально сильное для вас заклинание
+				//Общая формула заклинания: [modum] [subject] [object] [adjectivum (optionem/scopus/tempus/potentium)]
+				//Общая формула зачарования: [subject] [object] [modum-ing] [adjectivum (optionem/scopus/tempus/potentium)]
 	Complex
 		Finding
 			Accio
@@ -1972,7 +2358,7 @@ add(`Potteriana
 		Goblin
 		Troll
 		Centaur
-		Gnome_2)
+		Gnome_2
 		Merpeople
 	Feature
 		s4[no
@@ -2009,13 +2395,20 @@ add(`Witcher
 		s5[no
 			Witcher
 			Mage?
+	Direction
+		Language[no
+			Mudra
 	Spell
-		Air	=	Aard
-		Water	=	Aksiy
-		Earth	=	Kven
-		Fire	=	Igni
-		Protection	=	Heliotrop
-		Pomehi	=	Irden
+		s5[no
+			Element
+				Basic
+					Air		=	Aard
+					Water	=	Aksiy
+					Earth	=	Kven
+					Fire	=	Igni
+			Action
+				Protection	=	Heliotrop
+				Pomehi	=	Irden
 	Person
 		Geralt`)
 add(`Pokemon
@@ -2213,28 +2606,29 @@ add(`Nick
 			Holem
 			Automate
 		Element
-			Fire
-			Water
-			Air
-			Earth
-			Ice
-			Electrizity
-		Info
+			Basic
+				Fire
+				Water
+				Air
+				Earth
+				Ice
+				Electrizity
 		Action[no
+			Illusion
+				Dense
 			Materialization
 				Creating
 				Removing
-			Health
-			Mental
+			Heal
 			Atack
 			Protection
 		Misc[no
+			Mental
+			Info
 			Clairvoyance
 				Probability
 		Object[no
 			Alchemy
-			Illusion
-				Dense
 	Multiverse
 		Original
 			World
@@ -2313,11 +2707,13 @@ add(`Zero no Tsukaima
 		+3+5	=	Wizardy?
 	Direction
 		Element
-			Fire
-			Water
-			Air
-			Earth
-			Void?
+			Basic
+				Fire
+				Water
+				Air
+				Earth
+			Misc
+				Void
 		Language[no
 			Spell
 			Rune
@@ -2326,7 +2722,7 @@ add(`Zero no Tsukaima
 			Summon
 		Object[no
 			Alchemy
-			Elexir
+			Elixir
 				Potion
 		Creature[no
 			Animal
@@ -2372,6 +2768,7 @@ add(`To Aru Majutsu no Index
 	Shell
 		aimf	=	AIM-field
 	Level
+		:School	=	Academ-City
 		0.0	=	Zero-esper	//, don't have ability
 		1.0	=	Weak	// esper, can destroy 1 cube meter
 		2.0	=	Simple	// esper, can destroy room
@@ -2607,10 +3004,13 @@ add(`Avatar
 		+5	=	Mana?
 	Direction
 		Element
-			Fire
-			Water
-			Earth
-			Air
+			Basic
+				Fire
+				Water
+				Earth
+				Air
+		Action[no
+			Heal
 	Feature
 		s5[no
 			Mage
@@ -2637,6 +3037,7 @@ add(`Dozory
 		Author[no
 			Sergey Lukyanenko
 	Level
+		:School	=	Other
 		0.0	=	No
 		1.0	=	Potential
 		2.0	=	7
@@ -2668,90 +3069,101 @@ add(`Dozory
 			Witch
 			Mirror
 	Spell
-		Absolute lock	//наглухо запирает любые двери
-		Absolute constipation	//вызывает абсолютный запор у того, к кому оно применяется.
-		Health
-			Avicenna	// — заклинание исцеления.
-		Agape	// — знак любви.
-		Aspirin	// − тёмное заклинание, понижает температуру цели до температуры окружающей среды, может использоваться в бою.
-		Aura
-			vzor serdsta	// — похожие заклинания, позволяют видеть невидимое. С помощью последних двух можно смотреть даже на первый слой Сумрака.
-			Instinnoe zrenie
-			yasniy vzglyad
-		gremlin	// — заклинание, порождающее сущность, которая медленно разрушает технику. Например, в «Дневном Дозоре» Алиса применила это заклинание, чтобы испортить автомобиль нагрубившего ей водителя.
-		Absolute Submission	=	Доминанта	// — заклинание абсолютного подчинения.
-		Ивовая Кора	// — Светлый вариант Аспирина.
-		Sleep	=	Morphey	// — заклинание, усыпляющее людей на определённой площади: благодаря постепенному действию (несколько секунд, примерно пять) позволяет избежать лишних жертв, например связанных с потерей управления автомобилями на ходу и т. п. По этой простой причине предпочитается Светлыми.
-		Momental Sleep =	Opium	// — менее гуманный аналог Морфея, в отличие от последнего усыпляет резко, без промедления, что может вызвать аварии и жертвы среди людей, так как не даёт жертве время остановиться или прекратить занятия.
-		Illusion
-			Паранджа	// — заклинание, как правило, накладываемое Тёмными женщинами. Аналог магической косметики.
-		Прометей	// — безопасный розжиг костра.
-		Light	// — зажигает огонь на ладони.
-		Search
-			Снежная паутина	// — поисковое заклинание с большим радиусом действия, и требующее больших затрат Силы.
-			Око мага	// — что-то вроде магического радара в Сумраке и реальном мире. имеет Форму большого шара, напоминающее глаз.
-		Спайдерфлэйм	// — заклинание, вызывающее возгорание объекта пламенем характерного тускло-синеватого цвета.
-		Muggle Repelling	=	Сфера Невнимания	// — заклинание, предохраняющее от излишнего любопытства людей. Не действует на Иных и чувствительных к магии людей.
-		Тройной ключ	// — заклинание, порождающее любовь, веру и понимание. К тому же разбивает ментальную защиту противника.
-		Тройное лезвие	// — заклинание, материализующее 3 кинжалоподобных лезвия, с большой скоростью летящих в указанном магом направлении.
-		Fireball	// — широко распространённое как у Светлых, так и у Тёмных заклинание. Во врага пускается сгусток огня. Существует также «групповой файербол» и какая-то особая версия последнего у Инквизиторов.
-		Element
-			Space
-				Portal	=	// — заклинание позволяющее почти мгновенно переносится на большие расстояния при помощи врат, без наводки используется только высшими иными (или зеркалом). При помощи мага в пункте назначения создавать портал проще.
-			Time
-				Stop	=	Freeze	// — локальная остановка времени, применяется для иммобилизации противника без причинения ему вреда.
-		Ход	// — заклинание, позволяющее бежать с очень высокой скоростью. При попадании под воздействие заклинания сердечной мышцы (миокарда) может вызвать остановку последнего.
-		Mental
-			Петров	// — заклинание, накладываемое для мгновенного обучения 15 распростаненных языков (среди них упоминается польский).
-			Skolko let, skolko zim
-			Schastye
-			Long tongue	// — Слабое и легко скрытое заклинание делает противника разговорчивым, заставляя разбалтывать информацию.
-			Реморализация	// — заклинание, заставляющее субъекта строго соблюдать заданную, либо собственную мораль.
-			Protection
-				Barrier of will	// — заклинание защиты разума.
-				Сфера Спокойствия	// — заклинание ментальной защиты.
-				Ледяная Кора	// — ментальная защита.
-		Action
-			Protection
-				Кольцо Шааба	// — охранное заклинание, завязанное на определённое слово.
-				Хрустальный щит	// — очень мощная защита от физического воздействия на объект. Побочным эффектом дает слабую магическую защиту. Мнение что Щит невозможно продавить подтвердилось после применения Щита Эдгаром против вампира Кости, не сумевшего продавить его, даже будучи Абсолютным Иным ("Сумеречный дозор").
-				Хрустальный шар	// — создает вокруг мага шар из «хрусталя», защищающий его от любого физического воздействия.
-				Сфера отрицания	// — заклинание, используемое как защита против вражеских заклинаний, при сильной подкачке может надёжно защитить даже против заклинаний высших магов. Пропускает физические атаки.
-				Mana	=	Mage shield	// — универсальная защита, мощность зависит от вкладываемой силы.
-				Universal	=	Rainbow sphere	// — достаточно сильная универсальная защита.
-				Тайга	// — очень мощное заклинание, имеющее форму огненной сети, опутывающей противника. Упоминается в «Новом Дозоре» и было использовано чтобы замедлить Тигра, правда воздействие было минимальное, так что настоящий эффект неизвестен.
-			Atack
-				White kopiyo — боевое заклинание Светлых. Магическое копье, действует соответственно названию. Упоминается в романе «Последний дозор». В шестом дозоре было использовано Антоном Городецким против Двуединого. "Я видел, ... как загорелось пальто Темного, пробитое "белым копьем"..."
-				Марево Трансильвании 	// — заклинание, магическим способом причиняющее физические увечья путём всестороннего сдавливания объекта заклинания. Применяется только Тёмными Иными. Было применено Зеркалом Виталием Рогозой для отражения атаки Тигренка в «Дневном дозоре».
-				Pressure	=	Press	// — заклинание чистой Силы. Сгущает Силу до осязаемого состояния, используется чтобы давить противника.
-				White Sword	// — светлое заклинание, преобразующее Силу в белый клинок. Использует Светлана в бою против ведьмы Арины(«Сумеречный дозор»). Также Светлана использовала "защиту Лужина", вероятно с помощью меча. В теории заклинание поражает лишь Тёмных и склонившихся ко Злу людей. На практике человек становится уязвим к Мечу при появлении у него агрессии, страха, злобы.
-				Vacuum
-				Плеть Шааба	// — боевое заклинание Тёмных: огненная струя, принимающая облик огромной змеи с некоторыми зачатками разума, изменяющая направление в полёте. Любимое заклинание Завулона. В книге <<Новый Дозор>> упоминается похожее заклинание, использумое Завулоном в битве с Тигром. Пламя было синего цвета, так что не установлено являлось ли оно Плетью Шааба, либо каким-то другим заклинанием.
-				Anti-Undead	=	Серый молебен	// — заклинание против нежити: вампиров, зомби и т. п. Ослабляет и замедляет вампиров, на большей мощности упокаивает. Скелетов, замби, то есть нежить, не имеющую собственной воли, а подчиняющуюся воле поднявшего их колдуна, развеивает.
-				Поцелуй Ехидны	// — Что-то вроде дождя из кислоты
-				Огненная кобра	// — заклинание, использованное против Завулона, создающее гигантскую огненную змею которая самостоятельно борется с противником.
-				Огненная Стена (или Стена огня)	// — довольно сильное групповое заклинание. Наносит значительный урон огнём противнику, причём чем меньше противников в группе, тем большие повреждения получит каждый из них.
-				Путы Захви	//—жертва заклинания не имеет возможности двигаться и как-то действовать, но способна слышать, видеть и говорить (не путать с трансом). Применялось Лайком в "Лике Черной Пальмиры".
-				Buka	// — боевое заклинание. Предположительно, из арсенала светлых. Эффект от применения данного заклинания не описан. Применялась в книге «Последний Дозор».
-				Прах	// — заклинание против дэвов и големов. В силу редкости последних, практически не используется, не преподается иным при обучении в дозорах. Несложное заклинание, требующее правильно сложенного магического паса и берущее много Силы. Использовалось Антоном в Последнем дозоре против дэва. Он, в свою очередь, узнал об этом заклинании от Ольги.
-				Thanathos	// — заклинание, подавляющее волю и вызывающее остановку сердца. Убивает не сразу, жертву можно спасти, как это было в «Сумеречном Дозоре».
-		l5
-			Light
-				White marevo	// — самое сильное и страшное из упоминаемых в книгах заклинаний Светлых . По силам только высшим магам, «требует максимального сосредоточения и полной прокачки Силы в радиусе трёх километров». После произнесения изо рта мага вырывается белый туман, вызывающий локальное «схлопывание» всех слоёв Сумрака, и превращающий всех противников-иных в камень, внутри которого души остаются вечно живыми, но бездвижными и лишёнными всех чувств, медленно сходя с ума; людей сумрак перемалывает без следа. Придумано Мерлином, использовано лишь один раз Рустамом и Гесером.
-			Dark
-				Тень владык	// — самое сильное из упоминаемых в книгах заклинаний Тёмных. Временно вызывает души умерших Великих Тёмных Иных с шестого слоя Сумрака, накачивает их Силой и заставляет уничтожать всё вокруг.
-			Time
-				Саркофаг времён	// — заклинание из арсенала Инквизиции. Применивший его оказывается вместе со своей жертвой запертым в каменном саркофаге, плывущим в небытии, до скончания времён. Случаев побега из саркофага времён пока не существует. Антон Городецкий в книге "Новый дозор" был освобожден из саркофага времен, где он был заключен с ведьмой Ариной	// — тигром. (Однако, осталось неясным, смогла ли Арина освободиться с помощью Минойской Сферы (только ведьмы умеют их заряжать), которую имела при себе: Минойская Сфера прокладывает портал откуда угодно)
+		s5[no
+			Misc
+				Domestic
+					Absolute lock	//наглухо запирает любые двери
+				Mental
+					Absolute Submission	=	Доминанта	// — заклинание абсолютного подчинения.
+					Петров	// — заклинание, накладываемое для мгновенного обучения 15 распростаненных языков (среди них упоминается польский).
+					Skolko let, skolko zim
+					Schastye
+					Long tongue	// — Слабое и легко скрытое заклинание делает противника разговорчивым, заставляя разбалтывать информацию.
+					Реморализация	// — заклинание, заставляющее субъекта строго соблюдать заданную, либо собственную мораль.
+					Protection
+						Barrier of will	// — заклинание защиты разума.
+						Сфера Спокойствия	// — заклинание ментальной защиты.
+						Ледяная Кора	// — ментальная защита.
+			Action
+				Muggle Repelling	=	Сфера Невнимания	// — заклинание, предохраняющее от излишнего любопытства людей. Не действует на Иных и чувствительных к магии людей.
+				Heal
+					Absolute constipation	//вызывает абсолютный запор у того, к кому оно применяется.
+					Avicenna	// — заклинание исцеления.
+					Sleep	=	Morphey	// — заклинание, усыпляющее людей на определённой площади: благодаря постепенному действию (несколько секунд, примерно пять) позволяет избежать лишних жертв, например связанных с потерей управления автомобилями на ходу и т. п. По этой простой причине предпочитается
+				Illusion
+					Disguise	=	Паранджа	// — заклинание, как правило, накладываемое Тёмными женщинами. Аналог магической косметики.
+				Protection
+					Кольцо Шааба	// — охранное заклинание, завязанное на определённое слово.
+					Хрустальный щит	// — очень мощная защита от физического воздействия на объект. Побочным эффектом дает слабую магическую защиту. Мнение что Щит невозможно продавить подтвердилось после применения Щита Эдгаром против вампира Кости, не сумевшего продавить его, даже будучи Абсолютным Иным ("Сумеречный дозор").
+					Хрустальный шар	// — создает вокруг мага шар из «хрусталя», защищающий его от любого физического воздействия.
+					Сфера отрицания	// — заклинание, используемое как защита против вражеских заклинаний, при сильной подкачке может надёжно защитить даже против заклинаний высших магов. Пропускает физические атаки.
+					Mana	=	Mage shield	// — универсальная защита, мощность зависит от вкладываемой силы.
+					Universal	=	Rainbow sphere	// — достаточно сильная универсальная защита.
+					Тайга	// — очень мощное заклинание, имеющее форму огненной сети, опутывающей противника. Упоминается в «Новом Дозоре» и было использовано чтобы замедлить Тигра, правда воздействие было минимальное, так что настоящий эффект неизвестен.
+				Atack
+					Momental Sleep =	Opium	// — менее гуманный аналог Морфея, в отличие от последнего усыпляет резко, без промедления, что может вызвать аварии и жертвы среди людей, так как не даёт жертве время остановиться или прекратить занятия.
+					White kopiyo — боевое заклинание Светлых. Магическое копье, действует соответственно названию. Упоминается в романе «Последний дозор». В шестом дозоре было использовано Антоном Городецким против Двуединого. "Я видел, ... как загорелось пальто Темного, пробитое "белым копьем"..."
+					Марево Трансильвании 	// — заклинание, магическим способом причиняющее физические увечья путём всестороннего сдавливания объекта заклинания. Применяется только Тёмными Иными. Было применено Зеркалом Виталием Рогозой для отражения атаки Тигренка в «Дневном дозоре».
+					Pressure	=	Press	// — заклинание чистой Силы. Сгущает Силу до осязаемого состояния, используется чтобы давить противника.
+					White Sword	// — светлое заклинание, преобразующее Силу в белый клинок. Использует Светлана в бою против ведьмы Арины(«Сумеречный дозор»). Также Светлана использовала "защиту Лужина", вероятно с помощью меча. В теории заклинание поражает лишь Тёмных и склонившихся ко Злу людей. На практике человек становится уязвим к Мечу при появлении у него агрессии, страха, злобы.
+					Vacuum
+					Плеть Шааба	// — боевое заклинание Тёмных: огненная струя, принимающая облик огромной змеи с некоторыми зачатками разума, изменяющая направление в полёте. Любимое заклинание Завулона. В книге <<Новый Дозор>> упоминается похожее заклинание, использумое Завулоном в битве с Тигром. Пламя было синего цвета, так что не установлено являлось ли оно Плетью Шааба, либо каким-то другим заклинанием.
+					Anti-Undead	=	Серый молебен	// — заклинание против нежити: вампиров, зомби и т. п. Ослабляет и замедляет вампиров, на большей мощности упокаивает. Скелетов, замби, то есть нежить, не имеющую собственной воли, а подчиняющуюся воле поднявшего их колдуна, развеивает.
+					Поцелуй Ехидны	// — Что-то вроде дождя из кислоты
+					Огненная кобра	// — заклинание, использованное против Завулона, создающее гигантскую огненную змею которая самостоятельно борется с противником.
+					Огненная Стена (или Стена огня)	// — довольно сильное групповое заклинание. Наносит значительный урон огнём противнику, причём чем меньше противников в группе, тем большие повреждения получит каждый из них.
+					Путы Захви	//—жертва заклинания не имеет возможности двигаться и как-то действовать, но способна слышать, видеть и говорить (не путать с трансом). Применялось Лайком в "Лике Черной Пальмиры".
+					Buka	// — боевое заклинание. Предположительно, из арсенала светлых. Эффект от применения данного заклинания не описан. Применялась в книге «Последний Дозор».
+					Прах	// — заклинание против дэвов и големов. В силу редкости последних, практически не используется, не преподается иным при обучении в дозорах. Несложное заклинание, требующее правильно сложенного магического паса и берущее много Силы. Использовалось Антоном в Последнем дозоре против дэва. Он, в свою очередь, узнал об этом заклинании от Ольги.
+					Thanathos	// — заклинание, подавляющее волю и вызывающее остановку сердца. Убивает не сразу, жертву можно спасти, как это было в «Сумеречном Дозоре».
+			Agape	// — знак любви.
+			Aspirin	// − тёмное заклинание, понижает температуру цели до температуры окружающей среды, может использоваться в бою.
+			Aura
+				vzor serdsta	// — похожие заклинания, позволяют видеть невидимое. С помощью последних двух можно смотреть даже на первый слой Сумрака.
+				Instinnoe zrenie
+				yasniy vzglyad
+			gremlin	// — заклинание, порождающее сущность, которая медленно разрушает технику. Например, в «Дневном Дозоре» Алиса применила это заклинание, чтобы испортить автомобиль нагрубившего ей водителя.
+			Ивовая Кора	// — Светлый вариант Аспирина.
+			Прометей	// — безопасный розжиг костра.
+			Light	// — зажигает огонь на ладони.
+			Search
+				Снежная паутина	// — поисковое заклинание с большим радиусом действия, и требующее больших затрат Силы.
+				Око мага	// — что-то вроде магического радара в Сумраке и реальном мире. имеет Форму большого шара, напоминающее глаз.
+			Спайдерфлэйм	// — заклинание, вызывающее возгорание объекта пламенем характерного тускло-синеватого цвета.
+			Тройной ключ	// — заклинание, порождающее любовь, веру и понимание. К тому же разбивает ментальную защиту противника.
+			Тройное лезвие	// — заклинание, материализующее 3 кинжалоподобных лезвия, с большой скоростью летящих в указанном магом направлении.
+			Fireball	// — широко распространённое как у Светлых, так и у Тёмных заклинание. Во врага пускается сгусток огня. Существует также «групповой файербол» и какая-то особая версия последнего у Инквизиторов.
+			Element
+				Other
+					Space
+						Portal	=	// — заклинание позволяющее почти мгновенно переносится на большие расстояния при помощи врат, без наводки используется только высшими иными (или зеркалом). При помощи мага в пункте назначения создавать портал проще.
+					Time
+						Stop	=	Freeze	// — локальная остановка времени, применяется для иммобилизации противника без причинения ему вреда.
+			Ход	// — заклинание, позволяющее бежать с очень высокой скоростью. При попадании под воздействие заклинания сердечной мышцы (миокарда) может вызвать остановку последнего.
+			l5
+				Element
+					First
+						Light
+							Uncontrolled
+								White marevo	// — самое сильное и страшное из упоминаемых в книгах заклинаний Светлых . По силам только высшим магам, «требует максимального сосредоточения и полной прокачки Силы в радиусе трёх километров». После произнесения изо рта мага вырывается белый туман, вызывающий локальное «схлопывание» всех слоёв Сумрака, и превращающий всех противников-иных в камень, внутри которого души остаются вечно живыми, но бездвижными и лишёнными всех чувств, медленно сходя с ума; людей сумрак перемалывает без следа. Придумано Мерлином, использовано лишь один раз Рустамом и Гесером.
+						Dark
+							Uncontrolled
+								Тень владык	// — самое сильное из упоминаемых в книгах заклинаний Тёмных. Временно вызывает души умерших Великих Тёмных Иных с шестого слоя Сумрака, накачивает их Силой и заставляет уничтожать всё вокруг.
+					Other
+						Time
+							Uncontrolled
+								Саркофаг времён	// — заклинание из арсенала Инквизиции. Применивший его оказывается вместе со своей жертвой запертым в каменном саркофаге, плывущим в небытии, до скончания времён. Случаев побега из саркофага времён пока не существует. Антон Городецкий в книге "Новый дозор" был освобожден из саркофага времен, где он был заключен с ведьмой Ариной	 — тигром. (Однако, осталось неясным, смогла ли Арина освободиться с помощью Минойской Сферы (только ведьмы умеют их заряжать), которую имела при себе: Минойская Сфера прокладывает портал откуда угодно)
 	Unique
-		Son Merlina?
-		Venets of Everything	// — камни в основании замка в Эдинбурге, позволяют освобождать ушедших Иных, даруя им окончательную смерть.
-		Grimoire
-			Fuaran's	//Book about turning human to Other, and Other to Higher level
-		Claw of Phaphnir	// — коготь Великого Тёмного мага, убитого в своём сумеречном облике дракона, ставший сильным артефактом после того, как Братья Регина (секта, созданная учениками Фафнира) несколько поколений питали его силой.
-		Shredinger Cat	// — артефакт, действующий во всех слоях Сумрака. Пушистая меховая лента, надеваемая на шею, как правило преступникам при конвое Инквизицией. Обезглавливает цель при малейшем магическом воздействии с её стороны.
-		Mel of Fate	// — кусочек мела, с помощью которого можно изменить Книгу Судьбы любого человека или Иного. Сделать это может только Светлая Великая Волшебница. В книге «Ночной Дозор» Светлана хотела изменить судьбу Егора, но в это же самое время Ольга изменила Книгу Судьбы самой Светланы.
-		Minoy Sphere	// - открывает портал откуда угодно, а его точку назначения невозможно проследить. Имеет только один заряд, перезаряжать его умеют только ведьмы. С разряженной Минойской Сферой ведьма Арина была заперта заклинанием Саркофаг Времён.
-		Power Prizm	// — хрустальная прозрачная призма. Использующий призму Иной вытягивает жизненную силу из того, на кого сквозь неё смотрит. Использовала Алиса Донникова ("Ночной дозор")
+		s5[no
+			Son Merlina?
+			Venets of Everything	// — камни в основании замка в Эдинбурге, позволяют освобождать ушедших Иных, даруя им окончательную смерть.
+			Grimoire
+				Fuaran's	//Book about turning human to Other, and Other to Higher level
+			Claw of Phaphnir	// — коготь Великого Тёмного мага, убитого в своём сумеречном облике дракона, ставший сильным артефактом после того, как Братья Регина (секта, созданная учениками Фафнира) несколько поколений питали его силой.
+			Shredinger Cat	// — артефакт, действующий во всех слоях Сумрака. Пушистая меховая лента, надеваемая на шею, как правило преступникам при конвое Инквизицией. Обезглавливает цель при малейшем магическом воздействии с её стороны.
+			Mel of Fate	// — кусочек мела, с помощью которого можно изменить Книгу Судьбы любого человека или Иного. Сделать это может только Светлая Великая Волшебница. В книге «Ночной Дозор» Светлана хотела изменить судьбу Егора, но в это же самое время Ольга изменила Книгу Судьбы самой Светланы.
+			Minoy Sphere	// - открывает портал откуда угодно, а его точку назначения невозможно проследить. Имеет только один заряд, перезаряжать его умеют только ведьмы. С разряженной Минойской Сферой ведьма Арина была заперта заклинанием Саркофаг Времён.
+			Power Prizm	// — хрустальная прозрачная призма. Использующий призму Иной вытягивает жизненную силу из того, на кого сквозь неё смотрит. Использовала Алиса Донникова ("Ночной дозор")
 	Direction
 		Language[no
 			?
@@ -2762,9 +3174,9 @@ add(`Dozory
 		Action[no
 			Atack
 			Protection
-			Health	=	Healing
-			Love	=	Obvorozhenie
+			Heal	=	Healing
 		Misc[no
+			Love	=	Obvorozhenie
 			Clairvoyance
 				Probability
 			Metamorph	=	Oborotnichestvo
@@ -2839,16 +3251,19 @@ add(`The Gamer
 		Misc
 			Clairvoyance
 		Element
-			Fire
-			Water
-			Air
-			Earth
+			Basic
+				Fire
+				Water
+				Air
+				Earth
 		Form
-			Elemental
+			Misc
+				Elemental
 	Spell
-		Action
-			Protection
-				Mana	=	Mana Shield
+		s5[no
+			Action
+				Protection
+					Mana	=	Mana Shield
 	Person
 		s5[no
 			Gamer	=	Han Jee Han

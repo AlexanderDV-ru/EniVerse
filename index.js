@@ -1,9 +1,9 @@
-//--- Name: EniVerses/Vesion: 0.1.5a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
+//--- Name: EniVerses/Vesion: 0.1.6a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
 //--- Start of standard initialization
 //Program info
 var programInfo={
 	Name : "EniVerses",
-	Version : "0.1.5a",
+	Version : "0.1.6a",
 	Authors : "AlexanderDV"
 }
 
@@ -42,9 +42,26 @@ function ffr(par,cur){
 				else n[v]=cur[v]
 		return n
 }
-for(var v in json)
-	if(v.split("(")[1])
-		json[v]=ffr(json[v.split("(")[1]],json[v])
+//Parents
+var parSym="<"
+function pars(cjson){
+	for(var v in cjson)
+	{
+		pars(cjson[v])
+		if(v.split(parSym)[1]&&v.split(parSym)[0].indexOf("//")==-1)
+		{
+			var par=json
+			for(var v2 in v.split(parSym)[1].split("."))
+			{
+				console.log(par,v.split(parSym)[1].split(".")[v2],v);
+				par=par[v.split(parSym)[1].split(".")[v2]]
+			}
+			cjson[v.split(parSym)[0]]=ffr(par,cjson[v])
+			delete cjson[v]
+		}
+	}
+}
+pars(json)
 function assembleSt(n,c){
 	var r=""
 	for(var v in n)
