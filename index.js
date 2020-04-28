@@ -6,6 +6,7 @@ var programInfo={
 	Version : "0.1.5a",
 	Authors : "AlexanderDV"
 }
+
 programInfo.Title= programInfo.Name + " v" + programInfo.Version + " by " + programInfo.Authors
 document.title=programInfo.Title
 
@@ -21,6 +22,9 @@ var getMsg=function(key, lang)
 }
 // End of standard initialization ---
 universesTextarea.value=universes.join("\n")
+//universesTextarea.onkeydown=function(e){
+//universesTextarea.value=inOneExemplare(universesTextarea.value.replace(/[ \t\n/*\-\+\.1234567890~!@#$%\^\&\*\(\)_+|\\=\-\?><"':;\[\]{}/]/g,",").replace(/(,,,,)|(,,,)|(,,)/g,",").replace(/(,,,,)|(,,,)|(,,)/g,",").toLowerCase().split(",")).join(",")
+//}
 
 var json=parsePythonic(universesConfig)
 function ffr(par,cur){
