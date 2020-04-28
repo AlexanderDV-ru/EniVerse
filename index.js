@@ -1,9 +1,9 @@
-//--- Name: EniVerses/Vesion: 0.1.6a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
+//--- Name: EniVerses/Vesion: 0.1.7a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
 //--- Start of standard initialization
 //Program info
 var programInfo={
 	Name : "EniVerses",
-	Version : "0.1.6a",
+	Version : "0.1.7a",
 	Authors : "AlexanderDV"
 }
 
@@ -22,9 +22,6 @@ var getMsg=function(key, lang)
 }
 // End of standard initialization ---
 universesTextarea.value=universes.join("\n")
-//universesTextarea.onkeydown=function(e){
-//universesTextarea.value=inOneExemplare(universesTextarea.value.replace(/[ \t\n/*\-\+\.1234567890~!@#$%\^\&\*\(\)_+|\\=\-\?><"':;\[\]{}/]/g,",").replace(/(,,,,)|(,,,)|(,,)/g,",").replace(/(,,,,)|(,,,)|(,,)/g,",").toLowerCase().split(",")).join(",")
-//}
 
 var json=parsePythonic(universesConfig)
 function ffr(par,cur){
@@ -91,6 +88,7 @@ for(var v in json)
 		ff(json[v][v2], newJson[v2])
 	}
 }
+var notGenStr="[y]", deleteStr="[u]"
 byCategoriesTextarea.value=""
 for(var v in newJson)
 {
@@ -105,7 +103,7 @@ for(var v in newJson)
 				var v0=true, universes=""
 				for(var v3 in n[v2])
 					if(v3.replace(/\s+/g,"")!="")
-						if(v2.split("=")[1]?v2.split("=")[1].replace(/\s+/g,"")!="[delete]":true)
+						if(!v2.endsWith(deleteStr))
 							na[v2.split("=")[0].replace(/\s+$/g,"")].push(v3+(v2.split("=")[1]?" = "+v2.split("=")[1]:""))
 						else for(var vvv in na[v2.split("=")[0].replace(/\s+$/g,"")])
 							if(na[v2.split("=")[0].replace(/\s+$/g,"")][vvv].startsWith(v3))
@@ -113,7 +111,7 @@ for(var v in newJson)
 			}
 		for(var v2 in na)
 		{
-			byCategoriesTextarea.value+=("\n"+(!v2.endsWith("[no")?v2:v2.substr(0,v2.length-"[no".length)).split("=")[0].replace(/\s+$/g,"")).replace("\n","\n"+c)+(!v2.endsWith("[no")?": "+na[v2].join("; ").replace(/\s+/g," "):"")
+			byCategoriesTextarea.value+=("\n"+(!v2.endsWith(notGenStr)?v2:v2.substr(0,v2.length-notGenStr.length)).split("=")[0].replace(/\s+$/g,"")).replace("\n","\n"+c)+(!v2.endsWith(notGenStr)?": "+na[v2].join("; ").replace(/\s+/g," "):"")
 			for(var v22 in n)
 				if(v22.split("=")[0].replace(/\s+$/g,"")==v2)
 					if(n[v22][""])
