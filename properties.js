@@ -175,9 +175,9 @@ var notes=`19.06.17	такие вещи, как духовное зрение, �
 19.09.22	весь мир построен на том, что атмаг создаёт ба-хионь. самую реальную из вещей. благодаря этому управляя своей ба-хионь, даже будучи менее реальным человек и являет духовную силу. в этом состоит отличии душ, они могут создавать ба-хионь, они обладают той самой "волей", они нарушают,Иони не случайны и не детерминированы. души. душа может менять реальность, остальные нет. они могут лишь подчиняться законам реальности. ба-хионь управлять очень сложно, большинство людей не может ее освоить, можно научиться чему -то одному но много действий слишком сложны. проще призракам, реальность вокруг них состоит из эфира, не заряженного, они воздействуют на него. большинство призраков продолжают делать то, к чему привыкли при жизни, так проще. маги управляют лишь маной а не всей реальностью, это как и с воплощенными призраками легче полноценного управления. но все же лучше обычного. маги чаще становятся воплощенными призраками, ведь обладают большей силой. боги обладают огромной силой изначально, только такой человек может стать богом. но богами нужны последователи, что будут удерживать их от развоплощения. последователям гораздо проще, они лишь верят в бога и все. именно поэтому они последователи, а боги лучшие. именно это причина почему богов мало, нужна большая духовная сила или сила духа или сила воли, истинной воли. именно духовная сила, сила воли, ба-хионь сохраняется при перерождении, ба-хионь хранит отпечаток Атмана, по ба-хионь можно восстановить душу, развоплощенную и переоодившкюся. именно поэтому люди реально высшие существа. или точнее высшие - боги. потом бессмертные. потом 7 и так далее. количество и качество оболочек реально делает тебя выше. или точнее чем выше ты, тем больше оболочек получишь. именно поэтому боги часто перерождаются богами же, и даже самими же собой. свою силу ба-хионь можно увеличить, а можно и потерять.`
 add(`Myverse
 	About
-		Author[y]
+		Authors[y]
 			Me
-		Language[y]
+		Languages[y]
 			Russian
 	Artefacts
 		s0[y]
@@ -207,7 +207,7 @@ add(`Myverse
 		+7	=	Ungod
 	Shells
 		-5	=	Magical Body?
-		-4	=	Informatic Body?
+		-4	=	InFormsatic Body?
 		-3	=	Feeling Body?
 		-2	=	Ether Body
 		-1	=	Matter Body
@@ -318,8 +318,8 @@ add(`Myverse
 				Neutral	=	Beastgod
 				Light
 	Directions
-		//Type of actions for ability
-		Language[y]
+		//Types of actions for ability
+		Languages[y]
 			Word
 			Number
 			Gesture
@@ -336,12 +336,12 @@ add(`Myverse
 			Fuin
 			Seal
 			Mudra
-		//Type of ability using
-		Type[y]
+		//Types of ability using
+		Types[y]
 			Straight
 			Object
 			Saving
-		Form
+		Forms
 			Atack
 				GodHand
 				Ball
@@ -386,13 +386,13 @@ add(`Myverse
 				Tentacle
 				Mirror
 				Thread
-				Elemental
+				Elementsal
 				Clone
 				Thing
 				Wings
 				Limb
 				Cloak
-		Element
+		Elements
 			Basic
 				Fire
 				Water
@@ -501,7 +501,7 @@ add(`Myverse
 				Partial
 			Yoga
 			Bolotnaya
-			Elementov
+			Elementsov
 			Mesta
 		Creature[y]
 			Homuncul
@@ -562,7 +562,7 @@ add(`Myverse
 				Anti
 				Create
 				Enter
-			Elemental
+			Elementsal
 				Control
 				Anti
 				Create
@@ -703,8 +703,8 @@ add(`Myverse
 			Summon
 			Atack
 			Protection
-			Transformation
-				Form
+			TransFormsation
+				Forms
 				Figure
 				Material
 				Structure
@@ -761,8 +761,8 @@ add(`Myverse
 				Full
 					Full
 						100	=	Atman
-			World Type
-				Element
+			World Types
+				Elements
 					Basic
 						Fire
 						Water
@@ -797,22 +797,22 @@ add(`Myverse
 						Content
 							Reality
 							Energy
-							Form,Info, Structure
+							Forms,Info, Structure
 								Info
 								Structure
-								Type
-									Full-Realized-Type		Matter=	222
+								Types
+									Full-Realized-Types		Matter=	222
 										Matter=	312
 										Energy=	231
 										Ether	=	123
-									Half-Realized-Type		Ether
+									Half-Realized-Types		Ether
 										Chaos	=	120
 										Limbo	=	110
 										Ether	=	122
-									Non-Realized-Type			Info
+									Non-Realized-Types			Info
 										Info	=	002
 										Structure
-										Type
+										Types
 						Time
 							t	=	Time
 					Multitime
@@ -884,9 +884,9 @@ add(`Myverse
 		s3[y]
 		s4[y]
 		s5[y]
-			Element<Myverse.Directions.Element
+			Elements<Myverse.Directions.Elements
 			l5
-				Element<Myverse.Directions.Element
+				Elements<Myverse.Directions.Elements
 		s6[y]
 		s7[y]
 	Features
@@ -905,6 +905,7 @@ add(`Myverse
 				Loa
 				Embodied
 		s5[y]
+			Obsessed
 			Vampire
 				Weak	=	Madness
 				Normal	=	Ordinary
@@ -912,7 +913,7 @@ add(`Myverse
 			Werewolf
 				Weak	=	Licantrop
 				Normal	=	Ordinary
-				High	=	Multiform
+				High	=	MultiForms
 			Cubus
 				Incubus
 				Succubus
@@ -926,8 +927,15 @@ add(`Myverse
 				Light	=	Angel_0`)
 add(`Elfish Trash
 	About
-		Language[y]
+		Languages[y]
 			Russian
+		Inputs[y]
+			Books
+				Fanfics
+					Elfish Trash 1
+					Elfish Trash 2
+					Elfish Trash 3
+						Startrack
 	Metaverse
 		Original
 		Rudazov
@@ -936,17 +944,37 @@ add(`Elfish Trash
 		Naruto
 		Startrack
 		Potteriana`)
-add(`Charodei
-	About
-		Language[y]
-			English`)
 add(`Charodey
 	About
-		Language[y]
+		Languages[y]
+			English`)
+add(`Ranma 1/2
+	About
+		Languages[y]
+			Japanese`)
+add(`Inuyasha
+	About
+		Languages[y]
+			Japanese`)
+add(`Charodei
+	About
+		Languages[y]
 			Russian`)
+add(`Blue exorcist
+	About
+		Languages[y]
+			Japanese
+	Features
+		s5[y]
+			Demon
+			Spirit
+				Brownie
+	Dimension
+		Gienna	=	Demonic
+		Alis	=	Human`)
 add(`Rick and Morty
 	About
-		Language[y]
+		Languages[y]
 			English
 	Artefacts
 		s5[y]
@@ -955,26 +983,27 @@ add(`Rick and Morty
 		Original`)
 add(`Portal
 	About
-		Language[y]
+		Languages[y]
 			English
 	Artefacts
 		s5[y]
 			Portal Gun`)
 add(`Marvel
 	About
-		Language[y]
+		Languages[y]
 			English
 	Multiverse
 		Original
-	Races
-		Human
-		Zen-Hoberis
-		Klyntar
-		Kree
-		Inhuman
-		Chitauri
-		Flora Koloss
-		Titan_1
+	Creatures
+		Mind
+			Human
+			Zen-Hoberis
+			Klyntar
+			Kree
+			Inhuman
+			Chitauri
+			Flora Koloss
+			Titan_1
 	Energies
 		+5	=	Magical?
 	Features
@@ -1004,7 +1033,7 @@ add(`Marvel
 			Cerebro`)
 add(`Sword Art Online
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Artefacts
 		s4[y]
@@ -1012,7 +1041,7 @@ add(`Sword Art Online
 			Amusphere`)
 add(`Hellsing ultimate
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Features
 		s5[y]
@@ -1021,23 +1050,23 @@ add(`Hellsing ultimate
 			Undead`)
 add(`Dark souls
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`Devil may cry
 	About
-		Language[y]
+		Languages[y]
 			English
 	Persons
 		Dante`)
 add(`Bio shock
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`New horizonts
 	About
-		Author[y]
+		Authors[y]
 			Shetel-Sorken
-		Language[y]
+		Languages[y]
 			Russian
 		Mark[y]
 			AU
@@ -1065,11 +1094,12 @@ add(`New horizonts
 		Naruto
 		Resident Evil
 		Marvel
-	Races
-		Human
-		Orc
-		Elv
-		Ilitishari
+	Creatures
+		Mind
+			Human
+			Orc
+			Elv
+			Ilitishari
 	Features
 		s6[y]
 			Shari
@@ -1080,31 +1110,32 @@ add(`New horizonts
 			Biokinesis`)
 add(`Voshozhdeniye geroya shita
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Men in black
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`Bad choice
 	About
-		Author[y]
+		Authors[y]
 			N.B.
-		Language[y]
+		Languages[y]
 			Russian
 		Mark[y]
 			AU
 			Вымышленные существа
-			Мэри Сью (Марти Стью)
-			ОЖП
-			ОМП
+			MS
+			OWP
+			OMP
 			ООС
-			Пародия
-			Повествование от первого лица
+			Parody
+			First Person
+			POV
 			Попаданчество
 			Стёб
-			Экшн
-			Юмор
+			Action
+			Humor
 	Metaverse
 		Original
 			Worlds
@@ -1113,8 +1144,8 @@ add(`Bad choice
 				Magical Rus
 				Kostyan
 				Unknown Crap
-			World Type
-				Element
+			World Types
+				Elements
 					Basic
 						Fire
 						Water
@@ -1129,6 +1160,7 @@ add(`Bad choice
 						Void
 		Voshozhdeniye geroya shita
 		Naruto
+		Diablo
 		Toriko
 		Marvel
 		Hellsing ultimate
@@ -1151,10 +1183,15 @@ add(`Bad choice
 		Fairy Tale
 		Star Wars
 		Seilor Moon
-	Races
-		Human
-		Elv
-		Unknown Evil Crap
+		Inuyasha
+		Blue exorcist
+		Ranma 1/2
+	Creatures
+		Mind
+			Human
+			Elv
+			Unknown Evil Crap
+			Goblin_2
 	Energies
 		-5	=	Mrana?
 		-4	=	Psy?
@@ -1173,7 +1210,7 @@ add(`Bad choice
 	Elixirs
 		Hooch
 			Energy
-			Element
+			Elements
 				Basic
 					Fire
 					Water
@@ -1195,7 +1232,7 @@ add(`Bad choice
 		s5[y]
 			l5
 				:Name	=	Higher circle
-				Element
+				Elements
 					Basic
 						Fire
 							Uncontrolled	=	Armageddon
@@ -1218,7 +1255,7 @@ add(`Bad choice
 			gm	=	Gamer's System user
 				Gamer
 				Gamer+
-				Gamer T3000
+				Gamer T.-3000
 				Cheater
 				Cheater+
 				Hard
@@ -1251,7 +1288,30 @@ add(`Bad choice
 		Matteral
 		Etheral	=	Astral
 		Mental
+	Directions
+		Elements
+			Basic
+				Fire	=	Pyromancy
+				Water	=	Hydromancy
+				Earth	=	Geomancy
+				Air	=	Airomancy
+				Ice	=	Cryomancy
+				Electrizity	=	Electromancy
+			First
+				Dark	=	Magic of Darkness
+				Light	=	Magic of Light
+				Chaos	=	Magic of Chaos
+				Death	=	Magic of Death
+			Other
+				Space	=	Magic of Space
+				Time	=	Magic of Time
+			Misc
+				Shadow	=	Magic of Dark-Shadow
 	Persons
+		s5[y]
+			Yamada Toru
+		s6[y]
+			Student of unknown crap
 		s7[y]
 			Unknown Crap
 			Tizitsh
@@ -1267,25 +1327,25 @@ add(`Orderly
 			Nick Perumov`)
 add(`of Azimov
 	About
-		Author[y]
+		Authors[y]
 			Azik Azimov
-		Language[y]
+		Languages[y]
 			English
 	Dimensions
 		Hyper`)
 add(`of efremov
 	About
-		Author[y]
+		Authors[y]
 			Eferemov
-		Language[y]
+		Languages[y]
 			Russian
 	Dimensions
 		Hyper	=	zero-space`)
 add(`of hainline
 	About
-		Author[y]
+		Authors[y]
 			Robert Hainline
-		Language[y]
+		Languages[y]
 			English
 	Dimensions
 		Hyper	=	Cherenkov drive`)
@@ -1297,7 +1357,7 @@ add(`vavilon5
 		Hyper`)
 add(`Star Gate
 	About
-		Language[y]
+		Languages[y]
 			English
 	Dimensions
 		Hyper`)
@@ -1306,15 +1366,35 @@ add(`Vlast magii/Put naverh?
 		s5[y]
 			l5
 				:Name	=	GodHands
-				Element
+				Elements
 					Add
 						Plasma
 							Uncontrolled	=	Hors`)
-add(`of Rudazov
+add(`Rudazov
 	Metaverse
 		Original
-			World Type
-				Element
+			World Types
+				Opened
+					Closed
+					Half-Closed
+					Half-Opened	=	Have knowledge
+					Opened	=	Have contacts
+				Access
+					Destroyed
+					Non-Created
+				Gran
+					Chaotic
+					Half-Chaotic
+					Half-Normal
+					Normal
+				Razvitie
+					Magical
+					Biotic
+					Technic
+						1//Compas, Gun Powder,
+						2//Books print
+					//Number after "-" says that this world after apocalipsis, have but cant create this technologies
+				Elements
 					Basic
 						Fire
 						Water
@@ -1343,20 +1423,36 @@ add(`of Rudazov
 				Proxima Centaura	\n\t\t\t	Proxima Hell	\n\t\t\t	Proxima Heaven
 				World of Yehudin =	Dodekaedr
 	About
-		Author[y]
+		Authors[y]
 			Alexander Rudazov
-		Language[y]
+		Languages[y]
 			Russian
-	Races
-		Human
-		Elv_2
-		Sid
-		Dev
-		Devkatsi
-		Eist
-		Titan_0
-		Jinn
-		Kiig
+		Inputs[y]
+			Books
+				Fantasy
+					"Archmage"
+						0. "Sumer night"
+						1. "Archmage"
+						2. "Knights of Prechistya deva"
+						3. "The best weapon"
+						4. "Gray plague"
+						5. "War of Warlocks: vtorzheniye"
+						6. "War of Warlocks: SHturm citadeli"
+						7. "Sovet 12"
+						8. "Kids of sudden hour"
+						9. "Chudovish"
+						10. "Zarya nad bezdnoy"
+					"Yatshen"
+						1. "Six hands and three eyes"
+						2. "Shestrirukiy resident"
+						3. "Demons above vatikan"
+						4. "Son of Archdemon"
+					"Ghost"
+					"Three mudretsa"
+					"Kriabal"
+					Misc
+						"Vlastelin"
+						"Ekipazh"
 	Shells
 		-2	=	3	Body, Matter of
 		-1	=	1	Physical body
@@ -1421,7 +1517,7 @@ add(`of Rudazov
 				Antimagic-tatoo	=	Kiig.
 			l5
 				:Name	=	Grayland.Spells A+,Sumer.GodHands
-				Element
+				Elements
 					Misc
 						Grace
 							Uncontrolled	=	Sumer.Inanna	//Clear and health place Needs: soul of light
@@ -1453,6 +1549,21 @@ add(`of Rudazov
 						Create	=	Sumer.Nergal	//Needs: 3 masters nectromancers
 				Action[y]
 					Protection	=	Sumer.Tammuz	//Needs: egg of Phoenix
+	Creatures
+		Mind
+			s5[y]
+				Human
+				Elv_2
+				Sid
+				Dev
+				Devkatsi
+				Eist
+				Kiig
+			s6[y]
+				Titan_0
+				Jinn
+				Infal
+				Galact
 	Dimensions
 		Chaos	=	non-embodied
 		Limbo	=	gray world
@@ -1500,7 +1611,7 @@ add(`of Rudazov
 			Werewolf
 				Weak	=	Licantrop
 				Normal	=	Ordinary
-				High	=	Multiform
+				High	=	MultiForms
 			Cubus
 				Incubus
 				Succubus
@@ -1532,13 +1643,16 @@ add(`of Rudazov
 			Valet Amulet
 			Organization's
 			Stone of Gate
+		s6[y]
+			Grimoires
+				Kriabal of Briar
 	Artefacts
 		s5[y]
 			Staff
 			Rod
 			Plonet's Tech
 	Directions
-		Element
+		Elements
 			Basic
 				Fire	=	Pyromancy
 				Water	=	Hydromancy
@@ -1546,20 +1660,25 @@ add(`of Rudazov
 				Air	=	Airomancy
 				Ice	=	Cryomancy
 				Electrizity	=	Electromancy
+			First
+				Dark	=	Magic of Darkness
+				Light	=	Magic of Light
+				Chaos	=	Magic of Chaos
+				Death	=	Magic of Death
 			Other
-				Space
-				Time
+				Space	=	Magic of Space
+				Time	=	Magic of Time
 			Misc
 				Shadow
 				Blood
 				Mirror
-		Language[y]
+		Languages[y]
 			Word
 			Rune
 			Image
 			Picture
 			Seal
-		Type[y]
+		Types[y]
 			Straight
 			Saving
 			Artefact
@@ -1570,6 +1689,7 @@ add(`of Rudazov
 				Potion
 				...
 			Artefact
+			Twilight-Shadow
 		Creature[y]
 			Automate
 			Doppel
@@ -1590,10 +1710,10 @@ add(`of Rudazov
 			Vampire
 			Absorption
 			Curse
-			Transformation
+			TransFormsation
 				Material
 				Figure
-				Form
+				Forms
 				Structure
 			Blessing
 			Vow
@@ -1632,14 +1752,23 @@ add(`of Rudazov
 			Mental
 	Materials
 		Metals
-			Adamant		//Anti superreal
-			Adamantium//Pseudo adamant, very sharp, very durable
-			Koroniy		//Anti mage
-			Coldiron	//Anti mage
-			Copper		//Anti halfmaterialized
-			Bloodiron	//Anti demon
-			Silver		//Anti undead
-			Mithrill
+			s4[y]
+				Adamantium//Pseudo adamant, very sharp, very durable
+			s5[y]
+				Koroniy		//Anti mage
+				Coldiron	//Anti mage
+				Copper		//Anti halfmaterialized
+				Bloodiron	//Anti demon
+				Silver		//Anti undead
+				Mithrill
+			s7[y]
+				Adamant		//Anti superreal
+		Alchemical
+			Philosopher's
+				Stone
+				Metal
+				Liquid
+				Powder
 		Gas
 			Flogiston
 			Teporiy
@@ -1647,47 +1776,48 @@ add(`of Rudazov
 			Regenerin`)
 add(`Siyatelniy
 	About
-		Author[y]
+		Authors[y]
 			Pavel Kornev
-		Language[y]
+		Languages[y]
 			Russian
 	Materials
 		Metals
 			Coldiron	//Anti mage`)
 add(`SCP Foundation
 	About
-		Language[y]
+		Languages[y]
 			English
 	Uniques
 		SCP's`)
 add(`Naruto
 	About
-		Author[y]
+		Authors[y]
 			Masasi Kisimoto
-		Language[y]
+		Languages[y]
 			Japanese
 	Universe
 		Original
 			Worlds
 				Naruto's
 					Satellites
-	Races
-		Human
-		Frog
-		Snake
-		Monkey
-		Cat
-		Dog
-		Raven
-		Bijuu
-			Enot
-			Cat
-			Turtle
+	Creatures
+		Mind
+			Human
+			Frog
+			Snake
 			Monkey
-			Slug
-			zhuk
-			Octopus
-			Fox
+			Cat
+			Dog
+			Raven
+			Bijuu
+				Enot
+				Cat
+				Turtle
+				Monkey
+				Slug
+				zhuk
+				Octopus
+				Fox
 	Energies
 		+1+2	=	Chakra
 	Features
@@ -1711,14 +1841,20 @@ add(`Naruto
 					Rinnegan
 					Rinnesharingan
 				Ranmaru's
-			Element
+			Elements
 				Explosion
 				Crystall
-				Heat
-				Ice
-				Tree
+				Acid
+				Magnetism
+				Metal
+				Lava	=	Fire+Earth?
+				Boil	=	Fire+Water?
+				Heat	=	Fire+Air?
+				Tree	=	Earth+Water Moku
+				Earth+Air	=	Sand
+				Water+Air	=	Ice
 	Directions
-		Element
+		Elements
 			Basic
 				Fire	=	Katon
 				Water	=	Suiton
@@ -1729,8 +1865,8 @@ add(`Naruto
 				In	=	Inton
 				Yan	=	Yanton
 				Inyan	=	Inyanton
-		Language[y]
-			Technique
+		Languages[y]
+			Technique	=	Nin
 			Fuin
 			Mudra
 		Creature[y]
@@ -1747,6 +1883,7 @@ add(`Naruto
 			Steel arms	=	Ken
 			Flying
 			Sealing in
+			Senjutsu	=	Sen
 			Illusion
 				Genjutsu	=	Gen
 	Spells
@@ -1758,7 +1895,7 @@ add(`Naruto
 			Swords of Fog`)
 add(`Fate
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Abilities
 		Magic
@@ -1769,8 +1906,9 @@ add(`Fate
 		s6[y]
 			The Holy Grail
 	Creatures
-		s6[y]
-			Servant
+		Mind
+			s6[y]
+				Servant
 	Spells
 		s5[y]
 			Action
@@ -1778,21 +1916,22 @@ add(`Fate
 					Blood Citadel?`)
 add(`Claymore
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Energies
 		yo	=	Yoki
-	Races
-		Human
-		Yoma
-		Claymore`)
+	Creatures
+		Mind
+			Human
+			Yoma
+			Claymore`)
 add(`of Argus Filchenkov
 	Universe
 		Potteriana
 	About
-		Language[y]
+		Languages[y]
 			Russian
-		Author[y]
+		Authors[y]
 			Argus Filchenkov
 	Artefacts
 		s6[y]
@@ -1802,9 +1941,9 @@ add(`of Argus Filchenkov
 			Coldiron`)
 add(`of Kitsune Miyato
 	About
-		Language[y]
+		Languages[y]
 			Russian
-		Author[y]
+		Authors[y]
 			Kitsune Miyato
 	Metaverse
 		Naruto
@@ -1818,13 +1957,13 @@ add(`of Kitsune Miyato
 		Albus Dumbledore	=	Albus Persival Vulfric Brian Potter,Dumbledore`)
 add(`Guren Lagan
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`HPMoR
 	About
-		Author[y]
+		Authors[y]
 			Eliezer Yudkowsky
-		Language[y]
+		Languages[y]
 			English
 	Universe
 		Potteriana
@@ -1863,7 +2002,7 @@ add(`HPMoR
 		Patronus 2.0
 		Avadakedavra 2.0
 		Dementor control
-		Partial Transformation
+		Partial TransFormsation
 	Complexes
 		27 spells for important topic talk
 			Anti-Time-Turner
@@ -1871,18 +2010,31 @@ add(`HPMoR
 			...
 	Persons
 		Harry Potter	=	Harry James Potter-Evans-Verres`)
+add(`Diablo
+	About
+		Languages[y]
+			English
+		Inputs[y]
+			Games
+				Computer
+					1
+					2
+	Artefacts
+		s6[y]
+			Horadrical Cube`)
 add(`Warcraft
 	About
 		Language
 			English
-	Races
-		Human
-		Orc_2`)
+	Creatures
+		Mind
+			Human
+			Orc_2`)
 add(`Life of Archmage Potter
 	About
-		Author[y]
+		Authors[y]
 			Fil Bandileros
-		Language[y]
+		Languages[y]
 			Russian
 	Metaverse
 		Potteriana
@@ -1899,9 +2051,9 @@ add(`Life of Archmage Potter
 			Hel`)
 add(`Boy Who Conquered Time
 	About
-		Author[y]
+		Authors[y]
 			Fil Bandileros
-		Language[y]
+		Languages[y]
 			Russian
 	Multiverse
 		Potteriana
@@ -1921,7 +2073,7 @@ add(`Boy Who Conquered Time
 		s6[y]
 			Chronos braslet
 	Directions
-		Language[y]
+		Languages[y]
 			Schema
 			Spell
 	Energies
@@ -1931,12 +2083,41 @@ add(`Boy Who Conquered Time
 		tm	=	Time`)
 add(`Potteriana
 	About
-		Author[y]
+		Authors[y]
 			Joanne Rowling
-		Language[y]
+		Languages[y]
 			English
 	Persons
+		s4[y]
+			Dudley Dursley
+			Vernon Dursley
+			Petunia Dursley
+			Arabella Figg
 		s5[y]
+			Mundungulus Fletcher
+			Dedalus Dingl
+			Minerva MacGonagall
+			Drako Malfoy
+			Lucius Malfoy
+			Narcissa Malfoy Black
+			Bellatrix Lestrange Black
+			Sirius Black
+			Rabastan Lestrange
+			Rudolfus Lestrange
+			Alastor Moody
+			Severus Snape
+			Quirrinus Quirrell
+			Rubeus Hagrid
+			Hermione Granger
+			Ron Weasley
+			Fred Weasley
+			George Weasley
+			Persy Weasley
+			Ginny Weasley
+			Bill Weasley
+			Charly Weasley
+			Molly Weasley Pruit
+			Artur Weasley
 			Albus Dumbledore	=	Albus Persival Vulfric Brian Dumbledore
 			Harry Potter	=	Harry James Potter, Boy-Who-Lived
 	Abilities
@@ -1966,8 +2147,8 @@ add(`Potteriana
 				Putting	//3
 			Alchemy
 		Action[y]
-			Transformation	=	Transfiguration
-				Form
+			TransFormsation	=	Transfiguration
+				Forms
 				Figure
 				Material
 				Structure
@@ -1976,7 +2157,7 @@ add(`Potteriana
 			Blessing
 			Vow
 			Enchantment
-		Language[y]
+		Languages[y]
 			Rune
 			Spell
 			Ritual
@@ -2054,7 +2235,7 @@ add(`Potteriana
 					"Expelliarmus"	// — заклинание разоружения, выбивает палочку или другое оружие из рук противника.
 				Summon
 					Bird	=	"avis-"	// - Заклятие призыва птиц. Создаёт стайку птиц.
-			Transformation
+			TransFormsation
 				"Vermiculus" //(2)	 — превращает объект в червя[5].
 				"Aviforce-"//(2)	 — противник превращается в птицу/стаю птиц/стаю летучих мышей.[4]
 			Misc
@@ -2074,7 +2255,7 @@ add(`Potteriana
 			"Draconiforce" (2)	// — оживляет статую мини-дракончика в настоящего мини-дракончика или превращает в мини-дракончика предметы небольшой массы[15].
 			"Incarciforce" (2)	// — превращает люстру в клетку[9].
 			"Inflatus" (2)	// — заставляет объект надуваться, как воздушный шар[5].
-			"Informus" (2)	// — показывает информацию о существе-цели в GBA версии игры «Гарри Поттер и узник Азкабана»[21].
+			"InFormsus" (2)	// — показывает информацию о существе-цели в GBA версии игры «Гарри Поттер и узник Азкабана»[21].
 			"Calvorio" (2)	// — заклинание выпадения волос[12].
 			"Cantis" (2)	// — заклинание, которое заставляет поражённую им цель петь[12].
 			"Carpe retractum" (2)	// — Чары Захвата и Притяжения. Притягивает человека к цели (или цель к человеку). В игре «Гарри Поттер и узник Азкабана» это заклинание использовал Рон на первых же занятиях по Защите от Тёмных Искусств[15].
@@ -2105,7 +2286,7 @@ add(`Potteriana
 			"Emacipare"	// — заклинание, освобождающее от пут.[11]
 			"Entomorphium" (2)	// — ненадолго превращает в муравья[12].
 				//
-			Formula unknown
+			Formsula unknown
 				чары Тормозящие Хортона-Кейтча	// — запатентованные чары, применяемые к мётлам фирмы «Комета».
 				Трансмогрифианская Пытка
 				Синие искры (2)
@@ -2152,7 +2333,7 @@ add(`Potteriana
 			Mental
 				Чары подчинения - не империо
 				Absolute Submission	=	"Imperio-"	// - подвластие
-			Verbal Formula
+			Verbal Formsula
 				"Contra-" (3)	// - нарушение работы заклинаний
 				"Spangify-" (2)	// — батут
 				"Steelclaw-" (2)	// — steel claw
@@ -2182,7 +2363,7 @@ add(`Potteriana
 				"Appareo-"	// — проявление невидимого
 				"Scripto--" (3)	// - чары письма
 				"Inebriat-" (3)	// - чары впитывания жидкости в предмет
-				"Formalucis-" (3)	// - свет в форму
+				"Formsalucis-" (3)	// - свет в форму
 				"Calori-" (4)	// - нагреть
 				"Frigido-" (4)	// - охладить
 				"Finita-"	// - закончить
@@ -2277,7 +2458,7 @@ add(`Potteriana
 				"--Piertotum-"	// — движение големов
 				"--Capacius-"	// — емкость
 				"--Magicus-"	// - magical
-			Type
+			Types
 				"-Wingardi"	// - крылообразная
 				"-Inferni"	// - hell, cursed
 				"-Diabolica"	// - огненный щит
@@ -2370,14 +2551,14 @@ add(`Potteriana
 			Basilisk
 			Dementor
 			Phoenix
-	Races
-		Human
-		Giant
-		Goblin
-		Troll
-		Centaur
-		Gnome_2
-		Merpeople
+		Mind
+			Human
+			Giant
+			Goblin
+			Troll
+			Centaur
+			Gnome_2
+			Merpeople
 	Features
 		s4[y]
 			Muggle
@@ -2401,9 +2582,9 @@ add(`Potteriana
 			Vampire`)
 add(`Witcher
 	About
-		Author[y]
+		Authors[y]
 			Andrzej Sapkowski
-		Language[y]
+		Languages[y]
 			Polish
 	Creatures
 		s5[y]
@@ -2414,11 +2595,11 @@ add(`Witcher
 			Witcher
 			Mage?
 	Directions
-		Language[y]
+		Languages[y]
 			Mudra
 	Spells
 		s5[y]
-			Element
+			Elements
 				Basic
 					Air		=	Aard
 					Water	=	Aksiy
@@ -2431,7 +2612,7 @@ add(`Witcher
 		Geralt`)
 add(`Pokemon
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Creatures
 		s4[y]
@@ -2441,7 +2622,7 @@ add(`Pokemon
 			Pokeball`)
 add(`Ghost Busters
 	About
-		Language[y]
+		Languages[y]
 			English
 	Artefacts
 		s4[y]
@@ -2451,60 +2632,61 @@ add(`Ghost Busters
 			Ghost`)
 add(`UQ Holder
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Rave Master
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Rosario to Vampire
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Features
 		s5[y]
 			Vampire`)
 add(`The Law of Ueki
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Hunter x Hunter
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Tenjou Tenge
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`My hero academy
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Features
 		s5[y]
 			Quirk`)
 add(`Berserk
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Toriko
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Magic Adacademy
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Users
 		s5[y]
 			e5	=	Mage`)
 add(`High School DxD
 	About
-		Language[y]
+		Languages[y]
 			Japanese
-	Races
-		Human
-		Dragon
+	Creatures
+		Mind
+			Human
+			Dragon
 	Artefacts
 		s6[y]
 			Evil Pieces
@@ -2521,10 +2703,11 @@ add(`High School DxD
 			e7	=	God_?`)
 add(`Startrack
 	About
-		Language[y]
+		Languages[y]
 			English
-	Races
-		Human
+	Creatures
+		Mind
+			Human
 	Energies
 		+4	=	Psy?
 	Users
@@ -2532,16 +2715,17 @@ add(`Startrack
 			e4	=	Psyonic`)
 add(`Seilor Moon
 	About
-		Language[y]
+		Languages[y]
 			Japanese
-	Races
-		Human
-		Reptiloid
+	Creatures
+		Mind
+			Human
+			Reptiloid
 	Uniques
 		Moon Diadema`)
 add(`Dragonball
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Energies
 		+1	=	Ki?
@@ -2550,10 +2734,13 @@ add(`Dragonball
 			Dragon Ball`)
 add(`Lord of Rings
 	About
-		Author[y]
+		Authors[y]
 			John Ronald Reuel Tolkien
-		Language[y]
+		Languages[y]
 			English
+	Dimension
+		Matteral	=	Body
+		Twilight-Shadow	=	Soul
 	Universe
 		Original
 			Worlds
@@ -2569,14 +2756,17 @@ add(`Lord of Rings
 		s5[y]
 			Mage
 			Nazgul
-	Races
-		Human
-		Elv
-		Gnome
-		Orc_3
-		Troll
-		Dragon
-		Balrog
+	Creatures
+		Mind
+			Human
+			Elv
+			Gnome
+			Orc_3
+			Troll
+			Dragon
+			Balrog
+			Ent
+			Hobbit
 	Uniques
 		One Ring
 	Artefacts
@@ -2588,16 +2778,17 @@ add(`Lord of Rings
 			Mithrill`)
 add(`Nick
 	About
-		Language[y]
+		Languages[y]
 			Russian
-		Author[y]
+		Authors[y]
 			Andrzej	Yasinski
-	Races
-		Human
-		Elv
-		Gnome
-		Orc_0
-		Demon_0
+	Creatures
+		Mind
+			Human
+			Elv
+			Gnome
+			Orc_0
+			Demon_0
 	Energies
 		-1	=	Prana
 		+4	=	Psy
@@ -2615,15 +2806,12 @@ add(`Nick
 			Rod
 				Adeptnesser's
 	Directions
-		Language[y]
+		Languages[y]
 			Construct
 			Weaving
 			Infostructure
 			Image	//Only gods
-		Creature[y]
-			Holem
-			Automate
-		Element
+		Elements
 			Basic
 				Fire
 				Water
@@ -2631,6 +2819,9 @@ add(`Nick
 				Earth
 				Ice
 				Electrizity
+		Creature[y]
+			Holem
+			Automate
 		Action[y]
 			Illusion
 				Dense
@@ -2671,21 +2862,48 @@ add(`Nick
 			Cleverness
 		s6[y]
 			God_2`)
+add(`Misc
+	About//All not in classification
+	Abilities
+		Empathy
+		Telepathy
+		Avatar
+		Zhrets
+		Feeling
+			Types[y]
+				Vision
+				Obonyanie
+				Vkus
+				Sluh
+				Tactile
+				Feeling
+			User
+				Demon
+				Angel
+				Other
+				Mage
+			Misc
+				Night
+			Energies
+		Berserk
+		Yasnovidenie`)
 add(`Skyrim
 	About
-		Language[y]
+		Languages[y]
 			English
-	Races
-		Human
-		Dragon
+	Creatures
+		Mind
+			Human
+			Dragon
 	Features
 		Mage`)
 add(`Star Wars
 	About
-		Language[y]
+		Languages[y]
 			English
-	Races
-		Human
+	Creatures
+		Mind
+			Human
 	Energies
 		gf	=	Great Force?
 	Users
@@ -2704,10 +2922,11 @@ add(`Star Wars
 			Galaxy's Tech`)
 add(`Warhammer
 	About
-		Language[y]
+		Languages[y]
 			English
-	Races
-		Human
+	Creatures
+		Mind
+			Human
 	Abilities
 		Psyker
 	Materials
@@ -2723,12 +2942,12 @@ add(`Warhammer
 		Psyker`)
 add(`Zero no Tsukaima
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Energies
 		+3+5	=	Wizardy?
 	Directions
-		Element
+		Elements
 			Basic
 				Fire
 				Water
@@ -2736,7 +2955,7 @@ add(`Zero no Tsukaima
 				Earth
 			Misc
 				Void
-		Language[y]
+		Languages[y]
 			Spell
 			Rune
 			Ritual
@@ -2765,20 +2984,20 @@ add(`Zero no Tsukaima
 		Original
 			Our	=	Earth-2007?
 			Other?
-	Races
-		Human
-		Elv
-		Changeling
-	Features
-		Loa?
 	Creatures
+		Mind
+			Human
+			Elv
+			Changeling
 		s5[y]
 			Wyvern
 			Salamander
-			Beholder`)
+			Beholder
+	Features
+		Loa?`)
 add(`To Aru Majutsu no Index
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Metaverse
 		Original
@@ -2799,21 +3018,39 @@ add(`To Aru Majutsu no Index
 		5.0	=	Very strong	// esper, can destroy country
 		6.0	=	Insane	// power of esper, can destroy planet's surface; not exist
 	Directions
-		Language[y]
+		Languages[y]
 			Ritual
 			Rune
 			Spell
 		Action[y]
 			Enchantment
-	Features
+	Users
 		s5[y]
 			Esper
 			Mage
 		s6[y]
 			Angel_0
-			Imagine Breaker
 		s7[y]
 			God_?
+	Abilities
+		s5[y]
+			Esper
+				l1
+				l2
+				l3
+				l4
+					Teleport of Sirai Kuroku, Needs: Touch
+					Teleport of ?, Needs: Look
+				l5
+					1. Vector control of Accelerator, Needs: Touch
+					2. Dark matter control
+					3. Electromagnetism control of Railgun
+					4. Plasma control
+					5. Mental control of Psyhotron
+					6. Super strength
+					7. ?
+		s6[y]
+			Imagine Breaker
 	Uniques
 		s5[y]
 			Grimoires
@@ -2821,82 +3058,26 @@ add(`To Aru Majutsu no Index
 			Cross?
 			Sword of space?
 	Persons
-		Accelerator
-			Features
-				Esper
-					Level	=	5.0
-					Rank	=	1
-			Abilities=Vector control
-			Needs=Touch
-		Dark matter
-			Features
-				Esper
-					Level	=	5.0
-					Rank	=	2
-			Abilities=Dark matter control
-		Railgun
-			Features
-				Esper
-					Level	=	5.0
-					Rank	=	3
-			Abilities=Electromagtism control
-		Plasma
-			Features
-				Esper
-					Level	=	5.0
-					Rank	=	4
-			Abilities=Plasma control
-		Psyhotron
-			Features
-				Esper
-					Level	=	5.0
-					Rank	=	5
-			Abilities=Mental control
-		?
-			Features
-				Esper
-					Level	=	5.0
-					Rank	=	6
-			Abilities=Super strong
-		?
-			Features
-				Esper
-					Level	=	5.0
-					Rank	=	7
+		Railgun	=	Misaka Mikoto
+		Psyhotron	=	Misaki Seko
 		Sirai Kuroku
-			Features
-				Esper
-					Level	=	4.0
-					Rank	=	?
-			Abilities=Teleport
-			Needs=Touch
-		?
-			Features
-				Esper
-					Level	=	4.0
-					Rank	=	?
-			Abilities=Teleport
-			Needs=In sight
 		Kongo Mitsuko
-			Features
-				Esper
-					Level	=	?.0
-					Rank	=	?
-			Abilities=Air hit
+			Abilities
+				Air hit
 		Kamijo Touma
-			Features
-				Esper
-					Level	=	0.0
+			Abilities
 				Imagine Breaker
-			Needs=Touch
+					Needs: Touch
 		Steil Magnus
-			Abilities=Mage
+			Features
+				Mage
 		Index
-			Abilities=Index
+			Abilities
+				Index
 		Alister Crowley`)
 add(`Bleach
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Users
 		s5[y]
@@ -2910,16 +3091,17 @@ add(`Bleach
 		Sword of Soul`)
 add(`One Piece
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Features
 		Fruits`)
 add(`Mass Effect
 	About
-		Language[y]
+		Languages[y]
 			English
-	Races
-		Human
+	Creatures
+		Mind
+			Human
 	Users
 		s5[y]
 			e4	=	Biotic
@@ -2927,7 +3109,7 @@ add(`Mass Effect
 		+4	=	Psy?`)
 add(`Terminator
 	About
-		Language[y]
+		Languages[y]
 			English
 	Artefacts
 		s5[y]
@@ -2944,7 +3126,7 @@ add(`Terminator
 				Cyborg`)
 add(`Resident Evil
 	About
-		Language[y]
+		Languages[y]
 			English
 	Creatures
 		s4[y]
@@ -2952,20 +3134,31 @@ add(`Resident Evil
 	Features
 		s5[y]
 			Superabilities`)
+add(`Cat Leopold
+	About
+		Languages[y]
+			Russian
+	Elixirs
+		s4[y]
+			Ozverin`)
 add(`Noragami
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Users
 		s4[y]
 			e0+e2	=	Sword-Soul
+	Spells
+		s5[y]
+			Line
 	Features
 		Spirit
 			Ghost
+			Demon-Loa
 			God_0`)
 add(`Slayers
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Users
 		s5[y]
@@ -2974,7 +3167,7 @@ add(`Slayers
 		+5	=	Magical?`)
 add(`Fairy Tale
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Universe
 		Original
@@ -2987,14 +3180,15 @@ add(`Fairy Tale
 		+5	=	Magical?`)
 add(`DC
 	About
-		Language[y]
+		Languages[y]
 			English
 	Multiverse
 		Original
 			Worlds
 				Our	=	Earth?
-	Races
-		Human
+	Creatures
+		Mind
+			Human
 	Energies
 		+5	=	Magical?
 		ln	=	Lantern's
@@ -3021,12 +3215,12 @@ add(`DC
 			Crypton's Tech`)
 add(`Avatar
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Energies
 		+5	=	Mana?
 	Directions
-		Element
+		Elements
 			Basic
 				Fire
 				Water
@@ -3044,7 +3238,7 @@ add(`Avatar
 			Avatar`)
 add(`Fullmetal Alchemist
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Features
 		s5[y]
@@ -3055,9 +3249,9 @@ add(`Fullmetal Alchemist
 		al	=	Alchemycal?`)
 add(`Dozory
 	About
-		Language[y]
+		Languages[y]
 			Russian
-		Author[y]
+		Authors[y]
 			Sergey Lukyanenko
 	Levels
 		:School	=	Other
@@ -3156,7 +3350,7 @@ add(`Dozory
 			Тройной ключ	// — заклинание, порождающее любовь, веру и понимание. К тому же разбивает ментальную защиту противника.
 			Тройное лезвие	// — заклинание, материализующее 3 кинжалоподобных лезвия, с большой скоростью летящих в указанном магом направлении.
 			Fireball	// — широко распространённое как у Светлых, так и у Тёмных заклинание. Во врага пускается сгусток огня. Существует также «групповой файербол» и какая-то особая версия последнего у Инквизиторов.
-			Element
+			Elements
 				Other
 					Space
 						Portal	=	// — заклинание позволяющее почти мгновенно переносится на большие расстояния при помощи врат, без наводки используется только высшими иными (или зеркалом). При помощи мага в пункте назначения создавать портал проще.
@@ -3164,7 +3358,7 @@ add(`Dozory
 						Stop	=	Freeze	// — локальная остановка времени, применяется для иммобилизации противника без причинения ему вреда.
 			Ход	// — заклинание, позволяющее бежать с очень высокой скоростью. При попадании под воздействие заклинания сердечной мышцы (миокарда) может вызвать остановку последнего.
 			l5
-				Element
+				Elements
 					First
 						Light
 							Uncontrolled
@@ -3188,9 +3382,9 @@ add(`Dozory
 			Minoy Sphere	// - открывает портал откуда угодно, а его точку назначения невозможно проследить. Имеет только один заряд, перезаряжать его умеют только ведьмы. С разряженной Минойской Сферой ведьма Арина была заперта заклинанием Саркофаг Времён.
 			Power Prizm	// — хрустальная прозрачная призма. Использующий призму Иной вытягивает жизненную силу из того, на кого сквозь неё смотрит. Использовала Алиса Донникова ("Ночной дозор")
 	Directions
-		Language[y]
+		Languages[y]
 			?
-		Type[y]
+		Types[y]
 			Straight
 			Saving
 			Artefact
@@ -3220,7 +3414,7 @@ add(`Dozory
 			7	=	Normal	//Can be backside`)
 add(`Kono Subarashii Sekai ni Shukufuku o
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Multiverse
 		Original
@@ -3229,15 +3423,15 @@ add(`Kono Subarashii Sekai ni Shukufuku o
 				Other`)
 add(`Tokyo Ghoul
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Shingeki no Kyojin
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Hataraku Maou-sama!
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Features
 		s6[y]
@@ -3256,11 +3450,11 @@ add(`Hataraku Maou-sama!
 				Ente Isla`)
 add(`To Love-Ru
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`The Gamer
 	About
-		Language[y]
+		Languages[y]
 			Korean
 	Users
 		s5[y]
@@ -3273,15 +3467,15 @@ add(`The Gamer
 	Directions
 		Misc
 			Clairvoyance
-		Element
+		Elements
 			Basic
 				Fire
 				Water
 				Air
 				Earth
-		Form
+		Forms
 			Misc
-				Elemental
+				Elementsal
 	Spells
 		s5[y]
 			Action
@@ -3309,7 +3503,7 @@ add(`The Gamer
 			e5	=	Mage`)
 add(`Neon Genesis Evangelion
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Shells
 		atf	=	AT-field
@@ -3321,218 +3515,223 @@ add(`Neon Genesis Evangelion
 		Kid`)
 add(`Master and Margarita
 	About
-		Author[y]
+		Authors[y]
 			Bulgakov
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Alice in back side of mirror
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Voina i mir
 	About
-		Author[y]
+		Authors[y]
 			Lev Tolstoy
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Gundum
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Ottsy i deti
 	About
-		Author[y]
+		Authors[y]
 			Turgenev
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`How to stat wizard
 	About
-		Author[y]
+		Authors[y]
 			Duain Diana
-		Language[y]
+		Languages[y]
 			English`)
 add(`12 stuliev
 	About
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Green Mile
 	About
-		Author[y]
+		Authors[y]
 			Steven King
-		Language[y]
+		Languages[y]
 			English`)
 add(`Pobeg is shoushenka
 	About
-		Author[y]
+		Authors[y]
 			Steven King
-		Language[y]
+		Languages[y]
 			English`)
 add(`451 Farengait
 	About
-		Author[y]
+		Authors[y]
 			Rai bradberry
-		Language[y]
+		Languages[y]
 			English`)
 add(`We
 	About
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Oh divniy new world
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`1984
 	About
-		Author[y]
+		Authors[y]
 			George Oruell
-		Language[y]
+		Languages[y]
 			English`)
 add(`Skotniy Dvor
 	About
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`The Zadrot
 	About
-		Author[y]
+		Authors[y]
 			Fil Bandileros
-		Language[y]
+		Languages[y]
 			Russian
 	Universe
 		The Gamer`)
 add(`Meta-Hobbit
 	About
-		Author[y]
+		Authors[y]
 			Fil Bandileros
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Meta-Gamer
 	About
-		Author[y]
+		Authors[y]
 			Fil Bandileros
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Solaris`)
 add(`Thanks for fish
 	About
-		Author[y]
+		Authors[y]
 			Fil Bandileros
-		Language[y]
+		Languages[y]
 			Russian
 	Multiverse
 		Marvel`)
 add(`Atlant raspravil plechi
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`Eyes of other world
 	About
-		Author[y]
+		Authors[y]
 			Jack Vance
-		Language[y]
+		Languages[y]
 			English`)
 add(`Game of Thrones
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`Autostop in galaxy
 	About
-		Author[y]
+		Authors[y]
 			Duglas adams
-		Language[y]
+		Languages[y]
 			English`)
 add(`Dark mage
 	About
-		Author[y]
+		Authors[y]
 			Sergey zloy
-		Language[y]
+		Languages[y]
 			Russian
 	Universe
 		Potteriana`)
 add(`Mage and his shadow`)
 add(`Fate of Archmage
 	About
-		Language[y]
+		Languages[y]
 			Russian
-	Multiverse
+		Inputs[y]
+			Book
+				Fanfic
+					1. Fate of Archmage
+					2. Plan of Archmage
+	Metaverse
 		Rudazov
 		Potteriana`)
 add(`Sticks`)
 add(`Myths of Ktulhu
 	About
-		Author[y]
+		Authors[y]
 			Govard Lovecraft
-		Language[y]
+		Languages[y]
 			English`)
 add(`Strugatskie
 	About
-		Author[y]
+		Authors[y]
 			Strugatskie
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Put naverh
 	About
-		Author[y]
+		Authors[y]
 			Hadin poznavshiy tmu
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Antichniy charoplet
 	About
-		Author[y]
+		Authors[y]
 			Alessiy
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Small Monster
 	About
-		Author[y]
+		Authors[y]
 			Daimon Agafo
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`King's Battle
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Hunger Games
 	About
-		Author[y]
+		Authors[y]
 			Katlin
-		Language[y]
+		Languages[y]
 			English`)
 add(`Voina mirov
 	About
-		Author[y]
+		Authors[y]
 			Herbert wels
-		Language[y]
+		Languages[y]
 			English`)
 add(`Hyperboloid inzhenera garina
 	About
-		Author[y]
+		Authors[y]
 			Tolstoy
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Tumannost Andromedy
 	About
-		Author[y]
+		Authors[y]
 			Efremov
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Elita
 	About
-		Author[y]
+		Authors[y]
 			Belyaev
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Dead souls
 	About
-		Author[y]
+		Authors[y]
 			Nikolay Gogol
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Pandora Box`)
 add(`Svarog
 	About
-		Author[y]
+		Authors[y]
 			Buzhkov
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Deus Ex`)
 add(`Fallout`)
@@ -3540,68 +3739,77 @@ add(`Assasin's Creed`)
 add(`Megabrain`)
 add(`Matrix
 	About
-		Language[y]
+		Languages[y]
 			English`)
-add(`5 element`)
+add(`5 Elements`)
 add(`trassa 60`)
 add(`Hodyachiy Zamok
 	About
-		Author[y]
+		Authors[y]
 			Hayao Miadzaki
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Seishun Buta Yaro wa Bunny Girl-senpai no Yume wo Minai
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Love Death Robots`)
 add(`Black Mirror`)
 add(`Memnoh Devil`)
 add(`Will for Life
 	About
-		Language[y]
+		Languages[y]
 			Russian`)
 add(`Technomancer
 	About
-		Language[y]
+		Languages[y]
 			Russian
 	Universe
 		Systema, Labirint, Bogi, Avanturisti`)
 add(`Overlord
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`One Punch Man
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Mob Psyho 100
 	About
-		Language[y]
-			Japanese`)
+		Languages[y]
+			Japanese
+	Persons
+		Mob
+		Mob's teacher
+	Energies
+		s5[y]
+			+4	=	Psy`)
 add(`Svet za okoshkom
 	About
-		Author[y]
+		Authors[y]
 			Svyatoslav Loginov
-		Language[y]
-			Russian`)
+		Languages[y]
+			Russian
+	Features
+		s4[y]
+			Ghost`)
 add(`Assasin's Class
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`vosplamenyayushaya vzglyadom
 	About
-		Author[y]
+		Authors[y]
 			Steven King
-		Language[y]
+		Languages[y]
 			English`)
 add(`Re: Monster
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`High School of Dead
 	About
-		Language[y]
+		Languages[y]
 			Japanese`)
 add(`Chronics of Narnia`)
 add(`Labirints Eho`)
@@ -3611,9 +3819,9 @@ add(`Star Dust`)
 add(`Home of strange kid ms peregrin`)
 add(`Gravity Falls
 	About
-		Language[y]
+		Languages[y]
 			English
-		Author[y]
+		Authors[y]
 			Alex Hirsh`)
 add(`Fineas and Ferb`)
 add(`Infinity Story`)
@@ -3624,7 +3832,7 @@ add(`Wizard Parents`)
 add(`Dungeons and Dragons`)
 add(`Dragon Age
 	About
-		Language[y]
+		Languages[y]
 			English
 	Dimensions
 		Ten?
@@ -3634,14 +3842,14 @@ add(`Dragon Age
 			Lyrium`)
 add(`RWBY
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Creatures
 		s5[y]
 			Grimm`)
 add(`Death Note
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Artefacts
 		s7[y]
@@ -3659,15 +3867,15 @@ add(`Death Note
 			Death King`)
 add(`Dragonlance
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`League of Legends
 	About
-		Language[y]
+		Languages[y]
 			English`)
 add(`Code Geass
 	About
-		Language[y]
+		Languages[y]
 			Japanese
 	Persons
 		s5[y]
