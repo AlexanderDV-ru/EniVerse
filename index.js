@@ -1,9 +1,9 @@
-//--- Name: EniVerses/Vesion: 0.1.7a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
+//--- Name: EniVerses/Vesion: 0.1.8a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
 //--- Start of standard initialization
 //Program info
 var programInfo={
 	Name : "EniVerses",
-	Version : "0.1.7a",
+	Version : "0.1.8a",
 	Authors : "AlexanderDV"
 }
 
@@ -31,29 +31,34 @@ function ffr(par,cur){
 	if(cur)
 		for(var v in cur)
 			if(!n[v])
-				if(v.split("=")[1])
+				if(v.split(symbols.config.localName)[1])
 				{
-					n[v]=ffr(n[v.split("=")[0].replace(/\s+/g," ")],cur[v])
-					delete n[v.split("=")[0].replace(/\s+/g," ")]
+					n[v]=ffr(n[v.split(symbols.config.localName)[0].replace(/\s+/g," ")],cur[v])
+					delete n[v.split(symbols.config.localName)[0].replace(/\s+/g," ")]
 				}
 				else n[v]=cur[v]
 		return n
 }
 //Parents
-var parSym="<"
-function pars(cjson){
+function pars(cjson,count){
 	for(var v in cjson)
 	{
-		pars(cjson[v])
-		if(v.split(parSym)[1]&&v.split(parSym)[0].indexOf("//")==-1)
+		pars(cjson[v],1)
+		var firstPart=v.split(symbols.config.parent)[0]
+		var secondPart=v.split(symbols.config.parent)[1]
+		if(secondPart&&firstPart.indexOf(symbols.config.comment)==-1)
 		{
+			var curPart=secondPart.split(symbols.config.parentSplit)[0]
 			var par=json
-			for(var v2 in v.split(parSym)[1].split("."))
+			var curPartSplited=curPart.split(symbols.config.parentElement)
+			for(var v2 in curPartSplited)
 			{
-				console.log(par,v.split(parSym)[1].split(".")[v2],v);
-				par=par[v.split(parSym)[1].split(".")[v2]]
+				console.log(par,curPartSplited[v2],v);
+				par=par[curPartSplited[v2]]
 			}
-			cjson[v.split(parSym)[0]]=ffr(par,cjson[v])
+			var newSecondPart=v.split(symbols.config.parent)[1].replace(new RegExp("$"+symbols.config.parentSplit,"g"),"").replace(new RegExp(symbols.config.parentSplit+symbols.config.parentSplit,"g"),symbols.config.parentSplit)
+			var newName=count?v:v.split(symbols.config.parent)[0]+(newSecondPart?symbols.config.parent+newSecondPart:"")
+			cjson[newName]=ffr(par,cjson[v])
 			delete cjson[v]
 		}
 	}
@@ -76,7 +81,7 @@ for(var v in json)
 		function ff(o,n){
 				for(var v3v in o)
 			{
-				var v3=v3v.split("//")[0]
+				var v3=v3v.split(symbols.config.comment)[0]
 				if(!n[v3])
 						n[v3]={}
 				n[v3][v]={}
@@ -88,35 +93,39 @@ for(var v in json)
 		ff(json[v][v2], newJson[v2])
 	}
 }
-var notGenStr="[y]", deleteStr="[u]"
 byCategoriesTextarea.value=""
+var tags	=	{
+	hide:	symbols.config.tag.replace(symbols.inSyms,symbols.config.tags.hide),
+	del	:	symbols.config.tag.replace(symbols.inSyms,symbols.config.tags.del)
+}
 for(var v in newJson)
 {
-	byCategoriesTextarea.value+=("\n"+v).replace("\n","\n")
+	byCategoriesTextarea.value+=symbols.newLine+v
 	function ff2(o,n,c){
-			var na={}
+		var na	=	{}
 		for(var v2 in n)
 			if(v2.replace(/\s+/g,"")!="")
 			{
-				if(!na[v2.split("=")[0].replace(/\s+$/g,"")])
-					na[v2.split("=")[0].replace(/\s+$/g,"")]=[]
+				if(!na[v2.split(symbols.config.localName)[0].replace(/\s+$/g,"")])
+					na[v2.split(symbols.config.localName)[0].replace(/\s+$/g,"")]=[]
 				var v0=true, universes=""
 				for(var v3 in n[v2])
 					if(v3.replace(/\s+/g,"")!="")
-						if(!v2.endsWith(deleteStr))
-							na[v2.split("=")[0].replace(/\s+$/g,"")].push(v3+(v2.split("=")[1]?" = "+v2.split("=")[1]:""))
-						else for(var vvv in na[v2.split("=")[0].replace(/\s+$/g,"")])
-							if(na[v2.split("=")[0].replace(/\s+$/g,"")][vvv].startsWith(v3))
-								na[v2.split("=")[0].replace(/\s+$/g,"")].splice(vvv)
+						if(!v2.endsWith(tags.del))
+							na[v2.split(symbols.config.localName)[0].replace(/\s+$/g,"")].push(v3+(v2.split(symbols.config.localName)[1]?" "+symbols.config.localName+" "+v2.split(symbols.config.localName)[1]:""))
+						else for(var vvv in na[v2.split(symbols.config.localName)[0].replace(/\s+$/g,"")])
+							if(na[v2.split(symbols.config.localName)[0].replace(/\s+$/g,"")][vvv].startsWith(v3))
+								na[v2.split(symbols.config.localName)[0].replace(/\s+$/g,"")].splice(vvv)
 			}
 		for(var v2 in na)
 		{
-			byCategoriesTextarea.value+=("\n"+(!v2.endsWith(notGenStr)?v2:v2.substr(0,v2.length-notGenStr.length)).split("=")[0].replace(/\s+$/g,"")).replace("\n","\n"+c)+(!v2.endsWith(notGenStr)?": "+na[v2].join("; ").replace(/\s+/g," "):"")
+			byCategoriesTextarea.value+=(symbols.newLine+(!v2.endsWith(tags.hide)?v2:v2.substr(0,v2.length-tags.hide.length)).split(symbols.config.localName)[0].replace(/\s+$/g,"")).replace(symbols.newLine,symbols.newLine+c)+(!v2.endsWith(tags.hide)?symbols.isIn+" "+na[v2].join(symbols.isInSplit+" ").replace(/\s+/g," "):"")
 			for(var v22 in n)
-				if(v22.split("=")[0].replace(/\s+$/g,"")==v2)
+				if(v22.split(symbols.newLine)[0].replace(/\s+$/g,"")==v2)
 					if(n[v22][""])
-						ff2("",n[v22][""],c+"\t")
+						ff2("",n[v22][""],c+symbols.tab)
 		}
 	}
-	ff2("",newJson[v],"\t")
+	ff2("",newJson[v],symbols.tab)
 }
+byCategoriesTextarea.value=byCategoriesTextarea.value.replace(new RegExp("("+removeFromResult.join(")|(")+")"),"")
