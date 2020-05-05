@@ -1,4 +1,4 @@
-/*--- Name: EniVerses/Vesion: 0.2.0a/Authors: AlexanderDV/Description: Properties EniVerses .js. ---*/
+/*--- Name: EniVerses/Vesion: 0.2.1a/Authors: AlexanderDV/Description: Properties EniVerses .js. ---*/
 //Properties
 var props	=	{
 	config	:	{
@@ -6,7 +6,8 @@ var props	=	{
 		offset	:	"\t",
 		newLine	:	"\n",
 		snippets	:	{
-			"=":"\\c\\b\n\\c\t@=[y]\n\\c\t\t\\a"
+			"!"	:	"\\c\\b\n\\c\t=\\a",
+			"№"	:	"\\c\\b\n\\c\t\\a"
 		},
 		localNameDepr	:	"---Value for deprecated localName mechanic---",
 		parent	:	"{",
@@ -20,7 +21,6 @@ var props	=	{
 		},
 		otherType	:	"@",
 		classificationonal	:	"#",
-		inComm	:	"!",
 		toRedact	:	"?",
 		synonymSplit	:	"/",
 		isIn	:	":",
@@ -36,20 +36,22 @@ function add(adding){
 	var aSpl=adding.split(props.config.newLine)
 	for(var v in aSpl)
 	{
-		var add=aSpl[v]
+		var add=aSpl[v],rrr="1234567890"//"([\\t ]+|[\\t ])"
 		for(var v2 in props.config.snippets)
-			if(aSpl[v].indexOf(v2)!=-1)
-				add=props.config.snippets[v2].replace(/[\\][c]/g,aSpl[v].match(/^(\t+|\t|)/)[0]).replace(/[\\][b]/g,normalName(aSpl[v].split(v2)[0].substr(aSpl[v].match(/^(\t+|\t|)/)[0].length))).replace(/[\\][a]/g,normalName(aSpl[v].split(v2)[1]))
+			if(add.indexOf(v2)!=-1)
+				add=props.config.snippets[v2].replace(/[\\][c]/g,add.match(/^(\t+|\t|)/)[0]).replace(/[\\][b]/g,normalName(add.split(v2)[0].substr(add.match(/^(\t+|\t|)/)[0].length),rrr)).replace(/[\\][a]/g,normalName(add.split(v2)[1],rrr))
 		res+=props.config.newLine+add
 		if(v==0)
-			props.universes.push(normalName(add))
+			props.universes.push(normalName(add,rrr))
 	}
-	adding=res
+	adding=""
+	for(var v in res.split(props.config.newLine))
+		adding+=props.config.newLine+res.split(props.config.newLine)[v].match(/^(\t+|\t|)/)[0]+normalName(res.split(props.config.newLine)[v].substr(res.split(props.config.newLine)[v].match(/^(\t+|\t|)/)[0].length))
 	adding	=	(props.config.newLine+adding.replace(new RegExp("["+props.config.offset+"]","g"),props.config.offset)).replace(new RegExp("["+props.config.newLine+"]","g"),props.config.newLine+multiplyStr(props.config.offset,props.offset))
-	props.universesConfig+=	adding//.replace(/[{]/g,"{Eniverse.")
+	props.universesConfig+=	adding
 }
 add(`Myverse
-	About	=	o
+	About	!	o
 		Authors[y]
 			Me
 		Languages[y]
@@ -58,154 +60,134 @@ add(`Myverse
 			#Fanfics
 	/*Classification
 	/*Entity without shell, how names
-	Without	=	w
-		-2	=	Unthing
-		-1	=	Unbody, Spirit
-		+0	=	Unlife
-		+1	=	Undead
-		+2	=	Unentity
-		+3	=	Unperson
-		+4	=	Unmind
-		+5	=	Unmage
+	Without	!	w
+		-2	!	Unthing
+		-1	!	Unbody, Spirit
+		+0	!	Unlife
+		+1	!	Undead
+		+2	!	Unentity
+		+3	!	Unperson
+		+4	!	Unmind
+		+5	!	Unmage
 		/*not equal to muggle, nomage
-		+6	=	Unimmortal, Mortal
-		+7	=	Ungod
-	Shells	=	h
-		-5	=	Magical Body	/*chakras, nadyas
-		-4	=	Informatic Body	/*Infostructure
-		-3	=	Feeling Body?
-		-2	=	Ether Body
-		-1	=	Matter Body
-		+0	=	Core, lifing
-		+1	=	Vital, living
-		+2	=	Astral, spirital
-		+3	=	Person, feeling
-		+4	=	Mind, logical
-		+5	=	Magical, creativity
-		+6	=	Immortal, immortality function
-		+7	=	God, Real-turning
+		+6	!	Unimmortal, Mortal
+		+7	!	Ungod
+	Shells	!	h
+		-5	!	Magical Body	/*chakras, nadyas
+		-4	!	Informatic Body	/*Infostructure
+		-3	!	Feeling Body?
+		-2	!	Ether Body
+		-1	!	Matter Body
+		+0	!	Core, lifing
+		+1	!	Vital, living
+		+2	!	Astral, spirital
+		+3	!	Person, feeling
+		+4	!	Mind, logical
+		+5	!	Magical, creativity
+		+6	!	Immortal, immortality function
+		+7	!	God, Real-turning
 		/*Index of energy equals to index of shell that used this energy (not have, use)
-	Reality	=	r
-		-7	=	7	Count shells
-		-6	=	6	Count shells
-		-5	=	5	Count shells
-		-4	=	4	Count shells
-		-3	=	3	Count shells
-		-2	=	2	Count shells
-		-1	=	1	Count shells
-		-0	=	0	Count Shells
-		+0	=	0	Full Shells
-		+1	=	1	Full shells
-		+2	=	2	Full shells
-		+3	=	3	Full shells
-		+4	=	4	Full shells
-		+5	=	5	Full shells
-		+6	=	5	Full shells
-		+7	=	7	Full shells
+	Reality	!	r
+		-7	!	7	Count shells
+		-6	!	6	Count shells
+		-5	!	5	Count shells
+		-4	!	4	Count shells
+		-3	!	3	Count shells
+		-2	!	2	Count shells
+		-1	!	1	Count shells
+		-0	!	0	Count Shells
+		+0	!	0	Full Shells
+		+1	!	1	Full shells
+		+2	!	2	Full shells
+		+3	!	3	Full shells
+		+4	!	4	Full shells
+		+5	!	5	Full shells
+		+6	!	5	Full shells
+		+7	!	7	Full shells
 		/*
-		0	=	0	Half Shells
-		1	=	1	Half Shells
-		2	=	2	Half Shells
-		3	=	3	Half Shells
-		4	=	4	Half Shells
-		5	=	5	Half Shells
-		6	=	6	Half Shells
-		7	=	7	Half Shells
-		8	=	8	Half Shells
-		9	=	9	Half Shells
-		10	=	10	Half Shells
-		11	=	11	Half Shells
-		12	=	12	Half Shells
-		13	=	13	Half Shells
-		14	=	14	Half Shells
-	Energies	=	e
-		-5	=	Mrana?
-		-4	=	Psy?
-		-3	=	Ema?
-		-2	=	Spirita?
-		-1	=	Prana
-		+0	=	Force
-		+1	=	Ki
-		+2	=	Reatsu
-		+3	=	Emana
-		+4	=	Esperi
-		+5	=	Mana
-		+7	=	Ba-Hion
-		+1+2	=	Ki+Reatsu
-		+3+5	=	Emana+Mana
-		el	=	Elements{Myverse.Elements
-		em	=	Emotions{Myverse.Emotions
-			Pride	=	Pride of Gold?
-			Pathos	=	Pathos of Gray?
-	Levels	=	l
-		0.0	=	Nomage
-			@l[y]
-				G
-				O
-			@d[y]
-				Not Demon
+		0	!	0	Half Shells
+		1	!	1	Half Shells
+		2	!	2	Half Shells
+		3	!	3	Half Shells
+		4	!	4	Half Shells
+		5	!	5	Half Shells
+		6	!	6	Half Shells
+		7	!	7	Half Shells
+		8	!	8	Half Shells
+		9	!	9	Half Shells
+		10	!	10	Half Shells
+		11	!	11	Half Shells
+		12	!	12	Half Shells
+		13	!	13	Half Shells
+		14	!	14	Half Shells
+	Energies	!	e
+		#r-5[y]
+			-5	!	Mrana?
+			-4	!	Psy?
+			-3	!	Ema?
+			-2	!	Spirita?
+			-1	!	Prana
+			+0	!	Force
+			+1	!	Ki
+			+2	!	Reatsu
+			+3	!	Emana
+			+4	!	Esperi
+			+5	!	Mana
+			+1+2	!	Ki+Reatsu
+			+3+5	!	Emana+Mana
+		#r-7[y]
+			+7	!	Ba-Hion
+	Levels	!	l
+		0.0	!	Nomage
+			@l=G
+			@l=O
+			@d=Not Demon
 		0.3
 		0.5
 		0.7
-		1.0	=	Weak
-			@l[y]
-				F
-			@d[y]
-				Lower Demon
+		1.0	!	Weak
+			@l=F
+			@d=Lower Demon
 		1.3
 		1.5
 		1.7
-		2.0	=	Simple
-			@l[y]
-				E
-			@d[y]
-				Low Demon
+		2.0	!	Simple
+			@l=E
+			@d=Low Demon
 		2.3
 		2.5
 		2.7
-		3.0	=	Normal
-			@l
-				D
-			@d
-				Medium Demon
+		3.0	!	Normal
+			@l=D
+			@d=Medium Demon
 		3.3
 		3.5
 		3.7
-		4.0	=	High
-			@l[y]
-				C
-			@d[y]
-				High Demon
+		4.0	!	High
+			@l=C
+			@d=High Demon
 		4.3
 		4.5
 		4.7
-		5.0	=	Higher
-			@l[y]
-				B
-			@d[y]
-				Higher Demon
+		5.0	!	Higher
+			@l=B
+			@d=Higher Demon
 		5.3
 		5.5
 		5.7
-		6.0	=	Arch
-			@l[y]
-				A
-			@d[y]
-				Arch demon
+		6.0	!	Arch
+			@l=A
+			@d=Arch demon
 		6.3
 		6.5
 		6.7
-		7.0	=	God
-			@l[y]
-				S
-			@d[y]
-				God	Demon
+		7.0	!	God
+			@l=S
+			@d=God	Demon
 		7.3
-		7.5	=	Demiurg
-			@l[y]
-				X
-			@d[y]
-				Demiurg
+		7.5	!	Demiurg
+			@l=X
+			@d=Demiurg
 		7.7
 	/*Splitting
 	Lvlsplitting
@@ -218,57 +200,76 @@ add(`Myverse
 		#l6.0
 		#l7.0
 	Splitting
-		#r-0[y]{Myverse.Lvlsplitting
-			/*
-		#r-1[y]{Myverse.Lvlsplitting
-			/*
-		#r-2[y]{Myverse.Lvlsplitting
-			/*
-		#r-3[y]{Myverse.Lvlsplitting
-		#r-4[y]{Myverse.Lvlsplitting
-		#r-5[y]{Myverse.Lvlsplitting
-		#r-6[y]{Myverse.Lvlsplitting
-		#r-7[y]{Myverse.Lvlsplitting
-	Users{Myverse.Splitting	=	u
-		tc	=	Tech
-		bi	=	Bio
-		en	=	Energy/*Rudazov's magic
-		te	=	Tech&Energy/*Technomagic of badchoice
-		bt	=	Bio&Tech
-		be	=	Bio&Energy
-		fl	=	All paths
+		#Categories
+		#r-0[y]
+		#r-1[y]
+		#r-2[y]
+		#r-3[y]
+		#r-4[y]
 		#r-5[y]
-			e+1	=	Kiuser
-			e+2	=	Reatser
-			e+3	=	Emotic
-			e+4	=	Psyhic
-			e+5	=	Mage
+		#r-6[y]
+		#r-7[y]
+	Users	!	u
+		#Categories
+			tc	!	Tech
+			bi	!	Bio
+			en	!	Energy/*Rudazov's magic
+			te	!	Tech&Energy/*Technomagic of badchoice
+			bt	!	Bio&Tech
+			be	!	Bio&Energy
+			fl	!	All paths
+		#r-0[y]
+		#r-1[y]
+		#r-2[y]
+		#r-3[y]
+		#r-4[y]
+		#r-5[y]
+			e+1	!	Kiuser
+			e+2	!	Reatser
+			e+3	!	Emotic
+			e+4	!	Psyhic
+			e+5	!	Mage
 				Black
 				Gray
 				White
-			e+1+2	=	Shinobi
-			e+3+5	=	Wizard
+			e+1+2	!	Shinobi
+			e+3+5	!	Wizard
 				Black
 				Gray
 				White
 		#r-6[y]
 			Immortal
-				Dark	=	Demon_0
-				Neutral	=	Immortal
-				Light	=	Angel_0
+				Dark	!	Demon_0
+				Neutral	!	Immortal
+				Light	!	Angel_0
 		#r-7[y]
-			e+7	=	God_1
+			e+7	!	God_1
 				Dark
-				Neutral	=	Beastgod
+				Neutral	!	Beastgod
 				Light
-	Artefacts{Myverse.Splitting	=	a
+	Artefacts	!	a
+		#Categories
+		#r-0[y]
+		#r-1[y]
+		#r-2[y]
+		#r-3[y]
+		#r-4[y]
 		#r-5[y]
 			#Wands
 			#Rods
 			#Staffs
 			#Grimoires
 			#Spheres
-	Creatures{Myverse.Splitting	=	c
+		#r-6[y]
+		#r-7[y]
+	Creatures	!	c
+		#Categories
+		#r-0[y]
+		#r-1[y]
+		#r-2[y]
+		#r-3[y]
+		#r-4[y]
+		#r-5[y]
 		#r-6
 			#Demon
 				Control
@@ -283,13 +284,13 @@ add(`Myverse
 			#God_1
 				Control
 				Anti
-		#n	=	Dimensions
+		#n	!	Dimensions
 			#Matteral
 				#w+1
 					#Undead
 						Control
 						Anti
-				#bt	=	Bio
+				#bt	!	Bio
 					#Homuncul
 					#Kadavr
 						Control
@@ -310,15 +311,15 @@ add(`Myverse
 						Control
 						Anti
 						Create
-				#tc	=	Tech
+				#tc	!	Tech
 					#Robot
 				#en
-					#Emotions	=	Emotional
-					#Elements	=	Elemental
+					#Emotions	!	Emotional
+					#Elements	!	Elemental
 						Control
 						Anti
 						Create
-					#Materials	=	Holem
+					#Materials	!	Holem
 						Control
 						Anti
 					#Automate
@@ -327,7 +328,7 @@ add(`Myverse
 					#Marionette
 						Control
 						Anti
-					#Energies	=	Energal
+					#Energies	!	Energal
 						Dev?
 						Jinn?
 						Holem?
@@ -344,23 +345,31 @@ add(`Myverse
 					Control
 					Anti
 			#Matteral-Etheral
-				#w-1	=	Ghost
+				#w-1	!	Ghost
 					Control
 					Anti
 			#Etheral
-				#w-1	=	Loa
+				#w-1	!	Loa
 					Control
 					Anti
 			#Etheral-Mental
-				#w-1	=	Phantom
+				#w-1	!	Phantom
 					Control
 					Anti
 					Create
 					Enter
-			#Mental	=	Ment
-		#Mind{Myverse.Splitting
-			test
-	Forms	=	f
+			#Mental	!	Ment
+		#Mind
+			#Categories
+			#r-0[y]
+			#r-1[y]
+			#r-2[y]
+			#r-3[y]
+			#r-4[y]
+			#r-5[y]
+			#r-6[y]
+			#r-7[y]
+	Forms	!	f
 		#Atack
 			GodHand
 			Ball
@@ -410,10 +419,13 @@ add(`Myverse
 			Wings
 			Limb
 			Cloak
-	Emotions	=	i
+	Emotions	!	i
 		Sad
 		Apathy
 		Pain
+		/*
+		Pride	!	Pride of Gold?
+		Pathos	!	Pathos of Gray?
 		/*DC Lantern's
 		Life
 		Anger
@@ -426,8 +438,22 @@ add(`Myverse
 		Death
 		/*Love and peace
 		Peace
-	Materials{Myverse.Splitting	=	m
-	Elements	=	n
+	Materials	!	m
+		#Categories
+		#r-0[y]
+		#r-1[y]
+		#r-2[y]
+		#r-3[y]
+		#r-4[y]
+		#r-5[y]
+			#Wands
+			#Rods
+			#Staffs
+			#Grimoires
+			#Spheres
+		#r-6[y]
+		#r-7[y]
+	Elements	!	n
 		#Basic
 			Fire
 			Water
@@ -469,11 +495,11 @@ add(`Myverse
 			Unemboding
 			Thirst
 		#Plasma
-			w+1	=	Undead
-			w-1	=	Spirit
-			tc	=	Tech
-			bi	=	Bio
-			en	=	Energy
+			w+1	!	Undead
+			w-1	!	Spirit
+			tc	!	Tech
+			bi	!	Bio
+			en	!	Energy
 		#Other
 			Motion
 			Time
@@ -481,6 +507,7 @@ add(`Myverse
 				Back
 				Petlya
 				Stop
+				No
 				Prerivanye
 				Vicherkivanye
 				Jump
@@ -489,21 +516,16 @@ add(`Myverse
 					Dimension
 					Linked
 					World
-					Domen	=	Anklav
+					Domen	!	Anklav
 					Normal
 				Zip
 				Pocket
 				Dense
 				Bubble
-	Directions	=	d
-		/*	Forms/Creatures and...
-		#Forms{Myverse.Forms
-		#Creature{Myverse.Creatures
-		/*	...and Elements/Energies/Materials/Emotions
-		#Elements{Myverse.Elements
-		#Materials{Myverse.Materials
-		#Emotions{Myverse.Emotions
-		#Energies{Myverse.Energies
+	/*	Every of Forms/Creatures can be every of Elements/Energies/Materials/Emotions
+	Directions	!	d
+		#Creatures
+		#Materials
 		/*Types of actions for ability
 		#Languages[y]
 			Word
@@ -578,7 +600,7 @@ add(`Myverse
 				Partial
 			Yoga
 			Bolotnaya
-			Elementsov
+			Elementov
 			Mesta
 		#Action[y]
 			Vampire
@@ -697,11 +719,11 @@ add(`Myverse
 				Twilight
 				Vector
 			Invincibility
-				Pseudo	=	Other life form
-					tc	=	Robot
-					w+1	=	Undead
-					w-1	=	Spirit
-				bt	=	Bio
+				Pseudo	!	Other life form
+					tc	!	Robot
+					w+1	!	Undead
+					w-1	!	Spirit
+				bt	!	Bio
 				Soul in body
 				Regen
 				Filactery
@@ -739,17 +761,7 @@ add(`Myverse
 				Astral
 				Physical
 				Full
-	Spells	=	p
-		#r-0[y]{Myverse.Directions
-		#r-1[y]{Myverse.Directions
-		#r-2[y]{Myverse.Directions
-		#r-3[y]{Myverse.Directions
-		#r-4[y]{Myverse.Directions
-		#r-5[y]{Myverse.Directions
-			#l5.0{Myverse.Directions
-		#r-6[y]{Myverse.Directions
-		#r-7[y]{Myverse.Directions
-	Verse	=	v
+	Verse	!	v
 		@Type
 			Meta
 		Rudazov
@@ -760,7 +772,7 @@ add(`Myverse
 			Laws
 				В метавселенной возможно все, от самых разных миров до изменения межмировой геометрии на определенном участке, но невозможно нарушить логику, а следовательно нельзя:
 					1.	Сохранение		m-n-e	-	Любое изменение материи, энергии, эфира.
-						Ни что (вообще!) не может быть уничтожено, сумма всего в метавселенной никогда не меняется, более реальные могут лишь моментально изменить менее реальное в такую форму, что покажется уничтожение, но закон сохранения действует. По этой причине нельзя изменить атман, нет ничего более реального, просто некому будет на него так действовать. Нельзя иллюзию сделать реальной (воплощение делает реальный объект похожий на иллюзию), но для более реальных менее реальные являются иллюзиями просто разного качества, поэтому более реальные могут так сделать. Объекты одного уровня не могут друг на друга так действовать. Сумма всего в метавселенной не меняется со временем, всегда постоянна
+						Ни что (вообще) не может быть уничтожено, сумма всего в метавселенной никогда не меняется, более реальные могут лишь моментально изменить менее реальное в такую форму, что покажется уничтожение, но закон сохранения действует. По этой причине нельзя изменить атман, нет ничего более реального, просто некому будет на него так действовать. Нельзя иллюзию сделать реальной (воплощение делает реальный объект похожий на иллюзию), но для более реальных менее реальные являются иллюзиями просто разного качества, поэтому более реальные могут так сделать. Объекты одного уровня не могут друг на друга так действовать. Сумма всего в метавселенной не меняется со временем, всегда постоянна
 						Rud:	Закон сохранения материи-энергии. Они не могут ни возникнуть из ниоткуда, ни исчезнуть вникуда, лишь изменять состояния.
 							->	Вечного генератора не может существовать.
 					2.	Конвергентность	s-t-u	-	Любое изменение пространства, времени, контента.
@@ -782,7 +794,7 @@ add(`Myverse
 									/*Так как реальность не может дойти до 8, реальность в 8 при конвертации в проценты будет больше 100%, а даже достижение 100% невозможно.
 									/*Восьмой уровень реальности равен нулевому, это атман. А две оболочки с одним уровнем уже не в условии.
 									->	Демиурги не уходят от богов на качественно иной уровень, у бога 8 у демиурга 8.5 не 9.
-							->	В шкале реальности атман 100%	=	=	 0%, она замкнута
+							->	В шкале реальности атман 100% 0%, она замкнута
 					1,2
 						->	Вечного двигателя также не может сущестовать.
 					2,3
@@ -797,40 +809,40 @@ add(`Myverse
 			Reality
 				#Zero
 					#Zero
-						0	=	Core
+						0	!	Core
 				#Virtuality
 					#One
-						0.01-0.99	=	Info
+						0.01-0.99	!	Info
 				#Potentiality
 					#Wild
-						1-2	=	Chaos
+						1-2	!	Chaos
 					#Quiet
-						3	=	Limbo
+						3	!	Limbo
 				#Reality
 					#Pre
-						4-5	=	cold ether
-						5-10	=	energies
-						10-15	=	Solid ether
-						15-20	=	w-1,	Spirits
-						20-25	=	Pseudo Matter
-						25-30	=	Alchemy Matter
+						4-5	!	cold ether
+						5-10	!	energies
+						10-15	!	Solid ether
+						15-20	!	w-1,	Spirits
+						20-25	!	Pseudo Matter
+						25-30	!	Alchemy Matter
 					#Normal
-						30-40	=	r-2,	Matter
-						40-50	=	r-3
-						50-60	=	r-4
+						30-40	!	r-2,	Matter
+						40-50	!	r-3
+						50-60	!	r-4
 					#Post
-						60-70	=	r-4/r-5
-						70-80	=	r-5/r-6
-						80-90	=	r-6/r-7
+						60-70	!	r-4/r-5
+						70-80	!	r-5/r-6
+						80-90	!	r-6/r-7
 					#Super
-						90-95	=	r-7
-						95-99	=	Xtonics
+						90-95	!	r-7
+						95-99	!	Xtonics
 					#Higher
-						99	=	First Elements
+						99	!	First Ether
 				#Full
 					#Full
-						100	=	Core
-			World Types
+						100	!	Core
+			World
 				Elements
 					#Basic
 						Fire
@@ -844,19 +856,19 @@ add(`Myverse
 						Light
 					#Misc
 						Void
-			Ether Types
-				Cold	=	Other
-				Dense	=	Negative Shells, except matteral shells
-				Suble	=	Positive Shells
-				Soft	=	Negative Energy, except e-7
-				Hot	=	Positive Energy, except e+7
-				First	=	e+7, First elements
-					Undirected
-						e+7
-					Directed{Myverse.Elements.First
-			mtv	=	Meta-Verse
-				mlv	=	Multi-Verse
-					uns	=	Uni-Space
+			Ether
+				Cold	!	Other
+				Dense	!	Negative Shells, except matteral shells
+				Suble	!	Positive Shells
+				Soft	!	Negative Energy, except e-7
+				Hot	!	Positive Energy, except e+7
+				First	!	e+7, First elements
+					e+7
+					#Elements
+						#First
+			mtv	!	Meta-Verse
+				mlv	!	Multi-Verse
+					uns	!	Uni-Space
 						b
 						d
 						f
@@ -865,102 +877,146 @@ add(`Myverse
 						j
 						k
 						q
-					unv	=	Uni-Verse
-						s	=	-Space
-							m	=	Normal
-								x	=	Length
-								y	=	Height
-								z	=	Depth
-							w	=	Hyper
-							n	=	Dimension
-								a	=	Ether
-								i	=	Info//w=i?
-								o	=	Tropy
-						v	=	-Verse
+					unv	!	Uni-Verse
+						s	!	-Space
+							m	!	Normal
+								x	!	Length
+								y	!	Height
+								z	!	Depth
+							w	!	Hyper
+							n	!	Dimension
+								a	!	Ether
+								i	!	Info/*hyper equals etheral?
+								o	!	Tropy
+						v	!	-Verse
 							/*Content
-							r	=	Reality
-							e	=	Energy
-							f	=	Forms, Info, Structure
+							r	!	Reality
+							e	!	Energy
+							f	!	Forms, Info, Structure
 								Types
-									Full-Realized-Types		Matter	=	222
-										Matter	=	312
-										Energy	=	231
-										Ether	=	123
+									Full-Realized-Types		Matter	!	222
+										Matter	!	312
+										Energy	!	231
+										Ether	!	123
 									Half-Realized-Types		Ether
-										Chaos	=	120
-										Limbo	=	110
-										Ether	=	122
+										Chaos	!	120
+										Limbo	!	110
+										Ether	!	122
 									Non-Realized-Types		Info
-										Info	=	002
+										Info	!	002
 										Structure
 										Types
 								Structure
 								Info
-						t	=	-Time
-					unt	=	Uni-Time
+						t	!	-Time
+					unt	!	Uni-Time
 				Chaos
 				Limbo
-	Abilities{Myverse.Splitting	=	b
-		переход в эфирное состояниие
-		переход по четвертому измерению
-		другие операции с четвертым измерением?
-		эфирное изменение размеров/формы?
-		эфирные ускоренные перемещения?
-		фильтрация запахов и других частиц в воздухе
-		сокрытие магии
-		манипуляции реальностью
-		сокрытие ауры
-		фальшивая аура
-		работа с ноосферой
-		ускоренные/замедленные ВП
-		изпользование химического
-		использование биологического
-		использование радиации
-		использование порталов в опасные места
-		звукогаситель
-		иллюзия потери магии противником, не тобой
-		брокировка магических узлов
-		работа с душами
-		антимагия
-		использование магии существа против него самого
-		аутоиммунные атаки (в т.ч. на магию и разум и прочее)
-		духовная сила
-		использование биотварей (кадавров?)
-		векторная защита
-		ускорение сознания
-		атака по пране
-		святые вещи
-		демонические вещи?
-		скрытие излучения невидимого спектра
-		Fake Spell
-	Space	=	s
-		w	=	Hyper
-			~0	=	Dot, Core
-			<1	=	Hyper
-			~1	=	Normal
-			>1	=	Hypo
-		n	=	Dimension
-			~0.0 ~0.0	=	Core
-			~1.0 ~0.0	=	Matteral
-			~1.5 ~0.0	=	Matteral-Etheral
+	Abilities	!	b
+		#Categories
+			#Resistance
+				#Elements
+					#Other
+						Physical
+							Damage
+								Kolushiy
+								Rezhuskiy
+								Drobyashiy
+								Rubyaskiy
+			Empathy
+			Telepathy
+			Avatar
+			Zhrets
+			Feeling
+				#Types[y]
+					Vision
+					Obonyanie
+					Vkus
+					Sluh
+					Tactile
+					Feeling
+				#Usloviya
+					Night
+				#Users
+					Demon
+					Angel
+					Other
+					Mage
+				#Energies
+				#Elements
+				#Emotions
+				#Creatures
+				#Materials
+			Berserk
+			Yasnovidenie
+			переход в эфирное состояниие
+			переход по четвертому измерению
+			другие операции с четвертым измерением?
+			эфирное изменение размеров/формы?
+			эфирные ускоренные перемещения?
+			фильтрация запахов и других частиц в воздухе
+			сокрытие магии
+			манипуляции реальностью
+			сокрытие ауры
+			фальшивая аура
+			работа с ноосферой
+			ускоренные/замедленные ВП
+			изпользование химического
+			использование биологического
+			использование радиации
+			использование порталов в опасные места
+			звукогаситель
+			иллюзия потери магии противником, не тобой
+			брокировка магических узлов
+			работа с душами
+			антимагия
+			использование магии существа против него самого
+			аутоиммунные атаки (в т.ч. на магию и разум и прочее)
+			духовная сила
+			использование биотварей (кадавров?)
+			ускорение сознания
+			атака по пране
+			святые вещи
+			демонические вещи?
+			скрытие излучения невидимого спектра
+			Fake Spell
+		#r-0[y]
+		#r-1[y]
+		#r-2[y]
+		#r-3[y]
+		#r-4[y]
+		#r-5[y]
+			#l5.0
+		#r-6[y]
+		#r-7[y]
+	Space	!	s
+		w	!	Hyper
+			~0	!	Dot, Core
+			<1	!	Hyper
+			~1	!	Normal
+			>1	!	Hypo
+		n	!	Dimension
+			~0.0 ~0.0	!	Core
+			~1.0 ~0.0	!	Matteral
+			~1.5 ~0.0	!	Matteral-Etheral
 				@Ghost
-			~2.0 ~0.0	=	Etheral
+			~2.0 ~0.0	!	Etheral
 				@Loa
-			~2.0 ~1.5	=	Etheral-Mental
+			~2.0 ~1.5	!	Etheral-Mental
 				@Phantom
-			~2.0 ~2.0	=	Mental
+			~2.0 ~2.0	!	Mental
 		Limbo
 		Chaos
-	Features	=	t
+	Features	!	t
 		#r-4[y]
 			Poltergeist
-			#w+1	=	Undead
+			#w+1	!	Undead
 				Ghoul
 				Zombie
 				Einherjar
 				Draugr
 				Lich
-			#w-1	=	Spirit
+			#w-1	!	Spirit
 				Brownie
 				Boggart
 				Ghost
@@ -969,37 +1025,37 @@ add(`Myverse
 		#r-5[y]
 			Obsessed
 			Vampire
-				Weak	=	Madness
-				Normal	=	Ordinary
-				High	=	Energetic
+				Weak	!	Madness
+				Normal	!	Ordinary
+				High	!	Energetic
 			Werewolf
-				Weak	=	Licantrop
-				Normal	=	Ordinary
-				High	=	MultiForms
+				Weak	!	Licantrop
+				Normal	!	Ordinary
+				High	!	MultiForms
 			Cubus
 				Incubus
 				Succubus
 	Misc
 		Groups
-			Soul	=	Soul shells
-				Aura	=	Soul shells visible part
-			Body	=	Body shells
-			Soul_e	=	s3
-			Soul_g	=	s2
+			Soul	!	Soul shells
+				Aura	!	Soul shells visible part
+			Body	!	Body shells
+			Soul_e	!	s3
+			Soul_g	!	s2
 		Str
 			World
-				Core	=	bhavachakra
+				Core	!	bhavachakra
 				Space
 				Time
 				Content
 					Matteral
 					Etheral
 			Soul
-				Core	=	Atman
+				Core	!	Atman
 				Etheral
 				Mental
-			Domen	=	Soul+World
-				Core	=	bhavachakra, Atman
+			Domen	!	Soul+World
+				Core	!	bhavachakra, Atman
 				Space
 				Time
 				Content
@@ -1008,7 +1064,7 @@ add(`Myverse
 				Etheral
 				Mental
 			God
-				Core	=	God
+				Core	!	God
 				Content
 					Matteral
 					Etheral
@@ -1020,13 +1076,13 @@ add(`Myverse
 				Ether
 			Ment
 				Mental
-			Object	=	Matter+Ether
+			Object	!	Matter+Ether
 				Matteral
 				Etheral
 		Magic
 			Level
 				slots
-					Current	=	Spell
+					Current	!	Spell
 					Other
 						Form
 						Element
@@ -1038,34 +1094,34 @@ add(`Myverse
 				Srednyaya
 				Mana Magic
 		Version
-			/*	-	=	Next
-			/*	>	=	Sleduet
-			/*	*	=	No
-			/*	!	=	Inverse
-			Normal	=	-Start-Action-Result
-			Avers	=	*Start*Action*Result
-			Deconstr	=	-Start-Action>Result
-			Reconstr	=	>Start>Action>Result
-			Subvers	=	-Start-Action*Result
-			Invers	=	!Start!Action!Result
-			Obosnuy	=	-Start-Action-Result and Obosnuy
-			Parody	=	Parody of -Start-Action-Result
-			Satira	=	Satira of -Start-Action-Result
-			ZigZag	=	Combinations of other
+			/*	-	!	Next
+			/*	>	!	Sleduet
+			/*	*	!	No
+			/*	'	!	Inverse
+			Normal	!	-Start-Action-Result
+			Avers	!	*Start*Action*Result
+			Deconstr	!	-Start-Action>Result
+			Reconstr	!	>Start>Action>Result
+			Subvers	!	-Start-Action*Result
+			Invers	!	'Start'Action'Result
+			Obosnuy	!	-Start-Action-Result and Obosnuy
+			Parody	!	Parody of -Start-Action-Result
+			Satira	!	Satira of -Start-Action-Result
+			ZigZag	!	Combinations of other
 		Space change
-			/*	-	=	Normal
-			/*	^	=	Up
-			/*	_	=	Down
-			/*	#	=	Both
-			/*	()	=	Connection
-			/*	><	=	Nalozheniye
-			Bubble	=	----^^^^^----
-			Zip	=	----^_^_^----
-			Domen/Pocket	=	----#####----
-			Worlds	=	#############
-			Portkey	=	--(-------)--
-			Portal	=	-->-------<--
-			Skladka	=	Prana remove
+			/*	-	!	Normal
+			/*	^	!	Up
+			/*	_	!	Down
+			/*	#	!	Both
+			/*	()	!	Connection
+			/*	><	!	Nalozheniye
+			Bubble	!	----^^^^^----
+			Zip	!	----^_^_^----
+			Domen/Pocket	!	----#####----
+			Worlds	!	#############
+			Portkey	!	--(-------)--
+			Portal	!	-->-------<--
+			Skladka	!	Prana remove
 			Energy
 			Quant
 			Atom
@@ -1080,27 +1136,47 @@ add(`Myverse
 			Real
 			Fantastica
 				Fantasy
-					0.0	=	Magic
-					0.5	=	Metaphysic
-					1.0	=	Sci
+					0.0	!	Magic
+					0.5	!	Metaphysic
+					1.0	!	Sci
 				Other
-					0.0	=	Not-Sci
-					0.5	=	Pseudo-Sci
-					1.0	=	Sci
-	Organizations	=	g`)
+					0.0	!	Not-Sci
+					0.5	!	Pseudo-Sci
+					1.0	!	Sci
+	Organizations	!	g`)
+add(`2rE
+	1`)
 add(`Real world
 	Verse
 		@Type
 			Uni
 		Original
 			@Worlds
-				Our	=	Earth-2020
+				Our	!	Earth-2020
 	Artefacts
 		#r-4[y]
 			#Weapon
+				#Guns
+					#Automates
+					#Pistols
+				#Explosive
+				#Nuclear
+				#Tank
+			#Vehicle
+				#Car
+				#Plane
+				#Helicopter
+				#Train
+				#Ship
+			#Drone
+				#Quadrocopter
+			#Videocamera
+			#Display
+			#Microphone
+			#Dinamic
+			#Rockets
 			#Computer
 			#Telephone
-			#Atomic bombs
 	Abilities
 		#r-4[y]
 			Granade by post
@@ -1170,47 +1246,47 @@ add(`HP and future know
 				Elder Wand/*	Epic	Legendary	Уникальный (1)	Самая совершенная палочка, может подходить любому магу, ищет себе наиболее сильного хозяина, подчиняется победившему магу	Трансформаторы Магии: Волшебные Палочки, Дар Смерти	Игнотус Певерел & Другие Певерелы? &?	-
 				Stone of Reincarnation/*	Epic	Legendary	Уникальный (1)	Создаёт псевдоматериальные тело и разум человека с помощью информации магического ядра, сознания и некромантической информации	Информационные, Некромантические: Информационные, Псевдо-Материализационные, Дар Смерти	Кадм Певерел & Другие Певерелы? &?	-
 	Levels
-		0.0	=	Nonmagic
+		0.0	!	Nonmagic
 			@l[y]
 				O
 				0
 				N
 			@r[y]
 				Немагический
-		1.0	=	Mediocre
+		1.0	!	Mediocre
 			@l[y]
 				A
 				M
 			@r[y]
 				Заурядный
-		2.0	=	Weak
+		2.0	!	Weak
 			@l[y]
 				B
 				W
 			@r[y]
 				Слабый
-		3.0	=	Ordinary
+		3.0	!	Ordinary
 			@l[y]
 				C
 				O
 			@r[y]
 				Обыкновенный
-		4.0	=	Rare
+		4.0	!	Rare
 			@l[y]
 				R
 			@r[y]
 				Редкий
-		5.0	=	Epic
+		5.0	!	Epic
 			@l[y]
 				E
 			@r[y]
 				Эпический
-		6.0	=	Legendary
+		6.0	!	Legendary
 			@l[y]
 				L
 			@r[y]
 				Легендарный
-		7.0	=	Divine
+		7.0	!	Divine
 			@l[y]
 				D
 			@r[y]
@@ -1283,11 +1359,11 @@ add(`Blue exorcist
 	Features
 		#r-5[y]
 			Demon
-			#w-1	=	Spirit
+			#w-1	!	Spirit
 				Brownie
 	Dimension
-		Gienna	=	Demonic
-		Alis	=	Human`)
+		Gienna	!	Demonic
+		Alis	!	Human`)
 add(`Rick and Morty
 	About
 		Languages[y]
@@ -1336,7 +1412,8 @@ add(`Marvel
 				#Flora Koloss
 				#Titan_1
 	Energies
-		+5	=	Magical?
+		#r-5[y]
+			+5	!	Magical?
 	Features
 		#r-5[y]
 			X-Man
@@ -1394,7 +1471,7 @@ add(`Hellsing ultimate
 		#r-5[y]
 			Vampire
 		#r-4[y]
-			#w+1	=	Undead`)
+			#w+1	!	Undead`)
 add(`Dark souls
 	About
 		Languages[y]
@@ -1521,7 +1598,7 @@ add(`Bad choice
 				Magical Rus
 				Kostyan
 				Unknown Crap
-			@World Types
+			@World
 				Elements
 					#Basic
 						Fire
@@ -1573,20 +1650,22 @@ add(`Bad choice
 				#Unknown Evil Crap
 				#Goblin_2
 	Energies
-		-5	=	Mrana?
-		-4	=	Psy?
-		-3	=	Ema?
-		-2	=	Spirita?
-		-1	=	Prana
-		+0	=	Force
-		+1	=	Ki
-		+2	=	Reatsu
-		+3	=	Emana
-		+4	=	Esperi
-		+5	=	Mana
-		+7	=	Ba-Hion
-		+1+2	=	Ki+Reatsu
-		+3+5	=	Emana+Mana
+		#r-5[y]
+			-5	!	Mrana?
+			-4	!	Psy?
+			-3	!	Ema?
+			-2	!	Spirita?
+			-1	!	Prana
+			+0	!	Force
+			+1	!	Ki
+			+2	!	Reatsu
+			+3	!	Emana
+			+4	!	Esperi
+			+5	!	Mana
+			+1+2	!	Ki+Reatsu
+			+3+5	!	Emana+Mana
+		#r-6[y]
+			+7	!	Ba-Hion
 	Elixirs
 		#Hooch
 			#Energies
@@ -1606,36 +1685,20 @@ add(`Bad choice
 					Chaos
 			#Emotions
 				Love
-				Peace	=	LOVEANDPEACE
+				Peace	!	LOVEANDPEACE
 				Anger
 				Sad
-	Spells
-		#r-5[y]
-			#l5.0
-				@Name
-					#MH
-						Higher circle
-				#Elements
-					#Basic
-						Fire
-							Uncontrolled	=	Armageddon
-						Water
-							Uncontrolled	=	Taifun
-						Air
-							Uncontrolled	=	Tornado?
-						Earth
-							Uncontrolled	=	?
 	Users
 		#r-5[y]
-			e+1	=	Kiuser
-			e+2	=	Reatsuuser
-			e+4	=	Psyonic
-			e+5	=	Mage
-			e+1+2	=	Chakrauser
+			e+1	!	Kiuser
+			e+2	!	Reatsuuser
+			e+4	!	Psyonic
+			e+5	!	Mage
+			e+1+2	!	Chakrauser
 		#r-6[y]
-			dm	=	Demon_3
-			lm	=	Angel_0
-			gm	=	Gamer's System
+			dm	!	Demon_3
+			lm	!	Angel_0
+			gm	!	Gamer's System
 				Gamer	Stanford
 				Gamer	Plus
 				Gamer	T.-3000
@@ -1644,23 +1707,40 @@ add(`Bad choice
 				Hard
 				The Gamer
 		#r-7[y]
-			e+7	=	God_3
+			e+7	!	God_3
 		#r-0[y]
-			e+7	=	Unknown Crap
+			e+7	!	Unknown Crap
 	Abilities
-		Pathos hurt ignoring
-		Hapsiel mode
-		Kick of Unknown Crap
-		Unknown Artefatory
+		#Categories
+			Pathos hurt ignoring
+			Hapsiel mode
+			Kick of Unknown Crap
+			Unknown Artefatory
+			Dark-Shadow tropy
+		#r-5[y]
+			#l5.0
+				@Name
+					#MH
+						Higher circle
+				#Elements
+					#Basic
+						Fire
+							Uncontrolled	!	Armageddon
+						Water
+							Uncontrolled	!	Taifun
+						Air
+							Uncontrolled	!	Tornado?
+						Earth
+							Uncontrolled	!	?
 	Features
 		#r-4[y]
 			Entity
-				#w+1	=	Undead
-			#w+1	=	Undead
+				#w+1	!	Undead
+			#w+1	!	Undead
 		#r-5[y]
 			Entity
-				#w+1	=	Undead
-			#w+1	=	Undead
+				#w+1	!	Undead
+			#w+1	!	Undead
 			Vampire
 			Werewolf
 	Artefacts
@@ -1675,29 +1755,28 @@ add(`Bad choice
 				#Achievement-Copy
 	Space
 		n
-			~1.0 ~1.5	=	Dark-Shadow
-			~1.0 ~0.0	=	Matteral
-			~2.0 ~0.0	=	Astral
-			~2.0 ~2.0	=	Mental
-	Directions
-		Elements
-			#Basic
-				Fire	=	Pyromancy
-				Water	=	Hydromancy
-				Earth	=	Geomancy
-				Air	=	Airomancy
-				Ice	=	Cryomancy
-				Electrizity	=	Electromancy
-			#First
-				Dark
-				Light
-				Chaos
-				Death
-			#Other
-				Space
-				Time
-			#Misc
-				Shadow
+			~1.0 ~1.5	!	Dark-Shadow
+			~1.0 ~0.0	!	Matteral
+			~2.0 ~0.0	!	Astral
+			~2.0 ~2.0	!	Mental
+	Elements
+		#Basic
+			Fire	!	Pyromancy
+			Water	!	Hydromancy
+			Earth	!	Geomancy
+			Air	!	Airomancy
+			Ice	!	Cryomancy
+			Electrizity	!	Electromancy
+		#First
+			Dark
+			Light
+			Chaos
+			Death
+		#Other
+			Space
+			Time
+		#Misc
+			Shadow
 	Creatures
 		#Mind
 			#r-5[y]
@@ -1730,7 +1809,7 @@ add(`Azimov
 			English
 	Space
 		w
-			<1	=	Hyper`)
+			<1	!	Hyper`)
 add(`hainline
 	About
 		Authors[y]
@@ -1739,30 +1818,30 @@ add(`hainline
 			English
 	Space
 		w
-			<1	=	Cherenkov drive`)
+			<1	!	Cherenkov drive`)
 add(`Hyperion
 	Space
 		w
-			<1	=	Hyper`)
+			<1	!	Hyper`)
 add(`vavilon5
 	Space
 		w
-			<1	=	Hyper`)
+			<1	!	Hyper`)
 add(`Star Gate
 	About
 		Languages[y]
 			English
 	Space
 		w
-			<1	=	Hyper`)
+			<1	!	Hyper`)
 add(`Gamelit
 	Users
 		#r-6[y]
-			gm	=	Gamer's System`)
+			gm	!	Gamer's System`)
 add(`Gameworld
 	Users
 		#r-6[y]
-			gm	=	Gamer's System`)
+			gm	!	Gamer's System`)
 add(`Vlast magii
 	About
 		Languages[y]
@@ -1794,7 +1873,7 @@ add(`Path to Top
 			Meta
 		Rudazov
 		Original
-	Spells
+	Abilities
 		#r-5[y]
 			#l5.0
 				@Name
@@ -1803,13 +1882,13 @@ add(`Path to Top
 				#Elements
 					#Add
 						Plasma
-							Uncontrolled	=	Hors`)
+							Uncontrolled	!	Hors`)
 add(`Rudazov
 	Verse
 		@Type
 			Meta
 		Original
-			World Types
+			@World
 				#Access
 					Destroyed
 					Non-Created
@@ -1818,75 +1897,6 @@ add(`Rudazov
 					Half-Chaotic
 					Half-Normal
 					Normal
-			Civilization
-				#Opened
-					Closed	=	Don't know
-					Half-Closed	=	Thinks that other is 1,2,3... not a lot of
-					Half-Opened	=	Have knowledge
-					Opened	=	Have contacts
-				#Levels
-					#Paths
-						#un	=	Universal
-							0.0	=	0	Primitive - ?	/*
-								@Kaabar
-								@Rari.Devkatsi
-							1.0	=	3	? - Mech/Social	/*
-							2.0	=	6	? - Digit/	/*
-							3.0	=	9	? - Space/Verse level	/*
-							4.0	=	12	? - ?		/*
-							5.0	=	15	? - Energy	/*
-							6.0	=	18	Immortal - tech/mage/bio	/*
-						#en	=	Magical
-							0.3	=	1	? - ?		/*Mage Ghyldy
-								@Our.Sumer	-3000
-							0.7	=	2	? - ?		/*Magic Schools
-							1.0	=	3	Social - ?	/*Magic infrastructure, service, shops
-								@Parifat 2000
-							1.3	=	4	? - ?		/*Magic conveer
-								@Rari.Grayland	from Epilog
-							3.3	=	10
-								@Parifat	-3000
-							6.0	=	18	Immortal - ?/*
-								@Infal
-								@Jinn
-						#bi	=	Biotic
-							0.3	=	1	? - ?		/*Prirucheniye, odomashnivaniye
-							0.7	=	2	? - ?		/*Selection
-								@Rari.Eist
-							6.0	=	18	Immortal - ?/*
-						#tc	=	Technogen
-							0.3	=	1	? - ?		/*Compas, Gun Powder,	Books print
-							0.7	=	2	? - ?		/*Industrial revolution
-								@Rari.Rokush
-								@Rari.Lariya
-							1.0	=	3	Mech - ?	/*Metals, engines
-							1.3	=	4	? - ?		/*Machines, Electrizity, Chem
-							1.7	=	5	? - ?		/*High Chem, ICE, Conveer
-							2.0	=	6	Digit - ?	/*Electronics, Robots, Commutications
-								@Our
-							2.3	=	7	? - ?		/*Nanotech, Higher Organic Chem, Cyberspace
-							2.7	=	8	? - ?		/*High Nano, Spacetech, Terraforming
-								@Plonet	Before Sudden hour
-							3.0	=	9	Space		/*High Terraforming, Space cities, Between Stars Flying
-							3.3	=	10	? - ?		/*Galaxy Level, Alliens contacts
-							4.0	=	12
-								@Earth	2400
-							4.3	=	13
-								@Svarog.Svarog	7000
-							5.0	=	15
-								@Eikr.U-l'tra-let
-							5.3	=	16
-								@Muraran
-							5.7	=	17
-								@*.Spectator
-								@Svarog.Galact	7000
-							6.0	=	18	Immortal - ?/*
-								@Ancient
-								@Titan_0
-						#te	=	Technomagical
-							0.7	=	2
-								@Rari.Grayland	2000
-					/*Number after "-" says that this world after apocalipsis, have but cant create this technologies
 				#Elements
 					#Basic
 						Fire
@@ -1900,12 +1910,81 @@ add(`Rudazov
 						Light
 					#Misc
 						Void
-			Worlds
+			@Civilization
+				#Opened
+					Closed	!	Don't know
+					Half-Closed	!	Thinks that other is 1,2,3... not a lot of
+					Half-Opened	!	Have knowledge
+					Opened	!	Have contacts
+				#Levels
+					#Paths
+						#un	!	Universal
+							0.0	!	0	Primitive - ?	/*
+								@Kaabar
+								@Rari.Devkatsi
+							1.0	!	3	? - Mech/Social	/*
+							2.0	!	6	? - Digit/	/*
+							3.0	!	9	? - Space/Verse level	/*
+							4.0	!	12	? - ?		/*
+							5.0	!	15	? - Energy	/*
+							6.0	!	18	Immortal - tech/mage/bio	/*
+						#en	!	Magical
+							0.3	!	1	? - ?		/*Mage Ghyldy
+								@Our.Sumer	-3000
+							0.7	!	2	? - ?		/*Magic Schools
+							1.0	!	3	Social - ?	/*Magic infrastructure, service, shops
+								@Parifat 2000
+							1.3	!	4	? - ?		/*Magic conveer
+								@Rari.Grayland	from Epilog
+							3.3	!	10
+								@Parifat	-3000
+							6.0	!	18	Immortal - ?/*
+								@Infal
+								@Jinn
+						#bi	!	Biotic
+							0.3	!	1	? - ?		/*Prirucheniye, odomashnivaniye
+							0.7	!	2	? - ?		/*Selection
+								@Rari.Eist
+							6.0	!	18	Immortal - ?/*
+						#tc	!	Technogen
+							0.3	!	1	? - ?		/*Compas, Gun Powder,	Books print
+							0.7	!	2	? - ?		/*Industrial revolution
+								@Rari.Rokush
+								@Rari.Lariya
+							1.0	!	3	Mech - ?	/*Metals, engines
+							1.3	!	4	? - ?		/*Machines, Electrizity, Chem
+							1.7	!	5	? - ?		/*High Chem, ICE, Conveer
+							2.0	!	6	Digit - ?	/*Electronics, Robots, Commutications
+								@Our
+							2.3	!	7	? - ?		/*Nanotech, Higher Organic Chem, Cyberspace
+							2.7	!	8	? - ?		/*High Nano, Spacetech, Terraforming
+								@Plonet	Before Sudden hour
+							3.0	!	9	Space		/*High Terraforming, Space cities, Between Stars Flying
+							3.3	!	10	? - ?		/*Galaxy Level, Alliens contacts
+							4.0	!	12
+								@Earth	2400
+							4.3	!	13
+								@Svarog.Svarog	7000
+							5.0	!	15
+								@Eikr.U-l'tra-let
+							5.3	!	16
+								@Muraran
+							5.7	!	17
+								@*.Spectator
+								@Svarog.Galact	7000
+							6.0	!	18	Immortal - ?/*
+								@Ancient
+								@Titan_0
+						#te	!	Technomagical
+							0.7	!	2
+								@Rari.Grayland	2000
+					/*Number after "-" says that this world after apocalipsis, have but cant create this technologies
+			@Worlds
 				Rari
 				Quetzol-Iin
 				Eikr\n\t\t\t	Hvitachi\n\t\t\t	Worldtown
 				Lang\n\t\t\t	Kaabar\n\t\t\t	Nine Heavens
-				Hell\n\t\t\t	Our	=	Earth-2006\n\t\t\t	Heaven
+				Hell\n\t\t\t	Our	!	Earth-2006\n\t\t\t	Heaven
 				Golus	\n\t\t\t	Dotembria
 				Pargoron\n\t\t\t	Parifat\n\t\t\t	Salvan
 				Patala	\n\t\t\t	Dovos
@@ -1914,7 +1993,7 @@ add(`Rudazov
 				X	\n\t\t\t	Z	\n\t\t\t	A	\n\t\t\t	Y	\n\t\t\t	O	\n\t\t\t	Caves Sheymullin
 				M	\n\t\t\t	K	\n\t\t\t	H	\n\t\t\t	G	\n\t\t\t	F	\n\t\t\t	E	\n\t\t\t	D	\n\t\t\t	C	\n\t\t\t	B	\n\t\t\t	P	\n\t\t\t	Earth-7112
 				Proxima Centaura	\n\t\t\t	Proxima Hell	\n\t\t\t	Proxima Heaven
-				World of Yehudin	=	Dodekaedr
+				World of Yehudin	!	Dodekaedr
 	About
 		Authors[y]
 			Alexander Rudazov
@@ -1961,48 +2040,48 @@ add(`Rudazov
 						/"Rasskazy is pravogo botinka"
 						/"Arifmoman"
 	Shells
-		-5	=	2/7	Magical body
-		-2	=	3	Body, Matter of
-		-1	=	1	Physical body
-		+0	=	4	Atman
-		+1	=	2	Vital
-		+2	=	3	Astral, aura
-		+3	=	5	Person
-		+4	=	6	Psyhic
-		+5	=	7	Magic
-		+6	=	8	Immortal
-		+7	=	9	God
+		-5	!	2/7	Magical body
+		-2	!	3	Body, Matter of
+		-1	!	1	Physical body
+		+0	!	4	Atman
+		+1	!	2	Vital
+		+2	!	3	Astral, aura
+		+3	!	5	Person
+		+4	!	6	Psyhic
+		+5	!	7	Magic
+		+6	!	8	Immortal
+		+7	!	9	God
 	Energies
-		-1	=	2 Prana
-		+5	=	7 Mana
-		+7	=	9 Ba-Hion
+		#r-5[y]
+			-1	!	2 Prana
+			+	!	7 Mana
+		#r-7[y]
+			+7	!	9 Ba-Hion
 	Users
 		#r-5[y]
-			e+5	=	Mage
-			e+4	=	Mentat?
+			e+5	!	Mage
+			e+4	!	Mentat?
 		#r-4[y]
-			e+0+2	=	Spiritual Weapon
+			e+0+2	!	Spiritual Weapon
 	Levels
-		!School	=	Sumer
-		0.0	=	Nomage
-		1.0	=	Student
-		2.0	=	Apprentice
-		3.0	=	Master
-		4.0	=	Pastmaster
-		5.0	=	Archmage
-		6.0	=	Higher
-	Levels
-		!School	=	Gray land
-		0.0	=	Grechka
-		1.0	=	Student
-		1.5	=	Purple
-		2.0	=	Blue
-		2.5	=	Light Blue
-		3.0	=	Green
-		3.5	=	Yellow
-		4.0	=	Orange
-		4.5	=	Red
-		5.0	=	Gray
+		0.0	!	Sumer.Nomage
+		1.0	!	Sumer.Student
+		2.0	!	Sumer.Apprentice
+		3.0	!	Sumer.Master
+		4.0	!	Sumer.Pastmaster
+		5.0	!	Sumer.Archmage
+		6.0	!	Sumer.Higher
+		/*
+		0.0	!	Grayland.Grechka
+		1.0	!	Grayland.Student
+		1.5	!	Grayland.Purple
+		2.0	!	Grayland.Blue
+		2.5	!	Grayland.Light Blue
+		3.0	!	Grayland.Green
+		3.5	!	Grayland.Yellow
+		4.0	!	Grayland.Orange
+		4.5	!	Grayland.Red
+		5.0	!	Grayland.Gray
 	Schools
 		Grayland
 		Sumer
@@ -2010,19 +2089,19 @@ add(`Rudazov
 		Mysteria
 		Lka-Nandasi
 		Deorg Academy
-	Spells
+	Abilities
 		#r-5[y]
 			#Action
 				#Protection
-					Mirror	=	Mirror Shield
-					Absolute	=	Sumer.
-					Universal	=	Sumer.
-					Personal	=	Sumer.
+					Mirror	!	Mirror Shield
+					Absolute	!	Sumer.
+					Universal	!	Sumer.
+					Personal	!	Sumer.
 				#Atack
-					Clone of Chaos	=	Grayland.
+					Clone of Chaos	!	Grayland.
 			#Misc
-				Sphere of Thirst	=	Grayland.
-				Antimagic-tatoo	=	Kiig.
+				Sphere of Thirst	!	Grayland.
+				Antimagic-tatoo	!	Kiig.
 			#l5.0
 				@Name
 					@Grayland
@@ -2032,39 +2111,65 @@ add(`Rudazov
 				#Elements
 					#Misc
 						Grace
-							Uncontrolled	=	Sumer.Inanna	/*Clear and health place Needs: soul of light
+							Uncontrolled	!	Sumer.Inanna	/*Clear and health place Needs: soul of light
 						Desecration
-							Halfcontrolled	=	Grayland.Fog of Death	/*Desecration fog
+							Halfcontrolled	!	Grayland.Fog of Death	/*Desecration fog
 						Void
-							Uncontrolled	=	Grayland.Total Zero	/*Desintegration of all matter
+							Uncontrolled	!	Grayland.Total Zero	/*Desintegration of all matter
 						Ethervoid
-							Halfcontrolled	=	Grayland.Fifth spell	/*Full eating of all ether (mana, prana, ...)
+							Halfcontrolled	!	Grayland.Fifth spell	/*Full eating of all ether (mana, prana, ...)
 					#Basic
 						Fire
-							Uncontrolled	=	Sumer.Shamash	/*Needs: result is neuromagic overwork
+							Uncontrolled	!	Sumer.Shamash	/*Needs: result is neuromagic overwork
 						Air
-							Controlled	=	Sumer.Adad	/*Controlled klimat Needs: salt mud lake
+							Controlled	!	Sumer.Adad	/*Controlled klimat Needs: salt mud lake
 						Electrizity
-							Uncontrolled	=	Grayland.Lightning of the Gods	/*Insane Lightning
+							Uncontrolled	!	Grayland.Lightning of the Gods	/*Insane Lightning
 						Earth
-							Controlled	=	Sumer.Enlil	/*Controlled earth
-							Uncontrolled	=	Grayland.Rumble of Hashiba	/*Earthquake
+							Controlled	!	Sumer.Enlil	/*Controlled earth
+							Uncontrolled	!	Grayland.Rumble of Hashiba	/*Earthquake
 					#Other
 						Space
-							Controlled	=	Sumer.Anu		/*Exhange of two places Needs: magical line around place, hited teeth of user
+							Controlled	!	Sumer.Anu		/*Exhange of two places Needs: magical line around place, hited teeth of user
 					#Misc
-						Getmye	=	Sumer.Ea		/*Needs: Drop of ihor
+						Getmye	!	Sumer.Ea		/*Needs: Drop of ihor
 				#Creature[y]
 					Demon
-						Anti	=	Sumer.Marduk	/*Needs: Incarcered archdemon, higher mortal demonolog
-					#w+1	=	Undead
-						Create	=	Sumer.Nergal	/*Needs: 3 masters nectromancers
+						Anti	!	Sumer.Marduk	/*Needs: Incarcered archdemon, higher mortal demonolog
+					#w+1	!	Undead
+						Create	!	Sumer.Nergal	/*Needs: 3 masters nectromancers
 				#Action[y]
-					Protection	=	Sumer.Tammuz	/*Needs: egg of Phoenix
+					Protection	!	Sumer.Tammuz	/*Needs: egg of Phoenix
 	Creatures
 		#Mind
 			#r-5[y]
 				#Human
+					#l3.0
+						Vanessa Lee
+						Hoboken
+						Lod Gveideon
+					#l4.0
+						Toray	!	Life
+					#l5.0
+						Shamshuddin	!	Black
+						Tivildorm	!	Ghost
+						Turseya	!	Wolferine
+						Murok	!	Vivisektor
+						Kodera !	Yasnovidyashyaya
+						Kleventin	!	Predatel
+						Asante	!	Storm
+						Ruork	!	Machinist
+						Riggellion	!	One Eye
+						Kvillion	!	Dubble
+						Yadjun	!	Fire
+						Ruaha	!	Karga
+						Isshkamir	!	Lightning
+						Bestelglosud	!	Chaos
+						Astaron	!	Ice
+						?	!	?
+						Kreol	!	Crusher
+					#l6.0
+						White Kiig
 				#Elv_2
 				#Sid
 				#Dev
@@ -2078,23 +2183,23 @@ add(`Rudazov
 				#Infal
 	Space
 		w
-			~0	=	Core, center of Everything
-			<1	=	Hyperspace, Esher's geometry
-			~1	=	Normalspace
-			>1	=	Underspace
+			~0	!	Core, center of Everything
+			<1	!	Hyperspace, Esher's geometry
+			~1	!	Normalspace
+			>1	!	Underspace
 		n
-			~0.0 ~0.0	=	bhavachakra
+			~0.0 ~0.0	!	bhavachakra
 				Other
 				Blood Beach	/*Place for demons
-			~1.0 ~0.0	=	Normal, material
-			~1.5 ~0.0	=	Shadow/Twilight/Through the Looking Glass
-			~2.0 ~0.0	=	Astral,	world of spirits
+			~1.0 ~0.0	!	Normal, material
+			~1.5 ~0.0	!	Shadow/Twilight/Through the Looking Glass
+			~2.0 ~0.0	!	Astral,	world of spirits
 				Other
 				World of the dead
-			~2.0 ~1.5	=	World of dreams
-			~2.0 ~2.0	=	NooSphere
-		Limbo	=	gray world
-		Chaos	=	non-embodied
+			~2.0 ~1.5	!	World of dreams
+			~2.0 ~2.0	!	NooSphere
+		Limbo	!	gray world
+		Chaos	!	non-embodied
 	Users
 		#r-5[y]
 			Mage
@@ -2103,50 +2208,50 @@ add(`Rudazov
 				White
 		#r-6[y]
 			Immortal
-				Dark	=	Demon_0
-				Neutral	=	Immortal
-					h+5	=	Jinn
-					h-1	=	Titan_0
-					h+1	=	Arch
-				Light	=	Angel_0
+				Dark	!	Demon_0
+				Neutral	!	Immortal
+					h+5	!	Jinn
+					h-1	!	Titan_0
+					h+1	!	Arch
+				Light	!	Angel_0
 		#r-7[y]
-			e+7	=	God_1
+			e+7	!	God_1
 				Dark
-				Neutral	=	Beastgod
+				Neutral	!	Beastgod
 				Light
 	Features
 		#r-4[y]
-			#w+1	=	Undead
+			#w+1	!	Undead
 				Ghoul
 				Zombie
-			#w-1	=	Spirit
+			#w-1	!	Spirit
 				Brownie
 				Boggart
 				Ghost
 				Loa
 				Embodied
 		#r-5[y]
-			#w+1	=	Undead
+			#w+1	!	Undead
 				Einherjar
 				Draugr
 				Lich
 			Mye
 			Vampire
-				Weak	=	Madness
-				Normal	=	Ordinary
-				High	=	Energetic
+				Weak	!	Madness
+				Normal	!	Ordinary
+				High	!	Energetic
 			Werewolf
-				Weak	=	Licantrop
-				Normal	=	Ordinary
-				High	=	MultiForms
+				Weak	!	Licantrop
+				Normal	!	Ordinary
+				High	!	MultiForms
 			Cubus
 				Incubus
 				Succubus
 		#r-6[y]
-			#w+1	=	Undead
+			#w+1	!	Undead
 				Undead-Immortal
 		#r-7[y]
-			#w+1	=	Undead
+			#w+1	!	Undead
 				Undead-God
 	Artefacts
 		#r-5[y]
@@ -2169,27 +2274,27 @@ add(`Rudazov
 			#Grimoires
 				Kriabal
 					@Briar
+	Elements
+		#Basic
+			Fire	!	Pyromancy
+			Water	!	Hydromancy
+			Earth	!	Geomancy
+			Air	!	Airomancy
+			Ice	!	Cryomancy
+			Electrizity	!	Electromancy
+		#First
+			Dark
+			Light
+			Chaos
+			Death
+		#Other
+			Space
+			Time
+		#Misc
+			Shadow
+			Blood
+			Mirror
 	Directions
-		Elements
-			#Basic
-				Fire	=	Pyromancy
-				Water	=	Hydromancy
-				Earth	=	Geomancy
-				Air	=	Airomancy
-				Ice	=	Cryomancy
-				Electrizity	=	Electromancy
-			#First
-				Dark
-				Light
-				Chaos
-				Death
-			#Other
-				Space
-				Time
-			#Misc
-				Shadow
-				Blood
-				Mirror
 		#Languages[y]
 			Word
 			Rune
@@ -2246,7 +2351,7 @@ add(`Rudazov
 			Enchantment
 		#Misc[y]
 			Name
-			Physical	=	Technomagic
+			Physical	!	Technomagic
 			Warlock
 			Apostol
 			Hooly
@@ -2265,11 +2370,16 @@ add(`Rudazov
 			Metamorph
 				Turning
 				Changing
-				Totem	=	Felgi
+				Totem	!	Felgi
 				Partial
 			Clairvoyance
 				True prophecy
 			Mental
+	Organizations
+		Organization
+		#Labs
+			Geya
+			Uran
 	Materials
 		#Metals
 			#r-4[y]
@@ -2316,8 +2426,8 @@ add(`SCP Foundation
 			English
 		Inputs[y]
 			#Statue
-	Organizations	=	g
-		SCP	=	Secure Containt Protect
+	Organizations	!	g
+		SCP	!	Secure Containt Protect
 	Artefacts
 		#r-5[y]
 			#SCP's`)
@@ -2371,7 +2481,8 @@ add(`Naruto
 						Kurama
 							@Naruto
 	Energies
-		+1+2	=	Chakra
+		#r-5[y]
+			+1+2	!	Chakra
 	Features
 		#r-5[y]
 			#Genetic
@@ -2399,46 +2510,50 @@ add(`Naruto
 				Acid
 				Magnetism
 				Metal
-				Lava	=	Fire+Earth?
-				Boil	=	Fire+Water?
-				Heat	=	Fire+Air?
-				Tree	=	Earth+Water Moku
-				Earth+Air	=	Sand
-				Water+Air	=	Ice
+				Lava	!	Fire+Earth?
+				Boil	!	Fire+Water?
+				Heat	!	Fire+Air?
+				Tree	!	Earth+Water Moku
+				Earth+Air	!	Sand
+				Water+Air	!	Ice
+	Elements
+		#Basic
+			Fire	!	Katon
+			Water	!	Suiton
+			Earth	!	Doton
+			Air	!	Fuuton
+			Electrizity	!	Raiton
+		#Misc
+			In	!	Inton
+			Yan	!	Yanton
+			Inyan	!	Inyanton
 	Directions
-		Elements
-			#Basic
-				Fire	=	Katon
-				Water	=	Suiton
-				Earth	=	Doton
-				Air	=	Fuuton
-				Electrizity	=	Raiton
-			#Misc
-				In	=	Inton
-				Yan	=	Yanton
-				Inyan	=	Inyanton
 		#Languages[y]
-			Technique	=	Nin
+			Technique	!	Nin
 			Fuin
 			Mudra
 		#Creature[y]
-			Doppel	=	Kage Bunshin
+			Doppel	!	Kage Bunshin
 		#Object[y]
 			Marionette
 			Artefact
 		#Action[y]
 			Summon
-			Sensor	=	Kanchi
+			Sensor	!	Kanchi
 			Absorption
 			Displacement
-			Arms	=	Tai
-			Steelarms	=	Ken
+			Arms	!	Tai
+			Steelarms	!	Ken
 			Flying
 			Sealing in
-			Senjutsu	=	Sen
+			Senjutsu	!	Sen
 			Illusion
-				Genjutsu	=	Gen
-	Spells
+				Genjutsu	!	Gen
+	Abilities
+		#Categories
+			Feel of Look
+			Yaki
+			Want of Blood
 		#r-5[y]
 			#Misc[y]
 				Telescope
@@ -2452,22 +2567,24 @@ add(`Fate
 		Inputs[y]
 			#Anime
 	Abilities
-		Magic
+		#r-5[y]
+			#Action
+				#Vampiring
+					Blood Citadel?
 	Energies
-		-1	=	Prana
-		+5	=	Mana
+		#r-5[y]
+			-1	!	Prana
+			+5	!	Mana
+	Users
+		#r-5[y]
+			e+5	!	Mage
 	Artefacts
 		#r-6[y]
 			#The Holy Grail
 	Creatures
 		#Mind
 			#r-6[y]
-				#Servant
-	Spells
-		#r-5[y]
-			#Action
-				#Vampiring
-					Blood Citadel?`)
+				#Servant`)
 add(`Claymore
 	About
 		Languages[y]
@@ -2475,7 +2592,8 @@ add(`Claymore
 		Inputs[y]
 			#Manga
 	Energies
-		yo	=	Yoki
+		#r-5[y]
+			yo	!	Yoki
 	Creatures
 		#Mind
 			#r-5[y]
@@ -2501,7 +2619,7 @@ add(`of Argus Filchenkov
 				4.	"Harry Potter and Champions Hunt"
 	Artefacts
 		#r-6[y]
-			#Time-Turners	=	Not limited hours, madness on incorrect
+			#Time-Turners	!	Not limited hours, madness on incorrect
 	Materials
 		#Metals
 			Coldiron`)
@@ -2523,14 +2641,14 @@ add(`of Kitsune Miyato
 		Dozory
 	Artefacts
 		#r-6[y]
-			#Time-Turners	=	Reality splitter, awful results of
+			#Time-Turners	!	Reality splitter, awful results of
 	Creatures
 		#Mind
 			#r-5[y]
 				#Human
 					#l5.0
-						Harry Potter	=	Uzumaki Naruto
-						Albus Dumbledore	=	Albus Persival Vulfric Brian Potter,Dumbledore`)
+						Harry Potter	!	Uzumaki Naruto
+						Albus Dumbledore	!	Albus Persival Vulfric Brian Potter,Dumbledore`)
 add(`Guren Lagan
 	About
 		Languages[y]
@@ -2557,12 +2675,17 @@ add(`HPMoR
 			Philosopher's Stone[u]
 			Mirror of Erised[u]
 		#r-6[y]
-			#Time-Turners	=	6 hours max, with many turners too
-			Moody's Eye	=	Eye of Vance
+			#Time-Turners	!	6 hours max, with many turners too
+			Moody's Eye	!	Eye of Vance
 			Left Leg of Vance
-			Philosopher's Stone	=	Stone of Materialization
-			Mirror of Erised	=	Mirror of Atlants
-	Spells
+			Philosopher's Stone	!	Stone of Materialization
+			Mirror of Erised	!	Mirror of Atlants
+	Abilities
+		#Advances
+			Patronus 2.0
+			Avadakedavra 2.0
+			Dementor control
+			Partial TransFormsation
 		#r-5[y]
 			#Action
 				#Atack
@@ -2571,7 +2694,7 @@ add(`HPMoR
 					"stupofy"	/*AutoAim stupefy
 					"luminos"	/*Lumination hex
 					"mahasu"	/*Sumer simple hit
-					Momental Sleep	=	"somnium-"	/*Sleep, weak battle magic
+					Momental Sleep	!	"somnium-"	/*Sleep, weak battle magic
 				#Protection
 					"prizmatis"	/*Prizmatic shield
 					"defendo"	/*Weak shield
@@ -2579,11 +2702,6 @@ add(`HPMoR
 					Anti-Transgrassion
 				#Vampire
 					Ritual Blood Citadel?
-	Abilities
-		Patronus 2.0
-		Avadakedavra 2.0
-		Dementor control
-		Partial TransFormsation
 	Complexes
 		27 spells for important topic talk
 			@Anti-Time-Turner
@@ -2594,11 +2712,11 @@ add(`HPMoR
 			#r-5[y]
 				#Human
 					#l0.0
-						Petunia Dursley	=	Petunia	Evans-Verres
+						Petunia Dursley	!	Petunia	Evans-Verres
 					#l3.0
-						Harry Potter	=	Harry James Potter-Evans-Verres
+						Harry Potter	!	Harry James Potter-Evans-Verres
 					#l5.0
-						Voldemort	=	Tom Morphin Riddle`)
+						Voldemort	!	Tom Morphin Riddle`)
 add(`Diablo
 	About
 		Languages[y]
@@ -2636,7 +2754,7 @@ add(`Life of Archmage Potter
 		Potteriana
 		Original
 			@Worlds
-				Our	=	Earth-?
+				Our	!	Earth-?
 				Other?
 		Naruto
 	Creatures
@@ -2646,7 +2764,7 @@ add(`Life of Archmage Potter
 					#l3.0
 						Harry Potter[u]
 					#l5.0
-						Harry Potter	=	Abraam
+						Harry Potter	!	Abraam
 							@Archmage
 			#r-7[y]
 				Hel`)
@@ -2659,18 +2777,18 @@ add(`Boy Who Conquered Time
 		Inputs[y]
 			#Fanfics
 	Levels
-		0.0	=	0
-		1.0	=	1
-		1.3	=	2
-		1.7	=	3
-		2.0	=	4
-		2.3	=	5
-		2.7	=	6
-		3.0	=	7
-		3.3	=	8
-		3.7	=	9
-		4.0	=	10
-		5.0	=	Higher
+		0.0	!	0
+		1.0	!	1
+		1.3	!	2
+		1.7	!	3
+		2.0	!	4
+		2.3	!	5
+		2.7	!	6
+		3.0	!	7
+		3.3	!	8
+		3.7	!	9
+		4.0	!	10
+		5.0	!	Higher
 	Verse
 		@Type
 			Multi
@@ -2687,12 +2805,16 @@ add(`Boy Who Conquered Time
 					#l3.0
 						Harry Potter[u]
 					#l5.0
-						Harry Potter	=	Henry James Potter, The-Boy-Who-Conquered-The-Time
-							@tm	=	Time back user
+						Harry Potter	!	Henry James Potter, The-Boy-Who-Conquered-The-Time
+							@Time
+								Back
+								No
 	Users
 		#r-6[y]
-			nt	=	Notime
-			tm	=	Time back user
+			#Other
+				Time
+					Back
+					Notime
 	Artefacts
 		#r-6[y]
 			Chronos braslet
@@ -2701,10 +2823,12 @@ add(`Boy Who Conquered Time
 			Schema
 			Spell
 	Energies
-		-1	=	Prana
-		+5	=	Mana
-		+3+5[u]
-		tm	=	Time`)
+		#r-5[y]
+			-1	!	Prana
+			+5	!	Mana
+	Elements
+		#Other
+			Time`)
 add(`Potteriana
 	About
 		Authors[y]
@@ -2730,12 +2854,6 @@ add(`Potteriana
 				5.	"Harry Potter and Order of Phoenix"
 				6.	"Harry Potter and Half-Blood Price"
 				7.	"Harry Potter and Deathly Hallows"
-	Abilities
-		#r-5[y]
-			Wizarding
-			Parseltongue
-			Nonverbal
-			Without wand
 	Materials
 		#Liquid
 			#r-5[y]
@@ -2752,7 +2870,8 @@ add(`Potteriana
 			Veritaserum
 			оборотное зелье
 	Energies
-		+3+5	=	Wirardy?
+		#r-5[y]
+			+3+5	!	Wirardy?
 	Directions
 		#Object[y]
 			Elixir
@@ -2760,7 +2879,7 @@ add(`Potteriana
 				Putting	/*3
 			Alchemy
 		#Action[y]
-			TransFormsation	=	Transfiguration
+			TransFormsation	!	Transfiguration
 				Forms
 				Figure
 				Material
@@ -2778,15 +2897,15 @@ add(`Potteriana
 			Arithmancy
 			Lexomancy	/*3
 			Mental
-				Protection	=	Occlumency
-				Penetration	=	Legilimency
-			Clairvoyance	=	Divination
+				Protection	!	Occlumency
+				Penetration	!	Legilimency
+			Clairvoyance	!	Divination
 				True prophecy
 			Metamorph
-				Totem	=	Animagic
+				Totem	!	Animagic
 		#Creature[y]
-			Bestia	=	Magezoology
-			Flora	=	Herbology
+			Bestia	!	Magezoology
+			Flora	!	Herbology
 			Holem
 	Organizations
 		Mysteries Department
@@ -2833,12 +2952,19 @@ add(`Potteriana
 				Cloak of Invisibility
 				Resurrection Stone
 				Elder Wand
-	Spells
+	Abilities
 		#r-5[y]
-			ложная память
-			аппарация
-			протеевы чары
-			непреложный обет
+			#Categories
+				Wizarding
+				Parseltongue
+				Nonverbal
+				Without wand
+			#Rituals
+				непреложный обет
+			#Spells
+				ложная память
+				аппарация
+				протеевы чары
 			#Action
 				#Invisible
 					заклинание Дезиллюминационное	/* — заклинание, делающее объект неотличимым от окружающей среды.
@@ -2856,7 +2982,7 @@ add(`Potteriana
 					"Relashio"	/* — снятие оков, цепей, освобождение объекта или отброс оппонента (Боб Огден отбросил Марволо Мракса). На суше это сноп желтых искр, под водой	/* — струя кипятка.
 					"Expelliarmus"	/* — заклинание разоружения, выбивает палочку или другое оружие из рук противника.
 				#Summon
-					Bird	=	"avis-"	/* - Заклятие призыва птиц. Создаёт стайку птиц.
+					Bird	!	"avis-"	/* - Заклятие призыва птиц. Создаёт стайку птиц.
 			#TransFormsation
 				"Vermiculus" /*(2)	 — превращает объект в червя[5].
 				"Aviforce-"/*(2)	 — противник превращается в птицу/стаю птиц/стаю летучих мышей.[4]
@@ -2864,7 +2990,7 @@ add(`Potteriana
 				#Soul
 					Horcrux
 				#Domestic
-					Opendoor	=	"aberto-"	/* - отпирает дверь.
+					Opendoor	!	"aberto-"	/* - отпирает дверь.
 				"Ascendio" /*(1)	 — выталкивает человека из воды[8].
 			"Verdimilius" /*(2)	 — выстреливает зелёными искрами во врага или освещает и делает видимыми и осязаемыми объекты скрытые темной магией. В игре «Гарри Поттер и Тайная комната» позволяет обнаружить невидимые объекты (как Люмос в других версиях игры)[4].
 			"Garmonia necture pasus" /*(1)	 — заклинание для активации Исчезательного шкафа. Использовалось Малфоем[13].
@@ -2951,9 +3077,9 @@ add(`Potteriana
 				Заклинание Жалящее
 				«Сито из котла» (2)
 			#Mental
-				Muggle Repelling	=	"Repello Muggletum"
+				Muggle Repelling	!	"Repello Muggletum"
 				Чары подчинения - не империо
-				Absolute Submission	=	"Imperio-"
+				Absolute Submission	!	"Imperio-"
 			#Verbal Formsula
 				"Contra-" (3)	/* - нарушение работы заклинаний
 				"Spangify-" (2)	/* — батут
@@ -2973,7 +3099,7 @@ add(`Potteriana
 				"Glacius-" (2)	/* — замораживает, тушит пожары[15].
 				"Inanimatus Conjurus"	/* — заклинание созидания.
 				"Reparifargo-"	/* — заклинание, которое придаёт объекту, подвергнутому неполной трансфигурации, первоначальный вид[16].
-				Otvod glaz	=	"repello-"	/*Repelling hex
+				Otvod glaz	!	"repello-"	/*Repelling hex
 				"-Inimicum"	/* — чары, защищающие какое-либо место от врагов.
 				"Ridiculus-"	/* — против боггарта
 				"Rictusempra-"	/* — щекотка
@@ -3014,7 +3140,7 @@ add(`Potteriana
 				"Sonorus-"	/* - громкость, отмена квиетуса
 				"Evanesco-"	/* - удаление сотворенного
 				"Flagreit-"	/* - светящаяся метка
-				Sleep	=	"sopporo-"	/* - усыпление
+				Sleep	!	"sopporo-"	/* - усыпление
 				"Partis-"	/* - проход
 				"Stupefy-"	/* - оглушение
 				"Muffliato-"	/* - оглохни
@@ -3214,17 +3340,17 @@ add(`Potteriana
 						Charly Weasley
 						Molly Weasley Pruit
 						Artur Weasley
-						Harry Potter	=	Harry James Potter, Boy-Who-Lived
+						Harry Potter	!	Harry James Potter, Boy-Who-Lived
 					#l4.0
 						Alastor Moody
 					#l5.0
-						Voldemort	=	Tom Marvolo Riddle
-						Albus Dumbledore	=	Albus Persival Vulfric Brian Dumbledore
+						Voldemort	!	Tom Marvolo Riddle
+						Albus Dumbledore	!	Albus Persival Vulfric Brian Dumbledore
 	Features
 		#r-4[y]
 			Muggle
 			Squib
-			#w-1	=	Spirit
+			#w-1	!	Spirit
 				Ghost
 				Boggart
 				Brownie Elv
@@ -3266,17 +3392,17 @@ add(`Witcher
 	Directions
 		#Languages[y]
 			Mudra
-	Spells
+	Abilities
 		#r-5[y]
-			Elements
+			#Elements
 				#Basic
-					Air	=	Aard
-					Water	=	Aksiy
-					Earth	=	Kven
-					Fire	=	Igni
+					Air	!	Aard
+					Water	!	Aksiy
+					Earth	!	Kven
+					Fire	!	Igni
 			#Action[y]
-				Protection	=	Heliotrop
-				Pomehi	=	Irden`)
+				Protection	!	Heliotrop
+				Pomehi	!	Irden`)
 add(`Pokemon
 	About
 		Languages[y]
@@ -3369,7 +3495,7 @@ add(`Adacademy Wasshoi
 			#Anime
 	Users
 		#r-5[y]
-			e+5	=	Mage`)
+			e+5	!	Mage`)
 add(`High School DxD
 	About
 		Languages[y]
@@ -3388,13 +3514,13 @@ add(`High School DxD
 			#Holy Swords
 	Users
 		#r-5[y]
-			e+5	=	Mage?
+			e+5	!	Mage?
 		#r-6[y]
-			dm	=	Demon
-			lm	=	Angel_0
-			fm	=	Fallen
+			dm	!	Demon
+			lm	!	Angel_0
+			fm	!	Fallen
 		#r-7[y]
-			e+7	=	God_?`)
+			e+7	!	God_?`)
 add(`Startrack
 	About
 		Languages[y]
@@ -3407,10 +3533,11 @@ add(`Startrack
 				#Human
 				#Vulkan
 	Energies
-		+4	=	Psy?
+		#r-5[y]
+			+4	!	Psy?
 	Users
 		#r-5[y]
-			e+4	=	Psyonic`)
+			e+4	!	Psyonic`)
 add(`Seilor Moon
 	About
 		Languages[y]
@@ -3432,7 +3559,8 @@ add(`Dragonball
 		Inputs[y]
 			#Anime
 	Energies
-		+1	=	Ki?
+		#r-5[y]
+			+1	!	Ki?
 	Artefacts
 		#r-6[y]
 			#Dragon Balls`)
@@ -3446,8 +3574,8 @@ add(`Lord of Rings
 			#Books
 	Space
 		n
-			~1.0, 0.0	=	Body
-			~1.5, 0.0	=	Soul
+			~1.0, 0.0	!	Body
+			~1.5, 0.0	!	Soul
 	Verse
 		@Type
 			Uni
@@ -3455,7 +3583,8 @@ add(`Lord of Rings
 			@Worlds
 				Arda
 	Energies
-		+5	=	Mana?
+		#r-5[y]
+			+5	!	Mana?
 	Features
 		#r-7[y]
 			God_1
@@ -3503,35 +3632,36 @@ add(`Nick
 				#Orc_0
 				#Demon_0
 	Energies
-		-1	=	Prana
-		+4	=	Psy
-		+5	=	Mana
-		if	=	Infomana
-		+3	=	Emana
+		#r-5[y]
+			-1	!	Prana
+			+3	!	Emana
+			+4	!	Psy
+			+5	!	Mana
+			if	!	Infomana
 	Users
 		#r-5[y]
-			e+5	=	Mage
-			if	=	Infomage
-			e+3	=	Sorcerer
-			e+4	=	Psyonic
+			e+5	!	Mage
+			if	!	Infomage
+			e+3	!	Sorcerer
+			e+4	!	Psyonic
 	Artefacts
 		#r-5[y]
 			#Rods
 				#Adeptnesser's
+	Elements
+		#Basic
+			Fire
+			Water
+			Air
+			Earth
+			Ice
+			Electrizity
 	Directions
 		#Languages[y]
 			Construct
 			Weaving
 			Structure
 			Image	/*Only gods
-		Elements
-			#Basic
-				Fire
-				Water
-				Air
-				Earth
-				Ice
-				Electrizity
 		#Creature[y]
 			Holem
 			Automate
@@ -3556,17 +3686,17 @@ add(`Nick
 			Multi
 		Original
 			@Worlds
-				Our	=	Earth-2150?
+				Our	!	Earth-2150?
 				Lungria
 	Space
 		n
 			~1.0 ~0.0
-			~1.5 ~1.5	=	Astral?, ?-net
-			~1.0 ~2.0	=	infofield?, zero-net
+			~1.5 ~1.5	!	Astral?, ?-net
+			~1.0 ~2.0	!	infofield?, zero-net
 	Shells
-		+	=	Aura
-		-4	=	Infostructure
-		+4	=	Mental
+		+	!	Aura
+		-4	!	Infostructure
+		+4	!	Mental
 	Schools
 		Adeptness
 		Sorcery
@@ -3578,32 +3708,6 @@ add(`Nick
 			Cleverness
 		#r-6[y]
 			God_2`)
-add(`Misc
-	About
-		All not in classification
-	Abilities
-		Empathy
-		Telepathy
-		Avatar
-		Zhrets
-		Feeling
-			#Types[y]
-				Vision
-				Obonyanie
-				Vkus
-				Sluh
-				Tactile
-				Feeling
-			#Users
-				Demon
-				Angel
-				Other
-				Mage
-			#Misc
-				Night
-			#Energies
-		Berserk
-		Yasnovidenie`)
 add(`Skyrim
 	About
 		Languages[y]
@@ -3617,7 +3721,7 @@ add(`Skyrim
 				#Dragon
 	Users
 		#r-5[y]
-			e+5	=	Mage`)
+			e+5	!	Mage`)
 add(`Star Wars
 	About
 		Languages[y]
@@ -3629,18 +3733,19 @@ add(`Star Wars
 			#r-5[y]
 				#Human
 	Energies
-		gf	=	Great Force?
+		#r-5[y]
+			gf	!	Great Force?
 	Users
 		#r-5[y]
-			gf	=	Forceuser
-				lm	=	Light
-				dm	=	Darl
+			gf	!	Forceuser
+				lm	!	Light
+				dm	!	Darl
 	Schools
 		Jedi
 		Sith
 	Space
 		w
-			<1	=	Hyper
+			<1	!	Hyper
 	Artefacts
 		#r-5[y]
 			#Steelarms
@@ -3662,14 +3767,15 @@ add(`Warhammer
 		#Metals
 			Adamantium
 	Energies
-		+4	=	Psy?
+		#r-5[y]
+			+4	!	Psy?
 	Users
 		#r-5[y]
-			e+4	=	Psyker`)
+			e+4	!	Psyker`)
 add(`Minecraft
 	About
 		Authors[y]
-			Notch	=	Markus Persson
+			Notch	!	Markus Persson
 			Jebb
 			Grum
 		Languages[y]
@@ -3687,17 +3793,17 @@ add(`Minecraft
 					Bedrock
 	Space
 		o
-			Hell	=	Nether World
+			Hell	!	Nether World
 			End
-			Matteral	=	Over World
+			Matteral	!	Over World
 	Features
 		#r-4[y]
-			#w-1	=	Spectator Mode
+			#w-1	!	Spectator Mode
 	Users
 		#r-6[y]
-			#Immortal	=	Godmode
+			#Immortal	!	Godmode
 		#r-7[y]
-			e+7	=	Creative gamemode, Admin perms
+			e+7	!	Creative gamemode, Admin perms
 	Creatures
 		#r-3[y]
 			#Pig
@@ -3706,7 +3812,7 @@ add(`Minecraft
 			#Rabbit
 			#Sheep
 		#r-4[y]
-			#w+1	=	Undead
+			#w+1	!	Undead
 				#Zombie
 				#Skeleton
 					#Normal
@@ -3793,7 +3899,7 @@ Industrialcraft
 			#Weapon
 				#Laser
 		#r-7[y]
-			#Developer Tool	=	Debug Tool, Adamant Rod
+			#Developer Tool	!	Debug Tool, Adamant Rod
 Buildcraft
 Ender IO
 	Artefacts
@@ -3824,16 +3930,17 @@ add(`Zero no Tsukaima
 		Inputs[y]
 			#Anime
 	Energies
-		+3+5	=	Wizardy?
+		#r-5[y]
+			+3+5	!	Wizardy?
+	Elements
+		#Basic
+			Fire
+			Water
+			Air
+			Earth
+		#Misc
+			Void
 	Directions
-		Elements
-			#Basic
-				Fire
-				Water
-				Air
-				Earth
-			#Misc
-				Void
 		#Languages[y]
 			Spell
 			Rune
@@ -3856,7 +3963,7 @@ add(`Zero no Tsukaima
 				of Air
 	Users
 		#r-5[y]
-			e+3+5	=	Wizard
+			e+3+5	!	Wizard
 	Features
 		#r-5[y]
 			Gandalf
@@ -3867,7 +3974,7 @@ add(`Zero no Tsukaima
 			Multi
 		Original
 			@Worlds
-				Our	=	Earth-2007?
+				Our	!	Earth-2007?
 				Other?
 	Creatures
 		#Mind
@@ -3881,7 +3988,7 @@ add(`Zero no Tsukaima
 			#Beholder
 	Features
 		#r-4[y]
-			#w-1	=	Spirit
+			#w-1	!	Spirit
 				Loa?`)
 add(`Toaru Majutsu no Index
 	About
@@ -3906,23 +4013,25 @@ add(`Toaru Majutsu no Index
 			Meta
 		Original
 			@Worlds
-				Our	=	Earth-2052?
+				Our	!	Earth-2052?
 	Energies
-		+5	=	Mana
-		tl	=	Telesma?
+		#r-5[y]
+			+5	!	Mana
+		#r-6/7[y]
+			tl	!	Telesma?
 	Shells
-		aimf	=	AIM-field
+		aimf	!	AIM-field
 	Schools
 		Academ-City
 	Levels
-		0.0	=	Zero-esper	/*, don't have ability
-		1.0	=	Weak	/* esper, can destroy 1 cube meter
-		2.0	=	Simple	/* esper, can destroy room
-		3.0	=	Normal	/* esper, can destroy house
-		4.0	=	Strong	/* esper, can destroy town
-		5.0	=	Very strong	/* esper, can destroy country
-		5.5	=	Sub-Angel(Immortal)
-		6.0	=	Insane, Angel(Immortal)	/* power of esper, can destroy planet's surface; not exist
+		0.0	!	Zero-esper	/*, don't have ability
+		1.0	!	Weak	/* esper, can destroy 1 cube meter
+		2.0	!	Simple	/* esper, can destroy room
+		3.0	!	Normal	/* esper, can destroy house
+		4.0	!	Strong	/* esper, can destroy town
+		5.0	!	Very strong	/* esper, can destroy country
+		5.5	!	Sub-Angel(Immortal)	/*esper, can destroy continent
+		6.0	!	Insane, Angel(Immortal)	/* power of esper, can destroy planet's surface; not exist
 	Directions
 		#Languages[y]
 			Ritual
@@ -3932,7 +4041,7 @@ add(`Toaru Majutsu no Index
 			Enchantment
 	Users
 		#r-5[y]
-			e+4	=	Esper
+			e+4	!	Esper
 				#l1.0
 				#l2.0
 				#l3.0
@@ -3972,7 +4081,7 @@ add(`Toaru Majutsu no Index
 								@Railgun
 									@Rank
 										3
-							Ether	=	Dark matter
+							Ether	!	Dark matter
 								@Darkmatter
 									@Rank
 										2
@@ -3984,7 +4093,7 @@ add(`Toaru Majutsu no Index
 										1
 									#Needs
 										Touch
-			e+5	=	Mage
+			e+5	!	Mage
 				Index
 					@Index
 				@Styl Magnus
@@ -3995,7 +4104,13 @@ add(`Toaru Majutsu no Index
 					#Needs
 						Touch
 		#r-7[y]
-			e+7	=	God_?
+			e+7	!	God_?
+	Abilities
+		#r-5[y]
+			#Action
+				Protection
+					Vector
+						@Accelerator
 	Artefacts
 		#r-5[y]
 			#Grimoires
@@ -4014,23 +4129,23 @@ add(`Toaru Majutsu no Index
 						Styl Magnus
 						Index
 					#l5.0
-						Rank_Seven	=	Sogiita Gunha
+						Rank_Seven	!	Sogiita Gunha
 							@Rank
 								7
-						Rank_Six	=	Aihana Etsu
+						Rank_Six	!	Aihana Etsu
 							@Rank
 								6
-						Mentalout	=	Shokuhou Misaki
+						Mentalout	!	Shokuhou Misaki
 							@Rank
 								5
-						Meltdowner	=	Mugino Sizuri
+						Meltdowner	!	Mugino Sizuri
 							@Rank
 								4
 					#l5.5
-						Railgun		=	Misaka Mikoto
+						Railgun		!	Misaka Mikoto
 							@Rank
 								3
-						Darkmatter	=	Kakine Teitoku
+						Darkmatter	!	Kakine Teitoku
 							@Rank
 								2
 						Accelerator
@@ -4046,9 +4161,10 @@ add(`Bleach
 			#Anime
 	Users
 		#r-5[y]
-			e+2	=	Reatsu
+			e+2	!	Reatsu
 	Energies
-		+2	=	Reatsu
+		#r-5[y]
+			+2	!	Reatsu
 	Features
 		#r-5[y]
 			Hollow
@@ -4076,9 +4192,10 @@ add(`Mass Effect
 				#Human
 	Users
 		#r-5[y]
-			e+4	=	Biotic
+			e+4	!	Biotic
 	Energies
-		+4	=	Psy?`)
+		#r-5[y]
+			+4	!	Psy?`)
 add(`Terminator
 	About
 		Languages[y]
@@ -4129,13 +4246,13 @@ add(`Noragami
 			#Manga
 	Users
 		#r-4[y]
-			e+0+2	=	Sword-Soul
-	Spells
+			e+0+2	!	Sword-Soul
+	Abilities
 		#r-5[y]
 			Line
 	Features
 		#r-4[y]
-			#w-1	=	Spirit
+			#w-1	!	Spirit
 				Ghost
 				Demon-Loa
 				God_0`)
@@ -4147,9 +4264,10 @@ add(`Slayers
 			#Anime
 	Users
 		#r-5[y]
-			e+5	=	Mage
+			e+5	!	Mage
 	Energies
-		+5	=	Magical?`)
+		#r-5[y]
+			+5	!	Mana?`)
 add(`Fairy Tail
 	About
 		Languages[y]
@@ -4164,9 +4282,10 @@ add(`Fairy Tail
 				Other?
 	Users
 		#r-5[y]
-			e+5	=	Mage?
+			e+5	!	Mage?
 	Energies
-		+5	=	Magical?`)
+		#r-5[y]
+			+5	!	Mana?`)
 add(`DC
 	About
 		Languages[y]
@@ -4178,29 +4297,30 @@ add(`DC
 			Multi
 		Original
 			@Worlds
-				Our	=	Earth?
+				Our	!	Earth?
 	Creatures
 		#Mind
 			#r-5[y]
 				#Human
 	Energies
-		+5	=	Magical?
-		em	=	Lantern's
-			Life	=	of White
-			Anger	=	of Red, Atrocitus
-			Greed	=	of Orange
-			Fear	=	of Yellow, Sinestro
-			Will	=	of Green
-			Hope	=	of Light Blue
-			Compassion	=	of Blue, Indigo
-			Love	=	of Purple, Sapphire
-			Death	=	of Black
-		sf	=	Speedforce
+		#r-5[y]
+			+5	!	Mana?
+		sf	!	Speedforce
+	Emotions	!	Lantern's
+		Life	!	of White
+		Anger	!	of Red, Atrocitus
+		Greed	!	of Orange
+		Fear	!	of Yellow, Sinestro
+		Will	!	of Green
+		Hope	!	of Light Blue
+		Compassion	!	of Blue, Indigo
+		Love	!	of Purple, Sapphire
+		Death	!	of Black
 	Users
 		#r-5[y]
 			Metahuman
-			sf	=	Speedforceuser
-			e+5	=	Mage
+			sf	!	Speedforceuser
+			e+5	!	Mage
 	Artefacts
 		#r-4[y]
 			#Tech
@@ -4216,14 +4336,15 @@ add(`Avatar
 		Inputs[y]
 			#Multserial
 	Energies
-		+5	=	Mana?
+		#r-5[y]
+			+5	!	Mana?
+	Elements
+		#Basic
+			Fire
+			Water
+			Earth
+			Air
 	Directions
-		Elements
-			#Basic
-				Fire
-				Water
-				Earth
-				Air
 		#Action[y]
 			Heal
 	Features
@@ -4247,7 +4368,8 @@ add(`Fullmetal Alchemist
 		#r-5[y]
 			Gate of Truth
 	Energies
-		al	=	Alchemycal?`)
+		#r-5[y]
+			al	!	Alchemycal?`)
 add(`Dozory
 	About
 		Languages[y]
@@ -4256,28 +4378,29 @@ add(`Dozory
 			Sergey Lukyanenko
 		Inputs[y]
 			#Books
+	Schools
+		Other
 	Levels
-		!School	=	Other
-		0.0	=	No
-		1.0	=	Potential
-		1.5	=	7
-		2.0	=	6
-		2.5	=	5
-		3.0	=	4
-		3.5	=	3
-		4.0	=	2
-		4.5	=	1
-		5.0	=	Higher/Not in categories
-		6.0	=	0
+		0.0	!	No
+		1.0	!	Potential
+		1.5	!	7
+		2.0	!	6
+		2.5	!	5
+		3.0	!	4
+		3.5	!	3
+		4.0	!	2
+		4.5	!	1
+		5.0	!	Higher/Not in categories
+		6.0	!	0
 	Energies
-		em
-			dm	=	dark
-			lm	=	light
-		-1	=	prana?
-		+5	=	mana?
+		#r-5[y]
+			-1	!	Prana?
+			+3+5	!	Wizardy?
+				dm	!	Dark
+				lm	!	Light
 	Features
 		#r-4[y]
-			#w+1	=	Undead
+			#w+1	!	Undead
 		#r-5[y]
 			Other
 				Dark
@@ -4290,13 +4413,13 @@ add(`Dozory
 			Mage
 			Witch
 			Mirror
-	Spells
+	Abilities
 		#r-5[y]
 			#Misc
 				#Domestic
 					Absolute lock	/*наглухо запирает любые двери
 				#Mental
-					Absolute Submission	=	Доминанта	/* — заклинание абсолютного подчинения.
+					Absolute Submission	!	Доминанта	/* — заклинание абсолютного подчинения.
 					Петров	/* — заклинание, накладываемое для мгновенного обучения 15 распростаненных языков (среди них упоминается польский).
 					Skolko let, skolko zim
 					Schastye
@@ -4307,26 +4430,26 @@ add(`Dozory
 						Сфера Спокойствия	/* — заклинание ментальной защиты.
 						Ледяная Кора	/* — ментальная защита.
 			#Action
-				Muggle Repelling	=	Сфера Невнимания	/* — заклинание, предохраняющее от излишнего любопытства людей. Не действует на Иных и чувствительных к магии людей.
+				Muggle Repelling	!	Сфера Невнимания	/* — заклинание, предохраняющее от излишнего любопытства людей. Не действует на Иных и чувствительных к магии людей.
 				#Heal
 					Absolute constipation	/*вызывает абсолютный запор у того, к кому оно применяется.
 					Avicenna	/* — заклинание исцеления.
-					Sleep	=	Morphey	/* — заклинание, усыпляющее людей на определённой площади: благодаря постепенному действию (несколько секунд, примерно пять) позволяет избежать лишних жертв, например связанных с потерей управления автомобилями на ходу и т. п. По этой простой причине предпочитается
+					Sleep	!	Morphey	/* — заклинание, усыпляющее людей на определённой площади: благодаря постепенному действию (несколько секунд, примерно пять) позволяет избежать лишних жертв, например связанных с потерей управления автомобилями на ходу и т. п. По этой простой причине предпочитается
 				#Illusion
-					Disguise	=	Паранджа	/* — заклинание, как правило, накладываемое Тёмными женщинами. Аналог магической косметики.
+					Disguise	!	Паранджа	/* — заклинание, как правило, накладываемое Тёмными женщинами. Аналог магической косметики.
 				#Protection
 					Кольцо Шааба	/* — охранное заклинание, завязанное на определённое слово.
 					Хрустальный щит	/* — очень мощная защита от физического воздействия на объект. Побочным эффектом дает слабую магическую защиту. Мнение что Щит невозможно продавить подтвердилось после применения Щита Эдгаром против вампира Кости, не сумевшего продавить его, даже будучи Абсолютным Иным ("Сумеречный дозор").
 					Хрустальный шар	/* — создает вокруг мага шар из «хрусталя», защищающий его от любого физического воздействия.
 					Сфера отрицания	/* — заклинание, используемое как защита против вражеских заклинаний, при сильной подкачке может надёжно защитить даже против заклинаний высших магов. Пропускает физические атаки.
-					Mana	=	Mage shield	/* — универсальная защита, мощность зависит от вкладываемой силы.
-					Universal	=	Rainbow sphere	/* — достаточно сильная универсальная защита.
+					Mana	!	Mage shield	/* — универсальная защита, мощность зависит от вкладываемой силы.
+					Universal	!	Rainbow sphere	/* — достаточно сильная универсальная защита.
 					Тайга	/* — очень мощное заклинание, имеющее форму огненной сети, опутывающей противника. Упоминается в «Новом Дозоре» и было использовано чтобы замедлить Тигра, правда воздействие было минимальное, так что настоящий эффект неизвестен.
 				#Atack
-					Momental Sleep	=	Opium	/* — менее гуманный аналог Морфея, в отличие от последнего усыпляет резко, без промедления, что может вызвать аварии и жертвы среди людей, так как не даёт жертве время остановиться или прекратить занятия.
+					Momental Sleep	!	Opium	/* — менее гуманный аналог Морфея, в отличие от последнего усыпляет резко, без промедления, что может вызвать аварии и жертвы среди людей, так как не даёт жертве время остановиться или прекратить занятия.
 					White kopiyo — боевое заклинание Светлых. Магическое копье, действует соответственно названию. Упоминается в романе «Последний дозор». В шестом дозоре было использовано Антоном Городецким против Двуединого. "Я видел, ... как загорелось пальто Темного, пробитое "белым копьем"..."
 					Марево Трансильвании 	/* — заклинание, магическим способом причиняющее физические увечья путём всестороннего сдавливания объекта заклинания. Применяется только Тёмными Иными. Было применено Зеркалом Виталием Рогозой для отражения атаки Тигренка в «Дневном дозоре».
-					Pressure	=	Press	/* — заклинание чистой Силы. Сгущает Силу до осязаемого состояния, используется чтобы давить противника.
+					Pressure	!	Press	/* — заклинание чистой Силы. Сгущает Силу до осязаемого состояния, используется чтобы давить противника.
 					White Sword	/* — светлое заклинание, преобразующее Силу в белый клинок. Использует Светлана в бою против ведьмы Арины(«Сумеречный дозор»). Также Светлана использовала "защиту Лужина", вероятно с помощью меча. В теории заклинание поражает лишь Тёмных и склонившихся ко Злу людей. На практике человек становится уязвим к Мечу при появлении у него агрессии, страха, злобы.
 					Vacuum
 					Плеть Шааба	/* — боевое заклинание Тёмных: огненная струя, принимающая облик огромной змеи с некоторыми зачатками разума, изменяющая направление в полёте. Любимое заклинание Завулона. В книге Новый Дозор упоминается похожее заклинание, использумое Завулоном в битве с Тигром. Пламя было синего цвета, так что не установлено являлось ли оно Плетью Шааба, либо каким-то другим заклинанием.
@@ -4355,15 +4478,15 @@ add(`Dozory
 			Тройное лезвие	/* — заклинание, материализующее 3 кинжалоподобных лезвия, с большой скоростью летящих в указанном магом направлении.
 			Fireball	/* — широко распространённое как у Светлых, так и у Тёмных заклинание. Во врага пускается сгусток огня. Существует также «групповой файербол» и какая-то особая версия последнего у Инквизиторов.
 			#Creature
-				#w+1	=	Undead
+				#w+1	!	Undead
 					Anti
 						Серый молебен	/* — заклинание против нежити: вампиров, зомби и т. п. Ослабляет и замедляет вампиров, на большей мощности упокаивает. Скелетов, замби, то есть нежить, не имеющую собственной воли, а подчиняющуюся воле поднявшего их колдуна, развеивает.
 			#Elements
 				#Other
 					Space
-						Portal	=	/* — заклинание позволяющее почти мгновенно переносится на большие расстояния при помощи врат, без наводки используется только высшими иными (или зеркалом). При помощи мага в пункте назначения создавать портал проще.
+						Portal	!	/* — заклинание позволяющее почти мгновенно переносится на большие расстояния при помощи врат, без наводки используется только высшими иными (или зеркалом). При помощи мага в пункте назначения создавать портал проще.
 					Time
-						Stop	=	Freeze	/* — локальная остановка времени, применяется для иммобилизации противника без причинения ему вреда.
+						Stop	!	Freeze	/* — локальная остановка времени, применяется для иммобилизации противника без причинения ему вреда.
 			Ход	/* — заклинание, позволяющее бежать с очень высокой скоростью. При попадании под воздействие заклинания сердечной мышцы (миокарда) может вызвать остановку последнего.
 			#l5.0
 				#Elements
@@ -4403,20 +4526,20 @@ add(`Dozory
 		#Action[y]
 			Atack
 			Protection
-			Heal	=	Healing
+			Heal	!	Healing
 		#Misc[y]
-			Love	=	Obvorozhenie
+			Love	!	Obvorozhenie
 			Clairvoyance
 				Probability
-			Metamorph	=	Oborotnichestvo
+			Metamorph	!	Oborotnichestvo
 				Werewolf
 				Turning
 		#Creature[y]
-			#w-1	=	Necromancy
+			#w-1	!	Necromancy
 	Space
 		n
 			~1.0 ~0.0
-			~1.5 ~0.0	=	Twilight
+			~1.5 ~0.0	!	Twilight
 				~1.5 ~0.0
 					0	x1	none cold	some gray	0	none lag	normal
 				~1.1 ~0.3
@@ -4445,7 +4568,7 @@ add(`Kono Subarashii Sekai ni Shukufuku o
 			Multi
 		Original
 			@Worlds
-				Our	=	Earth?
+				Our	!	Earth?
 				Other`)
 add(`Tokyo Ghoul
 	About
@@ -4459,7 +4582,17 @@ add(`Shingeki no Kyojin
 			Japanese
 		Inputs[y]
 			#Anime`)
-add(`Hataraku Maou-sama!
+add(`Lucifer
+	About
+		Languages[y]
+			English
+		Inputs[y]
+			#Serial
+				1.
+				2.
+				3.
+				4.`)
+add(`Hataraku Maou-sama
 	About
 		Languages[y]
 			Japanese
@@ -4474,15 +4607,15 @@ add(`Hataraku Maou-sama!
 		#Mind
 			#r-6[y]
 				#Demon
-					Alciel	=	Shiro Ashiya
-					Satan Jakob	=	Sadao Mao
-					Lucifer	=	Urushihara Hanzo
+					Alciel	!	Shiro Ashiya
+					Satan Jakob	!	Sadao Mao
+					Lucifer	!	Urushihara Hanzo
 	Verse
 		@Type
 			Multi
 		Original
 			@Worlds
-				Our	=	Earth
+				Our	!	Earth
 				Ente Isla`)
 add(`To Love-Ru
 	About
@@ -4498,12 +4631,12 @@ add(`The Gamer
 			#Manhva
 	Users
 		#r-5[y]
-			e+1	=	Kiuser
+			e+1	!	Kiuser
 			Feature
-			e+5	=	Mage
+			e+5	!	Mage
 		#r-6[y]
 			God_4
-			gm	=	Gamer's System
+			gm	!	Gamer's System
 				The Gamer
 	Features
 		Dark soul
@@ -4513,34 +4646,32 @@ add(`The Gamer
 		Original
 		@Tags
 			Gamelit
+	Elements
+		#Basic
+			Fire
+			Water
+			Air
+			Earth
 	Directions
 		#Misc[y]
 			Clairvoyance
-		Elements
-			#Basic
-				Fire
-				Water
-				Air
-				Earth
 		#Forms
 			#Misc
 				Elemental
-	Spells
-		#r-5[y]
-			#Action
-				#Protection
-					Mana	=	Mana Shield
 	Abilities
 		#r-5[y]
 			Postup @tshonbo
 			Soul heal @yunhon
+			#Action
+				#Protection
+					Mana	!	Mana Shield
 	Creatures
 		#Mind
 			#r-5[y]
 				#Human
 					#l5.0
-						Gamer	=	Han Jee Han
-						Blood Witch	=	Lolicano Mistrim
+						Gamer	!	Han Jee Han
+						Blood Witch	!	Lolicano Mistrim
 	Artefacts
 		#r-5[y]
 			#Broomsticks
@@ -4561,7 +4692,7 @@ add(`Neon Genesis Evangelion
 		Inputs[y]
 			#Anime
 	Shells
-		atf	=	AT-field
+		atf	!	AT-field
 	Creatures
 		#r-6[y]
 			#Angel_1
@@ -4850,7 +4981,7 @@ add(`Tumannost Andromedy
 			#Books
 	Space
 		w
-			<1	=	zero-space`)
+			<1	!	zero-space`)
 add(`Elita
 	About
 		Authors[y]
@@ -4898,7 +5029,7 @@ add(`Matrix
 			English
 		Inputs[y]
 			#Film`)
-add(`5 Elements`)
+add(`Fifth Element`)
 add(`trassa 60`)
 add(`Hodyachiy Zamok
 	About
@@ -4967,7 +5098,7 @@ add(`Mob Psyho 100
 						Mob
 	Energies
 		#r-5[y]
-			+4	=	Psy`)
+			+4	!	Psy?`)
 add(`Svet za okoshkom
 	About
 		Authors[y]
@@ -5076,7 +5207,7 @@ add(`Dragon Age
 	Space
 		n
 			Fade
-			~1.0 ~0.0	=	Yav
+			~1.0 ~0.0	!	Yav
 	Materials
 		#Metals
 			Lyrium`)
@@ -5101,7 +5232,7 @@ add(`Death Note
 			#Death Notes
 	Users
 		#r-7[y]
-			Death Note	=	Shinigami
+			Death Note	!	Shinigami
 	Creatures
 		#Mind
 			#r-7[y]
