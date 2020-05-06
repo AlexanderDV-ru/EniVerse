@@ -51,13 +51,12 @@ function add(adding){
 	props.universesConfig+=	adding
 }
 add(`Myverse
-	About	!	o
-		Authors[y]
-			Me
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Me
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	/*Classification
 	/*Entity without shell, how names
 	Without	!	w
@@ -86,6 +85,16 @@ add(`Myverse
 		+5	!	Magical, creativity
 		+6	!	Immortal, immortality function
 		+7	!	God, Real-turning
+		-	!	Body
+		+	!	Soul/Aura
+		0	!	Core
+		1	!	Matteral
+		2	!	Etheral
+		3	!	Emotional
+		4	!	Psyhical
+		5	!	Magical
+		6	!	Immortal
+		7	!	Divinal
 		/*Index of energy equals to index of shell that used this energy (not have, use)
 	Reality	!	r
 		-7	!	7	Count shells
@@ -247,21 +256,22 @@ add(`Myverse
 				Dark
 				Neutral	!	Beastgod
 				Light
-	Artefacts	!	a
-		#Categories
-		#r-0[y]
-		#r-1[y]
-		#r-2[y]
-		#r-3[y]
-		#r-4[y]
-		#r-5[y]
-			#Wands
-			#Rods
-			#Staffs
-			#Grimoires
-			#Spheres
-		#r-6[y]
-		#r-7[y]
+	Objects	!	o
+		#Artefacts
+			#Categories
+			#r-0[y]
+			#r-1[y]
+			#r-2[y]
+			#r-3[y]
+			#r-4[y]
+			#r-5[y]
+				#Wands
+				#Rods
+				#Staffs
+				#Grimoires
+				#Spheres
+			#r-6[y]
+			#r-7[y]
 	Creatures	!	c
 		#Categories
 		#r-0[y]
@@ -522,6 +532,16 @@ add(`Myverse
 				Pocket
 				Dense
 				Bubble
+	PropAndShell
+		0	!	Start, Input
+		1	!	m,	Materials
+		2	!	c,	Creatures
+		3	!	i,	Emotions
+		4	!	f,	Forms
+		5	!	m,	Elements
+		6	!	e,	Energies
+		7	!	t,	Task
+
 	/*	Every of Forms/Creatures can be every of Elements/Energies/Materials/Emotions
 	Directions	!	d
 		#Creatures
@@ -546,221 +566,235 @@ add(`Myverse
 			Mudra
 		/*Types of ability using
 		#Types[y]
-			Straight
-			Object
-			Saving
-		#Misc[y]
-			Name
-			Jokes
-			Physical
-			/*Technomage of Rudazov
-			Warlock
-			Apostol
-			Hooly
-			Love
-			Music
-			Domestic
-			Empathy
-			Telepathy
-			Meteo
-				Weather
-				Klimat
-				Kataklism
-			Volt
-				Size
-					Bigger
-					Equals
-					Smaller
-				Voodoo
-				Volt
-			Estestvennaya
-			Mental
-				Protection
-				Battle
-				Work
-				Control
-				Penetration
-				Create
-				Remove
-				Connect
-				Merge
-				Memory
-			Soul
-			Clairvoyance
-				True prophecy
-				Probability
-				Vision
-				Past
-				Present
-				Future
-			Metamorph
-				Totem
-				Changing
-				Turning
-				Partial
-			Yoga
-			Bolotnaya
-			Elementov
-			Mesta
-		#Action[y]
-			Vampire
-			Absorption
-			Heal
-			Sealing
-			Telekinesis
-				Planing
-				Levitation
-				Teleport
-				Gravity
-				Archimeds law
-				Magic
-				Shupaltsa
-				Mob
-				Force
-				Vector
-			Illusion
-				Optic
-				Holo
-				Genjutsu
-				Emo
-				Mental
-				Dense	/*Not equals tactil
-				Dimension
-				Reality
-			Materialization
-				Creating
-				Removing
-			Flying
-				Walking
-				Planing
-				Levitation
-				Teleport
-				Wings
-				Reactive
-				Gravity
-				Archimeds law
-				Magic
-				Shupaltsa
-				Mob
-				Force
-				Vector
-			Invisible
-				Illusion
-				Delumionation
-				Space
-				Sokritiye
-			Otvod glaz
-				Standard
-				Other think
-				All ok
-				this is not matter
-				Slepoye pyatno
-				Zabinaniye
-			Otdeleniye
-				Emotional
-				Bakullumist
-			Versusmagic
-				Razveivaniye
-				Finita
-				Time
-				Space
-				Mirror
-				Vector
-				Shield
-				Prisvoyeniye
-				Razrusheniye
-				Unenerging
-				Eating
-				Nonmaterial
-				Otoyti
-				zapechativaniye
-				kletka
-				stop
-				neutalizing
-				material
-				teleport
-				turning
-				Razrivaniye
-				Deactivation
-				Kontrspell
-				Antimagic
-				Resist
-				Impossible
-				Derealising
-				Razvoplosheniye
-				Fire
-				Ice
-				Make to illusion
-				Razdavit
-				Magagasitel
-				Magazakuporivatel
-				Obolochka
-				Gravitation
-				Antimagic
+			Action	!	Straight
+				Vampire
+				Absorption
+				Heal
+				Sealing
 				Telekinesis
-				Levitation
-				Shupaltsa
-				Field
-				Vector
-			Teleport
-				Hyper
-				Time
-				Space zip
-				Space change
-				Space cut
-				Space connection
-				Superspeed
-				Apparation
-				Photon
-				Body select
-				Nonmaterial
-				Disintegration and assembling
-				Obmen
-				Twilight
-				Vector
-			Invincibility
-				Pseudo	!	Other life form
-					tc	!	Robot
-					w+1	!	Undead
-					w-1	!	Spirit
-				bt	!	Bio
-				Soul in body
+					Planing
+					Levitation
+					Teleport
+					Gravity
+					Archimeds law
+					Magic
+					Shupaltsa
+					Mob
+					Force
+					Vector
+				Illusion
+					Optic
+					Holo
+					Genjutsu
+					Emo
+					Mental
+					Dense	/*Not equals tactil
+					Dimension
+					Reality
+				Materialization
+					Creating
+					Removing
+				Flying
+					Walking
+					Planing
+					Levitation
+					Teleport
+					Wings
+					Reactive
+					Gravity
+					Archimeds law
+					Magic
+					Shupaltsa
+					Mob
+					Force
+					Vector
+				Invisible
+					Illusion
+					Delumionation
+					Space
+					Sokritiye
+				Otvod glaz
+					Standard
+					Other think
+					All ok
+					this is not matter
+					Slepoye pyatno
+					Zabinaniye
+				Otdeleniye
+					Emotional
+					Bakullumist
+				Versusmagic
+					Razveivaniye
+					Finita
+					Time
+					Space
+					Mirror
+					Vector
+					Shield
+					Prisvoyeniye
+					Razrusheniye
+					Unenerging
+					Eating
+					Nonmaterial
+					Otoyti
+					zapechativaniye
+					kletka
+					stop
+					neutalizing
+					material
+					teleport
+					turning
+					Razrivaniye
+					Deactivation
+					Kontrspell
+					Antimagic
+					Resist
+					Impossible
+					Derealising
+					Razvoplosheniye
+					Fire
+					Ice
+					Make to illusion
+					Razdavit
+					Magagasitel
+					Magazakuporivatel
+					Obolochka
+					Gravitation
+					Antimagic
+					Telekinesis
+					Levitation
+					Shupaltsa
+					Field
+					Vector
+				Capacity Change
+					#Space
+						Bubble
+						Pocket
+						Dense
+						Skladka
+					Sealing
+					#Transformation
+						#Form
+							Size
+						Figure
+				Teleport
+					Hyper
+					Time
+					Space zip
+					Space change
+					Space cut
+					Space connection
+					Superspeed
+					Apparation
+					Photon
+					Body select
+					Nonmaterial
+					Disintegration and assembling
+					Obmen
+					Twilight
+					Vector
+				Invincibility
+					Pseudo	!	Other life form
+						tc	!	Robot
+						w+1	!	Undead
+						w-1	!	Spirit
+					bt	!	Bio
+					Soul in body
+					Regen
+					Filactery
+					Reincarnation
+					Meta
+					Soul/Mental copy
+					Soul in world
+					Mye
 				Regen
-				Filactery
-				Reincarnation
-				Meta
-				Soul/Mental copy
-				Soul in world
-				Mye
-			Regen
-				Bio
-				Stvolovie kletki
-				Konechnosti
-				From pieces
-				From kletok
-				From chastits
-				By Soul
-				From universe
-			Curse
-			Vow
-			Bless
-			Summon
-			Atack
-			Protection
-			TransFormsation
-				Forms
-				Figure
-				Material
-				Structure
-		#Object[y]
-			Artefact
-			Elixir
-				Potion
-				Putting
-			Alchemy
-				Astral
+					Bio
+					Stvolovie kletki
+					Konechnosti
+					From pieces
+					From kletok
+					From chastits
+					By Soul
+					From universe
+				Curse
+				Vow
+				Bless
+				Summon
+				Atack
+				Protection
+				Transformation
+					Forms
+					Figure
+					Material
+					Structure
+				Name
+				Jokes
 				Physical
-				Full
+				/*Technomage of Rudazov
+				Warlock
+				Apostol
+				Hooly
+				Love
+				Music
+				Domestic
+				Empathy
+				Telepathy
+				Meteo
+					Weather
+					Klimat
+					Kataklism
+				Volt
+					Size
+						Bigger
+						Equals
+						Smaller
+					Voodoo
+					Volt
+				Estestvennaya
+				Mental
+					Protection
+					Battle
+					Work
+					Control
+					Penetration
+					Create
+					Remove
+					Connect
+					Merge
+					Memory
+				Soul
+				Clairvoyance
+					True prophecy
+					Type
+						Probability
+						Vision
+						Feeling
+					Active
+						Active
+						Passive
+						Changing
+					Time
+						Past
+						Present
+						Future
+				Metamorph
+					Totem
+					Changing
+					Turning
+					Partial
+				Yoga
+				Bolotnaya
+				Mesta
+				Alchemy
+					Astral
+					Physical
+					Full
+			#Object
+				Artefact
+				Elixir
+					Potion
+					Putting
+			#Saving
 	Verse	!	v
 		@Type
 			Meta
@@ -912,7 +946,7 @@ add(`Myverse
 					unt	!	Uni-Time
 				Chaos
 				Limbo
-	Abilities	!	b
+	Actions	!	b
 		#Categories
 			#Resistance
 				#Elements
@@ -1153,45 +1187,45 @@ add(`Real world
 		Original
 			@Worlds
 				Our	!	Earth-2020
-	Artefacts
-		#r-4[y]
-			#Weapon
-				#Guns
-					#Automates
-					#Pistols
-				#Explosive
-				#Nuclear
-				#Tank
-			#Vehicle
-				#Car
-				#Plane
-				#Helicopter
-				#Train
-				#Ship
-			#Drone
-				#Quadrocopter
-			#Videocamera
-			#Display
-			#Microphone
-			#Dinamic
-			#Rockets
-			#Computer
-			#Telephone
-	Abilities
+	Objects
+		#Elixirs
+			#r-4[y]
+				#Toxins
+				#Radioactive
+				#Narcotics
+				#Bacteria
+				#Virus
+		#Artefacts
+			#r-4[y]
+				#Weapon
+					#Guns
+						#Automates
+						#Pistols
+					#Explosive
+					#Nuclear
+					#Tank
+				#Vehicle
+					#Car
+					#Plane
+					#Helicopter
+					#Train
+					#Ship
+				#Drone
+					#Quadrocopter
+				#Videocamera
+				#Display
+				#Microphone
+				#Dinamic
+				#Rockets
+				#Computer
+				#Telephone
+	Actions
 		#r-4[y]
 			Granade by post
-			#Bioweapon
-	Elixir
-		#r-4[y]
-			#Toxins
-			#Radioactive
-			#Narcotics
-			#Bacteria
-			#Virus`)
+			#Bioweapon`)
 add(`Fullmetal Panic
-	About
-		Languages[y]
-			Japanese
+	@Languages[y]
+		Japanese
 	Organizations
 		Mithrill`)
 add(`HP and future know
@@ -1213,38 +1247,39 @@ add(`HP and future know
 				a lot of liquid
 		Kneezl
 		Artefatory parts of body
-	Artefacts
-		#r-5[y]
-			l4.0
-				Map of Marauders
-					@Marauders
-						@James Potter
-						@Luni
-						@Sirius Black
-						@Wormtail/*Карта Хогвартса и окрестностей с подписью имен Родовой магии в тех местах, где находится разумное существо в любой форме
-			l5.0
-				#of Basicals
-					Sword of Gryffindor
-						@Godrik Gryffindor/*Зачарован на лёгкость, Сам себя заколет, режет магией	Оружие: Холодно-Магическое
-					Diadem of Ravenclaw/*Стимулирует мозговую деятельность, приводит сознание к ясности	Ментальные: Стимулятор
-						@Rovenna Ravenclaw
-					Medalion of Slytherin
-						@Salazar Slytherin
-					Cup of Hufflepuff
-						@helga Hufflepuff
-					Eye of Moody
-						@Alastor Moody/*Сканирует пространство на всю сферу, показывает обладатели образ, позволяет смотреть сквозь вещи, показывает магию
-			l7.0
-				Stone of Materialization
-					@Nicolas Flammel/*Преобразует созданное магией в реальную материю
-				Mirror of Erised/*Создаёт портал в кусок мира, в котором находится единственный отражающийся в зеркале, в том виде, в котором он видит исполнение своих самых глубоких желаний. Портал находится внутри зеркала, в него нельзя просто пройти из-за защиты. Неизстно способа уничтожения зеркала. Зеркало может открывать портал в часть куска мира, при определенных условиях этого куска мира и при этом в этой части куска мира будет находиться заранее вложенные вещи
-		#r-6[y]
-			@Mysteries Department's
-				#Time-Turners/*Закольцовывает время, перемещая назад	Министерство магии Британии: отдел тайн, другие министерства магии, нелегалы
-			#Deathly Hallows
-				Cloak of Invisibility/*	Epic	Legendary	Уникальный (1)	Делает вас совершенно невидимым, вас нельзя обнаружить напрямую, для хозяина мантия прозрачна, если вы уже дали магическое согласие на обнаружение вас можно будет найти, но не увидеть, вас можно видеть изнутри мантии	Мантия-Невидимка, Прячущие, Дар Смерти	Игнотус Певерел & Другие Певерелы? &?	-
-				Elder Wand/*	Epic	Legendary	Уникальный (1)	Самая совершенная палочка, может подходить любому магу, ищет себе наиболее сильного хозяина, подчиняется победившему магу	Трансформаторы Магии: Волшебные Палочки, Дар Смерти	Игнотус Певерел & Другие Певерелы? &?	-
-				Stone of Reincarnation/*	Epic	Legendary	Уникальный (1)	Создаёт псевдоматериальные тело и разум человека с помощью информации магического ядра, сознания и некромантической информации	Информационные, Некромантические: Информационные, Псевдо-Материализационные, Дар Смерти	Кадм Певерел & Другие Певерелы? &?	-
+	Objects
+		#Artefacts
+			#r-5[y]
+				l4.0
+					Map of Marauders
+						@Marauders
+							@James Potter
+							@Luni
+							@Sirius Black
+							@Wormtail/*Карта Хогвартса и окрестностей с подписью имен Родовой магии в тех местах, где находится разумное существо в любой форме
+				l5.0
+					#of Basicals
+						Sword of Gryffindor
+							@Godrik Gryffindor/*Зачарован на лёгкость, Сам себя заколет, режет магией	Оружие: Холодно-Магическое
+						Diadem of Ravenclaw/*Стимулирует мозговую деятельность, приводит сознание к ясности	Ментальные: Стимулятор
+							@Rovenna Ravenclaw
+						Medalion of Slytherin
+							@Salazar Slytherin
+						Cup of Hufflepuff
+							@helga Hufflepuff
+						Eye of Moody
+							@Alastor Moody/*Сканирует пространство на всю сферу, показывает обладатели образ, позволяет смотреть сквозь вещи, показывает магию
+				l7.0
+					Stone of Materialization
+						@Nicolas Flammel/*Преобразует созданное магией в реальную материю
+					Mirror of Erised/*Создаёт портал в кусок мира, в котором находится единственный отражающийся в зеркале, в том виде, в котором он видит исполнение своих самых глубоких желаний. Портал находится внутри зеркала, в него нельзя просто пройти из-за защиты. Неизстно способа уничтожения зеркала. Зеркало может открывать портал в часть куска мира, при определенных условиях этого куска мира и при этом в этой части куска мира будет находиться заранее вложенные вещи
+			#r-6[y]
+				@Mysteries Department's
+					#Time-Turners/*Закольцовывает время, перемещая назад	Министерство магии Британии: отдел тайн, другие министерства магии, нелегалы
+				#Deathly Hallows
+					Cloak of Invisibility/*	Epic	Legendary	Уникальный (1)	Делает вас совершенно невидимым, вас нельзя обнаружить напрямую, для хозяина мантия прозрачна, если вы уже дали магическое согласие на обнаружение вас можно будет найти, но не увидеть, вас можно видеть изнутри мантии	Мантия-Невидимка, Прячущие, Дар Смерти	Игнотус Певерел & Другие Певерелы? &?	-
+					Elder Wand/*	Epic	Legendary	Уникальный (1)	Самая совершенная палочка, может подходить любому магу, ищет себе наиболее сильного хозяина, подчиняется победившему магу	Трансформаторы Магии: Волшебные Палочки, Дар Смерти	Игнотус Певерел & Другие Певерелы? &?	-
+					Stone of Reincarnation/*	Epic	Legendary	Уникальный (1)	Создаёт псевдоматериальные тело и разум человека с помощью информации магического ядра, сознания и некромантической информации	Информационные, Некромантические: Информационные, Псевдо-Материализационные, Дар Смерти	Кадм Певерел & Другие Певерелы? &?	-
 	Levels
 		0.0	!	Nonmagic
 			@l[y]
@@ -1305,16 +1340,15 @@ add(`HP and future know
 add(`Doctor Who`)
 add(`Final Fantasy`)
 add(`Elfish Trash
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
-				Elfish Trash 1
-				Elfish Trash 2
-				Elfish Trash 3
-					@Verse
-						Startrack
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
+			Elfish Trash 1
+			Elfish Trash 2
+			Elfish Trash 3
+				@Verse
+					Startrack
 	Verse
 		@Type
 			Meta
@@ -1327,35 +1361,30 @@ add(`Elfish Trash
 		Startrack
 		Potteriana`)
 add(`Charodey
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Serial`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Serial`)
 add(`Ranma 1/2
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Inuyasha
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Charodei
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Film`)
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Film`)
 add(`Blue exorcist
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Features
 		#r-5[y]
 			Demon
@@ -1365,37 +1394,36 @@ add(`Blue exorcist
 		Gienna	!	Demonic
 		Alis	!	Human`)
 add(`Rick and Morty
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Multserial
-				1
-				2
-				3
-				4
-	Artefacts
-		#r-5[y]
-			#Portal Gun
+	@Languages[y]
+		English
+	@Sources[y]
+		#Multserial
+			1
+			2
+			3
+			4
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Portal Gun
 	Verse
 		@Type
 			Multi
 		Original`)
 add(`Portal
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
-	Artefacts
-		#r-5[y]
-			#Portal Gun`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Portal Gun`)
 add(`Marvel
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Comics
+	@Languages[y]
+		English
+	@Sources[y]
+		#Comics
 	Verse
 		@Type
 			Multi
@@ -1421,35 +1449,35 @@ add(`Marvel
 		#Metals
 			Vibranium
 			Adamantium
-	Artefacts
-		#r-4[y]
-			#Tech
-				#Stark's
-					#Iron Man suits
-						mark7
-					#Thermonuclear Reactor
-			Cerebro
-		#r-7[y]
-			#Gems
-				#Infinity
-					Space
-					Soul
-					Reality
-					Time
-					Power
-					Mind
-		#r-6[y]
-			#Loki's
-				Sceptre
-			#Thor's
-				Mjolnir`)
+	Objects
+		#Artefacts
+			#r-4[y]
+				#Tech
+					#Stark's
+						#Iron Man suits
+							mark7
+						#Thermonuclear Reactor
+				Cerebro
+			#r-7[y]
+				#Gems
+					#Infinity
+						Space
+						Soul
+						Reality
+						Time
+						Power
+						Mind
+			#r-6[y]
+				#Loki's
+					Sceptre
+				#Thor's
+					Mjolnir`)
 add(`Sword Art Online
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Ranobe
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Ranobe
+		#Anime
 	Verse
 		@Type
 			Uni
@@ -1457,33 +1485,31 @@ add(`Sword Art Online
 		@Tags
 			Virworld
 				Gamelit
-	Artefacts
-		#r-4[y]
-			#Neurohelmets
-			#Amuspheres`)
+	Objects
+		#Artefacts
+			#r-4[y]
+				#Neurohelmets
+				#Amuspheres`)
 add(`Hellsing ultimate
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Features
 		#r-5[y]
 			Vampire
 		#r-4[y]
 			#w+1	!	Undead`)
 add(`Dark souls
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games`)
 add(`Devil May Cry
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
 	Creatures
 		#Mind
 			#r-5[y]
@@ -1491,41 +1517,39 @@ add(`Devil May Cry
 					#l5.0
 						Dante`)
 add(`Bioshock
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games`)
 add(`New horizonts
-	About
-		Authors[y]
-			Shetel-Sorken
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
-		Marks[y]
-			AU
-			Вымышленные существа
-			Dark
-			Жестокость
-			Magical Realism
-			Mystery
-			MS
-			OWP
-			OMP
-			ООС
-			Отклонения от канона
-			POV
-			Подростки
-			Попаданчество
-			Психические расстройства
-			Fantastics
-			Fantasy
-		Spoilers[y]
-			#Death
-				main person
-				adding person
+	@Authors[y]
+		Shetel-Sorken
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
+	@Marks[y]
+		AU
+		Вымышленные существа
+		Dark
+		Жестокость
+		Magical Realism
+		Mystery
+		MS
+		OWP
+		OMP
+		ООС
+		Отклонения от канона
+		POV
+		Подростки
+		Попаданчество
+		Психические расстройства
+		Fantastics
+		Fantasy
+	@Spoilers[y]
+		#Death
+			main person
+			adding person
 	Verse
 		@Type
 			Multi
@@ -1545,15 +1569,14 @@ add(`New horizonts
 			Shari
 		#r-5[y]
 			Telepath
-	Abilities
+	Actions
 		#r-5[y]
 			Biokinesis`)
 add(`Voshozhdeniye geroya shita
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Verse
 		@Type
 			Multi
@@ -1561,33 +1584,31 @@ add(`Voshozhdeniye geroya shita
 		@Tags
 			Gameworld`)
 add(`Men in black
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Film`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Film`)
 add(`Bad choice
-	About
-		Authors[y]
-			N.B.
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
-		Marks[y]
-			AU
-			Вымышленные существа
-			MS
-			OWP
-			OMP
-			ООС
-			Parody
-			First Person
-			POV
-			Попаданчество
-			Стёб
-			Action
-			Humor
+	@Authors[y]
+		N.B.
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
+	@Marks[y]
+		AU
+		Вымышленные существа
+		MS
+		OWP
+		OMP
+		ООС
+		Parody
+		First Person
+		POV
+		Попаданчество
+		Стёб
+		Action
+		Humor
 	Verse
 		@Type
 			Meta
@@ -1641,6 +1662,7 @@ add(`Bad choice
 		Seilor Moon
 		Inuyasha
 		Blue exorcist
+		Mob Psyho 100
 		Ranma 1/2
 	Creatures
 		#Mind
@@ -1666,28 +1688,29 @@ add(`Bad choice
 			+3+5	!	Emana+Mana
 		#r-6[y]
 			+7	!	Ba-Hion
-	Elixirs
-		#Hooch
-			#Energies
-			#Elements
-				#Basic
-					Fire
-					Water
-					Earth
-					Air
-					Electrizity
-					Ice
-				#First
-					Dark
-					Light
-					Death
-					Life
-					Chaos
-			#Emotions
-				Love
-				Peace	!	LOVEANDPEACE
-				Anger
-				Sad
+	Objects
+		#Elixirs
+			#Hooch
+				#Energies
+				#Elements
+					#Basic
+						Fire
+						Water
+						Earth
+						Air
+						Electrizity
+						Ice
+					#First
+						Dark
+						Light
+						Death
+						Life
+						Chaos
+				#Emotions
+					Love
+					Peace	!	LOVEANDPEACE
+					Anger
+					Sad
 	Users
 		#r-5[y]
 			e+1	!	Kiuser
@@ -1710,13 +1733,25 @@ add(`Bad choice
 			e+7	!	God_3
 		#r-0[y]
 			e+7	!	Unknown Crap
-	Abilities
+	Actions
 		#Categories
 			Pathos hurt ignoring
 			Hapsiel mode
 			Kick of Unknown Crap
 			Unknown Artefatory
 			Dark-Shadow tropy
+			#gm
+				Inventory
+				Gamer
+					Body
+					Mind
+				Barrier
+					Enter
+					Out
+					Create
+					Destroy
+				Soul
+					Sealing
 		#r-5[y]
 			#l5.0
 				@Name
@@ -1743,16 +1778,17 @@ add(`Bad choice
 			#w+1	!	Undead
 			Vampire
 			Werewolf
-	Artefacts
-		#r-5[y]
-			#Entity Stones / ES
-			#Soul Stones / SS
-		#r-7[y]
-			#Spheres
-				#Skill-Copy	/*Gold
-				#Skill-Izvlecheniya
-				#Dark Skill-Copy
-				#Achievement-Copy
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Entity Stones / ES
+				#Soul Stones / SS
+			#r-7[y]
+				#Spheres
+					#Skill-Copy	/*Gold
+					#Skill-Izvlecheniya
+					#Dark Skill-Copy
+					#Achievement-Copy
 	Space
 		n
 			~1.0 ~1.5	!	Dark-Shadow
@@ -1794,28 +1830,25 @@ add(`Bad choice
 				Hel
 				Hapsiel`)
 add(`Orderly
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books
-		Authors[y]
-			Nick Perumov`)
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books
+	@Authors[y]
+		Nick Perumov`)
 add(`Azimov
-	About
-		Authors[y]
-			Azik Azimov
-		Languages[y]
-			English
+	@Authors[y]
+		Azik Azimov
+	@Languages[y]
+		English
 	Space
 		w
 			<1	!	Hyper`)
 add(`hainline
-	About
-		Authors[y]
-			Robert Hainline
-		Languages[y]
-			English
+	@Authors[y]
+		Robert Hainline
+	@Languages[y]
+		English
 	Space
 		w
 			<1	!	Cherenkov drive`)
@@ -1828,9 +1861,8 @@ add(`vavilon5
 		w
 			<1	!	Hyper`)
 add(`Star Gate
-	About
-		Languages[y]
-			English
+	@Languages[y]
+		English
 	Space
 		w
 			<1	!	Hyper`)
@@ -1843,15 +1875,14 @@ add(`Gameworld
 		#r-6[y]
 			gm	!	Gamer's System`)
 add(`Vlast magii
-	About
-		Languages[y]
-			Russian
-		Authors[y]
-			MorgothBauglir
-			Shetel-Sorken
-		Inputs[y]
-			#Fanfics
-				"Vlast magii"
+	@Languages[y]
+		Russian
+	@Authors[y]
+		MorgothBauglir
+		Shetel-Sorken
+	@Sources[y]
+		#Fanfics
+			"Vlast magii"
 	Verse
 		@Type
 			Meta
@@ -1860,20 +1891,19 @@ add(`Vlast magii
 		@Tags
 			Gamelit`)
 add(`Path to Top
-	About
-		Languages[y]
-			Russian
-		Authors[y]
-			Hedin Knowing Dark
-		Inputs[y]
-			#Fanfics
-				"Path to Top"
+	@Languages[y]
+		Russian
+	@Authors[y]
+		Hedin Knowing Dark
+	@Sources[y]
+		#Fanfics
+			"Path to Top"
 	Verse
 		@Type
 			Meta
 		Rudazov
 		Original
-	Abilities
+	Actions
 		#r-5[y]
 			#l5.0
 				@Name
@@ -1994,51 +2024,50 @@ add(`Rudazov
 				M	\n\t\t\t	K	\n\t\t\t	H	\n\t\t\t	G	\n\t\t\t	F	\n\t\t\t	E	\n\t\t\t	D	\n\t\t\t	C	\n\t\t\t	B	\n\t\t\t	P	\n\t\t\t	Earth-7112
 				Proxima Centaura	\n\t\t\t	Proxima Hell	\n\t\t\t	Proxima Heaven
 				World of Yehudin	!	Dodekaedr
-	About
-		Authors[y]
-			Alexander Rudazov
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books
-				#Fantasy
-					"Sumer nights"	/	"Shumerskiye nochi"
-					"Archmage"	/	"Arhimag"
-						1.	"Archmage"		/	"Arhimag"
-						2.	"Knights of Prechistya deva"	/	"Ritsari Prechistoy Devy"
-						3.	"The best weapon"/	"Samoye luchsheye oruzhiye"
-						4.	"Gray plague"	/	"Seraya chuma"
-						5.	"War of Warlocks"/"Voina koldunov"
-							5.1.	/"Vtorzheniye"
-							5.2.	/"Shturm tsitadeli"
-						6.	"Kids of sudden hour"/"Deti sudnogo chasa"
-						7.	"Sovet 12"	/	"Sovet dvenadtsati"
-						8.	"Bitva polchish"	/	"Bitva polchish"
-						9.	"Zarya nad bezdnoy"/"Zarya nad bezdnoy"
-					"Yatshen"
-						1.	"Three eyes and six hands"/"Tri glaza i shest ruk"
-						2.	"Shestrirukiy resident"/"Shestrirukiy resident"
-						3.	"Demons in vatikan"/"Demony v vatikane"
-						4.	"Son of Archdemon"/"Syn Arhidemona"
-					"Ghost"/"Prizrak"
-					"Three mudretsa"/"Tri mudretsa"
-						1.	/"Tri mudretsa v odnom tazu"
-						2.	/"Taina pohishennoy bashni"
-					"Kriabal"/"Kriabal"
-						1.	/"Kriabal"
-						2.	/"Apofeoz"
-					"Predaniya"
-						1.	/"Predaniya stariny glubokoy"
-						2.	/"Byliny sego vremeni"
-						3.	/"Konets skazki"
-					"Zverolov"
-					Misc
-						/"Vlastelin"
-						/"Ekipazh"
-						/"Demon pod divanom"
-						/"Zhraniyo"
-						/"Rasskazy is pravogo botinka"
-						/"Arifmoman"
+	@Authors[y]
+		Alexander Rudazov
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books
+			#Fantasy
+				"Sumer nights"	/	"Shumerskiye nochi"
+				"Archmage"	/	"Arhimag"
+					1.	"Archmage"		/	"Arhimag"
+					2.	"Knights of Prechistya deva"	/	"Ritsari Prechistoy Devy"
+					3.	"The best weapon"/	"Samoye luchsheye oruzhiye"
+					4.	"Gray plague"	/	"Seraya chuma"
+					5.	"War of Warlocks"/"Voina koldunov"
+						5.1.	/"Vtorzheniye"
+						5.2.	/"Shturm tsitadeli"
+					6.	"Kids of sudden hour"/"Deti sudnogo chasa"
+					7.	"Sovet 12"	/	"Sovet dvenadtsati"
+					8.	"Bitva polchish"	/	"Bitva polchish"
+					9.	"Zarya nad bezdnoy"/"Zarya nad bezdnoy"
+				"Yatshen"
+					1.	"Three eyes and six hands"/"Tri glaza i shest ruk"
+					2.	"Shestrirukiy resident"/"Shestrirukiy resident"
+					3.	"Demons in vatikan"/"Demony v vatikane"
+					4.	"Son of Archdemon"/"Syn Arhidemona"
+				"Ghost"/"Prizrak"
+				"Three mudretsa"/"Tri mudretsa"
+					1.	/"Tri mudretsa v odnom tazu"
+					2.	/"Taina pohishennoy bashni"
+				"Kriabal"/"Kriabal"
+					1.	/"Kriabal"
+					2.	/"Apofeoz"
+				"Predaniya"
+					1.	/"Predaniya stariny glubokoy"
+					2.	/"Byliny sego vremeni"
+					3.	/"Konets skazki"
+				"Zverolov"
+				Misc
+					/"Vlastelin"
+					/"Ekipazh"
+					/"Demon pod divanom"
+					/"Zhraniyo"
+					/"Rasskazy is pravogo botinka"
+					/"Arifmoman"
 	Shells
 		-5	!	2/7	Magical body
 		-2	!	3	Body, Matter of
@@ -2089,7 +2118,7 @@ add(`Rudazov
 		Mysteria
 		Lka-Nandasi
 		Deorg Academy
-	Abilities
+	Actions
 		#r-5[y]
 			#Action
 				#Protection
@@ -2253,27 +2282,28 @@ add(`Rudazov
 		#r-7[y]
 			#w+1	!	Undead
 				Undead-God
-	Artefacts
-		#r-5[y]
-			#Grimoires
-				Kreol's
-			#Rods
-			#Staffs
-				Kreol's
-			#Amulets
-				Kreol's
-				Valet
-			#Roasters
-				Kreol's
-			#Organization's
-			#Gems
-				Gate
-			#Tech
-				#Plonet's
-		#r-6[y]
-			#Grimoires
-				Kriabal
-					@Briar
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Grimoires
+					Kreol's
+				#Rods
+				#Staffs
+					Kreol's
+				#Amulets
+					Kreol's
+					Valet
+				#Roasters
+					Kreol's
+				#Organization's
+				#Gems
+					Gate
+				#Tech
+					#Plonet's
+			#r-6[y]
+				#Grimoires
+					Kriabal
+						@Briar
 	Elements
 		#Basic
 			Fire	!	Pyromancy
@@ -2302,18 +2332,61 @@ add(`Rudazov
 			Picture
 			Seal
 		#Types[y]
-			Straight
-			Saving
-			Artefact
-		#Object[y]
-			Magic of Ghost
-			Alchemy
-			Elixir
-				Potion
-				...
-			Artefact
-			Twilight-Shadow
-		#Creature[y]
+			#Action
+				Vampire
+				Absorption
+				Curse
+				Transformation
+					1	Material
+					2	Form
+						Shape
+						Size
+					3	Structure
+					Figure
+				Blessing
+				Vow
+				Summon
+				Sensor
+				Illusion
+				Flying
+				Telekinesis
+				Teleport
+				Enchantment
+				Name
+				Physical	!	Technomagic
+				Warlock
+				Apostol
+				Hooly
+				Love
+				Music
+				Domestic
+				Soul
+				Meteo
+					Weather
+					Klimat
+					Kataklism
+				Volt
+					Voodoo
+					Volt
+				Estestvennaya
+				Metamorph
+					Turning
+					Changing
+					Totem	!	Felgi
+					Partial
+				Clairvoyance
+					True prophecy
+				Mental
+				Magic of Ghost
+				Alchemy
+				Twilight-Shadow
+			#Saving
+			#Object
+				Elixir
+					Potion
+					...
+				Artefact
+		#Creatures
 			Automate
 			Doppel
 			Holem
@@ -2329,52 +2402,6 @@ add(`Rudazov
 			Loa
 			Ghost
 			Chimera
-		#Action[y]
-			Vampire
-			Absorption
-			Curse
-			Transformation
-				1	Material
-				2	Form
-					Shape
-					Size
-				3	Structure
-				Figure
-			Blessing
-			Vow
-			Summon
-			Sensor
-			Illusion
-			Flying
-			Telekinesis
-			Teleport
-			Enchantment
-		#Misc[y]
-			Name
-			Physical	!	Technomagic
-			Warlock
-			Apostol
-			Hooly
-			Love
-			Music
-			Domestic
-			Soul
-			Meteo
-				Weather
-				Klimat
-				Kataklism
-			Volt
-				Voodoo
-				Volt
-			Estestvennaya
-			Metamorph
-				Turning
-				Changing
-				Totem	!	Felgi
-				Partial
-			Clairvoyance
-				True prophecy
-			Mental
 	Organizations
 		Organization
 		#Labs
@@ -2405,41 +2432,38 @@ add(`Rudazov
 		#Bio
 			Regenerin`)
 add(`Startcraft
-	About
-		Inputs[y]
-			#Games
-				#Computer`)
+	@Sources[y]
+		#Games
+			#Computer`)
 add(`Siyatelniy
-	About
-		Authors[y]
-			Pavel Kornev
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books
+	@Authors[y]
+		Pavel Kornev
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books
 	Materials
 		#Metals
 			Coldiron	/*Anti mage`)
 add(`SCP Foundation
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Statue
+	@Languages[y]
+		English
+	@Sources[y]
+		#Statue
 	Organizations	!	g
 		SCP	!	Secure Containt Protect
-	Artefacts
-		#r-5[y]
-			#SCP's`)
+	Objects
+		#Artefacts
+			#r-5[y]
+				#SCP's`)
 add(`Naruto
-	About
-		Authors[y]
-			Masasi Kisimoto
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
-			#Manga
+	@Authors[y]
+		Masasi Kisimoto
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
+		#Manga
 	Verse
 		@Type
 			Uni
@@ -2532,24 +2556,25 @@ add(`Naruto
 			Technique	!	Nin
 			Fuin
 			Mudra
-		#Creature[y]
+		#Types[y]
+			#Action
+				Summon
+				Sensor	!	Kanchi
+				Absorption
+				Displacement
+				Arms	!	Tai
+				Steelarms	!	Ken
+				Flying
+				Sealing in
+				Senjutsu	!	Sen
+				Illusion
+					Genjutsu	!	Gen
+			#Object
+				Artefact
+		#Creatures
 			Doppel	!	Kage Bunshin
-		#Object[y]
 			Marionette
-			Artefact
-		#Action[y]
-			Summon
-			Sensor	!	Kanchi
-			Absorption
-			Displacement
-			Arms	!	Tai
-			Steelarms	!	Ken
-			Flying
-			Sealing in
-			Senjutsu	!	Sen
-			Illusion
-				Genjutsu	!	Gen
-	Abilities
+	Actions
 		#Categories
 			Feel of Look
 			Yaki
@@ -2557,16 +2582,16 @@ add(`Naruto
 		#r-5[y]
 			#Misc[y]
 				Telescope
-	Artefacts
-		#r-5[y]
-			#Swords of Fog`)
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Swords of Fog`)
 add(`Fate
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
-	Abilities
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
+	Actions
 		#r-5[y]
 			#Action
 				#Vampiring
@@ -2578,19 +2603,19 @@ add(`Fate
 	Users
 		#r-5[y]
 			e+5	!	Mage
-	Artefacts
-		#r-6[y]
-			#The Holy Grail
+	Objects
+		#Artefacts
+			#r-6[y]
+				#The Holy Grail
 	Creatures
 		#Mind
 			#r-6[y]
 				#Servant`)
 add(`Claymore
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Manga
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Manga
 	Energies
 		#r-5[y]
 			yo	!	Yoki
@@ -2605,43 +2630,43 @@ add(`of Argus Filchenkov
 		@Type
 			Uni
 		Potteriana
-	About
-		Languages[y]
-			Russian
-		Authors[y]
-			Argus Filchenkov
-		Inputs[y]
-			#Fanfics
-				0.	"Prologue.	Harry Potter and Three Old Ladies"
-				1.	"Harry Potter and key saver"
-				2.	"Harry Potter and instinniy naslednik"
-				3.	"Harry Potter and Iskusstvo pobega"
-				4.	"Harry Potter and Champions Hunt"
-	Artefacts
-		#r-6[y]
-			#Time-Turners	!	Not limited hours, madness on incorrect
+	@Languages[y]
+		Russian
+	@Authors[y]
+		Argus Filchenkov
+	@Sources[y]
+		#Fanfics
+			0.	"Prologue.	Harry Potter and Three Old Ladies"
+			1.	"Harry Potter and key saver"
+			2.	"Harry Potter and instinniy naslednik"
+			3.	"Harry Potter and Iskusstvo pobega"
+			4.	"Harry Potter and Champions Hunt"
+	Objects
+		#Artefacts
+			#r-6[y]
+				#Time-Turners	!	Not limited hours, madness on incorrect
 	Materials
 		#Metals
 			Coldiron`)
 add(`of Kitsune Miyato
-	About
-		Languages[y]
-			Russian
-		Authors[y]
-			Kitsune Miyato
-		Inputs[y]
-			#Fanfics
-				"Izbranniye"
-				"Mother-and-Mother-Law"
+	@Languages[y]
+		Russian
+	@Authors[y]
+		Kitsune Miyato
+	@Sources[y]
+		#Fanfics
+			"Izbranniye"
+			"Mother-and-Mother-Law"
 	Verse
 		@Type
 			Meta
 		Naruto
 		Potteriana
 		Dozory
-	Artefacts
-		#r-6[y]
-			#Time-Turners	!	Reality splitter, awful results of
+	Objects
+		#Artefacts
+			#r-6[y]
+				#Time-Turners	!	Reality splitter, awful results of
 	Creatures
 		#Mind
 			#r-5[y]
@@ -2650,37 +2675,36 @@ add(`of Kitsune Miyato
 						Harry Potter	!	Uzumaki Naruto
 						Albus Dumbledore	!	Albus Persival Vulfric Brian Potter,Dumbledore`)
 add(`Guren Lagan
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`HPMoR
-	About
-		Authors[y]
-			Eliezer Yudkowsky
-		Languages[y]
-			English
-		Inputs[y]
-			#Fanfics
-				"Harry Potter and the Methods of Rationality"
+	@Authors[y]
+		Eliezer Yudkowsky
+	@Languages[y]
+		English
+	@Sources[y]
+		#Fanfics
+			"Harry Potter and the Methods of Rationality"
 	Verse
 		@Type
 			Uni
 		Potteriana
-	Artefacts
-		#r-5[y]
-			#Quotes Quills
-			Moody's Eye[u]
-			Philosopher's Stone[u]
-			Mirror of Erised[u]
-		#r-6[y]
-			#Time-Turners	!	6 hours max, with many turners too
-			Moody's Eye	!	Eye of Vance
-			Left Leg of Vance
-			Philosopher's Stone	!	Stone of Materialization
-			Mirror of Erised	!	Mirror of Atlants
-	Abilities
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Quotes Quills
+				Moody's Eye[u]
+				Philosopher's Stone[u]
+				Mirror of Erised[u]
+			#r-6[y]
+				#Time-Turners	!	6 hours max, with many turners too
+				Moody's Eye	!	Eye of Vance
+				Left Leg of Vance
+				Philosopher's Stone	!	Stone of Materialization
+				Mirror of Erised	!	Mirror of Atlants
+	Actions
 		#Advances
 			Patronus 2.0
 			Avadakedavra 2.0
@@ -2718,36 +2742,34 @@ add(`HPMoR
 					#l5.0
 						Voldemort	!	Tom Morphin Riddle`)
 add(`Diablo
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
-				#Computer
-					1
-					2
-	Artefacts
-		#r-6[y]
-			Horadrical Cube`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
+			#Computer
+				1
+				2
+	Objects
+		#Artefacts
+			#r-6[y]
+				Horadrical Cube`)
 add(`Warcraft
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
 	Creatures
 		#Mind
 			#r-5[y]
 				#Human
 				#Orc_2`)
 add(`Life of Archmage Potter
-	About
-		Authors[y]
-			Fil Bandileros
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Fil Bandileros
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Verse
 		@Type
 			Meta
@@ -2769,13 +2791,12 @@ add(`Life of Archmage Potter
 			#r-7[y]
 				Hel`)
 add(`Boy Who Conquered Time
-	About
-		Authors[y]
-			Fil Bandileros
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Fil Bandileros
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Levels
 		0.0	!	0
 		1.0	!	1
@@ -2815,9 +2836,10 @@ add(`Boy Who Conquered Time
 				Time
 					Back
 					Notime
-	Artefacts
-		#r-6[y]
-			Chronos braslet
+	Objects
+		#Artefacts
+			#r-6[y]
+				Chronos braslet
 	Directions
 		#Languages[y]
 			Schema
@@ -2830,23 +2852,19 @@ add(`Boy Who Conquered Time
 		#Other
 			Time`)
 add(`Potteriana
-	About
-		Authors[y]
-			Joanne Rowling
-		Languages[y]
-			English
-		Inputs[y]
-			#Film
-				"Fantasic Beasts"
-				"Harry Potter"
-					1.	"Harry Potter and Philosopher's Stone"
-					2.	"Harry Potter and Secret Room"
-					3.	"Harry Potter and Uznik Azkabana"
-					4.	"Harry Potter and Kubok Ognya"
-					5.	"Harry Potter and Order of Phoenix"
-					6.	"Harry Potter and Half-Blood Price"
-					7.	"Harry Potter and Deathly Hallows"
-			#Books
+	@Authors[y]
+		Joanne Rowling
+	@Languages[y]
+		English
+	@Sources[y]
+		#Film
+			"Fantasic Beasts"
+				1.	"And where they lives"
+				2.	"Prestupleniya grindevalda"
+				3.
+				4.
+				5.
+			"Harry Potter"
 				1.	"Harry Potter and Philosopher's Stone"
 				2.	"Harry Potter and Secret Room"
 				3.	"Harry Potter and Uznik Azkabana"
@@ -2854,6 +2872,14 @@ add(`Potteriana
 				5.	"Harry Potter and Order of Phoenix"
 				6.	"Harry Potter and Half-Blood Price"
 				7.	"Harry Potter and Deathly Hallows"
+		#Books
+			1.	"Harry Potter and Philosopher's Stone"
+			2.	"Harry Potter and Secret Room"
+			3.	"Harry Potter and Uznik Azkabana"
+			4.	"Harry Potter and Kubok Ognya"
+			5.	"Harry Potter and Order of Phoenix"
+			6.	"Harry Potter and Half-Blood Price"
+			7.	"Harry Potter and Deathly Hallows"
 	Materials
 		#Liquid
 			#r-5[y]
@@ -2862,48 +2888,83 @@ add(`Potteriana
 		#Powder
 			#r-5[y]
 				Momental Dark Powder
-	Elixirs
-		#Potions
-			Feliks Feliciss
-			напиток живой смерти
-			Anti Veritaserum
-			Veritaserum
-			оборотное зелье
+	Objects
+		#Artefacts
+			#r-5[y]
+				Marauder's Map
+				Diary of Tom Riddle
+				#of Basicals
+					Ravenclaw's Diadem
+					Gryffindor's Sword
+					Hufflepuff's Cup
+					Slytherin's Locket
+				Sorting Hat
+				Deluminator
+				Room of Requirement
+				Quick-Quotes Quill
+				Mirror of Erised
+				Weasley's Ford
+				Knight Bus
+				Philosopher's Stone
+				Moody's Eye
+				Mokeskin pouch
+				#Broomsticks
+				#Vanishing Cabinet
+				#Portkeys
+				#Invisibility Cloaks
+				#Wands
+				#Snitches
+				#Bludgers
+				#Mysteries Department's
+			#r-6[y]
+				#Mysteries Department's
+					#Time-Turners
+				#Deathly Hallows
+					Cloak of Invisibility
+					Resurrection Stone
+					Elder Wand
+		#Elixirs
+			#Potions
+				Feliks Feliciss
+				напиток живой смерти
+				Anti Veritaserum
+				Veritaserum
+				оборотное зелье
 	Energies
 		#r-5[y]
 			+3+5	!	Wirardy?
 	Directions
-		#Object[y]
-			Elixir
-				Potion
-				Putting	/*3
-			Alchemy
-		#Action[y]
-			TransFormsation	!	Transfiguration
-				Forms
-				Figure
-				Material
-				Structure
-			Summon	/*4||1
-			Curse
-			Blessing
-			Vow
-			Enchantment
+		#Types[y]
+			#Object
+				Elixir
+					Potion
+					Putting	/*3
+			#Action
+				Alchemy
+				Arithmancy
+				Lexomancy	/*3
+				Mental
+					Protection	!	Occlumency
+					Penetration	!	Legilimency
+				Clairvoyance	!	Divination
+					True prophecy
+				Metamorph
+					Totem	!	Animagic
+				TransFormsation	!	Transfiguration
+					Forms
+					Figure
+					Material
+					Structure
+				Summon	/*4||1
+				Curse
+				Blessing
+				Vow
+				Enchantment
 		#Languages[y]
 			Rune
 			Spell
 			Ritual
-		#Misc[y]
-			Arithmancy
-			Lexomancy	/*3
-			Mental
-				Protection	!	Occlumency
-				Penetration	!	Legilimency
-			Clairvoyance	!	Divination
-				True prophecy
-			Metamorph
-				Totem	!	Animagic
-		#Creature[y]
+		#Creatures
 			Bestia	!	Magezoology
 			Flora	!	Herbology
 			Holem
@@ -2918,41 +2979,7 @@ add(`Potteriana
 			Ilvermorny
 			katotokai?
 			Koldovstvorets
-	Artefacts
-		#r-5[y]
-			Marauder's Map
-			Diary of Tom Riddle
-			#of Basicals
-				Ravenclaw's Diadem
-				Gryffindor's Sword
-				Hufflepuff's Cup
-				Slytherin's Locket
-			Sorting Hat
-			Deluminator
-			Room of Requirement
-			Quick-Quotes Quill
-			Mirror of Erised
-			Weasley's Ford
-			Knight Bus
-			Philosopher's Stone
-			Moody's Eye
-			Mokeskin pouch
-			#Broomsticks
-			#Vanishing Cabinet
-			#Portkeys
-			#Invisibility Cloaks
-			#Wands
-			#Snitches
-			#Bludgers
-			#Mysteries Department's
-		#r-6[y]
-			#Mysteries Department's
-				#Time-Turners
-			#Deathly Hallows
-				Cloak of Invisibility
-				Resurrection Stone
-				Elder Wand
-	Abilities
+	Actions
 		#r-5[y]
 			#Categories
 				Wizarding
@@ -3368,14 +3395,13 @@ add(`Potteriana
 			Werewolf
 			Vampire`)
 add(`Witcher
-	About
-		Authors[y]
-			Andrzej Sapkowski
-		Languages[y]
-			Polish
-		Inputs[y]
-			#Games
-				#Computer
+	@Authors[y]
+		Andrzej Sapkowski
+	@Languages[y]
+		Polish
+	@Sources[y]
+		#Games
+			#Computer
 	Creatures
 		#r-5[y]
 			#Cockatrice
@@ -3392,7 +3418,7 @@ add(`Witcher
 	Directions
 		#Languages[y]
 			Mudra
-	Abilities
+	Actions
 		#r-5[y]
 			#Elements
 				#Basic
@@ -3404,114 +3430,104 @@ add(`Witcher
 				Protection	!	Heliotrop
 				Pomehi	!	Irden`)
 add(`Pokemon
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Creatures
 		#r-4[y]
 			#Pokemon
-	Artefacts
-		#r-5[y]
-			#Pokeballs`)
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Pokeballs`)
 add(`Ghost Busters
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Film
-	Artefacts
-		#r-4[y]
-			#Ghost traps
+	@Languages[y]
+		English
+	@Sources[y]
+		#Film
+	Objects
+		#Artefacts
+			#r-4[y]
+				#Ghost traps
 	Creatures
 		#r-4[y]
 			#Ghost`)
 add(`UQ Holder
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Rave Master
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Rosario to Vampire
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Features
 		#r-5[y]
 			Vampire`)
 add(`The Law of Ueki
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Hunter x Hunter
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Tenjou Tenge
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`My hero academy
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Features
 		#r-5[y]
 			Quirk`)
 add(`Berserk
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Toriko
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Adacademy Wasshoi
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Users
 		#r-5[y]
 			e+5	!	Mage`)
 add(`High School DxD
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Creatures
 		#Mind
 			#r-5[y]
 				#Human
 				#Dragon
-	Artefacts
-		#r-6[y]
-			#Evil Pieces
-			#Sacred Gear
-			#Holy Swords
+	Objects
+		#Artefacts
+			#r-6[y]
+				#Evil Pieces
+				#Sacred Gear
+				#Holy Swords
 	Users
 		#r-5[y]
 			e+5	!	Mage?
@@ -3522,11 +3538,10 @@ add(`High School DxD
 		#r-7[y]
 			e+7	!	God_?`)
 add(`Startrack
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Serial
+	@Languages[y]
+		English
+	@Sources[y]
+		#Serial
 	Creatures
 		#Mind
 			#r-5[y]
@@ -3539,39 +3554,38 @@ add(`Startrack
 		#r-5[y]
 			e+4	!	Psyonic`)
 add(`Seilor Moon
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Creatures
 		#Mind
 			#r-5[y]
 				#Human
 				#Reptiloid
-	Artefacts
-		#r-5[y]
-			Moon Diadema`)
+	Objects
+		#Artefacts
+			#r-5[y]
+				Moon Diadema`)
 add(`Dragonball
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Energies
 		#r-5[y]
 			+1	!	Ki?
-	Artefacts
-		#r-6[y]
-			#Dragon Balls`)
+	Objects
+		#Artefacts
+			#r-6[y]
+				#Dragon Balls`)
 add(`Lord of Rings
-	About
-		Authors[y]
-			John Ronald Reuel Tolkien
-		Languages[y]
-			English
-		Inputs[y]
-			#Books
+	@Authors[y]
+		John Ronald Reuel Tolkien
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books
 	Space
 		n
 			~1.0, 0.0	!	Body
@@ -3606,23 +3620,23 @@ add(`Lord of Rings
 				#Balrog
 				#Ent
 				#Hobbit
-	Artefacts
-		#r-6[y]
-			#Rings
-				One Ring
-			#Gems
-				Silmarils
+	Objects
+		#Artefacts
+			#r-6[y]
+				#Rings
+					One Ring
+				#Gems
+					Silmarils
 	Materials
 		#Metals
 			Mithrill`)
 add(`Nick
-	About
-		Languages[y]
-			Russian
-		Authors[y]
-			Andrzej	Yasinski
-		Inputs[y]
-			#Books
+	@Languages[y]
+		Russian
+	@Authors[y]
+		Andrzej	Yasinski
+	@Sources[y]
+		#Books
 	Creatures
 		#Mind
 			#r-5[y]
@@ -3644,10 +3658,11 @@ add(`Nick
 			if	!	Infomage
 			e+3	!	Sorcerer
 			e+4	!	Psyonic
-	Artefacts
-		#r-5[y]
-			#Rods
-				#Adeptnesser's
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Rods
+					#Adeptnesser's
 	Elements
 		#Basic
 			Fire
@@ -3662,25 +3677,25 @@ add(`Nick
 			Weaving
 			Structure
 			Image	/*Only gods
-		#Creature[y]
+		#Creatures
 			Holem
 			Automate
-		#Action[y]
-			Illusion
-				Dense
-			Materialization
-				Creating
-				Removing
-			Heal
-			Atack
-			Protection
-		#Misc[y]
-			Mental
-			Info
-			Clairvoyance
-				Probability
-		#Object[y]
-			Alchemy
+		#Types[y]
+			#Action
+				Mental
+				Info
+				Clairvoyance
+					Types
+						Probability
+				Illusion
+					Dense
+				Materialization
+					Creating
+					Removing
+				Heal
+				Atack
+				Protection
+				Alchemy
 	Verse
 		@Type
 			Multi
@@ -3709,11 +3724,10 @@ add(`Nick
 		#r-6[y]
 			God_2`)
 add(`Skyrim
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
 	Creatures
 		#Mind
 			#r-5[y]
@@ -3723,11 +3737,10 @@ add(`Skyrim
 		#r-5[y]
 			e+5	!	Mage`)
 add(`Star Wars
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Film
+	@Languages[y]
+		English
+	@Sources[y]
+		#Film
 	Creatures
 		#Mind
 			#r-5[y]
@@ -3746,18 +3759,18 @@ add(`Star Wars
 	Space
 		w
 			<1	!	Hyper
-	Artefacts
-		#r-5[y]
-			#Steelarms
-				#Lightsaber
-			#Tech
-				#Galaxy's`)
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Steelarms
+					#Lightsaber
+				#Tech
+					#Galaxy's`)
 add(`Warhammer
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
 	Creatures
 		#Mind
 			#r-5[y]
@@ -3773,24 +3786,23 @@ add(`Warhammer
 		#r-5[y]
 			e+4	!	Psyker`)
 add(`Minecraft
-	About
-		Authors[y]
-			Notch	!	Markus Persson
-			Jebb
-			Grum
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
-				#Computer
-					Pre-Classic
-					Classic
-					Indev
-					Infdev
-					Alpha
-					Beta
-					Java
-					Bedrock
+	@Authors[y]
+		Notch	!	Markus Persson
+		Jebb
+		Grum
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
+			#Computer
+				Pre-Classic
+				Classic
+				Indev
+				Infdev
+				Alpha
+				Beta
+				Java
+				Bedrock
 	Space
 		o
 			Hell	!	Nether World
@@ -3826,12 +3838,13 @@ add(`Minecraft
 			#Ifrit
 			#Wither
 			#Ghust
-	Artefacts
-		#r-5[y]
-			#Ender's
-				#Eye
-				#Egg
-				#Perl
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Ender's
+					#Eye
+					#Egg
+					#Perl
 	Materials
 		#Metals
 			Iron
@@ -3889,46 +3902,49 @@ Industrialcraft
 			Uranium
 			Plutonium
 		Matter
-	Artefacts
-		#r-5[y]
-			#Armor
-				#Quantum
-				#Nano
-			#Steelarms
-				#Nanosaber
-			#Weapon
-				#Laser
-		#r-7[y]
-			#Developer Tool	!	Debug Tool, Adamant Rod
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Armor
+					#Quantum
+					#Nano
+				#Steelarms
+					#Nanosaber
+				#Weapon
+					#Laser
+			#r-7[y]
+				#Developer Tool	!	Debug Tool, Adamant Rod
 Buildcraft
 Ender IO
-	Artefacts
-		#r-5[y]
-			#Armor
-				#Ender
-			#Steelarms
-				#Ender
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Armor
+					#Ender
+				#Steelarms
+					#Ender
 Gravisuite
-	Artefacts
-		#r-5[y]
-			#Armor
-				#Gravi-Chestplate
-			#Steelarms
-				#Vajra
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Armor
+					#Gravi-Chestplate
+				#Steelarms
+					#Vajra
 Gregtech
 Terrafirmacraft
 Applied Energistics
-	Artefacts
-		#r-5[y]
-			#Appeng
-				#Monitors
-				#Autocrafts`)
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Appeng
+					#Monitors
+					#Autocrafts`)
 add(`Zero no Tsukaima
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Energies
 		#r-5[y]
 			+3+5	!	Wizardy?
@@ -3945,22 +3961,27 @@ add(`Zero no Tsukaima
 			Spell
 			Rune
 			Ritual
-		#Action[y]
-			Summon
-		#Object[y]
-			Alchemy
-			Elixir
-				Potion
-		#Creature[y]
+		#Types[y]
+			#Action
+				Summon
+				Alchemy
+			#Object
+				Elixir
+					Potion
+		#Creatures
 			Animal
 				Familiar
-	Artefacts
-		#r-5[y]
-			#Wands
-			#Flying Ships
-			#Rings
-				of Water
-				of Air
+	Objects
+		#Elixirs
+			#Potions
+				Love
+		#Artefacts
+			#r-5[y]
+				#Wands
+				#Flying Ships
+				#Rings
+					of Water
+					of Air
 	Users
 		#r-5[y]
 			e+3+5	!	Wizard
@@ -3991,23 +4012,22 @@ add(`Zero no Tsukaima
 			#w-1	!	Spirit
 				Loa?`)
 add(`Toaru Majutsu no Index
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Ranobe
-				"Toaru Majutsu no Index"
-				"Toaru Kagaku no Accelerator"
-				"Toaru Kagaku no Railgun"
-				"Shinyaku Toaru Majutsu no Index"
-			#Manga
-				"Toaru Majutsu no Index"
-				"Toaru Kagaku no Accelerator"
-				"Toaru Kagaku no Railgun"
-			#Anime
-				"Toaru Majutsu no Index"
-				"Toaru Kagaku no Accelerator"
-				"Toaru Kagaku no Railgun"
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Ranobe
+			"Toaru Majutsu no Index"
+			"Toaru Kagaku no Accelerator"
+			"Toaru Kagaku no Railgun"
+			"Shinyaku Toaru Majutsu no Index"
+		#Manga
+			"Toaru Majutsu no Index"
+			"Toaru Kagaku no Accelerator"
+			"Toaru Kagaku no Railgun"
+		#Anime
+			"Toaru Majutsu no Index"
+			"Toaru Kagaku no Accelerator"
+			"Toaru Kagaku no Railgun"
 	Verse
 		@Type
 			Meta
@@ -4037,8 +4057,9 @@ add(`Toaru Majutsu no Index
 			Ritual
 			Rune
 			Spell
-		#Action[y]
-			Enchantment
+		#Types[y]
+			#Object
+				Enchanted
 	Users
 		#r-5[y]
 			e+4	!	Esper
@@ -4105,18 +4126,19 @@ add(`Toaru Majutsu no Index
 						Touch
 		#r-7[y]
 			e+7	!	God_?
-	Abilities
+	Actions
 		#r-5[y]
 			#Action
 				Protection
 					Vector
 						@Accelerator
-	Artefacts
-		#r-5[y]
-			#Grimoires
-				#Forbidden index's
-			Cross?
-			Sword of space?
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Grimoires
+					#Forbidden index's
+				Cross?
+				Sword of space?
 	Creatures
 		#Mind
 			#r-5[y]
@@ -4154,11 +4176,10 @@ add(`Toaru Majutsu no Index
 					#l6.0
 						Alister Crowley`)
 add(`Bleach
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Users
 		#r-5[y]
 			e+2	!	Reatsu
@@ -4172,20 +4193,18 @@ add(`Bleach
 			Shinigami
 			Sword of Soul`)
 add(`One Piece
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Features
 		#r-5[y]
 			Fruits`)
 add(`Mass Effect
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
 	Creatures
 		#Mind
 			#r-5[y]
@@ -4197,57 +4216,55 @@ add(`Mass Effect
 		#r-5[y]
 			+4	!	Psy?`)
 add(`Terminator
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Film
-	Artefacts
-		#r-5[y]
-			#Tech
-				#Skynet's
-					#AI
-					#Drones
-					#Terminators
-						#1
-						#800
-						#850
-						#1000
-						#Ex
-					Time-Machine
-					#Cyborgs`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Film
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Tech
+					#Skynet's
+						#AI
+						#Drones
+						#Terminators
+							#1
+							#800
+							#850
+							#1000
+							#Ex
+						Time-Machine
+						#Cyborgs`)
 add(`Resident Evil
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
 	Creatures
 		#r-4[y]
 			#Virused Zombie
 	Features
 		#r-5[y]
-			Superabilities`)
+			Superability`)
 add(`Cat Leopold
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Multfilm
-	Elixirs
-		#r-4[y]
-			Ozverin`)
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Multfilm
+	Objects
+		#Elixirs
+			#r-4[y]
+				Ozverin`)
 add(`Noragami
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
-			#Manga
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
+		#Manga
 	Users
 		#r-4[y]
 			e+0+2	!	Sword-Soul
-	Abilities
+	Actions
 		#r-5[y]
 			Line
 	Features
@@ -4257,11 +4274,10 @@ add(`Noragami
 				Demon-Loa
 				God_0`)
 add(`Slayers
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Users
 		#r-5[y]
 			e+5	!	Mage
@@ -4269,11 +4285,10 @@ add(`Slayers
 		#r-5[y]
 			+5	!	Mana?`)
 add(`Fairy Tail
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Verse
 		@Type
 			Uni
@@ -4287,11 +4302,10 @@ add(`Fairy Tail
 		#r-5[y]
 			+5	!	Mana?`)
 add(`DC
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Comics
+	@Languages[y]
+		English
+	@Sources[y]
+		#Comics
 	Verse
 		@Type
 			Multi
@@ -4321,20 +4335,20 @@ add(`DC
 			Metahuman
 			sf	!	Speedforceuser
 			e+5	!	Mage
-	Artefacts
-		#r-4[y]
-			#Tech
-				#Batman's
-				#Luthor's
-		#r-5[y]
-			#Tech
-				#Crypton's`)
+	Objects
+		#Artefacts
+			#r-4[y]
+				#Tech
+					#Batman's
+					#Luthor's
+			#r-5[y]
+				#Tech
+					#Crypton's`)
 add(`Avatar
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Multserial
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Multserial
 	Energies
 		#r-5[y]
 			+5	!	Mana?
@@ -4345,8 +4359,9 @@ add(`Avatar
 			Earth
 			Air
 	Directions
-		#Action[y]
-			Heal
+		#Types[y]
+			#Action
+				Heal
 	Features
 		#r-5[y]
 			Mage
@@ -4356,11 +4371,10 @@ add(`Avatar
 				Air
 			Avatar`)
 add(`Fullmetal Alchemist
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Features
 		#r-5[y]
 			Alchemist
@@ -4371,13 +4385,12 @@ add(`Fullmetal Alchemist
 		#r-5[y]
 			al	!	Alchemycal?`)
 add(`Dozory
-	About
-		Languages[y]
-			Russian
-		Authors[y]
-			Sergey Lukyanenko
-		Inputs[y]
-			#Books
+	@Languages[y]
+		Russian
+	@Authors[y]
+		Sergey Lukyanenko
+	@Sources[y]
+		#Books
 	Schools
 		Other
 	Levels
@@ -4413,7 +4426,7 @@ add(`Dozory
 			Mage
 			Witch
 			Mirror
-	Abilities
+	Actions
 		#r-5[y]
 			#Misc
 				#Domestic
@@ -4501,40 +4514,39 @@ add(`Dozory
 						Time
 							Uncontrolled
 								Саркофаг времён	/* — заклинание из арсенала Инквизиции. Применивший его оказывается вместе со своей жертвой запертым в каменном саркофаге, плывущим в небытии, до скончания времён. Случаев побега из саркофага времён пока не существует. Антон Городецкий в книге "Новый дозор" был освобожден из саркофага времен, где он был заключен с ведьмой Ариной	 — тигром. (Однако, осталось неясным, смогла ли Арина освободиться с помощью Минойской Сферы (только ведьмы умеют их заряжать), которую имела при себе: Минойская Сфера прокладывает портал откуда угодно)
-	Artefacts
-		#r-5[y]
-			Son Merlina?
-			Venets of Everything	/* — камни в основании замка в Эдинбурге, позволяют освобождать ушедших Иных, даруя им окончательную смерть.
-			#Grimoires
-				Fuaran's	/*Book about turning human to Other, and Other to Higher level
-			#Ingredients
-				#Claws
-					Claw of Phaphnir	/* — коготь Великого Тёмного мага, убитого в своём сумеречном облике дракона, ставший сильным артефактом после того, как Братья Регина (секта, созданная учениками Фафнира) несколько поколений питали его силой.
-			#Kandaly
-				Shredinger Cat	/* — артефакт, действующий во всех слоях Сумрака. Пушистая меховая лента, надеваемая на шею, как правило преступникам при конвое Инквизицией. Обезглавливает цель при малейшем магическом воздействии с её стороны.
-			Mel of Fate	/* — кусочек мела, с помощью которого можно изменить Книгу Судьбы любого человека или Иного. Сделать это может только Светлая Великая Волшебница. В книге «Ночной Дозор» Светлана хотела изменить судьбу Егора, но в это же самое время Ольга изменила Книгу Судьбы самой Светланы.
-			#Spheres
-				Minoy	/* - открывает портал откуда угодно, а его точку назначения невозможно проследить. Имеет только один заряд, перезаряжать его умеют только ведьмы. С разряженной Минойской Сферой ведьма Арина была заперта заклинанием Саркофаг Времён.
-			Power Prizm	/* — хрустальная прозрачная призма. Использующий призму Иной вытягивает жизненную силу из того, на кого сквозь неё смотрит. Использовала Алиса Донникова ("Ночной дозор")
+	Objects
+		#Artefacts
+			#r-5[y]
+				Son Merlina?
+				Venets of Everything	/* — камни в основании замка в Эдинбурге, позволяют освобождать ушедших Иных, даруя им окончательную смерть.
+				#Grimoires
+					Fuaran's	/*Book about turning human to Other, and Other to Higher level
+				#Ingredients
+					#Claws
+						Claw of Phaphnir	/* — коготь Великого Тёмного мага, убитого в своём сумеречном облике дракона, ставший сильным артефактом после того, как Братья Регина (секта, созданная учениками Фафнира) несколько поколений питали его силой.
+				#Kandaly
+					Shredinger Cat	/* — артефакт, действующий во всех слоях Сумрака. Пушистая меховая лента, надеваемая на шею, как правило преступникам при конвое Инквизицией. Обезглавливает цель при малейшем магическом воздействии с её стороны.
+				Mel of Fate	/* — кусочек мела, с помощью которого можно изменить Книгу Судьбы любого человека или Иного. Сделать это может только Светлая Великая Волшебница. В книге «Ночной Дозор» Светлана хотела изменить судьбу Егора, но в это же самое время Ольга изменила Книгу Судьбы самой Светланы.
+				#Spheres
+					Minoy	/* - открывает портал откуда угодно, а его точку назначения невозможно проследить. Имеет только один заряд, перезаряжать его умеют только ведьмы. С разряженной Минойской Сферой ведьма Арина была заперта заклинанием Саркофаг Времён.
+				Power Prizm	/* — хрустальная прозрачная призма. Использующий призму Иной вытягивает жизненную силу из того, на кого сквозь неё смотрит. Использовала Алиса Донникова ("Ночной дозор")
 	Directions
 		#Languages[y]
 			?
 		#Types[y]
-			Straight
-			Saving
-			Artefact
-		#Action[y]
-			Atack
-			Protection
-			Heal	!	Healing
-		#Misc[y]
-			Love	!	Obvorozhenie
-			Clairvoyance
-				Probability
-			Metamorph	!	Oborotnichestvo
-				Werewolf
-				Turning
-		#Creature[y]
+			#Action
+				Love	!	Obvorozhenie
+				Clairvoyance
+					Probability
+				Metamorph	!	Oborotnichestvo
+					Werewolf
+					Turning
+				Atack
+				Protection
+				Heal	!	Healing
+			#Saving
+			#Object
+		#Creatures
 			#w-1	!	Necromancy
 	Space
 		n
@@ -4558,11 +4570,10 @@ add(`Dozory
 					7	x1	full temp	full color	0	normal	/*Can be backside`)
 add(`Virworld`)
 add(`Kono Subarashii Sekai ni Shukufuku o
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Verse
 		@Type
 			Multi
@@ -4571,33 +4582,24 @@ add(`Kono Subarashii Sekai ni Shukufuku o
 				Our	!	Earth?
 				Other`)
 add(`Tokyo Ghoul
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
-add(`Shingeki no Kyojin
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Lucifer
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Serial
-				1.
-				2.
-				3.
-				4.`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Serial
+			1.
+			2.
+			3.
+			4.`)
 add(`Hataraku Maou-sama
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Features
 		#r-6[y]
 			Demon_0
@@ -4618,17 +4620,15 @@ add(`Hataraku Maou-sama
 				Our	!	Earth
 				Ente Isla`)
 add(`To Love-Ru
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`The Gamer
-	About
-		Languages[y]
-			Korean
-		Inputs[y]
-			#Manhva
+	@Languages[y]
+		Korean
+	@Sources[y]
+		#Manhva
 	Users
 		#r-5[y]
 			e+1	!	Kiuser
@@ -4653,12 +4653,10 @@ add(`The Gamer
 			Air
 			Earth
 	Directions
-		#Misc[y]
-			Clairvoyance
-		#Forms
-			#Misc
-				Elemental
-	Abilities
+		#Types[y]
+			#Action
+				Clairvoyance
+	Actions
 		#r-5[y]
 			Postup @tshonbo
 			Soul heal @yunhon
@@ -4666,31 +4664,32 @@ add(`The Gamer
 				#Protection
 					Mana	!	Mana Shield
 	Creatures
+		Elemental
 		#Mind
 			#r-5[y]
 				#Human
 					#l5.0
 						Gamer	!	Han Jee Han
 						Blood Witch	!	Lolicano Mistrim
-	Artefacts
-		#r-5[y]
-			#Broomsticks
-			#Soul Stones / SS
-		#r-7[y]
-			Sword Dan
-			#Divine
-				Bereza
-				Mirror
-				???
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Broomsticks
+				#Soul Stones / SS
+			#r-7[y]
+				Sword Dan
+				#Divine
+					Bereza
+					Mirror
+					???
 	Organizations
 		Bezdna
 			Aukcion`)
 add(`Neon Genesis Evangelion
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Shells
 		atf	!	AT-field
 	Creatures
@@ -4701,123 +4700,107 @@ add(`Neon Genesis Evangelion
 		#r-5[y]
 			Kid`)
 add(`Master and Margarita
-	About
-		Authors[y]
-			Bulgakov
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Bulgakov
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Alice in back side of mirror
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Books`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Books`)
 add(`Voina i mir
-	About
-		Authors[y]
-			Lev Tolstoy
-		Languages[y]
-			Russian`)
+	@Authors[y]
+		Lev Tolstoy
+	@Languages[y]
+		Russian`)
 add(`Gundum
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Ottsy i deti
-	About
-		Authors[y]
-			Turgenev
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Turgenev
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`How to stat wizard
-	About
-		Authors[y]
-			Duain Diana
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Duain Diana
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`12 stuliev
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Green Mile
-	About
-		Authors[y]
-			Steven King
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Steven King
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Pobeg is shoushenka
-	About
-		Authors[y]
-			Steven King
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Steven King
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`451 Farengait
-	About
-		Authors[y]
-			Rai bradberry
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Rai bradberry
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`We
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Oh divniy new world
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`1984
-	About
-		Authors[y]
-			George Oruell
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		George Oruell
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Skotniy Dvor
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`The Zadrot
-	About
-		Authors[y]
-			Fil Bandileros
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Fil Bandileros
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Verse
 		@Type
 			Uni
 		The Gamer`)
 add(`Meta-Hobbit
-	About
-		Authors[y]
-			Fil Bandileros
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Fil Bandileros
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Verse
 		@Type
 			Meta
@@ -4826,13 +4809,12 @@ add(`Meta-Hobbit
 		@Tags
 			Gamelit`)
 add(`Meta-Gamer
-	About
-		Authors[y]
-			Fil Bandileros
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Fil Bandileros
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Verse
 		@Type
 			Meta
@@ -4841,64 +4823,57 @@ add(`Meta-Gamer
 			Gamelit`)
 add(`Solaris`)
 add(`Thanks for fish
-	About
-		Authors[y]
-			Fil Bandileros
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Fil Bandileros
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Verse
 		@Type
 			Multi
 		Marvel`)
 add(`Atlant raspravil plechi
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Eyes of other world
-	About
-		Authors[y]
-			Jack Vance
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Jack Vance
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Game of Thrones
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Autostop by galaxy
-	About
-		Authors[y]
-			Duglas adams
-		Languages[y]
-			English`)
+	@Authors[y]
+		Duglas adams
+	@Languages[y]
+		English`)
 add(`Path of Dark Mage
-	About
-		Authors[y]
-			Sergey Zloy
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Authors[y]
+		Sergey Zloy
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Verse
 		@Type
 			Uni
 		Potteriana`)
 add(`Mage and his shadow`)
 add(`Fate of Archmage
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
-				1. "Fate of Archmage"
-				2. "Plan of Archmage"
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
+			1. "Fate of Archmage"
+			2. "Plan of Archmage"
 	Verse
 		@Type
 			Meta
@@ -4906,188 +4881,161 @@ add(`Fate of Archmage
 		Potteriana`)
 add(`Sticks`)
 add(`Myths of Ktulhu
-	About
-		Authors[y]
-			Govard Lovecraft
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
-
+	@Authors[y]
+		Govard Lovecraft
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Strugatskie
-	About
-		Authors[y]
-			Strugatskie
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Strugatskie
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Antichniy charoplet
-	About
-		Authors[y]
-			Alessiy
-		Languages[y]
-			Russian
-		Inputs[y]
+	@Authors[y]
+		Alessiy
+	@Languages[y]
+		Russian
+	@Sources[y]
 			#Fanfics
 				1.
 				2.
 				3.`)
 add(`Small Monster
-	About
-		Authors[y]
-			Daimon Agafo
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics`)
+	@Authors[y]
+		Daimon Agafo
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics`)
 add(`King's Battle
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Ranobe`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Ranobe`)
 add(`Hunger Games
-	About
-		Authors[y]
-			Katlin
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Katlin
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Voina mirov
-	About
-		Authors[y]
-			Herbert wels
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Herbert wels
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Hyperboloid inzhenera garina
-	About
-		Authors[y]
-			Tolstoy
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Tolstoy
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Tumannost Andromedy
-	About
-		Authors[y]
-			Efremov
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books
+	@Authors[y]
+		Efremov
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books
 	Space
 		w
 			<1	!	zero-space`)
 add(`Elita
-	About
-		Authors[y]
-			Belyaev
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Belyaev
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Dead souls
-	About
-		Authors[y]
-			Nikolay Gogol
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Nikolay Gogol
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Pandora Box`)
 add(`Svarog
-	About
-		Authors[y]
-			Buzhkov
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Buzhkov
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books`)
 add(`Deus Ex
-	About
-		Inputs[y]
-			#Games`)
+	@Sources[y]
+		#Games`)
 add(`Fallout
-	About
-		Inputs[y]
-			#Games`)
+	@Sources[y]
+		#Games`)
 add(`Assasin's Creed
-	About
-		Inputs[y]
-			#Games`)
+	@Sources[y]
+		#Games`)
 add(`Megabrain
-	About
-		Inputs[y]
-			#Film`)
+	@Sources[y]
+		#Film`)
 add(`Matrix
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Film`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Film`)
 add(`Fifth Element`)
 add(`trassa 60`)
 add(`Hodyachiy Zamok
-	About
-		Authors[y]
-			Hayao Miadzaki
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Authors[y]
+		Hayao Miadzaki
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Seishun Buta Yaro wa Bunny Girl-senpai no Yume wo Minai
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Love Death Robots
-	About
-		Inputs[y]
-			#Serial`)
+	@Sources[y]
+		#Serial`)
 add(`Black Mirror
-	About
-		Inputs[y]
-			#Serial`)
+	@Sources[y]
+		#Serial`)
 add(`Memnoh Devil`)
 add(`Will for Life
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics`)
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics`)
 add(`Technomancer
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Fanfics
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Fanfics
 	Verse
 		@Type
 			Uni
 		Systema, Labirint, Bogi, Avanturisti`)
 add(`Overlord
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`One Punch Man
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Mob Psyho 100
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Creatures
 		#Mind
 			#r-5[y]
@@ -5100,72 +5048,66 @@ add(`Mob Psyho 100
 		#r-5[y]
 			+4	!	Psy?`)
 add(`Svet za okoshkom
-	About
-		Authors[y]
-			Svyatoslav Loginov
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books
+	@Authors[y]
+		Svyatoslav Loginov
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books
 	Features
 		#r-4[y]
 			Ghost`)
-add(`Assasin's Class
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+add(`Assassination Classroom
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`vosplamenyayushaya vzglyadom
-	About
-		Authors[y]
-			Steven King
-		Languages[y]
-			English
-		Inputs[y]
-			#Books`)
+	@Authors[y]
+		Steven King
+	@Languages[y]
+		English
+	@Sources[y]
+		#Books`)
 add(`Re: Monster
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Manga`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Manga`)
 add(`High School of Dead
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Chronics of Narnia`)
 add(`Soul Eater
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime`)
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Labirints Eho`)
 add(`Labirint Favna`)
 add(`Persi Jackson`)
 add(`Star Dust`)
 add(`Home of strange kid ms peregrin`)
 add(`Gravity Falls
-	About
-		Languages[y]
-			English
-		Authors[y]
-			Alex Hirsh
-		Inputs[y]
-			#Multserial
-				1 Season
-				Video chronics
-				2 Season
-	Artefacts
-		#r-4[y]
-			#Diaries
-				@Stanford
-				1
-				2
-				3
+	@Languages[y]
+		English
+	@Authors[y]
+		Alex Hirsh
+	@Sources[y]
+		#Multserial
+			1 Season
+			Video chronics
+			2 Season
+	Objects
+		#Artefacts
+			#r-4[y]
+				#Diaries
+					@Stanford
+					1
+					2
+					3
 		#r-5[y]
 			#Anomaly
 				Sizing Lamp
@@ -5175,35 +5117,34 @@ add(`Gravity Falls
 				#Demon
 					Bill Cipher`)
 add(`Fineas and Ferb
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Mult`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Mult`)
 add(`Infinity Story`)
 add(`Collectioner`)
 add(`Molchaniye Yagnyat`)
 add(`Diplomirovanniy Charodey`)
 add(`Wizard Parents`)
 add(`Dungeons and Dragons
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games`)
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games`)
+add(`Volshebnik strany OZ`)
 add(`Volshebnik izumrudnogo goroda
-	About
-		Languages[y]
-			Russian
-		Inputs[y]
-			#Books
-			#Mult`)
+	@Authors[y]
+		Alexander Volkov
+	@Languages[y]
+		Russian
+	@Sources[y]
+		#Books
+		#Mult`)
 add(`Dragon Age
-	About
-		Languages[y]
-			English
-		Inputs[y]
-			#Games
+	@Languages[y]
+		English
+	@Sources[y]
+		#Games
 	Space
 		n
 			Fade
@@ -5212,24 +5153,23 @@ add(`Dragon Age
 		#Metals
 			Lyrium`)
 add(`RWBY
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
 	Creatures
 		#r-5[y]
 			#Grimm`)
 add(`Death Note
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
-			#Manga
-	Artefacts
-		#r-7[y]
-			#Death Notes
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
+		#Manga
+	Objects
+		#Artefacts
+			#r-7[y]
+				#Death Notes
 	Users
 		#r-7[y]
 			Death Note	!	Shinigami
@@ -5246,29 +5186,31 @@ add(`Death Note
 					Rem
 					Death King`)
 add(`Dragonlance
-	About
-		Languages[y]
-			English`)
+	@Languages[y]
+		English`)
 add(`League of Legends
-	About
-		Languages[y]
-			English`)
+	@Languages[y]
+		English`)
+add(`Atack on Titan
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime`)
 add(`Code Geass
-	About
-		Languages[y]
-			Japanese
-		Inputs[y]
-			#Anime
-		Inputs[y]
-			Anime
-				R1
-				R2
-				1
-				2
-				3
-				4
-				5
-				6
+	@Languages[y]
+		Japanese
+	@Sources[y]
+		#Anime
+	@Sources[y]
+		Anime
+			R1
+			R2
+			1
+			2
+			3
+			4
+			5
+			6
 	Creatures
 		#Mind
 			#r-5[y]
@@ -5308,8 +5250,865 @@ add(`Code Geass
 				@Lelouch
 	Materials
 		Sakuradait
-	Artefacts
-		#r-5[y]
-			#Tech
-				#Britanian Imperia's
-					#Knightmares`)
+	Objects
+		#Artefacts
+			#r-5[y]
+				#Tech
+					#Britanian Imperia's
+						#Knightmares`)
+props.sourcesConfig	=	`#Rationality
+	#Books
+		HPMoR
+			@References
+				#Books
+					Атлант расправил плечи
+					#Fiction
+						Дуэйн Диана			Как стать волшебником		18.11.01-
+						дипломированный чародей
+					#Other
+						Less Wrong
+						Feynman Lectures
+						Gyodelya Eshera Baha
+						принятие решений в неопределенности
+			@Date	!	18.07.17
+			@Authors	!	Элиезер Юдковский
+			=18.07.26-18.08.04 10/10
+			=20.04.03 13:34-
+#Fiction
+	#Anime
+		Naruto
+			@Date	!	19.02.03
+			1 Season	!	19.03.04 12:00- =6/10
+				001-010	!	20.01.04 =7/10
+				010-019	!	20.01.04 =6/10
+				019-040	!	20.01.04-20.01.05 =7/10
+				040-065	!	20.01.05 =7/10
+				066-067	!	20.01.06 8:40-11:39 =7/10
+				068-080	!	20.01.06 11:40-16:45 =7/10
+				081-085	!	20.01.06 16:50-19:24 =7/10
+				086-100	!	20.01.06 20:15-20.01.07 10:58 =7/10
+				101-106	!	20.01.07 11:00-13:13 =7/10
+				107-135	!	20.01.07 13:15-20.01.08 10:55 =7/10
+				136-141	!	20.01.08 10:55-13:36 =7/10
+				142-147	!	20.01.08 13:37-15:42 =7/10
+				148-151	!	20.01.08 15:45-17:04 =7/10
+				152-161	!	20.01.08 17:05-20:38 =7/10
+				162-168	!	20.01.09 9:48-12:59 =7/10
+				169-186	!	20.01.09 13:00-20:40 =7/10
+				187-202	!	20.01.09 20:42-20.01.10 11:00 =7/10
+				203-208	!	20.01.10 11:00-13:08 =7/10
+				209-212	!	20.01.10 13:10-17:25 =7/10
+				213-215	!	20.01.10 17:26-19:40 =7/10
+				216-220	!	20.01.10 19:40-21:25 =8/10
+			2 Season
+				001-	!	20.01.11 7:45-
+			Demons High School			@Date	!	19.03.17					>
+			Zero no Tsukaima			@Date	!	19.03.17					>
+										>	1		19.03.18 23:00-19.03.19 19:20 =8.5/10
+										>	2		19.03.19 22:22-19.03.20 14:40 =7/10
+										>	3		19.03.20 14:45-23:45 =7/10
+										>	4		19.03.21 06:30-14:45 =8/10
+			Sword Art Online			@Date	!	19.03.21					>
+								Аниме			>	1		19.03.24 13:40-19.03.25 14:00 =8/10
+											>	2
+								Аниме			>	3
+								Аниме			>	4
+								Аниме			>	5
+			Ходячий замок			@Date	!	19.03.21		Аниме
+			Код Гиасс			@Date	!	19.03.21		Аниме
+								Аниме			>	R1		19.07.30 10:41-22:45 =8/10
+											>	R2		19.07.30 22:47-19.08.04 12:17 =8/10
+											>	1
+											>	2
+											>	3
+											>	4
+											>	5
+											>	6
+			Toaru
+				@Date	!	19.03.17
+				Toaru majutsu no index
+					1 Season	!	19.11.05 6:00-19:06 =7.5/10
+					2 Season	!	19.11.05 20:12-19.11.07 15:25 =8/10
+					3 Season	!	19.11.07 21:11-19.11.10 7:48 =7.5/10
+				Toaru kagaku no railgun
+					1 Season	!	19.04.16 18:08-19.04.17 22:24 =7/10	20.01.19-20.01.20 21:45 =8/10
+					2 Season	!	19.05.02 12:50-19... 19.11.01 22:15-19.11.04 22:45 =7.5/10	20.01.21 10:10-20.01.23 13:00 =7.5/10
+				Toaru kagaku no accelerator
+					1 Season	!	19.11.04 15:00-22:45 =8/10
+			Bleach
+				@Date	!	19.03.17
+				1		19.08.04 15:00-
+			Fate
+				@Date	!	19.03.17
+			One peace
+				@Date	!	19.03.22
+			Lupen
+				@Date	!	19.03.23
+			Uq holder
+				@Date	!	19.03.25
+			RWBY
+				@Date	!	19.04.23
+			Seishun Buta Yaro wa Bunny Girl-senpai no Yume wo Minai
+				@Date	!	19.06.13
+				=19.06.13 23:30-
+			Kono Subarashii Sekai ni Shukufuku o
+				@Date	!	19.06.16
+			kanokon
+				@Date	!	19.06.18
+				=19.06.18 15:30-19.06.19 4:30 =7/10
+			Death Note
+				@Date	!	19.06.27
+				=19.06.27 8:01-19.06.28 9:01 =8/10
+				1-10?	! =9.5	19.06.28 11:00-20:15 =9/10
+				-31?	! =7
+				31-36?	 !=8.5
+				37	 !=9
+			Seilor Moon
+				@Date	!	19.07.06
+					20.01.30-
+			Fullmetal Alchemist
+				@Date	!	19.07.06
+			Atack on Titan
+				@Date	!	19.07.06
+			Detective Konan
+				@Date	!	19.07.06
+			Pokemon
+				@Date	!	19.07.06
+			Mob Psycho 100
+				Source
+					Bad Choice
+				Anime
+					1 season    !   20.05.03-
+					2 season    !   -20.05.06 10:40 9/10
+			Tokyo Ghoul
+				@Date	!	19.07.06
+				1 Season	!	19.07.07 19:22-19.07.08 6:32 =8/10
+				2 Season	!	19.07.08 6:34-12:57 =6/10
+				3 Season	!	19.07.08 13:00-
+			My hero academy
+				@Date	!	19.09.11
+				1 Season	!	19.09.11 11:00-15:00 =7/10
+				2 Season	!	19.09.11 15:10-19.09.14 10:00 =7/10
+				3 Season	!	19.09.14 10:05-19.09.15 09:50 =7/10
+			Noragami
+				@Date	!	19.09.16
+				1 Season	!	19.09.16 12:45-21:23 =8/10
+				2 Season. Aragoto	!	19.09.22 9:35-22:05 =8.5/10
+			Overlord
+				@Date	!	19.10.03
+			One punch man
+				@Date	!	19.10.16
+				1 Season	!	19.10.16 8:10-18:10 =8/10
+				2 Season	!	19.10.16 18:15-19.10.17 13:31 =8/10
+			Hataraku Maou-sama
+				@Date	!	20.01.01
+			Assassination Classroom
+				@Date	!	20.02.05
+				=20.02.05 17:00-20.02.07 17:55 =8/10
+	#Ranobe
+		королевская битва
+			@Date	!	19.03.24
+		Sword Art Online
+			@Date	!	19.03.25
+			@Authors	!	Рэки Кавахара
+			1.	!	19.03.25 15:15-19.03.27 12:45 =8/10
+			2.	Айнкрад	!	19.03.27 12:50-19.03.28 15:15 =7/10
+			3.	Танец фей	!	19.03.29 09:55-19.03.30 15:10 =7/10
+			4.	Танец фей	!	19.03.30 16:00-19.03.31 16:35 =7/10
+			5.	Призрачная пуля	!	19.03.31 16:40-19.04.01 10:30 =7/10
+			6.	призрачная пуля	!	19.04.01 10:30-19.04.02 13:50 =7/10
+			7.	розарий матери	!	19.04.02 13:55-19.04.05 10:05 =7/10
+			8.	вначале и потом	!	19.04.05 10:45-
+	#Serial
+		чародей 19.01.16		Фильм
+		17 мгновений весны
+			@Date	!	18.09.25
+			=18.09.25-18.09.26
+		Lucifer
+			@Date	!	18.11.25
+			1 Season	!	18.11.29 15:20-18.11.30 10:00 =9/10	19.03.24 11:11-
+			2 Season	!	18.11.30 10:10-18.12.01 12:05 =8/10
+			3 Season	!	18.12.01 12:20-18.12.02 19:05 =8/10
+			4 Season
+		теория большого взрыва
+			@Date	!	18.11.28
+			1 Season	!	18.12.03 22:00-
+		Игра престолов
+			@Date	!	18.11.28
+		Классная школа
+			@Date	!	18.11.26
+			=18.11.26-
+		Young Sheldon
+			@Date	!	20.02.15
+			1 Season
+				=20.02.15 6:30-15:05 =9/10
+				=20.02.18 9:38-20.02.20 7:45 =8/10
+			2 Season
+				=20.02.15 15:17-20.02.17 10:55 =8.5/10
+				=20.02.20 7:48-
+			3 Season
+				=20.02.17 12:29-20.02.18 8 =8/10
+	#Books
+		Strugatskie
+			@Date	!	20.03.08
+			Мир Полудня
+			Понедельник начинается в субботу
+			Гадкие лебеди
+			Сказка о тройке
+		Rudazov
+			@Authors	!	Alexander Rudazov
+			Sumer nights
+				1.	!	18.12.31 17:20-19.01.01 23:37 7/10
+			Archmage	!	18.12.13-19.01.01 8/10
+				@Date	!	18.12.06
+				1.	Архимаг
+					=18.12.13 20:40-18.12.15 13:30 7.5/10
+					=19.12.05 14:10-19.12.06 16:45 8/10
+				2.	Рыцари Пречистой девы
+					=18.12.15 14:52-18.12.19 15:15 7.5/10
+					=19.12.06 16:47-19.12.08 19:19 7.5/10
+				3.	Самое лучшее оружие
+					=18.12.19 15:15-18.12.20 23:53 7.5/10
+					=19.12.08 19:20-19.12.11 10:53 8/10
+				4.	Серая чума
+					=18.12.21 12:30-18.12.22 18:46 7.5/10
+					=19.12.11 12:21-19.12.12 22:12 8/10
+				5.	Война колдунов
+					5.1.	вторжение
+						=18.12.22 18:47-18.12.24 07:48 7.5/10
+						=19.12.12 22:20-19.12.14 22:20 8/10
+					5.2.	штурм цитадели
+						=18.12.24 07:48-18.12.25 08:48 7.5/10
+						=19.12.14 22:23-19.12.16 13:43 7.5/10
+				6.	Дети судного часа
+					=18.12.25 08:49-18.12.26 13:23 +8.0
+					=19.12.16 13:45-19.12.17 13:25 +7.5
+				7.	Совет 12
+					=18.12.26 13:30-18.12.27 12:30 +7.0
+					=19.12.17 13:30-19.12.18 17:26 +8.0
+				8.	Битва полчищ
+					=18.12.27 12:35-18.12.29 11:22 +7.0
+					=19.12.18 17:30-
+				9.	Заря над бездной
+					=18.12.29 11:22-18.12.30 23:59 +9.0
+			Yatshen
+				@Date	!	19.01.11
+					1.	Три глаза и шесть рук
+						=19.01.11 16:00-19.01.12 14:40 =8.0/10
+						=19.12.09 23:55-19.12.19 22:15 =7.5/10
+					2.	Шестирукий Резидент
+						=19.01.12 14:40-19.01.13 16:45 =7.5/10
+						=19.12.19 22:26-19.12.23 13:56 =7.5/10
+					3.	Демоны в Ватикане
+						=19.01.13 16:46-19.01.14 22:14 =8.0/10
+						=19.12.23 16:40-19.12.27 09:31 =7.5/10
+					4.	Сын Архидемона
+						=19.01.14 22:16-19.01.15 19:09 =8.5/10
+						=19.12.27 09:35-19.12.28 13:25 =8.0/10
+			Arifmoman
+				@Date	!	19.01.16
+				1.	Червоточина	!	19.01.28 15:00-19.01.29 18:13 =7.0/10
+				2.	В небесах	!	19.01.29 18:15-19.01.31 11:50 =6.5/10
+			Tri mudretsa
+				@Date	!	19.01.16
+				1.	Три мудреца в одном тазу	!	19.01.16 12:29-19.01.18 17:12 =6/10
+				2.	Тайна похищенной башни	!	19.01.21 18:00-19.01.22 19:14 =6/10
+			Kriabal
+				@Date	!	19.01.16
+				1.	Kriabal
+					1.1.	Тьма у ворот		19.01.23 12:53-19.01.24 19:53 =7/10
+					1.2.	Свет в глазах		19.01.24 20:00-19.01.25 23:45 =7/10
+				2.	Apofeoz
+			Ghost
+				@Date	!	19.01.25
+				=19.01.27 12:00-19.01.28 14:15 +7.0
+				=19.07.08 15:30-19.07.11 09:52 +7.0
+			spasibo za pokupku
+				@Date	!	19.01.26
+				=19.01.26 12:00 +6.0
+			Vlastelin
+				@Date	!	19.01.26
+				=19.01.26 12:15-01:09 +9.0
+				=19.12.20-19.12.23 11:29 +8.5
+			Рассказы из правого ботинк
+				@Date	!	19.01.26
+				=19.11.13 15:00-19.11.14 20:57 +7.5
+			Ekipazh
+				@Date	!	19.01.26
+				=19.11.15 06:30-19.11.16 19:27 +7.0
+		Solaris
+			@Date	!	18.11.13
+		Nick
+			@Date	!	18.12.06
+			@Authors	!	Andrzej	Yasinski
+				1.	Lammer	!	19.07.11 10:22-19.07.12 22:01 7.5/10
+				2.	User	!	19.07.13 8:03-19.07.14 19:37 7.5/10
+				3.	стихийник	!	19.07.14 19:41-19.07.15 22:51 8/10
+				4.	Admin	!	19.07.16 10:54-19.07.17 8:58 7.5/10
+				5.	беглец	!	19.07.17 9:00-19.07.18 16:58 8/10
+				6.	Sorcerer
+					1 Tom	!	19.07.18 17:20-19.07.19 17:00 7.5/10
+					2 Tom	!	19.07.19 17:02-19.07.20 20:39 7.5/10
+				7.	Астральщик
+					1 Tom	!	19.07.20 20:45-19.07.21 16:02 7.5/10
+					2 Tom	!	19.07.21 16:20-19.07.22 17:58 9/10
+				8.	Землянин
+					1 Tom	!	19.07.22 18:00-19.07.23 15:00 8/10
+					2 Tom	!	19.07.23 15:09-19.07.24 16:32 8/10
+				Tolleus
+					1 Tom	!	19.07.24 18:31-19.07.26 11:40 7/10
+					2 Tom	!	19.07.26 11:45-19.07.28 13:05 7/10
+		12 стульев
+		Orderly
+			@Date	!	18.08.18
+			@Authors	!	Nick Perumov
+			Ring of Dark
+				Эльфийский клинок	!	18.08.25-18.09.07 5/10
+				Чёрное копье	!	18.09.07-18.10.29 5/10
+				Адамант Хенны	!	18.10.29-
+		Master and Margarita
+			@Date	!	18.08.27
+		War and Peace
+			@Authors	!	Lev Tolstoy
+			@Date	!	18.09.07
+		Ottsy and Kids
+			@Date	!	18.09.07
+			@Authors	!	Тургенев
+		Steven King
+			@Date	!	18.09.14
+			зелёная миля
+			побег из шоушегка
+		Ray Bradberry
+			@Date	!	18.09.23
+			451 по Фаренгейту
+		George Oruell
+			@Date	!	18.09.23
+			1984
+			скотный двор
+		We
+			@Date	!	18.09.23
+		о дивный новый мир
+			@Date	!	18.09.23
+	#Games
+		The elder Scrolls
+			@Date	!	18.12.30
+			Skyrim
+		Dragon Age
+			@Date	!	18.12.30
+	#Fanfics
+		Harry Potter and Three Old Ladies
+			@Authors	!	Argus Filchenkov
+			@References
+				#Fiction
+					#Books
+						Оливер Твист
+							@Authors	!	Чарльз Диккенс
+							=20.03.15 19:30-
+						Воспламеняющая взглядом
+							@Authors	!	Стивен Кинг
+							=20.03.22 16:05-
+						Граф Монте Кристо
+			@Date	!	20.03.02
+			0. Три пожилых леди		20.03.02 22:45-20.03.03 14:45 =9/10	20.03.15 10:20-20.03.22 15:53 =8/10
+			1. Хранитель ключей		20.03.03 14:50-20.03.04 23:10 =9.5/10	20.03.22 17:25-
+			2. Истинный наследник		20.03.05 10:50-20.03.06 13:07 =9/10
+			3. Искусство побега		20.03.06 13:12-20.03.07 19:35 =9.3/10
+			4. Охота на чемпионов		20.03.07 20:05-20.03.08 17:19 =9/10 (30 все что было) -20.03.28 20:16 =9.5/10 (до конца)
+		Kitsune Miyato
+			@Source	!	Ficbook
+			@Date	!	20.03.23
+			Учиха Саске из клана редисок
+				@Date	!	19.10.06
+				1 Part	!	19.10.31 16:47-19.11.01 12:00 =7/10
+				2 Part	!	19.11.01 12:01-19:01 =7/10
+				3 Part	!	19.11.01 22:22-19.11.02 21:56 =7.5/10
+				4 Part	!	19.11.02 21:57-19.11.03 16:43 =7.5/10
+				5 Part	!	19.11.03 16:45-19.11.04 13:55 =7/10
+			техника зеркального перевоплощения
+				@Date	!	19.10.06
+				=19.11.06 18:00-19.11.07 12:00 =7/10
+			все было совсем не так
+				@Date	!	19.10.06
+				1 Part	!	19.10.06 12:00-23:00 =8/10
+				1 Part	!	19.10.06 23:00-19.10.07 12:00 =8/10
+				3 Part	!	19.10.07 12:00-22:45 =8/10
+				4 Part	!	19.10.08 6:40-18:00 =8.5/10
+			жизнь которую я изменю
+				@Date	!	19.10.06
+				1 Book. спасёнение клана учиха		!	20.01.10-20.01.13 21:30 =8.5/10
+					1 Part	!	19.10.22 18:00-19.10.23 9:28 =8/10
+					2 Part	!	19.10.23 9:31-16:45 =8/10
+					3 Part	!	19.10.23 16:50-19.10.24 8:24 =8/10
+				2 Book. начало нового мира		!	20.01.14 7:00-20.01.17 7:40 =8/10
+					1 Part	!	19.10.24 10:40-17:26 =8/10
+					2 Part	!	19.10.24 17:28-19.10.25 1:46 =8/10
+					3 Part	!	19.10.25 8:08-20:40 =8/10
+				3 Book. эпоха возрождения
+					1 Part	!	19.10.25 22:07-19.10.27 1:07 =8/10
+					2 Part	!	19.10.27 12:00-19:23 =8/10
+					3 Part	!	19.10.27 19:25-19.12.29 8:38 =8/10 (читал во время написания)
+			избранные
+				@Date	!	19.10.08
+				0 Book. Prologue. какой придурок вызвал демона?		19.10.08 20:00-21:10 =7/10
+				1 Book. какого биджуу я теперь волшебник?
+					1 Part	!	19.10.08 21:23-19.10.09 7:30 =8/10
+					2 Part	!	19.10.09 7:35-15:28 =8/10
+					3 Part	!	19.10.09 15:30-20:46 =8/10
+					4 Part	!	19.10.09 20:50-19.10.10 6:40 =8/10
+					5 Part	!	19.10.10 6:50-14:50 =8/10
+				2 Book. шиноби скрытого Хогвартса
+					1 Part	!	19.10.10 15:45-22:25 =8/10
+					2 Part	!	19.10.10 22:32-19.10.11 12:42 =8/10
+					3 Part	!	19.10.11 12:45-0:46 =8/10
+					4 Part	!	19.10.12 0:45-19:35 =8/10
+				3 Book. Узумаки Наруто и Дары магии
+					1 Part	!	19.10.12 19:40-3:17 =8/10
+					2 Part	!	19.10.13 3:20-11:50 =8/10
+					3 Part	!	19.10.13 11:55-19:18 =8/10
+					4 Part	!	19.10.13 19:20-19.10.14 16:25 =8/10
+				4 Book. Чакра. Легенда о Саске
+					1 Part	!	19.10.14 16:35-19.10.15 18:00 =8/10
+					2 Part	!	19.10.15 18:02-19.10.18 13:02 =8/10
+					3 Part	!	19.10.18 13:05-19:30 =8/10 (1-11, All)	-20.04.20	=8.5/10 (All)
+			Мать и мачеха
+				1 Book	!	20.03.23 12:00-17:33 =8/10
+				2 Book	!	20.03.23 17:37-20.03.24 10:10 =8/10
+				3 Book	!	20.03.24 10:10-12:20 =8/10 (все что было
+			Буйабесс По русски	!	20.03.24 12:30-15:25 =7/10
+			диссонанс родственных связей	!	20.03.24 15:33-22:56 =8.5/10
+			Непокобелимый
+				1 Book	!	20.03.25 10:20-14:35 =7.5/10
+				2 Book	!	20.03.25 14:36-18:10 =8/10
+				3 Book	!	20.03.25 18:10-20.03.26 10:26 =9/10
+			Цукиеми: и жили они долго и счастливо
+			Игра по фальшивым нотам	!	20.03.26 13:36-18:09 =7.5/10
+		Sergei Zloy
+			@Date	!	18.12.06
+			Path of Dark Mage	!	18.12.06 17:44-18.12.09 6:35 9/10
+				начинающего	!	18.12.06 17:44-18.12.08 2:50 8/10
+				опытного	!	18.12.08 2:52-18.12.09 1:47 9/10
+		Fil Bandileros
+			другой взгляд
+				@Date	!	18.11.20
+				=18.12.06 12:38-17:25 =7/10 (г1ч1-г2ч3 все что было)
+			жизнь номер 2
+				@Date	!	19.01.02
+				=19.01.03 10:38-19:41 =7/10 (все что было, до момента с расследованием лиса)
+			Звезда по имени
+				@Date	!	18.11.19
+				=18.11.19 15:34-
+			Meta-Hobbit	!	18.11.05 11:37-1:35 6/10
+			Мета-Игрок	!	18.11.06-18.11.07 (1-26 все что было) 8/10
+			Сказки русского леса	!	18.11.12 15:35-15:44(0 все что было) 3/10
+			Что? Наша жизнь игра?
+			Хорошо в деревне летом	!	18.11.09 17:50-21:36 7/10
+			Спасибо за рыбу
+				Спасибо за рыбу	!	18.11.14 10:24-18.11.19 15:14 6/10
+				Монарх	!	18.11.12 15:47-18.11.14 10:13 (1-22 все что было) 5/10
+			Инь Янь Хрень	!	18.11.10 7:43-18.11.12 15:31 6/10
+			Фатальная ошибка	!	18.11.08 21:35-18.11.09 17:42 6/10
+			@Date	!	18.10.17
+			The Zadrot
+				=18.11.02-18.11.04 9/10
+				=19.02.11 17:45-19.02.16 11:45 5/10 (1-2 не стал читать)
+			The Boy Who Conquered The Time
+				ГП&МКПВ-B	!	18.10.31 10:27 - 15:32 7/10
+				Туда и обратно, МКПВ-B	!	18.10.19-18.10.20 7/10
+				Сиськи	!	18.11.05 10:20-11:34 (1-7 все что было) 6/10
+				Каникулы мага	!	18.11.07 8:12-15:16 6/10
+				Звёздное время	!	18.11.07 15:20-18.11.08 12:10 (1-23 все что было) 7/10
+				Love and peace	!	18.11.08 12:20-18:14 6/10
+				МКПВ-А	!	18.10.13 -18.10.14 8/10
+				МКПВ-B	!	1-72 Главы (все что было) 18.10.29-18.10.30 9/10
+				МКПВ-C	!	1-27 (все что было) 18.10.31-18.11.01 9/10
+				МКПВ-D	!	сс-тк (Все что было) 18.11.01 8:34-16:14 4/10
+				МКПВ-E	!	1-21 главы (все, что было) 18.10.15-18.10.19 5/10
+	#Manhva
+		The Gamer
+			@Date	!	18.11.04
+			1 Season	!	19.02.11 21:00-19.02.12 22:00 7/10
+			2 Season	!	19.02.12 22:17-19.02.13 15:00 7/10
+			3 Season	!	19.02.13 16:22-19.02.14 10:16 7/10
+			4 Season	!	19.02.14 10:17-21:47 7.5/10 (1-256, all)
+	#Multserial
+		Mr freeman
+			@Date	!	18.08.04
+	#Film
+		Иван Васильевич меняет профессию
+			@Date	!	18.08.04
+		Мегамозг
+			@Date	!	18.08.31
+		Великий защитник
+			@Date	!	18.08.31
+			1
+			2
+		Матрица
+			@Date	!	18.09.01
+		Пол секретный материальчик
+			@Date	!	18.09.12
+		бриллиантовая рука
+			@Date	!	18.09.14
+		12 стульев
+			@Date	!	18.09.14
+		бойцовский клуб
+			@Date	!	18.09.14
+		побег из щоушенка
+			@Date	!	18.09.14
+		зелёная миля
+			@Date	!	18.09.14
+		5 элемент
+			@Date	!	18.09.14
+		Леон киллер
+			@Date	!	18.09.14
+		искусственный
+			@Date	!	разум 18.09.28
+		трасса 60
+			@Date	!	18.10.07
+		Только не они
+			@Date	!	18.10.16
+		Звёздные войны
+			@Date	!	18.11.07
+		аватар легенда об Аанге
+			@Date	!	18.12.04
+		Люди икс
+			@Date	!	18.12.05
+			Дни минувшего будущего	18.12.05 16:00 =7/10
+			апокалипсис
+		терминатор
+			@Date	!	18.12.05
+			1	18.12.05 18:40-18.12.06 8:10 =9/10
+			2	19.04.16 16:25-19.04.17 8:00 =7/10
+			3
+			4
+		чародеи
+			@Date	!	19.01.16
+		Идиократия
+			@Date	!	19.01.26
+		Изобретение лжи
+			@Date	!	19.01.26
+		Властелин колец
+			@Date	!	19.02.06
+			1: Братство кольца
+			2: Две твердыни
+			3: Возвращение короля
+		Хоббит
+			@Date	!	19.02.06
+			1
+			2
+			3
+		Мэри попинс
+			@Date	!	19.02.27
+		Marvel
+			@Date	!	19.03.02
+		Venom
+			@Date	!	19.03.02
+		DC
+			@Date	!	19.03.02
+		иллюзия обмана
+			@Date	!	19.03.05
+			1
+			2
+		Джинг король бандитов
+			@Date	!	19.03.23
+		назад в будущее
+			@Date	!	19.04.15
+			1 Film	!	19.04.15 13:45 =8/10
+			2 Film	!	19.04.15 17:05 =7/10
+			3 Film	!	19.04.15 18:55 =7/10
+		апгрейд
+			@Date	!	19.04.20
+		бегущий по лнзвию
+			@Date	!	19.04.20
+		призрак в доспнхах
+			@Date	!	19.04.20
+		Мстители: война бесконечности
+			@Date	!	19.04.20
+		Все могу
+			@Date	!	19.04.30
+			=19.05.01 12:00 =7/10
+		Падингтон
+			@Date	!	19.05.16
+		они никогда не станут старше
+			@Date	!	19.05.23
+		Начало
+			@Date	!	19.05.24
+		11 друзей Оушена
+			@Date	!	19.07.04
+			=19.07.04 19:50-21:40 =9/10
+		Схватка, 2011
+			@Date	!	19.07.06
+			=19.07.06 13:21-14:50 =7/10
+		Схватка, 1995
+			@Date	!	19.07.06
+			=19.07.06 14:55-
+		День сурка
+			@Date	!	19.07.06
+			=19.07.06 19:23-21:00 =8/10	19.07.07 9:13-
+	#Verses
+		Dozory
+			@Date	!	19.07.11
+			@Authors	!	Sergei Lukyanenko
+			#Books
+				Night	!	20.04.22 15:00-20.04.23 17:25 =8/10
+				Day	!	20.04.23 17:30-20.04.25 8:37 =8/10
+				Twilight	!	20.04.25 11:30-20.04.26 11:40 =8/10
+				Last	!	20.04.26 20:15-20.04.27 12:35 =8/10
+				New	!	20.04.28 22:00-20.04.29 14:10 =8/10
+				Sixth	!	20.04.29 14:30-20.04.30 11:15 =8/10
+		Potteriana
+			@Date	!	20.03.14
+			@Authors	!	Joanne Rowling
+			Harry Potter
+				1.	Философский камень
+				2.	Тайная комната
+				3.	Узник Азкабана
+				4.	Кубок огня
+				5.	Орден феникса
+				6.	Принц-полукровка	!	20.03.14 10:00-20.03.21 12:00 =6.5/10
+				7.	Дары смерти	!	20.03.21 12:05-
+		Lord of Rings
+			@Date	!	18.08.18
+			@Authors	!	John Ronald Ruel Tolkien
+			#Books
+				The Lord of The Rings
+					Братство кольца	!	19.02.02 11:00-19.02.05 11:00 7/10
+					Две башни	!	19.02.05 11:00-20:50 7/10
+					Возвращение короля	!	19.02.06 11:00-19:50 8/10
+				Silmarillion
+				Hobbit
+				Notes
+			#Film
+				The Lord of The Rings
+				Hobbit
+#Nonfiction
+	#Books
+		Alexander Panchin
+			@Date	!	18.09.23
+			Защита от темных искусств
+			Сумма биотехнологий
+		А. Водовозов
+			@Date	!	18.11.25
+			пациент разумный
+		Stephen Hawking
+			Кратчайшая история времени
+			@Date	!	18.09.07
+		Dawkinz
+			@Date	!	18.09.07
+			Расширенный фенотип
+			Эгоистичный ген
+		Karl Marks
+			@Date	!	18.11.03
+			Capital
+#nonsorted
+	#Books
+		Popadantsy from Father's folder
+			@Date	!	18.11.15
+			забытый демон
+				@Date	!	19.01.09
+				=19.01.09 15:00-19.01.11 12:19 =6/10
+
+
+18.11.28		Книга	?			Игра престолов
+18.12.16		Книга	?			Стикс
+18.12.29		Книга	Лавкрафт
+
+18.12.09		Книга					эпоха темного мага	18.12.09 1:47-6:35 =7/10	19.01.03 19:52-19.01.08 15:04 =8/10
+
+19.01.02		Книга	?			Командировка князя Тьмы
+19.01.02		Книга	?			магия и физика
+18.12.06		Книга	?			мыслит, значит существует		18.12.12 10:42-18.12.13 19:31 =7/10
+18.12.06		Книга	?			терминатор
+18.12.06		Книга	?			однажды он прогнётся под нам
+18.12.06		Книга	?			темные волшебники
+18.12.06		Книга	?			маг и его тень
+
+19.01.02		Книга	?			Неистовый шумерский чародей		19.02.01 16:00 =6/10
+18.12.06		Книга	?		Судьба архимага
+		Книга			>	судьба архимага		18.12.09 12:00-18.12.11 14:07 =8/10	19.01.02 10:26-
+		Книга			>	план архимага		18.12.11 14:09-18.12.12 9:54 =6/10 (1-5 1-4 все что было)
+
+18.12.30		Книга	Стругацкие			Трудно быть богом
+
+19.01.03		Книга	?			одержимые		19.01.03 23:00-19.01.08 21:55 =7/10
+19.01.09		Книга	Бессмертник			повелитель кошмаров		19.01.09 7:23-14:08 =7/10
+
+19.01.30		Книга	Хадин Познавший Тьму			Путь наверх		19.01.30 8:20-19:46 =8.5/10 (1-57 все что было)
+19.02.04		Книга	?			Архимаг 7.1 диабло		19.02.07 14:48-20:10 =6.5/10 (1-10 все что было)
+19.02.04		Книга	?			Власть магии
+		Книга					Смертный	19.02.07 20:10-01:23 =7.5/10
+		Книга					Бессмертный	19.02.08 9:00-16:00 =7.5/10
+19.02.08		Книга	?			Цепь событий		19.02.08 16:40-
+19.02.08		Книга	Алессий			Античный чароплет. 1		19.02.09 9:45-19.02.10 14:10 =7.5/10 (1-17 все что было)
+19.02.10		Книга	Даймон Агафо			Маленький монстр		19.02.10 17:00-19.02.11 14:00 =9/10 (1-12 все что было)
+19.02.08		Книга	?			Мира Парадигма		19.02.11 14:10-
+19.02.08		Книга				эльфийский трэш
+		Книга				>	1	19.02.16 13:40-19.02.17 22:00 =7/10	19.08.18 20:06-
+		Книга				>	2	19.02.17 22:00-19.02.18 20:40 =8/10
+		Книга				>	3	19.02.18 20:40-19.02.19 15:40 =8/10
+19.02.08		Книга				объединение необъединимого		19.02.19 16:00-19.02.20 12:00 =7.5/10 (1-28 все что было)	19.02.22 8:15-9:40 =7.5/10 (29-31 все что было)
+19.02.20		Книга				фэйт/архимаг		19.02.20 12:00-19.02.21 14:00 =7/10 (все что было)
+19.02.20		Книга				паладин		19.02.21 15:00-18:00 =7/10 (все что было)
+19.02.08		Книга				путь славления богом		19.02.21 18:30-19.02.22 8:00 =6/10 (все что было)
+19.02.22		Книга				подарок недовольным		19.02.22 12:00-13:40 =6.5/10 (все что вложении)
+19.02.22		Книга				Гарри Поттер и архимаг		19.02.23 12:00-19:40 =7/10
+19.02.23		Книга	alex31			игрок dc
+		Книга					крутой легавый	19.02.23 20:00-19.02.25 8:20 =7/10
+		Книга					антигерой	19.02.25 8:40-19.02.27 18:10 =7/10
+		Книга					несправедливость	19.02.26 18:20-19.02.27 8:50 =5/10 (1-13 все что было)
+19.02.26		Книга	alex31
+19.02.23		Книга				дитя
+		Книга					дитя	19.02.27 12:00-19.02.28 21:40 =7/10
+		Книга					контракт и прочие неприятности	19.02.28 21:50-19.03.02 8:30 =7/10 (все что было 1-28)
+19.02.23		Книга				неудачный выбор
+		Книга					1	19.03.02 12:00-19.03.07 16:00 =8/10	20.01.25 8:00-20.02.01 11:55 =8/10
+		Книга					2	19.03.07 16:00-19.03.11 16:00 =8/10	20.02.01 12:00-20.04.20 =8/10
+		Книга					3	19.03.11 16:10-19.03.12 10:16 =7/10 (все что было 1-13) -20.01.26 19:45 =8.5/10 (до конца)	20.04.20-
+19.03.05		Книга	корнев
+19.03.13		Книга	xp0ft			архимаг		19.03.13 17:00-22:22 =7/10 (все что было 1-13)
+19.03.13		Книга				везуха		19.03.14 17:00-19.03.16 17:30 =7/10
+19.03.13		Книга				вершина		19.03.16 18:00-
+19.03.17		Книга				Наруто
+19.03.17		Книга	jack vance			глаза чужого мира
+19.03.13		Книга	бандилерос			имя мне легион		19.03.21 15:40-
+19.03.23		Книга	walter			Разбор 1 тома Zero no Tsukaima или Сайто и премия Дарвина		19.03.23 14:00-22:30 =7/10	19.11.20-19.11.21 =8/10
+							разбор 2 тома или реальность гасит ответный удар		19.11.21-19.11.22 =8/10
+19.04.02		Книга	Герберт уэлс			война миров
+19.04.02		Книга	толстой			гиперболоид инженера гарена
+19.04.02		Книга	Ефремов			туманность андромеды
+19.04.02		Книга	беляев			элита
+19.04.02		Книга	Беляев
+19.04.02		Книга	Ефремов
+19.04.02		Книга	Герберт уэлс
+19.04.13		Книга	гоголь			мертвые души		19.04.13 15:50-
+19.03.13		Книга				не то не этого я хотел		19.04.20 14:00-18:35 =7.5/10
+19.03.17		Ранобэ			to aru	>
+19.03.17		Ранобэ			>	to aru majutsu no index		20.01.19 8:00-
+19.03.17		Ранобэ			>	to aru kagaku no railgun
+19.03.17		Ранобэ			>	to aru kagaku no accelerator
+19.03.13		Фанфик	tigrewurmut			страж знаний	>
+19.03.13		Фанфик	tigrewurmut			>	начало	19.04.22 17:55-19.04.25 12:55 =7/10
+19.03.13		Фанфик	tigrewurmut			>	2	19.04.25 13:00-19.04.27 12:40 =7/10
+19.03.13		Фанфик	tigrewurmut			>	не герой	19.04.27 12:40-19.04.29 9:05 =7.5/10
+19.03.13		Фанфик	tigrewurmut			>	нг2 ч1	19.04.29 11:05-19:10 =7/10
+19.03.13		Фанфик	tigrewurmut			>	нг2 ч2 в1	19.04.29 19:10-19.04.30 12:45 =,?? оценки нет потому что концовка совершенно непонятная и вообще творится какой-то сюр
+19.03.13		Фанфик	tigrewurmut			>	нг2 ч2 в2	19.04.30 13:00-19.05.01 13:00 =7/10
+19.03.13		Фанфик	tigrewurmut			>	нг3	19.05.01 16:16-17:50 =7/10
+19.03.13		Фанфик	tigrewurmut			фокусник шляпник	>
+19.03.13		Фанфик	tigrewurmut			>	фокусник	19.05.01 17:55-19.05.10 16:25 =7.5/10
+19.03.13		Фанфик	tigrewurmut			>	волшебник	19.05.10 16:30-21:00 =7/10
+19.03.13		Фанфик	tigrewurmut			возвращение героя	-	19.05.11 12:12-19.05.12 19:00 =7/10
+19.04.23		Книга	Астапов Павел			Будни учителя	-	20.02.27-20.02.29 11:30 =8/10
+19.04.23		Книга	Артем Краснов			блабериды	-
+19.04.25		Книга	Айзек Азимов
+19.04.27		Книга	tigrewurmut
+19.04.27		Книга	Конан Дойль			Шерлок Холмс
+19.04.27		Книга	бужков			Сварог
+19.04.27		Книга	Лукьяненко
+19.04.27		Комикс	Marvel
+		Книга
+19.04.27		Комикс	DC
+
+18.09.02		Игра				Deus Ex
+18.09.19		Игра				Fallout
+18.12.02		Игра				Assasin's creed
+19.01.04		Сериал			Ивановы ивановы
+		Сериал			>	1
+		Сериал			>	2
+19.03.20		Видео-Комикс				земля королей
+19.04.27		Сериал			Шерлок (Советский)
+19.04.27		Сериал			Шерлок (Роберт Дауни)
+19.04.27		Сериал			Шерлок (Камбербэтч)
+19.05.12		?		Bubble	майор гром
+19.05.12		?				шоу трумена
+19.05.23		Книга				Биология добра и зла
+19.05.23		Игра				observation
+19.06.19		Манга			kanokon			19.06.20 0:40-19.06.21 17:00 =7/10
+19.06.19		Радий Полонский
+19.06.22					ведьмак
+19.06.22					люди в черном
+19.06.22					звёздные войны
+19.06.22					любовь смерть роботы
+19.06.22					чёрное зеркало
+19.07.28		Манга			Тетрадь Смерти
+						1		19.07.28 14:43-19:01 =8/10
+						2		19.07.28 19:02-21:24 =8/10
+						3		19.07.29 12:28-15:06 =8/10
+						4		19.07.29 15:06-17:30 =8/10
+						5		19.07.29 17:31-20:36 =8/10
+19.08.11		Книга				мемнох дьявол
+19.08.12		Книга				трудно быть богом
+19.08.12		Книга				пикник на обочине
+19.08.20		Фанфик	шэтэл-соркен			новые горизонты		19.08.20 13:00-19.08.21 13:53 =8/10 (все что было)
+19.08.20		Фанфик				воля к жизни		19.08.21 14:00-19.08.22 21:52 =8/10
+19.08.20		Фанфик				техномансер		19.08.23 14:00-19.08.25 18:31 =7/10
+19.08.26		Фанфик			в тени правителей			19.08.26 15:00-19.08.27 10:33 =6/10
+					>	тьма закрывающая знания		19.08.27 10:45-22:50 =7/10
+					>	великие кровавые игры		19.08.27 23:00-19.08.28 1:20 =7/10 (все что было до 7)
+19.08.29		Книга				ирьенин		19.08.29 18:00-19.09.01 21:40 =7.5/10
+19.09.16					Одиссей покидает Итаку
+19.09.23					недоверчивые умы
+19.09.23					объясняя религию
+19.03.13					эффект мага			19.09.24 21:00- =7.5
+19.09.27					Две стороны медали: безумие			-19.09.27 20:51 =7.5/10
+19.09.30					Попаданец в Яманака Ино			19.09.30 11:00-19.10.02 16:31 =7.5/10
+						рецепт апокалипсиса от учиха
+							ч1	19.10.18 19:40-19.10.19 19:40 =8/10
+							ч2	19.10.19 19:45-19.10.20 9:45 =8/10
+							ч3	19.10.20 9:50-20:50 =8/10
+						рецепт апокалипсиса 2		19.10.20 21:40-19.10.21 19:31 =7.5/10
+						рецепт апокалипсиса 3		19.10.21 19:35-19.10.22 17:14 =8/10
+						спэшлы		19.10.17 16:25-17:52 =8/10
+19.10.26					юнлинг			19.10.28 12:03-19.10.31 16:34 =7.5/10
+19.03.13						дважды озадачен		19.11.19 10:10-19.11.20 13:26 =8.5/10
+19.11.21						два нуля		19.11.22 7:00-22:15 =8/10
+19.11.21						Амулет
+							амулет. начало	19.11.23 7:00-19:00 =7.5/10
+							амулет. наследие Слизерина	19.11.23 19:05-19.11.25 14:35 =7.5/10
+							3	19.11.25 14:40-15:43 =7/10
+19.12.28		Книга	Логинов			Свет за окошком		19.12.28 14:30-19.12.29 9:36 =8/10
+
+20.02.05						Заводной апельсин		20.03.22 9:55-12:25 =6/10
+ещё очень давно					Астаргоргарот			20.03.02 12:05-19:35 =8/10
+
+20.03.29	Фанфик	Манга				Реинкарнация: Монстер
+20.03.29	Фанфик	Аниме				Старшая школа мертвецов
+Lectures
+	Pogruzheniye v psychology
+		Date    !   20.03.29
+		References
+			Books
+				Нет кузнечика в траве
+				Коллекнионер
+				Лишенные совести
+					Authors	!	Роберт Хэйр
+				Мудрость психопатов
+					Authors	!	Кевин Даттан
+				Психиатрические антисоциальные личности
+					Authors	!	Нэнси но фривенс
+			Film
+				Проект Флорида
+				Законопослушный Гражданин
+				Cogitation (2011)	!	20.04.01 14:15-16:13 8/10
+				Infection	!	20.04.01 -14:10 6.5/10
+Videos
+	?
+		Date    !   20.03.29
+			Film
+				Хроники Нарнии
+				Лабиринты Ехо
+				Лабиринт фавна
+				Перси Джексон
+				Звёздная пыль
+				Дом странных детей мисс Перегрин
+				Бесконечная история
+Reddit
+	Date    !   20.04.03
+	Film
+		Молчание ягнят
+		американский психопат
+		Ганнибал
+School
+	References
+		Books
+			Fiction
+				герой нашего времени`
