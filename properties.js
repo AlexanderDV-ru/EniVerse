@@ -2579,6 +2579,9 @@ add(`Naruto
 			Feel of Look
 			Yaki
 			Want of Blood
+			Step
+				Tree
+				Water
 		#r-5[y]
 			#Misc[y]
 				Telescope
@@ -2586,6 +2589,16 @@ add(`Naruto
 		#Artefacts
 			#r-5[y]
 				#Swords of Fog`)
+add(`Chernovik
+	@Sources[y]
+		#Books
+			#Fantasy
+				Chernovik
+	Features
+		Functional`)
+add(`JoJo Bizzare
+	@Languages[y]
+		Japanese`)
 add(`Fate
 	@Languages[y]
 		Japanese
