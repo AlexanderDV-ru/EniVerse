@@ -51,12 +51,10 @@ function add(adding){
 	props.universesConfig+=	adding
 }
 add(`Myverse
-	@Authors[y]
-		Me
-	@Languages[y]
-		Russian
 	@Sources[y]
-		#Fanfics
+		#Fiction
+			#Fanfics
+				Myverse
 	/*Classification
 	/*Entity without shell, how names
 	Without	!	w
@@ -512,6 +510,19 @@ add(`Myverse
 			en	!	Energy
 		#Other
 			Motion
+				Planing
+				Levitation
+				Teleport
+				Gravity
+				Archimeds law
+				Magic
+				Shupaltsa
+				Mob
+				Force
+				Vector
+					Direction
+					Module
+					Full
 			Time
 				Tempoflucation
 				Back
@@ -571,17 +582,6 @@ add(`Myverse
 				Absorption
 				Heal
 				Sealing
-				Telekinesis
-					Planing
-					Levitation
-					Teleport
-					Gravity
-					Archimeds law
-					Magic
-					Shupaltsa
-					Mob
-					Force
-					Vector
 				Illusion
 					Optic
 					Holo
@@ -661,7 +661,6 @@ add(`Myverse
 					Obolochka
 					Gravitation
 					Antimagic
-					Telekinesis
 					Levitation
 					Shupaltsa
 					Field
@@ -737,8 +736,6 @@ add(`Myverse
 				Love
 				Music
 				Domestic
-				Empathy
-				Telepathy
 				Meteo
 					Weather
 					Klimat
@@ -752,6 +749,8 @@ add(`Myverse
 					Volt
 				Estestvennaya
 				Mental
+					Empathy
+					Telepathy
 					Protection
 					Battle
 					Work
@@ -958,7 +957,6 @@ add(`Myverse
 								Drobyashiy
 								Rubyaskiy
 			Empathy
-			Telepathy
 			Avatar
 			Zhrets
 			Feeling
@@ -1420,10 +1418,10 @@ add(`Portal
 			#r-5[y]
 				#Portal Gun`)
 add(`Marvel
-	@Languages[y]
-		English
 	@Sources[y]
-		#Comics
+		#Fiction
+			#Comics
+				Marvel
 	Verse
 		@Type
 			Multi
@@ -1431,7 +1429,12 @@ add(`Marvel
 	Creatures
 		#Mind
 			#r-5[y]
+				#X-Man
+					Ksavier
+					Logan
 				#Human
+					Entony Stark
+					Govard Stark
 				#Zen-Hoberis
 				#Klyntar
 				#Kree
@@ -1445,10 +1448,22 @@ add(`Marvel
 	Features
 		#r-5[y]
 			X-Man
+				Action
+					Mental
+						Telepathy
+							@Ksavier
+					Regen
+						Cell
+							@Logan
 	Materials
 		#Metals
 			Vibranium
 			Adamantium
+	Organizations
+		Stark
+			@Entony Stark
+		X-Man
+			@Ksavier
 	Objects
 		#Artefacts
 			#r-4[y]
@@ -1569,9 +1584,9 @@ add(`New horizonts
 			Shari
 		#r-5[y]
 			Telepath
-	Actions
-		#r-5[y]
-			Biokinesis`)
+	Elements
+		#Plasma
+			Bio`)
 add(`Voshozhdeniye geroya shita
 	@Languages[y]
 		Japanese
@@ -2318,8 +2333,13 @@ add(`Rudazov
 			Chaos
 			Death
 		#Other
+			Meteo
+				Weather
+				Klimat
+				Kataklism
 			Space
 			Time
+			Motion	!	Telekinesis
 		#Misc
 			Shadow
 			Blood
@@ -2349,7 +2369,6 @@ add(`Rudazov
 				Sensor
 				Illusion
 				Flying
-				Telekinesis
 				Teleport
 				Enchantment
 				Name
@@ -2361,10 +2380,6 @@ add(`Rudazov
 				Music
 				Domestic
 				Soul
-				Meteo
-					Weather
-					Klimat
-					Kataklism
 				Volt
 					Voodoo
 					Volt
@@ -2377,6 +2392,7 @@ add(`Rudazov
 				Clairvoyance
 					True prophecy
 				Mental
+					Telepathy
 				Magic of Ghost
 				Alchemy
 				Twilight-Shadow
@@ -2457,13 +2473,10 @@ add(`SCP Foundation
 			#r-5[y]
 				#SCP's`)
 add(`Naruto
-	@Authors[y]
-		Masasi Kisimoto
-	@Languages[y]
-		Japanese
 	@Sources[y]
-		#Anime
-		#Manga
+		#Fiction
+			#Jarse
+				Naruto
 	Verse
 		@Type
 			Uni
@@ -2476,9 +2489,40 @@ add(`Naruto
 			#r-5[y]
 				#Human
 					#l5.0
-						Uzumaki Naruto
-						Uchiha	Sasuke
-						Uchiha	Itachi
+						Uzumaki
+							Naruto
+							Kushina
+							Mito
+						Namikaze
+							Minato
+						Hatake
+							Kakashi
+						Umino
+							Iruka
+						Sarutobi
+							Asuma
+							Hiruzen
+						Shimura
+							Danzo
+						Hyuga
+							Hinata
+						Ootsutsuki
+							Kaguya
+						Kaguya
+							Kimimaro
+						Orochimaru
+						Jiraiya
+						Ranmaru
+						Senju
+							Tsunade
+							Hashirama
+							Tobirama
+						Uchiha
+							Madara
+							Izuna
+							Obito
+							Sasuke
+							Itachi
 				#Frog
 				#Snake
 				#Monkey
@@ -2514,7 +2558,9 @@ add(`Naruto
 				Uchiha
 				Hyuga
 				Senju
+				Ootsutsuki
 				Kurama
+				Kaguya
 			Dojutsu
 				#Byaku tree
 					Byakugan
@@ -2585,9 +2631,36 @@ add(`Naruto
 		#r-5[y]
 			#Misc[y]
 				Telescope
+	Organizations
+		#Gakurezato
+			#Fire
+				Konoha
+					ANBU
+						Normal
+						Root
+			#Water
+			#Fog
+			#Lightning
+			#Air
+				Suna
+	Countries
+		Fire
+		Water
+		Fog
+		Lightning
+		Air
+		//
+		Rice
+		River
+		Star
+		Demon
+		Bear
+		Bird
+		Tea
 	Objects
 		#Artefacts
 			#r-5[y]
+				Star
 				#Swords of Fog`)
 add(`Chernovik
 	@Sources[y]
@@ -2865,34 +2938,10 @@ add(`Boy Who Conquered Time
 		#Other
 			Time`)
 add(`Potteriana
-	@Authors[y]
-		Joanne Rowling
-	@Languages[y]
-		English
 	@Sources[y]
-		#Film
-			"Fantasic Beasts"
-				1.	"And where they lives"
-				2.	"Prestupleniya grindevalda"
-				3.
-				4.
-				5.
-			"Harry Potter"
-				1.	"Harry Potter and Philosopher's Stone"
-				2.	"Harry Potter and Secret Room"
-				3.	"Harry Potter and Uznik Azkabana"
-				4.	"Harry Potter and Kubok Ognya"
-				5.	"Harry Potter and Order of Phoenix"
-				6.	"Harry Potter and Half-Blood Price"
-				7.	"Harry Potter and Deathly Hallows"
-		#Books
-			1.	"Harry Potter and Philosopher's Stone"
-			2.	"Harry Potter and Secret Room"
-			3.	"Harry Potter and Uznik Azkabana"
-			4.	"Harry Potter and Kubok Ognya"
-			5.	"Harry Potter and Order of Phoenix"
-			6.	"Harry Potter and Half-Blood Price"
-			7.	"Harry Potter and Deathly Hallows"
+		#Fiction
+			#Verse
+				Potteriana
 	Materials
 		#Liquid
 			#r-5[y]
@@ -3043,7 +3092,7 @@ add(`Potteriana
 			"Draconiforce" (2)	/* — оживляет статую мини-дракончика в настоящего мини-дракончика или превращает в мини-дракончика предметы небольшой массы[15].
 			"Incarciforce" (2)	/* — превращает люстру в клетку[9].
 			"Inflatus" (2)	/* — заставляет объект надуваться, как воздушный шар[5].
-			"InFormsus" (2)	/* — показывает информацию о существе-цели в GBA версии игры «Гарри Поттер и узник Азкабана»[21].
+			"Informus" (2)	/* — показывает информацию о существе-цели в GBA версии игры «Гарри Поттер и узник Азкабана»[21].
 			"Calvorio" (2)	/* — заклинание выпадения волос[12].
 			"Cantis" (2)	/* — заклинание, которое заставляет поражённую им цель петь[12].
 			"Carpe retractum" (2)	/* — Чары Захвата и Притяжения. Притягивает человека к цели (или цель к человеку). В игре «Гарри Поттер и узник Азкабана» это заклинание использовал Рон на первых же занятиях по Защите от Тёмных Искусств[15].
@@ -4119,14 +4168,16 @@ add(`Toaru Majutsu no Index
 								@Darkmatter
 									@Rank
 										2
-					#Action
-						Telekinesis
-							Vector
-								@Accelerator
-									@Rank
-										1
-									#Needs
-										Touch
+					#Elements
+						#Other
+							Motion
+								Vector
+									Direction
+										@Accelerator
+											@Rank
+												1
+											#Needs
+												Touch
 			e+5	!	Mage
 				Index
 					@Index
@@ -4286,11 +4337,19 @@ add(`Noragami
 				Ghost
 				Demon-Loa
 				God_0`)
+add(`My Little Pony`)
+add(`Winks`)
 add(`Slayers
-	@Languages[y]
-		Japanese
 	@Sources[y]
-		#Anime
+		#Fiction
+			#Anime
+				Slayers
+	Creatures
+		#Mind
+			#r-5[y]
+				#Human
+					#l6.0?
+						Lina Invers
 	Users
 		#r-5[y]
 			e+5	!	Mage
@@ -5210,20 +5269,10 @@ add(`Atack on Titan
 	@Sources[y]
 		#Anime`)
 add(`Code Geass
-	@Languages[y]
-		Japanese
 	@Sources[y]
-		#Anime
-	@Sources[y]
-		Anime
-			R1
-			R2
-			1
-			2
-			3
-			4
-			5
-			6
+		#Fiction
+			#Anime
+				Code Geass
 	Creatures
 		#Mind
 			#r-5[y]
@@ -5236,25 +5285,26 @@ add(`Code Geass
 						Charlz
 						Marianna
 						C.C.
-	Users
+	Actions
 		#r-5[y]
-			Geass
-				Control
-					@Lelouch
-				Memory
-					@Charlz
-				Soul
-					@Marianna
-				Time Stop
-					@Roland
-				Love
-					@C.C.
-				?
-					@V.V.
-				Mental
-					@Mao
-			Antigeass
-				@Jeremia
+			Mental
+				Geass
+					Control
+						@Lelouch
+					Memory
+						@Charlz
+					Soul
+						@Marianna
+					Time Stop
+						@Roland
+					Love
+						@C.C.
+					?
+						@V.V.
+					Telepathy
+						@Mao
+				Antigeass
+					@Jeremia
 		#r-6[y]
 			Code Geass
 				@C.C.
@@ -5273,153 +5323,173 @@ props.sourcesConfig	=	`#Rationality
 	#Books
 		HPMoR
 			@References
-				#Books
-					Атлант расправил плечи
-					#Fiction
-						Дуэйн Диана			Как стать волшебником		18.11.01-
+				#Fiction
+					#Books
+						Дуэйн Диана
+							Как стать волшебником
 						дипломированный чародей
-					#Other
-						Less Wrong
-						Feynman Lectures
-						Gyodelya Eshera Baha
-						принятие решений в неопределенности
+				#Nonfiction
+					#Books
+						Атлант расправил плечи
+					Less Wrong
+					Feynman Lectures
+					Gyodelya Eshera Baha
+					принятие решений в неопределенности
 			@Date	!	18.07.17
 			@Authors	!	Элиезер Юдковский
-			=18.07.26-18.08.04 10/10
+			=18.07.26-18.08.04 10.0
 			=20.04.03 13:34-
 #Fiction
-	#Anime
+	#Javerse
 		Naruto
+			@Languages	!	Japanese
+			@Authors	!	Masasi Kisimoto
 			@Date	!	19.02.03
-			1 Season	!	19.03.04 12:00- =6/10
-				001-010	!	20.01.04 =7/10
-				010-019	!	20.01.04 =6/10
-				019-040	!	20.01.04-20.01.05 =7/10
-				040-065	!	20.01.05 =7/10
-				066-067	!	20.01.06 8:40-11:39 =7/10
-				068-080	!	20.01.06 11:40-16:45 =7/10
-				081-085	!	20.01.06 16:50-19:24 =7/10
-				086-100	!	20.01.06 20:15-20.01.07 10:58 =7/10
-				101-106	!	20.01.07 11:00-13:13 =7/10
-				107-135	!	20.01.07 13:15-20.01.08 10:55 =7/10
-				136-141	!	20.01.08 10:55-13:36 =7/10
-				142-147	!	20.01.08 13:37-15:42 =7/10
-				148-151	!	20.01.08 15:45-17:04 =7/10
-				152-161	!	20.01.08 17:05-20:38 =7/10
-				162-168	!	20.01.09 9:48-12:59 =7/10
-				169-186	!	20.01.09 13:00-20:40 =7/10
-				187-202	!	20.01.09 20:42-20.01.10 11:00 =7/10
-				203-208	!	20.01.10 11:00-13:08 =7/10
-				209-212	!	20.01.10 13:10-17:25 =7/10
-				213-215	!	20.01.10 17:26-19:40 =7/10
-				216-220	!	20.01.10 19:40-21:25 =8/10
+			#Anime
+				1 Season	!	19.03.04 12:00-?		6.0
+					001-010	!	20.01.04				7.0
+					010-019	!	20.01.04				6.0
+					019-040	!	20.01.04-20.01.05		7.0
+					040-065	!	20.01.05				7.0
+					066-067	!	20.01.06 8:40-11:39		7.0
+					068-080	!	20.01.06 11:40-16:45	7.0
+					081-085	!	20.01.06 16:50-19:24	7.0
+					086-100	!	20.01.06 20:15-20.01.07 10:58	7.0
+					101-106	!	20.01.07 11:00-13:13	7.0
+					107-135	!	20.01.07 13:15-20.01.08 10:55	7.0
+					136-141	!	20.01.08 10:55-13:36	7.0
+					142-147	!	20.01.08 13:37-15:42	7.0
+					148-151	!	20.01.08 15:45-17:04	7.0
+					152-161	!	20.01.08 17:05-20:38	7.0
+					162-168	!	20.01.09 9:48-12:59		7.0
+					169-186	!	20.01.09 13:00-20:40	7.0
+					187-202	!	20.01.09 20:42-20.01.10 11:00	7.0
+					203-208	!	20.01.10 11:00-13:08	7.0
+					209-212	!	20.01.10 13:10-17:25	7.0
+					213-215	!	20.01.10 17:26-19:40	7.0
+					216-220	!	20.01.10 19:40-21:25	8.0
+				2 Season
+					001-	!	20.01.11 7:45-
+			#Manga
+	#Anime
+		High School of Dead
+			@Date	!	20.03.29
+			@Source	!	Fanfic
+		Demons High School
+			@Date	!	19.03.17
+		Zero no Tsukaima
+			@Date	!	19.03.17
+			1 Season	!	19.03.18 23:00-19.03.19 19:20 8.5
+			2 Season	!	19.03.19 22:22-19.03.20 14:40 7.0
+			3 Season	!	19.03.20 14:45-23:45 7.0
+			4 Season	!	19.03.21 06:30-14:45 8.0
+		Sword Art Online
+			@Date	!	19.03.21
+			1 Season	!	19.03.24 13:40-19.03.25 14:00 8.0
 			2 Season
-				001-	!	20.01.11 7:45-
-			Demons High School			@Date	!	19.03.17					>
-			Zero no Tsukaima			@Date	!	19.03.17					>
-										>	1		19.03.18 23:00-19.03.19 19:20 =8.5/10
-										>	2		19.03.19 22:22-19.03.20 14:40 =7/10
-										>	3		19.03.20 14:45-23:45 =7/10
-										>	4		19.03.21 06:30-14:45 =8/10
-			Sword Art Online			@Date	!	19.03.21					>
-								Аниме			>	1		19.03.24 13:40-19.03.25 14:00 =8/10
-											>	2
-								Аниме			>	3
-								Аниме			>	4
-								Аниме			>	5
-			Ходячий замок			@Date	!	19.03.21		Аниме
-			Код Гиасс			@Date	!	19.03.21		Аниме
-								Аниме			>	R1		19.07.30 10:41-22:45 =8/10
-											>	R2		19.07.30 22:47-19.08.04 12:17 =8/10
-											>	1
-											>	2
-											>	3
-											>	4
-											>	5
-											>	6
-			Toaru
-				@Date	!	19.03.17
-				Toaru majutsu no index
-					1 Season	!	19.11.05 6:00-19:06 =7.5/10
-					2 Season	!	19.11.05 20:12-19.11.07 15:25 =8/10
-					3 Season	!	19.11.07 21:11-19.11.10 7:48 =7.5/10
-				Toaru kagaku no railgun
-					1 Season	!	19.04.16 18:08-19.04.17 22:24 =7/10	20.01.19-20.01.20 21:45 =8/10
-					2 Season	!	19.05.02 12:50-19... 19.11.01 22:15-19.11.04 22:45 =7.5/10	20.01.21 10:10-20.01.23 13:00 =7.5/10
-				Toaru kagaku no accelerator
-					1 Season	!	19.11.04 15:00-22:45 =8/10
-			Bleach
-				@Date	!	19.03.17
-				1		19.08.04 15:00-
-			Fate
-				@Date	!	19.03.17
-			One peace
-				@Date	!	19.03.22
-			Lupen
-				@Date	!	19.03.23
-			Uq holder
-				@Date	!	19.03.25
-			RWBY
-				@Date	!	19.04.23
-			Seishun Buta Yaro wa Bunny Girl-senpai no Yume wo Minai
-				@Date	!	19.06.13
-				=19.06.13 23:30-
-			Kono Subarashii Sekai ni Shukufuku o
-				@Date	!	19.06.16
-			kanokon
-				@Date	!	19.06.18
-				=19.06.18 15:30-19.06.19 4:30 =7/10
-			Death Note
-				@Date	!	19.06.27
-				=19.06.27 8:01-19.06.28 9:01 =8/10
-				1-10?	! =9.5	19.06.28 11:00-20:15 =9/10
-				-31?	! =7
-				31-36?	 !=8.5
-				37	 !=9
-			Seilor Moon
-				@Date	!	19.07.06
-					20.01.30-
-			Fullmetal Alchemist
-				@Date	!	19.07.06
-			Atack on Titan
-				@Date	!	19.07.06
-			Detective Konan
-				@Date	!	19.07.06
-			Pokemon
-				@Date	!	19.07.06
-			Mob Psycho 100
-				Source
-					Bad Choice
-				Anime
-					1 season    !   20.05.03-
-					2 season    !   -20.05.06 10:40 9/10
-			Tokyo Ghoul
-				@Date	!	19.07.06
-				1 Season	!	19.07.07 19:22-19.07.08 6:32 =8/10
-				2 Season	!	19.07.08 6:34-12:57 =6/10
-				3 Season	!	19.07.08 13:00-
-			My hero academy
-				@Date	!	19.09.11
-				1 Season	!	19.09.11 11:00-15:00 =7/10
-				2 Season	!	19.09.11 15:10-19.09.14 10:00 =7/10
-				3 Season	!	19.09.14 10:05-19.09.15 09:50 =7/10
-			Noragami
-				@Date	!	19.09.16
-				1 Season	!	19.09.16 12:45-21:23 =8/10
-				2 Season. Aragoto	!	19.09.22 9:35-22:05 =8.5/10
-			Overlord
-				@Date	!	19.10.03
-			One punch man
-				@Date	!	19.10.16
-				1 Season	!	19.10.16 8:10-18:10 =8/10
-				2 Season	!	19.10.16 18:15-19.10.17 13:31 =8/10
-			Hataraku Maou-sama
-				@Date	!	20.01.01
-			Assassination Classroom
-				@Date	!	20.02.05
-				=20.02.05 17:00-20.02.07 17:55 =8/10
+			3 Season
+			4 Season
+			5 Season
+		Ходячий замок
+			@Date	!	19.03.21
+		Code Geass
+			@Languages
+				Japanese
+			@Date	!	19.03.21
+			R1	!	19.07.30 10:41-22:45 8.0
+			R2	!	19.07.30 22:47-19.08.04 12:17 8.0
+			1 Film
+			2 Film
+			3 Film
+			4 Film
+			5 Film
+			6 Film
+		Toaru
+			@Date	!	19.03.17
+			Toaru majutsu no index
+				1 Season	!	19.11.05 6:00-19:06 =7.5/10
+				2 Season	!	19.11.05 20:12-19.11.07 15:25 =8/10
+				3 Season	!	19.11.07 21:11-19.11.10 7:48 =7.5/10
+			Toaru kagaku no railgun
+				1 Season	!	19.04.16 18:08-19.04.17 22:24 =7/10	20.01.19-20.01.20 21:45 =8/10
+				2 Season	!	19.05.02 12:50-19... 19.11.01 22:15-19.11.04 22:45 =7.5/10	20.01.21 10:10-20.01.23 13:00 =7.5/10
+			Toaru kagaku no accelerator
+				1 Season	!	19.11.04 15:00-22:45 =8/10
+		Bleach
+			@Date	!	19.03.17
+			1		19.08.04 15:00-
+		Fate
+			@Date	!	19.03.17
+		One peace
+			@Date	!	19.03.22
+		Lupen
+			@Date	!	19.03.23
+		Uq holder
+			@Date	!	19.03.25
+		RWBY
+			@Date	!	19.04.23
+		Seishun Buta Yaro wa Bunny Girl-senpai no Yume wo Minai
+			@Date	!	19.06.13
+			=19.06.13 23:30-
+		Kono Subarashii Sekai ni Shukufuku o
+			@Date	!	19.06.16
+		kanokon
+			@Date	!	19.06.18
+			=19.06.18 15:30-19.06.19 4:30 =7/10
+		Death Note
+			@Date	!	19.06.27
+			=19.06.27 8:01-19.06.28 9:01 =8/10
+			1-10?	! =9.5	19.06.28 11:00-20:15 =9/10
+			-31?	! =7
+			31-36?	 !=8.5
+			37	 !=9
+		Seilor Moon
+			@Date	!	19.07.06
+				20.01.30-
+		Fullmetal Alchemist
+			@Date	!	19.07.06
+		Atack on Titan
+			@Date	!	19.07.06
+		Detective Konan
+			@Date	!	19.07.06
+		Pokemon
+			@Date	!	19.07.06
+		Mob Psycho 100
+			Source
+				Bad Choice
+			Anime
+				1 season    !   20.05.03-
+				2 season    !   -20.05.06 10:40 9/10
+		Tokyo Ghoul
+			@Date	!	19.07.06
+			1 Season	!	19.07.07 19:22-19.07.08 6:32 =8/10
+			2 Season	!	19.07.08 6:34-12:57 =6/10
+			3 Season	!	19.07.08 13:00-
+		My hero academy
+			@Date	!	19.09.11
+			1 Season	!	19.09.11 11:00-15:00 =7/10
+			2 Season	!	19.09.11 15:10-19.09.14 10:00 =7/10
+			3 Season	!	19.09.14 10:05-19.09.15 09:50 =7/10
+		Noragami
+			@Date	!	19.09.16
+			1 Season	!	19.09.16 12:45-21:23 =8/10
+			2 Season. Aragoto	!	19.09.22 9:35-22:05 =8.5/10
+		Overlord
+			@Date	!	19.10.03
+		One punch man
+			@Date	!	19.10.16
+			1 Season	!	19.10.16 8:10-18:10 =8/10
+			2 Season	!	19.10.16 18:15-19.10.17 13:31 =8/10
+		Hataraku Maou-sama
+			@Date	!	20.01.01
+		Assassination Classroom
+			@Date	!	20.02.05
+			=20.02.05 17:00-20.02.07 17:55 =8/10
+	#Manga
+		#Languages	!	Japanese
 	#Ranobe
-		королевская битва
+		@Languages	!	Japanese
+		King's Battle
 			@Date	!	19.03.24
 		Sword Art Online
 			@Date	!	19.03.25
@@ -5462,12 +5532,23 @@ props.sourcesConfig	=	`#Rationality
 			3 Season
 				=20.02.17 12:29-20.02.18 8 =8/10
 	#Books
-		Strugatskie
+		#Duein Diana
+			@Languages	!	English
+			How to will be wizard	!	18.11.01-
+		#Strugatskie
+			@Languages	!	Russian
 			@Date	!	20.03.08
 			Мир Полудня
 			Понедельник начинается в субботу
 			Гадкие лебеди
 			Сказка о тройке
+		Myths of Ktulhu
+			@Authors	!	Lovecraft
+			@Date	!	18.12.29
+		Sticks
+			@Date	!	18.12.16
+		Game of Thrones
+			@Date	!	18.11.28
 		Rudazov
 			@Authors	!	Alexander Rudazov
 			Sumer nights
@@ -5603,12 +5684,18 @@ props.sourcesConfig	=	`#Rationality
 		о дивный новый мир
 			@Date	!	18.09.23
 	#Games
+		@Languages	!	English
 		The elder Scrolls
 			@Date	!	18.12.30
 			Skyrim
 		Dragon Age
 			@Date	!	18.12.30
 	#Fanfics
+		@Languages	!	Russian
+		Myverse
+			@Authors	!	Me
+			@Date	!	20.05.10
+			@Languages	!	Russian
 		Harry Potter and Three Old Ladies
 			@Authors	!	Argus Filchenkov
 			@References
@@ -5736,7 +5823,10 @@ props.sourcesConfig	=	`#Rationality
 				МКПВ-C	!	1-27 (все что было) 18.10.31-18.11.01 9/10
 				МКПВ-D	!	сс-тк (Все что было) 18.11.01 8:34-16:14 4/10
 				МКПВ-E	!	1-21 главы (все, что было) 18.10.15-18.10.19 5/10
+	#Manihua
+		@Languages	!	Chinese
 	#Manhva
+		@Languages	!	Korean
 		The Gamer
 			@Date	!	18.11.04
 			1 Season	!	19.02.11 21:00-19.02.12 22:00 7/10
@@ -5745,6 +5835,7 @@ props.sourcesConfig	=	`#Rationality
 			4 Season	!	19.02.14 10:17-21:47 7.5/10 (1-256, all)
 	#Multserial
 		Mr freeman
+			@Languages	!	Russian
 			@Date	!	18.08.04
 	#Film
 		Иван Васильевич меняет профессию
@@ -5799,16 +5890,6 @@ props.sourcesConfig	=	`#Rationality
 			@Date	!	19.01.26
 		Изобретение лжи
 			@Date	!	19.01.26
-		Властелин колец
-			@Date	!	19.02.06
-			1: Братство кольца
-			2: Две твердыни
-			3: Возвращение короля
-		Хоббит
-			@Date	!	19.02.06
-			1
-			2
-			3
 		Мэри попинс
 			@Date	!	19.02.27
 		Marvel
@@ -5857,29 +5938,51 @@ props.sourcesConfig	=	`#Rationality
 		День сурка
 			@Date	!	19.07.06
 			=19.07.06 19:23-21:00 =8/10	19.07.07 9:13-
-	#Verses
+	#Verse
 		Dozory
+			@Languages	!	Russian
 			@Date	!	19.07.11
 			@Authors	!	Sergei Lukyanenko
 			#Books
-				Night	!	20.04.22 15:00-20.04.23 17:25 =8/10
-				Day	!	20.04.23 17:30-20.04.25 8:37 =8/10
-				Twilight	!	20.04.25 11:30-20.04.26 11:40 =8/10
-				Last	!	20.04.26 20:15-20.04.27 12:35 =8/10
-				New	!	20.04.28 22:00-20.04.29 14:10 =8/10
-				Sixth	!	20.04.29 14:30-20.04.30 11:15 =8/10
+				1 Book.	Night	!	20.04.22 15:00-20.04.23 17:25 =8/10
+				2 Book.	Day	!	20.04.23 17:30-20.04.25 8:37 =8/10
+				3 Book.	Twilight	!	20.04.25 11:30-20.04.26 11:40 =8/10
+				4 Book.	Last	!	20.04.26 20:15-20.04.27 12:35 =8/10
+				5 Book.	New	!	20.04.28 22:00-20.04.29 14:10 =8/10
+				6 Book.	Sixth	!	20.04.29 14:30-20.04.30 11:15 =8/10
+			#Film
+				1 Film.	Night
+				2 Film.	Day
 		Potteriana
+			@Languages	!	English
 			@Date	!	20.03.14
 			@Authors	!	Joanne Rowling
-			Harry Potter
-				1.	Философский камень
-				2.	Тайная комната
-				3.	Узник Азкабана
-				4.	Кубок огня
-				5.	Орден феникса
-				6.	Принц-полукровка	!	20.03.14 10:00-20.03.21 12:00 =6.5/10
-				7.	Дары смерти	!	20.03.21 12:05-
+			#Books
+				"Harry Potter"
+					1 Book.	"Harry Potter and Philosopher's Stone"
+					2 Book.	"Harry Potter and Secret Room"
+					3 Book.	"Harry Potter and Uznik Azkabana"
+					4 Book.	"Harry Potter and Kubok Ognya"
+					5 Book.	"Harry Potter and Order of Phoenix"
+					6 Book.	"Harry Potter and Half-Blood Price"	!	20.03.14 10:00-20.03.21 12:00 =6.5/10
+					7 Book.	"Harry Potter and Deathly Hallows"	!	20.03.21 12:05-
+			#Film
+				"Fantasic Beasts"
+					1 Film.	"And where they lives"
+					2 Film.	"Prestupleniya grindevalda"
+					3 Film.
+					4 Film.
+					5 Film.
+				"Harry Potter"
+					1 Film.	"Harry Potter and Philosopher's Stone"
+					2 Film.	"Harry Potter and Secret Room"
+					3 Film.	"Harry Potter and Uznik Azkabana"
+					4 Film.	"Harry Potter and Kubok Ognya"
+					5 Film.	"Harry Potter and Order of Phoenix"
+					6 Film.	"Harry Potter and Half-Blood Price"
+					7 Film.	"Harry Potter and Deathly Hallows"
 		Lord of Rings
+			@Languages	!	English
 			@Date	!	18.08.18
 			@Authors	!	John Ronald Ruel Tolkien
 			#Books
@@ -5892,7 +5995,15 @@ props.sourcesConfig	=	`#Rationality
 				Notes
 			#Film
 				The Lord of The Rings
+					@Date	!	19.02.06
+					1: Братство кольца
+					2: Две твердыни
+					3: Возвращение короля
 				Hobbit
+					@Date	!	19.02.06
+					1
+					2
+					3
 #Nonfiction
 	#Books
 		Alexander Panchin
@@ -5919,11 +6030,6 @@ props.sourcesConfig	=	`#Rationality
 			забытый демон
 				@Date	!	19.01.09
 				=19.01.09 15:00-19.01.11 12:19 =6/10
-
-
-18.11.28		Книга	?			Игра престолов
-18.12.16		Книга	?			Стикс
-18.12.29		Книга	Лавкрафт
 
 18.12.09		Книга					эпоха темного мага	18.12.09 1:47-6:35 =7/10	19.01.03 19:52-19.01.08 15:04 =8/10
 
@@ -6084,7 +6190,6 @@ props.sourcesConfig	=	`#Rationality
 ещё очень давно					Астаргоргарот			20.03.02 12:05-19:35 =8/10
 
 20.03.29	Фанфик	Манга				Реинкарнация: Монстер
-20.03.29	Фанфик	Аниме				Старшая школа мертвецов
 Lectures
 	Pogruzheniye v psychology
 		Date    !   20.03.29
