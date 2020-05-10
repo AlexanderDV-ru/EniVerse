@@ -1,31 +1,30 @@
-/*--- Name: EniVerses/Vesion: 0.2.1a/Authors: AlexanderDV/Description: Properties EniVerses .js. ---*/
+/*--- Name: EniVerses/Vesion: 0.2.2a/Authors: AlexanderDV/Description: Properties EniVerses .js. ---*/
 //Properties
-var props	=	{
-	config	:	{
-		inSyms	:	"$",
-		offset	:	"\t",
-		newLine	:	"\n",
-		snippets	:	{
-			"!"	:	"\\c\\b\n\\c\t=\\a",
-			"№"	:	"\\c\\b\n\\c\t\\a"
-		},
-		localNameDepr	:	"---Value for deprecated localName mechanic---",
-		parent	:	"{",
-		parentElement	:	".",
-		comment	:	"/*",
-		currentRealization	:	"_",
-		tag	:	"[$]",
-		tags	:	{
-			del	:	"u",
-			hide	:	"y"
-		},
-		otherType	:	"@",
-		classificationonal	:	"#",
-		toRedact	:	"?",
-		synonymSplit	:	"/",
-		isIn	:	":",
-		isInSplit	:	";"
-	}
+var props	=	{}
+props.config	:	{
+	inSyms	:	"$",
+	offset	:	"\t",
+	newLine	:	"\n",
+	snippets	:	{
+		"!"	:	"\\c\\b\n\\c\t=\\a",
+		"№"	:	"\\c\\b\n\\c\t\\a"
+	},
+	localNameDepr	:	"---Value for deprecated localName mechanic---",
+	parent	:	"{",
+	parentElement	:	".",
+	comment	:	"/*",
+	currentRealization	:	"_",
+	tag	:	"[$]",
+	tags	:	{
+		del	:	"u",
+		hide	:	"y"
+	},
+	otherType	:	"@",
+	classificationonal	:	"#",
+	toRedact	:	"?",
+	synonymSplit	:	"/",
+	isIn	:	":",
+	isInSplit	:	";"
 }
 var removeFromResult	=	[props.config.tag.replace(props.config.inSyms,props.config.tags.hide),props.config.tag.replace(props.config.inSyms,props.config.tags.del)]
 props.universesConfig	=	"Eniverse"
@@ -6230,3 +6229,31 @@ School
 		Books
 			Fiction
 				герой нашего времени`
+
+
+
+
+// Universal local storage initialization
+var storage = window.localStorage
+function storageValue(key,val)
+{
+	var vals
+	try {
+	vals= JSON.parse(storage[programInfo.name])
+	} catch (e) {
+
+	}
+	if(!vals)
+		vals={}
+	if(arguments.length>=2)
+		vals[key]=val
+	storage[programInfo.name]=JSON.stringify(vals)
+	return vals[key]
+}
+
+// Messages language initialization by default value
+var messagesLanguage='ru'
+// Function for getting message by key
+var getMsg=function(key, lang){
+	return props.msgs[lang||messagesLanguage][key]
+}

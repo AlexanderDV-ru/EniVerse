@@ -1,26 +1,14 @@
-//--- Name: EniVerses/Vesion: 0.2.1a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
-//--- Start of standard initialization
-//Program info
+//--- Name: EniVerses/Vesion: 0.2.2a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
 var programInfo={
 	Name : "EniVerses",
-	Version : "0.2.1a",
+	Version : "0.2.2a",
 	Authors : "AlexanderDV"
 }
-
 programInfo.Title= programInfo.Name + " v" + programInfo.Version + " by " + programInfo.Authors
 document.title=programInfo.Title
-
-// Universal local storage initialization
-var storage = window.localStorage
-
-// MessagesLanguage initialization by default value
-var messagesLanguage='ru'
-// Function for getting message by key
-var getMsg=function(key, lang)
-{
-	return props.msgs[lang||messagesLanguage][key]
-}
 // End of standard initialization ---
+
+
 universesTextarea.value=props.universes.join("\n")
 
 var json=parsePythonic(props.universesConfig)
