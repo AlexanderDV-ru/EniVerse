@@ -4770,6 +4770,21 @@ add(`Neon Genesis Evangelion
 	Features
 		#r-5[y]
 			Kid`)
+add(`Kir Bulychov
+	Objects
+		Artefacts
+			#r-5[y]
+				#22 Century Tech
+					Time-Machine
+					Meylaphone
+					Videophone
+					Spaceship
+	Creatures
+		#Mind
+			#r-5[y]
+				#Human
+					Seleznyov(a)
+						Alice`)
 add(`Master and Margarita
 	@Authors[y]
 		Bulgakov
