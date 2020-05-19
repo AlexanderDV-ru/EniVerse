@@ -453,11 +453,6 @@ add(`Myverse
 		#r-3[y]
 		#r-4[y]
 		#r-5[y]
-			#Wands
-			#Rods
-			#Staffs
-			#Grimoires
-			#Spheres
 		#r-6[y]
 		#r-7[y]
 	Elements	!	n
@@ -508,11 +503,18 @@ add(`Myverse
 			bi	!	Bio
 			en	!	Energy
 		#Other
-			Motion
+			#Variable
+				Name
+				Word
+				Number
+				Vector
+			#Motion
+				Normal
 				Planing
 				Levitation
 				Teleport
 				Gravity
+				Quantum
 				Archimeds law
 				Magic
 				Shupaltsa
@@ -551,9 +553,48 @@ add(`Myverse
 		5	!	m,	Elements
 		6	!	e,	Energies
 		7	!	t,	Task
-
 	/*	Every of Forms/Creatures can be every of Elements/Energies/Materials/Emotions
 	Directions	!	d
+		#Logies
+			Magical
+				Number	!	Arithmancy
+				Word	!	Lexomancy
+				Name
+				Element	!	Elementaly
+			Real
+				Number	!	Math
+				Word	!	Linguistics
+				Matter	!	Chemistry
+				World	!	Physics
+				Creature!	Biology
+					Rasteniye
+					Animal
+					Bactery
+					Virus
+					Simple
+					Mushroom
+				Razum	!	Neurology
+				Emotion	!	Psyhology
+				Health	!	Medicine
+				Care	!	Gigiene
+				Timeline!	History
+				Star	!	Astronomy
+				People	!	Sociology
+				Space	!	Geometry
+					2d	!	Planemetry
+					3d	!	Stereometry
+				Meteo	!	Meteorology
+		#Mancy
+			Control
+			Resistance
+			Heal
+			Regen of energy
+			Logy
+			Create
+			Remove
+			Power
+				Up
+				Down
 		#Creatures
 		#Materials
 		/*Types of actions for ability
@@ -582,12 +623,23 @@ add(`Myverse
 				Heal
 				Sealing
 				Illusion
+					#Feel Type
+						Tactile
+						Visual
+						Kinetical
+						Audial
+						Emotional
+						Mental
+						Smell
+						Vkus
+						Temperature
+						Time
 					Optic
 					Holo
 					Genjutsu
 					Emo
 					Mental
-					Dense	/*Not equals tactil
+					Dense	/*Not equals tactile
 					Dimension
 					Reality
 				Materialization
@@ -716,8 +768,15 @@ add(`Myverse
 					From universe
 				Curse
 				Vow
+					Contract
+					Shellar
+					Private
+					Big Forces
 				Bless
 				Summon
+					Teleport
+					Zov
+					Request
 				Atack
 				Protection
 				Transformation
@@ -735,6 +794,9 @@ add(`Myverse
 				Love
 				Music
 				Domestic
+					Other
+					Kulinary
+					Building
 				Meteo
 					Weather
 					Klimat
