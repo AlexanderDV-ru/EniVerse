@@ -8,7 +8,6 @@ programInfo.Title= programInfo.Name + " v" + programInfo.Version + " by " + prog
 document.title=programInfo.Title
 // End of standard initialization ---
 
-
 universesTextarea.value=props.universes.join("\n")
 
 var json=parsePythonic(props.universesConfig)

@@ -397,11 +397,16 @@ add(`Myverse
 			Armor
 			Aura
 			Protection
-		#Weapon
+		#WF
+			Fist
 			Lash
 			Sword
 			Blade
 			Torch
+			Hammer
+		#Weapon
+			Cannonball
+			Press
 			Arrow
 			Spear
 			Shuriken
@@ -476,10 +481,14 @@ add(`Myverse
 			Shadow
 			Picture
 			Void
+			Twilight
 			Ethervoid
 			Explosion
 			Crystall
 			Acid
+			Bludfire/Hellfire/Cursed Fire/Fiendfyre
+			Phoenix
+			Avadakedavra
 			Magnetism
 			Rock
 			Plasma
@@ -584,6 +593,9 @@ add(`Myverse
 					2d	!	Planemetry
 					3d	!	Stereometry
 				Meteo	!	Meteorology
+				Enocomy
+				Progamming
+				Disign
 		#Mancy
 			Control
 			Resistance
