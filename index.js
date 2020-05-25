@@ -10,6 +10,89 @@ document.title=programInfo.Title
 
 universesTextarea.value=props.universes.join("\n")
 
+
+//Other method
+function toLines(cfg){
+	var linesOfCfg=[]
+	var path=[]
+	var last
+	var lns=cfg.split("\n")
+	for(var v=0;v<lns.length;v++){var vv=new RegExp("^["+props.syntax.offset+"]{0,}")
+		linesOfCfg[v]={
+			offset:lns[v].match(vv)[0]||"",
+			content:lns[v].replace(vv,"").split(props.syntax.parent)[0],
+			parents:lns[v].replace(vv,"").split(props.syntax.parent)[1]?lns[v].replace(vv,"").split(props.syntax.parent)[1].split(props.syntax.enumeration):[],
+		}
+
+
+		for(var v1=0;v1<20&&linesOfCfg[v].offset.length<path.length;v1++){
+			path.pop()
+			last=path[path.length-1]
+		}
+		for(var v1=0;v1<20&&linesOfCfg[v].offset.length>path.length;v1++)
+			path.push(v1==0?last:"")
+		last=linesOfCfg[v].content
+
+
+
+		linesOfCfg[v].path=path,
+		linesOfCfg[v].pathStr=path.join(props.syntax.path)
+	}
+	return linesOfCfg
+}
+var linesOfCfg=toLines(props.universesConfig)
+function fromParents(lines){
+	var linesOfCfg=[]
+	for(var v=0;v<lines.length;v++)
+	{
+		linesOfCfg.push(lines[v])
+		for(var v0=0;v0<lines[v].parents.length;v0++)
+		{
+			var pi
+			for(var v1=0;v1<lines.length;v1++)
+				if(lines[v1].pathStr+props.syntax.parentElement+lines[v1].content==lines[v].parents[v0])
+					pi=v1
+			console.log(lines[v1],lines.length,lines[v].parents,pi,pi+1<lines.length?lines[pi+1]:"NN",pi<lines.length?lines[pi]:"NN");
+			for(var v1=pi+1;v1<lines.length&&lines[v1].offset.length>lines[pi].offset.length;v1++)
+				linesOfCfg.push({
+					offset:multiplyStr(props.syntax.offset,lines[v1].offset.length-lines[pi].offset.length+lines[v].offset.length),
+					content:lines[v1].content,
+					parents:lines[v1].parents,
+					path:lines[v1].path,
+					pathStr:lines[v1].pathStr
+				})
+			linesOfCfg.push({
+				offset:lines[v].offset+props.syntax.offset,
+				content:"",
+				parents:[],
+				path:(lines[v].pathStr+props.syntax.parentElement+lines[v].content).split(props.syntax.parentElement),
+				pathStr:(lines[v].pathStr+"."+lines[v].content)
+			})
+		}
+	}
+	return linesOfCfg
+}
+linesOfCfg=fromParents(linesOfCfg)
+function mergeSame(lines,lvl){
+	var linesOfCfg=[]
+	for(var v=0;v<lines.length;v++)
+		for(var v1=v+1;v1<lines.length;v1++)
+		{
+			linesOfCfg.push(lines[v])
+			if(lines[v].content==lines[v1].content)
+				for(;v1<lines.length&&lines[v].offset.length<lines[v1].offset.length;v1++)
+				{
+					linesOfCfg.splice(v,0,lines[v1])
+				}
+		}
+	return linesOfCfg
+}
+//linesOfCfg=mergeSame(linesOfCfg)
+for(var v=0;v<linesOfCfg.length;v++)
+	console.log(linesOfCfg[v].offset+linesOfCfg[v].content/*,0,linesOfCfg[v].pathStr*/);
+
+//End of other method
+
 var json=parsePythonic(props.universesConfig)
 json=json["Eniverse"]// TODO:
 console.log(json);
@@ -66,14 +149,14 @@ function pars(curJson){
 		}
 		v=stack[stack.length-1][2][stack[stack.length-1][0]]+""
 
-		var firstPart=v.split(props.config.parent)[0],secondPart=v.split(props.config.parent)[1]
-		//if(v.indexOf(props.config.parent)!=-1)
+		var firstPart=v.split(props.syntax.parent)[0],secondPart=v.split(props.syntax.parent)[1]
+		//if(v.indexOf(props.syntax.parent)!=-1)
 		//console.log("z1",stack[0][0],stack[stack.length-1][0],v,firstPart,secondPart);
-		if(secondPart&&firstPart.indexOf(props.config.comment)==-1)
+		if(secondPart&&firstPart.indexOf(props.syntax.comment)==-1)
 		{
-			var curPart=secondPart.split(replAllRegExp(props.config.parent))[0]
+			var curPart=secondPart.split(replAllRegExp(props.syntax.parent))[0]
 			var par=json
-			var curPartSplited=curPart.split(replAllRegExp(props.config.parentElement))
+			var curPartSplited=curPart.split(replAllRegExp(props.syntax.parentElement))
 			for(var v2 in curPartSplited)
 				par=par[curPartSplited[v2]]
 			var cjsonnewName=mergeWithReplace(par,stack[stack.length-1][1][v])
@@ -127,7 +210,7 @@ for(var v in json)
 		function ff(o,n){
 			for(var v3v in o)
 			{
-				var v3=v3v.split(props.config.comment)[0]
+				var v3=v3v.split(props.syntax.comment)[0]
 				if(!n[v3])
 					n[v3]={}
 				n[v3][v]={}
@@ -144,12 +227,12 @@ function replAllRegExp(text, flags){
 }
 byCategoriesTextarea.value=""
 var tags	=	{
-	hide:	props.config.tag.replace(replAllRegExp(props.config.inSyms),props.config.tags.hide),
-	del	:	props.config.tag.replace(replAllRegExp(props.config.inSyms),props.config.tags.del)
+	hide:	props.syntax.tag.replace(replAllRegExp(props.syntax.inSyms),props.syntax.tags.hide),
+	del	:	props.syntax.tag.replace(replAllRegExp(props.syntax.inSyms),props.syntax.tags.del)
 }
 for(var v in newJson)
 {
-	byCategoriesTextarea.value+=props.config.newLine+v
+	byCategoriesTextarea.value+=props.syntax.newLine+v
 	function ff2(o,n,c){
 		var na	=	{}
 		for(var v2 in n)
@@ -169,13 +252,13 @@ for(var v in newJson)
 			}
 		for(var v2 in na)
 		{
-			byCategoriesTextarea.value+=(props.config.newLine+(!v2.endsWith(tags.hide)?v2:v2.substr(0,v2.length-tags.hide.length)).replace(/\s+$/g,"")).replace(props.config.newLine,props.config.newLine+c)+(!v2.endsWith(tags.hide)?props.config.isIn+" "+na[v2].join(props.config.isInSplit+" ").replace(/\s+/g," "):"")
+			byCategoriesTextarea.value+=(props.syntax.newLine+(!v2.endsWith(tags.hide)?v2:v2.substr(0,v2.length-tags.hide.length)).replace(/\s+$/g,"")).replace(props.syntax.newLine,props.syntax.newLine+c)+(!v2.endsWith(tags.hide)?props.syntax.isIn+" "+na[v2].join(props.syntax.isInSplit+" ").replace(/\s+/g," "):"")
 			for(var v22 in n)
-				if(v22.split(props.config.newLine)[0].replace(/\s+$/g,"")==v2)
+				if(v22.split(props.syntax.newLine)[0].replace(/\s+$/g,"")==v2)
 					if(n[v22][""])
-						ff2("",n[v22][""],c+props.config.offset)
+						ff2("",n[v22][""],c+props.syntax.offset)
 		}
 	}
-	ff2("",newJson[v],props.config.offset)
+	ff2("",newJson[v],props.syntax.offset)
 }
 byCategoriesTextarea.value=byCategoriesTextarea.value.replace(new RegExp("("+removeFromResult.join(")|(")+")"),"")

@@ -1,7 +1,7 @@
 /*--- Name: EniVerses/Vesion: 0.2.2a/Authors: AlexanderDV/Description: Properties EniVerses .js. ---*/
 //Properties
 var props	=	{}
-props.config	:	{
+props.syntax	=	{
 	inSyms	:	"$",
 	offset	:	"\t",
 	newLine	:	"\n",
@@ -24,29 +24,31 @@ props.config	:	{
 	toRedact	:	"?",
 	synonymSplit	:	"/",
 	isIn	:	":",
-	isInSplit	:	";"
+	isInSplit	:	";",
+	enumeration	: ";",
+	path	:	".",
 }
-var removeFromResult	=	[props.config.tag.replace(props.config.inSyms,props.config.tags.hide),props.config.tag.replace(props.config.inSyms,props.config.tags.del)]
+var removeFromResult	=	[props.syntax.tag.replace(props.syntax.inSyms,props.syntax.tags.hide),props.syntax.tag.replace(props.syntax.inSyms,props.syntax.tags.del)]
 props.universesConfig	=	"Eniverse"
 props.universes	=	[]
 props.offset	=	1
 function add(adding){
 	var res=""
-	var aSpl=adding.split(props.config.newLine)
+	var aSpl=adding.split(props.syntax.newLine)
 	for(var v in aSpl)
 	{
 		var add=aSpl[v],rrr="1234567890"//"([\\t ]+|[\\t ])"
-		for(var v2 in props.config.snippets)
+		for(var v2 in props.syntax.snippets)
 			if(add.indexOf(v2)!=-1)
-				add=props.config.snippets[v2].replace(/[\\][c]/g,add.match(/^(\t+|\t|)/)[0]).replace(/[\\][b]/g,normalName(add.split(v2)[0].substr(add.match(/^(\t+|\t|)/)[0].length),rrr)).replace(/[\\][a]/g,normalName(add.split(v2)[1],rrr))
-		res+=props.config.newLine+add
+				add=props.syntax.snippets[v2].replace(/[\\][c]/g,add.match(/^(\t+|\t|)/)[0]).replace(/[\\][b]/g,normalName(add.split(v2)[0].substr(add.match(/^(\t+|\t|)/)[0].length),rrr)).replace(/[\\][a]/g,normalName(add.split(v2)[1],rrr))
+		res+=props.syntax.newLine+add
 		if(v==0)
 			props.universes.push(normalName(add,rrr))
 	}
 	adding=""
-	for(var v in res.split(props.config.newLine))
-		adding+=props.config.newLine+res.split(props.config.newLine)[v].match(/^(\t+|\t|)/)[0]+normalName(res.split(props.config.newLine)[v].substr(res.split(props.config.newLine)[v].match(/^(\t+|\t|)/)[0].length))
-	adding	=	(props.config.newLine+adding.replace(new RegExp("["+props.config.offset+"]","g"),props.config.offset)).replace(new RegExp("["+props.config.newLine+"]","g"),props.config.newLine+multiplyStr(props.config.offset,props.offset))
+	for(var v in res.split(props.syntax.newLine))
+		adding+=props.syntax.newLine+res.split(props.syntax.newLine)[v].match(/^(\t+|\t|)/)[0]+normalName(res.split(props.syntax.newLine)[v].substr(res.split(props.syntax.newLine)[v].match(/^(\t+|\t|)/)[0].length))
+	adding	=	(props.syntax.newLine+adding.replace(new RegExp("["+props.syntax.offset+"]","g"),props.syntax.offset)).replace(new RegExp("["+props.syntax.newLine+"]","g"),props.syntax.newLine+multiplyStr(props.syntax.offset,props.offset))
 	props.universesConfig+=	adding
 }
 add(`Myverse
@@ -450,16 +452,7 @@ add(`Myverse
 		Death
 		/*Love and peace
 		Peace
-	Materials	!	m
-		#Categories
-		#r-0[y]
-		#r-1[y]
-		#r-2[y]
-		#r-3[y]
-		#r-4[y]
-		#r-5[y]
-		#r-6[y]
-		#r-7[y]
+	Materials{Eniverse.Myverse.Splitting	!	m
 	Elements	!	n
 		#Basic
 			Fire
