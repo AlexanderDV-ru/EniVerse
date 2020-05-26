@@ -1,4 +1,4 @@
-<!--- Name: EniVerses/Vesion: 0.1.5a/Authors: AlexanderDV/Description: Main EniVerses .html. --->
+<!--- Name: EniVerses/Vesion: 0.2.5a/Authors: AlexanderDV/Description: Main EniVerses .html. --->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,16 +7,12 @@
 
 		<style>
 			body {
-				background-color: #333;
 			}
 		</style>
 	</head>
 	<body>
-		<textarea id="byUniversesTextarea"></textarea>
-		<br>
-		<textarea id="byCategoriesTextarea"></textarea>
-		<br>
-		<textarea id="universesTextarea"></textarea>
+		<input onchange="byPath(this.value)">
+		<div id="universesByDiv"></div>
 
 		<!-- Libs -->
 
@@ -25,7 +21,13 @@
 		<!-- Scripts -->
 
 		<!-- Properties script, can be changed to your script -->
-		<script type="text/javascript" src="properties.js"></script>
+		<script type="text/javascript" src="prop/properties.js"></script>
+		<script type="text/javascript" src="prop/sources.js"></script>
+		<script type="text/javascript" src="prop/anime.js"></script>
+		<script type="text/javascript" src="prop/games.js"></script>
+		<script type="text/javascript" src="prop/fantasy.js"></script>
+		<script type="text/javascript" src="prop/sci-fi.js"></script>
+		<script type="text/javascript" src="prop/fanfics.js"></script>
 		<!-- Main scripts -->
 		<script type="text/javascript" src="index.js"></script>
 

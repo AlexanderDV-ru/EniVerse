@@ -1,14 +1,12 @@
-//--- Name: EniVerses/Vesion: 0.2.2a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
+//--- Name: EniVerses/Vesion: 0.2.5a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
 var programInfo={
 	Name : "EniVerses",
-	Version : "0.2.2a",
+	Version : "0.2.5a",
 	Authors : "AlexanderDV"
 }
 programInfo.Title= programInfo.Name + " v" + programInfo.Version + " by " + programInfo.Authors
 document.title=programInfo.Title
 // End of standard initialization ---
-
-universesTextarea.value=props.universes.join("\n")
 
 
 //Other method
@@ -88,9 +86,25 @@ function mergeSame(lines,lvl){
 	return linesOfCfg
 }
 //linesOfCfg=mergeSame(linesOfCfg)
-for(var v=0;v<linesOfCfg.length;v++)
-	console.log(linesOfCfg[v].offset+linesOfCfg[v].content/*,0,linesOfCfg[v].pathStr*/);
 
+function byPath(path,st){
+	var lll=document.getElementsByClassName(path)
+	for(var v=0;v<lll.length;v++)
+	{
+		lll[v].style.display=st!=undefined?st:st=(lll[v].style.display=="none"?"":"none")
+		byPath(lll[v].id,st)
+	}
+}
+var t='<input type="checkbox" onclick="this.childNodes[0].style.display=this.checked?\\"\\"":\\"none\\">',t2="</input>"
+console.log(t);
+var result=""
+for(var v=0;v<linesOfCfg.length;v++)
+{
+	var ttt=(linesOfCfg[v].content.startsWith("#")?"blue":(linesOfCfg[v].content.startsWith("@")?"red":(linesOfCfg[v].content.startsWith("/*")?"green":"black")))
+	console.log(linesOfCfg[v].offset+linesOfCfg[v].content/*,0,linesOfCfg[v].pathStr*/);
+	result+="<span id=\"cfgr-path-"+linesOfCfg[v].pathStr+"."+linesOfCfg[v].content+"\" class=\"type-"+ttt+"  cfgr-path-"+linesOfCfg[v].pathStr+"\" onclick=\"byPath('cfgr-path-"+linesOfCfg[v].pathStr+"."+linesOfCfg[v].content+"')\" style=\"margin-left:"+linesOfCfg[v].offset.length*20+"px;color:"+  ttt+"\">"+linesOfCfg[v].content+"<br></span>"
+}
+universesByDiv.innerHTML=result
 //End of other method
 
 var json=parsePythonic(props.universesConfig)
@@ -191,7 +205,7 @@ function pars(curJson){
 		//console.log("b4",stack.length,stack[stack.length-1][0],stack[stack.length-1][2].length);
 		//console.log("z2",stack[0][0],stack[stack.length-1][0],v,firstPart,secondPart);
 	}
-}
+}/*
 pars(json)
 function assembleSt(n,c){
 	var r=""
@@ -199,7 +213,6 @@ function assembleSt(n,c){
 			r+="\n"+c+v+(Object.keys(n[v]).length>(n[v][""]?1:0)?assembleSt(n[v],c+"\t"):"")
 	return r
 }
-byUniversesTextarea.value=assembleSt(json,"")
 var newJson={}
 for(var v in json)
 {
@@ -225,14 +238,14 @@ for(var v in json)
 function replAllRegExp(text, flags){
 	return new RegExp("["+text.split("").join("][")+"]", flags)
 }
-byCategoriesTextarea.value=""
+var bycat=""
 var tags	=	{
 	hide:	props.syntax.tag.replace(replAllRegExp(props.syntax.inSyms),props.syntax.tags.hide),
 	del	:	props.syntax.tag.replace(replAllRegExp(props.syntax.inSyms),props.syntax.tags.del)
 }
 for(var v in newJson)
 {
-	byCategoriesTextarea.value+=props.syntax.newLine+v
+	bycat+=props.syntax.newLine+v
 	function ff2(o,n,c){
 		var na	=	{}
 		for(var v2 in n)
@@ -252,7 +265,7 @@ for(var v in newJson)
 			}
 		for(var v2 in na)
 		{
-			byCategoriesTextarea.value+=(props.syntax.newLine+(!v2.endsWith(tags.hide)?v2:v2.substr(0,v2.length-tags.hide.length)).replace(/\s+$/g,"")).replace(props.syntax.newLine,props.syntax.newLine+c)+(!v2.endsWith(tags.hide)?props.syntax.isIn+" "+na[v2].join(props.syntax.isInSplit+" ").replace(/\s+/g," "):"")
+			bycat+=(props.syntax.newLine+(!v2.endsWith(tags.hide)?v2:v2.substr(0,v2.length-tags.hide.length)).replace(/\s+$/g,"")).replace(props.syntax.newLine,props.syntax.newLine+c)+(!v2.endsWith(tags.hide)?props.syntax.isIn+" "+na[v2].join(props.syntax.isInSplit+" ").replace(/\s+/g," "):"")
 			for(var v22 in n)
 				if(v22.split(props.syntax.newLine)[0].replace(/\s+$/g,"")==v2)
 					if(n[v22][""])
@@ -261,4 +274,4 @@ for(var v in newJson)
 	}
 	ff2("",newJson[v],props.syntax.offset)
 }
-byCategoriesTextarea.value=byCategoriesTextarea.value.replace(new RegExp("("+removeFromResult.join(")|(")+")"),"")
+universesByDiv.innerHTML=bycat.replace(new RegExp("("+removeFromResult.join(")|(")+")"),"")*/
