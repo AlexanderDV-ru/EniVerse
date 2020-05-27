@@ -1,4 +1,4 @@
-<!--- Name: EniVerses/Vesion: 0.2.5a/Authors: AlexanderDV/Description: Main EniVerses .html. --->
+<!--- Name: EniVerses/Vesion: 0.2.7a/Authors: AlexanderDV/Description: Main EniVerses .html. --->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,11 +8,18 @@
 		<style>
 			body {
 			}
+			.line:hover{
+				background-color: #0099da40 !important;
+			}
 		</style>
 	</head>
 	<body>
 		<input onchange="byPath(this.value)">
-		<div id="universesByDiv"></div>
+		<br>
+		<textarea id="funcArea"></textarea>
+		<br>
+		<button id="genButton" class="$generate$"></button>
+		<table id="universesByDiv"></table>
 
 		<!-- Libs -->
 
@@ -28,6 +35,7 @@
 		<script type="text/javascript" src="prop/fantasy.js"></script>
 		<script type="text/javascript" src="prop/sci-fi.js"></script>
 		<script type="text/javascript" src="prop/fanfics.js"></script>
+		<script type="text/javascript" src="prop/events.js"></script>
 		<!-- Main scripts -->
 		<script type="text/javascript" src="index.js"></script>
 

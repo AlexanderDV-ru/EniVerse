@@ -1,61 +1,61 @@
 
-add(`Assasin's Creed
+add(`/Assasin's Creed
 	@Sources[y]
-		#Games`)
-add(`Deus Ex
+		%Games`)
+add(`/Deus Ex
 	@Sources[y]
-		#Games`)
-add(`Dragon Age
+		%Games`)
+add(`/Dragon Age
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
+		%Games
 	Space
 		n
 			Fade
-			~1.0 ~0.0	!	Yav
+			~1.0 ~0.0	!=	Yav
 	Materials
-		#Metals
+		%Metals
 			Lyrium`)
-add(`Dragonlance
+add(`/Dragonlance
 	@Languages[y]
 		English`)
-add(`Dungeons and Dragons
+add(`/Dungeons and Dragons
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games`)
-add(`Fallout
+		%Games`)
+add(`/Fallout
 	@Sources[y]
-		#Games`)
-add(`League of Legends
+		%Games`)
+add(`/League of Legends
 	@Languages[y]
 		English`)
-add(`Mass Effect
+add(`/Mass Effect
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
+		%Games
 	Creatures
-		#Mind
-			#r-5[y]
-				#Human
+		%Mind
+			%r-5[y]
+				%Human
 	Users
-		#r-5[y]
-			e+4	!	Biotic
+		%r-5[y]
+			e+4	!=	Biotic
 	Energies
-		#r-5[y]
-			+4	!	Psy?`)
-add(`Minecraft
+		%r-5[y]
+			+4	!=	Psy?`)
+add(`/Minecraft
 	@Authors[y]
-		Notch	!	Markus Persson
+		Notch	!=	Markus Persson
 		Jebb
 		Grum
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
-			#Computer
+		%Games
+			%Computer
 				Pre-Classic
 				Classic
 				Indev
@@ -66,52 +66,52 @@ add(`Minecraft
 				Bedrock
 	Space
 		o
-			Hell	!	Nether World
+			Hell	!=	Nether World
 			End
-			Matteral	!	Over World
+			Matteral	!=	Over World
 	Features
-		#r-4[y]
-			#w-1	!	Spectator Mode
+		%r-4[y]
+			%w-1	!=	Spectator Mode
 	Users
-		#r-6[y]
-			#Immortal	!	Godmode
-		#r-7[y]
-			e+7	!	Creative gamemode, Admin perms
+		%r-6[y]
+			%Immortal	!=	Godmode
+		%r-7[y]
+			e+7	!=	Creative gamemode, Admin perms
 	Creatures
-		#r-3[y]
-			#Pig
-			#Cow
-			#Horse
-			#Rabbit
-			#Sheep
-		#r-4[y]
-			#w+1	!	Undead
-				#Zombie
-				#Skeleton
-					#Normal
-					#Wither
+		%r-3[y]
+			%Pig
+			%Cow
+			%Horse
+			%Rabbit
+			%Sheep
+		%r-4[y]
+			%w+1	!=	Undead
+				%Zombie
+				%Skeleton
+					%Normal
+					%Wither
 			Spider
-		#r-5[y]
-			#Dragon
-				#Ender
-			#Enderman
-			#Creeper
-			#Ifrit
-			#Wither
-			#Ghust
+		%r-5[y]
+			%Dragon
+				%Ender
+			%Enderman
+			%Creeper
+			%Ifrit
+			%Wither
+			%Ghust
 	Objects
-		#Artefacts
-			#r-5[y]
-				#Ender's
-					#Eye
-					#Egg
-					#Perl
+		%Artefacts
+			%r-5[y]
+				%Ender's
+					%Eye
+					%Egg
+					%Perl
 	Materials
-		#Metals
+		%Metals
 			Iron
 			Gold
 			Netherit
-		#Powder
+		%Powder
 			Gun
 			Fire
 			Light
@@ -121,7 +121,7 @@ add(`Minecraft
 			Gold
 		Obsidian
 		Bedrock
-		#Gems
+		%Gems
 			Diamond
 			Emerald
 			Lapis Lazurit
@@ -139,23 +139,23 @@ Big Reactor
 Rotarycraft
 Thermal Expansion
 	Materials
-		#Metals
+		%Metals
 			Platina
 			Silver
 Thaumcraft
 Bloodmagic
 Mekanism
 	Materials
-		#Metals
+		%Metals
 			Osmium
-		#Alloy
+		%Alloy
 			Steel
 Forestry
 	Materials
 		Apatite
 Industrialcraft
 	Materials
-		#Metals
+		%Metals
 			Iridium
 			Silver
 			Tin
@@ -164,163 +164,163 @@ Industrialcraft
 			Plutonium
 		Matter
 	Objects
-		#Artefacts
-			#r-5[y]
-				#Armor
-					#Quantum
-					#Nano
-				#Steelarms
-					#Nanosaber
-				#Weapon
-					#Laser
-			#r-7[y]
-				#Developer Tool	!	Debug Tool, Adamant Rod
+		%Artefacts
+			%r-5[y]
+				%Armor
+					%Quantum
+					%Nano
+				%Steelarms
+					%Nanosaber
+				%Weapon
+					%Laser
+			%r-7[y]
+				%Developer Tool	!=	Debug Tool, Adamant Rod
 Buildcraft
 Ender IO
 	Objects
-		#Artefacts
-			#r-5[y]
-				#Armor
-					#Ender
-				#Steelarms
-					#Ender
+		%Artefacts
+			%r-5[y]
+				%Armor
+					%Ender
+				%Steelarms
+					%Ender
 Gravisuite
 	Objects
-		#Artefacts
-			#r-5[y]
-				#Armor
-					#Gravi-Chestplate
-				#Steelarms
-					#Vajra
+		%Artefacts
+			%r-5[y]
+				%Armor
+					%Gravi-Chestplate
+				%Steelarms
+					%Vajra
 Gregtech
 Terrafirmacraft
 Applied Energistics
 	Objects
-		#Artefacts
-			#r-5[y]
-				#Appeng
-					#Monitors
-					#Autocrafts`)
-add(`Warcraft
+		%Artefacts
+			%r-5[y]
+				%Appeng
+					%Monitors
+					%Autocrafts`)
+add(`/Warcraft
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
+		%Games
 	Creatures
-		#Mind
-			#r-5[y]
-				#Human
-				#Orc_2`)
-add(`Portal
+		%Mind
+			%r-5[y]
+				%Human
+				%Orc_2`)
+add(`/Portal
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
+		%Games
 	Objects
-		#Artefacts
-			#r-5[y]
-				#Portal Gun`)
-add(`Starcraft
+		%Artefacts
+			%r-5[y]
+				%Portal Gun`)
+add(`/Starcraft
 	@Sources[y]
-		#Games
-			#Computer`)
-add(`Dark souls
+		%Games
+			%Computer`)
+add(`/Dark souls
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games`)
-add(`Devil May Cry
+		%Games`)
+add(`/Devil May Cry
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
+		%Games
 	Creatures
-		#Mind
-			#r-5[y]
-				#Human
-					#l5.0
+		%Mind
+			%r-5[y]
+				%Human
+					%l5.0
 						Dante`)
-add(`Bioshock
+add(`/Bioshock
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games`)
-add(`Diablo
+		%Games`)
+add(`/Diablo
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
-			#Computer
+		%Games
+			%Computer
 				1
 				2
 	Objects
-		#Artefacts
-			#r-6[y]
+		%Artefacts
+			%r-6[y]
 				Horadrical Cube`)
-add(`Witcher
+add(`/Witcher
 	@Authors[y]
 		Andrzej Sapkowski
 	@Languages[y]
 		Polish
 	@Sources[y]
-		#Games
-			#Computer
+		%Games
+			%Computer
 	Creatures
-		#r-5[y]
-			#Cockatrice
-			#Basilisk
-		#Mind
-			#r-5[y]
-				#Human
-					#l3.0
+		%r-5[y]
+			%Cockatrice
+			%Basilisk
+		%Mind
+			%r-5[y]
+				%Human
+					%l3.0
 						Geralt
 	Features
-		#r-5[y]
+		%r-5[y]
 			Witcher
 			Mage?
 	Directions
-		#Languages[y]
+		%Languages[y]
 			Mudra
 	Actions
-		#r-5[y]
-			#Elements
-				#Basic
-					Air	!	Aard
-					Water	!	Aksiy
-					Earth	!	Kven
-					Fire	!	Igni
-			#Action[y]
-				Protection	!	Heliotrop
-				Pomehi	!	Irden`)
-add(`Skyrim
+		%r-5[y]
+			%Elements
+				%Basic
+					Air	!=	Aard
+					Water	!=	Aksiy
+					Earth	!=	Kven
+					Fire	!=	Igni
+			%Action[y]
+				Protection	!=	Heliotrop
+				Pomehi	!=	Irden`)
+add(`/Skyrim
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
+		%Games
 	Creatures
-		#Mind
-			#r-5[y]
-				#Human
-				#Dragon
+		%Mind
+			%r-5[y]
+				%Human
+				%Dragon
 	Users
-		#r-5[y]
-			e+5	!	Mage`)
-add(`Warhammer
+		%r-5[y]
+			e+5	!=	Mage`)
+add(`/Warhammer
 	@Languages[y]
 		English
 	@Sources[y]
-		#Games
+		%Games
 	Creatures
-		#Mind
-			#r-5[y]
-				#Human
+		%Mind
+			%r-5[y]
+				%Human
 	Materials
 		Noktilit
-		#Metals
+		%Metals
 			Adamantium
 	Energies
-		#r-5[y]
-			+4	!	Psy?
+		%r-5[y]
+			+4	!=	Psy?
 	Users
-		#r-5[y]
-			e+4	!	Psyker`)
+		%r-5[y]
+			e+4	!=	Psyker`)

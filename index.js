@@ -1,7 +1,7 @@
-//--- Name: EniVerses/Vesion: 0.2.5a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
+//--- Name: EniVerses/Vesion: 0.2.7a/Authors: AlexanderDV/Description: Main EniVerses .js. ---
 var programInfo={
 	Name : "EniVerses",
-	Version : "0.2.5a",
+	Version : "0.2.7a",
 	Authors : "AlexanderDV"
 }
 programInfo.Title= programInfo.Name + " v" + programInfo.Version + " by " + programInfo.Authors
@@ -15,7 +15,7 @@ function toLines(cfg){
 	var path=[]
 	var last
 	var lns=cfg.split("\n")
-	for(var v=0;v<lns.length;v++){var vv=new RegExp("^["+props.syntax.offset+"]{0,}")
+	for(var v=0;v<lns.length;v++){var vv=new RegExp("^["+props.syntax.offset_+"]{0,}")
 		linesOfCfg[v]={
 			offset:lns[v].match(vv)[0]||"",
 			content:lns[v].replace(vv,"").split(props.syntax.parent)[0],
@@ -34,7 +34,7 @@ function toLines(cfg){
 
 
 		linesOfCfg[v].path=path,
-		linesOfCfg[v].pathStr=path.join(props.syntax.path)
+		linesOfCfg[v].pathStr=path.join(props.syntax.of_)
 	}
 	return linesOfCfg
 }
@@ -53,18 +53,18 @@ function fromParents(lines){
 			console.log(lines[v1],lines.length,lines[v].parents,pi,pi+1<lines.length?lines[pi+1]:"NN",pi<lines.length?lines[pi]:"NN");
 			for(var v1=pi+1;v1<lines.length&&lines[v1].offset.length>lines[pi].offset.length;v1++)
 				linesOfCfg.push({
-					offset:multiplyStr(props.syntax.offset,lines[v1].offset.length-lines[pi].offset.length+lines[v].offset.length),
+					offset:multiplyStr(props.syntax.offset_,lines[v1].offset.length-lines[pi].offset.length+lines[v].offset.length),
 					content:lines[v1].content,
 					parents:lines[v1].parents,
 					path:lines[v1].path,
 					pathStr:lines[v1].pathStr
 				})
 			linesOfCfg.push({
-				offset:lines[v].offset+props.syntax.offset,
+				offset:lines[v].offset+props.syntax.offset_,
 				content:"",
 				parents:[],
 				path:(lines[v].pathStr+props.syntax.parentElement+lines[v].content).split(props.syntax.parentElement),
-				pathStr:(lines[v].pathStr+"."+lines[v].content)
+				pathStr:(lines[v].pathStr+props.syntax.of_+lines[v].content)
 			})
 		}
 	}
@@ -95,16 +95,92 @@ function byPath(path,st){
 		byPath(lll[v].id,st)
 	}
 }
-var t='<input type="checkbox" onclick="this.childNodes[0].style.display=this.checked?\\"\\"":\\"none\\">',t2="</input>"
-console.log(t);
-var result=""
-for(var v=0;v<linesOfCfg.length;v++)
-{
-	var ttt=(linesOfCfg[v].content.startsWith("#")?"blue":(linesOfCfg[v].content.startsWith("@")?"red":(linesOfCfg[v].content.startsWith("/*")?"green":"black")))
-	console.log(linesOfCfg[v].offset+linesOfCfg[v].content/*,0,linesOfCfg[v].pathStr*/);
-	result+="<span id=\"cfgr-path-"+linesOfCfg[v].pathStr+"."+linesOfCfg[v].content+"\" class=\"type-"+ttt+"  cfgr-path-"+linesOfCfg[v].pathStr+"\" onclick=\"byPath('cfgr-path-"+linesOfCfg[v].pathStr+"."+linesOfCfg[v].content+"')\" style=\"margin-left:"+linesOfCfg[v].offset.length*20+"px;color:"+  ttt+"\">"+linesOfCfg[v].content+"<br></span>"
+function bpsf(linesOfCfg,fnc){
+	var byPaths={}
+	fnc=fnc||function(ph){return [ph,""]}
+	function addOmn(ph){
+		ph=fnc(ph)
+		if(!byPaths[ph[0]])
+			byPaths[ph[0]]={}
+		byPaths[ph[0]][ph[1]]=""
+	}
+	for(var v=0;v<linesOfCfg.length;v++)
+	{
+		addOmn(linesOfCfg[v].pathStr)
+		addOmn(linesOfCfg[v].pathStr+props.syntax.of_+linesOfCfg[v].content)
+	}
+	return byPaths
 }
-universesByDiv.innerHTML=result
+function toText(byPaths){
+	var text=""
+	for(var v in byPaths)
+	{
+		var vv=v.split(props.syntax.of_)
+		console.log(multiplyStr(props.syntax.offset_,vv.length-1)+vv[vv.length-1]);
+		text+=multiplyStr(props.syntax.offset_,vv.length-1)+vv[vv.length-1]+props.syntax.to_+Object.keys(byPaths[v]).join(props.syntax.enumeration)/*v.substr(0,v.length-vv[vv.length-1].length-props.syntax.of_.length)*/+props.syntax.newLine_
+	}
+	return text
+}
+function toHtmlLok(linesOfCfg){
+	var t='<input type="checkbox" onclick="this.childNodes[0].style.display=this.checked?\\"\\"":\\"none\\">',t2="</input>"
+	var result=""
+	for(var v=0;v<linesOfCfg.length;v++)
+	{
+		var ttt
+		for(var v0 in props.syntax.froms)
+			if(linesOfCfg[v].content.startsWith(props.syntax.froms[v0]))
+				ttt=props.colors.froms[v0]
+		var cont=linesOfCfg[v].content.split(props.syntax.to_)[0]||""
+		var at=linesOfCfg[v].content.split(props.syntax.to_)[1]||""
+		//console.log(linesOfCfg[v].offset+linesOfCfg[v].content/*,0,linesOfCfg[v].pathStr*/);
+		result+="<tr id=\"cfgr-path-"+linesOfCfg[v].pathStr+props.syntax.of_+cont+"\" class=\"line type-"+ttt+"  cfgr-path-"+linesOfCfg[v].pathStr+"\" onclick=\"byPath('cfgr-path-"+linesOfCfg[v].pathStr+props.syntax.of_+cont+"')\" style=\"color:"+  ttt+"\">"
+		result+="<td style=\"max-width:50%;\"><div style=\"margin-left:"+linesOfCfg[v].offset.length*20+"px;\">"+ cont+"</div></td>"
+		result+="<td style=\"max-width:50%;right:0px;\"><div>"+(cont.endsWith("[y]")?"":at)+"</div></td></tr>"
+		console.log(linesOfCfg[v]);
+	}
+	return result
+}
+function setElementsTextTranslates(lang){
+	for(var v in props.msgs[lang||props.msgsLang])
+		for(var v2 in document.getElementsByClassName("$"+v+"$"))
+			document.getElementsByClassName("$"+v+"$")[v2].innerText=props.msgs[lang||props.msgsLang][v]
+}
+setElementsTextTranslates()
+genButton.onclick=function(){
+	var custFn
+	try {
+		custFn=new Function("ph",funcArea.value)
+	} catch (e) {}
+	universesByDiv.innerHTML=toHtmlLok(toLines(toText(bpsf(linesOfCfg,funcArea.value=="default"?undefined:((funcArea.value?custFn:undefined)||function(ph){
+		var w=[],wo=[]
+		for(var v=0;v<ph.split(props.syntax.of_).length;v++)
+			(ph.split(props.syntax.of_)[v].split(props.syntax.in_).length>1?w:wo).push(ph.split(props.syntax.of_)[v])
+		return [wo.join(props.syntax.of_),w.join(props.syntax.of_)]
+	})))))
+}
+genButton.onclick()
+function what(){
+	var sortedByPaths=[],counter=0
+	var oldTime=new Date().getTime()
+	for(var v=1;counter<linesOfCfg.length&&new Date().getTime()-oldTime<5000;v++)
+		for(var v0 in byPaths)
+			if(v0.split(props.syntax.of_).length==v)
+			{
+				for(var v1=0;v1<sortedByPaths.length;v1++)
+					if(sortedByPaths[v1].pathStr+props.syntax.of_+sortedByPaths[v1].content==v0)
+					{
+						sortedByPaths.splice(v1+1,0,...Object.values(byPaths[v0]))
+						counter++
+						break
+					}
+				//delete byPaths[v0]
+			}
+	for(var v=0;v<sortedByPaths.length;v++)
+		console.log(sortedByPaths[v]);
+}
+//what()
+
+
 //End of other method
 
 var json=parsePythonic(props.universesConfig)
@@ -245,7 +321,7 @@ var tags	=	{
 }
 for(var v in newJson)
 {
-	bycat+=props.syntax.newLine+v
+	bycat+=props.syntax.newLine_+v
 	function ff2(o,n,c){
 		var na	=	{}
 		for(var v2 in n)
@@ -265,13 +341,13 @@ for(var v in newJson)
 			}
 		for(var v2 in na)
 		{
-			bycat+=(props.syntax.newLine+(!v2.endsWith(tags.hide)?v2:v2.substr(0,v2.length-tags.hide.length)).replace(/\s+$/g,"")).replace(props.syntax.newLine,props.syntax.newLine+c)+(!v2.endsWith(tags.hide)?props.syntax.isIn+" "+na[v2].join(props.syntax.isInSplit+" ").replace(/\s+/g," "):"")
+			bycat+=(props.syntax.newLine_+(!v2.endsWith(tags.hide)?v2:v2.substr(0,v2.length-tags.hide.length)).replace(/\s+$/g,"")).replace(props.syntax.newLine_,props.syntax.newLine_+c)+(!v2.endsWith(tags.hide)?props.syntax.isIn+" "+na[v2].join(props.syntax.isInSplit+" ").replace(/\s+/g," "):"")
 			for(var v22 in n)
-				if(v22.split(props.syntax.newLine)[0].replace(/\s+$/g,"")==v2)
+				if(v22.split(props.syntax.newLine_)[0].replace(/\s+$/g,"")==v2)
 					if(n[v22][""])
-						ff2("",n[v22][""],c+props.syntax.offset)
+						ff2("",n[v22][""],c+props.syntax.offset_)
 		}
 	}
-	ff2("",newJson[v],props.syntax.offset)
+	ff2("",newJson[v],props.syntax.offset_)
 }
 universesByDiv.innerHTML=bycat.replace(new RegExp("("+removeFromResult.join(")|(")+")"),"")*/
