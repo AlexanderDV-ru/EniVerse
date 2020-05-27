@@ -763,22 +763,23 @@ add(`/Slayers
 		%r-5[y]
 			+5	!=	Mana?`)
 add(`/Toaru Majutsu no Index
-	@Languages[y]
-		Japanese
 	@Sources[y]
-		%Ranobe
-			"Toaru Majutsu no Index"
-			"Toaru Kagaku no Accelerator"
-			"Toaru Kagaku no Railgun"
-			"Shinyaku Toaru Majutsu no Index"
-		%Manga
-			"Toaru Majutsu no Index"
-			"Toaru Kagaku no Accelerator"
-			"Toaru Kagaku no Railgun"
-		%Anime
-			"Toaru Majutsu no Index"
-			"Toaru Kagaku no Accelerator"
-			"Toaru Kagaku no Railgun"
+		%Fiction
+			%Jap
+				Toaru
+					%Ranobe
+						"Toaru Majutsu no Index"
+						"Toaru Kagaku no Accelerator"
+						"Toaru Kagaku no Railgun"
+						"Shinyaku Toaru Majutsu no Index"
+					%Manga
+						"Toaru Majutsu no Index"
+						"Toaru Kagaku no Accelerator"
+						"Toaru Kagaku no Railgun"
+					%Anime
+						"Toaru Majutsu no Index"
+						"Toaru Kagaku no Accelerator"
+						"Toaru Kagaku no Railgun"
 	Verse
 		@Type
 			Meta

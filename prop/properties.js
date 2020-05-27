@@ -58,7 +58,7 @@ props.colors	=	{
 	}
 }
 var removeFromResult	=	[props.syntax.tag.replace(props.syntax.inSyms,props.syntax.tags.hide),props.syntax.tag.replace(props.syntax.inSyms,props.syntax.tags.del)]
-props.universesConfig	=	"Eniverse"
+props.universesConfig	=	"Eniverse[y]"
 props.universes	=	[]
 props.offsetSize	=	1
 function add(adding){
@@ -80,16 +80,14 @@ function add(adding){
 	adding	=	(props.syntax.newLine_+adding.replace(new RegExp("["+props.syntax.offset_+"]","g"),props.syntax.offset_)).replace(new RegExp("["+props.syntax.newLine_+"]","g"),props.syntax.newLine_+multiplyStr(props.syntax.offset_,props.offsetSize))
 	props.universesConfig+=	adding
 }
-add(`/2rE
-	1`)
 add(`/Real world
-	Verse
+	Verse[y]
 		@Type
 			Uni
 		Original
 			@Worlds
 				Our	!=	Earth-2020
-	Objects
+	Objects[y]
 		%Elixirs
 			%r-4[y]
 				%Toxins
@@ -121,7 +119,7 @@ add(`/Real world
 				%Rockets
 				%Computer
 				%Telephone
-	Actions
+	Actions[y]
 		%r-4[y]
 			Granade by post
 			%Bioweapon`)
@@ -146,11 +144,11 @@ add(`/Rick and Morty
 			2
 			3
 			4
-	Objects
+	Objects[y]
 		%Artefacts
 			%r-5[y]
 				%Portal Gun
-	Verse
+	Verse[y]
 		@Type
 			Multi
 		Original`)
