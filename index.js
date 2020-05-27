@@ -148,9 +148,9 @@ function toHtmlLok(linesOfCfg){
 		var cont=linesOfCfg[v].content.split(props.syntax.to_)[0]||""
 		var at=linesOfCfg[v].content.split(props.syntax.to_)[1]||""
 		//console.log(linesOfCfg[v].offset+linesOfCfg[v].content/*,0,linesOfCfg[v].pathStr*/);
-		result+="<tr id=\"cfgr-path-"+ratas(linesOfCfg[v].pathStr+props.syntax.of_+cont)+"\" class=\"line type-"+ttt+"  cfgr-path-"+ratas(linesOfCfg[v].pathStr)+"\" onclick=\"byPath('cfgr-path-"+ratas(linesOfCfg[v].pathStr+props.syntax.of_+cont)+"')\" style=\"color:"+  ttt+"\">"
-		result+="<td style=\"max-width:50%;\"><div style=\"margin-left:"+linesOfCfg[v].offset.length*20+"px;\">"+ cont+"</div></td>"
-		result+="<td style=\"max-width:50%;right:0px;\"><div>"+(cont.endsWith("[y]")?"":at)+"</div></td></tr>"
+		result+="<tr id=\"cfgr-path-"+ratas(linesOfCfg[v].pathStr+props.syntax.of_+cont)+"\" class=\"line type-"+ttt+"  cfgr-path-"+ratas(linesOfCfg[v].pathStr)+"\" onclick=\"byPath('cfgr-path-"+ratas(linesOfCfg[v].pathStr+props.syntax.of_+cont)+"')\" style=\"display:"+(ratas(linesOfCfg[v].pathStr).split(props.syntax.of_).length>2?"":"")+";color:"+  ttt+"\">"
+		result+="<td style=\"\"><div style=\"margin-left:"+linesOfCfg[v].offset.length*20+"px;\">"+ cont+"</div></td>"
+		result+="<td style=\"right:0px;\"><div>"+(cont.endsWith("[y]")?"":at)+"</div></td></tr>"
 		//console.log(linesOfCfg[v]);
 	}
 	return result
@@ -172,13 +172,13 @@ genButton.onclick=function(){
 			(ph.split(props.syntax.of_)[v].split(props.syntax.in_).length>1?w:wo).push(ph.split(props.syntax.of_)[v])
 		return [wo.join(props.syntax.of_),w.join(props.syntax.of_)]
 	}))
-	console.log(t1);
+	//console.log(t1);
 	var t2=toText(t1)
-	console.log(t2);
+	//console.log(t2);
 	var t3=toLines(t2)
-	console.log(t3);
+	//console.log(t3);
 	var t4=toHtmlLok(t3)
-	console.log(t4);
+	//console.log(t4);
 	universesByDiv.innerHTML=t4
 }
 genButton.onclick()
@@ -198,17 +198,17 @@ function what(){
 					}
 				//delete byPaths[v0]
 			}
-	for(var v=0;v<sortedByPaths.length;v++)
-		console.log(sortedByPaths[v]);
+	//for(var v=0;v<sortedByPaths.length;v++)
+		//console.log(sortedByPaths[v]);
 }
 //what()
 
 
 //End of other method
 
-var json=parsePythonic(props.universesConfig)
-json=json["Eniverse"]// TODO:
-console.log(json);
+//var json=parsePythonic(props.universesConfig)
+//json=json["Eniverse"]// TODO:
+//console.log(json);
 function mergeWithReplace(){
 	var merged={}
 	for(var argNum in arguments)
