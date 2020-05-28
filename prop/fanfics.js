@@ -544,8 +544,14 @@ add(`/Myverse
 		%Fiction
 			%Fanfics
 				Myverse
-	!#Classification
-	!#Entity without shell, how names
+	Misc
+		Power
+			Energy
+			Ability
+			Element
+			Emotion
+	#Classification
+	#Entity without shell, how names
 	Without	!=	w
 		-2	!=	Unthing
 		-1	!=	Unbody, Spirit
@@ -685,7 +691,7 @@ add(`/Myverse
 			@l=X
 			@d=Demiurg
 		7.7
-	!#Splitting
+	#Splitting
 	Lvlsplitting
 		%l0.0
 		%l1.0
@@ -1090,7 +1096,7 @@ add(`/Myverse
 				Down
 		%Creatures
 		%Materials
-		!#Types of actions for ability
+		#Types of actions for ability
 		%Languages[y]
 			Word
 			Number
@@ -1108,7 +1114,7 @@ add(`/Myverse
 			Fuin
 			Seal
 			Mudra
-		!#Types of ability using
+		#Types of ability using
 		%Types[y]
 			Action	!=	Straight
 				Vampire
@@ -1301,7 +1307,6 @@ add(`/Myverse
 						Smaller
 					Voodoo
 					Volt
-				Estestvennaya
 				Mental
 					Empathy
 					Telepathy
@@ -1348,6 +1353,7 @@ add(`/Myverse
 					Potion
 					Putting
 			%Saving
+		Abilities
 	Verse	!=	v
 		@Type
 			Meta
@@ -1501,6 +1507,7 @@ add(`/Myverse
 				Limbo
 	Actions	!=	b
 		%Categories
+			%Abilities
 			%Resistance
 				%Elements
 					%Other

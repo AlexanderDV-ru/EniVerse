@@ -14,11 +14,13 @@
 		</style>
 	</head>
 	<body>
-		<input onchange="byPath(this.value)">
-		<br>
-		<textarea id="funcArea"></textarea>
-		<br>
-		<button id="genButton" class="$generate$"></button>
+		by path hide/show<input onchange="byPath(this.value)"><br>
+		function Area<textarea id="funcArea"></textarea><br>
+		<button id="genButton" class="$generate$"></button><br>
+		Show line-content<input type="checkbox" onchange="hideShowByClassName('line-content',this.checked)"><br>
+		Show line-ats<input type="checkbox" onchange="var es=document.getElementsByClassName('line-ats')"><br>
+		Show line-tags<input type="checkbox" onchange="var es=document.getElementsByClassName('line-tags')"><br>
+		Show line-path<input type="checkbox" onchange="var es=document.getElementsByClassName('line-path')"><br>
 		<table id="universesByDiv"></table>
 		<table style="display:none" id="consByDiv"></table>
 
@@ -30,6 +32,7 @@
 
 		<!-- Properties script, can be changed to your script -->
 		<script type="text/javascript" src="prop/properties.js"></script>
+		<script type="text/javascript" src="prop/misc.js"></script>
 		<script type="text/javascript" src="prop/anime.js"></script>
 		<script type="text/javascript" src="prop/games.js"></script>
 		<script type="text/javascript" src="prop/fantasy.js"></script>

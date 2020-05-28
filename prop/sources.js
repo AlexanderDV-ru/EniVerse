@@ -232,7 +232,8 @@ add(`/Supernatural
 			Game of Thrones
 				@Date	!=18.11.28
 			Rudazov
-				@Authors	!Alexander Rudazov
+				@Authors	!	Alexander Rudazov
+				@Languages	!	Russian
 				Sumer nights
 					1.	!#18.12.31 17:20-19.01.01 23:37 7.0
 				Archmage	!#18.12.13-19.01.01 8.0

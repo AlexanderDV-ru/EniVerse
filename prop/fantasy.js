@@ -5,10 +5,7 @@ add(`/JoJo Bizzare
 	@Languages[y]
 		Japanese`)
 add(`/Fate
-	@Languages[y]
-		Japanese
-	@Sources[y]
-		%Anime
+	@Sources	!	Supernatural.Fiction.Anime.Fate
 	Actions
 		%r-5[y]
 			%Action
@@ -68,12 +65,12 @@ add(`/Rudazov
 							0.0	!=	0	Primitive - ?	!#
 								@Kaabar
 								@Rari.Devkatsi
-							1.0	!=	3	? - Mech/Social	!#
-							2.0	!=	6	? - Digit/	!#
-							3.0	!=	9	? - Space/Verse level	!#
+							1.0	!=	3	? - Mech|Social	!#
+							2.0	!=	6	? - Digit|	!#
+							3.0	!=	9	? - Space|Verse level	!#
 							4.0	!=	12	? - ?		!#
 							5.0	!=	15	? - Energy	!#
-							6.0	!=	18	Immortal - tech/mage/bio	!#
+							6.0	!=	18	Immortal - tech|mage|bio	!#
 						%en	!=	Magical
 							0.3	!=	1	? - ?		!#Mage Ghyldy
 								@Our.Sumer	-3000
@@ -140,52 +137,9 @@ add(`/Rudazov
 				M	\n\t\t\t	K	\n\t\t\t	H	\n\t\t\t	G	\n\t\t\t	F	\n\t\t\t	E	\n\t\t\t	D	\n\t\t\t	C	\n\t\t\t	B	\n\t\t\t	P	\n\t\t\t	Earth-7112
 				Proxima Centaura	\n\t\t\t	Proxima Hell	\n\t\t\t	Proxima Heaven
 				World of Yehudin	!=	Dodekaedr
-	@Authors[y]
-		Alexander Rudazov
-	@Languages[y]
-		Russian
-	@Sources[y]
-		%Books
-			%Fantasy
-				"Sumer nights"	/	"Shumerskiye nochi"
-				"Archmage"	/	"Arhimag"
-					1.	"Archmage"		/	"Arhimag"
-					2.	"Knights of Prechistya deva"	/	"Ritsari Prechistoy Devy"
-					3.	"The best weapon"/	"Samoye luchsheye oruzhiye"
-					4.	"Gray plague"	/	"Seraya chuma"
-					5.	"War of Warlocks"/"Voina koldunov"
-						5.1.	/"Vtorzheniye"
-						5.2.	/"Shturm tsitadeli"
-					6.	"Kids of sudden hour"/"Deti sudnogo chasa"
-					7.	"Sovet 12"	/	"Sovet dvenadtsati"
-					8.	"Bitva polchish"	/	"Bitva polchish"
-					9.	"Zarya nad bezdnoy"/"Zarya nad bezdnoy"
-				"Yatshen"
-					1.	"Three eyes and six hands"/"Tri glaza i shest ruk"
-					2.	"Shestrirukiy resident"/"Shestrirukiy resident"
-					3.	"Demons in vatikan"/"Demony v vatikane"
-					4.	"Son of Archdemon"/"Syn Arhidemona"
-				"Ghost"/"Prizrak"
-				"Three mudretsa"/"Tri mudretsa"
-					1.	/"Tri mudretsa v odnom tazu"
-					2.	/"Taina pohishennoy bashni"
-				"Kriabal"/"Kriabal"
-					1.	/"Kriabal"
-					2.	/"Apofeoz"
-				"Predaniya"
-					1.	/"Predaniya stariny glubokoy"
-					2.	/"Byliny sego vremeni"
-					3.	/"Konets skazki"
-				"Zverolov"
-				Misc
-					/"Vlastelin"
-					/"Ekipazh"
-					/"Demon pod divanom"
-					/"Zhraniyo"
-					/"Rasskazy is pravogo botinka"
-					/"Arifmoman"
+	@Sources	!	Supernatural.Fiction.Books.Rudazov
 	Shells
-		-5	!=	2/7	Magical body
+		-5	!=	2|7	Magical body
 		-2	!=	3	Body, Matter of
 		-1	!=	1	Physical body
 		+0	!=	4	Atman
@@ -338,7 +292,7 @@ add(`/Rudazov
 				Other
 				Blood Beach	!#Place for demons
 			~1.0 ~0.0	!=	Normal, material
-			~1.5 ~0.0	!=	Shadow/Twilight/Through the Looking Glass
+			~1.5 ~0.0	!=	Shadow|Twilight|Through the Looking Glass
 			~2.0 ~0.0	!=	Astral,	world of spirits
 				Other
 				World of the dead
@@ -552,8 +506,7 @@ add(`/Rudazov
 add(`/Orderly
 	@Languages[y]
 		Russian
-	@Sources[y]
-		%Books
+	@Sources	!	Supernatural.Fiction.Books.Orderly
 	@Authors[y]
 		Nick Perumov`)
 add(`/Siyatelniy
@@ -561,16 +514,12 @@ add(`/Siyatelniy
 		Pavel Kornev
 	@Languages[y]
 		Russian
-	@Sources[y]
-		%Books
+	@Sources	!	Supernatural.Fiction.Books.Siyatelniy
 	Materials
 		%Metals
 			Coldiron	!#Anti mage`)
 add(`/Claymore
-	@Languages[y]
-		Japanese
-	@Sources[y]
-		%Manga
+	@Sources	!	Supernatural.Fiction.Manga.Claymore
 	Energies
 		%r-5[y]
 			yo	!=	Yoki
@@ -585,8 +534,7 @@ add(`/Dozory
 		Russian
 	@Authors[y]
 		Sergey Lukyanenko
-	@Sources[y]
-		%Books
+	@Sources	!	Supernatural.Fiction.Books.Dozory
 	Schools
 		Other
 	Levels
@@ -599,7 +547,7 @@ add(`/Dozory
 		3.5	!=	3
 		4.0	!=	2
 		4.5	!=	1
-		5.0	!=	Higher/Not in categories
+		5.0	!=	Higher|Not in categories
 		6.0	!=	0
 	Energies
 		%r-5[y]
@@ -767,10 +715,7 @@ add(`/Dozory
 add(`/Fate of Archmage
 	@Languages[y]
 		Russian
-	@Sources[y]
-		%Fanfics
-			1. "Fate of Archmage"
-			2. "Plan of Archmage"
+	@Sources	!	Supernatural.Fiction.Fanfics.Fate of Archmage
 	Verse
 		@Type
 			Meta
@@ -781,23 +726,20 @@ add(`/How to stat wizard
 		Duain Diana
 	@Languages[y]
 		English
-	@Sources[y]
-		%Books`)
+	@Sources	!	Supernatural.Fiction.Books.How to stat wizard`)
 add(`/Eyes of other world
 	@Authors[y]
 		Jack Vance
 	@Languages[y]
 		English
-	@Sources[y]
-		%Books`)
+	@Sources	!	Supernatural.Fiction.Books.Eyes of other world`)
 add(`/Labirints Eho`)
 add(`/Lord of Rings
 	@Authors[y]
 		John Ronald Reuel Tolkien
 	@Languages[y]
 		English
-	@Sources[y]
-		%Books
+	@Sources	!	Supernatural.Fiction.Verse.LotR
 	Space
 		n
 			~1.0, 0.0	!=	Body
@@ -847,8 +789,7 @@ add(`/Nick
 		Russian
 	@Authors[y]
 		Andrzej	Yasinski
-	@Sources[y]
-		%Books
+	@Sources	!	Supernatural.Fiction.Books.Nick
 	Creatures
 		%Mind
 			%r-5[y]
@@ -936,10 +877,7 @@ add(`/Nick
 		%r-6[y]
 			God_2`)
 add(`/Potteriana
-	@Sources[y]
-		%Fiction
-			%Verse
-				Potteriana
+	@Sources	!	Supernatural.Fiction.Verse.Potteriana
 	Materials
 		%Liquid
 			%r-5[y]
@@ -1102,7 +1040,7 @@ add(`/Potteriana
 				%Action
 					%Transformation
 						"Vermiculus" !#(2)	 — превращает объект в червя[5].
-						"Aviforce-"!#(2)	 — противник превращается в птицу/стаю птиц/стаю летучих мышей.[4]
+						"Aviforce-"!#(2)	 — противник превращается в птицу|стаю птиц|стаю летучих мышей.[4]
 		/vm3
 			%r-5[y]
 				%Action
@@ -1331,8 +1269,8 @@ add(`/Potteriana
 				"--Duo"	!# - заклинание удвоенной силы
 				"--Tria"	!# - заклинание утроенной силы
 				"--Maxima"	!# - максимально сильное для вас заклинание
-				!#Общая формула заклинания: [modum] [subject] [object] [adjectivum (optionem/scopus/tempus/potentium)]
-				!#Общая формула зачарования: [subject] [object] [modum-ing] [adjectivum (optionem/scopus/tempus/potentium)]
+				!#Общая формула заклинания: [modum] [subject] [object] [adjectivum (optionem|scopus|tempus|potentium)]
+				!#Общая формула зачарования: [subject] [object] [modum-ing] [adjectivum (optionem|scopus|tempus|potentium)]
 	Complexes
 		Finding
 			@Accio
@@ -1358,7 +1296,7 @@ add(`/Potteriana
 			@""неприметность -
 			@Glisseo	!# - отключение трения
 			@Fidelius	!# - заклятие доверия
-			@Revelare	!# - выявление / гомунгуловы чары?
+			@Revelare	!# - выявление | гомунгуловы чары?
 			@Colloportus	!# - запирание
 			@""запечатывание комнаты
 			@""ненаносимость
@@ -1473,8 +1411,7 @@ add(`/Svet za okoshkom
 		Svyatoslav Loginov
 	@Languages[y]
 		Russian
-	@Sources[y]
-		%Books
+	@Sources	!	Supernatural.Fiction.Books.Svet za okoshkom
 	Features
 		%r-4[y]
 			Ghost`)
@@ -1483,21 +1420,17 @@ add(`/Svarog
 		Buzhkov
 	@Languages[y]
 		Russian
-	@Sources[y]
-		%Books`)
-add(`/Volshebnik strany OZ`)
-add(`/Volshebnik izumrudnogo goroda
+	@Sources	!	Supernatural.Fiction.Books.Svarog`)
+add(`/OZ country wizard`)
+add(`/Emerald town wizard
 	@Authors[y]
 		Alexander Volkov
 	@Languages[y]
 		Russian
-	@Sources[y]
-		%Books
-		%Mult`)
-add(`/vosplamenyayushaya vzglyadom
+	@Sources	!	Supernatural.Fiction.Verse.Emerald town wizard`)
+add(`/Firestarter
 	@Authors[y]
 		Steven King
 	@Languages[y]
 		English
-	@Sources[y]
-		%Books`)
+	@Sources	!	Supernatural.Fiction.Books.King.Firestarter`)

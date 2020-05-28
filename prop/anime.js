@@ -474,16 +474,282 @@ add(`/My hero academy
 				Izuku Midoriya
 	Features
 		%r-5[y]
-			%Quirk
-				One for All
-					@Midoriya Izuku
-				All for One
-				Anti-Gravity	!	@Uraraka Ochako
-				@Racer
-				@Portal
-				@Laser
-				Kamui
-				Mountain Lady`)
+			%Abilities
+				%/Quirk
+					One for All
+						Power save
+						Power return
+						Give it for other
+						@Midoriya Izuku
+					All for One
+						Take abilities
+						Give abilities
+						Multiability
+					@Ectoplasm
+						Shadow Clone
+						Izuku Midoriya Anime PortraitIzuku
+					@Katsuki Bakugo
+						Nitroglycerin generation
+						Explosion
+					@Shoto Todoroki
+						Fire
+						Ice
+						Hot
+						Cold
+						Temperature
+					@Fumikage Tokoyami
+					@Ochaco Uraraka
+						Zero-gravity field
+					@Kyoka Jiro
+					@All Might
+					@Endeavor
+					@Hawks
+					@Mirio Togata
+					@Nejire Hado
+					@Eri Anime
+					@Tomura Shigaraki Portal
+					@Kurogiri Portal
+					@Dabi
+					@Hood High-End
+					@Gentle Criminal
+					@La Brava
+					@Racer
+					@Portal
+					@Laser
+					@Kamui
+					@Mountain Lady
+					@Links[nl]	!	function(line){return {ref:line.content.indexOf("[nl]")!=-1?false:"https://bokunoheroacademia.fandom.com/wiki/"+line.content.replace(/[@%?]/g,"").replace(/[ ]/g,"_"),text:"fandom.com/wiki"}
+					Quirk-Destroying Drug
+					#
+					Acid
+					Acid Sweat
+					Air Cannon
+					Air Walk
+					All For One (Quirk)
+					Amplivolt
+					Anivoice
+					Anthropomorph
+					Arbor
+					Assault Dust
+					Barrier
+					Bat
+					Beams From His Eyes
+					Beast
+					Bendy Fingers
+					Big Fist
+					Big Horn
+					Binging Ball
+					Black
+					Black Hole
+					Blackwhip
+					Blade-Tooth
+					Blast
+					Blood Control
+					Bloodcurdle
+					Boomerang
+					Brainwashing
+					Brown Bear
+					Bubble
+					Cell Activation
+					Cemedine
+					Cement
+					Centipede
+					Cephalopod
+					Chest Hair
+					Chimera (Quirk)
+					Chronostasis (Quirk)
+					Cleaning
+					Clones
+					Cloud
+					Comic
+					Compress
+					Confession
+					Copy
+					Cow
+					Creation
+					Crystallize
+					Dark Shadow
+					Decay
+					Dog
+					Double
+					Dragon
+					Dupli-Arms
+					Dust
+					Earphone Jack
+					Earth Flow
+					Eel
+					Elasticity
+					Electricity Generation
+					Electrification
+					Electromagnetic Bullets
+					Engine
+					Erasure
+					Eruption
+					Explosion
+					Extend-o-Hair
+					Eye-brows
+					Fan
+					Fat Absorption
+					Fiber Master
+					Fierce Wings
+					Flight
+					Float
+					Fly Swatter
+					Foldabody
+					Food
+					Forced Quirk Activation
+					Foresight
+					Frog
+					Gas
+					Gatling
+					Gecko
+					Gigantification
+					Glamour
+					Glide and Slide
+					Glycerin
+					Good Ear
+					Good Face
+					Gyrate
+					Hair-Raiser
+					Half-Cold Half-Hot
+					Hardening
+					Heal
+					Hedgehog
+					Hellflame
+					High Spec
+					Hologram
+					Homing
+					Horn Cannon
+					Hula Hoop
+					Hypertrophy
+					Impact Recoil
+					Incite
+					Infrared Ray
+					Invisibility
+					IQ
+					Iron Claws
+					Jet
+					Kinetic Booster
+					King Slam
+					Landmine
+					Larceny
+					Laser
+					Leafipulation
+					Leap
+					Life Force
+					Liquification
+					Lizard Tail Splitter
+					Lock Down
+					Longleg
+					Love
+					Magnetism
+					Manifest
+					Meatball
+					Metal Manipulation
+					Mimicry
+					Monster Cat (Quirk)
+					Muddiness
+					Multiplier
+					Mummification
+					Muscle Augmentation
+					Mushroom
+					Navel Laser
+					Object Gigantification
+					Octopus
+					One For All
+					Orcinus
+					Outburst
+					Overclock
+					Overhaul (Quirk)
+					Permeation
+					Pliabody
+					Poison Gas
+					Poltergeist
+					Polygraph
+					Pop Off
+					Power
+					Quad Arms
+					Queen Beam
+					Queen Bee
+					Quirk Singularity
+					Rabbit
+					Razor Sharp
+					Rewind
+					Rivet
+					Rocket Thrust
+					Rupture
+					Saber
+					Sacred Tears
+					Scales
+					Scissors
+					Search
+					Self-Detonation
+					Serpentress
+					Shame
+					Shield
+					Shock Absorption
+					Shoulder-Mounted Jets
+					Size
+					Slice (Quirk)
+					Slide and Glide
+					Sloshed
+					Soccer
+					Softening
+					Solid Air
+					Somnambulist
+					Spearlike Bones
+					Spike
+					Spotted Seal
+					Springlike Limbs
+					Steel
+					Stiffening
+					Stock
+					Strength Enhancer
+					Stress
+					Strongarm
+					Sugar Rush
+					Suicide Bomb
+					Super Regeneration
+					Swan
+					Tail
+					Tape
+					Telepath
+					Telescopic
+					Toho
+					Tongue Tank
+					Transform
+					Transforming Arms
+					Twin Impact
+					Vibrate
+					Vines
+					Viral Cosmos
+					Vitality Stealing
+					Voice
+					Warp Gate
+					Warping
+					Wave Motion
+					Weather Manipulation
+					Weld
+					Whale
+					Whirlwind
+					White Line
+					Whole-Body Lens
+					Wooden Swords From His Hands
+					Yell
+					Zero Gravity
+					"Zombie Virus"
+					"Zoom"
+					Attraction of Small Objects
+					Chart
+					Control Horn
+					Cremation
+					Fire Breath
+					Flash Bang Sweat
+					Paralysis
+					Sandstorm
+					Smoke
+					Storage
+					Tool Arms`)
 add(`/The Gamer
 	@Sources	!	%Fiction.%Manhva.The Gamer
 	Users
