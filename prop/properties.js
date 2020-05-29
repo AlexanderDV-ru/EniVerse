@@ -1,4 +1,4 @@
-/*--- Name: EniVerse/Vesion: 0.2.8a/Authors: AlexanderDV/Description: Properties EniVerse .js. ---*/
+/*--- Name: EniVerse/Vesion: 0.2.9a/Authors: AlexanderDV/Description: Properties EniVerse .js. ---*/
 //Properties
 var props	=	{}
 props.syntax	=	{
@@ -67,7 +67,7 @@ props.colors	=	{
 	fromsDef	:	"black",
 }
 var removeFromResult	=	[props.syntax.flag.start+props.syntax.flags.hide+props.syntax.flag.end, props.syntax.flag.start+props.syntax.flags.del+props.syntax.flag.end]
-props.universesConfig	=	"Eniverse[y]"
+props.universesConfig	=	""
 props.universes	=	[]
 props.offsetSize	=	1
 function add(adding){

@@ -1,15 +1,15 @@
-//--- Name: EniVerse/Vesion: 0.2.8a/Authors: AlexanderDV/Description: Main EniVerse .js. ---
+//--- Name: EniVerse/Vesion: 0.2.9a/Authors: AlexanderDV/Description: Main EniVerse .js. ---
 var programInfo={
 	Name : "EniVerse",
-	Version : "0.2.8a",
+	Version : "0.2.9a",
 	Authors : "AlexanderDV"
 }
 programInfo.Title= programInfo.Name + " v" + programInfo.Version + " by " + programInfo.Authors
 document.title=programInfo.Title
 // End of standard initialization ---
 var inSyms="a-zA-Z0123456789. "
-var flagRe=new RegExp("[\\"+props.syntax.flag.start+"]["+inSyms+"]{0,}[\\"+props.syntax.flag.end+"]","g")
-var superRe=new RegExp("[\\"+props.syntax.super.start+"]["+inSyms+"]{0,}[\\"+props.syntax.super.end+"]","g")
+var flagRe=new RegExp("[\\"+props.syntax.flag.start+"](["+inSyms+"]{0,})[\\"+props.syntax.flag.end+"]","g")
+var superRe=new RegExp("[\\"+props.syntax.super.start+"](["+inSyms+"]{0,})[\\"+props.syntax.super.end+"]","g")
 class Element{
 	constructor(path,where,children){
 		this._val_path=[].concat(path)
@@ -47,13 +47,12 @@ class Element{
 	getContent(){
 		return this.getName().replace(flagRe,"").replace(superRe,"")
 	}
-
-	getColor() {
-		for(var v0 in props.syntax.froms)
-			if(this.getContent().startsWith(props.syntax.froms[v0]))
-				return props.colors.froms[v0]
-		return props.colors.fromsDef
-	}
+}
+function colorOf(value) {
+	for(var v0 in props.syntax.froms)
+		if(value.startsWith(props.syntax.froms[v0]))
+			return props.colors.froms[v0]
+	return props.colors.fromsDef
 }
 function toLines(cfg){
 	var linesOfCfg=[]
@@ -111,31 +110,14 @@ function fromLinesToByPaths(linesOfCfg,whereFunc){
 	var byPaths={}
 	whereFunc=whereFunc||function(pathArr){return [pathArr,[]]}
 	for(var elem of linesOfCfg){
-		/*var pathArr=elem.getParent()
-		var whereFuncResult=whereFunc(pathArr)
-		var newPath=whereFuncResult[0]
-		var newWhere=whereFuncResult[1]
-		var old=byPaths[newPath.join(props.syntax.of_)]
-		var where=old?old.where:elem.where
-		var children=old?old.children:elem.children
-		//console.log(where,children,newWhere,newPath);
-		where.add(newWhere)
-		{
-			children.add(elem.getContent())
-			var pathArr=elem.getPathArr()
-			var whereFuncResult=whereFunc(pathArr)
-			var newPath=whereFuncResult[0]
-			var newWhere=whereFuncResult[1]
-			var old=byPaths[newPath.join(props.syntax.of_)]
-			var where=old?old.where:elem.where
-			var children=old?old.children:elem.children
-			//console.log(where,children,newWhere,newPath);
-			where.add(newWhere)
-			byPaths[newPath.join(props.syntax.of_)]=new Element(newPath,where,children)
-		}
-		byPaths[newPath.join(props.syntax.of_)]=new Element(newPath,where,children)
-		//console.log(where,children,newWhere,newPath);*/
-		byPaths[whereFunc(elem.getPathArr())[0].join(props.syntax.of_)]=new Element(whereFunc(elem.getPathArr())[0],whereFunc(elem.getPathArr())[1],{})
+		var where=[whereFunc(elem.getPathArr())[1]]
+		if(byPaths[whereFunc(elem.getPathArr())[0].join(props.syntax.of_)])
+			for(var v of byPaths[whereFunc(elem.getPathArr())[0].join(props.syntax.of_)].where)
+				where.push(v)
+		if(elem)
+			for(var v of elem.where)
+				where.push(v)
+		byPaths[whereFunc(elem.getPathArr())[0].join(props.syntax.of_)]=new Element(whereFunc(elem.getPathArr())[0],where,{})
 	}
 	return byPaths
 }
@@ -167,24 +149,30 @@ function generateHtmlTable(byPaths){
 		for(var v=0;v<elem.parentTree.length;v++)
 			elem.parentTreeWithAdds+=" htmlTable-val-parentTree-"+v+"-"+elem.parentTree[v]
 		var htmlOfTds=""
-		if(!elem.flags.has("noname"))
+		var htmlOfMain=""
+		if(!elem.flags.has("[noname]"))
 		{
-			var htmlOfMain=""
-			if(!elem.flags.has("nocontent"))
+			if(!elem.flags.has("[nocontent]"))
 				htmlOfMain+=elem.getContent()
-			if(!elem.flags.has("nohider"))
+			if(!elem.flags.has("[nohider]"))
 				htmlOfMain+="<input type=\"checkbox\""+(elem.getOffsetLength()==1?"":" checked")+" onchange=\"hiderAction('"+elem.getPathStr()+"',this.checked)\">"
-			if(!elem.flags.has("nolinks"))
+			if(!elem.flags.has("[nolinks]"))
 				for(var v=0;v<elem.links.length;v++)
 					htmlOfMain+="<a ref=\""+elem.links[v].ref+"\">"+elem.links[v].text+"</a>"
-			htmlOfTds+="<td><div style=\"margin-left:"+elem.getOffsetLength()*20+"px;\">"+htmlOfMain+"</div></td>"
 		}
-		if(!elem.flags.has("nowhere"))
-		{
-			var htmlOfWhere=""
-			htmlOfWhere+=Array.from(elem.where).join(props.syntax.enumeration).replace(new RegExp("["+props.syntax.of_+"]["+props.syntax.in_+"]|["+props.syntax.in_+"]["+props.syntax.of_+"]","g"), props.syntax.of_)
-			htmlOfTds+="<td><div>"+htmlOfWhere+"</div></td>"
-		}
+		htmlOfTds+="<td><div style=\"color: "+colorOf(htmlOfMain)+";margin-left:"+elem.getOffsetLength()*20+"px;\">"+htmlOfMain+"</div></td>"
+		var htmlOfWhere=""
+		if(!elem.flags.has("[nowhere]"))
+			for(var v of elem.where)
+				if(v&&v.length!=0)
+					htmlOfWhere+="<span style=\"color: "+colorOf(v.join(props.syntax.of_))+";\">"+v.join(props.syntax.of_).replace(new RegExp("["+props.syntax.of_+"]["+props.syntax.in_+"]|["+props.syntax.in_+"]["+props.syntax.of_+"]","g"), props.syntax.of_)+"</span>"+props.syntax.enumeration+" "
+		htmlOfTds+="<td><div>"+htmlOfWhere+"</div></td>"
+		var htmlOfFlags=""
+		if(!elem.flags.has("[noflags]"))
+			for(var v of elem.flags)
+				if(v&&v.length!=0)
+					htmlOfFlags+="<span>"+v+"</span>"+props.syntax.enumeration+" "
+		htmlOfTds+="<td><div>"+htmlOfFlags+"</div></td>"
 		htmlOfTable+="<tr id=\""+elem.pathWithAdd+"\" class=\"line "+elem.parentWithAdd+elem.parentTreeWithAdds+"\">"+htmlOfTds+"</tr>"
 	}
 	return htmlOfTable

@@ -1,142 +1,117 @@
 
 add(`/Chronics of Narnia`)
 add(`/Diplomirovanniy Charodey`)
-add(`/JoJo Bizzare
-	@Languages[y]
-		Japanese`)
-add(`/Fate
-	@Sources	!	Supernatural.Fiction.Anime.Fate
-	Actions
-		%r-5[y]
-			%Action
-				%Vampiring
-					Blood Citadel?
-	Energies
-		%r-5[y]
-			-1	!=	Prana
-			+5	!=	Mana
-	Users
-		%r-5[y]
-			e+5	!=	Mage
-	Objects
-		%Artefacts
-			%r-6[y]
-				%The Holy Grail
-	Creatures
-		%Mind
-			%r-6[y]
-				%Servant`)
 add(`/Rudazov
+	World Types
+		Access
+			Destroyed
+			Non-Created
+		Chaos
+			Chaotic
+			Half-Chaotic
+			Half-Normal
+			Normal
+		Elements
+			%Basic
+				Fire
+				Water
+				Air
+				Earth
+				Electrizity
+				Ice
+			%First
+				Dark
+				Light
+			%Misc
+				Void
+	Civilizations
+		%Opened
+			Closed	!=	Don't know
+			Half-Closed	!=	Thinks that other is 1,2,3... not a lot of
+			Half-Opened	!=	Have knowledge
+			Opened	!=	Have contacts
+		%Levels
+			%Universal
+				0.0	!=	0	Primitive - ?	!#
+					@Kaabar
+					@Rari.Devkatsi
+				1.0	!=	3	? - Mech|Social	!#
+				2.0	!=	6	? - Digit|	!#
+				3.0	!=	9	? - Space|Verse level	!#
+				4.0	!=	12	? - ?		!#
+				5.0	!=	15	? - Energy	!#
+				6.0	!=	18	Immortal - tech|mage|bio	!#
+			%Energy
+				0.3	!=	1	? - ?		!#Mage Ghyldy
+					@Our.Sumer	-3000
+				0.7	!=	2	? - ?		!#Magic Schools
+				1.0	!=	3	Social - ?	!#Magic infrastructure, service, shops
+					@Parifat 2000
+				1.3	!=	4	? - ?		!#Magic conveer
+					@Rari.Grayland	from Epilog
+				3.3	!=	10
+					@Parifat	-3000
+				6.0	!=	18	Immortal - ?!#
+					@Infal
+					@Jinn
+			%Bio
+				0.3	!=	1	? - ?		!#Prirucheniye, odomashnivaniye
+				0.7	!=	2	? - ?		!#Selection
+					@Rari.Eist
+				6.0	!=	18	Immortal - ?!#
+			%Tech
+				0.3	!=	1	? - ?		!#Compas, Gun Powder,	Books print
+				0.7	!=	2	? - ?		!#Industrial revolution
+					@Rari.Rokush
+					@Rari.Lariya
+				1.0	!=	3	Mech - ?	!#Metals, engines
+				1.3	!=	4	? - ?		!#Machines, Electrizity, Chem
+				1.7	!=	5	? - ?		!#High Chem, ICE, Conveer
+				2.0	!=	6	Digit - ?	!#Electronics, Robots, Commutications
+					@Our
+				2.3	!=	7	? - ?		!#Nanotech, Higher Organic Chem, Cyberspace
+				2.7	!=	8	? - ?		!#High Nano, Spacetech, Terraforming
+					@Plonet	Before Sudden hour
+				3.0	!=	9	Space		!#High Terraforming, Space cities, Between Stars Flying
+				3.3	!=	10	? - ?		!#Galaxy Level, Alliens contacts
+				4.0	!=	12
+					@Earth	2400
+				4.3	!=	13
+					@Svarog.Svarog	7000
+				5.0	!=	15
+					@Eikr.U-l'tra-let
+				5.3	!=	16
+					@Muraran
+				5.7	!=	17
+					@*.Spectator
+					@Svarog.Galact	7000
+				6.0	!=	18	Immortal - ?!#
+					@Ancient
+					@Titan_0
+			%Energy+Tech
+				0.7	!=	2
+					@Rari.Grayland	2000
+			!#Number after "-" says that this world after apocalipsis, have but cant create this technologies
+	Worlds
+		Rari
+		Quetzol-Iin
+		Eikr\n\t\t	Hvitachi\n\t\t	Worldtown
+		Lang\n\t\t\t	Kaabar\n\t\t	Nine Heavens
+		Hell\n\t\t\t	Our	!=	Earth-2006\n\t\t	Heaven
+		Golus	\n\t\t	Dotembria
+		Pargoron\n\t\t	Parifat\n\t\t	Salvan
+		Patala	\n\t\t	Dovos
+		Jahannam	\n\t\t	Kaf	\n\t\t	Janna
+		Shemussen	\n\t\t	Plonet	\n\t\t	N	\n\t\t	Labirint	\n\t\t	Svarog	\n\t\t	Deorg Academy
+		X	\n\t\t	Z	\n\t\t	A	\n\t\t	Y	\n\t\t	O	\n\t\t	Caves Sheymullin
+		M	\n\t\t	K	\n\t\t	H	\n\t\t	G	\n\t\t	F	\n\t\t	E	\n\t\t	D	\n\t\t	C	\n\t\t	B	\n\t\t	P	\n\t\t	Earth-7112
+		Proxima Centaura	\n\t\t	Proxima Hell	\n\t\t	Proxima Heaven
+		Dodekaedr
+			@Yehudin
 	Verse
 		@Type
 			Meta
 		Original
-			@World
-				%Access
-					Destroyed
-					Non-Created
-				%Gran
-					Chaotic
-					Half-Chaotic
-					Half-Normal
-					Normal
-				%Elements
-					%Basic
-						Fire
-						Water
-						Air
-						Earth
-						Electrizity
-						Ice
-					%First
-						Dark
-						Light
-					%Misc
-						Void
-			@Civilization
-				%Opened
-					Closed	!=	Don't know
-					Half-Closed	!=	Thinks that other is 1,2,3... not a lot of
-					Half-Opened	!=	Have knowledge
-					Opened	!=	Have contacts
-				%Levels
-					%Paths
-						%un	!=	Universal
-							0.0	!=	0	Primitive - ?	!#
-								@Kaabar
-								@Rari.Devkatsi
-							1.0	!=	3	? - Mech|Social	!#
-							2.0	!=	6	? - Digit|	!#
-							3.0	!=	9	? - Space|Verse level	!#
-							4.0	!=	12	? - ?		!#
-							5.0	!=	15	? - Energy	!#
-							6.0	!=	18	Immortal - tech|mage|bio	!#
-						%en	!=	Magical
-							0.3	!=	1	? - ?		!#Mage Ghyldy
-								@Our.Sumer	-3000
-							0.7	!=	2	? - ?		!#Magic Schools
-							1.0	!=	3	Social - ?	!#Magic infrastructure, service, shops
-								@Parifat 2000
-							1.3	!=	4	? - ?		!#Magic conveer
-								@Rari.Grayland	from Epilog
-							3.3	!=	10
-								@Parifat	-3000
-							6.0	!=	18	Immortal - ?!#
-								@Infal
-								@Jinn
-						%bi	!=	Biotic
-							0.3	!=	1	? - ?		!#Prirucheniye, odomashnivaniye
-							0.7	!=	2	? - ?		!#Selection
-								@Rari.Eist
-							6.0	!=	18	Immortal - ?!#
-						%tc	!=	Technogen
-							0.3	!=	1	? - ?		!#Compas, Gun Powder,	Books print
-							0.7	!=	2	? - ?		!#Industrial revolution
-								@Rari.Rokush
-								@Rari.Lariya
-							1.0	!=	3	Mech - ?	!#Metals, engines
-							1.3	!=	4	? - ?		!#Machines, Electrizity, Chem
-							1.7	!=	5	? - ?		!#High Chem, ICE, Conveer
-							2.0	!=	6	Digit - ?	!#Electronics, Robots, Commutications
-								@Our
-							2.3	!=	7	? - ?		!#Nanotech, Higher Organic Chem, Cyberspace
-							2.7	!=	8	? - ?		!#High Nano, Spacetech, Terraforming
-								@Plonet	Before Sudden hour
-							3.0	!=	9	Space		!#High Terraforming, Space cities, Between Stars Flying
-							3.3	!=	10	? - ?		!#Galaxy Level, Alliens contacts
-							4.0	!=	12
-								@Earth	2400
-							4.3	!=	13
-								@Svarog.Svarog	7000
-							5.0	!=	15
-								@Eikr.U-l'tra-let
-							5.3	!=	16
-								@Muraran
-							5.7	!=	17
-								@*.Spectator
-								@Svarog.Galact	7000
-							6.0	!=	18	Immortal - ?!#
-								@Ancient
-								@Titan_0
-						%te	!=	Technomagical
-							0.7	!=	2
-								@Rari.Grayland	2000
-					!#Number after "-" says that this world after apocalipsis, have but cant create this technologies
-			@Worlds
-				Rari
-				Quetzol-Iin
-				Eikr\n\t\t\t	Hvitachi\n\t\t\t	Worldtown
-				Lang\n\t\t\t	Kaabar\n\t\t\t	Nine Heavens
-				Hell\n\t\t\t	Our	!=	Earth-2006\n\t\t\t	Heaven
-				Golus	\n\t\t\t	Dotembria
-				Pargoron\n\t\t\t	Parifat\n\t\t\t	Salvan
-				Patala	\n\t\t\t	Dovos
-				Jahannam	\n\t\t\t	Kaf	\n\t\t\t	Janna
-				Shemussen	\n\t\t\t	Plonet	\n\t\t\t	N	\n\t\t\t	Labirint	\n\t\t\t	Svarog	\n\t\t\t	Deorg Academy
-				X	\n\t\t\t	Z	\n\t\t\t	A	\n\t\t\t	Y	\n\t\t\t	O	\n\t\t\t	Caves Sheymullin
-				M	\n\t\t\t	K	\n\t\t\t	H	\n\t\t\t	G	\n\t\t\t	F	\n\t\t\t	E	\n\t\t\t	D	\n\t\t\t	C	\n\t\t\t	B	\n\t\t\t	P	\n\t\t\t	Earth-7112
-				Proxima Centaura	\n\t\t\t	Proxima Hell	\n\t\t\t	Proxima Heaven
-				World of Yehudin	!=	Dodekaedr
 	@Sources	!	Supernatural.Fiction.Books.Rudazov
 	Shells
 		-5	!=	2|7	Magical body
@@ -151,16 +126,16 @@ add(`/Rudazov
 		+6	!=	8	Immortal
 		+7	!=	9	God
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			-1	!=	2 Prana
 			+	!=	7 Mana
-		%r-7[y]
+		%r-7[nowhere]
 			+7	!=	9 Ba-Hion
 	Users
-		%r-5[y]
+		%r-5[nowhere]
 			e+5	!=	Mage
 			e+4	!=	Mentat?
-		%r-4[y]
+		%r-4[nowhere]
 			e+0+2	!=	Spiritual Weapon
 	Levels
 		/Sumer
@@ -190,7 +165,7 @@ add(`/Rudazov
 		Lka-Nandasi
 		Deorg Academy
 	Actions
-		%r-5[y]
+		%r-5[nowhere]
 			%Action
 				%Protection
 					Mirror	!=	Mirror Shield
@@ -233,16 +208,16 @@ add(`/Rudazov
 							Controlled	!=	Sumer.Anu		!#Exhange of two places Needs: magical line around place, hited teeth of user
 					%Misc
 						Getmye	!=	Sumer.Ea		!#Needs: Drop of ihor
-				%Creature[y]
+				%Creature[nowhere]
 					Demon
 						Anti	!=	Sumer.Marduk	!#Needs: Incarcered archdemon, higher mortal demonolog
 					%w+1	!=	Undead
 						Create	!=	Sumer.Nergal	!#Needs: 3 masters nectromancers
-				%Action[y]
+				%Action[nowhere]
 					Protection	!=	Sumer.Tammuz	!#Needs: egg of Phoenix
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 					%l3.0
 						Vanessa Lee
@@ -276,7 +251,7 @@ add(`/Rudazov
 				%Devkatsi
 				%Eist
 				%Kiig
-			%r-6[y]
+			%r-6[nowhere]
 				%Titan_0
 				%Jinn
 				%Ancient
@@ -301,12 +276,12 @@ add(`/Rudazov
 		Limbo	!=	gray world
 		Chaos	!=	non-embodied
 	Users
-		%r-5[y]
+		%r-5[nowhere]
 			Mage
 				Black
 				Gray
 				White
-		%r-6[y]
+		%r-6[nowhere]
 			Immortal
 				Dark	!=	Demon_0
 				Neutral	!=	Immortal
@@ -314,13 +289,13 @@ add(`/Rudazov
 					h-1	!=	Titan_0
 					h+1	!=	Arch
 				Light	!=	Angel_0
-		%r-7[y]
+		%r-7[nowhere]
 			e+7	!=	God_1
 				Dark
 				Neutral	!=	Beastgod
 				Light
 	Features
-		%r-4[y]
+		%r-4[nowhere]
 			%w+1	!=	Undead
 				Ghoul
 				Zombie
@@ -330,7 +305,7 @@ add(`/Rudazov
 				Ghost
 				Loa
 				Embodied
-		%r-5[y]
+		%r-5[nowhere]
 			%w+1	!=	Undead
 				Einherjar
 				Draugr
@@ -347,15 +322,15 @@ add(`/Rudazov
 			Cubus
 				Incubus
 				Succubus
-		%r-6[y]
+		%r-6[nowhere]
 			%w+1	!=	Undead
 				Undead-Immortal
-		%r-7[y]
+		%r-7[nowhere]
 			%w+1	!=	Undead
 				Undead-God
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				%Grimoires
 					Kreol's
 				%Rods
@@ -371,7 +346,7 @@ add(`/Rudazov
 					Gate
 				%Tech
 					%Plonet's
-			%r-6[y]
+			%r-6[nowhere]
 				%Grimoires
 					Kriabal
 						@Briar
@@ -401,13 +376,13 @@ add(`/Rudazov
 			Blood
 			Mirror
 	Directions
-		%Languages[y]
+		%Languages[nowhere]
 			Word
 			Rune
 			Image
 			Picture
 			Seal
-		%Types[y]
+		%Types[nowhere]
 			%Action
 				Vampire
 				Absorption
@@ -481,16 +456,16 @@ add(`/Rudazov
 			Uran
 	Materials
 		%Metals
-			%r-4[y]
+			%r-4[nowhere]
 				Adamantium!#Pseudo adamant, very sharp, very durable
-			%r-5[y]
+			%r-5[nowhere]
 				Koroniy		!#Anti mage
 				Coldiron	!#Anti mage
 				Copper		!#Anti halfmaterialized
 				Bloodiron	!#Anti demon
 				Silver		!#Anti undead
 				Mithrill
-			%r-7[y]
+			%r-7[nowhere]
 				Adamant		!#Anti superreal
 		%Alchemical
 			Philosopher's
@@ -504,15 +479,15 @@ add(`/Rudazov
 		%Bio
 			Regenerin`)
 add(`/Orderly
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
 	@Sources	!	Supernatural.Fiction.Books.Orderly
-	@Authors[y]
+	@Authors[nowhere]
 		Nick Perumov`)
 add(`/Siyatelniy
-	@Authors[y]
+	@Authors[nowhere]
 		Pavel Kornev
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
 	@Sources	!	Supernatural.Fiction.Books.Siyatelniy
 	Materials
@@ -521,20 +496,16 @@ add(`/Siyatelniy
 add(`/Claymore
 	@Sources	!	Supernatural.Fiction.Manga.Claymore
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			yo	!=	Yoki
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 				%Claymore
 				%Yoma`)
 add(`/Dozory
-	@Languages[y]
-		Russian
-	@Authors[y]
-		Sergey Lukyanenko
-	@Sources	!	Supernatural.Fiction.Books.Dozory
+	@Sources	!	Supernatural.Books.%Dozory
 	Schools
 		Other
 	Levels
@@ -547,18 +518,20 @@ add(`/Dozory
 		3.5	!=	3
 		4.0	!=	2
 		4.5	!=	1
-		5.0	!=	Higher|Not in categories
+		5.0
+			=Higher
+			=Not in categories
 		6.0	!=	0
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			-1	!=	Prana?
 			+3+5	!=	Wizardy?
 				dm	!=	Dark
 				lm	!=	Light
 	Features
-		%r-4[y]
+		%r-4[nowhere]
 			%w+1	!=	Undead
-		%r-5[y]
+		%r-5[nowhere]
 			Other
 				Dark
 				Light
@@ -571,7 +544,7 @@ add(`/Dozory
 			Witch
 			Mirror
 	Actions
-		%r-5[y]
+		%r-5[nowhere]
 			%Misc
 				%Domestic
 					Absolute lock	!#наглухо запирает любые двери
@@ -660,7 +633,7 @@ add(`/Dozory
 								Саркофаг времён	!# — заклинание из арсенала Инквизиции. Применивший его оказывается вместе со своей жертвой запертым в каменном саркофаге, плывущим в небытии, до скончания времён. Случаев побега из саркофага времён пока не существует. Антон Городецкий в книге "Новый дозор" был освобожден из саркофага времен, где он был заключен с ведьмой Ариной	 — тигром. (Однако, осталось неясным, смогла ли Арина освободиться с помощью Минойской Сферы (только ведьмы умеют их заряжать), которую имела при себе: Минойская Сфера прокладывает портал откуда угодно)
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				Son Merlina?
 				Venets of Everything	!# — камни в основании замка в Эдинбурге, позволяют освобождать ушедших Иных, даруя им окончательную смерть.
 				%Grimoires
@@ -675,9 +648,9 @@ add(`/Dozory
 					Minoy	!# - открывает портал откуда угодно, а его точку назначения невозможно проследить. Имеет только один заряд, перезаряжать его умеют только ведьмы. С разряженной Минойской Сферой ведьма Арина была заперта заклинанием Саркофаг Времён.
 				Power Prizm	!# — хрустальная прозрачная призма. Использующий призму Иной вытягивает жизненную силу из того, на кого сквозь неё смотрит. Использовала Алиса Донникова ("Ночной дозор")
 	Directions
-		%Languages[y]
+		%Languages[nowhere]
 			?
-		%Types[y]
+		%Types[nowhere]
 			%Action
 				Love	!=	Obvorozhenie
 				Clairvoyance
@@ -712,32 +685,19 @@ add(`/Dozory
 					6	x3	very temp 	very color	+	world of dead elems
 				~1.5 ~0.0
 					7	x1	full temp	full color	0	normal	!#Can be backside`)
-add(`/Fate of Archmage
-	@Languages[y]
-		Russian
-	@Sources	!	Supernatural.Fiction.Fanfics.Fate of Archmage
-	Verse
-		@Type
-			Meta
-		Rudazov
-		Potteriana`)
-add(`/How to stat wizard
-	@Authors[y]
-		Duain Diana
-	@Languages[y]
-		English
-	@Sources	!	Supernatural.Fiction.Books.How to stat wizard`)
+add(`/Diane Duane
+	@Sources	!	Supernatural.Fiction.Diane Duane`)
 add(`/Eyes of other world
-	@Authors[y]
+	@Authors[nowhere]
 		Jack Vance
-	@Languages[y]
+	@Languages[nowhere]
 		English
 	@Sources	!	Supernatural.Fiction.Books.Eyes of other world`)
 add(`/Labirints Eho`)
 add(`/Lord of Rings
-	@Authors[y]
+	@Authors[nowhere]
 		John Ronald Reuel Tolkien
-	@Languages[y]
+	@Languages[nowhere]
 		English
 	@Sources	!	Supernatural.Fiction.Verse.LotR
 	Space
@@ -751,20 +711,20 @@ add(`/Lord of Rings
 			@Worlds
 				Arda
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			+5	!=	Mana?
 	Features
-		%r-7[y]
+		%r-7[nowhere]
 			God_1
 			Valar
-		%r-6[y]
+		%r-6[nowhere]
 			Ainur
-		%r-5[y]
+		%r-5[nowhere]
 			Mage
 			Nazgul
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 				%Elv
 				%Gnome
@@ -776,7 +736,7 @@ add(`/Lord of Rings
 				%Hobbit
 	Objects
 		%Artefacts
-			%r-6[y]
+			%r-6[nowhere]
 				%Rings
 					One Ring
 				%Gems
@@ -785,35 +745,35 @@ add(`/Lord of Rings
 		%Metals
 			Mithrill`)
 add(`/Nick
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Authors[y]
+	@Authors[nowhere]
 		Andrzej	Yasinski
 	@Sources	!	Supernatural.Fiction.Books.Nick
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 				%Elv
 				%Gnome
 				%Orc_0
 				%Demon_0
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			-1	!=	Prana
 			+3	!=	Emana
 			+4	!=	Psy
 			+5	!=	Mana
 			if	!=	Infomana
 	Users
-		%r-5[y]
+		%r-5[nowhere]
 			e+5	!=	Mage
 			if	!=	Infomage
 			e+3	!=	Sorcerer
 			e+4	!=	Psyonic
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				%Rods
 					%Adeptnesser's
 	Elements
@@ -825,7 +785,7 @@ add(`/Nick
 			Ice
 			Electrizity
 	Directions
-		%Languages[y]
+		%Languages[nowhere]
 			Construct
 			Weaving
 			Structure
@@ -833,7 +793,7 @@ add(`/Nick
 		%Creatures
 			Holem
 			Automate
-		%Types[y]
+		%Types[nowhere]
 			%Action
 				Mental
 				Info
@@ -872,23 +832,23 @@ add(`/Nick
 		Atl
 		Atlant
 	Features
-		%r-5[y]
+		%r-5[nowhere]
 			Cleverness
-		%r-6[y]
+		%r-6[nowhere]
 			God_2`)
 add(`/Potteriana
 	@Sources	!	Supernatural.Fiction.Verse.Potteriana
 	Materials
 		%Liquid
-			%r-5[y]
+			%r-5[nowhere]
 				Basilisk Poison
 				Phoenix Cry
 		%Powder
-			%r-5[y]
+			%r-5[nowhere]
 				Momental Dark Powder
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				Marauder's Map
 				Diary of Tom Riddle
 				%of Basicals
@@ -914,7 +874,7 @@ add(`/Potteriana
 				%Snitches
 				%Bludgers
 				%Mysteries Department's
-			%r-6[y]
+			%r-6[nowhere]
 				%Mysteries Department's
 					%Time-Turners
 				%Deathly Hallows
@@ -929,10 +889,10 @@ add(`/Potteriana
 				Veritaserum
 				оборотное зелье
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			+3+5	!=	Wirardy?
 	Directions
-		%Types[y]
+		%Types[nowhere]
 			%Object
 				Elixir
 					Potion
@@ -958,7 +918,7 @@ add(`/Potteriana
 				Blessing
 				Vow
 				Enchantment
-		%Languages[y]
+		%Languages[nowhere]
 			Rune
 			Spell
 			Ritual
@@ -979,7 +939,7 @@ add(`/Potteriana
 			Koldovstvorets
 	Actions
 		/vm1
-			%r-5[y]
+			%r-5[nowhere]
 				"Serpensortia-" (1)	!# — призыва змеи[6].
 				"Fianto duri" (1)	!# — мощное защитное заклинание, укрепляющее действие сопутствующих защитных чар[27].
 				"Fera Verto" (1)	!# — живых в сосуды
@@ -1000,7 +960,7 @@ add(`/Potteriana
 				%Misc
 					"Ascendio" !#(1)	 — выталкивает человека из воды[8].
 		/vm2
-			%r-5[y]
+			%r-5[nowhere]
 				"Draconiforce" (2)	!# — оживляет статую мини-дракончика в настоящего мини-дракончика или превращает в мини-дракончика предметы небольшой массы[15].
 				«Сито из котла» (2)
 				Заклинание невидимого хлыста (2)
@@ -1042,7 +1002,7 @@ add(`/Potteriana
 						"Vermiculus" !#(2)	 — превращает объект в червя[5].
 						"Aviforce-"!#(2)	 — противник превращается в птицу|стаю птиц|стаю летучих мышей.[4]
 		/vm3
-			%r-5[y]
+			%r-5[nowhere]
 				%Action
 					%Time
 						"--Minutum" (3)	!# - заклинание длительностью в минуту
@@ -1059,10 +1019,10 @@ add(`/Potteriana
 				"Formsalucis-" (3)	!# - свет в форму
 				"-Directum" (3)	!# - направленное действие
 		/vm4
-			%r-5[y]
+			%r-5[nowhere]
 				"Calori-" (4)	!# - нагреть
 				"Frigido-" (4)	!# - охладить
-		%r-5[y]
+		%r-5[nowhere]
 			%Categories
 				Wizarding
 				Parseltongue
@@ -1323,16 +1283,16 @@ add(`/Potteriana
 			@Expelliarmus	!# - обезоружение
 			@Fulgari	!# - связывание
 	Creatures
-		%r-4[y]
+		%r-4[nowhere]
 			%Salamander
 			%Manticore
 			%Mandrake
 			%Fire Crab
 			%Cerber
-		%r-5[y]
+		%r-5[nowhere]
 			%Wyvern
 			%Unicorn
-		%r-6[y]
+		%r-6[nowhere]
 			%Basilisk
 				@Slytherin
 			%Dementor
@@ -1340,7 +1300,7 @@ add(`/Potteriana
 				Fawkes
 					@Albus Dumbledore
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Acromantula
 					Arogog
 				%Giant
@@ -1386,7 +1346,7 @@ add(`/Potteriana
 						Voldemort	!=	Tom Marvolo Riddle
 						Albus Dumbledore	!=	Albus Persival Vulfric Brian Dumbledore
 	Features
-		%r-4[y]
+		%r-4[nowhere]
 			Muggle
 			Squib
 			%w-1	!=	Spirit
@@ -1394,7 +1354,7 @@ add(`/Potteriana
 				Boggart
 				Brownie Elv
 			Poltergeist
-		%r-5[y]
+		%r-5[nowhere]
 			Eye of Basilisk
 			Wizard
 				Dark
@@ -1407,30 +1367,30 @@ add(`/Potteriana
 			Werewolf
 			Vampire`)
 add(`/Svet za okoshkom
-	@Authors[y]
+	@Authors[nowhere]
 		Svyatoslav Loginov
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
 	@Sources	!	Supernatural.Fiction.Books.Svet za okoshkom
 	Features
-		%r-4[y]
+		%r-4[nowhere]
 			Ghost`)
 add(`/Svarog
-	@Authors[y]
+	@Authors[nowhere]
 		Buzhkov
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
 	@Sources	!	Supernatural.Fiction.Books.Svarog`)
 add(`/OZ country wizard`)
 add(`/Emerald town wizard
-	@Authors[y]
+	@Authors[nowhere]
 		Alexander Volkov
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
 	@Sources	!	Supernatural.Fiction.Verse.Emerald town wizard`)
 add(`/Firestarter
-	@Authors[y]
+	@Authors[nowhere]
 		Steven King
-	@Languages[y]
+	@Languages[nowhere]
 		English
 	@Sources	!	Supernatural.Fiction.Books.King.Firestarter`)

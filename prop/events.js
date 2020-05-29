@@ -1,15 +1,15 @@
-props.universesConfig+="\nEvents[y]"
+props.universesConfig+="\nEvents[nowhere]"
 add(`/Myverse/1/a`)
 add(`/Boy Who Conquered Time/1
-	/Before Hog
-		/Letter from Hogwarts
-		/Letters Week
-		/From Hog	!	Hagrid
-		/Diagon
+	%/Before Hog
+		Letter from Hogwarts
+		Letters Week
+		From Hog	!	Hagrid
+		%/Diagon
 			Gringotts	!	SS
 			Talk with Draco	!	Book
 			Ollivander	!	I'm not weak
-		/To Japan
+		%/To Japan
 			Find Aki
 			To Kusu Kumo
 			Talk with director
@@ -18,53 +18,53 @@ add(`/Boy Who Conquered Time/1
 			Marafon
 			Complete
 			Portal Magic
-		/Portal to England
+		%/Portal to England
 			Mrs Barington
-		/Advance of Leaky Cauldron
-		/Talk with McGonagall
-		/Train
+		Advance of Leaky Cauldron
+		Talk with McGonagall
+		%/Train
 			Draco	!	Talk
 			Book to Hermione
-		/Hogsmid
+		%/Hogsmid
 			Light on Platform
-	/1 Course
-		/Spirits
+	%/1 Course
+		%/Spirits
 			Scary Talk
-		/Sort by Hat
+		%/Sort by Hat
 			Harry	!	Griffindor
 			Draco	!	Griffindor
 			Hermione	!	Griffindor
 			Nevill	!	Griffindor
 			Ron	!	Griffindor
-		/Room
+		%/Room
 			Draco Vs Ron
 			Remont
-		/Transfiguration
+		%/Transfiguration
 			Teaching`)
 add(`/HPMoR
-	/Before Hog
-		/Letter from Hogwarts
-		/Mrs Figg
-		/From Hog	!	McGonagall
-		/Diagon
+	%/Before Hog
+		Letter from Hogwarts
+		Mrs Figg
+		From Hog	!	McGonagall
+		%/Diagon
 			Talk with Draco	!	Joke
 		/Muggle Books Buy
-		/Platform
+		%/Platform
 			Mrs Weasly	!	Thanks
 			Ron	!	Quidditch is Stupid
 			Draco	!	Friends
 			Fred and George	!	Chaos Orden
 			Joke with Nevill
-		/Train
+		%/Train
 			Hermione	!	Science
 			Frog	!	Prefects
-	#Types
+	%Types
 		Voldi
 			Quirrellmort`)
 add(`/Bad Choice/Demon`)
 add(`/Bad Choice/Naruto`)
 add(`/Filchenkov
-	#Arka
+	%Arka
 		Philosophers Stone
 		Secret Room
 		Узник Азкабана
@@ -72,7 +72,7 @@ add(`/Filchenkov
 		Орден Феникса
 		Принц Полукровка
 		Дары Смерти
-	#DADA
+	%DADA
 		Квиррелл
 		Локхарт
 		Люпин
@@ -81,31 +81,33 @@ add(`/Filchenkov
 		Амбридж
 		Снейп
 		Кэрроу
-	/Kid
+	%/Kid
   		Potters
   		Hellowen
   		Mungo
   		McGonagall
   		Dusrley
-	/Before Hog
+	%/Before Hog
 		School
 		Snake
 		Letters
-		Hagrid
-		Diagon
-		Malkin
-			Malfoy
-		Дырявый котел
-		Platform
+		From Hog	!	Hagrid
+		%/Diagon
+			Leaky Cauldron
+			Gringotts
+			%/Malkin
+				Malfoy
+			Ollivander
+		%/Platform
 			Weasley
-		Train
+		%/Train
 			Ron
 			Hermione
 			Nevill
 			Draco
 		Hogsmitt
 		Boats
-	/1 Course
+	%/1 Course
 		Hat
 		Карта Weasley
 		Mantia
@@ -115,7 +117,7 @@ add(`/Filchenkov
 		Quirrellmort in mantia
 		Centavres
 		Philosophers Stone
-	/2 Course
+	%/2 Course
 		Dobby
 		Escape in Ford
 		Hole
@@ -134,23 +136,23 @@ add(`/Filchenkov
 		Duel Club
 		Secret Room
 		Hagrid in Azkaban
-	/3 Course
+	%/3 Course
 		Weasley в египет
 		Побег сириуса
 		Надувание Марч
 		Дементоры в Trainе
 		Обморок
 		Люпин Защищает
-		Time-Turner
+		%/Time-Turner
 			На пару гарри и гермионе от отдела тайн
 		Новые предметы
 		Hagrid препод
 		Клювокрыл
 		Dracoморт и адское пламя
 		Спасение сириуса
-		ПатRonус
+		Patronus
 		Фадж отрицает
-	/4 Course
+	%/4 Course
 		Чемпионат по квиддичу
 		Барти младший
 		Триволшебный Турнир
@@ -164,11 +166,11 @@ add(`/Filchenkov
 		Битва
 		Возвращение
 		Разоблачения Барти
-	/5 Course
-	/6 Course
-	/7 Course
-	/After Hog
-	#Types
+	%/5 Course
+	%/6 Course
+	%/7 Course
+	%/After Hog
+	%Types
 		Voldi
 		  Quirrell
 		  Tom
@@ -176,13 +178,13 @@ add(`/Filchenkov
 		  Voldi
 		  Gildi`)
 add(`/Miyato
-	/Kid
+	%/Kid
 		Посвящение Смерти
 		Защитно Поглощающая руна
-	#DADA
+	%DADA
 		Sirius`)
 add(`/Potteriana
-	#Arka
+	%Arka
 		Philosophers Stone
 		Secret Room
 		Узник Азкабана
@@ -190,7 +192,7 @@ add(`/Potteriana
 		Орден Феникса
 		Принц Полукровка
 		Дары Смерти
-	#DADA
+	%DADA
 		Quirrell
 		Lockhart
 		Lupin
@@ -198,29 +200,33 @@ add(`/Potteriana
 		Ambridge
 		Snape
 		Carrow
-	/Kid
+	%/Kid
 		Potters
 		Hellowen
 		McGonagall
 		Dursley
-	/Before Hog
+	%/Before Hog
 		School
 		Snake
-		Letters
-		Hagrid
-		Diagon
-		Malkin
-			Malfoy
-		Platform
+		Letter from Hogwarts
+		Letters Week
+		From Hog	!	Hagrid
+		%/Diagon
+			Leaky Cauldron
+			Gringotts
+			%/Malkin
+				Malfoy
+			Ollivander
+		%/Platform
 			Weasley
-		Train
+		%/Train
 			Ron
 			Hermione
 			Nevill
 			Draco
-		Hogsmitt
+		%/Hogsmitt
 		Boats
-	/1 Course
+	%/1 Course
 		Hat
 		Mantia
 		Mirror of Erised
@@ -229,7 +235,7 @@ add(`/Potteriana
 		Quirrellmort in mantia
 		Centavres
 		Philosophers Stone
-	/2 Course
+	%/2 Course
 		Dobby
 		Escape in Ford
 		Hole
@@ -246,7 +252,7 @@ add(`/Potteriana
 		Duel Club
 		Secret Room
 		Hagrid in Azkaban
-	/3 Course
+	%/3 Course
 		Weasley в египет
 		Побег сириуса
 		Надувание Марч
@@ -261,7 +267,7 @@ add(`/Potteriana
 		Спасение сириуса
 		ПатRonус
 		Фадж отрицает
-	/4 Course
+	%/4 Course
 		Чемпионат по квиддичу
 		Барти младший
 		Триволшебный Турнир
@@ -273,7 +279,7 @@ add(`/Potteriana
 		Битва
 		Возвращение
 		Разоблачения Барти
-	/5 Course
+	%/5 Course
 		Дементоры на тисовой
 		Дом сириуса
 		Ron и герми префекты
@@ -281,4 +287,6 @@ add(`/Potteriana
 		Урок амбридж
 		наказание амбридж
 		Отряд Дамблдора
-		Драка и запрет квиддича`)
+		Драка и запрет квиддича
+	%/6 Course
+	%/7 Course`)

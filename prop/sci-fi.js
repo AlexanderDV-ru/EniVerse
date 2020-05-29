@@ -1,37 +1,37 @@
 
 add(`/Hyperboloid inzhenera garina
-	@Authors[y]
+	@Authors[nowhere]
 		Tolstoy
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Books`)
 add(`/Elita
-	@Authors[y]
+	@Authors[nowhere]
 		Belyaev
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Books`)
 add(`/Strugatskie
-	@Authors[y]
+	@Authors[nowhere]
 		Strugatskie
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Books`)
 add(`/Azimov
-	@Authors[y]
+	@Authors[nowhere]
 		Azik Azimov
-	@Languages[y]
+	@Languages[nowhere]
 		English
 	Space
 		w
 			<1	!=	Hyper`)
 add(`/hainline
-	@Authors[y]
+	@Authors[nowhere]
 		Robert Hainline
-	@Languages[y]
+	@Languages[nowhere]
 		English
 	Space
 		w
@@ -45,25 +45,25 @@ add(`/vavilon5
 		w
 			<1	!=	Hyper`)
 add(`/Star Gate
-	@Languages[y]
+	@Languages[nowhere]
 		English
 	Space
 		w
 			<1	!=	Hyper`)
 add(`/Star Wars
-	@Languages[y]
+	@Languages[nowhere]
 		English
-	@Sources[y]
+	@Sources[nowhere]
 		%Film
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			gf	!=	Great Force?
 	Users
-		%r-5[y]
+		%r-5[nowhere]
 			gf	!=	Forceuser
 				lm	!=	Light
 				dm	!=	Darl
@@ -75,17 +75,17 @@ add(`/Star Wars
 			<1	!=	Hyper
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				%Steelarms
 					%Lightsaber
 				%Tech
 					%Galaxy's`)
 add(`/Tumannost Andromedy
-	@Authors[y]
+	@Authors[nowhere]
 		Efremov
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Books
 	Space
 		w
@@ -93,7 +93,7 @@ add(`/Tumannost Andromedy
 add(`/Kir Bulychov
 	Objects
 		Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				%22 Century Tech
 					Time-Machine
 					Meylaphone
@@ -101,19 +101,19 @@ add(`/Kir Bulychov
 					Spaceship
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 					Seleznyov(a)
 						Alice`)
 add(`/Voina mirov
-	@Authors[y]
+	@Authors[nowhere]
 		Herbert wels
-	@Languages[y]
+	@Languages[nowhere]
 		English
-	@Sources[y]
+	@Sources[nowhere]
 		%Books`)
 add(`/Autostop by galaxy
-	@Authors[y]
+	@Authors[nowhere]
 		Duglas adams
-	@Languages[y]
+	@Languages[nowhere]
 		English`)

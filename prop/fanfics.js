@@ -1,49 +1,56 @@
 
 add(`/Antichniy charoplet
-	@Authors[y]
+	@Authors[nowhere]
 		Alessiy
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 			%Fanfics
 				1.
 				2.
 				3.`)
+add(`/Fate of Archmage
+	@Sources	!	Supernatural.Fiction.Fanfics.Fate of Archmage
+	Verse
+		@Type
+			Meta
+		Rudazov
+		Potteriana`)
 add(`/Small Monster
-	@Authors[y]
+	@Authors[nowhere]
 		Daimon Agafo
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics`)
 add(`/Thanks for fish
-	@Authors[y]
+	@Authors[nowhere]
 		Fil Bandileros
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 	Verse
 		@Type
 			Multi
 		Marvel`)
 add(`/The Zadrot
-	@Authors[y]
+	@Authors[nowhere]
 		Fil Bandileros
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 	Verse
 		@Type
 			Uni
 		The Gamer`)
 add(`/Meta-Hobbit
-	@Authors[y]
+	@Authors[nowhere]
 		Fil Bandileros
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 	Verse
 		@Type
@@ -78,7 +85,7 @@ add(`/Boy Who Conquered Time
 		Naruto
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 					%l3.0
 						Harry Potter[u]
@@ -88,17 +95,17 @@ add(`/Boy Who Conquered Time
 								Back
 								No
 	Users
-		%r-6[y]
+		%r-6[nowhere]
 			%Other
 				Time
 					Back
 					Notime
 	Objects
 		%Artefacts
-			%r-6[y]
+			%r-6[nowhere]
 				Chronos braslet
 	Directions
-		%Languages[y]
+		%Languages[nowhere]
 			Schema
 			Spell
 	Actions
@@ -108,7 +115,7 @@ add(`/Boy Who Conquered Time
 					%Anti
 						Eye of Demon
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			-1	!=	Prana
 			+5	!=	Mana
 	Elements
@@ -119,11 +126,11 @@ add(`/of Argus Filchenkov
 		@Type
 			Uni
 		Potteriana
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Authors[y]
+	@Authors[nowhere]
 		Argus Filchenkov
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 			0.	"Prologue.	Harry Potter and Three Old Ladies"
 			1.	"Harry Potter and key saver"
@@ -132,57 +139,43 @@ add(`/of Argus Filchenkov
 			4.	"Harry Potter and Champions Hunt"
 	Objects
 		%Artefacts
-			%r-6[y]
+			%r-6[nowhere]
 				%Time-Turners	!=	Not limited hours, madness on incorrect
 	Materials
 		%Metals
 			Coldiron`)
 add(`/Bad choice
-	@Authors[y]
-		N.B.
-	@Languages[y]
-		Russian
-	@Sources[y]
-		%Fanfics
-	@Marks[y]
-		AU
-		Вымышленные существа
-		MS
-		OWP
-		OMP
-		ООС
-		Parody
-		First Person
-		POV
-		Попаданчество
-		Стёб
-		Action
-		Humor
+	Worlds
+		/Leer
+			Paths	!	Energy
+		/Sixth Department
+			Verse	!	Real
+		/Magical Rus
+			Verse	!	Real
+		/Kostyan
+			Verse	!	Real
+		/Unknown Crap
+			Verse	!	Naruto
+	World Types
+		Elements
+			%Basic
+				Fire
+				Water
+				Air
+				Earth
+				Electrizity
+				Ice
+			%First
+				Dark
+				Light
+			%Misc
+				Void
+	@Sources	!	Supernatural.Fanfics.%Bad Choice
 	Verse
 		@Type
 			Meta
 		Original
-			@Worlds
-				Leer
-				Sixth Department
-				Magical Rus
-				Kostyan
-				Unknown Crap
-			@World
-				Elements
-					%Basic
-						Fire
-						Water
-						Air
-						Earth
-						Electrizity
-						Ice
-					%First
-						Dark
-						Light
-					%Misc
-						Void
-		Voshozhdeniye geroya shita
+		The Rising hero of shield
 		Naruto
 		Diablo
 		Toriko
@@ -215,13 +208,13 @@ add(`/Bad choice
 		Ranma 1/2
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 				%Elv
 				%Unknown Evil Crap
 				%Goblin_2
 	Energies
-		%r-5[y]
+		%r-5[nowhere]
 			-5	!=	Mrana?
 			-4	!=	Psy?
 			-3	!=	Ema?
@@ -235,7 +228,7 @@ add(`/Bad choice
 			+5	!=	Mana
 			+1+2	!=	Ki+Reatsu
 			+3+5	!=	Emana+Mana
-		%r-6[y]
+		%r-6[nowhere]
 			+7	!=	Ba-Hion
 	Objects
 		%Elixirs
@@ -261,13 +254,13 @@ add(`/Bad choice
 					Anger
 					Sad
 	Users
-		%r-5[y]
+		%r-5[nowhere]
 			e+1	!=	Kiuser
 			e+2	!=	Reatsuuser
 			e+4	!=	Psyonic
 			e+5	!=	Mage
 			e+1+2	!=	Chakrauser
-		%r-6[y]
+		%r-6[nowhere]
 			dm	!=	Demon_3
 			lm	!=	Angel_0
 			gm	!=	Gamer's System
@@ -278,9 +271,9 @@ add(`/Bad choice
 				Cheater	Plus
 				Hard
 				The Gamer
-		%r-7[y]
+		%r-7[nowhere]
 			e+7	!=	God_3
-		%r-0[y]
+		%r-0[nowhere]
 			e+7	!=	Unknown Crap
 	Actions
 		%Categories
@@ -301,7 +294,7 @@ add(`/Bad choice
 					Destroy
 				Soul
 					Sealing
-		%r-5[y]
+		%r-5[nowhere]
 			%l5.0
 				@Name
 					%MH
@@ -317,11 +310,11 @@ add(`/Bad choice
 						Earth
 							Uncontrolled	!=	?
 	Features
-		%r-4[y]
+		%r-4[nowhere]
 			Entity
 				%w+1	!=	Undead
 			%w+1	!=	Undead
-		%r-5[y]
+		%r-5[nowhere]
 			Entity
 				%w+1	!=	Undead
 			%w+1	!=	Undead
@@ -329,10 +322,10 @@ add(`/Bad choice
 			Werewolf
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				%Entity Stones / ES
 				%Soul Stones / SS
-			%r-7[y]
+			%r-7[nowhere]
 				%Spheres
 					%Skill-Copy	!#Gold
 					%Skill-Izvlecheniya
@@ -364,14 +357,14 @@ add(`/Bad choice
 			Shadow
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 					%l5.0
 						Yamada Toru
-			%r-6[y]
+			%r-6[nowhere]
 				%Styopochkin
 					Student of unknown crap
-			%r-7[y]
+			%r-7[nowhere]
 				Unknown Crap
 				Tizitsh
 				Chronos
@@ -379,13 +372,13 @@ add(`/Bad choice
 				Hel
 				Hapsiel`)
 add(`/New horizonts
-	@Authors[y]
+	@Authors[nowhere]
 		Shetel-Sorken
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
-	@Marks[y]
+	@Marks[nowhere]
 		AU
 		Вымышленные существа
 		Dark
@@ -403,7 +396,7 @@ add(`/New horizonts
 		Психические расстройства
 		Fantastics
 		Fantasy
-	@Spoilers[y]
+	@Spoilers[nowhere]
 		%Death
 			main person
 			adding person
@@ -416,15 +409,15 @@ add(`/New horizonts
 		Marvel
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 				%Orc
 				%Elv
 				%Ilitishari
 	Features
-		%r-6[y]
+		%r-6[nowhere]
 			Shari
-		%r-5[y]
+		%r-5[nowhere]
 			Telepath
 	Elements
 		%Plasma
@@ -450,7 +443,7 @@ add(`/HP and future know
 		Artefatory parts of body
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				l4.0
 					Map of Marauders
 						@Marauders
@@ -474,7 +467,7 @@ add(`/HP and future know
 					Stone of Materialization
 						@Nicolas Flammel!#Преобразует созданное магией в реальную материю
 					Mirror of Erised!#Создаёт портал в кусок мира, в котором находится единственный отражающийся в зеркале, в том виде, в котором он видит исполнение своих самых глубоких желаний. Портал находится внутри зеркала, в него нельзя просто пройти из-за защиты. Неизстно способа уничтожения зеркала. Зеркало может открывать портал в часть куска мира, при определенных условиях этого куска мира и при этом в этой части куска мира будет находиться заранее вложенные вещи
-			%r-6[y]
+			%r-6[nowhere]
 				@Mysteries Department's
 					%Time-Turners!#Закольцовывает время, перемещая назад	Министерство магии Британии: отдел тайн, другие министерства магии, нелегалы
 				%Deathly Hallows
@@ -483,49 +476,49 @@ add(`/HP and future know
 					Stone of Reincarnation!#	Epic	Legendary	Уникальный (1)	Создаёт псевдоматериальные тело и разум человека с помощью информации магического ядра, сознания и некромантической информации	Информационные, Некромантические: Информационные, Псевдо-Материализационные, Дар Смерти	Кадм Певерел & Другие Певерелы? &?	-
 	Levels
 		0.0	!=	Nonmagic
-			@l[y]
+			@l[nowhere]
 				O
 				0
 				N
-			@r[y]
+			@r[nowhere]
 				Немагический
 		1.0	!=	Mediocre
-			@l[y]
+			@l[nowhere]
 				A
 				M
-			@r[y]
+			@r[nowhere]
 				Заурядный
 		2.0	!=	Weak
-			@l[y]
+			@l[nowhere]
 				B
 				W
-			@r[y]
+			@r[nowhere]
 				Слабый
 		3.0	!=	Ordinary
-			@l[y]
+			@l[nowhere]
 				C
 				O
-			@r[y]
+			@r[nowhere]
 				Обыкновенный
 		4.0	!=	Rare
-			@l[y]
+			@l[nowhere]
 				R
-			@r[y]
+			@r[nowhere]
 				Редкий
 		5.0	!=	Epic
-			@l[y]
+			@l[nowhere]
 				E
-			@r[y]
+			@r[nowhere]
 				Эпический
 		6.0	!=	Legendary
-			@l[y]
+			@l[nowhere]
 				L
-			@r[y]
+			@r[nowhere]
 				Легендарный
 		7.0	!=	Divine
-			@l[y]
+			@l[nowhere]
 				D
-			@r[y]
+			@r[nowhere]
 				Божественный
 	Live entity
 		Немагические	Комбинированные	Магические
@@ -540,10 +533,150 @@ add(`/HP and future know
 		Разумные: гоминиды (в т.ч. люди, эльфы, гномы, гоблины), кентавры, русалоиды !#Они в отличии от маг. тварей не магические, убьем дракона - магия выделится, убьем человека - нет, может быть лишь всплеск до смерти	---	Разумные сущности: Дементоры, патронусы, призраки !#Они разумны; могут хранить, передавать, обрабатывать инфу; производить сложные действия; работать по плану. Дементоры сотрудничают с теми, кто дает жертву, а патронусы используют добровольно отданную магию хозяина. Патронус человека всегда 1, если он делится на несколько частей передающих сообщение он все еще лишь 1. Когда патронус не вызван, он в состоянии "споры" в ядре человека, при смерти владельца патронус остается в ядре, если уничтожить ядро - патронус тоже будет уничтожен`)
 
 add(`/Myverse
-	@Sources[y]
-		%Fiction
-			%Fanfics
-				Myverse
+	Laws
+		В метавселенной возможно все, от самых разных миров до изменения межмировой геометрии на определенном участке, но невозможно нарушить логику, а следовательно нельзя:
+			1.	Сохранение		m-n-e	-	Любое изменение материи, энергии, эфира.
+				Ни что (вообще) не может быть уничтожено, сумма всего в метавселенной никогда не меняется, более реальные могут лишь моментально изменить менее реальное в такую форму, что покажется уничтожение, но закон сохранения действует. По этой причине нельзя изменить атман, нет ничего более реального, просто некому будет на него так действовать. Нельзя иллюзию сделать реальной (воплощение делает реальный объект похожий на иллюзию), но для более реальных менее реальные являются иллюзиями просто разного качества, поэтому более реальные могут так сделать. Объекты одного уровня не могут друг на друга так действовать. Сумма всего в метавселенной не меняется со временем, всегда постоянна
+				Rud:	Закон сохранения материи-энергии. Они не могут ни возникнуть из ниоткуда, ни исчезнуть вникуда, лишь изменять состояния.
+					->	Вечного генератора не может существовать.
+			2.	Конвергентность	s-t-u	-	Любое изменение пространства, времени, контента.
+				Существует только настоящее. Нельзя изменить прошлое или будущее, можно лишь изменить настоящее и подождать пока будущее или прошлое настанет, чтобы это произошло время должно иметь определенную скорость: чтобы наступило прошлое скорость должна быть отрицательной, а чтобы наступило будущее - положительной.
+					->	В любой момент пронстранства-времени существует лишь один объект.
+				Rud:	Закон однонаправленности временного потока. Переместиться в прошлое, как-либо его изменить совершенно невозможно. Даже если божественное чудо откатит целую планету к предыдущей версии — это будет не возвращением в прошлое, а изменением настоящего.
+					->	Машины времени не может сущестовать
+						!#Но никто не запрещает откатить изменения
+						!#Ускорить/замедлить процессы
+						!#Или использовать маховики времени
+			3.	Преобразуемость	r-e-f	-	Любое изменение реальности, энергии, информации.
+				->
+				Rud:	Закон бессмертия Атмана. Душа есть абсолютное начало, неподвластное окончательному уничтожению, но лишь изменению внешних оболочек и регулярным реинкарнациям.
+					->	Любая вещь с реальность <1% нереальна (Точнее виртуальна)
+						->	Любая виртуальная вещь, информация имеет реальноть > 0% но < 1%
+					->	Любая вещь имеет реальность >1% и <100%, кроме атмана и информации
+					->	Атман неунитожим, несоздаваем, нереален. Он не может существовать, а значит не существует. Нельзя уничтожить то, чего нет.
+						->	Души с более чем 7 (8 включая 0-ядро) оболочками разных уровней не может существовать.
+							!#Так как реальность не может дойти до 8, реальность в 8 при конвертации в проценты будет больше 100%, а даже достижение 100% невозможно.
+							!#Восьмой уровень реальности равен нулевому, это атман. А две оболочки с одним уровнем уже не в условии.
+							->	Демиурги не уходят от богов на качественно иной уровень, у бога 8 у демиурга 8.5 не 9.
+					->	В шкале реальности атман 100% 0%, она замкнута
+			1,2
+				->	Вечного двигателя также не может сущестовать.
+			2,3
+			3,1
+			1,2,3
+		Материя, энергия и эфир взаимосвязаны. Изменяя любой из них с достаточной силой - поменяем остальные.
+			Если силы не хватает, то изменится лишь 1. Сам изменяемый, а потом вернется к исходному.
+			Алхимия рудазова меняет эфирное тело, а за ним меняется и обычное.
+			Инфоструктуры Ясинского - ментальное тело, меняем ментальное тело/инфоструктуру с дост. силой - меняем предмет.
+		Магия не нарушает законы вселенной. Всё, что она делает, согласуется не только с Законами Творца, но и с физическими (метафизическими) законами данного конкретного мира. Контроль реальности, который позволяет эти законы нарушать, магам недоступен — это удел сущностей более высокого порядка
+		у каждого мира есть атман, создавая домен вы становитесь миром, мир может быть живым. Тело мира - материя, душа - эфир.
+	Reality
+		%Zero
+			%Zero
+				0	!=	Core
+		%Virtuality
+			%One
+				0.01-0.99	!=	Info
+		%Potentiality
+			%Wild
+				1-2	!=	Chaos
+			%Quiet
+				3	!=	Limbo
+		%Reality
+			%Pre
+				4-5	!=	cold ether
+				5-10	!=	energies
+				10-15	!=	Solid ether
+				15-20	!=	w-1,	Spirits
+				20-25	!=	Pseudo Matter
+				25-30	!=	Alchemy Matter
+			%Normal
+				30-40	!=	r-2,	Matter
+				40-50	!=	r-3
+				50-60	!=	r-4
+			%Post
+				60-70	!=	r-4/r-5
+				70-80	!=	r-5/r-6
+				80-90	!=	r-6/r-7
+			%Super
+				90-95	!=	r-7
+				95-99	!=	Xtonics
+			%Higher
+				99	!=	First Ether
+		%Full
+			%Full
+				100	!=	Core
+	World Types
+		Elements
+			%Basic
+				Fire
+				Water
+				Air
+				Earth
+				Electrizity
+				Ice
+			%First
+				Dark
+				Light
+			%Misc
+				Void
+	Ether
+		Cold	!=	Other
+		Dense	!=	Negative Shells, except matteral shells
+		Suble	!=	Positive Shells
+		Soft	!=	Negative Energy, except e-7
+		Hot	!=	Positive Energy, except e+7
+		First	!=	e+7, First elements
+			e+7
+			%Elements
+				%First
+	mtv	!=	Meta-Verse
+		mlv	!=	Multi-Verse
+			uns	!=	Uni-Space
+				b
+				d
+				f
+				g
+				h
+				j
+				k
+				q
+			unv	!=	Uni-Verse
+				s	!=	-Space
+					m	!=	Normal
+						x	!=	Length
+						y	!=	Height
+						z	!=	Depth
+					w	!=	Hyper
+					n	!=	Dimension
+						a	!=	Ether
+						i	!=	Info!#hyper equals etheral?
+						o	!=	Tropy
+				v	!=	-Verse
+					!#Content
+					r	!=	Reality
+					e	!=	Energy
+					f	!=	Forms, Info, Structure
+						Types
+							Full-Realized-Types		Matter	!=	222
+								Matter	!=	312
+								Energy	!=	231
+								Ether	!=	123
+							Half-Realized-Types		Ether
+								Chaos	!=	120
+								Limbo	!=	110
+								Ether	!=	122
+							Non-Realized-Types		Info
+								Info	!=	002
+								Structure
+								Types
+						Structure
+						Info
+				t	!=	-Time
+			unt	!=	Uni-Time
+		Chaos
+		Limbo
+	@Sources	!	Supernatural.Fanfics.%Myverse
 	Misc
 		Power
 			Energy
@@ -561,12 +694,14 @@ add(`/Myverse
 		+3	!=	Unperson
 		+4	!=	Unmind
 		+5	!=	Unmage
-		!#not equal to muggle, nomage
+			#not equal to muggle, nomage
 		+6	!=	Unimmortal, Mortal
 		+7	!=	Ungod
 	Shells	!=	h
-		-5	!=	Magical Body	!#chakras, nadyas
-		-4	!=	Informatic Body	!#Infostructure
+		-5	!=	Magical Body
+			#chakras, nadyas of Rudazov
+		-4	!=	Informatic Body
+			#Infostructure of Nick
 		-3	!=	Feeling Body?
 		-2	!=	Ether Body
 		-1	!=	Matter Body
@@ -588,7 +723,7 @@ add(`/Myverse
 		5	!=	Magical
 		6	!=	Immortal
 		7	!=	Divinal
-		!#Index of energy equals to index of shell that used this energy (not have, use)
+		#Index of energy equals to index of shell that used this energy (not have, use)
 	Reality	!=	r
 		-7	!=	7	Count shells
 		-6	!=	6	Count shells
@@ -606,7 +741,7 @@ add(`/Myverse
 		+5	!=	5	Full shells
 		+6	!=	5	Full shells
 		+7	!=	7	Full shells
-		!#
+		#
 		0	!=	0	Half Shells
 		1	!=	1	Half Shells
 		2	!=	2	Half Shells
@@ -623,7 +758,7 @@ add(`/Myverse
 		13	!=	13	Half Shells
 		14	!=	14	Half Shells
 	Energies	!=	e
-		%r-5[y]
+		%r-5[nowhere]
 			-5	!=	Mrana?
 			-4	!=	Psy?
 			-3	!=	Ema?
@@ -637,7 +772,7 @@ add(`/Myverse
 			+5	!=	Mana
 			+1+2	!=	Ki+Reatsu
 			+3+5	!=	Emana+Mana
-		%r-7[y]
+		%r-7[nowhere]
 			+7	!=	Ba-Hion
 	Levels	!=	l
 		0.0	!=	Nomage
@@ -703,29 +838,29 @@ add(`/Myverse
 		%l7.0
 	Splitting
 		%Categories
-		%r-0[y]
-		%r-1[y]
-		%r-2[y]
-		%r-3[y]
-		%r-4[y]
-		%r-5[y]
-		%r-6[y]
-		%r-7[y]
+		%r-0[nowhere]
+		%r-1[nowhere]
+		%r-2[nowhere]
+		%r-3[nowhere]
+		%r-4[nowhere]
+		%r-5[nowhere]
+		%r-6[nowhere]
+		%r-7[nowhere]
 	Users	!=	u
 		%Categories
-			tc	!=	Tech
-			bi	!=	Bio
-			en	!=	Energy!#Rudazov's magic
-			te	!=	Tech&Energy!#Technomagic of badchoice
-			bt	!=	Bio&Tech
-			be	!=	Bio&Energy
-			fl	!=	All paths
-		%r-0[y]
-		%r-1[y]
-		%r-2[y]
-		%r-3[y]
-		%r-4[y]
-		%r-5[y]
+			Tech
+			Bio
+			Energy!#Rudazov's magic
+			Tech+Energy!#Technomagic of badchoice
+			Bio+Tech
+			Bio+Energy
+			Energy+Bio+Tech
+		%r-0[nowhere]
+		%r-1[nowhere]
+		%r-2[nowhere]
+		%r-3[nowhere]
+		%r-4[nowhere]
+		%r-5[nowhere]
 			e+1	!=	Kiuser
 			e+2	!=	Reatser
 			e+3	!=	Emotic
@@ -739,12 +874,12 @@ add(`/Myverse
 				Black
 				Gray
 				White
-		%r-6[y]
+		%r-6[nowhere]
 			Immortal
 				Dark	!=	Demon_0
 				Neutral	!=	Immortal
 				Light	!=	Angel_0
-		%r-7[y]
+		%r-7[nowhere]
 			e+7	!=	God_1
 				Dark
 				Neutral	!=	Beastgod
@@ -752,27 +887,27 @@ add(`/Myverse
 	Objects	!=	o
 		%Artefacts
 			%Categories
-			%r-0[y]
-			%r-1[y]
-			%r-2[y]
-			%r-3[y]
-			%r-4[y]
-			%r-5[y]
+			%r-0[nowhere]
+			%r-1[nowhere]
+			%r-2[nowhere]
+			%r-3[nowhere]
+			%r-4[nowhere]
+			%r-5[nowhere]
 				%Wands
 				%Rods
 				%Staffs
 				%Grimoires
 				%Spheres
-			%r-6[y]
-			%r-7[y]
+			%r-6[nowhere]
+			%r-7[nowhere]
 	Creatures	!=	c
 		%Categories
-		%r-0[y]
-		%r-1[y]
-		%r-2[y]
-		%r-3[y]
-		%r-4[y]
-		%r-5[y]
+		%r-0[nowhere]
+		%r-1[nowhere]
+		%r-2[nowhere]
+		%r-3[nowhere]
+		%r-4[nowhere]
+		%r-5[nowhere]
 		%r-6
 			%Demon
 				Control
@@ -864,14 +999,14 @@ add(`/Myverse
 			%Mental	!=	Ment
 		%Mind
 			%Categories
-			%r-0[y]
-			%r-1[y]
-			%r-2[y]
-			%r-3[y]
-			%r-4[y]
-			%r-5[y]
-			%r-6[y]
-			%r-7[y]
+			%r-0[nowhere]
+			%r-1[nowhere]
+			%r-2[nowhere]
+			%r-3[nowhere]
+			%r-4[nowhere]
+			%r-5[nowhere]
+			%r-6[nowhere]
+			%r-7[nowhere]
 	Forms	!=	f
 		%Atack
 			GodHand
@@ -931,22 +1066,22 @@ add(`/Myverse
 		Sad
 		Apathy
 		Pain
-		!#
-		Pride	!=	Pride of Gold?
-		Pathos	!=	Pathos of Gray?
-		!#DC Lantern's
-		Life
-		Anger
-		Greed
-		Fear
-		Will
-		Hope
-		Compassion
-		Love
-		Death
-		!#Love and peace
-		Peace
-	Materials{Eniverse.Myverse.Splitting	!=	m
+		#/
+			Pride	!=	Pride of Gold?
+			Pathos	!=	Pathos of Gray?
+		#/DC Lantern's
+			Life
+			Anger
+			Greed
+			Fear
+			Will
+			Hope
+			Compassion
+			Love
+			Death
+		#/Love and peace
+			Peace
+	Materials{Eniverse.Myverse.Splitting}	!=	m
 	Elements	!=	n
 		%Basic
 			Fire
@@ -998,48 +1133,46 @@ add(`/Myverse
 			tc	!=	Tech
 			bi	!=	Bio
 			en	!=	Energy
-		%Other
-			%Variable
-				Name
-				Word
-				Number
-				Vector
-			%Motion
+		%Variable
+			Name
+			Word
+			Number
+			Vector
+		%Motion
+			Normal
+			Planing
+			Levitation
+			Teleport
+			Gravity
+			Quantum
+			Archimeds law
+			Magic
+			Shupaltsa
+			Mob
+			Force
+			Vector
+			Direction
+			Force
+		%Time
+			Tempoflucation
+			Back
+			Petlya
+			Stop
+			No
+			Prerivanye
+			Vicherkivanye
+			Jump
+		%Space
+			Portal
+				Dimension
+				Linked
+				World
+				Domen	!=	Anklav
 				Normal
-				Planing
-				Levitation
-				Teleport
-				Gravity
-				Quantum
-				Archimeds law
-				Magic
-				Shupaltsa
-				Mob
-				Force
-				Vector
-					Direction
-					Module
-					Full
-			Time
-				Tempoflucation
-				Back
-				Petlya
-				Stop
-				No
-				Prerivanye
-				Vicherkivanye
-				Jump
-			Space
-				Portal
-					Dimension
-					Linked
-					World
-					Domen	!=	Anklav
-					Normal
-				Zip
-				Pocket
-				Dense
-				Bubble
+			Zip
+			Pocket
+			Dense
+			Bubble
 	PropAndShell
 		0	!=	Start, Input
 		1	!=	m,	Materials
@@ -1049,7 +1182,7 @@ add(`/Myverse
 		5	!=	m,	Elements
 		6	!=	e,	Energies
 		7	!=	t,	Task
-	!#	Every of Forms/Creatures can be every of Elements/Energies/Materials/Emotions
+	#	Every of Forms/Creatures can be every of Elements/Energies/Materials/Emotions
 	Directions	!=	d
 		%Logies
 			Magical
@@ -1097,7 +1230,7 @@ add(`/Myverse
 		%Creatures
 		%Materials
 		#Types of actions for ability
-		%Languages[y]
+		%Languages[nowhere]
 			Word
 			Number
 			Gesture
@@ -1115,7 +1248,7 @@ add(`/Myverse
 			Seal
 			Mudra
 		#Types of ability using
-		%Types[y]
+		%Types[nowhere]
 			Action	!=	Straight
 				Vampire
 				Absorption
@@ -1285,8 +1418,7 @@ add(`/Myverse
 					Structure
 				Name
 				Jokes
-				Physical
-				!#Technomage of Rudazov
+				Physical!#Technomage of Rudazov
 				Warlock
 				Apostol
 				Hooly
@@ -1362,149 +1494,6 @@ add(`/Myverse
 		Bad Choice
 		...All
 		Original
-			Laws
-				В метавселенной возможно все, от самых разных миров до изменения межмировой геометрии на определенном участке, но невозможно нарушить логику, а следовательно нельзя:
-					1.	Сохранение		m-n-e	-	Любое изменение материи, энергии, эфира.
-						Ни что (вообще) не может быть уничтожено, сумма всего в метавселенной никогда не меняется, более реальные могут лишь моментально изменить менее реальное в такую форму, что покажется уничтожение, но закон сохранения действует. По этой причине нельзя изменить атман, нет ничего более реального, просто некому будет на него так действовать. Нельзя иллюзию сделать реальной (воплощение делает реальный объект похожий на иллюзию), но для более реальных менее реальные являются иллюзиями просто разного качества, поэтому более реальные могут так сделать. Объекты одного уровня не могут друг на друга так действовать. Сумма всего в метавселенной не меняется со временем, всегда постоянна
-						Rud:	Закон сохранения материи-энергии. Они не могут ни возникнуть из ниоткуда, ни исчезнуть вникуда, лишь изменять состояния.
-							->	Вечного генератора не может существовать.
-					2.	Конвергентность	s-t-u	-	Любое изменение пространства, времени, контента.
-						Существует только настоящее. Нельзя изменить прошлое или будущее, можно лишь изменить настоящее и подождать пока будущее или прошлое настанет, чтобы это произошло время должно иметь определенную скорость: чтобы наступило прошлое скорость должна быть отрицательной, а чтобы наступило будущее - положительной.
-							->	В любой момент пронстранства-времени существует лишь один объект.
-						Rud:	Закон однонаправленности временного потока. Переместиться в прошлое, как-либо его изменить совершенно невозможно. Даже если божественное чудо откатит целую планету к предыдущей версии — это будет не возвращением в прошлое, а изменением настоящего.
-							->	Машины времени не может сущестовать
-								!#Но никто не запрещает откатить изменения
-								!#Ускорить/замедлить процессы
-								!#Или использовать маховики времени
-					3.	Преобразуемость	r-e-f	-	Любое изменение реальности, энергии, информации.
-						->
-						Rud:	Закон бессмертия Атмана. Душа есть абсолютное начало, неподвластное окончательному уничтожению, но лишь изменению внешних оболочек и регулярным реинкарнациям.
-							->	Любая вещь с реальность <1% нереальна (Точнее виртуальна)
-								->	Любая виртуальная вещь, информация имеет реальноть > 0% но < 1%
-							->	Любая вещь имеет реальность >1% и <100%, кроме атмана и информации
-							->	Атман неунитожим, несоздаваем, нереален. Он не может существовать, а значит не существует. Нельзя уничтожить то, чего нет.
-								->	Души с более чем 7 (8 включая 0-ядро) оболочками разных уровней не может существовать.
-									!#Так как реальность не может дойти до 8, реальность в 8 при конвертации в проценты будет больше 100%, а даже достижение 100% невозможно.
-									!#Восьмой уровень реальности равен нулевому, это атман. А две оболочки с одним уровнем уже не в условии.
-									->	Демиурги не уходят от богов на качественно иной уровень, у бога 8 у демиурга 8.5 не 9.
-							->	В шкале реальности атман 100% 0%, она замкнута
-					1,2
-						->	Вечного двигателя также не может сущестовать.
-					2,3
-					3,1
-					1,2,3
-				Материя, энергия и эфир взаимосвязаны. Изменяя любой из них с достаточной силой - поменяем остальные.
-					Если силы не хватает, то изменится лишь 1. Сам изменяемый, а потом вернется к исходному.
-					Алхимия рудазова меняет эфирное тело, а за ним меняется и обычное.
-					Инфоструктуры Ясинского - ментальное тело, меняем ментальное тело/инфоструктуру с дост. силой - меняем предмет.
-				Магия не нарушает законы вселенной. Всё, что она делает, согласуется не только с Законами Творца, но и с физическими (метафизическими) законами данного конкретного мира. Контроль реальности, который позволяет эти законы нарушать, магам недоступен — это удел сущностей более высокого порядка
-				у каждого мира есть атман, создавая домен вы становитесь миром, мир может быть живым. Тело мира - материя, душа - эфир.
-			Reality
-				%Zero
-					%Zero
-						0	!=	Core
-				%Virtuality
-					%One
-						0.01-0.99	!=	Info
-				%Potentiality
-					%Wild
-						1-2	!=	Chaos
-					%Quiet
-						3	!=	Limbo
-				%Reality
-					%Pre
-						4-5	!=	cold ether
-						5-10	!=	energies
-						10-15	!=	Solid ether
-						15-20	!=	w-1,	Spirits
-						20-25	!=	Pseudo Matter
-						25-30	!=	Alchemy Matter
-					%Normal
-						30-40	!=	r-2,	Matter
-						40-50	!=	r-3
-						50-60	!=	r-4
-					%Post
-						60-70	!=	r-4/r-5
-						70-80	!=	r-5/r-6
-						80-90	!=	r-6/r-7
-					%Super
-						90-95	!=	r-7
-						95-99	!=	Xtonics
-					%Higher
-						99	!=	First Ether
-				%Full
-					%Full
-						100	!=	Core
-			World
-				Elements
-					%Basic
-						Fire
-						Water
-						Air
-						Earth
-						Electrizity
-						Ice
-					%First
-						Dark
-						Light
-					%Misc
-						Void
-			Ether
-				Cold	!=	Other
-				Dense	!=	Negative Shells, except matteral shells
-				Suble	!=	Positive Shells
-				Soft	!=	Negative Energy, except e-7
-				Hot	!=	Positive Energy, except e+7
-				First	!=	e+7, First elements
-					e+7
-					%Elements
-						%First
-			mtv	!=	Meta-Verse
-				mlv	!=	Multi-Verse
-					uns	!=	Uni-Space
-						b
-						d
-						f
-						g
-						h
-						j
-						k
-						q
-					unv	!=	Uni-Verse
-						s	!=	-Space
-							m	!=	Normal
-								x	!=	Length
-								y	!=	Height
-								z	!=	Depth
-							w	!=	Hyper
-							n	!=	Dimension
-								a	!=	Ether
-								i	!=	Info!#hyper equals etheral?
-								o	!=	Tropy
-						v	!=	-Verse
-							!#Content
-							r	!=	Reality
-							e	!=	Energy
-							f	!=	Forms, Info, Structure
-								Types
-									Full-Realized-Types		Matter	!=	222
-										Matter	!=	312
-										Energy	!=	231
-										Ether	!=	123
-									Half-Realized-Types		Ether
-										Chaos	!=	120
-										Limbo	!=	110
-										Ether	!=	122
-									Non-Realized-Types		Info
-										Info	!=	002
-										Structure
-										Types
-								Structure
-								Info
-						t	!=	-Time
-					unt	!=	Uni-Time
-				Chaos
-				Limbo
 	Actions	!=	b
 		%Categories
 			%Abilities
@@ -1521,7 +1510,7 @@ add(`/Myverse
 			Avatar
 			Zhrets
 			Feeling
-				%Types[y]
+				%Types[nowhere]
 					Vision
 					Obonyanie
 					Vkus
@@ -1573,15 +1562,15 @@ add(`/Myverse
 			демонические вещи?
 			скрытие излучения невидимого спектра
 			Fake Spell
-		%r-0[y]
-		%r-1[y]
-		%r-2[y]
-		%r-3[y]
-		%r-4[y]
-		%r-5[y]
+		%r-0[nowhere]
+		%r-1[nowhere]
+		%r-2[nowhere]
+		%r-3[nowhere]
+		%r-4[nowhere]
+		%r-5[nowhere]
 			%l5.0
-		%r-6[y]
-		%r-7[y]
+		%r-6[nowhere]
+		%r-7[nowhere]
 	Space	!=	s
 		w	!=	Hyper
 			~0	!=	Dot, Core
@@ -1601,7 +1590,7 @@ add(`/Myverse
 		Limbo
 		Chaos
 	Features	!=	t
-		%r-4[y]
+		%r-4[nowhere]
 			Poltergeist
 			%w+1	!=	Undead
 				Ghoul
@@ -1615,7 +1604,7 @@ add(`/Myverse
 				Ghost
 				Loa
 				Embodied
-		%r-5[y]
+		%r-5[nowhere]
 			Obsessed
 			Vampire
 				Weak	!=	Madness
@@ -1737,11 +1726,11 @@ add(`/Myverse
 					0.5	!=	Pseudo-Sci
 					1.0	!=	Sci
 	Organizations	!=	g`)
-
+1
 add(`/Elfish Trash
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 			Elfish Trash 1
 			Elfish Trash 2
@@ -1760,12 +1749,12 @@ add(`/Elfish Trash
 		Startrack
 		Potteriana`)
 add(`/Vlast magii
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Authors[y]
+	@Authors[nowhere]
 		MorgothBauglir
 		Shetel-Sorken
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 			"Vlast magii"
 	Verse
@@ -1776,11 +1765,11 @@ add(`/Vlast magii
 		@Tags
 			Gamelit`)
 add(`/Path to Top
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Authors[y]
+	@Authors[nowhere]
 		Hedin Knowing Dark
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 			"Path to Top"
 	Verse
@@ -1789,7 +1778,7 @@ add(`/Path to Top
 		Rudazov
 		Original
 	Actions
-		%r-5[y]
+		%r-5[nowhere]
 			%l5.0
 				@Name
 					@MH
@@ -1799,11 +1788,11 @@ add(`/Path to Top
 						Plasma
 							Uncontrolled	!=	Hors`)
 add(`/of Kitsune Miyato
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Authors[y]
+	@Authors[nowhere]
 		Kitsune Miyato
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 			"Izbranniye"
 			"Mother-and-Mother-Law"
@@ -1815,21 +1804,21 @@ add(`/of Kitsune Miyato
 		Dozory
 	Objects
 		%Artefacts
-			%r-6[y]
+			%r-6[nowhere]
 				%Time-Turners	!=	Reality splitter, awful results of
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 					%l5.0
 						Harry Potter	!=	Uzumaki Naruto
 						Albus Dumbledore	!=	Albus Persival Vulfric Brian Potter,Dumbledore`)
 add(`/HPMoR
-	@Authors[y]
+	@Authors[nowhere]
 		Eliezer Yudkowsky
-	@Languages[y]
+	@Languages[nowhere]
 		English
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 			"Harry Potter and the Methods of Rationality"
 	Verse
@@ -1838,12 +1827,12 @@ add(`/HPMoR
 		Potteriana
 	Objects
 		%Artefacts
-			%r-5[y]
+			%r-5[nowhere]
 				%Quotes Quills
 				Moody's Eye[u]
 				Philosopher's Stone[u]
 				Mirror of Erised[u]
-			%r-6[y]
+			%r-6[nowhere]
 				%Time-Turners	!=	6 hours max, with many turners too
 				Moody's Eye	!=	Eye of Vance
 				Left Leg of Vance
@@ -1855,7 +1844,7 @@ add(`/HPMoR
 			Avadakedavra 2.0
 			Dementor control
 			Partial TransFormsation
-		%r-5[y]
+		%r-5[nowhere]
 			%Action
 				%Atack
 					%Shieldbreacker
@@ -1878,7 +1867,7 @@ add(`/HPMoR
 			...
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 					%l0.0
 						Petunia Dursley	!=	Petunia	Evans-Verres
@@ -1887,11 +1876,11 @@ add(`/HPMoR
 					%l5.0
 						Voldemort	!=	Tom Morphin Riddle`)
 add(`/Life of Archmage Potter
-	@Authors[y]
+	@Authors[nowhere]
 		Fil Bandileros
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 	Verse
 		@Type
@@ -1904,21 +1893,21 @@ add(`/Life of Archmage Potter
 		Naruto
 	Creatures
 		%Mind
-			%r-5[y]
+			%r-5[nowhere]
 				%Human
 					%l3.0
 						Harry Potter[u]
 					%l5.0
 						Harry Potter	!=	Abraam
 							@Archmage
-			%r-7[y]
+			%r-7[nowhere]
 				Hel`)
 add(`/Meta-Gamer
-	@Authors[y]
+	@Authors[nowhere]
 		Fil Bandileros
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 	Verse
 		@Type
@@ -1927,16 +1916,16 @@ add(`/Meta-Gamer
 		@Tags
 			Gamelit`)
 add(`/Technomancer
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics
 	Verse
 		@Type
 			Uni
 		Systema, Labirint, Bogi, Avanturisti`)
 add(`/Will for Life
-	@Languages[y]
+	@Languages[nowhere]
 		Russian
-	@Sources[y]
+	@Sources[nowhere]
 		%Fanfics`)
