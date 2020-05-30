@@ -13,41 +13,40 @@ add(`/Berserk
 1
 add(`/Bleach
 	@Sources	!	Supernatural.Jarse.Bleach
-	Users
-		%r-5[nowhere]
-			e+2	!=	Reatsu
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+2	!=	Reatsu
 	Features
-		%r-5[nowhere]
+		%r-5
+			e+2	!=	Reatsu
 			Hollow
 			Quincy
 			Shinigami
 			Sword of Soul`)
 1
 add(`/Blue exorcist
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Features
-		%r-5[nowhere]
+		%r-5
 			Demon
 			%w-1	!=	Spirit
 				Brownie
-	Dimension
-		Gienna	!=	Demonic
-		Alis	!=	Human`)
+	Dimensions
+		o
+			Gehenna	!=	Demonic
+			Assiah	!=	Human`)
 1
 add(`/Claymore
 	@Sources	!	Supernatural.Fiction.Manga.Claymore
 	Energies
-		%r-5[nowhere]
+		%r-5
 			yo	!=	Yoki
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 				%Claymore
 				%Yoma`)
@@ -56,7 +55,7 @@ add(`/Code Geass
 	@Sources	!	Supernatural.Jarse.Code Geass
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l3.0
 						Roland
@@ -67,7 +66,7 @@ add(`/Code Geass
 						Marianna
 						C.C.
 	Actions
-		%r-5[nowhere]
+		%r-5
 			Mental
 				Geass
 					Control
@@ -86,7 +85,7 @@ add(`/Code Geass
 						@Mao
 				Antigeass
 					@Jeremia
-		%r-6[nowhere]
+		%r-6
 			Code Geass
 				@C.C.
 				@V.V.
@@ -96,7 +95,7 @@ add(`/Code Geass
 		Sakuradait
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Tech
 					%Britanian Imperia's
 						%Knightmares`)
@@ -105,14 +104,14 @@ add(`/Death Note
 	@Sources	!	Supernatural.Jarse.Death Note
 	Objects
 		%Artefacts
-			%r-7[nowhere]
+			%r-7
 				%Death Notes
-	Users
-		%r-7[nowhere]
+	Features
+		%r-7
 			Death Note	!=	Shinigami
 	Creatures
 		%Mind
-			%r-7[nowhere]
+			%r-7
 				%Human
 					%l0.0
 						Yagami Light
@@ -126,11 +125,11 @@ add(`/Death Note
 add(`/Dragonball
 	@Sources	!	Supernatural.Jarse.Dragonball
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+1	!=	Ki?
 	Objects
 		%Artefacts
-			%r-6[nowhere]
+			%r-6
 				%Dragon Balls`)
 1
 add(`/Fairy Tail
@@ -141,34 +140,34 @@ add(`/Fairy Tail
 		Original
 			@Worlds
 				Other?
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+5	!=	Mage?
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+5	!=	Mana?`)
 1
 add(`/Fate
 	@Sources	!	Supernatural.Jarse.Fate
 	Actions
-		%r-5[nowhere]
+		%r-5
 			%Action
 				%Vampiring
 					Blood Citadel?
 	Energies
-		%r-5[nowhere]
+		%r-5
 			-1	!=	Prana
 			+5	!=	Mana
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+5	!=	Mage
 	Objects
 		%Artefacts
-			%r-6[nowhere]
+			%r-6
 				%The Holy Grail
 	Creatures
 		%Mind
-			%r-6[nowhere]
+			%r-6
 				%Servant`)
 1
 add(`/Fullmetal Panic
@@ -182,9 +181,9 @@ add(`/Gurren Lagann
 add(`/Hellsing
 	@Sources	!	Supernatural.Jarse.Hellsing
 	Features
-		%r-5[nowhere]
+		%r-5
 			Vampire
-		%r-4[nowhere]
+		%r-4
 			%w+1	!=	Undead`)
 1
 add(`/Inuyasha
@@ -195,8 +194,8 @@ add(`/JoJo Bizzare
 1
 add(`/Macademy Wasshoi
 	@Sources	!	Supernatural.Jarse.Macademy Wasshoi
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+5	!=	Mage`)
 1
 add(`/My hero academy
@@ -209,7 +208,7 @@ add(`/My hero academy
 			%Quirk-Human
 				Izuku Midoriya
 	Features
-		%r-5[nowhere]
+		%r-5
 			%Abilities
 				%/Quirk
 					One for All
@@ -254,62 +253,62 @@ add(`/My hero academy
 					@Laser
 					@Kamui
 					@Mountain Lady
-					@Links[nl]	!	function(line){return {ref:line.content.indexOf("[nl]")!=-1?false:"https://bokunoheroacademia.fandom.com/wiki/"+line.content.replace(/[@%?]/g,"").replace(/[ ]/g,"_"),text:"fandom.com/wiki"}
+					@LinkFuncs[nolinkfuncs][children]	!	(line)=>{ref:line.content.indexOf("[nolinkfuncs]")==-1?"https://bokunoheroacademia.fandom.com/wiki/"+line.content.replace(/[@%?"]/g,"").replace(/[ ]/g,"_"):false,text:"fandom.com/wiki"}
 					Quirk-Destroying Drug
 					#
-					Acid
-					Acid Sweat
-					Air Cannon
-					Air Walk
-					All For One (Quirk)
-					Amplivolt
-					Anivoice
-					Anthropomorph
-					Arbor
-					Assault Dust
-					Barrier
-					Bat
-					Beams From His Eyes
-					Beast
-					Bendy Fingers
-					Big Fist
-					Big Horn
-					Binging Ball
-					Black
-					Black Hole
-					Blackwhip
-					Blade-Tooth
-					Blast
-					Blood Control
-					Bloodcurdle
-					Boomerang
-					Brainwashing
-					Brown Bear
-					Bubble
-					Cell Activation
-					Cemedine
-					Cement
-					Centipede
-					Cephalopod
-					Chest Hair
-					Chimera (Quirk)
-					Chronostasis (Quirk)
-					Cleaning
-					Clones
-					Cloud
-					Comic
-					Compress
-					Confession
-					Copy
-					Cow
-					Creation
-					Crystallize
-					Dark Shadow
-					Decay
-					Dog
-					Double
-					Dragon
-					Dupli-Arms
+					"Acid"
+					"Acid Sweat"
+					"Air Cannon"
+					"Air Walk"
+					"All For One (Quirk)"
+					"Amplivolt"
+					"Anivoice"
+					"Anthropomorph"
+					"Arbor"
+					"Assault Dust"
+					"Barrier"
+					"Bat"
+					"Beams From His Eyes"
+					"Beast"
+					"Bendy Fingers"
+					"Big Fist"
+					"Big Horn"
+					"Binging Ball"
+					"Black"
+					"Black Hole"
+					"Blackwhip"
+					"Blade-Tooth"
+					"Blast"
+					"Blood Control"
+					"Bloodcurdle"
+					"Boomerang"
+					"Brainwashing"
+					"Brown Bear"
+					"Bubble"
+					"Cell Activation"
+					"Cemedine"
+					"Cement"
+					"Centipede"
+					"Cephalopod"
+					"Chest Hair"
+					"Chimera (Quirk)"
+					"Chronostasis (Quirk)"
+					"Cleaning"
+					"Clones"
+					"Cloud"
+					"Comic"
+					"Compress"
+					"Confession"
+					"Copy"
+					"Cow"
+					"Creation"
+					"Crystallize"
+					"Dark Shadow"
+					"Decay"
+					"Dog"
+					"Double"
+					"Dragon"
+					"Dupli-Arms"
 					Dust
 					Earphone Jack
 					Earth Flow
@@ -493,7 +492,12 @@ add(`/Naruto
 			Paths
 				Energy
 				Tech
+	Dimensions
+		o
 			Satellites
+				...
+			Kamui
+			Normal
 	@Sources	!	Supernatural.Jarse.Naruto
 	Verse
 		@Type
@@ -501,7 +505,7 @@ add(`/Naruto
 		Original
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l5.0
 						Uzumaki
@@ -564,10 +568,10 @@ add(`/Naruto
 						Kurama
 							@Naruto
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+1+2	!=	Chakra
 	Features
-		%r-5[nowhere]
+		%r-5
 			%Genetic
 				Uzumaki
 				Uchiha
@@ -613,11 +617,11 @@ add(`/Naruto
 			Yan	!=	Yanton
 			Inyan	!=	Inyanton
 	Directions
-		%Languages[nowhere]
+		%Languages
 			Technique	!=	Nin
 			Fuin
 			Mudra
-		%Types[nowhere]
+		%Types
 			%Action
 				Summon
 				Sensor	!=	Kanchi
@@ -643,10 +647,24 @@ add(`/Naruto
 			Step
 				Tree
 				Water
-		%r-5[nowhere]
-			%Misc[nowhere]
+		%r-5
+			%Misc
 				Telescope
 	Organizations
+		%Countries
+			Fire
+			Water
+			Fog
+			Lightning
+			Air
+			#
+			Rice
+			River
+			Star
+			Demon
+			Bear
+			Bird
+			Tea
 		%Gakurezato
 			%Fire
 				Konoha
@@ -658,51 +676,37 @@ add(`/Naruto
 			%Lightning
 			%Air
 				Suna
-	Countries
-		Fire
-		Water
-		Fog
-		Lightning
-		Air
-		//
-		Rice
-		River
-		Star
-		Demon
-		Bear
-		Bird
-		Tea
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				Star
 				%Swords of Fog`)
 1
 add(`/One Punch Man
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/One Piece
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Features
-		%r-5[nowhere]
+		%r-5
 			Fruits`)
 1
 add(`/Overlord
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/Ranma 1:2
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/Sword Art Online
@@ -719,7 +723,7 @@ add(`/Sword Art Online
 				Gamelit
 	Objects
 		%Artefacts
-			%r-4[nowhere]
+			%r-4
 				%Neurohelmets
 				%Amuspheres`)
 1
@@ -741,17 +745,17 @@ add(`/Rave Master
 add(`/Pokemon
 	@Sources	!	%Fiction.%Anime
 	Creatures
-		%r-4[nowhere]
+		%r-4
 			%Pokemon
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Pokeballs`)
 1
 add(`/Rosario to Vampire
 	@Sources	!	%Fiction.%Anime
 	Features
-		%r-5[nowhere]
+		%r-5
 			Vampire`)
 1
 add(`/The Law of Ueki
@@ -766,25 +770,24 @@ add(`/Tenjou Tenge
 add(`/Fullmetal Alchemist
 	@Sources	!	%Fiction.%Anime
 	Features
-		%r-5[nowhere]
+		%r-5
 			Alchemist
 			Gate of Truth
 	Energies
-		%r-5[nowhere]
+		%r-5
 			al	!=	Alchemycal?`)
 1
 add(`/The Gamer
-	@Sources	!	%Fiction.%Manhva.The Gamer
-	Users
-		%r-5[nowhere]
+	@Sources	!	Supernatural.Manhva.The Gamer
+	Features
+		%r-5
 			e+1	!=	Kiuser
 			Feature
 			e+5	!=	Mage
-		%r-6[nowhere]
+		%r-6
 			God_4
 			gm	!=	Gamer's System
 				The Gamer
-	Features
 		Dark soul
 	Verse
 		@Type
@@ -799,11 +802,11 @@ add(`/The Gamer
 			Air
 			Earth
 	Directions
-		%Types[nowhere]
+		%Types
 			%Action
 				Clairvoyance
 	Actions
-		%r-5[nowhere]
+		%r-5
 			Postup @tshonbo
 			Soul heal @yunhon
 			%Action
@@ -812,17 +815,17 @@ add(`/The Gamer
 	Creatures
 		Elemental
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l5.0
 						Gamer	!=	Han Jee Han
 						Blood Witch	!=	Lolicano Mistrim
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Broomsticks
 				%Soul Stones / SS
-			%r-7[nowhere]
+			%r-7
 				Sword Dan
 				%Divine
 					Bereza
@@ -832,10 +835,10 @@ add(`/The Gamer
 		Bezdna
 			Aukcion`)
 1
-add(`/KonoSuba: God's Blessing on this Wonderful World!
-	@Languages[nowhere]
+add(`/KonoSuba: God's Blessing on this Wonderful World
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Verse
 		@Type
@@ -846,24 +849,24 @@ add(`/KonoSuba: God's Blessing on this Wonderful World!
 				Other`)
 1
 add(`/Tokyo Ghoul
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
-add(`/The Devil Is a Part-Timer!
-	@Languages[nowhere]
+add(`/The Devil Is a Part-Timer
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Features
-		%r-6[nowhere]
+		%r-6
 			Demon_0
 			Fallen
 			Angel_0
 	Creatures
 		%Mind
-			%r-6[nowhere]
+			%r-6
 				%Demon
 					Alciel	!=	Shiro Ashiya
 					Satan Jakob	!=	Sadao Mao
@@ -877,166 +880,164 @@ add(`/The Devil Is a Part-Timer!
 				Ente Isla`)
 1
 add(`/High School DxD
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 				%Dragon
 	Objects
 		%Artefacts
-			%r-6[nowhere]
+			%r-6
 				%Evil Pieces
 				%Sacred Gear
 				%Holy Swords
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+5	!=	Mage?
-		%r-6[nowhere]
+		%r-6
 			dm	!=	Demon
 			lm	!=	Angel_0
 			fm	!=	Fallen
-		%r-7[nowhere]
+		%r-7
 			e+7	!=	God_?`)
 1
 add(`/To Love Ru
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/Neon Genesis Evangelion
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Shells
 		atf	!=	AT-field
 	Creatures
-		%r-6[nowhere]
+		%r-6
 			%Angel_1
 			%Eva
 	Features
-		%r-5[nowhere]
+		%r-5
 			Kid`)
 1
 add(`/Highschool of the Dead
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/Gundam
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/Howl's Moving Castle
-	@Authors[nowhere]
+	@Authors
 		Hayao Miadzaki
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/Mob Psycho 100
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l0.0
 						Mob's teacher
 					%l5.0
 						Mob
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+4	!=	Psy?`)
 1
 add(`/Noragami
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 		%Manga
-	Users
-		%r-4[nowhere]
-			e+0+2	!=	Sword-Soul
 	Actions
-		%r-5[nowhere]
+		%r-5
 			Line
 	Features
-		%r-4[nowhere]
+		%r-4
+			e+0+2	!=	Sword-Soul
 			%w-1	!=	Spirit
 				Ghost
 				Demon-Loa
 				God_0`)
 1
 add(`/Re: Monster
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Manga`)
 1
 add(`/RWBY
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Creatures
-		%r-5[nowhere]
+		%r-5
 			%Grimm`)
 1
 add(`/Sailor Moon
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 				%Reptiloid
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				Moon Diadema`)
 1
 add(`/Rascal Does Not Dream of Bunny Girl Senpai
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/Slayers
-	@Sources[nowhere]
+	@Sources
 		%Fiction
 			%Anime
 				Slayers
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l6.0?
 						Lina Invers
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+5	!=	Mage
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+5	!=	Mana?`)
 1
 add(`/Soul Eater
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime`)
 1
 add(`/A Certain Magical Index
@@ -1048,9 +1049,9 @@ add(`/A Certain Magical Index
 			@Worlds
 				Our	!=	Earth-2052?
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+5	!=	Mana
-		%r-6/7[nowhere]
+		%r-6/7
 			tl	!=	Telesma?
 	Shells
 		aimf	!=	AIM-field
@@ -1074,15 +1075,15 @@ add(`/A Certain Magical Index
 		6.0
 			=Insane, Angel(Immortal)	!# power of esper, can destroy planet's surface; not exist
 	Directions
-		%Languages[nowhere]
+		%Languages
 			Ritual
 			Rune
 			Spell
-		%Types[nowhere]
+		%Types
 			%Object
 				Enchanted
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+4	!=	Esper
 				%l1.0
 				%l2.0
@@ -1123,6 +1124,58 @@ add(`/A Certain Magical Index
 									@Rank	!	2
 						Motion
 							Direction
+								%Using
+									Stock
+										Cold
+										Hot
+										Fire
+										Ice
+										Fly
+										Jump
+										Reflection
+										Paring
+										Stop
+										Acceleration
+										Wave
+										Electrizity
+										Water
+										Earth
+										Resonance
+										Air
+										Disassembling
+										Assembling
+									Misc
+										Zero-gravity
+										Zero-friquency
+										Blood Redirection
+										Bio Electrizity Change
+										Rotation
+										Redirection
+										Brain Control
+										Muscle Control
+										Marionette Control
+									Plus
+										Invisibility
+										Quiet
+										Spectr Change
+										Shunshin
+										Explosion
+										Laser
+										Material Illusion
+											Illusor Metamorph
+										Light
+											Gen
+											Holo
+												Other
+												Henge
+										Sound
+											Gen
+											Syntes
+									Max
+										Teleport
+											Auto
+											Other
+										Inventory
 								@Accelerator
 									@Rank	!	1
 									%Needs
@@ -1131,30 +1184,30 @@ add(`/A Certain Magical Index
 				Index
 					@Index
 				@Styl Magnus
-		%r-6[nowhere]
+		%r-6
 			Angel_0
 			Imagine Breaker
 				@Kamijo Touma
 					%Needs
 						Touch
-		%r-7[nowhere]
+		%r-7
 			e+7	!=	God_?
 	Actions
-		%r-5[nowhere]
+		%r-5
 			%Action
 				Protection
 					Vector
 						@Accelerator
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Grimoires
 					%Forbidden index's
 				Cross?
 				Sword of space?
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l0.0
 						Kamijo Touma
@@ -1193,12 +1246,12 @@ add(`/Toriko
 	@Sources	!	Supernatural.Jarse.Toriko`)
 1
 add(`/The Familiar of Zero
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Anime
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+3+5	!=	Wizardy?
 	Elements
 		%Basic
@@ -1209,11 +1262,11 @@ add(`/The Familiar of Zero
 		%Misc
 			Void
 	Directions
-		%Languages[nowhere]
+		%Languages
 			Spell
 			Rune
 			Ritual
-		%Types[nowhere]
+		%Types
 			%Action
 				Summon
 				Alchemy
@@ -1228,17 +1281,15 @@ add(`/The Familiar of Zero
 			%Potions
 				Love
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Wands
 				%Flying Ships
 				%Rings
 					of Water
 					of Air
-	Users
-		%r-5[nowhere]
-			e+3+5	!=	Wizard
 	Features
-		%r-5[nowhere]
+		%r-5
+			e+3+5	!=	Wizard
 			Gandalf
 			Lifrasir
 			Sidalf
@@ -1251,16 +1302,16 @@ add(`/The Familiar of Zero
 				Other?
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 				%Elv
 				%Changeling
-		%r-5[nowhere]
+		%r-5
 			%Wyvern
 			%Salamander
 			%Beholder
 	Features
-		%r-4[nowhere]
+		%r-4
 			%w-1	!=	Spirit
 				Loa?`)
 1

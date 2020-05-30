@@ -1,16 +1,16 @@
 
 add(`/Assasin's Creed
-	@Sources[nowhere]
+	@Sources
 		%Games`)
 add(`/Deus Ex
-	@Sources[nowhere]
+	@Sources
 		%Games`)
 add(`/Dragon Age
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
-	Space
+	Dimensions
 		n
 			Fade
 			~1.0 ~0.0	!=	Yav
@@ -18,80 +18,63 @@ add(`/Dragon Age
 		%Metals
 			Lyrium`)
 add(`/Dragonlance
-	@Languages[nowhere]
+	@Languages
 		English`)
 add(`/Dungeons and Dragons
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games`)
 add(`/Fallout
-	@Sources[nowhere]
+	@Sources
 		%Games`)
 add(`/League of Legends
-	@Languages[nowhere]
+	@Languages
 		English`)
 add(`/Mass Effect
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+4	!=	Biotic
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+4	!=	Psy?`)
 add(`/Minecraft
-	@Authors[nowhere]
-		Notch	!=	Markus Persson
-		Jebb
-		Grum
-	@Languages[nowhere]
-		English
-	@Sources[nowhere]
-		%Games
-			%Computer
-				Pre-Classic
-				Classic
-				Indev
-				Infdev
-				Alpha
-				Beta
-				Java
-				Bedrock
-	Space
+	@Sources	!	Supernatural.Games.Minecraft
+	Dimensions
 		o
 			Hell	!=	Nether World
 			End
-			Matteral	!=	Over World
+			Normal	!=	Over World
 	Features
-		%r-4[nowhere]
+		%r-4
 			%w-1	!=	Spectator Mode
-	Users
-		%r-6[nowhere]
+		%r-6
 			%Immortal	!=	Godmode
-		%r-7[nowhere]
+		%r-7
 			e+7	!=	Creative gamemode, Admin perms
 	Creatures
-		%r-3[nowhere]
+		%r-3
 			%Pig
 			%Cow
 			%Horse
 			%Rabbit
 			%Sheep
-		%r-4[nowhere]
+		%r-4
 			%w+1	!=	Undead
 				%Zombie
 				%Skeleton
 					%Normal
 					%Wither
 			Spider
-		%r-5[nowhere]
+		%r-5
 			%Dragon
 				%Ender
 			%Enderman
@@ -101,7 +84,7 @@ add(`/Minecraft
 			%Ghust
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Ender's
 					%Eye
 					%Egg
@@ -129,198 +112,198 @@ add(`/Minecraft
 		Wood
 		Stone
 		Wool
-Immersive Engineering
-Minefactory
-Redpower
-Electrizity
-Railcraft
-Reactorcraft
-Big Reactor
-Rotarycraft
-Thermal Expansion
-	Materials
-		%Metals
-			Platina
-			Silver
-Thaumcraft
-Bloodmagic
-Mekanism
-	Materials
-		%Metals
-			Osmium
-		%Alloy
-			Steel
-Forestry
-	Materials
-		Apatite
-Industrialcraft
-	Materials
-		%Metals
-			Iridium
-			Silver
-			Tin
-			Copper
-			Uranium
-			Plutonium
-		Matter
-	Objects
-		%Artefacts
-			%r-5[nowhere]
-				%Armor
-					%Quantum
-					%Nano
-				%Steelarms
-					%Nanosaber
-				%Weapon
-					%Laser
-			%r-7[nowhere]
-				%Developer Tool	!=	Debug Tool, Adamant Rod
-Buildcraft
-Ender IO
-	Objects
-		%Artefacts
-			%r-5[nowhere]
-				%Armor
-					%Ender
-				%Steelarms
-					%Ender
-Gravisuite
-	Objects
-		%Artefacts
-			%r-5[nowhere]
-				%Armor
-					%Gravi-Chestplate
-				%Steelarms
-					%Vajra
-Gregtech
-Terrafirmacraft
-Applied Energistics
-	Objects
-		%Artefacts
-			%r-5[nowhere]
-				%Appeng
-					%Monitors
-					%Autocrafts`)
+	/Immersive Engineering
+	/Minefactory
+	/Redpower
+	/Electrical Age
+	/Railcraft
+	/Reactorcraft
+	/Big Reactor
+	/Rotarycraft
+	/Thermal Expansion
+		Materials
+			%Metals
+				Platina
+				Silver
+	/Thaumcraft
+	/Bloodmagic
+	/Mekanism
+		Materials
+			%Metals
+				Osmium
+			%Alloy
+				Steel
+	/Forestry
+		Materials
+			Apatite
+	/Industrialcraft
+		Materials
+			%Metals
+				Iridium
+				Silver
+				Tin
+				Copper
+				Uranium
+				Plutonium
+			Matter
+		Objects
+			%Artefacts
+				%r-5
+					%Armor
+						%Quantum
+						%Nano
+					%Steelarms
+						%Nanosaber
+					%Weapon
+						%Laser
+				%r-7
+					%Developer Tool	!=	Debug Tool, Adamant Rod
+	/Buildcraft
+	/Ender IO
+		Objects
+			%Artefacts
+				%r-5
+					%Armor
+						%Ender
+					%Steelarms
+						%Ender
+	/Gravisuite
+		Objects
+			%Artefacts
+				%r-5
+					%Armor
+						%Gravi-Chestplate
+					%Steelarms
+						%Vajra
+	/Gregtech
+	/Terrafirmacraft
+	/Applied Energistics
+		Objects
+			%Artefacts
+				%r-5
+					%Appeng
+						%Monitors
+						%Autocrafts`)
 add(`/Warcraft
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 				%Orc_2`)
 add(`/Portal
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Portal Gun`)
 add(`/Starcraft
-	@Sources[nowhere]
+	@Sources
 		%Games
 			%Computer`)
 add(`/Dark souls
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games`)
 add(`/Devil May Cry
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l5.0
 						Dante`)
 add(`/Bioshock
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games`)
 add(`/Diablo
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 			%Computer
 				1
 				2
 	Objects
 		%Artefacts
-			%r-6[nowhere]
+			%r-6
 				Horadrical Cube`)
 add(`/Witcher
-	@Authors[nowhere]
+	@Authors
 		Andrzej Sapkowski
-	@Languages[nowhere]
+	@Languages
 		Polish
-	@Sources[nowhere]
+	@Sources
 		%Games
 			%Computer
 	Creatures
-		%r-5[nowhere]
+		%r-5
 			%Cockatrice
 			%Basilisk
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 					%l3.0
 						Geralt
 	Features
-		%r-5[nowhere]
+		%r-5
 			Witcher
 			Mage?
 	Directions
-		%Languages[nowhere]
+		%Languages
 			Mudra
 	Actions
-		%r-5[nowhere]
+		%r-5
 			%Elements
 				%Basic
 					Air	!=	Aard
 					Water	!=	Aksiy
 					Earth	!=	Kven
 					Fire	!=	Igni
-			%Action[nowhere]
+			%Action
 				Protection	!=	Heliotrop
 				Pomehi	!=	Irden`)
 add(`/Skyrim
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 				%Dragon
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+5	!=	Mage`)
 add(`/Warhammer
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 	Materials
 		Noktilit
 		%Metals
 			Adamantium
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+4	!=	Psy?
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			e+4	!=	Psyker`)

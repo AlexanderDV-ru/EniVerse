@@ -1,21 +1,21 @@
 props.universesConfig+="Eniverse[nowhere]"
 add(`/Real world
-	Verse[nowhere]
+	Verse
 		@Type
 			Uni
 		Original
 			@Worlds
 				Our	!=	Earth-2020
-	Objects[nowhere]
+	Objects
 		%Elixirs
-			%r-4[nowhere]
+			%r-4
 				%Toxins
 				%Radioactive
 				%Narcotics
 				%Bacteria
 				%Virus
 		%Artefacts
-			%r-4[nowhere]
+			%r-4
 				%Weapon
 					%Guns
 						%Automates
@@ -38,69 +38,62 @@ add(`/Real world
 				%Rockets
 				%Computer
 				%Telephone
-	Actions[nowhere]
-		%r-4[nowhere]
+	Actions
+		%r-4
 			Granade by post
 			%Bioweapon`)
 add(`/Doctor Who`)
 add(`/Final Fantasy`)
-add(`/Charodey
-	@Languages[nowhere]
-		English
-	@Sources[nowhere]
-		%Serial`)
-add(`/Charodei
-	@Languages[nowhere]
+add(`/Spellbinder
+	@Sources	!	Supernatural.Serial.Spellbinder`)
+add(`/Spellbinder
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Film`)
 add(`/Rick and Morty
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Multserial
 			1
 			2
 			3
 			4
-	Objects[nowhere]
+	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Portal Gun
-	Verse[nowhere]
+	Verse
 		@Type
 			Multi
 		Original`)
 add(`/Marvel
-	@Sources[nowhere]
-		%Fiction
-			%Comics
-				Marvel
+	@Sources	!	Supernatural.Verse.Marvel
 	Verse
 		@Type
 			Multi
 		Original
-	Creatures
-		%Mind
-			%r-5[nowhere]
-				%X-Man
-					Ksavier
-					Logan
-				%Human
-					Entony Stark
-					Govard Stark
-				%Zen-Hoberis
-				%Klyntar
-				%Kree
-				%Inhuman
-				%Chitauri
-				%Flora Koloss
-				%Titan_1
+	Persons
+		%r-5
+			%X-Man
+				Ksavier
+				Logan
+			%Human
+				Entony Stark
+				Govard Stark
+			%Zen-Hoberis
+			%Klyntar
+			%Kree
+			%Inhuman
+			%Chitauri
+			%Flora Koloss
+			%Titan_1
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+5	!=	Magical?
 	Features
-		%r-5[nowhere]
+		%r-5
 			X-Man
 				Action
 					Mental
@@ -120,14 +113,14 @@ add(`/Marvel
 			@Ksavier
 	Objects
 		%Artefacts
-			%r-4[nowhere]
+			%r-4
 				%Tech
 					%Stark's
 						%Iron Man suits
 							mark7
 						%Thermonuclear Reactor
 				Cerebro
-			%r-7[nowhere]
+			%r-7
 				%Gems
 					%Infinity
 						Space
@@ -136,71 +129,70 @@ add(`/Marvel
 						Time
 						Power
 						Mind
-			%r-6[nowhere]
+			%r-6
 				%Loki's
 					Sceptre
 				%Thor's
 					Mjolnir`)
 add(`/Men in black
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Film`)
 add(`/Gamelit
-	Users
-		%r-6[nowhere]
+	Actions
+		%r-6
 			gm	!=	Gamer's System`)
 add(`/Gameworld
-	Users
-		%r-6[nowhere]
+	Actions
+		%r-6
 			gm	!=	Gamer's System`)
 add(`/SCP Foundation
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Statue
 	Organizations	!=	g
 		SCP	!=	Secure Containt Protect
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%SCP's`)
 add(`/Ghost Busters
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Film
 	Objects
 		%Artefacts
-			%r-4[nowhere]
+			%r-4
 				%Ghost traps
 	Creatures
-		%r-4[nowhere]
+		%r-4
 			%Ghost`)
 add(`/Startrack
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Serial
-	Creatures
-		%Mind
-			%r-5[nowhere]
-				%Human
-				%Vulkan
+	Persons
+		%r-5
+			%Human
+			%Vulkan
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+4	!=	Psy?
-	Users
-		%r-5[nowhere]
+	Actions
+		%r-5
 			e+4	!=	Psyonic`)
 add(`/Terminator
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Film
 	Objects
 		%Artefacts
-			%r-5[nowhere]
+			%r-5
 				%Tech
 					%Skynet's
 						%AI
@@ -214,31 +206,31 @@ add(`/Terminator
 						Time-Machine
 						%Cyborgs`)
 add(`/Resident Evil
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Games
 	Creatures
-		%r-4[nowhere]
+		%r-4
 			%Virused Zombie
 	Features
-		%r-5[nowhere]
+		%r-5
 			Superability`)
 add(`/Cat Leopold
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Multfilm
 	Objects
 		%Elixirs
-			%r-4[nowhere]
+			%r-4
 				Ozverin`)
 add(`/My Little Pony`)
 add(`/Winks`)
 add(`/DC
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Comics
 	Verse
 		@Type
@@ -248,10 +240,10 @@ add(`/DC
 				Our	!=	Earth?
 	Creatures
 		%Mind
-			%r-5[nowhere]
+			%r-5
 				%Human
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+5	!=	Mana?
 		sf	!=	Speedforce
 	Emotions	!=	Lantern's
@@ -264,27 +256,27 @@ add(`/DC
 		Compassion	!=	of Blue, Indigo
 		Love	!=	of Purple, Sapphire
 		Death	!=	of Black
-	Users
-		%r-5[nowhere]
+	Features
+		%r-5
 			Metahuman
 			sf	!=	Speedforceuser
 			e+5	!=	Mage
 	Objects
 		%Artefacts
-			%r-4[nowhere]
+			%r-4
 				%Tech
 					%Batman's
 					%Luthor's
-			%r-5[nowhere]
+			%r-5
 				%Tech
 					%Crypton's`)
 add(`/Avatar
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Multserial
 	Energies
-		%r-5[nowhere]
+		%r-5
 			+5	!=	Mana?
 	Elements
 		%Basic
@@ -293,11 +285,11 @@ add(`/Avatar
 			Earth
 			Air
 	Directions
-		%Types[nowhere]
+		%Types
 			%Action
 				Heal
 	Features
-		%r-5[nowhere]
+		%r-5
 			Mage
 				Fire
 				Water
@@ -306,103 +298,103 @@ add(`/Avatar
 			Avatar`)
 add(`/Virworld`)
 add(`/Lucifer
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Serial
 			1.
 			2.
 			3.
 			4.`)
 add(`/Master and Margarita
-	@Authors[nowhere]
+	@Authors
 		Bulgakov
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Alice in back side of mirror
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Voina i mir
-	@Authors[nowhere]
+	@Authors
 		Lev Tolstoy
-	@Languages[nowhere]
+	@Languages
 		Russian`)
 add(`/Ottsy i deti
-	@Authors[nowhere]
+	@Authors
 		Turgenev
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/12 stuliev
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Green Mile
-	@Authors[nowhere]
+	@Authors
 		Steven King
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Pobeg is shoushenka
-	@Authors[nowhere]
+	@Authors
 		Steven King
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/451 Farengait
-	@Authors[nowhere]
+	@Authors
 		Rai bradberry
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/We
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Oh divniy new world
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/1984
-	@Authors[nowhere]
+	@Authors
 		George Oruell
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Skotniy Dvor
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Solaris`)
 add(`/Atlant raspravil plechi
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Game of Thrones
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Path of Dark Mage
-	@Authors[nowhere]
+	@Authors
 		Sergey Zloy
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Fanfics
 	Verse
 		@Type
@@ -411,47 +403,47 @@ add(`/Path of Dark Mage
 add(`/Mage and his shadow`)
 add(`/Sticks`)
 add(`/Myths of Ktulhu
-	@Authors[nowhere]
+	@Authors
 		Govard Lovecraft
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/King's Battle
-	@Languages[nowhere]
+	@Languages
 		Japanese
-	@Sources[nowhere]
+	@Sources
 		%Ranobe`)
 add(`/Hunger Games
-	@Authors[nowhere]
+	@Authors
 		Katlin
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Dead souls
-	@Authors[nowhere]
+	@Authors
 		Nikolay Gogol
-	@Languages[nowhere]
+	@Languages
 		Russian
-	@Sources[nowhere]
+	@Sources
 		%Books`)
 add(`/Pandora Box`)
 add(`/Megabrain
-	@Sources[nowhere]
+	@Sources
 		%Film`)
 add(`/Matrix
-	@Languages[nowhere]
+	@Languages
 		English
-	@Sources[nowhere]
+	@Sources
 		%Film`)
 add(`/Fifth Element`)
 add(`/trassa 60`)
 add(`/Love Death Robots
-	@Sources[nowhere]
+	@Sources
 		%Serial`)
 add(`/Black Mirror
-	@Sources[nowhere]
+	@Sources
 		%Serial`)
 add(`/Memnoh Devil`)
 add(`/Labirint Favna`)
@@ -462,18 +454,18 @@ add(`/Gravity Falls
 	@Sources	!	%Fiction.%Multserial.Gravity Falls
 	Objects
 		%Artefacts
-			%r-4[nowhere]
+			%r-4
 				%Diaries
 					@Stanford
 					1
 					2
 					3
-		%r-5[nowhere]
+		%r-5
 			%Anomaly
 				Sizing Lamp
 	Creatures
 		%Mind
-			%r-6[nowhere]
+			%r-6
 				%Demon
 					Bill Cipher`)
 add(`/Fineas and Ferb
