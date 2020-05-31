@@ -98,6 +98,30 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 	var byPaths={}
 	var whereFunc
 	switch (whereFuncName) {
+		case "n":
+			whereFunc=function(pathArr){
+				var first=[],second=[]
+				for(var pathEl of pathArr)
+					first.push(pathEl.replace(/([avsbpc]\/[ \t]|^\/)/g,""))
+				return [first,second]
+			}
+			break;
+		case "r":
+			whereFunc=function(pathArr){
+				var first=[],second=[]
+				for(var pathEl of pathArr)
+					first.push(pathEl.replace(/[avsbpc]\/[ \t]/g,""))
+				return [first,second]
+			}
+			break;
+		case "f":
+			whereFunc=function(pathArr){
+				var first=[],second=[]
+				for(var pathEl of pathArr)
+					first.push(pathEl.replace(/([avsbpc]\/[ \t]|^\/)/g,"").replace(/\//g,""))
+				return [first,second]
+			}
+			break;
 		case "0":
 			whereFunc=function(pathArr){
 				return [pathArr,[]]
@@ -107,7 +131,7 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^avsbpc\\\\]/|^/)","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^avsbpc\\\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;
@@ -115,7 +139,7 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^vsbpc\\\\]/|^/)","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^vsbpc\\\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;
@@ -123,7 +147,7 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^sbpc\\\\]/|^/)","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^sbpc\\\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;
@@ -131,7 +155,7 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^bpc\\\\]/|^/)","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^bpc\\\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;
@@ -139,7 +163,7 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^pc\\\\]/|^/)","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^pc\\\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;
@@ -147,7 +171,7 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^c\\\\]/|^/)","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^c\\\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;
@@ -155,7 +179,7 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^\\]/|^/)","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;
