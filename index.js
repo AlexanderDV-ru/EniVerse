@@ -175,11 +175,11 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 				return [first,second]
 			}
 			break;
-		case "i":
+		case "m":
 			whereFunc=function(pathArr){
 				var first=[],second=[]
 				for(var pathEl of pathArr)
-					((pathEl.match(new RegExp("([^\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
+					((pathEl.match(new RegExp("([^\\\\]/|^/)[ \t]{0,1}","g"))||[]).length>0&&(pathEl.match(/"/g)||[]).length<2?second:first).push(pathEl)
 				return [first,second]
 			}
 			break;

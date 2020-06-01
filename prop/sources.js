@@ -80,7 +80,10 @@ add(`/ Supernatural
 		v/ Kanokon
 			/ Anime
 			/ Manga
-		KonoSuba: God's Blessing on this Wonderful World
+		v/ KonoSuba
+			@English	!	KonoSuba: God's Blessing on this Wonderful World
+			@Translyt	!	Kono Subarashii Sekai ni Shukufuku o
+			@Original	!	この素晴らしい世界に祝福を
 		Lupen
 		Macademy Wasshoi
 		v/ Mob Psycho 100
@@ -432,17 +435,25 @@ add(`	a/ Duane Diana&
 				@Comment	!	двухчастный (юмористический) комикс для DC Comics, NYC
 				@Since	!	январь/ февраль 1986.`)
 add(`	/ Books
-		b/ война миров
-			@Authors	!	Герберт уэлс
-		b/ гиперболоид инженера гарена
-			@Authors	!	толстой
-		b/ туманность андромеды
-			@Authors	!	Ефремов
-		b/ элита
-			@Authors	!	беляев
-		b/ Беляев
-		b/ Ефремов
-		b/ Герберт уэлс
+		b/ Andromeda's nebula
+			@Original	!	туманность андромеды
+			@Authors	!	Efremov
+		s/ Autostop to Galaxy
+			@Original	!	The Hitchhiker’s Guide to the Galaxy
+			@Authors	!	Douglas Adams
+			@Languages	!	English
+		b/ Elite
+			@Original	!	Элита
+			@Authors	!	Belyaev
+			@Languages	!	Russian
+		b/ Engineer hyperboloid Garin
+			@Original	!	Гиперболо́ид инженера Га́рина
+			@Languages	!	Russian
+			@Authors	!	Aleksey Nikolayevich Tolstoy
+		b/ War of Worlds
+			@Original	!	The War of the Worlds
+			@Languages	!	English
+			@Authors	!	Herbert George Wells
 		b/ не то не этого я хотел
 		b/ Радий Полонский
 		b/ мемнох дьявол
@@ -466,6 +477,7 @@ add(`	/ Books
 					Gyodelya Eshera Baha
 					принятие решений в неопределенности
 			@Authors	!	Eliezer Yudkowsky
+			@Languages	!	English
 		a/ Strugatskie
 			@Source	!	Father
 			@Languages	!Russian
@@ -591,44 +603,64 @@ add(`	/ Games
 			@Languages	!	English`)
 add(`	/ Fanfics
 		@Languages	!	Russian
-		tigrewurmut
-		эпоха темного мага
-			@Source	!	Father
-		Командировка князя Тьмы
+		b/ Eli
+		b/ Командировка князя Тьмы
 			@Source	!	Thinking means there is
-		магия и физика
+		b/ магия и физика
 			@Source	!	Thinking means there is
-		Thinking means there is
-		терминатор
+		b/ Thinking means there is
+			@Languages	!	French
+		b/ Terminator
 			@Source	!	Thinking means there is	?
-		однажды он прогнётся под наs
+		b/ однажды он прогнётся под наs
 			@Source	!	Thinking means there is	?
-		темные волшебники
+		b/ темные волшебники
 			@Source	!	Thinking means there is
-		маг и его тень
+		b/ маг и его тень
 			@Source	!	Thinking means there is
-		Неистовый шумерский чародей
-		v/ Судьба архимага
-			судьба архимага
-			план архимага
+		b/ Неистовый шумерский чародей
+		s/ Fate of Archmage
+			b/ Fate of Archmage
+				@Original	!	Судьба архимага
+			b/ Plan of Archmage
+				@Original	!	План архимага
 		одержимые
-		повелитель кошмаров	Бессмертник
-		Путь наверх	Хадин Познавший Тьму
-		Архимаг 7.1 диабло	? (1-10 все что было)
-		v/ Власть магии	?
-			Смертный
-			Бессмертный
-		Цепь событий
-		v/ Античный чароплет
-			Алессий
-		Little Monster
+		b/ Little Monster
 			@Authors	!	Daimon Agafo
+		b/ Lord of nightmares
+			@Original	!	Повелитель кошмаров
+			@Authors	!	Бессмертник
+		b/ Path to Top
+			@Authors	!	Hedin Knowing Dark
+			@Original	!	Путь наверх
+			@Translyt	!	Put naverh
+		Архимаг 7.1 диабло	? (1-10 все что было)
+			@
+		b/ The Power of Magic
+			@Authors
+				MorgothBauglir
+				Shetel-Sorken
+			@Original	!	Власть магии
+			@Translyt	!	Vlast Magii
+			p/ Mortal
+				@Original	!	Смертный
+				@Translyt	!	Smertnyy
+			p/ Immortal
+				@Original	!	Бессмертный
+				@Translyt	!	Bessmertnyy
+		Цепь событий
+		s/ Antique charoplet
+			@Original	!	Античный чароплет
+			@Translyt	!	Antichnyy charoplet
+			@Authors	!	Alessiy
+			b/ 1
+			b/ 2
+			b/ 3
 		Мира Парадигма
 		v/ Elfish trash
-			1
-			2
-			3
-		объединение необъединимого
+			1 Book
+			2 Book
+			3 Book
 		Fate: Archmage
 		Paladin
 		путь славления богом
@@ -642,7 +674,8 @@ add(`	/ Fanfics
 		v/ дитя
 			дитя
 			контракт и прочие неприятности
-		v/ Bad Choice!="Neudachniy Vybor"
+		v/ Bad Choice
+			@Translyt	!	Neudachniy Vybor
 			@Authors	!	N.B.
 			@Marks
 				AU
@@ -661,28 +694,33 @@ add(`	/ Fanfics
 			1
 			2
 			3
+			4
+			3+3/4
+			Harry Potter and Magic Wand
 		корнев
-		архимаг	xp0ft
+		архимаг
+			@xp0ft
 		везуха
 		вершина
 		Наруто
-		глаза чужого мира	jack vance
-		имя мне легион	бандилерос
-		v/ tigrewurmut
-			v/ страж знаний
-				начало
-				2
-				не герой
-				нг2 ч1
-				нг2 ч2 в10 12:45 +? оценки нет потому что концовка совершенно непонятная и вообще какой-то сюр
-				нг2 ч2 в2
-				нг3
-			v/ фокусник шляпник
-				фокусник
-				волшебник
-			возвращение героя
+		глаза чужого мира
+			@jack vance
+		a/ tigrewurmut
+			b/ Technomancer
+			s/ страж знаний
+				b/ начало
+				b/ 2
+				b/ не герой
+				b/ нг2 ч1
+				b/ нг2 ч2 в10 12:45 +? оценки нет потому что концовка b/ совершенно непонятная и вообще какой-то сюр
+				b/ нг2 ч2 в2
+				b/ нг3
+			s/ фокусник шляпник
+				b/ фокусник
+				b/ волшебник
+			b/ возвращение героя
 		v/ Shetel-Sorken
-			New horizonts
+			b/ New horizonts
 				@Marks
 					AU
 					Вымышленные существа
@@ -705,9 +743,8 @@ add(`	/ Fanfics
 					%Death
 						main person
 						adding person
-			Combination of Uncombinable
-		Will for life
-		Technomancer
+			b/ Combination of Uncombinable
+		b/ Will for life
 		v/ In shadow of rulers
 			In shadow of rulers
 			b/ Darkness covering knowledge
@@ -724,7 +761,6 @@ add(`	/ Fanfics
 			b/ Book 2
 			b/ Book 3
 		b/ Youngling
-			@Languages	!	Russian
 		b/ дважды озадачен
 		b/ Two zeros
 		v/ Амулет
@@ -733,7 +769,7 @@ add(`	/ Fanfics
 		b/ Астаргоргарот
 		v/ Myverse
 			@Authors	!	Me
-		v/ Filchenkov
+		v/ Three Old Ladies
 			@Authors	!	Argus Filchenkov
 			@References
 				Natural
@@ -745,26 +781,36 @@ add(`	/ Fanfics
 						Firestarter
 							@Authors	!	Stephen Edwin King
 						Граф Монте Кристо
-			b/ 0. Три пожилых леди		20.03.02 22:45-20.03.03 14:45 +9.0	20.03.15 10:20-20.03.22 15:53 +8.0
-			b/ 1. Хранитель ключей		20.03.03 14:50-20.03.04 23:10 +9.5	20.03.22 17:25-
-			b/ 2. Истинный наследник		20.03.05 10:50-20.03.06 13:07 +9.0
-			b/ 3. Искусство побега		20.03.06 13:12-20.03.07 19:35 +9.3
-			b/ 4. Охота на чемпионов		20.03.07 20:05-20.03.08 17:19 +9.0 (30 все что было) -20.03.28 20:16 +9.5 (до конца)
+			b/ 0.	Harry Potter and Three Old Ladies
+				@Original	!	Три пожилых леди
+			b/ 1.	Harry Potter and Key keeper
+				@Original	!	Хранитель ключей
+			b/ 2.	Harry Potter and True heir
+				@Original	!	Истинный наследник
+			b/ 3.	Harry Potter and Art of escape
+				@Original	!	Искусство побега
+			b/ 4.	Harry Potter and Champion Hunt
+				@Original	!	Охота на чемпионов
 		v/ Kitsune Miyato
-			@Source	!=Ficbook
-			v/ Учиха Саске из клана редисок
+			@Authors	!	Kitsune Miyato
+			@Source	!	Ficbook
+			v/ Uchiha Sasuke from the Radish Clan
+				@Original	!	Учиха Саске из клана редисок
 				b/ 1 Part
 				b/ 2 Part
 				b/ 3 Part
 				b/ 4 Part
 				b/ 5 Part
 			техника зеркального перевоплощения
-			v/ все было совсем не так
+			v/ Everything was not so
+				@Original	!	все было совсем не так
 				1 Part
 				1 Part
 				3 Part
 				4 Part
-			v/ жизнь которую я изменю
+			v/ Life that I will change
+				@Original	!	жизнь которую я изменю
+				@Translyt	!	Zhizn kotoruyu ya izmenyu
 				v/ 1 Book. спасёнение клана учиха
 					1 Part
 					2 Part
@@ -777,7 +823,9 @@ add(`	/ Fanfics
 					1 Part
 					2 Part
 					3 Part
-			v/ избранные
+			v/ Featured
+				@Original	!	избранные
+				@Translyt	!	Izbrannye
 				b/ 0 Book. Prologue. какой придурок вызвал демона?		19.10.08 20:00-21:10 +7.0
 				b/ 1 Book. какого биджуу я теперь волшебник?
 					p/ 1 Part
@@ -799,7 +847,8 @@ add(`	/ Fanfics
 					p/ 1 Part
 					p/ 2 Part
 					p/ 3 Part
-			b/ Мать и мачеха
+			b/ Mother and Mother-in-law
+				@Original	!	Мать и мачеха
 				p/ 1 Part
 				p/ 2 Part
 				p/ 3 Part(все что было
@@ -811,18 +860,22 @@ add(`	/ Fanfics
 				b/ 3 Book
 			b/ Цукиеми: и жили они долго и счастливо
 			b/ Игра по фальшивым нотам
-		v/ Sergei Zloy
-			v/ Path of Dark Mage
-				b/ начинающего
-				b/ опытного
+		v/ Dark Mage
+			@Source	!	Father
+			@Authors	!	Sergey Zloy
+			b/ Path of Beginning Dark Mage
+			b/ Path of Expirienced Dark Mage
 			b/ Dark Mage Age
-		v/ Fil Bandileros
+				@Original	!	Эпоха темного мага
+		a/ Fil Bandileros
+			@Authors	!	Fil Bandileros
 			b/ другой взгляд
 			b/ жизнь номер 2
+			b/ имя мне легион
 			b/ Life of Archmage Potter
 				@Source	!	Father
 			b/ Звезда по имени
-			b/ b/ Meta-Hobbit
+			b/ Meta-Hobbit
 			b/ Мета-Игрок
 			b/ Сказки русского леса
 			b/ Что? Наша жизнь игра?
@@ -833,7 +886,8 @@ add(`	/ Fanfics
 			b/ In Yan Hren
 			b/ Fatal Error
 			b/ The Zadrot
-			v/ The Boy Who Conquered The Time
+			v/ Boy Who Conquered Time
+				@Original	!	Мальчик, который покорил время
 				b/ ГП&МКПВ-B
 				b/ Туда и обратно, МКПВ-B
 				b/ Сиськи
@@ -856,20 +910,36 @@ add(`	/ Manhva
 			4 Season`)
 add(`	/ Mults
 		Mr freeman
-			@Languages	!Russian`)
-add(`	/ Multserial
+			@Languages	!	Russian
 		v/ Gravity Falls
-			@Languages	!English
+			@Languages	!	English
 			@Authors	!	Alex Hirsh
 			1 Season
 			Video chronics
-			2 Season`)
+			2 Season
+		v/ Rick and Morty
+			@Languages	!	English
+			1 Season
+			2 Season
+			3 Season
+			4 Season
+		v/ Phineas and Ferb
+			@Languages	!	English
+			@Authors
+				Dan Povenmire
+				Jeff "Swampy" Marsh`)
 add(`	/ Films
-		v/Charodei
+		v/ Sorcerers
+			@Languages	!	Russian
+			@Translyt	!	Charodei
+			@Original	!	Чародеи
 		v/ Men in black
 		v/ Star wars
-		Иван Васильевич меняет профессию
-		Мегамозг
+		b/ Ivan Vasilievich changes his profession
+			@Original	!	Иван Васильевич меняет профессию
+			@Translyt	!	Ivan Vasilievich menyaet professiyu
+		b/ Megamind
+			@Languages	!	English
 		v/ Великий защитник
 			1
 			2
@@ -925,9 +995,6 @@ add(`	/ Films
 		Схватка, 1995
 		День сурка`)
 add(`	/ Verse
-		v/ Games of Thrones
-			/Serial
-			/Books
 		v/ Dozory
 			@Languages	!Russian
 			@Authors	!	Sergei Lukyanenko
@@ -941,6 +1008,29 @@ add(`	/ Verse
 			/ Films
 				1 Film.	Night
 				2 Film.	Day
+		v/ Games of Thrones
+			/Serial
+				/Books
+		v/ LotR
+			@Languages	!	English
+			@Authors	!	John Ronald Reuel Tolkien
+			/ Books
+				s/ The Lord of The Rings
+					b/ 1.	Братство кольца
+					b/ 2.	Две башни
+					b/ 3.	Возвращение короля
+				s/ Silmarillion
+				s/ Hobbit
+				s/ Notes
+			/ Films
+				s/ The Lord of The Rings
+					b/ 1.	Братство кольца
+					b/ 2.	Две твердыни
+					b/ 3.	Возвращение короля
+				s/ Hobbit
+					b/ 1
+					b/ 2
+					b/ 3
 		v/ Potteriana
 			@Languages	!English
 			@Authors	!	Joanne Rowling
@@ -969,26 +1059,16 @@ add(`	/ Verse
 					6 Film.	"Harry Potter and Half-Blood Price"
 					7 Film.	"Harry Potter and Deathly Hallows"	Part 1
 					8 Film.	"Harry Potter and Deathly Hallows"	Part 2
-		v/ LotR
+		v/ Through the Looking-Glass
+			@Original	!	Through the Looking-Glass, and What Alice Found There
 			@Languages	!	English
-			@Authors	!	John Ronald Reuel Tolkien
-			/ Books
-				s/ The Lord of The Rings
-					b/ 1.	Братство кольца
-					b/ 2.	Две башни
-					b/ 3.	Возвращение короля
-				s/ Silmarillion
-				s/ Hobbit
-				s/ Notes
-			/ Films
-				s/ The Lord of The Rings
-					b/ 1.	Братство кольца
-					b/ 2.	Две твердыни
-					b/ 3.	Возвращение короля
-				s/ Hobbit
-					b/ 1
-					b/ 2
-					b/ 3`)
+			@Authors	!	Lewis Carroll
+		v/ Witcher
+			@Authors	!	Andrzej Sapkowski
+			@Languages	!	Polish
+			/Games
+			/Books`)
+1
 add(`/ Nonfiction
 	/ Books
 		v/ Alexander Panchin
@@ -1035,7 +1115,6 @@ add(`	/ Games
 		Deus Ex
 		Fallout
 		Assasin's creed
-		Witcher
 		observation`)
 add(`/ Nonfiction
 	/ Books

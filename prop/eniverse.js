@@ -1,78 +1,62 @@
 props.universesConfig+="Eniverse[nowhere]"
-add(`/Real world
-	Verse
-		@Type
-			Uni
-		Original
-			@Worlds
-				Our	!=	Earth-2020
-	Objects
-		%Elixirs
-			%r-4
-				%Toxins
-				%Radioactive
-				%Narcotics
-				%Bacteria
-				%Virus
-		%Artefacts
-			%r-4
-				%Weapon
-					%Guns
-						%Automates
-						%Pistols
-					%Explosive
-					%Nuclear
-					%Tank
-				%Vehicle
-					%Car
-					%Plane
-					%Helicopter
-					%Train
-					%Ship
-				%Drone
-					%Quadrocopter
-				%Videocamera
-				%Display
-				%Microphone
-				%Dinamic
-				%Rockets
-				%Computer
-				%Telephone
-	Actions
-		%r-4
-			Granade by post
-			%Bioweapon`)
+1
 add(`/Doctor Who`)
+1
 add(`/Final Fantasy`)
-add(`/Spellbinder
-	@Sources	!	Supernatural.Serial.Spellbinder`)
-add(`/Spellbinder
-	@Languages
-		Russian
+1
+add(`/Gamelit
+	Actions
+		%r-6
+			gm	!=	Gamer's System`)
+1
+add(`/Gameworld
+	Actions
+		%r-6
+			gm	!=	Gamer's System`)
+1
+add(`/Ghost Busters
 	@Sources
-		%Film`)
-add(`/Rick and Morty
-	@Languages
-		English
-	@Sources
-		%Multserial
-			1
-			2
-			3
-			4
+		Supernatural
+			Serial
+				Ghost Busters
 	Objects
 		%Artefacts
-			%r-5
-				%Portal Gun
-	Verse
-		@Type
-			Multi
-		Original`)
+			%r-4
+				%Ghost traps
+	Creatures
+		%r-4
+			%Ghost`)
+1
+add(`/Gravity Falls
+	@Sources
+		Supernatural
+			Mults
+				Gravity Falls
+	Objects
+		%Artefacts
+			%r-4
+				%Diaries
+					@Stanford
+					1
+					2
+					3
+		%r-5
+			%Anomaly
+				Sizing Lamp
+	Creatures
+		%Mind
+			%r-6
+				%Demon
+					Bill Cipher`)
+1
 add(`/Marvel
-	@Sources	!	Supernatural.Verse.Marvel
+	@Sources
+		Supernatural
+			Verse
+				Marvel
 	Verse
 		@Type
-			Multi
+			Multsi
 		Original
 	Persons
 		%r-5
@@ -134,47 +118,221 @@ add(`/Marvel
 					Sceptre
 				%Thor's
 					Mjolnir`)
+1
 add(`/Men in black
-	@Languages
-		English
 	@Sources
-		%Film`)
-add(`/Gamelit
+		Supernatural
+			Films
+				Men in black`)
+1
+add(`/Phineas and Ferb
+	@Sources
+		Supernatural
+			Mults
+				Phineas and Ferb`)
+1
+add(`/Real world
+	Verse
+		Original
+	Worlds
+		/Our
+			/-5000x
+				Earth
+					-5000x
+			/-4000x
+				Earth
+					-4000x
+			/-3000x
+				Earth
+					-3000x
+			/-2000x
+				Earth
+					-2000x
+			/-1000x
+				Earth
+					-1000x
+			/+0000x
+				Earth
+					+0000x
+			/+0100x
+				Earth
+					+0100x
+			/+0200x
+				Earth
+					+0200x
+			/+0300x
+				Earth
+					+0300x
+			/+0400x
+				Earth
+					+0400x
+			/+0500x
+				Earth
+					+0500x
+			/+0600x
+				Earth
+					+0600x
+			/+0700x
+				Earth
+					+0700x
+			/+0800x
+				Earth
+					+0800x
+			/+0900x
+				Earth
+					+0900x
+			/+1000x
+				Earth
+					+1000x
+			/+1100x
+				Earth
+					+1100x
+			/+1200x
+				Earth
+					+1200x
+			/+1300x
+				Earth
+					+1300x
+			/+1400x
+				Earth
+					+1400x
+			/+1500x
+				Earth
+					+1500x
+			/+1600x
+				Earth
+					+1600x
+			/+1700x
+				Earth
+					+1700x
+			/+1800x
+				Earth
+					+1800x
+			/+1900x
+				Earth
+					+1900x
+			/+1910x
+				Earth
+					+1910x
+			/+1920x
+				Earth
+					+1920x
+			/+1930x
+				Earth
+					+1930x
+			/+1940x
+				Earth
+					+1940x
+			/+1950x
+				Earth
+					+1950x
+			/+1960x
+				Earth
+					+1960x
+			/+1970x
+				Earth
+					+1970x
+			/+1980x
+				Earth
+					+1980x
+			/+1990x
+				Earth
+					+1990x
+			/+2000x
+				Earth
+					+2000x
+			/+2010x
+				Earth
+					+2010x
+			/+2020x
+				Earth
+					+2020x
+	Objects
+		%Elixirs
+			%r-4
+				%Toxins
+				%Radioactive
+				%Narcotics
+				%Bacteria
+				%Virus
+		%Artefacts
+			%r-4
+				%Weapon
+					%Guns
+						%Automates
+						%Pistols
+					%Explosive
+					%Nuclear
+					%Tank
+				%Vehicle
+					%Car
+					%Plane
+					%Helicopter
+					%Train
+					%Ship
+				%Drone
+					%Quadrocopter
+				%Videocamera
+				%Display
+				%Microphone
+				%Dinamic
+				%Rockets
+				%Computer
+				%Telephone
 	Actions
-		%r-6
-			gm	!=	Gamer's System`)
-add(`/Gameworld
-	Actions
-		%r-6
-			gm	!=	Gamer's System`)
+		%r-4
+			Granade by post
+			%Bioweapon`)
+1
+add(`/Rick and Morty
+	@Sources
+		Supernatural
+			Mults
+				Rick and Morty
+	Objects
+		%Artefacts
+			%r-5
+				%Portal Gun
+	Verse
+		@Type
+			Multsi
+		Original`)
+1
 add(`/SCP Foundation
-	@Languages
-		English
 	@Sources
-		%Statue
+		Supernatural
+			Article
+				SCP Foundation
 	Organizations	!=	g
 		SCP	!=	Secure Containt Protect
 	Objects
 		%Artefacts
 			%r-5
 				%SCP's`)
-add(`/Ghost Busters
-	@Languages
-		English
+1
+add(`/Sorcerers
 	@Sources
-		%Film
-	Objects
-		%Artefacts
-			%r-4
-				%Ghost traps
-	Creatures
-		%r-4
-			%Ghost`)
+		Supernatural
+			Films
+				Sorcerers`)
+1
+add(`/Spellbinder
+	@Sources
+		Supernatural
+			Serial
+				Spellbinder`)
+1
+add(`/World of Darkness
+	@Sources
+		Supernatural
+			?
+				World of Darkness`)
+1
 add(`/Startrack
-	@Languages
-		English
 	@Sources
-		%Serial
+		Supernatural
+			Serial
+				Startrack
 	Persons
 		%r-5
 			%Human
@@ -185,11 +343,12 @@ add(`/Startrack
 	Actions
 		%r-5
 			e+4	!=	Psyonic`)
+1
 add(`/Terminator
-	@Languages
-		English
 	@Sources
-		%Film
+		Supernatural
+			Films
+				Terminator
 	Objects
 		%Artefacts
 			%r-5
@@ -205,76 +364,34 @@ add(`/Terminator
 							%Ex
 						Time-Machine
 						%Cyborgs`)
-add(`/Resident Evil
-	@Languages
-		English
-	@Sources
-		%Games
-	Creatures
-		%r-4
-			%Virused Zombie
-	Features
-		%r-5
-			Superability`)
+1
 add(`/Cat Leopold
-	@Languages
-		Russian
 	@Sources
-		%Multfilm
+		Supernatural
+			Mults
+				Cat Leopold
 	Objects
 		%Elixirs
 			%r-4
 				Ozverin`)
-add(`/My Little Pony`)
-add(`/Winks`)
-add(`/DC
-	@Languages
-		English
+1
+add(`/My Little Pony
 	@Sources
-		%Comics
-	Verse
-		@Type
-			Multi
-		Original
-			@Worlds
-				Our	!=	Earth?
-	Creatures
-		%Mind
-			%r-5
-				%Human
-	Energies
-		%r-5
-			+5	!=	Mana?
-		sf	!=	Speedforce
-	Emotions	!=	Lantern's
-		Life	!=	of White
-		Anger	!=	of Red, Atrocitus
-		Greed	!=	of Orange
-		Fear	!=	of Yellow, Sinestro
-		Will	!=	of Green
-		Hope	!=	of Light Blue
-		Compassion	!=	of Blue, Indigo
-		Love	!=	of Purple, Sapphire
-		Death	!=	of Black
-	Features
-		%r-5
-			Metahuman
-			sf	!=	Speedforceuser
-			e+5	!=	Mage
-	Objects
-		%Artefacts
-			%r-4
-				%Tech
-					%Batman's
-					%Luthor's
-			%r-5
-				%Tech
-					%Crypton's`)
+		Supernatural
+			Mults
+				My Little Pony`)
+1
+add(`/Winks
+	@Sources
+		Supernatural
+			Mults
+				Winks`)
+1
 add(`/Avatar
-	@Languages
-		Japanese
 	@Sources
-		%Multserial
+		Supernatural
+			Mults
+				Avatar
 	Energies
 		%r-5
 			+5	!=	Mana?
@@ -296,181 +413,146 @@ add(`/Avatar
 				Earth
 				Air
 			Avatar`)
+1
 add(`/Virworld`)
+1
 add(`/Lucifer
-	@Languages
-		English
 	@Sources
-		%Serial
-			1.
-			2.
-			3.
-			4.`)
+		Supernatural
+			Serial
+				Lucifer`)
+1
 add(`/Master and Margarita
-	@Authors
-		Bulgakov
-	@Languages
-		Russian
 	@Sources
-		%Books`)
-add(`/Alice in back side of mirror
-	@Languages
-		Japanese
+		Supernatural
+			Books
+				Master and Margarita`)
+1
+add(`/Through the Looking-Glass
 	@Sources
-		%Books`)
-add(`/Voina i mir
-	@Authors
-		Lev Tolstoy
-	@Languages
-		Russian`)
-add(`/Ottsy i deti
-	@Authors
-		Turgenev
-	@Languages
-		Russian
+		Supernatural
+			Verse
+				Through the Looking-Glass`)
+1
+add(`/War and Peace
 	@Sources
-		%Books`)
-add(`/12 stuliev
-	@Languages
-		Russian
+		Supernatural
+			Books
+				War and Peace`)
+1
+add(`/Twelve chairs
 	@Sources
-		%Books`)
+		Supernatural
+			Verse
+				Twelve chairs`)
+1
 add(`/Green Mile
-	@Authors
-		Steven King
-	@Languages
-		English
 	@Sources
-		%Books`)
-add(`/Pobeg is shoushenka
-	@Authors
-		Steven King
-	@Languages
-		English
+		Supernatural
+			Verse
+				Green Mile`)
+1
+add(`/The Shawshank Redemption
 	@Sources
-		%Books`)
-add(`/451 Farengait
-	@Authors
-		Rai bradberry
-	@Languages
-		English
+		Supernatural
+			Verse
+				The Shawshank Redemption`)
+1
+add(`/Solaris
 	@Sources
-		%Books`)
-add(`/We
-	@Languages
-		Russian
+		Supernatural
+			Books
+				Solaris`)
+1
+add(`/Atlas Shrugged
 	@Sources
-		%Books`)
-add(`/Oh divniy new world
-	@Languages
-		English
-	@Sources
-		%Books`)
-add(`/1984
-	@Authors
-		George Oruell
-	@Languages
-		English
-	@Sources
-		%Books`)
-add(`/Skotniy Dvor
-	@Languages
-		Russian
-	@Sources
-		%Books`)
-add(`/Solaris`)
-add(`/Atlant raspravil plechi
-	@Languages
-		English
-	@Sources
-		%Books`)
+		Supernatural
+			Books
+				Atlas Shrugged`)
+1
 add(`/Game of Thrones
-	@Languages
-		English
 	@Sources
-		%Books`)
-add(`/Path of Dark Mage
-	@Authors
-		Sergey Zloy
-	@Languages
-		Russian
+		Supernatural
+			Verse
+				Game of Thrones`)
+1
+add(`/Sticks
 	@Sources
-		%Fanfics
-	Verse
-		@Type
-			Uni
-		Potteriana`)
-add(`/Mage and his shadow`)
-add(`/Sticks`)
-add(`/Myths of Ktulhu
-	@Authors
-		Govard Lovecraft
-	@Languages
-		English
+		Supernatural
+			Books
+				Sticks`)
+1
+add(`/Cthulhu Mythos
 	@Sources
-		%Books`)
-add(`/King's Battle
-	@Languages
-		Japanese
+		Supernatural
+			Books
+				Cthulhu Mythos`)
+1
+add(`/Battle Royale
 	@Sources
-		%Ranobe`)
+		Supernatural
+			Jarse
+				Battle Royale`)
+1
 add(`/Hunger Games
-	@Authors
-		Katlin
-	@Languages
-		English
 	@Sources
-		%Books`)
-add(`/Dead souls
-	@Authors
-		Nikolay Gogol
-	@Languages
-		Russian
+		Supernatural
+			Verse
+				Hunger Games`)
+1
+add(`?/Pandora Box
 	@Sources
-		%Books`)
-add(`/Pandora Box`)
-add(`/Megabrain
+		Supernatural
+			Jarse
+				?`)
+1
+add(`/Megamind
 	@Sources
-		%Film`)
+		Supernatural
+			Films
+				Megamind`)
+1
 add(`/Matrix
-	@Languages
-		English
 	@Sources
-		%Film`)
+		Supernatural
+			Films
+				Matrix`)
+1
 add(`/Fifth Element`)
+1
 add(`/trassa 60`)
+1
 add(`/Love Death Robots
 	@Sources
-		%Serial`)
+		Supernatural
+			Serial
+				Love Death Robots`)
+1
 add(`/Black Mirror
 	@Sources
-		%Serial`)
-add(`/Memnoh Devil`)
+		Supernatural
+			Serial
+				Black Mirror`)
+1
+add(`/Memnoh The Devil
+	@Sources
+		Supernatural
+			Books
+				Memnoh The Devil`)
+1
 add(`/Labirint Favna`)
+1
 add(`/Persi Jackson`)
+1
 add(`/Star Dust`)
+1
 add(`/Home of strange kid ms peregrin`)
-add(`/Gravity Falls
-	@Sources	!	%Fiction.%Multserial.Gravity Falls
-	Objects
-		%Artefacts
-			%r-4
-				%Diaries
-					@Stanford
-					1
-					2
-					3
-		%r-5
-			%Anomaly
-				Sizing Lamp
-	Creatures
-		%Mind
-			%r-6
-				%Demon
-					Bill Cipher`)
-add(`/Fineas and Ferb
-	@Sources	!	%Fiction.%Mult.Fineas and Ferb`)
+1
 add(`/Infinity Story`)
+1
 add(`/Collectioner`)
+1
 add(`/Molchaniye Yagnyat`)
+1
 add(`/Wizard Parents`)
+1

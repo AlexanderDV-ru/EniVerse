@@ -1,38 +1,49 @@
-
-add(`/Hyperboloid inzhenera garina
-	@Authors
-		Tolstoy
-	@Languages
-		Russian
+1
+add(`/Andromeda's nebula
 	@Sources
-		%Books`)
-add(`/Elita
-	@Authors
-		Belyaev
-	@Languages
-		Russian
+		Supernatural
+			Books
+				Andromeda's nebula
+	Dimensions
+		w
+			<1	!=	zero-space`)
+1
+add(`/Elite
 	@Sources
-		%Books`)
+		Supernatural
+			Books
+				Elite`)
+1
+add(`/Engineer hyperboloid Garin
+	@Sources
+		Supernatural
+			Books
+				Engineer hyperboloid Garin`)
+1
+add(`/War of Worlds
+	@Sources
+		Supernatural
+			Books
+				War of Worlds`)
+1
 add(`/Strugatskie
-	@Authors
-		Strugatskie
-	@Languages
-		Russian
 	@Sources
-		%Books`)
+		Supernatural
+			Books
+				Strugatskie`)
 add(`/Azimov
-	@Authors
-		Azik Azimov
-	@Languages
-		English
+	@Sources
+		Supernatural
+			Books
+				Azimov
 	Dimensions
 		w
 			<1	!=	Hyper`)
-add(`/hainline
-	@Authors
-		Robert Hainline
-	@Languages
-		English
+add(`/Heinlein
+	@Sources
+		Supernatural
+			Books
+				Heinlein
 	Dimensions
 		w
 			<1	!=	Cherenkov drive`)
@@ -45,16 +56,18 @@ add(`/vavilon5
 		w
 			<1	!=	Hyper`)
 add(`/Star Gate
-	@Languages
-		English
+	@Sources
+		Supernatural
+			Serial
+				Star Gate
 	Dimensions
 		w
 			<1	!=	Hyper`)
 add(`/Star Wars
-	@Languages
-		English
 	@Sources
-		%Film
+		Supernatural
+			Films
+				Star Wars
 	Persons
 		%r-5
 			%Human
@@ -79,17 +92,11 @@ add(`/Star Wars
 					%Lightsaber
 				%Tech
 					%Galaxy's`)
-add(`/Tumannost Andromedy
-	@Authors
-		Efremov
-	@Languages
-		Russian
+add(`/Bulychov
 	@Sources
-		%Books
-	Dimensions
-		w
-			<1	!=	zero-space`)
-add(`/Kir Bulychov
+		Supernatural
+			Books
+				Bulychov
 	Objects
 		Artefacts
 			%r-5
@@ -104,15 +111,8 @@ add(`/Kir Bulychov
 				%Human
 					Seleznyov(a)
 						Alice`)
-add(`/Voina mirov
-	@Authors
-		Herbert wels
-	@Languages
-		English
+add(`/Autostop to Galaxy
 	@Sources
-		%Books`)
-add(`/Autostop by galaxy
-	@Authors
-		Duglas adams
-	@Languages
-		English`)
+		Supernatural
+			Books
+				Autostop to Galaxy`)

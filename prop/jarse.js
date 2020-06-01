@@ -1,18 +1,30 @@
 add(`/Assassination Classroom
-	@Sources	!	Supernatural.Jarse.Assassination Classroom
+	@Sources
+		Supernatural
+			Jarse
+				Assassination Classroom
 	Creatures
 		%Mind
 			%TentacleMoster
 				Koro`)
 1
 add(`/Atack on Titan
-	@Sources	!	Supernatural.Jarse.Atack on Titan`)
+	@Sources
+		Supernatural
+			Jarse
+				Atack on Titan`)
 1
 add(`/Berserk
-	@Sources	!	Supernatural.Jarse.Berserk`)
+	@Sources
+		Supernatural
+			Jarse
+				Berserk`)
 1
 add(`/Bleach
-	@Sources	!	Supernatural.Jarse.Bleach
+	@Sources
+		Supernatural
+			Jarse
+				Bleach
 	Energies
 		%r-5
 			+2	!=	Reatsu
@@ -25,10 +37,10 @@ add(`/Bleach
 			Sword of Soul`)
 1
 add(`/Blue exorcist
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				Blue exorcist
 	Features
 		%r-5
 			Demon
@@ -40,7 +52,10 @@ add(`/Blue exorcist
 			Assiah	!=	Human`)
 1
 add(`/Claymore
-	@Sources	!	Supernatural.Fiction.Manga.Claymore
+	@Sources
+		Supernatural
+			Jarse
+				Claymore
 	Energies
 		%r-5
 			yo	!=	Yoki
@@ -52,7 +67,10 @@ add(`/Claymore
 				%Yoma`)
 1
 add(`/Code Geass
-	@Sources	!	Supernatural.Jarse.Code Geass
+	@Sources
+		Supernatural
+			Jarse
+				Code Geass
 	Creatures
 		%Mind
 			%r-5
@@ -101,7 +119,10 @@ add(`/Code Geass
 						%Knightmares`)
 1
 add(`/Death Note
-	@Sources	!	Supernatural.Jarse.Death Note
+	@Sources
+		Supernatural
+			Jarse
+				Death Note
 	Objects
 		%Artefacts
 			%r-7
@@ -123,7 +144,10 @@ add(`/Death Note
 					Death King`)
 1
 add(`/Dragonball
-	@Sources	!	Supernatural.Jarse.Dragonball
+	@Sources
+		Supernatural
+			Jarse
+				Dragonball
 	Energies
 		%r-5
 			+1	!=	Ki?
@@ -133,7 +157,10 @@ add(`/Dragonball
 				%Dragon Balls`)
 1
 add(`/Fairy Tail
-	@Sources	!	Supernatural.Jarse.Fairy Tail
+	@Sources
+		Supernatural
+			Jarse
+				Fairy Tail
 	Verse
 		@Type
 			Uni
@@ -148,7 +175,10 @@ add(`/Fairy Tail
 			+5	!=	Mana?`)
 1
 add(`/Fate
-	@Sources	!	Supernatural.Jarse.Fate
+	@Sources
+		Supernatural
+			Jarse
+				Fate
 	Actions
 		%r-5
 			%Action
@@ -171,15 +201,24 @@ add(`/Fate
 				%Servant`)
 1
 add(`/Fullmetal Panic
-	@Sources	!	Supernatural.Jarse.Fullmetal Panic
+	@Sources
+		Supernatural
+			Jarse
+				Fullmetal Panic
 	Organizations
 		Mithrill`)
 1
 add(`/Gurren Lagann
-	@Sources	!	Supernatural.Jarse.Gurren Lagann`)
+	@Sources
+		Supernatural
+			Jarse
+				Gurren Lagann`)
 1
 add(`/Hellsing
-	@Sources	!	Supernatural.Jarse.Hellsing
+	@Sources
+		Supernatural
+			Jarse
+				Hellsing
 	Features
 		%r-5
 			Vampire
@@ -187,19 +226,31 @@ add(`/Hellsing
 			%w+1	!=	Undead`)
 1
 add(`/Inuyasha
-	@Sources	!	Supernatural.Jarse.Inuyasha`)
+	@Sources
+		Supernatural
+			Jarse
+				Inuyasha`)
 1
 add(`/JoJo Bizzare
-	@Sources	!	Supernatural.Jarse.JoJo Bizzare`)
+	@Sources
+		Supernatural
+			Jarse
+				JoJo Bizzare`)
 1
 add(`/Macademy Wasshoi
-	@Sources	!	Supernatural.Jarse.Macademy Wasshoi
+	@Sources
+		Supernatural
+			Jarse
+				Macademy Wasshoi
 	Features
 		%r-5
 			e+5	!=	Mage`)
 1
 add(`/My hero academy
-	@Sources	!	%Fiction.%Anime.My hero academy
+	@Sources
+		Supernatural
+			Jarse
+				My hero academy
 	Worlds
 		Original
 			Paths	!	Tech-Energy
@@ -498,7 +549,10 @@ add(`/Naruto
 				...
 			Kamui
 			Normal
-	@Sources	!	Supernatural.Jarse.Naruto
+	@Sources
+		Supernatural
+			Jarse
+				Naruto
 	Verse
 		@Type
 			Uni
@@ -683,37 +737,37 @@ add(`/Naruto
 				%Swords of Fog`)
 1
 add(`/One Punch Man
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				One Punch Man`)
 1
 add(`/One Piece
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				One Piece
 	Features
 		%r-5
 			Fruits`)
 1
 add(`/Overlord
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Overlord`)
 1
 add(`/Ranma 1:2
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Ranma 1:2`)
 1
 add(`/Sword Art Online
 	@Sources
-		%Fiction
-			%Ranobe.Sword Art Online
-			%Anime.Sword Art Online
+		Supernatural
+			Jarse
+				Sword Art Online
 	Verse
 		@Type
 			Uni
@@ -728,10 +782,16 @@ add(`/Sword Art Online
 				%Amuspheres`)
 1
 add(`/UQ Holder
-	@Sources	!	Supernatural.Jarse.UQ Holder`)
+	@Sources
+		Supernatural
+			Jarse
+				UQ Holder`)
 1
 add(`/The Rising of the Shield Hero
-	@Sources	!	%Fiction.%Anime
+	@Sources
+		Supernatural
+			Jarse
+				The Rising of the Shield Hero
 	Verse
 		@Type
 			Multi
@@ -740,10 +800,16 @@ add(`/The Rising of the Shield Hero
 			Gameworld`)
 1
 add(`/Rave Master
-	@Sources	!	%Fiction.%Anime`)
+	@Sources
+		Supernatural
+			Jarse
+				Rave Master`)
 1
 add(`/Pokemon
-	@Sources	!	%Fiction.%Anime
+	@Sources
+		Supernatural
+			Jarse
+				Pokemon
 	Creatures
 		%r-4
 			%Pokemon
@@ -752,23 +818,38 @@ add(`/Pokemon
 			%r-5
 				%Pokeballs`)
 1
-add(`/Rosario to Vampire
-	@Sources	!	%Fiction.%Anime
+add(`/Rosario+Vampire
+	@Sources
+		Supernatural
+			Jarse
+				Rosario+Vampire
 	Features
 		%r-5
 			Vampire`)
 1
 add(`/The Law of Ueki
-	@Sources	!	%Fiction.%Anime`)
+	@Sources
+		Supernatural
+			Jarse
+				The Law of Ueki`)
 1
 add(`/Hunter x Hunter
-	@Sources	!	%Fiction.%Anime`)
+	@Sources
+		Supernatural
+			Jarse
+				Hunter x Hunter`)
 1
 add(`/Tenjou Tenge
-	@Sources	!	%Fiction.%Anime`)
+	@Sources
+		Supernatural
+			Jarse
+				Tenjou Tenge`)
 1
 add(`/Fullmetal Alchemist
-	@Sources	!	%Fiction.%Anime
+	@Sources
+		Supernatural
+			Jarse
+				Fullmetal Alchemist
 	Features
 		%r-5
 			Alchemist
@@ -778,7 +859,10 @@ add(`/Fullmetal Alchemist
 			al	!=	Alchemycal?`)
 1
 add(`/The Gamer
-	@Sources	!	Supernatural.Manhva.The Gamer
+	@Sources
+		Supernatural
+			Manhva
+				The Gamer
 	Features
 		%r-5
 			e+1	!=	Kiuser
@@ -835,11 +919,11 @@ add(`/The Gamer
 		Bezdna
 			Aukcion`)
 1
-add(`/KonoSuba: God's Blessing on this Wonderful World
-	@Languages
-		Japanese
+add(`/KonoSuba
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				KonoSuba
 	Verse
 		@Type
 			Multi
@@ -849,16 +933,16 @@ add(`/KonoSuba: God's Blessing on this Wonderful World
 				Other`)
 1
 add(`/Tokyo Ghoul
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Tokyo Ghoul`)
 1
 add(`/The Devil Is a Part-Timer
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				The Devil Is a Part-Timer
 	Features
 		%r-6
 			Demon_0
@@ -880,10 +964,10 @@ add(`/The Devil Is a Part-Timer
 				Ente Isla`)
 1
 add(`/High School DxD
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				High School DxD
 	Creatures
 		%Mind
 			%r-5
@@ -906,16 +990,16 @@ add(`/High School DxD
 			e+7	!=	God_?`)
 1
 add(`/To Love Ru
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				To Love Ru`)
 1
 add(`/Neon Genesis Evangelion
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				Neon Genesis Evangelion
 	Shells
 		atf	!=	AT-field
 	Creatures
@@ -927,30 +1011,28 @@ add(`/Neon Genesis Evangelion
 			Kid`)
 1
 add(`/Highschool of the Dead
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Highschool of the Dead`)
 1
 add(`/Gundam
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Gundam`)
 1
 add(`/Howl's Moving Castle
-	@Authors
-		Hayao Miadzaki
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Howl's Moving Castle`)
 1
 add(`/Mob Psycho 100
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				Mob Psycho 100
 	Creatures
 		%Mind
 			%r-5
@@ -964,11 +1046,10 @@ add(`/Mob Psycho 100
 			+4	!=	Psy?`)
 1
 add(`/Noragami
-	@Languages
-		Japanese
 	@Sources
-		%Anime
-		%Manga
+		Supernatural
+			Jarse
+				Noragami
 	Actions
 		%r-5
 			Line
@@ -981,25 +1062,25 @@ add(`/Noragami
 				God_0`)
 1
 add(`/Re: Monster
-	@Languages
-		Japanese
 	@Sources
-		%Manga`)
+		Supernatural
+			Jarse
+				Re: Monster`)
 1
 add(`/RWBY
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				RWBY
 	Creatures
 		%r-5
 			%Grimm`)
 1
 add(`/Sailor Moon
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				Sailor Moon
 	Creatures
 		%Mind
 			%r-5
@@ -1011,15 +1092,15 @@ add(`/Sailor Moon
 				Moon Diadema`)
 1
 add(`/Rascal Does Not Dream of Bunny Girl Senpai
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Rascal Does Not Dream of Bunny Girl Senpai`)
 1
 add(`/Slayers
 	@Sources
-		%Fiction
-			%Anime
+		Supernatural
+			Jarse
 				Slayers
 	Creatures
 		%Mind
@@ -1035,13 +1116,16 @@ add(`/Slayers
 			+5	!=	Mana?`)
 1
 add(`/Soul Eater
-	@Languages
-		Japanese
 	@Sources
-		%Anime`)
+		Supernatural
+			Jarse
+				Soul Eater`)
 1
 add(`/A Certain Magical Index
-	@Sources	!	Supernatural.Jarse.%A Certain Magical Index
+	@Sources
+		Supernatural
+			Jarse
+				A Certain Magical Index
 	Verse
 		@Type
 			Meta
@@ -1243,13 +1327,16 @@ add(`/A Certain Magical Index
 						Alister Crowley`)
 1
 add(`/Toriko
-	@Sources	!	Supernatural.Jarse.Toriko`)
+	@Sources
+		Supernatural
+			Jarse
+				Toriko`)
 1
 add(`/The Familiar of Zero
-	@Languages
-		Japanese
 	@Sources
-		%Anime
+		Supernatural
+			Jarse
+				The Familiar of Zero
 	Energies
 		%r-5
 			+3+5	!=	Wizardy?

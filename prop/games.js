@@ -1,15 +1,55 @@
-
+1
 add(`/Assasin's Creed
 	@Sources
-		%Games`)
+		Supernatural
+			Games
+				Assasin's Creed`)
+1
+add(`/Bioshock
+	@Sources
+		Supernatural
+			Games
+				Bioshock`)
+1
+add(`/Dark souls
+	@Sources
+		Supernatural
+			Games
+				Dark Souls`)
+1
 add(`/Deus Ex
 	@Sources
-		%Games`)
-add(`/Dragon Age
-	@Languages
-		English
+		Supernatural
+			Games
+				Deus Ex`)
+1
+add(`/Devil May Cry
 	@Sources
-		%Games
+		Supernatural
+			Games
+				Devil May Cry
+	Creatures
+		%Mind
+			%r-5
+				%Human
+					%l5.0
+						Dante`)
+1
+add(`/Diablo
+	@Sources
+		Supernatural
+			Games
+				Diablo
+	Objects
+		%Artefacts
+			%r-6
+				Horadrical Cube`)
+1
+add(`/Dragon Age
+	@Sources
+		Supernatural
+			Games
+				Dragon Age
 	Dimensions
 		n
 			Fade
@@ -17,25 +57,48 @@ add(`/Dragon Age
 	Materials
 		%Metals
 			Lyrium`)
+1
 add(`/Dragonlance
-	@Languages
-		English`)
-add(`/Dungeons and Dragons
-	@Languages
-		English
 	@Sources
-		%Games`)
+		Supernatural
+			Games
+				Dragonlance`)
+1
+add(`/Dungeons and Dragons
+	@Sources
+		Supernatural
+			Games
+				Dungeons and Dragons`)
+1
+add(`/Elder Scrolls
+	@Sources
+		Supernatural
+			Games
+				Elder Scrolls
+	Creatures
+		%Mind
+			%r-5
+				%Human
+				%Dragon
+	Features
+		%r-5
+			e+5	!=	Mage`)
+1
 add(`/Fallout
 	@Sources
-		%Games`)
+		Supernatural
+			Games
+				Fallout`)
 add(`/League of Legends
-	@Languages
-		English`)
-add(`/Mass Effect
-	@Languages
-		English
 	@Sources
-		%Games
+		Supernatural
+			Games
+				League of Legends`)
+add(`/Mass Effect
+	@Sources
+		Supernatural
+			Games
+				Mass Effect
 	Creatures
 		%Mind
 			%r-5
@@ -47,7 +110,10 @@ add(`/Mass Effect
 		%r-5
 			+4	!=	Psy?`)
 add(`/Minecraft
-	@Sources	!	Supernatural.Games.Minecraft
+	@Sources
+		Supernatural
+			Games
+				Minecraft
 	Dimensions
 		o
 			Hell	!=	Nether World
@@ -184,115 +250,51 @@ add(`/Minecraft
 					%Appeng
 						%Monitors
 						%Autocrafts`)
-add(`/Warcraft
-	@Languages
-		English
+1
+add(`/Portal
 	@Sources
-		%Games
+		Supernatural
+			Games
+				Portal
+	Objects
+		%Artefacts
+			%r-5
+				%Portal Gun`)
+1
+add(`/Resident Evil
+	@Sources
+		Supernatural
+			Games
+				Resident Evil
+	Creatures
+		%r-4
+			%Virused Zombie
+	Features
+		%r-5
+			Superability`)
+1
+add(`/Starcraft
+	@Sources
+		Supernatural
+			Games
+				Starcraft`)
+1
+add(`/Warcraft
+	@Sources
+		Supernatural
+			Games
+				Warcraft
 	Creatures
 		%Mind
 			%r-5
 				%Human
 				%Orc_2`)
-add(`/Portal
-	@Languages
-		English
-	@Sources
-		%Games
-	Objects
-		%Artefacts
-			%r-5
-				%Portal Gun`)
-add(`/Starcraft
-	@Sources
-		%Games
-			%Computer`)
-add(`/Dark souls
-	@Languages
-		English
-	@Sources
-		%Games`)
-add(`/Devil May Cry
-	@Languages
-		English
-	@Sources
-		%Games
-	Creatures
-		%Mind
-			%r-5
-				%Human
-					%l5.0
-						Dante`)
-add(`/Bioshock
-	@Languages
-		English
-	@Sources
-		%Games`)
-add(`/Diablo
-	@Languages
-		English
-	@Sources
-		%Games
-			%Computer
-				1
-				2
-	Objects
-		%Artefacts
-			%r-6
-				Horadrical Cube`)
-add(`/Witcher
-	@Authors
-		Andrzej Sapkowski
-	@Languages
-		Polish
-	@Sources
-		%Games
-			%Computer
-	Creatures
-		%r-5
-			%Cockatrice
-			%Basilisk
-		%Mind
-			%r-5
-				%Human
-					%l3.0
-						Geralt
-	Features
-		%r-5
-			Witcher
-			Mage?
-	Directions
-		%Languages
-			Mudra
-	Actions
-		%r-5
-			%Elements
-				%Basic
-					Air	!=	Aard
-					Water	!=	Aksiy
-					Earth	!=	Kven
-					Fire	!=	Igni
-			%Action
-				Protection	!=	Heliotrop
-				Pomehi	!=	Irden`)
-add(`/Skyrim
-	@Languages
-		English
-	@Sources
-		%Games
-	Creatures
-		%Mind
-			%r-5
-				%Human
-				%Dragon
-	Features
-		%r-5
-			e+5	!=	Mage`)
+1
 add(`/Warhammer
-	@Languages
-		English
 	@Sources
-		%Games
+		Supernatural
+			Games
+				Warhammer
 	Creatures
 		%Mind
 			%r-5
@@ -307,3 +309,4 @@ add(`/Warhammer
 	Features
 		%r-5
 			e+4	!=	Psyker`)
+1

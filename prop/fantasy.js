@@ -112,7 +112,10 @@ add(`/Rudazov
 		@Type
 			Meta
 		Original
-	@Sources	!	Supernatural.Fiction.Books.Rudazov
+	@Sources
+		Supernatural
+			Books
+				Rudazov
 	Shells
 		-5	!=	2|7	Magical body
 		-2	!=	3	Body, Matter of
@@ -474,34 +477,27 @@ add(`/Rudazov
 			Teporiy
 		%Bio
 			Regenerin`)
+1
 add(`/Orderly
-	@Languages
-		Russian
-	@Sources	!	Supernatural.Fiction.Books.Orderly
-	@Authors
-		Nick Perumov`)
-add(`/Siyatelniy
-	@Authors
-		Pavel Kornev
-	@Languages
-		Russian
-	@Sources	!	Supernatural.Fiction.Books.Siyatelniy
+	@Sources
+		Supernatural
+			Books
+				Orderly`)
+1
+add(`/Shining
+	@Sources
+		Supernatural
+			Books
+				Shining
 	Materials
 		%Metals
 			Coldiron	!#Anti mage`)
-add(`/Claymore
-	@Sources	!	Supernatural.Fiction.Manga.Claymore
-	Energies
-		%r-5
-			yo	!=	Yoki
-	Creatures
-		%Mind
-			%r-5
-				%Human
-				%Claymore
-				%Yoma`)
+1
 add(`/Dozory
-	@Sources	!	Supernatural.Books.%Dozory
+	@Sources
+		Supernatural
+			Verse
+				Dozory
 	Schools
 		Other
 	Levels
@@ -682,16 +678,20 @@ add(`/Dozory
 				~1.5 ~0.0
 					7	x1	full temp	full color	0	normal	!#Can be backside`)
 add(`/Diane Duane
-	@Sources	!	Supernatural.Fiction.Diane Duane`)
+	@Sources
+		Supernatural
+			Diane Duane`)
 add(`/Eyes of other world
-	@Authors
-		Jack Vance
-	@Languages
-		English
-	@Sources	!	Supernatural.Fiction.Books.Eyes of other world`)
+	@Sources
+		Supernatural
+			Books
+				Eyes of other world`)
 add(`/Labirints Eho`)
 add(`/Lord of Rings
-	@Sources	!	Supernatural.Verse.LotR
+	@Sources
+		Supernatural
+			Verse
+				LotR
 	Dimensions
 		n
 			~1.0, 0.0	!=	Body
@@ -737,11 +737,10 @@ add(`/Lord of Rings
 		%Metals
 			Mithrill`)
 add(`/Nick
-	@Languages
-		Russian
-	@Authors
-		Andrzej	Yasinski
-	@Sources	!	Supernatural.Fiction.Books.Nick
+	@Sources
+		Supernatural
+			Books
+				Nick
 	Creatures
 		%Mind
 			%r-5
@@ -827,7 +826,10 @@ add(`/Nick
 		Atl
 		Atlant`)
 add(`/Potteriana
-	@Sources	!	Supernatural.Fiction.Verse.Potteriana
+	@Sources
+		Supernatural
+			Verse
+				Potteriana
 	Materials
 		%Liquid
 			%r-5
@@ -1356,31 +1358,27 @@ add(`/Potteriana
 			Parselmouth
 			Werewolf
 			Vampire`)
-add(`/Svet za okoshkom
-	@Authors
-		Svyatoslav Loginov
-	@Languages
-		Russian
-	@Sources	!	Supernatural.Fiction.Books.Svet za okoshkom
+add(`/Light outside the window
+	@Sources
+		Supernatural
+			Books
+				Light outside the window
 	Features
 		%r-4
 			Ghost`)
 add(`/Svarog
-	@Authors
-		Buzhkov
-	@Languages
-		Russian
-	@Sources	!	Supernatural.Fiction.Books.Svarog`)
+	@Sources
+		Supernatural
+			Books
+				Svarog`)
 add(`/OZ country wizard`)
 add(`/Emerald town wizard
-	@Authors
-		Alexander Volkov
-	@Languages
-		Russian
-	@Sources	!	Supernatural.Fiction.Verse.Emerald town wizard`)
+	@Sources
+		Supernatural
+			Verse
+				Emerald town wizard`)
 add(`/Firestarter
-	@Authors
-		Steven King
-	@Languages
-		English
-	@Sources	!	Supernatural.Fiction.Books.King.Firestarter`)
+	@Sources
+		Supernatural
+			Books
+				Firestarter`)

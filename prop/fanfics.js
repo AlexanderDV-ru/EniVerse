@@ -1,57 +1,62 @@
 
-add(`/Antichniy charoplet
-	@Authors
-		Alessiy
-	@Languages
-		Russian
+add(`/Antique charoplet
 	@Sources
-			%Fanfics
-				1.
-				2.
-				3.`)
+		Supernatural
+			Fanfics
+				Antique charoplet`)
+1
 add(`/Fate of Archmage
-	@Sources	!	Supernatural.Fiction.Fanfics.Fate of Archmage
+	@Sources
+		Supernatural
+			Fanfics
+				Fate of Archmage
 	Verse
 		@Type
 			Meta
 		Rudazov
 		Potteriana`)
-add(`/Small Monster
-	@Authors
-		Daimon Agafo
-	@Languages
-		Russian
+1
+add(`/Lord of nightmares
 	@Sources
-		%Fanfics`)
-add(`/Thanks for fish
-	@Authors
-		Fil Bandileros
-	@Languages
-		Russian
-	@Sources
-		%Fanfics
+		Supernatural
+			Fanfics
+				Lord of nightmares
 	Verse
-		@Type
-			Multi
-		Marvel`)
-add(`/The Zadrot
-	@Authors
-		Fil Bandileros
-	@Languages
-		Russian
+		Dragon Age
+		Real World`)
+1
+add(`/Little Monster
 	@Sources
-		%Fanfics
+		Supernatural
+			Fanfics
+				Little Monster`)
+1
+add(`/Thanks for fish
+	@Sources
+		Supernatural
+			Fanfics
+				Fil Bandileros
+					Thanks for fish
+	Verse
+		Marvel`)
+1
+add(`/The Zadrot
+	@Sources
+		Supernatural
+			Fanfics
+				Fil Bandileros
+					The Zadrot
 	Verse
 		@Type
 			Uni
 		The Gamer`)
+1
 add(`/Meta-Hobbit
-	@Authors
-		Fil Bandileros
-	@Languages
-		Russian
 	@Sources
-		%Fanfics
+		Supernatural
+			Fanfics
+				Fil Bandileros
+					Meta-Hobbit
 	Verse
 		@Type
 			Meta
@@ -59,8 +64,13 @@ add(`/Meta-Hobbit
 		Lord of Rings
 		@Tags
 			Gamelit`)
+1
 add(`/Boy Who Conquered Time
-	@Sources	!	%Fiction.%Fanfics.Boy Who Conquered Time
+	@Sources
+		Supernatural
+			Fanfics
+				Fil Bandileros
+					Boy Who Conquered Time
 	Levels
 		0.0	!=0
 		1.0	!=1
@@ -121,22 +131,14 @@ add(`/Boy Who Conquered Time
 	Elements
 		%Other
 			Time`)
-add(`/of Argus Filchenkov
+1
+add(`/Three Old Ladies
 	Verse
-		@Type
-			Uni
 		Potteriana
-	@Languages
-		Russian
-	@Authors
-		Argus Filchenkov
 	@Sources
-		%Fanfics
-			0.	"Prologue.	Harry Potter and Three Old Ladies"
-			1.	"Harry Potter and key saver"
-			2.	"Harry Potter and instinniy naslednik"
-			3.	"Harry Potter and Iskusstvo pobega"
-			4.	"Harry Potter and Champions Hunt"
+		Supernatural
+			Fanfics
+				Three Old Ladies
 	Objects
 		%Artefacts
 			%r-6
@@ -144,6 +146,7 @@ add(`/of Argus Filchenkov
 	Materials
 		%Metals
 			Coldiron`)
+1
 add(`/Bad choice
 	Worlds
 		/Leer
@@ -170,7 +173,10 @@ add(`/Bad choice
 					Light
 				%Misc
 					Void
-	@Sources	!	Supernatural.Fanfics.%Bad Choice
+	@Sources
+		Supernatural
+			Fanfics
+				Bad Choice
 	Verse
 		@Type
 			Meta
@@ -371,8 +377,12 @@ add(`/Bad choice
 				Player
 				Hel
 				Hapsiel`)
+1
 add(`/New horizonts
-	@Sources	!	Supernatural.Fanfics.%Shetel-Sorken.New horizonts
+	@Sources
+		Supernatural
+			Fanfics
+				Shetel-Sorken.New horizonts
 	Verse
 		@Type
 			Multi
@@ -395,6 +405,7 @@ add(`/New horizonts
 	Elements
 		%Plasma
 			Bio`)
+1
 add(`/HP and future know
 	Misc
 		What can use
@@ -496,42 +507,42 @@ add(`/HP and future know
 				Божественный
 	Creatures
 		Nonmagic
-			Растения
+			1Растения
 				нори, деревья, трава
-			Большие грибы
+			2Большие грибы
 				мухомор, груздь
-			Вирусы
-			Плесень
-			Дрожжи
-			Простейшие
-			Бактерии
-			Позвоночные
+			3Вирусы
+			4Плесень
+			5Дрожжи
+			6Простейшие
+			7Бактерии
+			8Позвоночные
 				рептилии, звери, рыбы
-			Разумные
+			9Разумные
 				гоминиды (в т.ч. люди, эльфы, гномы, гоблины), кентавры, русалоиды !#Они в отличии от маг. тварей не магические, убьем дракона - магия выделится, убьем человека - нет, может быть лишь всплеск до смерти
 		Magic
-			Магическая растительность: магические "грибы", травы, мхи
-			---
-			---
-			---
-			---
-			---
-			---
-			Магические твари: дракон, феникс, нюхлер
-			---
+			1Магическая растительность: магические "грибы", травы, мхи
+			2---
+			3---
+			4---
+			5---
+			6---
+			7---
+			8Магические твари: дракон, феникс, нюхлер
+			9---
 		Ether
-			---
-			---
-			Магические вирусы
-			Магическая плесень
-			---
-			---
-			---
-			Магические сущности
+			1---
+			2---
+			3Магические вирусы
+			4Магическая плесень
+			5---
+			6---
+			7---
+			8Магические сущности
 				??? обй c дем пат
-			Разумные сущности
+			9Разумные сущности
 				Дементоры, патронусы, призраки !#Они разумны; могут хранить, передавать, обрабатывать инфу; производить сложные действия; работать по плану. Дементоры сотрудничают с теми, кто дает жертву, а патронусы используют добровольно отданную магию хозяина. Патронус человека всегда 1, если он делится на несколько частей передающих сообщение он все еще лишь 1. Когда патронус не вызван, он в состоянии "споры" в ядре человека, при смерти владельца патронус остается в ядре, если уничтожить ядро - патронус тоже будет уничтожен`)
-
+1
 add(`/Myverse
 	Actions	!=a
 		%Categories
@@ -1450,7 +1461,10 @@ add(`/Myverse
 			Cubus
 				Incubus
 				Succubus
-	@Sources	!	Supernatural.Fanfics.%Myverse
+	@Sources
+		Supernatural
+			Fanfics
+				Myverse
 	Without	!=u
 		#Classification
 		#Entity without shell, how names
@@ -1710,15 +1724,10 @@ add(`/Myverse
 	Organizations	!=z`)
 1
 add(`/Elfish Trash
-	@Languages
-		Russian
 	@Sources
-		%Fanfics
-			Elfish Trash 1
-			Elfish Trash 2
-			Elfish Trash 3
-				@Verse
-					Startrack
+		Supernatural
+			Fanfics
+				Elfish Trash
 	Verse
 		@Type
 			Meta
@@ -1730,15 +1739,12 @@ add(`/Elfish Trash
 		Naruto
 		Startrack
 		Potteriana`)
-add(`/Vlast magii
-	@Languages
-		Russian
-	@Authors
-		MorgothBauglir
-		Shetel-Sorken
+1
+add(`/The Power of Magic
 	@Sources
-		%Fanfics
-			"Vlast magii"
+		Supernatural
+			Fanfics
+				The Power of Magic
 	Verse
 		@Type
 			Meta
@@ -1746,14 +1752,12 @@ add(`/Vlast magii
 		Rudazov
 		@Tags
 			Gamelit`)
+1
 add(`/Path to Top
-	@Languages
-		Russian
-	@Authors
-		Hedin Knowing Dark
 	@Sources
-		%Fanfics
-			"Path to Top"
+		Supernatural
+			Fanfics
+				Path to Top
 	Verse
 		@Type
 			Meta
@@ -1769,21 +1773,58 @@ add(`/Path to Top
 					%Add
 						Plasma
 							Uncontrolled	!=Hors`)
-add(`/of Kitsune Miyato
-	@Languages
-		Russian
-	@Authors
-		Kitsune Miyato
+1
+add(`/Everything was not so
 	@Sources
-		%Fanfics
-			"Izbranniye"
-			"Mother-and-Mother-Law"
+		Supernatural
+			Fanfics
+				Kitsune Miyato
+					Everything was not so
+	Verse
+		Naruto`)
+1
+add(`/Uchiha Sasuke from the Radish Clan
+	@Sources
+		Supernatural
+			Fanfics
+				Kitsune Miyato
+					Uchiha Sasuke from the Radish Clan
+	Verse
+		Naruto`)
+1
+add(`/Mother and Mother-in-law
+	@Sources
+		Supernatural
+			Fanfics
+				Kitsune Miyato
+					Mother and Mother-in-law
+	Verse
+		Potteriana
+		Dozory`)
+1
+add(`/Life that I will change
+	@Sources
+		Supernatural
+			Fanfics
+				Kitsune Miyato
+					Life that I will change
+	Verse
+		@Type
+			Multi
+		Naruto
+		Real world`)
+1
+add(`/Featured
+	@Sources
+		Supernatural
+			Fanfics
+				Kitsune Miyato
+					Featured
 	Verse
 		@Type
 			Meta
 		Naruto
 		Potteriana
-		Dozory
 	Objects
 		%Artefacts
 			%r-6
@@ -1795,17 +1836,13 @@ add(`/of Kitsune Miyato
 					%l5.0
 						Harry Potter	!=Uzumaki Naruto
 						Albus Dumbledore	!=Albus Persival Vulfric Brian Potter,Dumbledore`)
+1
 add(`/HPMoR
-	@Authors
-		Eliezer Yudkowsky
-	@Languages
-		English
 	@Sources
-		%Fanfics
-			"Harry Potter and the Methods of Rationality"
+		Supernatural
+			Books
+				HPMoR
 	Verse
-		@Type
-			Uni
 		Potteriana
 	Objects
 		%Artefacts
@@ -1845,25 +1882,24 @@ add(`/HPMoR
 	Complexes
 		27 spells for important topic talk
 			@Anti-Time-Turner
-			@Anti-Transgrassion
+			@Anti-Apparation
 			...
 	Creatures
 		%Mind
 			%r-5
 				%Human
 					%l0.0
-						Petunia Dursley	!=Petunia	Evans-Verres
+						Petunia Dursley	!=Petunia Evans-Verres
 					%l3.0
 						Harry Potter	!=Harry James Potter-Evans-Verres
 					%l5.0
 						Voldemort	!=Tom Morphin Riddle`)
+1
 add(`/Life of Archmage Potter
-	@Authors
-		Fil Bandileros
-	@Languages
-		Russian
 	@Sources
-		%Fanfics
+		Supernatural
+			Fanfics
+				Fil Bandileros.Life of Archmage Potter
 	Verse
 		@Type
 			Meta
@@ -1884,30 +1920,46 @@ add(`/Life of Archmage Potter
 							@Archmage
 			%r-7
 				Hel`)
+1
 add(`/Meta-Gamer
-	@Authors
-		Fil Bandileros
-	@Languages
-		Russian
 	@Sources
-		%Fanfics
+		Supernatural
+			Fanfics
+				Fil Bandileros.Meta-Gamer
 	Verse
 		@Type
 			Meta
 		DC
 		@Tags
 			Gamelit`)
+1
 add(`/Technomancer
-	@Languages
-		Russian
 	@Sources
-		%Fanfics
+		Supernatural
+			Fanfics
+				tigrewurmut.Technomancer
 	Verse
-		@Type
-			Uni
 		Systema, Labirint, Bogi, Avanturisti`)
-add(`/Will for Life
-	@Languages
-		Russian
+1
+add(`/Thinking means there is
+	Verse
+		Potteriana`)
+1
+add(`/Dark Mage
 	@Sources
-		%Fanfics`)
+		Supernatural
+			Fanfics
+				Dark Mage
+	Verse
+		Potteriana`)
+1
+add(`/Mage and his shadow`)
+1
+add(`/Will for Life
+	@Sources
+		Supernatural
+			Fanfics
+				Will for Life
+	Verse
+		Original`)
+1
