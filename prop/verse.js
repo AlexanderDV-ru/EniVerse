@@ -8,8 +8,9 @@ add(`/DC
 		@Type
 			Multi
 		Original
-			@Worlds
-				Our	!=	Earth?
+	Worlds
+		Earth
+			/Our
 	Creatures
 		%Mind
 			%r-5
@@ -18,16 +19,17 @@ add(`/DC
 		%r-5
 			+5	!=	Mana?
 		sf	!=	Speedforce
-	Emotions	!=	Lantern's
-		Life	!=	of White
-		Anger	!=	of Red, Atrocitus
-		Greed	!=	of Orange
-		Fear	!=	of Yellow, Sinestro
-		Will	!=	of Green
-		Hope	!=	of Light Blue
-		Compassion	!=	of Blue, Indigo
-		Love	!=	of Purple, Sapphire
-		Death	!=	of Black
+	Elements
+		%Emotions	!@Lantern's
+			Life	!@White
+			Anger	!@Red, Atrocitus
+			Greed	!@Orange
+			Fear	!@Yellow, Sinestro
+			Will	!@Green
+			Hope	!@Light Blue
+			Compassion	!@Blue, Indigo
+			Love	!@Purple, Sapphire
+			Death	!@Black
 	Features
 		%r-5
 			Metahuman

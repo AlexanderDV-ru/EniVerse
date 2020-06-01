@@ -164,9 +164,8 @@ add(`/Fairy Tail
 	Verse
 		@Type
 			Uni
-		Original
-			@Worlds
-				Other?
+	Worlds
+		Other
 	Features
 		%r-5
 			e+5	!=	Mage?
@@ -252,7 +251,7 @@ add(`/My hero academy
 			Jarse
 				My hero academy
 	Worlds
-		Original
+		Earth
 			Paths	!	Tech-Energy
 	Creatures
 		%Mind
@@ -539,7 +538,8 @@ add(`/My hero academy
 1
 add(`/Naruto
 	Worlds
-		Original
+		Naruto
+			@Original
 			Paths
 				Energy
 				Tech
@@ -927,10 +927,9 @@ add(`/KonoSuba
 	Verse
 		@Type
 			Multi
-		Original
-			@Worlds
-				Our	!=	Earth?
-				Other`)
+	Worlds
+		Earth
+		Other`)
 1
 add(`/Tokyo Ghoul
 	@Sources
@@ -958,10 +957,10 @@ add(`/The Devil Is a Part-Timer
 	Verse
 		@Type
 			Multi
-		Original
-			@Worlds
-				Our	!=	Earth
-				Ente Isla`)
+	Worlds
+		Earth
+		Ente Isla
+			@Original`)
 1
 add(`/High School DxD
 	@Sources
@@ -1129,9 +1128,8 @@ add(`/A Certain Magical Index
 	Verse
 		@Type
 			Meta
-		Original
-			@Worlds
-				Our	!=	Earth-2052?
+	Worlds
+		Earth
 	Energies
 		%r-5
 			+5	!=	Mana
@@ -1139,7 +1137,12 @@ add(`/A Certain Magical Index
 			tl	!=	Telesma?
 	Shells
 		aimf	!=	AIM-field
-	Schools
+	Organizations
+		Necessarius
+		Church
+			Pravoslav
+			Catolic
+			Anglican
 		Academ-City
 	Levels
 		0.0
@@ -1383,10 +1386,10 @@ add(`/The Familiar of Zero
 	Verse
 		@Type
 			Multi
-		Original
-			@Worlds
-				Our	!=	Earth-2007?
-				Other?
+	Worlds
+		Earth
+			+2000
+		Other
 	Creatures
 		%Mind
 			%r-5

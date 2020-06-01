@@ -7,7 +7,7 @@ add(`/Rudazov
 			%Universal
 				0.0	!=	0	Primitive - ?	!#
 					@Kaabar
-					@Rari.Devkatsi
+					@Rari	Devkatsi
 				1.0	!=	3	? - Mech|Social	!#
 				2.0	!=	6	? - Digit|	!#
 				3.0	!=	9	? - Space|Verse level	!#
@@ -16,54 +16,54 @@ add(`/Rudazov
 				6.0	!=	18	Immortal - tech|mage|bio	!#
 			%Energy
 				0.3	!=	1	? - ?		!#Mage Ghyldy
-					@Our.Sumer	-3000
+					@Earth.-3000	Sumer
 				0.7	!=	2	? - ?		!#Magic Schools
 				1.0	!=	3	Social - ?	!#Magic infrastructure, service, shops
-					@Parifat 2000
+					@Parifat.+2000
 				1.3	!=	4	? - ?		!#Magic conveer
-					@Rari.Grayland	from Epilog
+					@Rari.Epilog	Grayland
 				3.3	!=	10
-					@Parifat	-3000
+					@Parifat.-3000
 				6.0	!=	18	Immortal - ?!#
 					@Infal
 					@Jinn
 			%Bio
 				0.3	!=	1	? - ?		!#Prirucheniye, odomashnivaniye
 				0.7	!=	2	? - ?		!#Selection
-					@Rari.Eist
+					@Rari	Eist
 				6.0	!=	18	Immortal - ?!#
 			%Tech
 				0.3	!=	1	? - ?		!#Compas, Gun Powder,	Books print
 				0.7	!=	2	? - ?		!#Industrial revolution
-					@Rari.Rokush
-					@Rari.Lariya
+					@Rari	Rokush
+					@Rari	Lariya
 				1.0	!=	3	Mech - ?	!#Metals, engines
 				1.3	!=	4	? - ?		!#Machines, Electrizity, Chem
 				1.7	!=	5	? - ?		!#High Chem, ICE, Conveer
 				2.0	!=	6	Digit - ?	!#Electronics, Robots, Commutications
-					@Our
+					@Earth
 				2.3	!=	7	? - ?		!#Nanotech, Higher Organic Chem, Cyberspace
 				2.7	!=	8	? - ?		!#High Nano, Spacetech, Terraforming
-					@Plonet	Before Sudden hour
+					@Plonet.Before-Sudden-hour
 				3.0	!=	9	Space		!#High Terraforming, Space cities, Between Stars Flying
 				3.3	!=	10	? - ?		!#Galaxy Level, Alliens contacts
 				4.0	!=	12
-					@Earth	2400
+					@Earth.+2400
 				4.3	!=	13
-					@Svarog.Svarog	7000
+					@Earth.+7000	Svarog
 				5.0	!=	15
-					@Eikr.U-l'tra-let
+					@Eikr	U-l'tra-let
 				5.3	!=	16
 					@Muraran
 				5.7	!=	17
-					@*.Spectator
-					@Svarog.Galact	7000
+					@*	Spectator
+					@Earth.+7000	Galact
 				6.0	!=	18	Immortal - ?!#
 					@Ancient
 					@Titan_0
 			%Energy+Tech
 				0.7	!=	2
-					@Rari.Grayland	2000
+					@Rari.+2000	Grayland
 			!#Number after "-" says that this world after apocalipsis, have but cant create this technologies
 		%Opened
 			%Closed	!#Don't know about other
@@ -71,7 +71,7 @@ add(`/Rudazov
 			%Half-Opened	!#Have knowledge about other
 			%Opened	!#Have contacts with other
 	Worlds
-		Types
+		%Types
 			Access
 				Destroyed
 				Non-Created
@@ -93,21 +93,21 @@ add(`/Rudazov
 					Light
 				%Misc
 					Void
-		Rari
-		Quetzol-Iin
-		Eikr\n\t\t	Hvitachi\n\t\t	Worldtown
-		Lang\n\t\t\t	Kaabar\n\t\t	Nine Heavens
-		Hell\n\t\t\t	Our	!=	Earth-2006\n\t\t	Heaven
-		Golus	\n\t\t	Dotembria
-		Pargoron\n\t\t	Parifat\n\t\t	Salvan
-		Patala	\n\t\t	Dovos
-		Jahannam	\n\t\t	Kaf	\n\t\t	Janna
-		Shemussen	\n\t\t	Plonet	\n\t\t	N	\n\t\t	Labirint	\n\t\t	Svarog	\n\t\t	Deorg Academy
-		X	\n\t\t	Z	\n\t\t	A	\n\t\t	Y	\n\t\t	O	\n\t\t	Caves Sheymullin
-		M	\n\t\t	K	\n\t\t	H	\n\t\t	G	\n\t\t	F	\n\t\t	E	\n\t\t	D	\n\t\t	C	\n\t\t	B	\n\t\t	P	\n\t\t	Earth-7112
-		Proxima Centaura	\n\t\t	Proxima Hell	\n\t\t	Proxima Heaven
-		Dodekaedr
-			@Yehudin
+		Rari	!	@Original
+		Quetzol-Iin	!	@Original
+		Eikr	!	@Original\n\t\t	Hvitachi	!	@Original\n\t\t	Worldtown	!	@Original
+		Lang	!	@Original\n\t\t	Kaabar	!	@Original\n\t\t	Nine Heavens	!	@Original
+		Hell	!	@Original\n\t\t	Earth\n\t\t\t+2006	!	@Original\n\t\t	Heaven	!	@Original
+		Golus	!	@Original	\n\t\t	Earth!Dotembria
+		Pargoron	!	@Original\n\t\t	Parifat\n\t\t	Salvan
+		Patala	!	@Original	\n\t\t	Dovos
+		Jahannam	!	@Original	\n\t\t	Kaf	\n\t\t	Janna
+		Shemussen	!	@Original	\n\t\t	Plonet	\n\t\t	N	\n\t\t	Labirint	\n\t\t	Svarog	\n\t\t	Deorg Academy
+		X	!	@Original	\n\t\t	Z	\n\t\t	A	\n\t\t	Y	\n\t\t	O	\n\t\t	Caves Sheymullin	!	@Original
+		M	!	@Original	\n\t\t	K	\n\t\t	H	\n\t\t	G	\n\t\t	F	\n\t\t	E	\n\t\t	D	\n\t\t	C	\n\t\t	B	\n\t\t	P	\n\t\t	Earth!+7112
+		Proxima Centaura	!	@Original	\n\t\t	Proxima Hell	!	@Original	\n\t\t	Proxima Heaven	!	@Original
+		Dodekaedr	!	@Original
+			@of Yehudin
 	Verse
 		@Type
 			Meta
@@ -160,105 +160,131 @@ add(`/Rudazov
 			4.0	!=	Orange
 			4.5	!=	Red
 			5.0	!=	Gray
-	Schools
-		Grayland
-		Sumer
-		Kiig
-		Mysteria
-		Lka-Nandasi
-		Deorg Academy
 	Actions
 		%r-5
-			%Action
-				%Protection
-					Mirror	!=	Mirror Shield
-					Absolute	!=	Sumer.
-					Universal	!=	Sumer.
-					Personal	!=	Sumer.
-				%Atack
-					Clone of Chaos	!=	Grayland.
-			%Misc
-				Sphere of Thirst	!=	Grayland.
-				Antimagic-tatoo	!=	Kiig.
-			%l5.0
-				@Name
-					@Grayland
-						Spells A+
-					@Sumer
-						GodHands
-				%Elements
-					%Misc
-						Grace
-							Uncontrolled	!=	Sumer.Inanna	!#Clear and health place Needs: soul of light
-						Desecration
-							Halfcontrolled	!=	Grayland.Fog of Death	!#Desecration fog
-						Void
-							Uncontrolled	!=	Grayland.Total Zero	!#Desintegration of all matter
-						Ethervoid
-							Halfcontrolled	!=	Grayland.Fifth spell	!#Full eating of all ether (mana, prana, ...)
-					%Basic
-						Fire
-							Uncontrolled	!=	Sumer.Shamash	!#Needs: result is neuromagic overwork
-						Air
-							Controlled	!=	Sumer.Adad	!#Controlled klimat Needs: salt mud lake
-						Electrizity
-							Uncontrolled	!=	Grayland.Lightning of the Gods	!#Insane Lightning
-						Earth
-							Controlled	!=	Sumer.Enlil	!#Controlled earth
-							Uncontrolled	!=	Grayland.Rumble of Hashiba	!#Earthquake
-					%Other
-						Space
-							Controlled	!=	Sumer.Anu		!#Exhange of two places Needs: magical line around place, hited teeth of user
-					%Misc
-						Getmye	!=	Sumer.Ea		!#Needs: Drop of ihor
-				%Creature
-					Demon
-						Anti	!=	Sumer.Marduk	!#Needs: Incarcered archdemon, higher mortal demonolog
-					%w+1	!=	Undead
-						Create	!=	Sumer.Nergal	!#Needs: 3 masters nectromancers
+			/Sumer
 				%Action
-					Protection	!=	Sumer.Tammuz	!#Needs: egg of Phoenix
+					%Protection
+						Absolute
+						Universal
+						Personal
+				%l5.0	!=GodHands
+					%Elements
+						%Misc
+							Grace
+								Uncontrolled
+									=Inanna
+									#Clear and health place Needs: soul of light
+						%Basic
+							Fire
+								Uncontrolled
+									=Shamash
+									#Needs: result is neuromagic overwork
+							Air
+								Controlled
+									=Adad
+									#Controlled klimat Needs: salt mud lake
+							Earth
+								Controlled
+									=Enlil
+									#Controlled earth
+						%Other
+							Space
+								Controlled
+									=Anu
+									#Exhange of two places Needs: magical line around place, hited teeth of user
+						%Misc
+							Getmye
+								=Ea
+								#Needs: Drop of ihor
+					%Creature
+						Demon
+							Anti
+								=Marduk
+								#Needs: Incarcered archdemon, higher mortal demonolog
+						%w+1	!=	Undead
+							Create
+								=Nergal
+								#Needs: 3 masters nectromancers
+					%Action
+						Protection
+							=Tammuz
+							#Needs: egg of Phoenix
+			/Kiig
+				%Misc
+					Antimagic-tatoo
+			/Grayland
+				%Action
+					%Protection
+						Mirror	!=Mirror Shield
+				%Atack
+					Clone of Chaos
+				%Misc
+					Sphere of Thirst
+				%l5.0	!=Spells A+
+					%Elements
+						%Misc
+							Void
+								Uncontrolled
+									=Total Zero
+									#Desintegration of all matter
+							Ethervoid
+								Halfcontrolled
+									=Fifth spell
+									#Full eating of all ether (mana, prana, ...)
+							Desecration
+								Halfcontrolled	!=	Grayland.Fog of Death	!#Desecration fog
+						%Basic
+							Electrizity
+								Uncontrolled
+									=Lightning of the Gods
+									#Insane Lightning
+							Earth
+								Uncontrolled
+									=Rumble of Hashiba
+									#Earthquake
+	Persons
+		%r-5
+			%Human
+				%l3.0
+					Vanessa Lee
+					Hoboken
+					Lod Gveideon
+				%l4.0
+					Toray	!=Life
+				%l5.0
+					Shamshuddin	!=Black
+					Tivildorm	!=Ghost
+					Turseya	!=Wolferine
+					Murok	!=Vivisektor
+					Kodera !=Yasnovidyashyaya
+					Kleventin	!=Predatel
+					Asante	!=Storm
+					Ruork	!=Machinist
+					Riggellion	!=One Eye
+					Kvillion	!=Dubble
+					Yadjun	!=Fire
+					Ruaha	!=Karga
+					Isshkamir	!=Lightning
+					Bestelglosud	!=Chaos
+					Astaron	!=Ice
+					?	!=?
+					Kreol	!=Crusher
+				%l6.0
+					White Kiig
 	Creatures
-		%Mind
-			%r-5
-				%Human
-					%l3.0
-						Vanessa Lee
-						Hoboken
-						Lod Gveideon
-					%l4.0
-						Toray	!=	Life
-					%l5.0
-						Shamshuddin	!=	Black
-						Tivildorm	!=	Ghost
-						Turseya	!=	Wolferine
-						Murok	!=	Vivisektor
-						Kodera !=	Yasnovidyashyaya
-						Kleventin	!=	Predatel
-						Asante	!=	Storm
-						Ruork	!=	Machinist
-						Riggellion	!=	One Eye
-						Kvillion	!=	Dubble
-						Yadjun	!=	Fire
-						Ruaha	!=	Karga
-						Isshkamir	!=	Lightning
-						Bestelglosud	!=	Chaos
-						Astaron	!=	Ice
-						?	!=	?
-						Kreol	!=	Crusher
-					%l6.0
-						White Kiig
-				%Elv_2
-				%Sid
-				%Dev
-				%Devkatsi
-				%Eist
-				%Kiig
-			%r-6
-				%Titan_0
-				%Jinn
-				%Ancient
-				%Infal
+		%r-5
+			Elv_2
+			Sid
+			Dev
+			Devkatsi
+			Eist
+			Kiig
+		%r-6
+			Titan_0
+			Jinn
+			Ancient
+			Infal
 	Dimensions
 		w
 			~0	!=	Core, center of Everything
@@ -449,6 +475,13 @@ add(`/Rudazov
 			Ghost
 			Chimera
 	Organizations
+		%Schools
+			Grayland
+			Sumer
+			Kiig
+			Mysteria
+			Lka-Nandasi
+			Deorg Academy
 		Organization
 		%Labs
 			Geya
@@ -498,8 +531,14 @@ add(`/Dozory
 		Supernatural
 			Verse
 				Dozory
-	Schools
-		Other
+	Organizations
+		Incvisition
+		Night Dozor
+		Day Dozor
+		%Schools
+			Other
+				Dark
+				Light
 	Levels
 		0.0	!=	No
 		1.0	!=	Potential
@@ -611,18 +650,12 @@ add(`/Dozory
 						Stop	!=	Freeze	!# — локальная остановка времени, применяется для иммобилизации противника без причинения ему вреда.
 			Ход	!# — заклинание, позволяющее бежать с очень высокой скоростью. При попадании под воздействие заклинания сердечной мышцы (миокарда) может вызвать остановку последнего.
 			%l5.0
-				%Elements
-					%First
-						Light
-							Uncontrolled
-								White marevo	!# — самое сильное и страшное из упоминаемых в книгах заклинаний Светлых . По силам только высшим магам, «требует максимального сосредоточения и полной прокачки Силы в радиусе трёх километров». После произнесения изо рта мага вырывается белый туман, вызывающий локальное «схлопывание» всех слоёв Сумрака, и превращающий всех противников-иных в камень, внутри которого души остаются вечно живыми, но бездвижными и лишёнными всех чувств, медленно сходя с ума; людей сумрак перемалывает без следа. Придумано Мерлином, использовано лишь один раз Рустамом и Гесером.
-						Dark
-							Uncontrolled
-								Тень владык	!# — самое сильное из упоминаемых в книгах заклинаний Тёмных. Временно вызывает души умерших Великих Тёмных Иных с шестого слоя Сумрака, накачивает их Силой и заставляет уничтожать всё вокруг.
-					%Other
-						Time
-							Uncontrolled
-								Саркофаг времён	!# — заклинание из арсенала Инквизиции. Применивший его оказывается вместе со своей жертвой запертым в каменном саркофаге, плывущим в небытии, до скончания времён. Случаев побега из саркофага времён пока не существует. Антон Городецкий в книге "Новый дозор" был освобожден из саркофага времен, где он был заключен с ведьмой Ариной	 — тигром. (Однако, осталось неясным, смогла ли Арина освободиться с помощью Минойской Сферы (только ведьмы умеют их заряжать), которую имела при себе: Минойская Сфера прокладывает портал откуда угодно)
+				White marevo
+					# — самое сильное и страшное из упоминаемых в книгах заклинаний Светлых . По силам только высшим магам, «требует максимального сосредоточения и полной прокачки Силы в радиусе трёх километров». После произнесения изо рта мага вырывается белый туман, вызывающий локальное «схлопывание» всех слоёв Сумрака, и превращающий всех противников-иных в камень, внутри которого души остаются вечно живыми, но бездвижными и лишёнными всех чувств, медленно сходя с ума; людей сумрак перемалывает без следа. Придумано Мерлином, использовано лишь один раз Рустамом и Гесером.
+				Тень владык
+					# — самое сильное из упоминаемых в книгах заклинаний Тёмных. Временно вызывает души умерших Великих Тёмных Иных с шестого слоя Сумрака, накачивает их Силой и заставляет уничтожать всё вокруг.
+				Саркофаг времён
+					# — заклинание из арсенала Инквизиции. Применивший его оказывается вместе со своей жертвой запертым в каменном саркофаге, плывущим в небытии, до скончания времён. Случаев побега из саркофага времён пока не существует. Антон Городецкий в книге "Новый дозор" был освобожден из саркофага времен, где он был заключен с ведьмой Ариной	 — тигром. (Однако, осталось неясным, смогла ли Арина освободиться с помощью Минойской Сферы (только ведьмы умеют их заряжать), которую имела при себе: Минойская Сфера прокладывает портал откуда угодно)
 	Objects
 		%Artefacts
 			%r-5
@@ -697,11 +730,13 @@ add(`/Lord of Rings
 			~1.0, 0.0	!=	Body
 			~1.5, 0.0	!=	Soul
 	Verse
+		LotR
+			@Original
 		@Type
 			Uni
-		Original
-			@Worlds
-				Arda
+	Worlds
+		Arda
+			@Original
 	Energies
 		%r-5
 			+5	!=	Mana?
@@ -806,10 +841,13 @@ add(`/Nick
 	Verse
 		@Type
 			Multi
-		Original
-			@Worlds
-				Our	!=	Earth-2150?
-				Lungria
+		Nick
+			@Original
+	Worlds
+		Earth
+			+2150
+		Lungria
+			@Original
 	Dimensions
 		n
 			~1.0 ~0.0
@@ -819,11 +857,12 @@ add(`/Nick
 		+	!=	Aura
 		-4	!=	Infostructure
 		+4	!=	Mental
-	Schools
+	Organizations
 		Adeptness
 		Sorcery
 		Magic
 		Atl
+		Cleverness
 		Atlant`)
 add(`/Potteriana
 	@Sources

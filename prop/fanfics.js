@@ -149,16 +149,15 @@ add(`/Three Old Ladies
 1
 add(`/Bad choice
 	Worlds
-		/Leer
+		Leer
+			@Original
 			Paths	!	Energy
-		/Sixth Department
-			Verse	!	Real
-		/Magical Rus
-			Verse	!	Real
-		/Kostyan
-			Verse	!	Real
-		/Unknown Crap
-			Verse	!	Naruto
+		Earth
+			@Sixth Department
+			@Magical Rus
+			@Kostyan
+		Naruto
+			@Unknown Crap
 		%Types
 			Elements
 				%Basic
@@ -1904,11 +1903,10 @@ add(`/Life of Archmage Potter
 		@Type
 			Meta
 		Potteriana
-		Original
-			@Worlds
-				Our	!=Earth-?
-				Other?
 		Naruto
+	Worlds
+		Earth
+		Other
 	Creatures
 		%Mind
 			%r-5

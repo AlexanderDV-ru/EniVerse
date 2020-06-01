@@ -78,10 +78,10 @@ add(`/Star Wars
 		%r-5
 			gf	!=	Forceuser
 				lm	!=	Light
-				dm	!=	Darl
-	Directions
-		/Jedi
-		/Sith
+				dm	!=	Dark
+	Organizations
+		Jedi
+		Sith
 	Dimensions
 		w
 			<1	!=	Hyper
