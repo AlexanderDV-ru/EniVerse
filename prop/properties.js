@@ -57,15 +57,6 @@ props.syntax	=	{
 		question	:	"?"
 	}
 }
-props.colors	=	{
-	froms	:	{
-		comment	:	"green",
-		classificationonal	:	"blue",
-		link	:	"red",
-		question	:	"yellow",
-	},
-	fromsDef	:	"black",
-}
 var removeFromResult	=	[props.syntax.flag.start+props.syntax.flags.hide+props.syntax.flag.end, props.syntax.flag.start+props.syntax.flags.del+props.syntax.flag.end]
 props.universesConfig	=	""
 props.universes	=	[]

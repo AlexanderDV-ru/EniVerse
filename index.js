@@ -1,7 +1,7 @@
-//--- Name: EniVerse/Vesion: 0.2.9a/Authors: AlexanderDV/Description: Main EniVerse .js. ---
+//--- Name: EniVerse/Vesion: 0.3.0a/Authors: AlexanderDV/Description: Main EniVerse .js. ---
 var programInfo={
 	Name : "EniVerse",
-	Version : "0.2.9a",
+	Version : "0.3.0a",
 	Authors : "AlexanderDV"
 }
 programInfo.Title= programInfo.Name + " v" + programInfo.Version + " by " + programInfo.Authors
@@ -39,8 +39,8 @@ class Element{
 function colorOf(value) {
 	for(var v0 in props.syntax.froms)
 		if(value.startsWith(props.syntax.froms[v0]))
-			return props.colors.froms[v0]
-	return props.colors.fromsDef
+			return v0
+	return ""
 }
 function toLines(cfg){
 	var linesOfCfg=[]
@@ -218,10 +218,14 @@ function fromLinesToByPaths(linesOfCfg,whereFuncName){
 	}
 	return byPaths
 }
+var checkeds=JSON.parse(storageValue("checkeds")||"{}")
 var toHide=[]
 function generateHtmlTable(byPaths){
 	var htmlOfTable=""
 	var sortedByAlphabetPaths=Object.keys(byPaths).sort()
+	var genFn=function(htmls,name,elem,add){
+		return "<div "+add+" class=\"str "+colorOf(htmls[name])+" "+name+(elem.flags.has("["+name+"]")?" flag":" notflag")+(elem.flags.has("[no"+name+"]")?" flagno":" notflagno")+"\">"+htmls[name]+"</div>"
+	}
 	for(var sbapsi=0;sbapsi<sortedByAlphabetPaths.length;sbapsi++)
 	{
 		var curPath=sortedByAlphabetPaths[sbapsi]
@@ -230,7 +234,7 @@ function generateHtmlTable(byPaths){
 			continue
 		elem.links=[]
 		var lfn="@LinkFuncs[nolinkfuncs][children]"
-		console.log(curPath,byPaths[elem.parentStr+props.syntax.of_+lfn],elem.parentStr+props.syntax.of_+lfn);
+		//console.log(curPath,byPaths[elem.parentStr+props.syntax.of_+lfn],elem.parentStr+props.syntax.of_+lfn);
 		if(byPaths[elem.parentStr+props.syntax.of_+lfn])
 		{
 			console.log("!!!",byPaths[elem.parentStr+props.syntax.of_+lfn], byPaths[elem.parentStr+props.syntax.of_+lfn].children);
@@ -264,38 +268,34 @@ function generateHtmlTable(byPaths){
 		elem.parentTreeWithAdds=""
 		for(var v=0;v<elem.parentTree.length;v++)
 			elem.parentTreeWithAdds+=" htmlTable-val-parentTree-"+0+"-"+elem.parentTree[v].replace(/ /g,"[space]").replace(/"/g,"[quote]")
-		var htmlOfTds=""
-		var htmlOfMain=""
-		if(!elem.flags.has("[noname]"))
-		{
-			if(!elem.flags.has("[nocontent]"))
-				htmlOfMain+=elem.content
-			if(!elem.flags.has("[nominimalizer]"))
-				htmlOfMain+="<input type=\"checkbox\""+(elem.offsetLength==1||byPaths[elem.parentStr].flags.has("[minimalize]")?"":" checked")+" onchange=\"hiderAction('"+elem.pathStr.replace(/ /g,"[space]").replace(/"/g,"[quote]")+"',this.checked)\">"
-			if(!elem.flags.has("[nolinks]"))
-				for(var v=0;v<elem.links.length;v++)
-					htmlOfMain+="<a ref=\""+elem.links[v].ref+"\">"+elem.links[v].text+"</a>"
-		}
-		htmlOfTds+="<td><div style=\"color: "+colorOf(htmlOfMain)+";margin-left:"+elem.offsetLength*20+"px;\">"+htmlOfMain+"</div></td>"
-		var htmlOfWhere=""
-		if(!elem.flags.has("[nowhere]"))
-			for(var v of elem.where)
-				if(v&&v.length!=0)
-					htmlOfWhere+="<span style=\"color: "+colorOf(v.join(props.syntax.of_))+";\">"+v.join(props.syntax.of_).replace(new RegExp("["+props.syntax.of_+"]["+props.syntax.in_+"]|["+props.syntax.in_+"]["+props.syntax.of_+"]","g"), props.syntax.of_)+"</span>"+props.syntax.enumeration+" "
-		htmlOfTds+="<td><div>"+htmlOfWhere+"</div></td>"
-		var htmlOfFlags=""
-		if(!elem.flags.has("[noflags]"))
-			for(var v of elem.flags)
-				if(v&&v.length!=0)
-					htmlOfFlags+="<span>"+v+"</span>"+props.syntax.enumeration+" "
-		htmlOfTds+="<td><div>"+htmlOfFlags+"</div></td>"
-		var htmlOfChildren=""
-		if(elem.flags.has("[children]"))
-			for(var v of elem.children)
-				if(v&&v.length!=0)
-					htmlOfChildren+="<span>"+v+"</span>"+props.syntax.enumeration+" "
-		htmlOfTds+="<td><div>"+htmlOfChildren+"</div></td>"
-		htmlOfTable+="<tr style=\""+(elem.offsetLength>1||elem.flags.has("[hidecurrent]")||byPaths[elem.parentStr].flags.has("[hidechildren]")||byPaths[elem.parentStr].flags.has("[minimalize]")?"display: none":"")+"\" id=\""+elem.pathWithAdd+"\" class=\"line "+elem.parentWithAdd+elem.parentTreeWithAdds+"\">"+htmlOfTds+"</tr>"
+		var htmls={}
+		htmls.tds=""
+		htmls.main=""
+		htmls.content=elem.content
+		htmls.main+=genFn(htmls,"content",elem,"")
+		htmls.minimalizer="<input id=\""+elem.pathWithAdd+"-check"+"\"  type=\"checkbox\""+(elem.offsetLength!=1&&!byPaths[elem.parentStr].flags.has("[minimalize]")&&!checkeds[elem.pathStr]?" checked":"")+" onchange=\"hiderAction('"+elem.pathStr.replace(/ /g,"[space]").replace(/"/g,"[quote]")+"',this.checked)\">"
+		htmls.main+=genFn(htmls,"minimalizer",elem,"")
+		htmls.links=""
+		for(var v=0;v<elem.links.length;v++)
+			htmls.links+="<a ref=\""+elem.links[v].ref+"\">"+elem.links[v].text+"</a>"
+		htmls.main+=genFn(htmls,"links",elem,"")
+		htmls.tds+="<td>"+genFn(htmls,"main",elem,"style=\"margin-left:"+elem.offsetLength*20+"px;\"")+"</td>"
+		htmls.where=""
+		for(var v of elem.where)
+			if(v&&v.length!=0)
+				htmls.where+="<span class=\"str "+colorOf(v.join(props.syntax.of_))+"\">"+v.join(props.syntax.of_).replace(new RegExp("["+props.syntax.of_+"]["+props.syntax.in_+"]|["+props.syntax.in_+"]["+props.syntax.of_+"]","g"), props.syntax.of_)+"</span>"+props.syntax.enumeration+" "
+		htmls.tds+="<td>"+genFn(htmls,"where",elem,"")+"</td>"
+		htmls.flags=""
+		for(var v of elem.flags)
+			if(v&&v.length!=0)
+				htmls.flags+="<span>"+v+"</span>"+props.syntax.enumeration+" "
+		htmls.tds+="<td>"+genFn(htmls,"flags",elem,"")+"</td>"
+		htmls.children=""
+		for(var v of elem.children)
+			if(v&&v.length!=0)
+				htmls.children+="<span class=\"child\">"+v+"</span>"+props.syntax.enumeration+" "
+		htmls.tds+="<td>"+genFn(htmls,"children",elem,"")+"</td>"
+		htmlOfTable+="<tr style=\""+(elem.offsetLength>1||elem.flags.has("[hidecurrent]")||byPaths[elem.parentStr].flags.has("[hidechildren]")||byPaths[elem.parentStr].flags.has("[minimalize]")?"display: none":"")+"\" id=\""+elem.pathWithAdd+"\" class=\"line "+elem.parentWithAdd+elem.parentTreeWithAdds+"\">"+htmls.tds+"</tr>"
 	}
 	return htmlOfTable
 }
@@ -329,6 +329,24 @@ function hideShowByClassName(className, val){
 }
 function hiderAction(path,val){
 	var es=document.getElementsByClassName('htmlTable-val-parentTree-'+(1?0:path.split(props.syntax.of_).length-1)+"-"+path)
-	for(var v of es)
-		v.style.display=(val==undefined?v.style.display=="none":val)?"":"none"
+	if(val==undefined)
+		val=document.getElementById("htmlTable-val-path-"+path+"-check").checked?true:false
+	for(var v of es){
+		var sh=true
+		var p=""
+		for(var pc of v.id.replace("htmlTable-val-path-","").split(props.syntax.of_)){
+			if(!p)
+				p=pc
+			else p+=props.syntax.of_+pc
+			if(p!=v.id.replace("htmlTable-val-path-",""))
+				if(document.getElementById("htmlTable-val-path-"+p+"-check"))
+					if(!document.getElementById("htmlTable-val-path-"+p+"-check").checked)
+						sh=false
+			//console.log(p);
+		}
+		v.style.display=val&&sh?"":"none"
+		//storageValue(v.id+"-hiden",v.style.display=="none")
+	}
+	checkeds[path]=!val
+	storageValue("checkeds",JSON.stringify(checkeds))
 }

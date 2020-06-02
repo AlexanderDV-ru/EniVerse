@@ -4,7 +4,7 @@ add(`/Diplomirovanniy Charodey`)
 add(`/Rudazov
 	Organizations
 		%Levels
-			%Universal
+			/Universal
 				0.0	!=	0	Primitive - ?	!#
 					@Kaabar
 					@Rari	Devkatsi
@@ -14,7 +14,7 @@ add(`/Rudazov
 				4.0	!=	12	? - ?		!#
 				5.0	!=	15	? - Energy	!#
 				6.0	!=	18	Immortal - tech|mage|bio	!#
-			%Energy
+			/Energy
 				0.3	!=	1	? - ?		!#Mage Ghyldy
 					@Earth.-3000	Sumer
 				0.7	!=	2	? - ?		!#Magic Schools
@@ -27,12 +27,12 @@ add(`/Rudazov
 				6.0	!=	18	Immortal - ?!#
 					@Infal
 					@Jinn
-			%Bio
+			/Bio
 				0.3	!=	1	? - ?		!#Prirucheniye, odomashnivaniye
 				0.7	!=	2	? - ?		!#Selection
 					@Rari	Eist
 				6.0	!=	18	Immortal - ?!#
-			%Tech
+			/Tech
 				0.3	!=	1	? - ?		!#Compas, Gun Powder,	Books print
 				0.7	!=	2	? - ?		!#Industrial revolution
 					@Rari	Rokush
@@ -61,10 +61,10 @@ add(`/Rudazov
 				6.0	!=	18	Immortal - ?!#
 					@Ancient
 					@Titan_0
-			%Energy+Tech
+			/Energy+Tech
 				0.7	!=	2
 					@Rari.+2000	Grayland
-			!#Number after "-" says that this world after apocalipsis, have but cant create this technologies
+			#Number after "-" says that this world after apocalipsis, it has tech, but cant create
 		%Opened
 			%Closed	!#Don't know about other
 			%Half-Closed	!#Thinks that other is 1,2,3... not a lot of
@@ -98,11 +98,11 @@ add(`/Rudazov
 		Eikr	!	@Original\n\t\t	Hvitachi	!	@Original\n\t\t	Worldtown	!	@Original
 		Lang	!	@Original\n\t\t	Kaabar	!	@Original\n\t\t	Nine Heavens	!	@Original
 		Hell	!	@Original\n\t\t	Earth\n\t\t\t+2006	!	@Original\n\t\t	Heaven	!	@Original
-		Golus	!	@Original	\n\t\t	Earth!Dotembria
-		Pargoron	!	@Original\n\t\t	Parifat\n\t\t	Salvan
-		Patala	!	@Original	\n\t\t	Dovos
-		Jahannam	!	@Original	\n\t\t	Kaf	\n\t\t	Janna
-		Shemussen	!	@Original	\n\t\t	Plonet	\n\t\t	N	\n\t\t	Labirint	\n\t\t	Svarog	\n\t\t	Deorg Academy
+		Golus	!	@Original	\n\t\t	Earth!=Dotembria
+		Pargoron	!	@Original\n\t\t	Parifat	!	@Original\n\t\t	Salvan	!	@Original
+		Patala	!	@Original	\n\t\t	Dovos	!	@Original
+		Jahannam	!	@Original	\n\t\t	Kaf	!	@Original	\n\t\t	Janna	!	@Original
+		Shemussen	!	@Original	\n\t\t	Plonet	!	@Original	\n\t\t	N	\n\t\t	Labirint	!	@Original	\n\t\t	Svarog	!	@Original	\n\t\t	Deorg Academy	!	@Original
 		X	!	@Original	\n\t\t	Z	\n\t\t	A	\n\t\t	Y	\n\t\t	O	\n\t\t	Caves Sheymullin	!	@Original
 		M	!	@Original	\n\t\t	K	\n\t\t	H	\n\t\t	G	\n\t\t	F	\n\t\t	E	\n\t\t	D	\n\t\t	C	\n\t\t	B	\n\t\t	P	\n\t\t	Earth!+7112
 		Proxima Centaura	!	@Original	\n\t\t	Proxima Hell	!	@Original	\n\t\t	Proxima Heaven	!	@Original
@@ -142,24 +142,24 @@ add(`/Rudazov
 			e+0+2	!=	Spiritual Weapon
 	Levels
 		/Sumer
-			0.0	!=	Nomage
-			1.0	!=	Student
-			2.0	!=	Apprentice
-			3.0	!=	Master
-			4.0	!=	Pastmaster
-			5.0	!=	Archmage
-			6.0	!=	Higher
+			0.0	!=Nomage
+			1.0	!=Student
+			2.0	!=Apprentice
+			3.0	!=Master
+			4.0	!=Pastmaster
+			5.0	!=Archmage
+			6.0	!=Higher
 		/Grayland
-			0.0	!=	Buckwheat
-			1.0	!=	Student
-			1.5	!=	Purple
-			2.0	!=	Blue
-			2.5	!=	Light Blue
-			3.0	!=	Green
-			3.5	!=	Yellow
-			4.0	!=	Orange
-			4.5	!=	Red
-			5.0	!=	Gray
+			0.0	!=Buckwheat
+			1.0	!=Student
+			1.5	!=Purple
+			2.0	!=Blue
+			2.5	!=Light Blue
+			3.0	!=Green
+			3.5	!=Yellow
+			4.0	!=Orange
+			4.5	!=Red
+			5.0	!=Gray
 	Actions
 		%r-5
 			/Sumer
@@ -371,6 +371,7 @@ add(`/Rudazov
 					Gate
 				%Tech
 					%Plonet's
+						Hill-9000
 			%r-6
 				%Grimoires
 					Kriabal

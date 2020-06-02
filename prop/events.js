@@ -29,6 +29,7 @@ add(`/Boy Who Conquered Time
 				s/ Hogsmid
 					Light on Platform
 			v/ 1 Course
+				%Arka	!=Studsovet
 				s/ Spirits
 					Scary Talk
 				s/ Sort by Hat
@@ -60,14 +61,14 @@ add(`/HPMoR
 			s/ Train
 				Hermione	!	Science
 				Frog	!	Prefects
+		v/ 1 Course
+			%Arka	!=HPMoR
+			%DADA	!=Quirrellmort
 		%Notes
 			Spraut is cool
 			Spraut can control rasteniya
 			Tonks can morph to other human
-			Spraut is not is podozreniye
-		%Types
-			Voldi
-				Quirrellmort`)
+			Spraut is not is podozreniye`)
 add(`/Ikotika
 	a/ Potteriana
 		%Notes
@@ -99,43 +100,26 @@ add(`/Filchenkov
 	a/ Potteriana
 		%Notes
 			Professors' jokes can be awful
-		%Arka
-			Philosophers Stone
-			Secret Room
-			Узник Азкабана
-			Кубок Огня
-			Орден Феникса
-			Принц Полукровка
-			Дары Смерти
-		%DADA
-			Quirrell
-			Lockhart
-			Lupin
-			Moody
-			Crouch
-			Umbridge
-			Snape
-			Carrow
-		v/ Kid
-			Potters
-			Halloween
-			Mungo
-			McGonagall
-			Dursley
 		v/ Before Hog
+			s/ Kid
+				Potters
+				Halloween
+				Mungo
+				McGonagall
+				Dursley
 			School
 			Snake
 			Letters
 			From Hog	!	Hagrid
-			v/ Diagon
+			s/ Diagon
 				Leaky Cauldron
 				Gringotts
 				v/ Malkin
 					Malfoy
 				Ollivander
-			v/ Platform
+			s/ Platform
 				Weasley
-			v/ Train
+			s/ Train
 				Ron
 				Hermione
 				Nevill
@@ -143,6 +127,8 @@ add(`/Filchenkov
 			Hogsmitt
 			Boats
 		v/ 1 Course
+			%Arka	!=Philosopher's Stone
+			%DADA	!=Quirrell
 			Hat
 			Карта Weasley
 			Mantia
@@ -153,6 +139,8 @@ add(`/Filchenkov
 			Centavres
 			Philosophers Stone
 		v/ 2 Course
+			%Arka	!=Secret Room
+			%DADA	!=Lockhart
 			Dobby
 			Escape in Ford
 			Hole
@@ -175,6 +163,8 @@ add(`/Filchenkov
 			Secret Room
 			Hagrid in Azkaban
 		v/ 3 Course
+			%Arka	!=Prisoner of Azkaban
+			%DADA	!=Lupin
 			Weasley в египет
 			Побег Siriusа
 			Надувание Марч
@@ -191,6 +181,10 @@ add(`/Filchenkov
 			Patronus
 			Фадж отрицает
 		v/ 4 Course
+			%Arka	!=Goblet of Fire
+			%DADA
+				=Moody
+				=Crouch-jr
 			Чемпионат по квиддичу
 			Барти младший
 			Триволшебный Турнир
@@ -200,13 +194,19 @@ add(`/Filchenkov
 			Второе испытание
 			Третье испытание
 			Телепорт на кладбище
-			Смерть Sedrikа
 			Битва
 			Возвращение
 			Разоблачения Барти
 		v/ 5 Course
+			%Arka	!=Order of Phoenix
+			%DADA	!=Umbridge
 		v/ 6 Course
+			%Arka	!=Half-Blood Prince
+			%DADA	!=Snape
+			%Potions	!=Slughorn
 		v/ 7 Course
+			%Arka	!=Deathly Hallows
+			%DADA	!=Carrow
 		v/ After Hog
 		%Types
 			Voldi
@@ -217,11 +217,12 @@ add(`/Filchenkov
 			  Gildi`)
 add(`/Miyato
 	a/ Potteriana
-		v/ Kid
-			Посвящение Смерти
-			Защитно Поглощающая руна
-		%DADA
-			Sirius`)
+		v/ Before Hog
+			s/ Kid
+				Посвящение Смерти
+				Защитно Поглощающая руна
+		v/ 3 Course
+			%DADA	!=Sirius`)
 add(`/Weasley's List
 	a/ Potteriana
 		%Jokes
@@ -328,22 +329,6 @@ add(`/Weasley's List
 			101.	Мне запрещается плохо влиять на сына и воспитывать его в духе близнецов Уизли — еще одного сорвиголову Хогвартс может и не пережить.`)
 add(`/Potteriana
 	a/ Potteriana
-		%Arka
-			Philosophers Stone
-			Secret Room
-			Узник Азкабана
-			Кубок Огня
-			Орден Феникса
-			Принц Полукровка
-			Дары Смерти
-		%DADA
-			Quirrell
-			Lockhart
-			Lupin
-			Krouch
-			Ambridge
-			Snape
-			Carrow
 		v/ Kid
 			Potters
 			Halloween
@@ -371,6 +356,8 @@ add(`/Potteriana
 			v/ Hogsmitt
 			Boats
 		v/ 1 Course
+			%Arka	!=Philosopher's Stone
+			%DADA	!=Quirrell
 			Hat
 			Mantia
 			Mirror of Erised
@@ -380,6 +367,8 @@ add(`/Potteriana
 			Centavres
 			Philosophers Stone
 		v/ 2 Course
+			%Arka	!=Secret Room
+			%DADA	!=Lockhart
 			Dobby
 			Escape in Ford
 			Hole
@@ -397,6 +386,8 @@ add(`/Potteriana
 			Secret Room
 			Hagrid in Azkaban
 		v/ 3 Course
+			%Arka	!=Prisoner of Azkaban
+			%DADA	!=Lupin
 			Weasley в египет
 			Побег Siriusа
 			Надувание Марч
@@ -412,6 +403,8 @@ add(`/Potteriana
 			ПатRonус
 			Фадж отрицает
 		v/ 4 Course
+			%Arka	!=Goblet of Fire
+			%DADA	!=Crouch-jr
 			Чемпионат по квиддичу
 			Барти младший
 			Триволшебный Турнир
@@ -424,6 +417,8 @@ add(`/Potteriana
 			Возвращение
 			Разоблачения Барти
 		v/ 5 Course
+			%Arka	!=Order of Phoenix
+			%DADA	!=Umbridge
 			Dementorы на тисовой
 			Дом Siriusа
 			Ron и Hermione префекты
@@ -433,4 +428,9 @@ add(`/Potteriana
 			Отряд Dumbledoreа
 			Драка и запрет квиддича
 		v/ 6 Course
-		v/ 7 Course`)
+			%Arka	!=Half-Blood Prince
+			%DADA	!=Snape
+			%Potions	!=Slughorn
+		v/ 7 Course
+			%Arka	!=Deathly Hallows
+			%DADA	!=Carrow`)

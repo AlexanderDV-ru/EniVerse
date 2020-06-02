@@ -580,36 +580,54 @@ add(`/Myverse
 				%Materials
 			Berserk
 			Yasnovidenie
-			переход в эфирное состояниие
-			переход по четвертому измерению
-			другие операции с четвертым измерением?
-			эфирное изменение размеров|формы?
-			эфирные ускоренные перемещения?
-			фильтрация запахов и других частиц в воздухе
-			сокрытие магии
-			манипуляции реальностью
-			сокрытие ауры
-			фальшивая аура
-			работа с ноосферой
-			ускоренные|замедленные ВП
-			изпользование химического
-			использование биологического
-			использование радиации
-			использование порталов в опасные места
-			звукогаситель
-			иллюзия потери магии противником, не тобой
-			брокировка магических узлов
-			работа с душами
-			антимагия
-			использование магии существа против него самого
-			аутоиммунные атаки (в т.ч. на магию и разум и прочее)
-			духовная сила
-			использование биотварей (кадавров?)
-			ускорение сознания
-			атака по пране
-			святые вещи
-			демонические вещи?
-			скрытие излучения невидимого спектра
+			Ether state
+			Hyper dimension
+				Moving
+			Ether change
+				Shape
+				Size
+			Ether fast moving
+			Filter of smells and other particles
+			Hiding of magic
+			Reality manipulations
+			Hiding of aura
+			Fake aura
+			Work with NooSphere
+			Barriers
+				Time
+					Fast
+					Slow
+			Weapon
+				Chemical
+				Bio
+				Radiation
+			Portal
+				to dangerous place
+			Sound
+				Quiet
+				Hide
+			Send illusion of steeling of magic
+			Block of magic points
+			Work with souls
+			Antimagic
+			Autoimmun
+				Magic
+				Body
+				Mind
+				Soul
+			Soul power
+			Use of bio creatures
+				Kadavres
+				Homunculs
+			Fast mind
+			Atack on
+				prana
+				mana
+				soul
+			Things
+				Hooly
+				Demonic
+			Hide of non-visible spectre of light
 			Fake Spell
 		%r-0
 		%r-1
@@ -796,6 +814,8 @@ add(`/Myverse
 				Up
 				Down
 		%Creatures
+			Anti
+			Create
 		%Materials
 		#Types of actions for ability
 		%Languages
