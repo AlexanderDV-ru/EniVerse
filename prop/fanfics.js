@@ -338,10 +338,10 @@ add(`/Bad choice
 					%Achievement-Copy
 	Dimensions
 		n
-			~1.0 ~1.5	!=Dark-Shadow
-			~1.0 ~0.0	!=Matteral
-			~2.0 ~0.0	!=Astral
-			~2.0 ~2.0	!=Mental
+			12	!=Dark-Shadow
+			11	!=Matteral
+			31	!=Astral
+			13	!=Mental
 	Elements
 		%Basic
 			Fire	!=Pyromancy
@@ -1390,20 +1390,35 @@ add(`/Myverse
 	Materials	!=m
 	Dimensions	!=n
 		w	!=Hyper
-			~0	!=Dot, Core
-			<1	!=Hyper
-			~1	!=Normal
-			>1	!=Hypo
+			0	!=Dot, Core
+			1	!=Hyper
+			2	!=Normal
+			3	!=Hypo
 		n	!=Dimension
-			~0.0 ~0.0	!=Core
-			~1.0 ~0.0	!=Matteral
-			~1.5 ~0.0	!=Matteral-Etheral
+			00	!=Core
+				#Core-body	!=Atman
+			01
+			02
+			03	!=NooSphere
+			10	!=Chaos
+			11	!=Matteral
+				#Matter-body
+			12	!=Info-Shadow
+			13	!=Mental
+			20	!=Wild
+			21	!=Ether-Shadow
 				@Ghost
-			~2.0 ~0.0	!=Etheral
+			22	!=Spiritual
+				@Spirit
+				#Ether-body	!=Alchemical body
+			23	!=Astral
+			30	!=Limbo
+			31	!=Ether
 				@Loa
-			~2.0 ~1.5	!=Etheral-Mental
+			32	!=Dream
 				@Phantom
-			~2.0 ~2.0	!=Mental
+			33	!=Infofield
+				#Info-body	!=Infostructure
 		Limbo
 		Chaos
 	Persons	!=p

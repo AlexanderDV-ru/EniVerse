@@ -53,7 +53,8 @@ add(`/Dragon Age
 	Dimensions
 		n
 			Fade
-			~1.0 ~0.0	!=	Yav
+			11
+				=Yav
 	Materials
 		%Metals
 			Lyrium`)
@@ -116,9 +117,9 @@ add(`/Minecraft
 				Minecraft
 	Dimensions
 		o
-			Hell	!=	Nether World
+			Hell	!=Nether World
 			End
-			Normal	!=	Over World
+			Normal	!=Over World
 	Features
 		%r-4
 			%w-1	!=	Spectator Mode

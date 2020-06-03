@@ -6,7 +6,7 @@ add(`/Andromeda's nebula
 				Andromeda's nebula
 	Dimensions
 		w
-			<1	!=	zero-space`)
+			1	!=	zero-space`)
 1
 add(`/Elite
 	@Sources
@@ -38,7 +38,7 @@ add(`/Azimov
 				Azimov
 	Dimensions
 		w
-			<1	!=	Hyper`)
+			1	!=	Hyper`)
 add(`/Heinlein
 	@Sources
 		Supernatural
@@ -46,15 +46,15 @@ add(`/Heinlein
 				Heinlein
 	Dimensions
 		w
-			<1	!=	Cherenkov drive`)
+			1	!=	Cherenkov drive`)
 add(`/Hyperion
 	Dimensions
 		w
-			<1	!=	Hyper`)
+			1	!=	Hyper`)
 add(`/vavilon5
 	Dimensions
 		w
-			<1	!=	Hyper`)
+			1	!=	Hyper`)
 add(`/Star Gate
 	@Sources
 		Supernatural
@@ -62,7 +62,7 @@ add(`/Star Gate
 				Star Gate
 	Dimensions
 		w
-			<1	!=	Hyper`)
+			1	!=	Hyper`)
 add(`/Star Wars
 	@Sources
 		Supernatural
@@ -84,7 +84,7 @@ add(`/Star Wars
 		Sith
 	Dimensions
 		w
-			<1	!=	Hyper
+			1	!=	Hyper
 	Objects
 		%Artefacts
 			%r-5

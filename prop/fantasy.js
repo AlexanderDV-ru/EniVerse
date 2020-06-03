@@ -287,21 +287,21 @@ add(`/Rudazov
 			Infal
 	Dimensions
 		w
-			~0	!=	Core, center of Everything
-			<1	!=	Hyperspace, Esher's geometry
-			~1	!=	Normalspace
-			>1	!=	Underspace
+			0	!=	Core, center of Everything
+			1	!=	Hyperspace, Esher's geometry
+			2	!=	Normalspace
+			3	!=	Underspace
 		n
-			~0.0 ~0.0	!=	bhavachakra
+			00	!=	bhavachakra
 				Other
 				Blood Beach	!#Place for demons
-			~1.0 ~0.0	!=	Normal, material
-			~1.5 ~0.0	!=	Shadow|Twilight|Through the Looking Glass
-			~2.0 ~0.0	!=	Astral,	world of spirits
+			11	!=	Normal, material
+			21	!=	Shadow|Twilight|Through the Looking Glass
+			31	!=	Astral,	world of spirits
 				Other
 				World of the dead
-			~2.0 ~1.5	!=	World of dreams
-			~2.0 ~2.0	!=	NooSphere
+			22	!=	World of dreams
+			13	!=	NooSphere
 		Limbo	!=	gray world
 		Chaos	!=	non-embodied
 	Features
@@ -693,23 +693,23 @@ add(`/Dozory
 			%w-1	!=	Necromancy
 	Dimensions
 		n
-			~1.0 ~0.0
-			~1.5 ~0.0	!=	Twilight
-				~1.5 ~0.0
+			11
+			21	!=	Twilight
+				50
 					0	x1	none cold	some gray	0	none lag	normal
-				~1.1 ~0.3
+				13
 					1	x3	weak cold	weak gray	-	weak lag	3 moons
-				~1.1 ~0.6
+				16
 					2	x9	very cold	very gray	-	very lag	red cloud
-				~1.3 ~0.9
+				39
 					3	x27	full cold	full gray	-	full lag
-				~1.3 ~0.9
+				39
 					4	x27	none temp	some color	+	desert
-				~1.1 ~0.6
+				16
 					5	x9	weak temp	weak color	+	some elems
-				~1.1 ~0.3
+				13
 					6	x3	very temp 	very color	+	world of dead elems
-				~1.5 ~0.0
+				50
 					7	x1	full temp	full color	0	normal	!#Can be backside`)
 add(`/Diane Duane
 	@Sources
@@ -728,8 +728,8 @@ add(`/Lord of Rings
 				LotR
 	Dimensions
 		n
-			~1.0, 0.0	!=	Body
-			~1.5, 0.0	!=	Soul
+			11	!=	Body
+			21	!=	Soul
 	Verse
 		LotR
 			@Original
@@ -785,19 +785,24 @@ add(`/Nick
 				%Gnome
 				%Orc_0
 				%Demon_0
+	Persons
+		%r-5
+			Human
+
 	Energies
 		%r-5
-			-1	!=	Prana
-			+3	!=	Emana
-			+4	!=	Psy
-			+5	!=	Mana
-			if	!=	Infomana
+			-1	!=Prana
+			+3	!=Emana
+			+4	!=Psy
+			+5	!=Mana
+			+6	!=Infomana
+				#?
 	Features
 		%r-5
-			e+5	!=	Mage
-			if	!=	Infomage
-			e+3	!=	Sorcerer
-			e+4	!=	Psyonic
+			e+3	!=Sorcerer
+			e+4	!=Psyonic
+			e+5	!=Mage
+			e+6	!=Infomage
 			Cleverness
 		%r-6
 			God_2
@@ -817,9 +822,14 @@ add(`/Nick
 	Directions
 		%Languages
 			Construct
+				@/Sorcerer
 			Weaving
+				@/Mage
+				@/Infomage
 			Structure
-			Image	!#Only gods
+				@/Infomage
+			Image
+				@/God_2
 		%Creatures
 			Holem
 			Automate
@@ -851,13 +861,14 @@ add(`/Nick
 			@Original
 	Dimensions
 		n
-			~1.0 ~0.0
-			~1.5 ~1.5	!=	Astral?, ?-net
-			~1.0 ~2.0	!=	infofield?, zero-net
+			11
+			23	!=Astral?, one-net
+			33
+				infofield|zero-net
 	Shells
-		+	!=	Aura
-		-4	!=	Infostructure
-		+4	!=	Mental
+		+	!=Aura
+		-4	!=Infostructure
+		+4	!=Mental
 	Organizations
 		Adeptness
 		Sorcery

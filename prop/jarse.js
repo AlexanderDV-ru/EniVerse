@@ -48,8 +48,11 @@ add(`/Blue exorcist
 				Brownie
 	Dimensions
 		o
-			Gehenna	!=	Demonic
-			Assiah	!=	Human`)
+			Gehenna
+				@Of Demon
+			Normal
+				=Assiah
+				@Of Human`)
 1
 add(`/Claymore
 	@Sources
