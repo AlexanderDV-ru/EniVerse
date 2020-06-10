@@ -1,4 +1,3 @@
-//--- Name: EniVerse/Vesion: 0.3.0a/Authors: AlexanderDV/Description: Main EniVerse .js. ---
 var programInfo={
 	Name : "EniVerse",
 	Version : "0.3.0a",

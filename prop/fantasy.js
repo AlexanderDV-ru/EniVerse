@@ -819,6 +819,44 @@ add(`/Nick
 			Earth
 			Ice
 			Electrizity
+	Actions
+		Infostructure
+			Creation
+			Changing
+			Energy
+				+
+				-
+			Removing
+		Weaving
+			Misc
+				Sound
+					Make
+					Detect
+				Motion Sense
+				Aura Check
+				Mental Protection
+				Illusion
+					Mental
+					Optical
+			Nick
+				Mana Nasos
+				Sprut
+			Orc
+				Hydrohit
+			Demon
+				Fire
+				Mana Take Polog
+				Power Shape
+				Power Polog
+			Elv
+				Quite Death
+				Live Home
+			Adeptnesser
+				Mana Nasos
+		Atl
+			Personal Module of Reality Control
+			Umnik
+			Privod
 	Directions
 		%Languages
 			Construct
