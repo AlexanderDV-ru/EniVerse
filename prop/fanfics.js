@@ -543,7 +543,24 @@ add(`/HP and future know
 				Дементоры, патронусы, призраки !#Они разумны; могут хранить, передавать, обрабатывать инфу; производить сложные действия; работать по плану. Дементоры сотрудничают с теми, кто дает жертву, а патронусы используют добровольно отданную магию хозяина. Патронус человека всегда 1, если он делится на несколько частей передающих сообщение он все еще лишь 1. Когда патронус не вызван, он в состоянии "споры" в ядре человека, при смерти владельца патронус остается в ядре, если уничтожить ядро - патронус тоже будет уничтожен`)
 1
 add(`/Myverse
-	Actions	!=a
+	Actions
+	Creatures
+	Dimensions
+	Elements
+		Elements
+		Emotions
+		Materials
+		Energies
+	Forms
+	Locations
+	Misc
+	Objects
+	Persons
+	Ranks
+		Ranks
+		Levels
+	Spells
+	Actions
 		%Categories
 			%Abilities
 			%Resistance
@@ -1277,8 +1294,8 @@ add(`/Myverse
 					0.0	!=Not-Sci
 					0.5	!=Pseudo-Sci
 					1.0	!=Sci
-	Elements	!=l
-		%Emotions
+	Elements	!=e
+		Emotions	/type
 			Sad
 			Apathy
 			Pain
@@ -1297,96 +1314,97 @@ add(`/Myverse
 				Death
 			%/Love and peace
 				Peace
-		%Basic
-			Fire
-			Water
-			Earth
-			Air
-			Ice
-			Electrizity
-		%First
-			Dark
-			Light
-			Chaos
-			Order
-			Death
-			Life
-		%Misc
-			Blood
-			Mirror
-			Shadow
-			Picture
-			Void
-			Twilight
-			Ethervoid
-			Explosion
-			Crystall
-			Acid
-			Bludfire|Hellfire|Cursed Fire|Fiendfyre
-			Phoenix
-			Avadakedavra
-			Magnetism
-			Rock
-			Plasma
-			Metal
-			Lava
-			Boil
-			Heat
-			Tree
-			Sand
-			Photo
-		%Process
-			Desecration
-			Grace
-			Desintegration
-			Unemboding
-			Thirst
-		%Plasma
-			w+1	!=Undead
-			w-1	!=Spirit
-			tc	!=Tech
-			bi	!=Bio
-			en	!=Energy
-		%Variable
-			Name
-			Word
-			Number
-			Vector
-		%Motion
-			Normal
-			Planing
-			Levitation
-			Teleport
-			Gravity
-			Quantum
-			Archimeds law
-			Magic
-			Shupaltsa
-			Mob
-			Force
-			Vector
-			Direction
-			Force
-		%Time
-			Tempoflucation
-			Back
-			Petlya
-			Stop
-			No
-			Prerivanye
-			Vicherkivanye
-			Jump
-		%Space
-			Portal
-				Dimension
-				Linked
-				World
-				Domen	!=Anklav
+		Elements	/type
+			%Basic
+				Fire
+				Water
+				Earth
+				Air
+				Ice
+				Electrizity
+			%First
+				Dark
+				Light
+				Chaos
+				Order
+				Death
+				Life
+			%Misc
+				Blood
+				Mirror
+				Shadow
+				Picture
+				Void
+				Twilight
+				Ethervoid
+				Explosion
+				Crystall
+				Acid
+				Bludfire|Hellfire|Cursed Fire|Fiendfyre
+				Phoenix
+				Avadakedavra
+				Magnetism
+				Rock
+				Plasma
+				Metal
+				Lava
+				Boil
+				Heat
+				Tree
+				Sand
+				Photo
+			%Process
+				Desecration
+				Grace
+				Desintegration
+				Unemboding
+				Thirst
+			%Plasma
+				w+1	!=Undead
+				w-1	!=Spirit
+				tc	!=Tech
+				bi	!=Bio
+				en	!=Energy
+			%Variable
+				Name
+				Word
+				Number
+				Vector
+			%Motion
 				Normal
-			Zip
-			Pocket
-			Dense
-			Bubble
+				Planing
+				Levitation
+				Teleport
+				Gravity
+				Quantum
+				Archimeds law
+				Magic
+				Shupaltsa
+				Mob
+				Force
+				Vector
+				Direction
+				Force
+			%Time
+				Tempoflucation
+				Back
+				Petlya
+				Stop
+				No
+				Prerivanye
+				Vicherkivanye
+				Jump
+			%Space
+				Portal
+					Dimension
+					Linked
+					World
+					Domen	!=Anklav
+					Normal
+				Zip
+				Pocket
+				Dense
+				Bubble
 	Materials	!=m
 	Dimensions	!=n
 		w	!=Hyper
@@ -1573,7 +1591,7 @@ add(`/Myverse
 		12	!=12	Half Shells
 		13	!=13	Half Shells
 		14	!=14	Half Shells
-	Energies	!=e
+	Energies	!=y
 		%r-5
 			-5	!=Mrana?
 			-4	!=Psy?
@@ -1586,8 +1604,8 @@ add(`/Myverse
 			+3	!=Emana
 			+4	!=Esperi
 			+5	!=Mana
-			+1+2	!=Ki+Reatsu
-			+3+5	!=Emana+Mana
+			+1 +2	!=Ki+Reatsu
+			+3 +5	!=Emana+Mana
 		%r-7
 			+7	!=Ba-Hion
 	Levels	!=s

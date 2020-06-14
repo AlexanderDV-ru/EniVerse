@@ -1,4 +1,5 @@
-props.universesConfig+="\nEvents[nowhere]"
+props.universesConfig+="\n"+"Events[nowhere]"
+1
 add(`/Boy Who Conquered Time
 	a/ Potteriana
 		/A

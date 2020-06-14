@@ -1,4 +1,4 @@
-props.universesConfig+="Eniverse[nowhere]"
+props.universesConfig+="\n"+"Eniverse[nowhere]"
 1
 add(`/Doctor Who`)
 1

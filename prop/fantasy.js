@@ -772,7 +772,7 @@ add(`/Lord of Rings
 	Materials
 		%Metals
 			Mithrill`)
-add(`/Nick
+add(`Nick	/universe
 	@Sources
 		Supernatural
 			Books

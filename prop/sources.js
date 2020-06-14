@@ -1,4 +1,5 @@
-props.universesConfig+="\nSources[nowhere]"
+props.universesConfig+="\n"+"Sources[nowhere]"
+1
 add(`/ Supernatural
 	/ Jarse
 		@Languages	!	Japanese
