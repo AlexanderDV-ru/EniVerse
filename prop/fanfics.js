@@ -542,7 +542,7 @@ add(`/HP and future know
 			9Разумные сущности
 				Дементоры, патронусы, призраки !#Они разумны; могут хранить, передавать, обрабатывать инфу; производить сложные действия; работать по плану. Дементоры сотрудничают с теми, кто дает жертву, а патронусы используют добровольно отданную магию хозяина. Патронус человека всегда 1, если он делится на несколько частей передающих сообщение он все еще лишь 1. Когда патронус не вызван, он в состоянии "споры" в ядре человека, при смерти владельца патронус остается в ядре, если уничтожить ядро - патронус тоже будет уничтожен`)
 1
-add(`/Myverse
+add(`Myverse	/verse
 	Actions
 	Creatures
 	Dimensions
@@ -554,6 +554,97 @@ add(`/Myverse
 	Forms
 	Locations
 	Misc
+		ficparts
+			Verses
+			Events
+			Persons
+			Objects
+			Actions
+			Spells
+			Ranks
+			Locations
+			Forms
+			Dimensions
+			Elements
+			Creatures
+		ficparts2
+			Events
+			World
+			Mechanics
+			Objects and Creatures
+			Persons and Organizations
+		system Material
+			Physics
+				Matteral
+					Mechanics
+					Hydraulics
+					Pneumatics
+				Electronics
+				Magnetics
+				Optics
+			Energics
+				[Energies]
+			Biotics
+				Neurons
+			Chemics
+			Informatics
+		Spectres
+			Informatic
+			Energetic
+				[Energies]
+			Auric
+				Clear
+				Electric
+				Electromagnetic
+				Magnetic
+				Acoustic
+				Pressure
+				Vibration
+				Matteric
+			Biotic
+			Bioelectric
+			Electic
+			Electromagnatic
+				Various Electrizity
+				Broadcast band
+				Radio
+				Nuclear magnetic resonance
+				TV
+				Radar
+				Microwaves
+				Infrared
+				Thermal
+				Visible Light
+				Ultraviolet
+				Ionizing radiation
+					Ionizing Ultraviolet
+					X-rays
+					Gamma-rays
+					Space gamma-rays
+			Ionizing radiation
+				Epsilon
+				Delta
+				Beta
+				Alpha
+			Magnetic
+			Aura-magnetic
+			Aura-electromagnetic
+			Aura-acoustic
+			Acoustic
+				Ultrasound
+				Hearing Sound
+				Infrasound
+			Pressure
+			Vibration
+			Kinetic
+			Matter
+			Smell
+			Chem
+			Gravity
+			Space
+			Life
+			Death
+			Soul
 	Objects
 	Persons
 	Ranks
