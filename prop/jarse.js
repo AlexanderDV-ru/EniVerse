@@ -1183,7 +1183,7 @@ add(`/A Certain Magical Index
 						Teleport
 							%Needs
 								Touch
-									@Sirai Kuruku
+									@Sirai Kuroku
 								Look
 									@Awaki
 				%l5.0

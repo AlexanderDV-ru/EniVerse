@@ -1,486 +1,219 @@
-props.universesConfig+="\n"+"Eniverse[nowhere]"
-1
-add(`/Doctor Who`)
-1
-add(`/Final Fantasy`)
-1
-add(`/Gamelit
-	Actions
-		%r-6
-			gm	!=	Gamer's System`)
-1
-add(`/Gameworld
-	Actions
-		%r-6
-			gm	!=	Gamer's System`)
-1
-add(`/Ghost Busters
-	@Sources
-		Supernatural
-			Serial
-				Ghost Busters
-	Objects
-		%Artefacts
-			%r-4
-				%Ghost traps
-	Creatures
-		%r-4
-			%Ghost`)
-1
-add(`/Gravity Falls
-	@Sources
-		Supernatural
-			Mults
-				Gravity Falls
-	Objects
-		%Artefacts
-			%r-4
-				%Diaries
-					@Stanford
-					1
-					2
-					3
-		%r-5
-			%Anomaly
-				Sizing Lamp
-	Creatures
-		%Mind
-			%r-6
-				%Demon
-					Bill Cipher`)
-1
-add(`/Marvel
-	@Sources
-		Supernatural
-			Verse
-				Marvel
-	Verse
-		@Type
-			Multsi
-		Original
-	Persons
-		%r-5
-			%X-Man
-				Ksavier
-				Logan
-			%Human
-				Entony Stark
-				Govard Stark
-			%Zen-Hoberis
-			%Klyntar
-			%Kree
-			%Inhuman
-			%Chitauri
-			%Flora Koloss
-			%Titan_1
-	Energies
-		%r-5
-			+5	!=	Magical?
-	Features
-		%r-5
-			X-Man
-				Action
-					Mental
-						Telepathy
-							@Ksavier
-					Regen
-						Cell
-							@Logan
-	Materials
-		%Metals
-			Vibranium
-			Adamantium
-	Organizations
-		Stark
-			@Entony Stark
-		X-Man
-			@Ksavier
-	Objects
-		%Artefacts
-			%r-4
-				%Tech
-					%Stark's
-						%Iron Man suits
-							mark7
-						%Thermonuclear Reactor
-				Cerebro
-			%r-7
-				%Gems
-					%Infinity
-						Space
-						Soul
-						Reality
-						Time
-						Power
-						Mind
-			%r-6
-				%Loki's
-					Sceptre
-				%Thor's
-					Mjolnir`)
-1
-add(`/Men in black
-	@Sources
-		Supernatural
-			Films
-				Men in black`)
-1
-add(`/Phineas and Ferb
-	@Sources
-		Supernatural
-			Mults
-				Phineas and Ferb`)
-1
-add(`/Earth
-	Verse
-		Earth
-			@Original
-	Worlds
-		Earth
-			@Original
-			-5000x
-			-4000x
-			-3000x
-			-2000x
-			-1000x
-			+0000x
-			+0100x
-			+0200x
-			+0300x
-			+0400x
-			+0500x
-			+0600x
-			+0700x
-			+0800x
-			+0900x
-			+1000x
-			+1100x
-			+1200x
-			+1300x
-			+1400x
-			+1500x
-			+1600x
-			+1700x
-			+1800x
-			+1900x
-			+1910x
-			+1920x
-			+1930x
-			+1940x
-			+1950x
-			+1960x
-			+1970x
-			+1980x
-			+1990x
-			+2000x
-			+2010x
-			+2020x
-	Objects
-		%Elixirs
-			%r-4
-				%Toxins
-				%Radioactive
-				%Narcotics
-				%Bacteria
-				%Virus
-		%Artefacts
-			%r-4
-				%Weapon
-					%Guns
-						%Automates
-						%Pistols
-					%Explosive
-					%Nuclear
-					%Tank
-				%Vehicle
-					%Car
-					%Plane
-					%Helicopter
-					%Train
-					%Ship
-				%Drone
-					%Quadrocopter
-				%Videocamera
-				%Display
-				%Microphone
-				%Dinamic
-				%Rockets
-				%Computer
-				%Telephone
-	Actions
-		%r-4
-			Granade by post
-			%Bioweapon`)
-1
-add(`/Rick and Morty
-	@Sources
-		Supernatural
-			Mults
-				Rick and Morty
-	Objects
-		%Artefacts
-			%r-5
-				%Portal Gun
-	Verse
-		@Type
-			Multsi
-		Original`)
-1
-add(`/SCP Foundation
-	@Sources
-		Supernatural
-			Article
-				SCP Foundation
-	Organizations	!=	g
-		SCP	!=	Secure Containt Protect
-	Objects
-		%Artefacts
-			%r-5
-				%SCP's`)
-1
-add(`/Sorcerers
-	@Sources
-		Supernatural
-			Films
-				Sorcerers`)
-1
-add(`/Spellbinder
-	@Sources
-		Supernatural
-			Serial
-				Spellbinder`)
-1
-add(`/World of Darkness
-	@Sources
-		Supernatural
-			?
-				World of Darkness`)
-1
-add(`/Startrack
-	@Sources
-		Supernatural
-			Serial
-				Startrack
-	Persons
-		%r-5
-			%Human
-			%Vulkan
-	Energies
-		%r-5
-			+4	!=	Psy?
-	Actions
-		%r-5
-			e+4	!=	Psyonic`)
-1
-add(`/Terminator
-	@Sources
-		Supernatural
-			Films
-				Terminator
-	Objects
-		%Artefacts
-			%r-5
-				%Tech
-					%Skynet's
-						%AI
-						%Drones
-						%Terminators
-							%1
-							%800
-							%850
-							%1000
-							%Ex
-						Time-Machine
-						%Cyborgs`)
-1
-add(`/Cat Leopold
-	@Sources
-		Supernatural
-			Mults
-				Cat Leopold
-	Objects
-		%Elixirs
-			%r-4
-				Ozverin`)
-1
-add(`/My Little Pony
-	@Sources
-		Supernatural
-			Mults
-				My Little Pony`)
-1
-add(`/Winks
-	@Sources
-		Supernatural
-			Mults
-				Winks`)
-1
-add(`/Avatar
-	@Sources
-		Supernatural
-			Mults
-				Avatar
-	Energies
-		%r-5
-			+5	!=	Mana?
-	Elements
-		%Basic
-			Fire
-			Water
-			Earth
-			Air
-	Directions
-		%Types
-			%Action
-				Heal
-	Features
-		%r-5
-			Mage
-				Fire
-				Water
-				Earth
-				Air
-			Avatar`)
-1
-add(`/Virworld`)
-1
-add(`/Lucifer
-	@Sources
-		Supernatural
-			Serial
-				Lucifer`)
-1
-add(`/Master and Margarita
-	@Sources
-		Supernatural
-			Books
-				Master and Margarita`)
-1
-add(`/Through the Looking-Glass
-	@Sources
-		Supernatural
-			Verse
-				Through the Looking-Glass`)
-1
-add(`/War and Peace
-	@Sources
-		Supernatural
-			Books
-				War and Peace`)
-1
-add(`/Twelve chairs
-	@Sources
-		Supernatural
-			Verse
-				Twelve chairs`)
-1
-add(`/Green Mile
-	@Sources
-		Supernatural
-			Verse
-				Green Mile`)
-1
-add(`/The Shawshank Redemption
-	@Sources
-		Supernatural
-			Verse
-				The Shawshank Redemption`)
-1
-add(`/Solaris
-	@Sources
-		Supernatural
-			Books
-				Solaris`)
-1
-add(`/Atlas Shrugged
-	@Sources
-		Supernatural
-			Books
-				Atlas Shrugged`)
-1
-add(`/Game of Thrones
-	@Sources
-		Supernatural
-			Verse
-				Game of Thrones`)
-1
-add(`/Sticks
-	@Sources
-		Supernatural
-			Books
-				Sticks`)
-1
-add(`/Cthulhu Mythos
-	@Sources
-		Supernatural
-			Books
-				Cthulhu Mythos`)
-1
-add(`/Battle Royale
-	@Sources
-		Supernatural
-			Jarse
-				Battle Royale`)
-1
-add(`/Hunger Games
-	@Sources
-		Supernatural
-			Verse
-				Hunger Games`)
-1
-add(`?/Pandora Box
-	@Sources
-		Supernatural
-			Jarse
-				?`)
-1
-add(`/Megamind
-	@Sources
-		Supernatural
-			Films
-				Megamind`)
-1
-add(`/Matrix
-	@Sources
-		Supernatural
-			Films
-				Matrix`)
-1
-add(`/Fifth Element`)
-1
-add(`/trassa 60`)
-1
-add(`/Love Death Robots
-	@Sources
-		Supernatural
-			Serial
-				Love Death Robots`)
-1
-add(`/Black Mirror
-	@Sources
-		Supernatural
-			Serial
-				Black Mirror`)
-1
-add(`/Memnoh The Devil
-	@Sources
-		Supernatural
-			Books
-				Memnoh The Devil`)
-1
-add(`/Labirint Favna`)
-1
-add(`/Persi Jackson`)
-1
-add(`/Star Dust`)
-1
-add(`/Home of strange kid ms peregrin`)
-1
-add(`/Infinity Story`)
-1
-add(`/Collectioner`)
-1
-add(`/Molchaniye Yagnyat`)
-1
-add(`/Wizard Parents`)
-1
+props.universesConfig+="\n"+`Eniverse[nowhere]
+	Structure
+		Abilities
+			#Ability is one Technique.
+			Complexes
+			Skills
+		Creatures
+			#Entities, races
+		Dimensions
+		Elements
+		Features
+			#Feature of one or any other amount of entities. Can be used how many abilities and one ability can be created by many features
+			#Feature is princip
+		Inheritance
+		Knowledges
+			#System of knowledge, classification, levels
+		Locations
+			#Locations, worlds, other
+		Misc
+		Objects
+		Persons
+			#Characters
+		Structures
+			#Organizations, civilizations
+	Potteriana
+		Structures
+			Magical Britain
+				Ministry of Magic
+					Mysteries Department
+		Features
+			Magic
+				Spells
+	HPMoR
+		Inheritance
+			Potteriana
+		Objects
+			%Artefacts
+				%r-5
+					%Quotes Quills
+					Moody's Eye[u]
+					Philosopher's Stone[u]
+					Mirror of Erised[u]
+				%r-6
+					%Time-Turners	!=6 hours max, with many turners too
+					Moody's Eye	!=Eye of Vance
+					Left Leg of Vance
+					Philosopher's Stone	!=Stone of Materialization
+					Mirror of Erised	!=Mirror of Atlants
+		Features
+			Magic
+				Spells
+					reducto (canon)	Reductor Curse	Destroy solid objects
+					az-reth	Fiendfyre	Corporeal cursed fire with high destructive power
+					aguamenti (canon)	Water-Making Spell	Conjures clean, drinkable water from the end of the wand
+					nullus confundio		Counter-spell for the Confundus
+					prismatis		Shield
+					ventus (canon)	Ventus Jinx	Shoots a jet of wind
+					polyfluis reverso		Reverse the effects of Polyjuice
+					homenum revelio (canon)		Reveals human presence
+					inflammare		Set fire to sth.
+					quiescus		Prevent the target from sneezing
+					Anti-Anti-Gravity Jinx	Part of Azkaban's wards. Disables all flying spells whose enchantment have not been cast with a specific passphrase.
+					expecto patronum	Patronus (incl. True Patronus)	Protection against dementors (most notably)
+					Abi-Dalzim’s Horrid Wilting	Draw moisture from living beings within range
+					veritas oculum		Can be used to check e.g. if an animal is an animagus in their animal form
+					elmekia		Blue hex
+					alienis nervus mobile lignum		Body-control spell
+					confundo (canon)	Confundus	Causes confusion in the target
+					scourgify (canon)	Scouring Charm	Cleaning spell
+					luminos		Hex. Red bolt of light.
+					densaugeo (canon)		Hex. Enlarges teeth.
+					jellyfy		Invisible wide-beam jinx that makes the target's legs weak. Canon counterpart: locomotor wibbly.
+					legilimens (canon)		Legilimency (canon) i.e. mind reading
+					episkey (canon)		Healing spell
+					False-Memory Charm (canon)	Memory charm that plants a memory in the target's mind
+					Enchantment of the Endless Stair	Maybe the enchantment used as the entrance to Hogwarts's headmaster office, although its invention is credited to Arram Sabeti in 1733
+					Sparkling Jinx	Make the target sparkly
+					glisseo (canon)		Makes a surface slippery
+					fuego		Likely produces acid or fire[4]
+					obliviate (canon)	Obliviation, Memory Charm	Make the target forget a memory
+					Boundary Charm	Enclosing spell
+					cluthe		Hex that gives acute cramps
+					stuporfy	Swerving Stunner
+					tonare, ravum calvaria, lucis gladius	Most Ancient Blade
+					Undetectable Extension Charm (canon)
+					ventriliquo	Ventriloquism Charm
+					stupefy (canon)	Stunning Hex,[7] Stunner
+					sonorus (canon)	Amplifying Charm
+					somnium	Sleep Hex
+					silencio (canon)	Silencing Charm
+					Road-Running Charm
+					Retrieval Charm
+					requiescus
+					quietus (canon)	Quietening Charm
+					protego maximus (canon)
+					protego (canon)	Shield Charm
+					ma-ha-su	Sumerian Simple Strike Hex
+					lumos (canon)	Wand-Lighting Charm
+					lagann	Breaking Drill Hex
+					innervate (canon)	Reviving Spell[6]
+					incendium
+					incendio (canon)	Fire-Making Spell
+					imperio (canon)	Imperius
+					frigideiro	Chilling Charm[3]
+					flipendo (canon)	Knockback Jinx
+					Flame-Freezing Charm (canon)
+					finite incantatem (canon)	General Counter-Spell
+					expelliarmus (canon)	Disarming Charm
+					everto	Disposal Charm
+					Continual Light enchantment	(or Perpetual Light Charm) Make an object continually emit light
+					Air-Freshening Charm	(or Fresh-Air Charm[1])
+					inferius (canon)	Inferius	"Zombie"-making
+					wingardium leviosa (canon)	Hover Charm[8]
+					accio (canon)	Summoning Charm
+					alohomora (canon)	Unlocking Charm
+					avada kedavra (canon)	Killing Curse
+					Blood Fort sacrifice
+					Bludgeoning Hex
+					colloportus (canon)	Locking Spell
+					contego	Simple Shield
+					diffindo (canon)	Severing Charm
+					prior incantato (canon)		Show the last spell cast by a wand
+					vitalis revelio		Show if a body is alive by surrounding it by a red glow
+					gom jabbar		Slow-torture hex
+					impedimenta (canon)	Impediment Jinx	Slows the target
+					deligitor prodeas		Summon Hogwarts' Sorting Hat
+					crucio (canon)	Cruciatus	Torture curse
+					eunoe		Restore a memory that has been locked away
+					oogely boogely		Produce a small green-glowing bat
+					steleus (canon)		Wide-angle sneezing hex
+					thermos		Warm up sth.
+					dulak		Turn off a light (e.g. a Continual Light enchantment)
+					hyakuju montauk		Undescribed curse so horrible that it is known to threaten the caster's sanity.[5]
+		Abilities
+			Complexes
+				27 spells for important topic talk
+					@Anti-Time-Turner
+					@Anti-Apparation
+		Creatures
+			%Mind
+				%r-5
+					%Human
+						%l0.0
+							Petunia Dursley	!=Petunia Evans-Verres
+						%l3.0
+							Harry Potter	!=Harry James Potter-Evans-Verres
+						%l5.0
+							Voldemort	!=Tom Morphin Riddle
+	Significant Digits
+		Inheritance
+			HPMoR
+		Features
+			Magic
+				Spells
+						Obliteration Charm (canon)
+					muffliato (canon)
+						Lesser Action of Shahryar’s Delay
+					orbis (canon)	Orbis Jinx
+						Protean Charm (canon)
+					phlogisticate (canon)	Extinguishing Charm
+						Bertram’s Bolt	Bolt of dull yellow light
+					anapneo (canon)		Clear someone's airway
+						Rune of Abatement	Can be used to deflect a hex such as a Stunner
+					glacius (canon)	Freezing Spell
+					aggragify		Bewitching spell
+						Gathering Charm
+						Bloodfoot Curse	"Big red curse", "sickening purplish glow"
+						Unbreakable Charm (canon)
+						Substantiation Charm
+					tarantallegra (canon)	Dancing Feet Spell
+						Umbrella Barrier Bauble Charm
+					revelio (canon)	Revelation Charm
+					incarcerous (canon)
+					immobulus (canon)	Freezing Charm
+						Butter-ball Charm	(or Butterball Charm) Turn a solid liquid[2]
+					spongify (canon)	Softening Charm
+						Slow Blade of Unusually Specific Destruction
+						Hippo’s Fire	Undescribed dark curse
+					aplaniodin		Two dozen yellow light beams that hit like bludgers (canon)
+					alogofoti		Teleportation via horse or chariot of fire
+						Azarian Fire	Ward of blue or purplish fire
+					inflagrate		Undescribed weak curse or hex used against muggles during the Battle of Hogwarts
+					drysdory		Dark wooden pole/spear repeatedly erupting from the caster's wand
+					geminio (canon)	Doubling Charm and Gemino Curse	Duplicate an object (Doubling Charm) or make it replicate exponentially (the number of new copies created at step n is the nth Fibonacci numberW) and indefinitely (Gemino Curse)
+					verdimillious (canon)	Verdimillious Charm	Emit green sparks from the wand
+					cataplasma		Healing spell
+					amandher penkue	Babylonian Garden ritual	Instantly make 2 clones of oneself while sacrificing one of one's eyes
+						Thoughtsay Ritual	Make a disembodied mind able to produce speech
+						Charm of Perfect Function	Make a non-magic machine or device work as intended without fail for the duration of the spell
+					protego totalum (canon)
+					colloshoo (canon)	Stickfast Hex
+					bullesco (canon)	Bubblehead Charm
+						Anti-Disillusionment Charm
+					arresto momentum (canon)	Slowing Charm
+					aqua eructo (canon)
+					deprimo (canon)
+					depulso (canon)	Banishing Charm
+					confringo (canon)	Blasting Curse
+						Cutting Curse (canon)
+					evanesco (canon)	Vanishing Spell
+						Hontheim Curse	Undescribed dark curse
+						Simpleshape Charm	Shape some material into a specific shape, e.g., a piece of metal into a knife
+						Bartolomeo’s Reckoning	Shield of red mist
+					cave inimicum (canon)		Shield that hides the caster
+						Inspection Charm	Shows the insides of an object or living being.
+						Braking Charm (canon)	Standard broomstick charm
+					waddiwassi		Send the target up in the air. Similar to depulso.
+					aparecium (canon)	Revealing Charm	Reveal hidden markings
+						Roger’s Shield	Multicolored disc of light
+					egeustimentis	Lethe Touch	Mind-reading and mind-control spell
+					brackium emendo (canon)		Mend broken bones
+	GWSI
+		Inheritance
+			HPMoR
+		Features
+			Magic
+				Spells
+					"sapespeck"	Sapespeck	!#Charm	Create a parseltongue-talking "node" that activates on a specified condition
+				`

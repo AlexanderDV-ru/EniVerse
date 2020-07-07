@@ -1987,56 +1987,7 @@ add(`/HPMoR
 				HPMoR
 	Verse
 		Potteriana
-	Objects
-		%Artefacts
-			%r-5
-				%Quotes Quills
-				Moody's Eye[u]
-				Philosopher's Stone[u]
-				Mirror of Erised[u]
-			%r-6
-				%Time-Turners	!=6 hours max, with many turners too
-				Moody's Eye	!=Eye of Vance
-				Left Leg of Vance
-				Philosopher's Stone	!=Stone of Materialization
-				Mirror of Erised	!=Mirror of Atlants
-	Actions
-		%Advances
-			Patronus 2.0
-			Avadakedavra 2.0
-			Dementor control
-			Partial TransFormsation
-		%r-5
-			%Action
-				%Atack
-					%Shieldbreacker
-						"lagan"	!#Shield breaker
-					"stupofy"	!#AutoAim stupefy
-					"luminos"	!#Lumination hex
-					"mahasu"	!#Sumer simple hit
-					Momental Sleep	!="somnium-"	!#Sleep, weak battle magic
-				%Protection
-					"prizmatis"	!#Prizmatic shield
-					"defendo"	!#Weak shield
-					Anti-Time-Turner
-					Anti-Transgrassion
-				%Vampire
-					Ritual Blood Citadel?
-	Complexes
-		27 spells for important topic talk
-			@Anti-Time-Turner
-			@Anti-Apparation
-			...
-	Creatures
-		%Mind
-			%r-5
-				%Human
-					%l0.0
-						Petunia Dursley	!=Petunia Evans-Verres
-					%l3.0
-						Harry Potter	!=Harry James Potter-Evans-Verres
-					%l5.0
-						Voldemort	!=Tom Morphin Riddle`)
+`)
 1
 add(`/Life of Archmage Potter
 	@Sources
