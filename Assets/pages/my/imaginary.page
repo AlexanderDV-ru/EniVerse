@@ -1,4 +1,7 @@
+name="Imaginary"
+verse=toaru
+parent=dimension
 text
 	"Part of world that can be [[neutralization|neutralized]] by [[imagine_breaker]]"
 	"All [[ether]] is part of it, excepts [[body]]"
-	"Descripting by Imaginary Numbers"
+	"Descripting by [[imaginary]] [[number|numbers]]"

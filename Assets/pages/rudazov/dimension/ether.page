@@ -1,8 +1,10 @@
+name="Ether"
 verse=rudazov
+parent=force
 reference
-	cold
-	hot
-	dense
-	soft
-	pure
-	first
+	coldether
+	hotether
+	densether
+	softether
+	purether
+	firstether

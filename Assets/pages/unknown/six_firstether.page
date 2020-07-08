@@ -1,0 +1,12 @@
+name="Six Firstether"
+parent=firstether
+verse=unknown
+text
+	"Extension of [[firstether]] with six and not two types"
+need
+	darkether
+	lightether
+	deathether
+	lifether
+	chaosether
+	orderether

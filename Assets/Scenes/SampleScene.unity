@@ -1028,21 +1028,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assetsPath: Assets/
   pagesPath: pages/
-  pagePath: 
-  pageExtension: .page
-  pageName: new_page
   pageVerse: new_verse
-  pageParent: 22
-  custom: 
+  pagePath: 
+  pageName: new_page
+  pageExtension: .page
+  pageParent: 
   create: 0
   index: 0
   field: {fileID: 743796394}
   openedName: {fileID: 1893058498}
   maxIters: 4096
-  parentEquals: parent=
+  equals: =
   pagesHistory: []
   doubleClickTime: 0.5
-  pageNameSymbols: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_
+  pageNameSymbols: abcdefghijklmnopqrstuvwxyz_
   pageNameIgnoreCase: 1
 --- !u!4 &1211550216
 Transform:

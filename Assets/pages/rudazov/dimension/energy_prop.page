@@ -1,0 +1,6 @@
+name="Property of Level of Energy"
+	"Energy Level"
+verse=rudazov
+parent=dimension
+text
+	"One of basic properties of reality, like [[reality_prop]] and [[info_prop]]"

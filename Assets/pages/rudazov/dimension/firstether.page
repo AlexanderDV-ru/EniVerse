@@ -1,0 +1,6 @@
+name="firstether"
+parent=ether
+verse=rudazov
+need
+	darkether
+	lightether

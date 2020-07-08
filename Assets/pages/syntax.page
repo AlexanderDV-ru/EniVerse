@@ -1,3 +1,4 @@
+parent=none
 "" - quotes, used to make something string, not reference
 \ - ekraning symbol
 [[]] - reference in string

@@ -1,4 +1,7 @@
 name="Supernatural Magic"
-"Exists only in energetic/soul level"
-"Really is [[imagine]]"
-	"Can be [[neutralization|neutralized]] by [[imagine_breaker]]"
+verse=rudazov
+parent=feature
+text
+	"Exists only in energetic/soul level"
+	"Really is [[imaginary]]"
+		"Can be [[neutralization|neutralized]] by [[imagine_breaker]]"

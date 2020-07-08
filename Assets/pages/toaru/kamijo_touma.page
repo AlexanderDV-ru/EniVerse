@@ -1,6 +1,6 @@
 name="Kamijo Touma"
-parent=person
+parent=esper
 feature
 	imagine_breaker
-	esper
-		level=0
+	esper_feature
+		esper_level=0

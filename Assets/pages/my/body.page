@@ -1,3 +1,5 @@
 name="Body"
+parent=object
+verse=my
 text
-	"It can be any shell, but it needs to be main, material"
+	"It can be any shell, but it must be main and material"

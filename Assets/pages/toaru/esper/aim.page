@@ -5,3 +5,13 @@ name="AIM-field"
 		romaji="Mujikaku"
 		"lit. No Awareness"
 verse=toaru
+parent=force
+text
+	"Field of [[personal_reality]] there [[esper]] can use his [[personal_force]] by [[personal_laws]]. It field make esper how a [[god]] inside field"
+need
+	personal_reality
+	personal_force
+	personal_laws
+reference
+	esper
+	god

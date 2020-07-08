@@ -10,7 +10,7 @@ name="Accelerator"
 		"Number One"
 		"The Strongest"
 		"The Main Plan"
-parent=person
+parent=esper
 verse=toaru
-feature=accelerator
+feature=accelerator_feature
 	level=5.5
