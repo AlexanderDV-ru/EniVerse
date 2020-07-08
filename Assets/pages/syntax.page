@@ -1,0 +1,7 @@
+"" - quotes, used to make something string, not reference
+\ - ekraning symbol
+[[]] - reference in string
+() - multiline
+\t - wrapping indicator
+\n - new line
+any simple word is reference to page, except this file

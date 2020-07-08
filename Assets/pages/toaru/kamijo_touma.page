@@ -1,0 +1,6 @@
+name="Kamijo Touma"
+parent=person
+feature
+	imagine_breaker
+	esper
+		level=0

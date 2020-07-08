@@ -1,0 +1,4 @@
+parent=page
+text
+	"Parent page of other page, can be any count."
+	"Is a reference, don't overwrite any"

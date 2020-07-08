@@ -1,0 +1,6 @@
+name="Bad Choice"
+	russian
+		kyrillic="Неудачный выбор"
+		translyt="Neudachnyy vybor"
+		translyt1="Neudachniy vibor"
+parent=verse

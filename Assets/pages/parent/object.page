@@ -1,0 +1,3 @@
+parent=type
+text
+	"Any movable or not-hollow object of verse (not-location), that is not an ability or feature, don't have mind and isn't alive"

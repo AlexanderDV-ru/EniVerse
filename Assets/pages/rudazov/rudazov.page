@@ -1,0 +1,39 @@
+name="Rudazov-verse"
+	"Metaverse of Rudazov"
+parent=verse
+dimension
+	metaverse
+		limbo
+		chaos
+		multiverse
+			multispace
+				8 axes
+			multitime
+			universe
+				space
+					normal
+						3 axes
+							x
+							y
+							z
+						galaxy
+							system
+								informational=world
+								matterional=planet
+					hyper
+						1 axis
+							w
+				time
+				matter
+					state
+						substance
+						energy
+						ether
+					property
+						info_prop
+						reality_prop
+						energy_prop
+					other
+						info
+						ether
+						material
