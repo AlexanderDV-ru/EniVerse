@@ -1,0 +1,21 @@
+name="my forces"
+parent=text
+verse=my
+reference
+	bahion_prana=-7
+	root_prana=-6
+	magic_prana=-5
+	psy_prana=-4
+	ema_prana=-3
+	spirit_prana=-2
+	prana=-1
+	personal_force=0
+	ki=+1
+	reatsu=+2
+	ema=+3
+	psy=+4
+	mana=+5
+	root=+6
+	bahion=+7
+	chakra=body_force+soul_force
+	aura=?

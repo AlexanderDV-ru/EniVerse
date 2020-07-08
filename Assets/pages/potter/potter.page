@@ -1,0 +1,5 @@
+name="Potter"
+	official="Potteriana"
+	"Harry Potter World"
+parent=verse
+verse=potter
