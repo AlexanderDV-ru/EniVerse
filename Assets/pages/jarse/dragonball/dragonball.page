@@ -1,0 +1,10 @@
+name="dragonball"
+parent=verse
+verse=dragonball
+energies
+	%r-5
+		+1!=ki?
+objects
+	%artefacts
+		%r-6
+			%dragon_balls

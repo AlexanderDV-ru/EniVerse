@@ -1,0 +1,30 @@
+name="Death Note"
+	japanese
+		romaji="desu notu"
+parent=verse
+verse=death_note
+source
+	manga
+		death_note_manga
+		death_note_spinoff_manga
+	anime
+		death_note_anime
+objects
+	%artefacts
+		%r-7
+			%death_notes
+features
+	%r-7
+		death_note!=shinigami
+creatures
+	%mind
+		%r-7
+			%human
+				%l0.0
+					yagami_light
+					l_lawliet
+					amane_misa
+			%shinigami
+				ryuk
+				rem
+				death_king

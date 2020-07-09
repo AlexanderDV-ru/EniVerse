@@ -1,0 +1,236 @@
+name="Toaru"
+	english
+		"A Certain Magical Index"
+		"A Certain Scientific Railgun"
+		"A Certain Scientific Accelerator"
+		"Index Of Magic"
+		"Magical Index"
+		"Raildex"
+		"A Certain"
+	japanese
+		romaji
+			"Toaru Majutsu no Index"
+			"Toaru Kagaku no Railgun"
+			"Toaru Kagaku no Accelerator"
+			"Toaru"
+			"Raildex"
+	russian
+		cyrillic
+			"Некий Магический Индекс"
+			"Некий Научный Рейлган"
+			"Некий Научный Акселератор"
+			"Рэйлдекс"
+			"Индекс Магии"
+			"Магический Индекс"
+			"Индекс Волшебства"
+parent=verse
+verse=toaru
+source
+	ranobe
+		toaru_majutsu_no_index_ranobe
+			toaru_majutsu_no_index_old_testament_ranobe
+			toaru_majutsu_no_index_new_testament_ranobe
+			toaru_majutsu_no_index_genesis_testament_ranobe
+	anime
+		toaru_majutsu_no_index_anime
+			toaru_majutsu_no_index_i_anime
+			toaru_majutsu_no_index_ii_anime
+			toaru_majutsu_no_index_iii_anime
+		toaru_kagaku_no_railgun_anime
+			toaru_kagaku_no_railgun_i_anime
+			toaru_kagaku_no_railgun_s_anime
+			toaru_kagaku_no_railgun_t_anime
+	manga
+		toaru_kagaku_no_railgun_manga
+worlds
+	earth
+energies
+	%r-5
+		+5!=mana
+	%r-6/7
+		tl!=telesma?
+shells
+	aimf!=aim-field
+organizations
+	necessarius
+	church
+		pravoslav
+		catolic
+		anglican
+	academ-city
+levels
+	0.0=zero-esper!#,_don't_have_ability
+	1.0=weak!#_esper,_can_destroy_1_cube_meter
+	2.0=simple!#_esper,_can_destroy_room
+	3.0=normal!#_esper,_can_destroy_house
+	4.0=strong!#_esper,_can_destroy_town
+	5.0=very_strong!#_esper,_can_destroy_country
+	5.5=sub-angel(immortal)!#esper,_can_destroy_continent
+	6.0=insane,_angel(immortal)!#_power_of_esper,_can_destroy_planet's_surface;_not_exist
+directions
+	%languages
+		ritual
+		rune
+		spell
+	%types
+		%object
+			enchanted
+features
+	%r-5
+		e+4!=esper
+			%l1.0
+			%l2.0
+			%l3.0
+			%l4.0
+				%action
+					teleport
+						%needs
+							touch
+								@sirai_kuroku
+							look
+								@awaki
+			%l5.0
+				%misc
+					super_strength
+						@rank_seven
+							@rank!7
+					6
+						@rank_six
+							@rank!6
+					%mental
+						%control
+							@mentalout
+								@rank!5
+				%elements
+					%misc
+						plasma
+							@meltdowner
+								@rank!4
+			%l5.5
+				%elements
+					%misc
+						electromagnetism
+							@railgun
+								@rank!3
+						ether!=dark_matter
+							@darkmatter
+								@rank!2
+					motion
+						direction
+							%using
+								stock
+									cold
+									hot
+									fire
+									ice
+									fly
+									jump
+									reflection
+									paring
+									stop
+									acceleration
+									wave
+									electrizity
+									water
+									earth
+									resonance
+									air
+									disassembling
+									assembling
+								misc
+									zero-gravity
+									zero-friquency
+									blood_redirection
+									bio_electrizity_change
+									rotation
+									redirection
+									brain_control
+									muscle_control
+									marionette_control
+								plus
+									invisibility
+									quiet
+									spectr_change
+									shunshin
+									explosion
+									laser
+									material_illusion
+										illusor_metamorph
+									light
+										gen
+										holo
+											other
+											henge
+									sound
+										gen
+										syntes
+								max
+									teleport
+										auto
+										other
+									inventory
+							@accelerator
+								@rank!1
+								%needs
+									touch
+		e+5!=mage
+			index
+				@index
+			@styl_magnus
+	%r-6
+		angel_0
+		imagine_breaker
+			@kamijo_touma
+				%needs
+					touch
+	%r-7
+		e+7!=god_?
+actions
+	%r-5
+		%action
+			protection
+				vector
+					@accelerator
+objects
+	%artefacts
+		%r-5
+			%grimoires
+				%forbidden_index's
+			cross?
+			sword_of_space?
+creatures
+	%mind
+		%r-5
+			%human
+				%l0.0
+					kamijo_touma
+				%l4.0
+					sirai_kuroku
+					kongo_mitsuko
+					styl_magnus
+					index
+				%l5.0
+					rank_seven!=sogiita_gunha
+						@rank
+							7
+					rank_six!=aihana_etsu
+						@rank
+							6
+					mentalout!=shokuhou_misaki
+						@rank
+							5
+					meltdowner!=mugino_sizuri
+						@rank
+							4
+				%l5.5
+					railgun!=misaka_mikoto
+						@rank
+							3
+					darkmatter!=kakine_teitoku
+						@rank
+							2
+					accelerator
+						@rank
+							1
+				%l6.0
+					alister_crowley

@@ -1,0 +1,245 @@
+name="Bad Choice"
+	russian
+		kyrillic="Неудачный выбор"
+		translyt="Neudachnyy vybor"
+		translyt1="Neudachniy vibor"
+parent=verse
+happening
+	a/ General
+		Hapsiel is unnaming and Scary
+	a/ Naruto
+	a/ Potteriana
+		/ Demon
+		/ Naruto
+		/ HP and Magic Wand
+			%Notes
+				Glowing Vampire Snape
+				Poison from Snape in breakfast
+					how exam or not
+				Zikkurat for Quidditch
+				Cursed things
+				Accio is Scary
+				To remove hurt from broomstick wizards use protection
+				Quirrell takes stone in Snape look
+creatures
+	%mind
+		%r-5
+			%human
+			%elv
+			%unknown_evil_crap
+			%goblin_2
+energies
+	%r-5
+		-5!=mrana?
+		-4!=psy?
+		-3!=ema?
+		-2!=spirita?
+		-1!=prana
+		+0!=force
+		+1!=ki
+		+2!=reatsu
+		+3!=emana
+		+4!=esperi
+		+5!=mana
+		+1+2!=ki+reatsu
+		+3+5!=emana+mana
+	%r-6
+		+7!=ba-hion
+objects
+	%elixirs
+		%hooch
+			%energies
+			%elements
+				%basic
+					fire
+					water
+					earth
+					air
+					electrizity
+					ice
+				%first
+					dark
+					light
+					death
+					life
+					chaos
+			%emotions
+				love
+				peace!=loveandpeace
+				anger
+				sad
+features
+	%r-5
+		e+1!=kiuser
+		e+2!=reatsuuser
+		e+4!=psyonic
+		e+5!=mage
+		e+1+2!=chakrauser
+	%r-6
+		dm!=demon_3
+		lm!=angel_0
+		gm!=gamer's_system
+			gamer	stanford
+			gamer	plus
+			gamer	t.-3000
+			cheater	standard
+			cheater	plus
+			hard
+			the_gamer
+	%r-7
+		e+7!=god_3
+	%r-0
+		e+7!=unknown_crap
+actions
+	%categories
+		pathos_hurt_ignoring
+		hapsiel_mode
+		kick_of_unknown_crap
+		unknown_artefatory
+		dark-shadow_tropy
+		%gm
+			inventory
+			gamer
+				body
+				mind
+			barrier
+				enter
+				out
+				create
+				destroy
+			soul
+				sealing
+	%r-5
+		%l5.0
+			@name
+				%mh
+					higher_circle
+			%elements
+				%basic
+					fire
+						uncontrolled!=armageddon
+					water
+						uncontrolled!=taifun
+					air
+						uncontrolled!=tornado?
+					earth
+						uncontrolled!=?
+features
+	%r-4
+		entity
+			%w+1!=undead
+		%w+1!=undead
+	%r-5
+		entity
+			%w+1!=undead
+		%w+1!=undead
+		vampire
+		werewolf
+objects
+	%artefacts
+		%r-5
+			%entity_stones|es
+			%soul_stones|ss
+		%r-7
+			%spheres
+				%skill-copy!#gold
+				%skill-izvlecheniya
+				%dark_skill-copy
+				%achievement-copy
+dimensions
+	n
+		12!=dark-shadow
+		11!=matteral
+		31!=astral
+		13!=mental
+elements
+	%basic
+		fire!=pyromancy
+		water!=hydromancy
+		earth!=geomancy
+		air!=airomancy
+		ice!=cryomancy
+		electrizity!=electromancy
+	%first
+		dark
+		light
+		chaos
+		death
+	%other
+		space
+		time
+	%misc
+		shadow
+creatures
+	%mind
+		%r-5
+			%human
+				%l5.0
+					yamada_toru
+		%r-6
+			%styopochkin
+				student_of_unknown_crap
+		%r-7
+			unknown_crap
+			tizitsh
+			chronos
+			player
+			hel
+			hapsiel
+worlds
+	leer
+		@original
+		paths!energy
+	earth
+		@sixth_department
+		@magical_rus
+		@kostyan
+	naruto
+		@unknown_crap
+	%types
+		elements
+			%basic
+				fire
+				water
+				air
+				earth
+				electrizity
+				ice
+			%first
+				dark
+				light
+			%misc
+				void
+inheritance
+	gamer_system
+	six_firstether
+	naruto
+	rising_shield_hero
+	diablo
+	toriko
+	marvel
+	hellsing
+	dark_souls
+	dc
+	warcraft
+	bleach
+	to_love_ru
+	fate
+	dragonball
+	skyrim
+	code_geass
+	toaru
+	sao
+	evangelion
+	fullmetal_alchemist
+	potter
+	one_piece
+	high_school_dxd
+	zero_no_tsukaima
+	fairy_tail
+	star_wars
+	sailor_moon
+	inuyasha
+	blue_exorcist
+	mob_psycho
+	ranma

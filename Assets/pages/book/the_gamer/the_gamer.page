@@ -1,0 +1,58 @@
+name="the_gamer"
+parent=verse
+verse=the_gamer
+features
+	%r-5
+		e+1!=kiuser
+		feature
+		e+5!=mage
+	%r-6
+		god_4
+		gm!=gamer's_system
+			the_gamer
+	dark_soul
+verse
+	@type
+		uni
+	original
+	@tags
+		gamelit
+elements
+	%basic
+		fire
+		water
+		air
+		earth
+directions
+	%types
+		%action
+			clairvoyance
+actions
+	%r-5
+		postup_@tshonbo
+		soul_heal_@yunhon
+		%action
+			%protection
+				mana!=mana_shield
+creatures
+	elemental
+	%mind
+		%r-5
+			%human
+				%l5.0
+					gamer!=han_jee_han
+					blood_witch!=lolicano_mistrim
+objects
+	%artefacts
+		%r-5
+			%broomsticks
+			%soul_stones_/_ss
+		%r-7
+			sword_dan
+			%divine
+				bereza
+				mirror
+				???
+organizations
+	bezdna
+		aukcion

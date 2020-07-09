@@ -1,0 +1,49 @@
+name="lord_of_rings"
+parent=verse
+verse=lord_of_rings
+dimensions
+	n
+		11!=body
+		21!=soul
+verse
+	lotr
+		@original
+	@type
+		uni
+worlds
+	arda
+		@original
+energies
+	%r-5
+		+5!=mana?
+features
+	%r-7
+		god_1
+		valar
+	%r-6
+		ainur
+	%r-5
+		mage
+		nazgul
+creatures
+	%mind
+		%r-5
+			%human
+			%elv
+			%gnome
+			%orc_3
+			%troll
+			%dragon
+			%balrog
+			%ent
+			%hobbit
+objects
+	%artefacts
+		%r-6
+			%rings
+				one_ring
+			%gems
+				silmarils
+materials
+	%metals
+		mithrill

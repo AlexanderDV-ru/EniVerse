@@ -1,0 +1,23 @@
+name="high_school_dxd"
+parent=verse
+verse=high_school_dxd
+creatures
+	%mind
+		%r-5
+			%human
+			%dragon
+objects
+	%artefacts
+		%r-6
+			%evil_pieces
+			%sacred_gear
+			%holy_swords
+features
+	%r-5
+		e+5!=mage?
+	%r-6
+		dm!=demon
+		lm!=angel_0
+		fm!=fallen
+	%r-7
+		e+7!=god_?

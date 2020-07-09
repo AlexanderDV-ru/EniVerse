@@ -1,0 +1,28 @@
+name="favourites"
+parent=verse
+author=mitsune_miyato
+verse=favourites
+happening
+	a/_Potteriana
+		v/_Before_Hog
+			s/_Kid
+				Посвящение_Смерти
+				Защитно_Поглощающая_руна
+		v/_3_Course
+			%DADA	!=Sirius
+verse
+	@type
+		meta
+	naruto
+	potteriana
+objects
+	%artefacts
+		%r-6
+			%time-turners!=reality_splitter,_awful_results_of
+creatures
+	%mind
+		%r-5
+			%human
+				%l5.0
+					harry_potter!=uzumaki_naruto
+					albus_dumbledore!=albus_persival_vulfric_brian_potter,dumbledore

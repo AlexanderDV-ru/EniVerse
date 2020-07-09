@@ -1,0 +1,67 @@
+name="zero_no_tsukaima"
+parent=verse
+verse=zero_no_tsukaima
+energies
+	%r-5
+		+3+5!=wizardy?
+elements
+	%basic
+		fire
+		water
+		air
+		earth
+	%misc
+		void
+directions
+	%languages
+		spell
+		rune
+		ritual
+	%types
+		%action
+			summon
+			alchemy
+		%object
+			elixir
+				potion
+	%creatures
+		animal
+			familiar
+objects
+	%elixirs
+		%potions
+			love
+	%artefacts
+		%r-5
+			%wands
+			%flying_ships
+			%rings
+				of_water
+				of_air
+features
+	%r-5
+		e+3+5!=wizard
+		gandalf
+		lifrasir
+		sidalf
+verse
+	@type
+		multi
+worlds
+	earth
+		+2000
+	other
+creatures
+	%mind
+		%r-5
+			%human
+			%elv
+			%changeling
+	%r-5
+		%wyvern
+		%salamander
+		%beholder
+features
+	%r-4
+		%w-1!=spirit
+			loa?

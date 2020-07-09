@@ -1,0 +1,6 @@
+name="macademy_wasshoi"
+parent=verse
+verse=macademy_wasshoi
+features
+	%r-5
+		e+5!=mage

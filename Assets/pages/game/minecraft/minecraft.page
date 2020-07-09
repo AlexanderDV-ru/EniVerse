@@ -1,0 +1,139 @@
+name="minecraft"
+parent=verse
+verse=minecraft
+dimensions
+	o
+		hell!=nether_world
+		end
+		normal!=over_world
+features
+	%r-4
+		%w-1!=spectator_mode
+	%r-6
+		%immortal!=godmode
+	%r-7
+		e+7!=creative_gamemode,_admin_perms
+creatures
+	%r-3
+		%pig
+		%cow
+		%horse
+		%rabbit
+		%sheep
+	%r-4
+		%w+1!=undead
+			%zombie
+			%skeleton
+				%normal
+				%wither
+		spider
+	%r-5
+		%dragon
+			%ender
+		%enderman
+		%creeper
+		%ifrit
+		%wither
+		%ghust
+objects
+	%artefacts
+		%r-5
+			%ender's
+				%eye
+				%egg
+				%perl
+materials
+	%metals
+		iron
+		gold
+		netherit
+	%powder
+		gun
+		fire
+		light
+		red
+		netherit
+		iron
+		gold
+	obsidian
+	bedrock
+	%gems
+		diamond
+		emerald
+		lapis_lazurit
+	coal
+	wood
+	stone
+	wool
+/immersive_engineering
+/minefactory
+/redpower
+/electrical_age
+/railcraft
+/reactorcraft
+/big_reactor
+/rotarycraft
+/thermal_expansion
+	materials
+		%metals
+			platina
+			silver
+/thaumcraft
+/bloodmagic
+/mekanism
+	materials
+		%metals
+			osmium
+		%alloy
+			steel
+/forestry
+	materials
+		apatite
+/industrialcraft
+	materials
+		%metals
+			iridium
+			silver
+			tin
+			copper
+			uranium
+			plutonium
+		matter
+	objects
+		%artefacts
+			%r-5
+				%armor
+					%quantum
+					%nano
+				%steelarms
+					%nanosaber
+				%weapon
+					%laser
+			%r-7
+				%developer_tool!=debug_tool,_adamant_rod
+/buildcraft
+/ender_io
+	objects
+		%artefacts
+			%r-5
+				%armor
+					%ender
+				%steelarms
+					%ender
+/gravisuite
+	objects
+		%artefacts
+			%r-5
+				%armor
+					%gravi-chestplate
+				%steelarms
+					%vajra
+/gregtech
+/terrafirmacraft
+/applied_energistics
+	objects
+		%artefacts
+			%r-5
+				%appeng
+					%monitors
+					%autocrafts

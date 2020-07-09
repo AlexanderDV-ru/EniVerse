@@ -1,0 +1,18 @@
+name="path_to_top"
+parent=verse
+verse=path_to_top
+verse
+	@type
+		meta
+	rudazov
+	original
+actions
+	%r-5
+		%l5.0
+			@name
+				@mh
+					godhands
+			%elements
+				%add
+					plasma
+						uncontrolled!=hors

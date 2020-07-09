@@ -1,0 +1,14 @@
+name="mob_psycho"
+parent=verse
+verse=mob_psycho
+creatures
+	%mind
+		%r-5
+			%human
+				%l0.0
+					mob's_teacher
+				%l5.0
+					mob
+energies
+	%r-5
+		+4!=psy?

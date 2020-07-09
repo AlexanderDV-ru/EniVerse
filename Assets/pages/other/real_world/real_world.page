@@ -1,0 +1,81 @@
+name="Real World"
+parent=verse
+verse=real_world
+text
+	"This is universe of our real World"
+Worlds
+	Earth
+		@Original
+		-5000x
+		-4000x
+		-3000x
+		-2000x
+		-1000x
+		+0000x
+		+0100x
+		+0200x
+		+0300x
+		+0400x
+		+0500x
+		+0600x
+		+0700x
+		+0800x
+		+0900x
+		+1000x
+		+1100x
+		+1200x
+		+1300x
+		+1400x
+		+1500x
+		+1600x
+		+1700x
+		+1800x
+		+1900x
+		+1910x
+		+1920x
+		+1930x
+		+1940x
+		+1950x
+		+1960x
+		+1970x
+		+1980x
+		+1990x
+		+2000x
+		+2010x
+		+2020x
+Objects
+	%Elixirs
+		%r-4
+			%Toxins
+			%Radioactive
+			%Narcotics
+			%Bacteria
+			%Virus
+	%Artefacts
+		%r-4
+			%Weapon
+				%Guns
+					%Automates
+					%Pistols
+				%Explosive
+				%Nuclear
+				%Tank
+			%Vehicle
+				%Car
+				%Plane
+				%Helicopter
+				%Train
+				%Ship
+			%Drone
+				%Quadrocopter
+			%Videocamera
+			%Display
+			%Microphone
+			%Dinamic
+			%Rockets
+			%Computer
+			%Telephone
+Actions
+	%r-4
+		Granade by post
+		%Bioweapon

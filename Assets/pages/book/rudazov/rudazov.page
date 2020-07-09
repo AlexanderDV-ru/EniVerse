@@ -1,0 +1,535 @@
+name="Rudazov-verse"
+	"Metaverse of Rudazov"
+parent=verse
+organizations
+	%levels
+		/universal
+			0.0!=0	primitive_-_?!#
+				@kaabar
+				@rari	devkatsi
+			1.0!=3	?_-_mech|social!#
+			2.0!=6	?_-_digit|!#
+			3.0!=9	?_-_space|verse_level!#
+			4.0!=12	?_-_?!#
+			5.0!=15	?_-_energy!#
+			6.0!=18	immortal_-_tech|mage|bio!#
+		/energy
+			0.3!=1	?_-_?!#mage_ghyldy
+				@earth.-3000	sumer
+			0.7!=2	?_-_?!#magic_schools
+			1.0!=3	social_-_?!#magic_infrastructure,_service,_shops
+				@parifat.+2000
+			1.3!=4	?_-_?!#magic_conveer
+				@rari.epilog	grayland
+			3.3!=10
+				@parifat.-3000
+			6.0!=18	immortal_-_?!#
+				@infal
+				@jinn
+		/bio
+			0.3!=1	?_-_?!#prirucheniye,_odomashnivaniye
+			0.7!=2	?_-_?!#selection
+				@rari	eist
+			6.0!=18	immortal_-_?!#
+		/tech
+			0.3!=1	?_-_?!#compas,_gun_powder,	books_print
+			0.7!=2	?_-_?!#industrial_revolution
+				@rari	rokush
+				@rari	lariya
+			1.0!=3	mech_-_?!#metals,_engines
+			1.3!=4	?_-_?!#machines,_electrizity,_chem
+			1.7!=5	?_-_?!#high_chem,_ice,_conveer
+			2.0!=6	digit_-_?!#electronics,_robots,_commutications
+				@earth
+			2.3!=7	?_-_?!#nanotech,_higher_organic_chem,_cyberspace
+			2.7!=8	?_-_?!#high_nano,_spacetech,_terraforming
+				@plonet.before-sudden-hour
+			3.0!=9	space!#high_terraforming,_space_cities,_between_stars_flying
+			3.3!=10	?_-_?!#galaxy_level,_alliens_contacts
+			4.0!=12
+				@earth.+2400
+			4.3!=13
+				@earth.+7000	svarog
+			5.0!=15
+				@eikr	u-l'tra-let
+			5.3!=16
+				@muraran
+			5.7!=17
+				@*	spectator
+				@earth.+7000	galact
+			6.0!=18	immortal_-_?!#
+				@ancient
+				@titan_0
+		/energy+tech
+			0.7!=2
+				@rari.+2000	grayland
+		#number_after_"-"_says_that_this_world_after_apocalipsis,_it_has_tech,_but_cant_create
+	%opened
+		%closed!#don't_know_about_other
+		%half-closed!#thinks_that_other_is_1,2,3..._not_a_lot_of
+		%half-opened!#have_knowledge_about_other
+		%opened!#have_contacts_with_other
+worlds
+	%types
+		access
+			destroyed
+			non-created
+		chaos
+			chaotic
+			half-chaotic
+			half-normal
+			normal
+		elements
+			%basic
+				fire
+				water
+				air
+				earth
+				electrizity
+				ice
+			%first
+				dark
+				light
+			%misc
+				void
+	rari!@original
+	quetzol-iin!@original
+	eikr!@original\n\t\t	hvitachi!@original\n\t\t	worldtown!@original
+	lang!@original\n\t\t	kaabar!@original\n\t\t	nine_heavens!@original
+	hell!@original\n\t\t	earth\n\t\t\t+2006!@original\n\t\t	heaven!@original
+	golus!@original	\n\t\t	earth!=dotembria
+	pargoron!@original\n\t\t	parifat!@original\n\t\t	salvan!@original
+	patala!@original	\n\t\t	dovos!@original
+	jahannam!@original	\n\t\t	kaf!@original	\n\t\t	janna!@original
+	shemussen!@original	\n\t\t	plonet!@original	\n\t\t	n	\n\t\t	labirint!@original	\n\t\t	svarog!@original	\n\t\t	deorg_academy!@original
+	x!@original	\n\t\t	z	\n\t\t	a	\n\t\t	y	\n\t\t	o	\n\t\t	caves_sheymullin!@original
+	m!@original	\n\t\t	k	\n\t\t	h	\n\t\t	g	\n\t\t	f	\n\t\t	e	\n\t\t	d	\n\t\t	c	\n\t\t	b	\n\t\t	p	\n\t\t	earth!+7112
+	proxima_centaura!@original	\n\t\t	proxima_hell!@original	\n\t\t	proxima_heaven!@original
+	dodekaedr!@original
+		@of_yehudin
+verse
+	@type
+		meta
+	original
+@sources
+	supernatural
+		books
+			rudazov
+shells
+	-5!=2|7	magical_body
+	-2!=3	body,_matter_of
+	-1!=1	physical_body
+	+0!=4	atman
+	+1!=2	vital
+	+2!=3	astral,_aura
+	+3!=5	person
+	+4!=6	psyhic
+	+5!=7	magic
+	+6!=8	immortal
+	+7!=9	god
+energies
+	%r-5
+		-1!=2_prana
+		+!=7_mana
+	%r-7
+		+7!=9_ba-hion
+features
+	%r-5
+		e+5!=mage
+		e+4!=mentat?
+	%r-4
+		e+0+2!=spiritual_weapon
+levels
+	/sumer
+		0.0!=nomage
+		1.0!=student
+		2.0!=apprentice
+		3.0!=master
+		4.0!=pastmaster
+		5.0!=archmage
+		6.0!=higher
+	/grayland
+		0.0!=buckwheat
+		1.0!=student
+		1.5!=purple
+		2.0!=blue
+		2.5!=light_blue
+		3.0!=green
+		3.5!=yellow
+		4.0!=orange
+		4.5!=red
+		5.0!=gray
+actions
+	%r-5
+		/sumer
+			%action
+				%protection
+					absolute
+					universal
+					personal
+			%l5.0!=godhands
+				%elements
+					%misc
+						grace
+							uncontrolled=inanna
+								#clear_and_health_place_needs:_soul_of_light
+					%basic
+						fire
+							uncontrolled=shamash
+								#needs:_result_is_neuromagic_overwork
+						air
+							controlled=adad
+								#controlled_klimat_needs:_salt_mud_lake
+						earth
+							controlled=enlil
+								#controlled_earth
+					%other
+						space
+							controlled=anu
+								#exhange_of_two_places_needs:_magical_line_around_place,_hited_teeth_of_user
+					%misc
+						getmye=ea
+							#needs:_drop_of_ihor
+				%creature
+					demon
+						anti=marduk
+							#needs:_incarcered_archdemon,_higher_mortal_demonolog
+					%w+1!=undead
+						create=nergal
+							#needs:_3_masters_nectromancers
+				%action
+					protection=tammuz
+						#needs:_egg_of_phoenix
+		/kiig
+			%misc
+				antimagic-tatoo
+		/grayland
+			%action
+				%protection
+					mirror!=mirror_shield
+			%atack
+				clone_of_chaos
+			%misc
+				sphere_of_thirst
+			%l5.0!=spells_a+
+				%elements
+					%misc
+						void
+							uncontrolled=total_zero
+								#desintegration_of_all_matter
+						ethervoid
+							halfcontrolled=fifth_spell
+								#full_eating_of_all_ether_(mana,_prana,_...)
+						desecration
+							halfcontrolled!=grayland.fog_of_death!#desecration_fog
+					%basic
+						electrizity
+							uncontrolled=lightning_of_the_gods
+								#insane_lightning
+						earth
+							uncontrolled=rumble_of_hashiba
+								#earthquake
+persons
+	%r-5
+		%human
+			%l3.0
+				vanessa_lee
+				hoboken
+				lod_gveideon
+			%l4.0
+				toray!=life
+			%l5.0
+				shamshuddin!=black
+				tivildorm!=ghost
+				turseya!=wolferine
+				murok!=vivisektor
+				kodera!=yasnovidyashyaya
+				kleventin!=predatel
+				asante!=storm
+				ruork!=machinist
+				riggellion!=one_eye
+				kvillion!=dubble
+				yadjun!=fire
+				ruaha!=karga
+				isshkamir!=lightning
+				bestelglosud!=chaos
+				astaron!=ice
+				?!=?
+				kreol!=crusher
+			%l6.0
+				white_kiig
+creatures
+	%r-5
+		elv_2
+		sid
+		dev
+		devkatsi
+		eist
+		kiig
+	%r-6
+		titan_0
+		jinn
+		ancient
+		infal
+dimensions
+	w
+		0!=core,_center_of_everything
+		1!=hyperspace,_esher's_geometry
+		2!=normalspace
+		3!=underspace
+	n
+		00!=bhavachakra
+			other
+			blood_beach!#place_for_demons
+		11!=normal,_material
+		21!=shadow|twilight|through_the_looking_glass
+		31!=astral,	world_of_spirits
+			other
+			world_of_the_dead
+		22!=world_of_dreams
+		13!=noosphere
+	limbo!=gray_world
+	chaos!=non-embodied
+features
+	%r-4
+		%w+1!=undead
+			ghoul
+			zombie
+		%w-1!=spirit
+			brownie
+			boggart
+			ghost
+			loa
+			embodied
+	%r-5
+		mage
+			black
+			gray
+			white
+		%w+1!=undead
+			einherjar
+			draugr
+			lich
+		mye
+		vampire
+			weak!=madness
+			normal!=ordinary
+			high!=energetic
+		werewolf
+			weak!=licantrop
+			normal!=ordinary
+			high!=multiforms
+		cubus
+			incubus
+			succubus
+	%r-6
+		immortal
+			dark!=demon_0
+			neutral!=immortal
+				h+5!=jinn
+				h-1!=titan_0
+				h+1!=arch
+			light!=angel_0
+		%w+1!=undead
+			undead-immortal
+	%r-7
+		e+7!=god_1
+			dark
+			neutral!=beastgod
+			light
+		%w+1!=undead
+			undead-god
+objects
+	%artefacts
+		%r-5
+			%grimoires
+				kreol's
+			%rods
+			%staffs
+				kreol's
+			%amulets
+				kreol's
+				valet
+			%roasters
+				kreol's
+			%organization's
+			%gems
+				gate
+			%tech
+				%plonet's
+					hill-9000
+		%r-6
+			%grimoires
+				kriabal
+					@briar
+elements
+	%basic
+		fire!=pyromancy
+		water!=hydromancy
+		earth!=geomancy
+		air!=airomancy
+		ice!=cryomancy
+		electrizity!=electromancy
+	%first
+		dark
+		light
+		chaos
+		death
+	%other
+		meteo
+			weather
+			klimat
+			kataklism
+		space
+		time
+		motion!=telekinesis
+	%misc
+		shadow
+		blood
+		mirror
+directions
+	%languages
+		word
+		rune
+		image
+		picture
+		seal
+	%types
+		%action
+			vampire
+			absorption
+			curse
+			transformation
+				1	material
+				2	form
+					shape
+					size
+				3	structure
+				figure
+			blessing
+			vow
+			summon
+			sensor
+			illusion
+			flying
+			teleport
+			enchantment
+			name
+			physical!=technomagic
+			warlock
+			apostol
+			hooly
+			love
+			music
+			domestic
+			soul
+			volt
+				voodoo
+				volt
+			estestvennaya
+			metamorph
+				turning
+				changing
+				totem!=felgi
+				partial
+			clairvoyance
+				true_prophecy
+			mental
+				telepathy
+			magic_of_ghost
+			alchemy
+			twilight-shadow
+		%saving
+		%object
+			elixir
+				potion
+				...
+			artefact
+	%creatures
+		automate
+		doppel
+		holem
+		phantom
+		demon
+		immortal
+		animal
+		angel_0
+		god
+		bestia
+		flora
+		vampire
+		loa
+		ghost
+		chimera
+organizations
+	%schools
+		grayland
+		sumer
+		kiig
+		mysteria
+		lka-nandasi
+		deorg_academy
+	organization
+	%labs
+		geya
+		uran
+materials
+	%metals
+		%r-4
+			adamantium!#pseudo_adamant,_very_sharp,_very_durable
+		%r-5
+			koroniy!#anti_mage
+			coldiron!#anti_mage
+			copper!#anti_halfmaterialized
+			bloodiron!#anti_demon
+			silver!#anti_undead
+			mithrill
+		%r-7
+			adamant!#anti_superreal
+	%alchemical
+		philosopher's
+			stone
+			metal
+			liquid
+			powder
+	%gas
+		flogiston
+		teporiy
+	%bio
+		regenerin
+dimension
+	metaverse
+		limbo
+		chaos
+		multiverse
+			multispace
+				8 axes
+			multitime
+			universe
+				space
+					normal
+						3 axes
+							x
+							y
+							z
+						galaxy
+							system
+								informational=world
+								matterional=planet
+					hyper
+						1 axis
+							w
+				time
+				matter
+					state
+						substance
+						energy
+						ether
+					property
+						info_prop
+						reality_prop
+						energy_prop
+					other
+						info
+						ether
+						material

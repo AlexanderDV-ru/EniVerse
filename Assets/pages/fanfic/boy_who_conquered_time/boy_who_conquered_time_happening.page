@@ -1,0 +1,46 @@
+name="boy_who_conquered_time_happening"
+parent=verse
+verse=boy_who_conquered_time
+a/ Potteriana
+	/A
+		v/ Before Hog
+			Letter from Hogwarts
+			Letters Week
+			From Hog	!	Hagrid
+			s/ Diagon
+				Gringotts	!	SS
+				Talk with Draco	!	Book
+				Ollivander	!	I'm not weak
+			s/ To Japan
+				Find Aki
+				To Kusu Kumo
+				Talk with director
+				Learning
+				Exam
+				Marafon
+				Complete
+				Portal Magic
+			s/ Portal to England
+				Mrs Barington
+			Advance of Leaky Cauldron
+			Talk with McGonagall
+			s/ Train
+				Draco	!	Talk
+				Book to Hermione
+			s/ Hogsmid
+				Light on Platform
+		v/ 1 Course
+			%Arka	!=Studsovet
+			s/ Spirits
+				Scary Talk
+			s/ Sort by Hat
+				Harry	!	Griffindor
+				Draco	!	Griffindor
+				Hermione	!	Griffindor
+				Nevill	!	Griffindor
+				Ron	!	Griffindor
+			s/ Room
+				Draco Vs Ron
+				Remont
+			s/ Transfiguration
+				Teaching

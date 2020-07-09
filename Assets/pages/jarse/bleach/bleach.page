@@ -1,0 +1,13 @@
+name="Bleach"
+parent=verse
+verse=bleach
+force
+	%r-5
+		+2	!=	reatsu
+features
+	%r-5
+		e+2	!=	reatsu
+		hollow
+		quincy
+		shinigami
+		sword_of_soul

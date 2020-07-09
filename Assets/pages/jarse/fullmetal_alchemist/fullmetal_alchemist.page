@@ -1,0 +1,10 @@
+name="fullmetal_alchemist"
+parent=verse
+verse=fullmetal_alchemist
+features
+	%r-5
+		alchemist
+		gate_of_truth
+energies
+	%r-5
+		al!=alchemycal?

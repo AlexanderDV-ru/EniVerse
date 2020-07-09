@@ -1,0 +1,17 @@
+name="bulychov"
+parent=verse
+verse=bulychov
+Objects
+	Artefacts
+		%r-5
+			%22 Century Tech
+				Time-Machine
+				Meylaphone
+				Videophone
+				Spaceship
+Creatures
+	%Mind
+		%r-5
+			%Human
+				Seleznyov(a)
+					Alice

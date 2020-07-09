@@ -1,0 +1,131 @@
+name="three_old_ladies"
+parent=verse
+verse=three_old_ladies
+inheritance
+	potter
+objects
+	%artefacts
+		%r-6
+			%time-turners!=not_limited_hours,_madness_on_incorrect
+materials
+	%metals
+		coldiron
+happening
+	a/_Potteriana
+		%Notes
+			Professors'_jokes_can_be_awful
+		v/_Before_Hog
+			s/_Kid
+				Potters
+				Halloween
+				Mungo
+				McGonagall
+				Dursley
+			School
+			Snake
+			Letters
+			From_Hog	!	Hagrid
+			s/_Diagon
+				Leaky_Cauldron
+				Gringotts
+				v/_Malkin
+					Malfoy
+				Ollivander
+			s/_Platform
+				Weasley
+			s/_Train
+				Ron
+				Hermione
+				Nevill
+				Draco
+			Hogsmitt
+			Boats
+		v/_1_Course
+			%Arka	!=Philosopher's_Stone
+			%DADA	!=Quirrell
+			Hat
+			Карта_Weasley
+			Mantia
+			Mirror_of_Erised
+			Norberta
+			Unicorns
+			Quirrellmort_in_mantia
+			Centavres
+			Philosophers_Stone
+		v/_2_Course
+			%Arka	!=Secret_Room
+			%DADA	!=Lockhart
+			Dobby
+			Escape_in_Ford
+			Hole
+			Камин_на_Diagon
+			Lockhart_in_shop
+			Malfoy_take_books
+			Battle_in_shop
+			Barrier
+			Fly_in_Ford
+			Через_камин
+			Громовещатель
+			Deathday
+			Mrs_Norris
+			Permission_to_Forbidden_Section
+				Lockhart
+				Lie
+			Acromantulas
+			Malfoy_Директор
+			Duel_Club
+			Secret_Room
+			Hagrid_in_Azkaban
+		v/_3_Course
+			%Arka	!=Prisoner_of_Azkaban
+			%DADA	!=Lupin
+			Weasley_в_египет
+			Побег_Siriusа
+			Надувание_Марч
+			Dementorы_в_Trainе
+			Обморок
+			Lupin_Защищает
+			v/_Time-Turner
+				На_пару_гарри_и_Hermioneоне_от_отдела_тайн
+			Новые_предметы
+			Hagrid_препод
+			Клювокрыл
+			Dracoморт_и_адское_пламя
+			Спасение_Siriusа
+			Patronus
+			Фадж_отрицает
+		v/_4_Course
+			%Arka	!=Goblet_of_Fire
+			%DADA
+				=Moody
+				=Crouch-jr
+			Чемпионат_по_квиддичу
+			Барти_младший
+			Триволшебный_Турнир
+			Предложение_методов_обмана
+			Первое_испытание
+			Зеркала_и_снитчи_для_наблюдения_и_заработка
+			Второе_испытание
+			Третье_испытание
+			Телепорт_на_кладбище
+			Битва
+			Возвращение
+			Разоблачения_Барти
+		v/_5_Course
+			%Arka	!=Order_of_Phoenix
+			%DADA	!=Umbridge
+		v/_6_Course
+			%Arka	!=Half-Blood_Prince
+			%DADA	!=Snape
+			%Potions	!=Slughorn
+		v/_7_Course
+			%Arka	!=Deathly_Hallows
+			%DADA	!=Carrow
+		v/_After_Hog
+		%Types
+			Voldi
+			__Quirrell
+			__Tom
+			__Draco
+			__Voldi
+			__Gildi

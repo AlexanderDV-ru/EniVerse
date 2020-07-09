@@ -1,0 +1,9 @@
+parent=verse
+source=fanfic
+verse=ikotika
+inheritance
+	potter
+happening
+	a/ Potteriana
+		%Notes
+			Filch is ideal maniac

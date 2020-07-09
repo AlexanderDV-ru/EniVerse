@@ -1,0 +1,8 @@
+name="hellsing"
+parent=verse
+verse=hellsing
+features
+	%r-5
+		vampire
+	%r-4
+		%w+1!=undead

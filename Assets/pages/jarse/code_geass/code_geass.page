@@ -1,0 +1,49 @@
+name="code_geass"
+parent=verse
+verse=code_geass
+creatures
+	%mind
+		%r-5
+			%human
+				%l3.0
+					roland
+					mao
+				%l5.0
+					lelouch
+					charlz
+					marianna
+					c.c.
+actions
+	%r-5
+		mental
+			geass
+				control
+					@lelouch
+				memory
+					@charlz
+				soul
+					@marianna
+				time_stop
+					@roland
+				love
+					@c.c.
+				?
+					@v.v.
+				telepathy
+					@mao
+			antigeass
+				@jeremia
+	%r-6
+		code_geass
+			@c.c.
+			@v.v.
+			@charlz
+			@lelouch
+materials
+	sakuradait
+objects
+	%artefacts
+		%r-5
+			%tech
+				%britanian_imperia's
+					%knightmares

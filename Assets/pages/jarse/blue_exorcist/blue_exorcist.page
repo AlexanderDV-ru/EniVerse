@@ -1,0 +1,14 @@
+name="blue_exorcist"
+parent=verse
+verse=blue_exorcist
+features
+	%r-5
+		demon
+		%w-1!=spirit
+			brownie
+dimensions
+	o
+		gehenna
+			@of_demon
+		normal=assiah
+			@of_human

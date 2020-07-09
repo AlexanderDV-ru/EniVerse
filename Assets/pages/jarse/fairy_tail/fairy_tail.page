@@ -1,0 +1,14 @@
+name="fairy_tail"
+parent=verse
+verse=fairy_tail
+verse
+	@type
+		uni
+worlds
+	other
+features
+	%r-5
+		e+5!=mage?
+energies
+	%r-5
+		+5!=mana?

@@ -1,0 +1,63 @@
+name="marvel"
+parent=verse
+verse=marvel
+Persons
+	%r-5
+		%X-Man
+			Ksavier
+			Logan
+		%Human
+			Entony Stark
+			Govard Stark
+		%Zen-Hoberis
+		%Klyntar
+		%Kree
+		%Inhuman
+		%Chitauri
+		%Flora Koloss
+		%Titan_1
+Energies
+	%r-5
+		+5	!=	Magical?
+Features
+	%r-5
+		X-Man
+			Action
+				Mental
+					Telepathy
+						@Ksavier
+				Regen
+					Cell
+						@Logan
+Materials
+	%Metals
+		Vibranium
+		Adamantium
+Organizations
+	Stark
+		@Entony Stark
+	X-Man
+		@Ksavier
+Objects
+	%Artefacts
+		%r-4
+			%Tech
+				%Stark's
+					%Iron Man suits
+						mark7
+					%Thermonuclear Reactor
+			Cerebro
+		%r-7
+			%Gems
+				%Infinity
+					Space
+					Soul
+					Reality
+					Time
+					Power
+					Mind
+		%r-6
+			%Loki's
+				Sceptre
+			%Thor's
+				Mjolnir

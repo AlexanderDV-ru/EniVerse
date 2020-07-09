@@ -1,0 +1,22 @@
+name="hataraku_mao_sama"
+parent=verse
+verse=hataraku_mao_sama
+features
+	%r-6
+		demon_0
+		fallen
+		angel_0
+creatures
+	%mind
+		%r-6
+			%demon
+				alciel!=shiro_ashiya
+				satan_jakob!=sadao_mao
+				lucifer!=urushihara_hanzo
+verse
+	@type
+		multi
+worlds
+	earth
+	ente_isla
+		@original

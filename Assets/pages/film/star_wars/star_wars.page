@@ -1,0 +1,27 @@
+name="star_wars"
+parent=verse
+verse=star_wars
+Persons
+	%r-5
+		%Human
+Energies
+	%r-5
+		gf	!=	Great Force?
+Features
+	%r-5
+		gf	!=	Forceuser
+			lm	!=	Light
+			dm	!=	Dark
+Organizations
+	Jedi
+	Sith
+Dimensions
+	w
+		1	!=	Hyper
+Objects
+	%Artefacts
+		%r-5
+			%Steelarms
+				%Lightsaber
+			%Tech
+				%Galaxy's

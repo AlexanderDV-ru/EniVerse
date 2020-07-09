@@ -1,0 +1,201 @@
+name="HPMoR"
+	english
+		"Harry Potter and the Methods of Rationality"
+	russian
+		"Гарри Поттер и Методы Рационального Мышления"
+		"ГПиМРМ"
+parent=verse
+verse=hpmor
+verse
+	potteriana
+objects
+	%artefacts
+		%r-5
+			%quotes_quills
+			moody's_eye[u]
+			philosopher's_stone[u]
+			mirror_of_erised[u]
+		%r-6
+			%time-turners!=6_hours_max,_with_many_turners_too
+			moody's_eye!=eye_of_vance
+			left_leg_of_vance
+			philosopher's_stone!=stone_of_materialization
+			mirror_of_erised!=mirror_of_atlants
+actions
+	%advances
+		patronus_2.0
+		avadakedavra_2.0
+		dementor_control
+		partial_transformsation
+	%r-5
+		%action
+			%atack
+				%shieldbreacker
+					"lagan"!#shield_breaker
+				"stupofy"!#autoaim_stupefy
+				"luminos"!#lumination_hex
+				"mahasu"!#sumer_simple_hit
+				momental_sleep!="somnium-"!#sleep,_weak_battle_magic
+			%protection
+				"prizmatis"!#prizmatic_shield
+				"defendo"!#weak_shield
+				anti-time-turner
+				anti-transgrassion
+			%vampire
+				ritual_blood_citadel?
+complexes
+	27_spells_for_important_topic_talk
+		@anti-time-turner
+		@anti-apparation
+		...
+creatures
+	%mind
+		%r-5
+			%human
+				%l0.0
+					petunia_dursley!=petunia_evans-verres
+				%l3.0
+					harry_potter!=harry_james_potter-evans-verres
+				%l5.0
+					voldemort!=tom_morphin_riddle
+happening
+	a/ Potteriana
+		v/ Before Hog
+			Letter from Hogwarts
+			Mrs Figg
+			From Hog	!	McGonagall
+				s/ Diagon
+				Talk with Draco	!	Joke
+			s/ Muggle Books Buy
+			s/ Platform
+				Mrs Weasly	!	Thanks
+				Ron	!	Quidditch is Stupid
+				Draco	!	Friends
+				Fred and George	!	Chaos Orden
+				Joke with Nevill
+			s/ Train
+				Hermione	!	Science
+				Frog	!	Prefects
+		v/ 1 Course
+			%Arka	!=HPMoR
+			%DADA	!=Quirrellmort
+		%Notes
+			Spraut is cool
+			Spraut can control rasteniya
+			Tonks can morph to other human
+			Spraut is not is podozreniye
+Inheritance
+	Potteriana
+Objects
+	%Artefacts
+		%r-5
+			%Quotes Quills
+			Moody's Eye[u]
+			Philosopher's Stone[u]
+			Mirror of Erised[u]
+		%r-6
+			%Time-Turners	!=6 hours max, with many turners too
+			Moody's Eye	!=Eye of Vance
+			Left Leg of Vance
+			Philosopher's Stone	!=Stone of Materialization
+			Mirror of Erised	!=Mirror of Atlants
+Features
+	Magic
+		Spells
+			reducto (canon)	Reductor Curse	Destroy solid objects
+			az-reth	Fiendfyre	Corporeal cursed fire with high destructive power
+			aguamenti (canon)	Water-Making Spell	Conjures clean, drinkable water from the end of the wand
+			nullus confundio		Counter-spell for the Confundus
+			prismatis		Shield
+			ventus (canon)	Ventus Jinx	Shoots a jet of wind
+			polyfluis reverso		Reverse the effects of Polyjuice
+			homenum revelio (canon)		Reveals human presence
+			inflammare		Set fire to sth.
+			quiescus		Prevent the target from sneezing
+			Anti-Anti-Gravity Jinx	Part of Azkaban's wards. Disables all flying spells whose enchantment have not been cast with a specific passphrase.
+			expecto patronum	Patronus (incl. True Patronus)	Protection against dementors (most notably)
+			Abi-Dalzim’s Horrid Wilting	Draw moisture from living beings within range
+			veritas oculum		Can be used to check e.g. if an animal is an animagus in their animal form
+			elmekia		Blue hex
+			alienis nervus mobile lignum		Body-control spell
+			confundo (canon)	Confundus	Causes confusion in the target
+			scourgify (canon)	Scouring Charm	Cleaning spell
+			luminos		Hex. Red bolt of light.
+			densaugeo (canon)		Hex. Enlarges teeth.
+			jellyfy		Invisible wide-beam jinx that makes the target's legs weak. Canon counterpart: locomotor wibbly.
+			legilimens (canon)		Legilimency (canon) i.e. mind reading
+			episkey (canon)		Healing spell
+			False-Memory Charm (canon)	Memory charm that plants a memory in the target's mind
+			Enchantment of the Endless Stair	Maybe the enchantment used as the entrance to Hogwarts's headmaster office, although its invention is credited to Arram Sabeti in 1733
+			Sparkling Jinx	Make the target sparkly
+			glisseo (canon)		Makes a surface slippery
+			fuego		Likely produces acid or fire[4]
+			obliviate (canon)	Obliviation, Memory Charm	Make the target forget a memory
+			Boundary Charm	Enclosing spell
+			cluthe		Hex that gives acute cramps
+			stuporfy	Swerving Stunner
+			tonare, ravum calvaria, lucis gladius	Most Ancient Blade
+			Undetectable Extension Charm (canon)
+			ventriliquo	Ventriloquism Charm
+			stupefy (canon)	Stunning Hex,[7] Stunner
+			sonorus (canon)	Amplifying Charm
+			somnium	Sleep Hex
+			silencio (canon)	Silencing Charm
+			Road-Running Charm
+			Retrieval Charm
+			requiescus
+			quietus (canon)	Quietening Charm
+			protego maximus (canon)
+			protego (canon)	Shield Charm
+			ma-ha-su	Sumerian Simple Strike Hex
+			lumos (canon)	Wand-Lighting Charm
+			lagann	Breaking Drill Hex
+			innervate (canon)	Reviving Spell[6]
+			incendium
+			incendio (canon)	Fire-Making Spell
+			imperio (canon)	Imperius
+			frigideiro	Chilling Charm[3]
+			flipendo (canon)	Knockback Jinx
+			Flame-Freezing Charm (canon)
+			finite incantatem (canon)	General Counter-Spell
+			expelliarmus (canon)	Disarming Charm
+			everto	Disposal Charm
+			Continual Light enchantment	(or Perpetual Light Charm) Make an object continually emit light
+			Air-Freshening Charm	(or Fresh-Air Charm[1])
+			inferius (canon)	Inferius	"Zombie"-making
+			wingardium leviosa (canon)	Hover Charm[8]
+			accio (canon)	Summoning Charm
+			alohomora (canon)	Unlocking Charm
+			avada kedavra (canon)	Killing Curse
+			Blood Fort sacrifice
+			Bludgeoning Hex
+			colloportus (canon)	Locking Spell
+			contego	Simple Shield
+			diffindo (canon)	Severing Charm
+			prior incantato (canon)		Show the last spell cast by a wand
+			vitalis revelio		Show if a body is alive by surrounding it by a red glow
+			gom jabbar		Slow-torture hex
+			impedimenta (canon)	Impediment Jinx	Slows the target
+			deligitor prodeas		Summon Hogwarts' Sorting Hat
+			crucio (canon)	Cruciatus	Torture curse
+			eunoe		Restore a memory that has been locked away
+			oogely boogely		Produce a small green-glowing bat
+			steleus (canon)		Wide-angle sneezing hex
+			thermos		Warm up sth.
+			dulak		Turn off a light (e.g. a Continual Light enchantment)
+			hyakuju montauk		Undescribed curse so horrible that it is known to threaten the caster's sanity.[5]
+Abilities
+	Complexes
+		27 spells for important topic talk
+			@Anti-Time-Turner
+			@Anti-Apparation
+Creatures
+	%Mind
+		%r-5
+			%Human
+				%l0.0
+					Petunia Dursley	!=Petunia Evans-Verres
+				%l3.0
+					Harry Potter	!=Harry James Potter-Evans-Verres
+				%l5.0
+					Voldemort	!=Tom Morphin Riddle

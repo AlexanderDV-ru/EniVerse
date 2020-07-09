@@ -1,0 +1,39 @@
+name="dc"
+parent=verse
+verse=dc
+Worlds
+	Earth
+		/Our
+Creatures
+	%Mind
+		%r-5
+			%Human
+Energies
+	%r-5
+		+5	!=	Mana?
+	sf	!=	Speedforce
+Elements
+	%Emotions	!@Lantern's
+		Life	!@White
+		Anger	!@Red, Atrocitus
+		Greed	!@Orange
+		Fear	!@Yellow, Sinestro
+		Will	!@Green
+		Hope	!@Light Blue
+		Compassion	!@Blue, Indigo
+		Love	!@Purple, Sapphire
+		Death	!@Black
+Features
+	%r-5
+		Metahuman
+		sf	!=	Speedforceuser
+		e+5	!=	Mage
+Objects
+	%Artefacts
+		%r-4
+			%Tech
+				%Batman's
+				%Luthor's
+		%r-5
+			%Tech
+				%Crypton's

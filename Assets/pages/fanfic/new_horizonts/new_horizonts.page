@@ -1,0 +1,25 @@
+name="new_horizonts"
+parent=verse
+verse=new_horizonts
+verse
+	@type
+		multi
+	original
+	naruto
+	resident_evil
+	marvel
+creatures
+	%mind
+		%r-5
+			%human
+			%orc
+			%elv
+			%ilitishari
+features
+	%r-6
+		shari
+	%r-5
+		telepath
+elements
+	%plasma
+		bio

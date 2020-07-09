@@ -1,0 +1,140 @@
+name="nick"
+parent=verse
+verse=nick
+creatures
+	%mind
+		%r-5
+			%human
+			%elv
+			%gnome
+			%orc_0
+			%demon_0
+persons
+	%r-5
+		human
+
+energies
+	%r-5
+		-1!=prana
+		+3!=emana
+		+4!=psy
+		+5!=mana
+		+6!=infomana
+			#?
+features
+	%r-5
+		e+3!=sorcerer
+		e+4!=psyonic
+		e+5!=mage
+		e+6!=infomage
+		cleverness
+	%r-6
+		god_2
+objects
+	%artefacts
+		%r-5
+			%rods
+				%adeptnesser's
+elements
+	%basic
+		fire
+		water
+		air
+		earth
+		ice
+		electrizity
+actions
+	infostructure
+		creation
+		changing
+		energy
+			+
+			-
+		removing
+	weaving
+		misc
+			sound
+				make
+				detect
+			motion_sense
+			aura_check
+			mental_protection
+			illusion
+				mental
+				optical
+		nick
+			mana_nasos
+			sprut
+		orc
+			hydrohit
+		demon
+			fire
+			mana_take_polog
+			power_shape
+			power_polog
+		elv
+			quite_death
+			live_home
+		adeptnesser
+			mana_nasos
+	atl
+		personal_module_of_reality_control
+		umnik
+		privod
+directions
+	%languages
+		construct
+			@/sorcerer
+		weaving
+			@/mage
+			@/infomage
+		structure
+			@/infomage
+		image
+			@/god_2
+	%creatures
+		holem
+		automate
+	%types
+		%action
+			mental
+			info
+			clairvoyance
+				types
+					probability
+			illusion
+				dense
+			materialization
+				creating
+				removing
+			heal
+			atack
+			protection
+			alchemy
+verse
+	@type
+		multi
+	nick
+		@original
+worlds
+	earth
+		+2150
+	lungria
+		@original
+dimensions
+	n
+		11
+		23!=astral?,_one-net
+		33
+			infofield|zero-net
+shells
+	+!=aura
+	-4!=infostructure
+	+4!=mental
+organizations
+	adeptness
+	sorcery
+	magic
+	atl
+	cleverness
+	atlant

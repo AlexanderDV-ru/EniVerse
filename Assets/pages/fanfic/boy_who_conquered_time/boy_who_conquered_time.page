@@ -1,0 +1,65 @@
+name="boy_who_conquered_time"
+parent=verse
+verse=boy_who_conquered_time
+happening=boy_who_conquered_time_happening
+source=fanfic
+Levels
+	0.0	!=0
+	1.0	!=1
+	1.3	!=2
+	1.7	!=3
+	2.0	!=4
+	2.3	!=5
+	2.7	!=6
+	3.0	!=7
+	3.3	!=8
+	3.7	!=9
+	4.0	!=10
+	5.0	!=Higher
+Verse
+	@Type
+		Multi
+	Potteriana
+	Lord_of_Rings
+	Zero_no_Tsukaima
+	High_School_DxD
+	Star_Wars
+	Naruto
+Creatures
+	%Mind
+		%r-5
+			%Human
+				%l3.0
+					Harry_Potter[u]
+				%l5.0
+					Harry_Potter	!=Henry_James_Potter,_The-Boy-Who-Conquered-The-Time
+						@Time
+							Back
+							No
+Features
+	%r-6
+		%Other
+			Time
+				Back
+				Notime
+Objects
+	%Artefacts
+		%r-6
+			Chronos_braslet
+Directions
+	%Languages
+		Schema
+		Spell
+Actions
+	%l2.3
+		%Creatures
+			%Demon
+				%Anti
+					Eye_of_Demon
+Energies
+	%r-5
+		-1	!=Prana
+		+5	!=Mana
+Elements
+	%Other
+		Time

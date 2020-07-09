@@ -1,0 +1,22 @@
+name="life_of_archmage_potter"
+parent=verse
+verse=life_of_archmage_potter
+verse
+	@type
+		meta
+	potteriana
+	naruto
+worlds
+	earth
+	other
+creatures
+	%mind
+		%r-5
+			%human
+				%l3.0
+					harry_potter[u]
+				%l5.0
+					harry_potter!=abraam
+						@archmage
+		%r-7
+			hel

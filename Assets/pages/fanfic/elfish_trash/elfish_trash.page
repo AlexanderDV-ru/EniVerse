@@ -1,0 +1,14 @@
+name="elfish_trash"
+parent=verse
+verse=elfish_trash
+verse
+	@type
+		meta
+	original
+	rudazov
+	charodei
+	@tags
+		gamelit
+	naruto
+	startrack
+	potteriana

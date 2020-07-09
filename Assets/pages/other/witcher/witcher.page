@@ -1,0 +1,30 @@
+name="witcher"
+parent=verse
+verse=witcher
+Creatures
+	%r-5
+		%Cockatrice
+		%Basilisk
+	%Mind
+		%r-5
+			%Human
+				%l3.0
+					Geralt
+Features
+	%r-5
+		Witcher
+		Mage?
+Directions
+	%Languages
+		Mudra
+Actions
+	%r-5
+		%Elements
+			%Basic
+				Air	!=	Aard
+				Water	!=	Aksiy
+				Earth	!=	Kven
+				Fire	!=	Igni
+		%Action
+			Protection	!=	Heliotrop
+			Pomehi	!=	Irden

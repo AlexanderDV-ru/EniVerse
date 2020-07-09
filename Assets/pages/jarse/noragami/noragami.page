@@ -1,0 +1,13 @@
+name="noragami"
+parent=verse
+verse=noragami
+actions
+	%r-5
+		line
+features
+	%r-4
+		e+0+2!=sword-soul
+		%w-1!=spirit
+			ghost
+			demon-loa
+			god_0

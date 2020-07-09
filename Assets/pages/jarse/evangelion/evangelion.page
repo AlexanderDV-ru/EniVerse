@@ -1,0 +1,11 @@
+name="evangelion"
+parent=verse
+verse=evangelion
+shells
+	atf!=at-field
+creatures
+	r-6
+		evangelion_angel
+		eva
+feature
+	children

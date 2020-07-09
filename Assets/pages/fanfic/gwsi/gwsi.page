@@ -1,0 +1,9 @@
+name="gwsi"
+parent=verse
+verse=gwsi
+inheritance
+	hpmor
+feature
+	magic
+		spell
+			"sapespeck"	Sapespeck	!#Charm	Create a parseltongue-talking "node" that activates on a specified condition

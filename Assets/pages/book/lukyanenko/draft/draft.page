@@ -1,0 +1,6 @@
+name="Draft"
+	russian
+		translyt="Chernovik"
+		cyrillic="Черновик"
+verse=draft
+parent=verse

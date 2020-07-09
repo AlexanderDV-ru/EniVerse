@@ -1,0 +1,23 @@
+name="fate"
+parent=verse
+verse=fate
+actions
+	%r-5
+		%action
+			%vampiring
+				blood_citadel?
+energies
+	%r-5
+		-1!=prana
+		+5!=mana
+features
+	%r-5
+		e+5!=mage
+objects
+	%artefacts
+		%r-6
+			%the_holy_grail
+creatures
+	%mind
+		%r-6
+			%servant
