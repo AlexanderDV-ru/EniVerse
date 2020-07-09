@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using System.Text.RegularExpressions;
 [ExecuteInEditMode]
 public class NewPageGen : MonoBehaviour
 {
+	//public
     public string assetsPath="Assets/",pagesPath="pages/",pageVerse="new_verse",pagePath = "",pageName="new_page",pageExtension=".page";
     public string pageParent = "verse";
     public bool create;
@@ -17,15 +19,45 @@ public class NewPageGen : MonoBehaviour
 	public List<string> pagesHistory=new List<string>();
 	public Dictionary<string, FileInfo> pagesFiles;
 	public float doubleClickTime=0.5f;
-	float lastClick;
 	public string pageNameSymbols="abcdefghijklmnopqrstuvwxyz_";
 	public bool pageNameIgnoreCase=true;
+	public InputField search;
+	public InputField keysField;
+
+	//internal
+	string fullText="";
+	string lastSearch="";
+	string indexed="";
+	float lastClick;
     // Start is called before the first frame update
     void Start()
     {
 		DoIndex();
 		Open();
     }
+	public string TextByName(string name)
+	{
+		string allText="";
+		if(pagesFiles.ContainsKey(name))
+			using (var reader = pagesFiles[name].OpenText())
+			{
+				allText=reader.ReadToEnd();
+			}
+		return allText;
+	}
+	public string ValueByName(string name, string value)
+	{
+		return ValueByText(TextByName(name),value);
+	}
+	public string ValueByText(string text, string value)
+	{
+		foreach (string line in text.Split('\n'))
+		{
+			if(line.Replace(" ","").Replace("\t","").StartsWith(value+equals))
+				return line.Substring(value.Length+equals.Length);
+		}
+		return null;
+	}
 	public void DoIndex()
 	{
 		indexed="";
@@ -44,30 +76,42 @@ public class NewPageGen : MonoBehaviour
 		foreach(var file in files)
 			if(file.Name.EndsWith(pageExtension))
 			{
-				string indexingParent="undefined";
+				Dictionary<string,string> indexingVals=new Dictionary<string,string>();
+				string nam=file.Name.Substring(0,file.Name.Length-pageExtension.Length);
+				if(pageNameIgnoreCase)
+					nam=nam.ToLower();
+				pagesFiles.Add(nam,file);
+				indexed+=nam+"\t\t";
+				foreach(var key in keysField.text.Split(','))
+					if(key!="")
+						indexingVals.Add(key,"");
+				string[] keys = new string[indexingVals.Keys.Count];
+				indexingVals.Keys.CopyTo(keys, 0);
 				using (var reader = file.OpenText())
 				{
 					string line;
 					while ((line = reader.ReadLine()) != null)
 					{
-						if(line.Replace(" ","").Replace("\t","").StartsWith("parent"+equals))
-							indexingParent=line.Substring("parent".Length+equals.Length);
+						foreach(var key in keys)
+							if(line.Replace(" ","").Replace("\t","").StartsWith(key+equals))
+								indexingVals[key]=line.Substring(key.Length+equals.Length);
 					}
 				}
-				string nam=file.Name.Substring(0,file.Name.Length-pageExtension.Length);
-				if(pageNameIgnoreCase)
-					nam=nam.ToLower();
-				pagesFiles.Add(nam,file);
-				indexed+=nam+" : "+indexingParent+"\n";
+				if(indexingVals.ContainsKey("1parent"))
+					indexingVals["1parent"]=ValueByName(indexingVals["parent"],"parent");
+				if(indexingVals.ContainsKey("path"))
+					indexingVals["path"]=file.FullName;
+				foreach(var pair in indexingVals)
+					indexed+=pair.Key+"="+pair.Value+"\t\t";
+				indexed+="\n";
 			}
 	}
-	string indexed="";
     // Update is called once per frame
 	public void Open(string pageName="",string[] filter=null)
 	{
 		if(pageName=="")
 		{
-			field.text=indexed;
+			field.text=fullText=indexed;
 			openedName.text="Index";
 		}
 		else
@@ -79,7 +123,7 @@ public class NewPageGen : MonoBehaviour
 			pagesHistory.Add(pageName);
 			using (var reader = pagesFiles[pageName].OpenText())
 			{
-				field.text=reader.ReadToEnd();
+				field.text=fullText=reader.ReadToEnd();
 			}
 			openedName.text=pageName;
 		}
@@ -160,6 +204,15 @@ public class NewPageGen : MonoBehaviour
     void Update()
     {
 		string path=assetsPath+pagesPath+pagePath+pageName+pageExtension;
+		if(search.text!=lastSearch)
+		{
+			lastSearch=search.text;
+			string curText="";
+			foreach (Match match in Regex.Matches(fullText, lastSearch, RegexOptions.IgnoreCase))
+				curText+=match.Value;
+			field.text=curText;
+		}
+
 		if(Input.GetMouseButtonDown(0)||Input.GetMouseButtonDown(1))
 		{
 			if(Time.time-lastClick<doubleClickTime)

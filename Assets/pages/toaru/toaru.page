@@ -9,3 +9,21 @@ name="Toaru"
 	"Raildex"
 	"Magical Index"
 parent=verse
+verse=toaru
+source
+	ranobe
+		toaru_majutsu_no_index_ranobe
+			toaru_majutsu_no_index_old_testament_ranobe
+			toaru_majutsu_no_index_new_testament_ranobe
+			toaru_majutsu_no_index_genesis_testament_ranobe
+	anime
+		toaru_majutsu_no_index_anime
+			toaru_majutsu_no_index_i_anime
+			toaru_majutsu_no_index_ii_anime
+			toaru_majutsu_no_index_iii_anime
+		toaru_kagaku_no_railgun_anime
+			toaru_kagaku_no_railgun_i_anime
+			toaru_kagaku_no_railgun_s_anime
+			toaru_kagaku_no_railgun_t_anime
+	manga
+		toaru_kagaku_no_railgun_manga

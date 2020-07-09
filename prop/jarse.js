@@ -1,13 +1,3 @@
-add(`/Assassination Classroom
-	@Sources
-		Supernatural
-			Jarse
-				Assassination Classroom
-	Creatures
-		%Mind
-			%TentacleMoster
-				Koro`)
-1
 add(`/Atack on Titan
 	@Sources
 		Supernatural

@@ -1,0 +1,7 @@
+name="assassination_classroom"
+parent=verse
+verse=assassination_classroom
+creature
+	tentacle_moster
+person
+	koro

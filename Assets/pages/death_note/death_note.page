@@ -1,0 +1,11 @@
+name="Death Note"
+	japanese
+		romaji="desu notu"
+parent=verse
+verse=death_note
+source
+	manga
+		death_note_manga
+		death_note_spinoff_manga
+	anime
+		death_note_anime
