@@ -82,9 +82,6 @@ add(`/ Supernatural
 			/ Anime
 			/ Manga
 		v/ KonoSuba
-			@English	!	KonoSuba: God's Blessing on this Wonderful World
-			@Translyt	!	Kono Subarashii Sekai ni Shukufuku o
-			@Original	!	この素晴らしい世界に祝福を
 		Lupen
 		Macademy Wasshoi
 		v/ Mob Psycho 100

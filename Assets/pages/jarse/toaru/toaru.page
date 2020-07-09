@@ -1,5 +1,5 @@
 name="Toaru"
-	english
+	eng
 		"A Certain Magical Index"
 		"A Certain Scientific Railgun"
 		"A Certain Scientific Accelerator"
@@ -7,14 +7,14 @@ name="Toaru"
 		"Magical Index"
 		"Raildex"
 		"A Certain"
-	japanese
+	jpn
 		romaji
 			"Toaru Majutsu no Index"
 			"Toaru Kagaku no Railgun"
 			"Toaru Kagaku no Accelerator"
 			"Toaru"
 			"Raildex"
-	russian
+	rus
 		cyrillic
 			"Некий Магический Индекс"
 			"Некий Научный Рейлган"
@@ -25,6 +25,22 @@ name="Toaru"
 			"Индекс Волшебства"
 parent=verse
 verse=toaru
+url
+	en
+		fanwiki
+			https://toarumajutsunoindex.fandom.com/wiki/Toaru_Majutsu_no_Index_Wiki
+			https://toarumajutsunoindex.fandom.com/
+		wiki
+			https://en.wikipedia.org/wiki/A_Certain_Magical_Index
+	ru
+		shikimori
+			https://shikimori.one/animes/4654-toaru-majutsu-no-index
+		fanwiki
+			https://toarumajutsunoindex.fandom.com/ru/wiki/Toaru_Majutsu_no_Index_%D0%B2%D0%B8%D0%BA%D0%B8
+			https://toarumajutsunoindex.fandom.com/
+			https://anime-characters-fight.fandom.com/ru/wiki/To_Aru_Majutsu_No_Index
+		wiki
+			https://ru.wikipedia.org/wiki/To_Aru_Majutsu_no_Index
 source
 	ranobe
 		toaru_majutsu_no_index_ranobe
@@ -42,14 +58,14 @@ source
 			toaru_kagaku_no_railgun_t_anime
 	manga
 		toaru_kagaku_no_railgun_manga
-worlds
+world
 	earth
-energies
+force
 	%r-5
 		+5!=mana
 	%r-6/7
 		tl!=telesma?
-shells
+dimension
 	aimf!=aim-field
 organizations
 	necessarius

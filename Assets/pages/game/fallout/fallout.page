@@ -1,0 +1,4 @@
+name="fallout"
+parent=verse
+verse=fallout
+source=game
