@@ -1,0 +1,6 @@
+name="my_four"
+parent=my_lvl
+verse=my
+text
+	"Area destroy/create lvl"
+	"Strong current ability"

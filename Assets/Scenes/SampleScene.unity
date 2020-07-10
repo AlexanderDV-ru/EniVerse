@@ -251,6 +251,224 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5589077}
   m_CullTransparentMesh: 0
+--- !u!1 &39901954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39901955}
+  - component: {fileID: 39901958}
+  - component: {fileID: 39901957}
+  - component: {fileID: 39901956}
+  m_Layer: 5
+  m_Name: Search Output Path Conditional
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &39901955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39901954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 214935674}
+  - {fileID: 1958615921}
+  m_Father: {fileID: 815352079}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -295.5, y: -211.51001}
+  m_SizeDelta: {x: 591, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &39901956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39901954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 39901957}
+  m_TextComponent: {fileID: 1958615922}
+  m_Placeholder: {fileID: 214935675}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: index.temp
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+--- !u!114 &39901957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39901954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &39901958
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39901954}
+  m_CullTransparentMesh: 0
+--- !u!1 &214935673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214935674}
+  - component: {fileID: 214935676}
+  - component: {fileID: 214935675}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &214935674
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214935673}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 39901955}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &214935675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214935673}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter text...
+--- !u!222 &214935676
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214935673}
+  m_CullTransparentMesh: 0
 --- !u!1 &224249524
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,8 +946,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 4.6967}
-  m_SizeDelta: {x: 1182, y: 462.40417}
+  m_AnchoredPosition: {x: 0, y: 19.709}
+  m_SizeDelta: {x: 1182, y: 432.43768}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743796394
 MonoBehaviour:
@@ -790,7 +1008,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: "amane_misa\t\tparent=person\t\t\nandromedas_nebula\t\tparent=verse\t\t\nantique_charoplet\t\tparent=verse\t\t\nassasins_creed\t\tparent=verse\t\t\natack_on_titan\t\tparent=verse\t\t\natlas_shrugged\t\tparent=verse\t\t\nautostop_to_galaxy\t\tparent=verse\t\t\navatar\t\tparent=verse\t\t\nazimov\t\tparent=verse\t\t\nbattle_royale\t\tparent=verse\t\t\nberserk\t\tparent=verse\t\t\nbioshock\t\tparent=verse\t\t\nblack_mirror\t\tparent=verse\t\t\nbleach\t\tparent=verse\t\t\nblue_exorcist\t\tparent=verse\t\t\nboy_who_conquered_time\t\tparent=verse\t\t\nbulychov\t\tparent=verse\t\t\ncat_leopold\t\tparent=verse\t\t\nchronics_of_narnia\t\tparent=verse\t\t\nclaymore\t\tparent=verse\t\t\ncode_geass\t\tparent=verse\t\t\ncollectioner\t\tparent=verse\t\t\ncompleat_enchanter\t\tparent=verse\t\t\ncthulhu_mythos\t\tparent=verse\t\t\ndark_mage\t\tparent=verse\t\t\ndark_souls\t\tparent=verse\t\t\ndc\t\tparent=verse\t\t\ndeath_note\t\tparent=verse\t\t\ndeath_note_anime\t\tparent=anime\t\t\ndeath_note_manga\t\tparent=manga\t\t\ndeath_note_spinoff_manga\t\tparent=manga\t\t\ndeus_ex\t\tparent=verse\t\t\ndevil_may_cry\t\tparent=verse\t\t\ndiablo\t\tparent=verse\t\t\ndiane_duane\t\tparent=verse\t\t\ndoctor_who\t\tparent=verse\t\t\ndozory\t\tparent=verse\t\t\ndragonball\t\tparent=verse\t\t\ndragonlance\t\tparent=verse\t\t\ndragon_age\t\tparent=verse\t\t\ndungeons_and_dragons\t\tparent=verse\t\t\nearth\t\tparent=verse\t\t\nelder_scrolls\t\tparent=verse\t\t\nelfish_trash\t\tparent=verse\t\t\nelite\t\tparent=verse\t\t\nemerald_town_wizard\t\tparent=verse\t\t\nengineer_hyperboloid_garin\t\tparent=verse\t\t\nevangelion\t\tparent=verse\t\t\neverything_was_not_so\t\tparent=verse\t\t\neyes_of_other_world\t\tparent=verse\t\t\nfairly_oddparents\t\tparent=verse\t\t\nfairy_tail\t\tparent=verse\t\t\nfallout\t\tparent=verse\t\t\nfate\t\tparent=verse\t\t\nfate_of_archmage\t\tparent=verse\t\t\nfavourites\t\tparent=verse\t\t\nfifth_element\t\tparent=verse\t\t\nfinal_fantasy\t\tparent=verse\t\t\nfirestarter\t\tparent=verse\t\t\nfullmetal_alchemist\t\tparent=verse\t\t\nfullmetal_panic\t\tparent=verse\t\t\ngamer_system\t\tparent=verse\t\t\ngameworld\t\tparent=verse\t\t\ngame_of_thrones\t\tparent=verse\t\t\nghost_busters\t\tparent=verse\t\t\ngravity_falls\t\tparent=verse\t\t\ngreen_mile\t\tparent=verse\t\t\ngundam\t\tparent=verse\t\t\ngurren_lagann\t\tparent=verse\t\t\ngwsi\t\tparent=verse\t\t\nhataraku_mao_sama\t\tparent=verse\t\t\nheinlein\t\tparent=verse\t\t\nhellsing\t\tparent=verse\t\t\nhighschool_of_the_dead\t\tparent=verse\t\t\nhigh_school_dxd\t\tparent=verse\t\t\nhome_of_strange_kid_ms_peregrin\t\tparent=verse\t\t\nhowls_moving_castle\t\tparent=verse\t\t\nhpmor\t\tparent=verse\t\t\nhp_and_future_know\t\tparent=verse\t\t\nhunger_games\t\tparent=verse\t\t\nhunter_x_hunter\t\tparent=verse\t\t\nhyperion\t\tparent=verse\t\t\ninfinity_story\t\tparent=verse\t\t\ninuyasha\t\tparent=verse\t\t\njelas\t\tparent=verse\t\t\njojo_bizzare\t\tparent=verse\t\t\nkonosuba\t\tparent=verse\t\t\nlabirints_eho\t\tparent=verse\t\t\nlabirint_favna\t\tparent=verse\t\t\nleague_of_legends\t\tparent=verse\t\t\nlife_of_archmage_potter\t\tparent=verse\t\t\nlife_that_i_will_change\t\tparent=verse\t\t\nlight_outside_the_window\t\tparent=verse\t\t\nlittle_monster\t\tparent=verse\t\t\nlord_of_nightmares\t\tparent=verse\t\t\nlord_of_rings\t\tparent=verse\t\t\nlove_death_robots\t\tparent=verse\t\t\nlucifer\t\tparent=verse\t\t\nl_lawliet\t\tparent=verse\t\t\nmacademy_wasshoi\t\tparent=verse\t\t\nmage_and_his_shadow\t\tparent=verse\t\t\nmarvel\t\tparent=verse\t\t\nmass_effect\t\tparent=verse\t\t\nmaster_and_margarita\t\tparent=verse\t\t\nmatrix\t\tparent=verse\t\t\nmatsuda\t\tparent=verse\t\t\nmegamind\t\tparent=verse\t\t\nmemnoh_the_devil\t\tparent=verse\t\t\nmen_in_black\t\tparent=verse\t\t\nmeta_gamer\t\tparent=verse\t\t\nmeta_hobbit\t\tparent=verse\t\t\nmichael_keehl\t\tparent=verse\t\t\nminecraft\t\tparent=verse\t\t\nmob_psycho\t\tparent=verse\t\t\nmob_psycho_\t\tparent=verse\t\t\nmolchaniye_yagnyat\t\tparent=verse\t\t\nmother_and_mother_in_law\t\tparent=verse\t\t\nmy_hero_academy\t\tparent=verse\t\t\nmy_little_pony\t\tparent=verse\t\t\nnate_river\t\tparent=verse\t\t\nneon_genesis_evangelion\t\tparent=verse\t\t\nnew_horizonts\t\tparent=verse\t\t\nnick\t\tparent=verse\t\t\nnoragami\t\tparent=verse\t\t\none_piece\t\tparent=verse\t\t\none_punch_man\t\tparent=verse\t\t\norderly\t\tparent=verse\t\t\noverlord\t\tparent=verse\t\t\noz_country_wizard\t\tparent=verse\t\t\npage\t\tparent=none\t\t\npandora_box\t\tparent=verse\t\t\npath_to_top\t\tparent=verse\t\t\npersi_jackson\t\tparent=verse\t\t\nphineas_and_ferb\t\tparent=verse\t\t\npokemon\t\tparent=verse\t\t\nportal\t\tparent=verse\t\t\nranma\t\tparent=verse\t\t\nrascal_does_not_dream_of_bunny_girl_senpai\t\tparent=verse\t\t\nrave_master\t\tparent=verse\t\t\nrem\t\tparent=verse\t\t\nresident_evil\t\tparent=verse\t\t\nre_monster\t\tparent=verse\t\t\nrick_and_morty\t\tparent=verse\t\t\nrising_shield_hero\t\tparent=verse\t\t\nrosario_vampire\t\tparent=verse\t\t\nrwby\t\tparent=verse\t\t\nryuk\t\tparent=verse\t\t\nsailor_moon\t\tparent=verse\t\t\nsao\t\tparent=verse\t\t\nscp_foundation\t\tparent=verse\t\t\nshining\t\tparent=verse\t\t\nsignificant_digits\t\tparent=verse\t\t\nskyrim\t\tparent=verse\t\t\nslayers\t\tparent=verse\t\t\nsolaris\t\tparent=verse\t\t\nsorcerers\t\tparent=verse\t\t\nsoul_eater\t\tparent=verse\t\t\nspellbinder\t\tparent=verse\t\t\nstarcraft\t\tparent=verse\t\t\nstartrack\t\tparent=verse\t\t\nstar_dust\t\tparent=verse\t\t\nstar_gate\t\tparent=verse\t\t\nstar_wars\t\tparent=verse\t\t\nsticks\t\tparent=verse\t\t\nstrugatskie\t\tparent=verse\t\t\nsvarog\t\tparent=verse\t\t\nsyntax\t\tparent=none\t\t\ntechnomancer\t\tparent=verse\t\t\ntenjou_tenge\t\tparent=verse\t\t\nterminator\t\tparent=verse\t\t\nterraria\t\tparent=verse\t\t\nthanks_for_fish\t\tparent=verse\t\t\nthe_gamer\t\tparent=verse\t\t\nthe_law_of_ueki\t\tparent=verse\t\t\nthe_power_of_magic\t\tparent=verse\t\t\nthe_shawshank_redemption\t\tparent=verse\t\t\nthe_zadrot\t\tparent=verse\t\t\nthinking_means_there_is\t\tparent=verse\t\t\nthree_old_ladies\t\tparent=verse\t\t\nthrough_the_looking_glass\t\tparent=verse\t\t\ntokyo_ghoul\t\tparent=verse\t\t\ntoriko\t\tparent=verse\t\t\nto_love_ru\t\tparent=verse\t\t\ntrassa_sixty\t\tparent=verse\t\t\nuchiha_sasuke_from_radish_clan\t\tparent=verse\t\t\nuq_holder\t\tparent=verse\t\t\nvirtual_world\t\tparent=verse\t\t\nwarcraft\t\tparent=verse\t\t\nwarhammer\t\tparent=verse\t\t\nwatari\t\tparent=verse\t\t\nwill_to_live\t\tparent=verse\t\t\nwinks\t\tparent=verse\t\t\nwitcher\t\tparent=verse\t\t\nworld_of_darkness\t\tparent=verse\t\t\nyagami_light\t\tparent=verse\t\t\nyagami_soichiro\t\tparent=verse\t\t\nzero_no_tsukaima\t\tparent=verse\t\t\nassassination_classroom\t\tparent=verse\t\t\nbadchoice\t\tparent=verse\t\t\nauthor\t\tparent=verse\t\t\nauthors\t\tparent=verse\t\t\nbody\t\tparent=object\t\t\nimaginary\t\tparent=dimension\t\t\nmy\t\tparent=verse\t\t\nmy_about_toaru\t\tparent=text\t\t\nmy_forces\t\tparent=text\t\t\nnatural\t\tparent=dimension\t\t\nnatural_magic\t\tparent=feature\t\t\nneutral\t\tparent=force\t\t\nneutralization\t\tparent=ability\t\t\nreal\t\tparent=dimension\t\t\nsupernatural\t\tparent=dimension\t\t\nsupernatural_magic\t\tparent=feature\t\t\nwild_force\t\tparent=force\t\t\nbody_force\t\tparent=force\t\t\nchakra\t\tparent=force\t\t\nnaruto\t\tparent=verse\t\t\nsen_chakra\t\tparent=force\t\t\nsoul_force\t\tparent=force\t\t\njoanne_rowling\t\tparent=author\t\t\npotter\t\tparent=verse\t\t\nrudazov\t\tparent=verse\t\t\nimagine_breaker\t\tparent=feature\t\t\nkamijo_touma\t\tparent=esper\t\t\ntoaru\t\tparent=verse\t\t\nchaosether\t\tparent=six_firstether\t\t\ndeathether\t\tparent=six_firstether\t\t\nlifether\t\tparent=six_firstether\t\t\norderether\t\tparent=six_firstether\t\t\nsix_firstether\t\tparent=firstether\t\t\nunknown\t\tparent=verse\t\t\ncreature\t\tparent=type\t\t\ndimension\t\tparent=type\t\t\nfeature\t\tparent=type\t\t\ninheritance\t\tparent=type\t\t\nknowledge\t\tparent=type\t\t\nlocation\t\tparent=type\t\t\nneed\t\tparent=type\t\t\nobject\t\tparent=type\t\t\nparent\t\tparent=page\t\t\nperson\t\tparent=type\t\t\nreference\t\tparent=type\t\t\nsociety\t\tparent=type\t\t\ntext\t\tparent=type\t\t\ntype\t\tparent=page\t\t\nverse\t\tparent=type\t\t\nanime\t\tparent=source\t\t\nmanga\t\tparent=source\t\t\nranobe\t\tparent=source\t\t\nsource\t\tparent=page\t\t\nchaos\t\tparent=matter\t\t\ncoldether\t\tparent=ether\t\t\ndarkether\t\tparent=ether\t\t\ndensether\t\tparent=force\t\t\nenergy_prop\t\tparent=dimension\t\t\nether\t\tparent=force\t\t\nfirstether\t\tparent=ether\t\t\ngalaxy\t\tparent=\t\t\nhotether\t\tparent=ether\t\t\nhyper\t\tparent=\t\t\ninfo\t\tparent=\t\t\ninfo_prop\t\tparent=dimension\t\t\nlightether\t\tparent=ether\t\t\nlimbo\t\tparent=\t\t\nmaterial\t\tparent=\t\t\nmetaverse\t\tparent=\t\t\nmultispace\t\tparent=\t\t\nmultitime\t\tparent=\t\t\nmultiverse\t\tparent=\t\t\nproperty\t\tparent=\t\t\npurether\t\tparent=ether\t\t\nreality_prop\t\tparent=dimension\t\t\nsoftether\t\tparent=ether\t\t\nspace\t\tparent=\t\t\nstate\t\tparent=\t\t\ntime\t\tparent=\t\t\nuniverse\t\tparent=\t\t\nworld\t\tparent=dimension\t\t\naim\t\tparent=force\t\t\nesper\t\tparent=person\t\t\nesper_feature\t\tparent=feature\t\t\nmisaki_shoukuhou\t\tparent=esper\t\t\npersonal_force\t\tparent=force\t\t\npersonal_laws\t\tparent=dimension\t\t\npersonal_reality\t\tparent=ability\t\t\ntoaru_kagaku_no_railgun_anime\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_i_anime\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_manga\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_s_anime\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_t_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_genesis_testament_ranobe\t\tparent=ranobe\t\t\ntoaru_majutsu_no_index_iii_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_ii_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_i_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_new_testament_ranobe\t\tparent=ranobe\t\t\ntoaru_majutsu_no_index_old_testament_ranobe\t\tparent=ranobe\t\t\ntoaru_majutsu_no_index_ranobe\t\tparent=verse\t\t\nability\t\tparent=type\t\t\ncomplex\t\tparent=ability\t\t\nskill\t\tparent=ability\t\t\nelement\t\tparent=matter\t\t\nemotion\t\tparent=matter\t\t\nforce\t\tparent=matter\t\t\nform\t\tparent=matter\t\t\nmatter\t\tparent=type\t\t\nsubstance\t\tparent=matter\t\t\naccelerator\t\tparent=esper\t\t\naccelerator_feature\t\tparent=esper_feature\t\t\nmisaka_mikoto\t\tparent=esper\t\t\nteitoku_kakine\t\tparent=esper\t\t\n"
+  m_Text: "andromedas_nebula\t\tparent=verse\t\t\natlas_shrugged\t\tparent=verse\t\t\nautostop_to_galaxy\t\tparent=verse\t\t\nazimov\t\tparent=verse\t\t\nbulychov\t\tparent=verse\t\t\nchronics_of_narnia\t\tparent=verse\t\t\ncompleat_enchanter\t\tparent=verse\t\t\ncthulhu_mythos\t\tparent=verse\t\t\ndark_souls\t\tparent=verse\t\t\ndc\t\tparent=verse\t\t\ndiane_duane\t\tparent=verse\t\t\nelite\t\tparent=verse\t\t\nemerald_town_wizard\t\tparent=verse\t\t\nengineer_hyperboloid_garin\t\tparent=verse\t\t\neyes_of_other_world\t\tparent=verse\t\t\nfirestarter\t\tparent=verse\t\t\ngreen_mile\t\tparent=verse\t\t\nheinlein\t\tparent=verse\t\t\nhyperion\t\tparent=verse\t\t\nlabirints_eho\t\tparent=verse\t\t\nlight_outside_the_window\t\tparent=verse\t\t\nainur\t\tparent=verse\t\t\narda\t\tparent=verse\t\t\nistari\t\tparent=verse\t\t\nlord_of_rings\t\tparent=verse\t\t\nmage\t\tparent=verse\t\t\nnazgul\t\tparent=verse\t\t\nvalar\t\tparent=verse\t\t\nmaster_and_margarita\t\tparent=verse\t\t\nmemnoh_the_devil\t\tparent=verse\t\t\nnick\t\tparent=verse\t\t\norderly\t\tparent=verse\t\t\noz_country_wizard\t\tparent=verse\t\t\npersi_jackson\t\tparent=verse\t\t\njoanne_rowling\t\tparent=author\t\t\npotter\t\tparent=verse\t\t\nnatural\t\tparent=dimension\t\t\nnatural_magic\t\tparent=feature\t\t\nrudazov\t\tparent=verse\t\t\nsupernatural\t\tparent=dimension\t\t\nsupernatural_magic\t\tparent=feature\t\t\nshining\t\tparent=verse\t\t\nsolaris\t\tparent=verse\t\t\nsorcerers\t\tparent=verse\t\t\nspellbinder\t\tparent=verse\t\t\nsticks\t\tparent=verse\t\t\nstrugatskie\t\tparent=verse\t\t\nsvarog\t\tparent=verse\t\t\nthe_gamer\t\tparent=verse\t\t\nthrough_the_looking_glass\t\tparent=verse\t\t\nantique_charoplet\t\tparent=verse\t\t\nbadchoice\t\tparent=verse\t\t\nbandileros\t\tparent=\t\t\ndark_mage\t\tparent=verse\t\t\nelfish_trash\t\tparent=verse\t\t\nfate_of_archmage\t\tparent=verse\t\t\ngwsi\t\tparent=verse\t\t\nhpmor\t\tparent=verse\t\t\nhp_and_future_know\t\tparent=verse\t\t\nikotika\t\tparent=verse\t\t\nkitsune_miyato\t\tparent=\t\t\nlife_of_archmage_potter\t\tparent=verse\t\t\nlittle_monster\t\tparent=verse\t\t\nlord_of_nightmares\t\tparent=verse\t\t\nmage_and_his_shadow\t\tparent=verse\t\t\nantisubstance\t\tparent=text\t\t\nbody\t\tparent=object\t\t\ndepth\t\tparent=text\t\t\nelectromagnetic\t\tparent=text\t\t\nextermination\t\tparent=text\t\t\ngamer\t\tparent=text\t\t\ngamer_system_t\t\tparent=text\t\t\ngod_of_games\t\tparent=text\t\t\ngravitational_interaction\t\tparent=text\t\t\nheight\t\tparent=text\t\t\nhp\t\tparent=text\t\t\nhyperspace\t\tparent=text\t\t\ninteraction\t\tparent=text\t\t\nlength\t\tparent=text\t\t\nlevel_six\t\tparent=text\t\t\nlobby\t\tparent=text\t\t\nmy\t\tparent=verse\t\t\nmy_about\t\tparent=text\t\t\nmy_about_gamer\t\tparent=text\t\t\nmy_about_toaru\t\tparent=text\t\t\nmy_forces\t\tparent=text\t\t\nno_one_punch\t\tparent=text\t\t\npower\t\tparent=text\t\t\nreality\t\tparent=text\t\t\nshell\t\tparent=text\t\t\nspeed\t\tparent=text\t\t\nvector\t\tparent=text\t\t\n_interaction\t\tparent=text\t\t\nnew_horizonts\t\tparent=verse\t\t\npath_to_top\t\tparent=verse\t\t\npower_of_magic\t\tparent=verse\t\t\nsignificant_digits\t\tparent=verse\t\t\ntechnomancer\t\tparent=verse\t\t\nthanks_for_fish\t\tparent=verse\t\t\nthinking_means_there_is\t\tparent=verse\t\t\nthree_old_ladies\t\tparent=verse\t\t\nwill_to_live\t\tparent=verse\t\t\nblack_mirror\t\tparent=verse\t\t\nclockwork_orange\t\tparent=verse\t\t\ncollectioner\t\tparent=verse\t\t\ndoctor_who\t\tparent=verse\t\t\nfifth_element\t\tparent=verse\t\t\nghost_busters\t\tparent=verse\t\t\nhome_of_strange_kid_ms_peregrin\t\tparent=verse\t\t\ninfinity_story\t\tparent=verse\t\t\nivanovy_ivanovy\t\tparent=verse\t\t\nlabirint_favna\t\tparent=verse\t\t\nlove_death_robots\t\tparent=verse\t\t\nlucifer\t\tparent=verse\t\t\nmatrix\t\tparent=verse\t\t\nmen_in_black\t\tparent=verse\t\t\nmolchaniye_yagnyat\t\tparent=verse\t\t\nsherlock_dawni\t\tparent=verse\t\t\nsherlock_kemberbetch\t\tparent=verse\t\t\nsherlock_soviet\t\tparent=verse\t\t\nstartrack\t\tparent=verse\t\t\nstar_gate\t\tparent=verse\t\t\nstar_wars\t\tparent=verse\t\t\nterminator\t\tparent=verse\t\t\nassasins_creed\t\tparent=verse\t\t\nbioshock\t\tparent=verse\t\t\ndeus_ex\t\tparent=verse\t\t\ndevil_may_cry\t\tparent=verse\t\t\ndiablo\t\tparent=verse\t\t\ndragonlance\t\tparent=verse\t\t\ndragon_age\t\tparent=verse\t\t\ndungeons_and_dragons\t\tparent=verse\t\t\nfallout\t\tparent=verse\t\t\nfinal_fantasy\t\tparent=verse\t\t\nleague_of_legends\t\tparent=verse\t\t\nmass_effect\t\tparent=verse\t\t\nminecraft\t\tparent=verse\t\t\nportal\t\tparent=verse\t\t\nresident_evil\t\tparent=verse\t\t\nstarcraft\t\tparent=verse\t\t\nterraria\t\tparent=verse\t\t\nwarcraft\t\tparent=verse\t\t\nassassination_classroom\t\tparent=verse\t\t\natack_on_titan\t\tparent=verse\t\t\navatar\t\tparent=verse\t\t\nbattle_royale\t\tparent=verse\t\t\nberserk\t\tparent=verse\t\t\nbleach\t\tparent=verse\t\t\nblue_exorcist\t\tparent=verse\t\t\ncase_closed\t\tparent=verse\t\t\nclaymore\t\tparent=verse\t\t\nbritanian_imperia\t\tparent=society\t\t\ncode_geass\t\tparent=verse\t\t\nknightmare\t\tparent=object\t\t\nsakuradite\t\tparent=substance\t\t\namane_misa\t\tparent=person\t\t\ndeath_note\t\tparent=verse\t\t\ndeath_note_anime\t\tparent=anime\t\t\ndeath_note_manga\t\tparent=manga\t\t\ndeath_note_spinoff_manga\t\tparent=manga\t\t\njelas\t\tparent=person\t\t\nl_lawliet\t\tparent=person\t\t\nmatsuda\t\tparent=person\t\t\nmichael_keehl\t\tparent=person\t\t\nnate_river\t\tparent=person\t\t\nrem\t\tparent=person\t\t\nryuk\t\tparent=person\t\t\nwatari\t\tparent=person\t\t\nyagami_light\t\tparent=person\t\t\nyagami_soichiro\t\tparent=person\t\t\ndragonball\t\tparent=verse\t\t\natf\t\tparent=verse\t\t\nchildren\t\tparent=verse\t\t\neva\t\tparent=verse\t\t\nevangelion\t\tparent=verse\t\t\nevangelion_angel\t\tparent=verse\t\t\nfairy_tail\t\tparent=verse\t\t\nfate\t\tparent=verse\t\t\nfullmetal_alchemist\t\tparent=verse\t\t\nfullmetal_panic\t\tparent=verse\t\t\ngundam\t\tparent=verse\t\t\ngurren_lagann\t\tparent=verse\t\t\nhataraku_mao_sama\t\tparent=verse\t\t\nhellsing\t\tparent=verse\t\t\nhighschool_of_the_dead\t\tparent=verse\t\t\nhigh_school_dxd\t\tparent=verse\t\t\nhunter_x_hunter\t\tparent=verse\t\t\ninuyasha\t\tparent=verse\t\t\njojo\t\tparent=verse\t\t\nkanokon\t\tparent=verse\t\t\nkonosuba\t\tparent=verse\t\t\nlaw_of_ueki\t\tparent=verse\t\t\nlupen\t\tparent=verse\t\t\nmacademy_wasshoi\t\tparent=verse\t\t\nmob_psycho\t\tparent=verse\t\t\nmy_hero_academy\t\tparent=verse\t\t\nbody_force\t\tparent=force\t\t\nchakra\t\tparent=force\t\t\nnaruto\t\tparent=verse\t\t\nsen_chakra\t\tparent=force\t\t\nsoul_force\t\tparent=force\t\t\nwild_force\t\tparent=force\t\t\nnoragami\t\tparent=verse\t\t\none_piece\t\tparent=verse\t\t\none_punch_man\t\tparent=verse\t\t\noverlord\t\tparent=verse\t\t\npandora_box\t\tparent=verse\t\t\npokemon\t\tparent=verse\t\t\nranma\t\tparent=verse\t\t\nrascal_does_not_dream_of_bunny_girl_senpai\t\tparent=verse\t\t\nrave_master\t\tparent=verse\t\t\nre_monster\t\tparent=verse\t\t\nrising_shield_hero\t\tparent=verse\t\t\nrosario_vampire\t\tparent=verse\t\t\nrwby\t\tparent=verse\t\t\nsailor_moon\t\tparent=verse\t\t\nsao\t\tparent=verse\t\t\nslayers\t\tparent=verse\t\t\nsoul_eater\t\tparent=verse\t\t\ntenjou_tenge\t\tparent=verse\t\t\nimaginary\t\tparent=dimension\t\t\nimagine_breaker\t\tparent=feature\t\t\nkamijo_touma\t\tparent=esper\t\t\nnegation\t\tparent=verb\t\t\nreal\t\tparent=dimension\t\t\ntoaru\t\tparent=verse\t\t\ntokyo_ghoul\t\tparent=verse\t\t\ntoriko\t\tparent=verse\t\t\nto_love_ru\t\tparent=verse\t\t\nuq_holder\t\tparent=verse\t\t\nworld_of_darkness\t\tparent=verse\t\t\nzero_no_tsukaima\t\tparent=verse\t\t\ncat_leopold\t\tparent=verse\t\t\nfairly_oddparents\t\tparent=verse\t\t\ngravity_falls\t\tparent=verse\t\t\nmegamind\t\tparent=verse\t\t\nmy_little_pony\t\tparent=verse\t\t\nphineas_and_ferb\t\tparent=verse\t\t\nrick_and_morty\t\tparent=verse\t\t\nwinks\t\tparent=verse\t\t\nalexander_panchin\t\tparent=verse\t\t\nalexey_vodovozov\t\tparent=verse\t\t\nbiology_of_good_and_evil\t\tparent=verse\t\t\nblaberidy\t\tparent=verse\t\t\ndawkinz\t\tparent=verse\t\t\nkarl_marks\t\tparent=verse\t\t\nnaming_religia\t\tparent=verse\t\t\nnobelieve_minds\t\tparent=verse\t\t\nodissey_leaves_itaka\t\tparent=verse\t\t\npogruzheniye_v_psychology\t\tparent=verse\t\t\nstephen_hawking\t\tparent=verse\t\t\nworkdays_of_teacher\t\tparent=verse\t\t\nelder_scrolls\t\tparent=verse\t\t\nskyrim\t\tparent=game\t\t\ngamer_system\t\tparent=verse\t\t\ngameworld\t\tparent=verse\t\t\ngame_of_thrones\t\tparent=verse\t\t\nhunger_games\t\tparent=verse\t\t\nmarvel\t\tparent=verse\t\t\nauthor\t\tparent=person\t\t\npage\t\tparent=none\t\t\nsyntax\t\tparent=page\t\t\nearth\t\tparent=world,planet\t\t\ngalaxy\t\tparent=dimension\t\t\nproperty\t\tparent=dimension\t\t\nreal_world\t\tparent=verse\t\t\nspace\t\tparent=dimension\t\t\ntime\t\tparent=dimension\t\t\nuniverse\t\tparent=dimension\t\t\nscp_foundation\t\tparent=verse\t\t\nstar_dust\t\tparent=verse\t\t\nthe_shawshank_redemption\t\tparent=verse\t\t\ntrassa_sixty\t\tparent=verse\t\t\nchaosether\t\tparent=six_firstether\t\t\ndeathether\t\tparent=six_firstether\t\t\nhyper\t\tparent=dimension\t\t\nlifether\t\tparent=six_firstether\t\t\nmultispace\t\tparent=dimension\t\t\nmultitime\t\tparent=dimension\t\t\nmultiverse\t\tparent=dimension\t\t\norderether\t\tparent=six_firstether\t\t\nsix_firstether\t\tparent=firstether\t\t\nunknown\t\tparent=verse\t\t\nworld\t\tparent=dimension\t\t\nvirtual_world\t\tparent=verse\t\t\nwarhammer\t\tparent=verse\t\t\nwitcher\t\tparent=verse\t\t\ndozory\t\tparent=verse\t\t\ndraft\t\tparent=verse\t\t\nchaos\t\tparent=matter\t\t\nenergy_prop\t\tparent=dimension\t\t\ninfo\t\tparent=dimension\t\t\ninfo_prop\t\tparent=dimension\t\t\nlimbo\t\tparent=dimension\t\t\nmaterial\t\tparent=dimension\t\t\nmetaverse\t\tparent=dimension\t\t\nmind\t\tparent=verse\t\t\nreality_prop\t\tparent=dimension\t\t\nstate\t\tparent=dimension\t\t\nangel\t\tparent=verb\t\t\ndemon\t\tparent=verse\t\t\ngod\t\tparent=verse\t\t\nimmortal\t\tparent=verse\t\t\nmortal\t\tparent=verse\t\t\nneutral\t\tparent=verse\t\t\nbio\t\tparent=verse\t\t\ncoldether\t\tparent=ether\t\t\ndarkether\t\tparent=ether\t\t\ndensether\t\tparent=force\t\t\nether\t\tparent=force\t\t\nfirstether\t\tparent=ether\t\t\nhotether\t\tparent=ether\t\t\ninactive\t\tparent=force\t\t\nlightether\t\tparent=ether\t\t\npurether\t\tparent=ether\t\t\nsoftether\t\tparent=ether\t\t\ntech\t\tparent=verse\t\t\nbioal\t\tparent=verse\t\t\nforcal\t\tparent=verse\t\t\nlevel\t\tparent=verse\t\t\nrudazov_apprentice\t\tparent=level\t\t\nrudazov_archmage\t\tparent=verse\t\t\nrudazov_higher\t\tparent=verse\t\t\nrudazov_master\t\tparent=verse\t\t\nrudazov_nomage\t\tparent=verse\t\t\nrudazov_pastmaster\t\tparent=verse\t\t\nrudazov_student\t\tparent=verse\t\t\ntechal\t\tparent=verse\t\t\nuniversal\t\tparent=verse\t\t\nkaabar\t\tparent=verse\t\t\nclearing\t\tparent=verse\t\t\nclouding\t\tparent=verse\t\t\nconsecration\t\tparent=verse\t\t\ndesecration\t\tparent=verse\t\t\nhuman\t\tparent=verse\t\t\nsided\t\tparent=verb\t\t\nturn\t\tparent=verse\t\t\nboy_who_conquered_time\t\tparent=verse\t\t\nboy_who_conquered_time_happening\t\tparent=verse\t\t\nmeta_gamer\t\tparent=verse\t\t\nmeta_hobbit\t\tparent=verse\t\t\nthe_zadrot\t\tparent=verse\t\t\nweasleys_list\t\tparent=verse\t\t\neverything_was_not_so\t\tparent=verse\t\t\nfavourites\t\tparent=verse\t\t\nmitsune_miyato\t\tparent=verse\t\t\nlife_that_i_will_change\t\tparent=verse\t\t\nmother_and_mother_in_law\t\tparent=verse\t\t\nuchiha_sasuke_from_radish_clan\t\tparent=verse\t\t\napplied_energistics\t\tparent=verse\t\t\nbig_reactor\t\tparent=verse\t\t\nbloodmagic\t\tparent=verse\t\t\nbuildcraft\t\tparent=verse\t\t\nelectrical_age\t\tparent=verse\t\t\nender_io\t\tparent=verse\t\t\nforestry\t\tparent=verse\t\t\ngravisuite\t\tparent=verse\t\t\ngregtech\t\tparent=verse\t\t\nimmersive_engineering\t\tparent=verse\t\t\nindustrialcraft\t\tparent=verse\t\t\nmekanism\t\tparent=verse\t\t\nminefactory\t\tparent=verse\t\t\nrailcraft\t\tparent=verse\t\t\nreactorcraft\t\tparent=verse\t\t\nredpower\t\tparent=verse\t\t\nrotarycraft\t\tparent=verse\t\t\nterrafirmacraft\t\tparent=verse\t\t\nthaumcraft\t\tparent=verse\t\t\nthermal_expansion\t\tparent=verse\t\t\nantigeass\t\tparent=feature\t\t\ncontrol\t\tparent=geass\t\t\ngeass\t\tparent=verse\t\t\ngeass_code\t\tparent=feature\t\t\nlove\t\tparent=geass\t\t\nmemory\t\tparent=geass\t\t\nsoul\t\tparent=geass\t\t\ntelepathy\t\tparent=geass\t\t\ntime_stop\t\tparent=geass\t\t\ncharlz\t\tparent=person\t\t\nc_c_\t\tparent=person\t\t\njeremia\t\tparent=person\t\t\nlelouch\t\tparent=person\t\t\nmao\t\tparent=person\t\t\nmarianna\t\tparent=person\t\t\nroland\t\tparent=person\t\t\nv_v_\t\tparent=person\t\t\nhowls_moving_castle\t\tparent=verse\t\t\naim\t\tparent=force\t\t\nesper\t\tparent=person\t\t\nesper_feature\t\tparent=feature\t\t\nmisaki_shoukuhou\t\tparent=esper\t\t\npersonal_force\t\tparent=force\t\t\npersonal_laws\t\tparent=dimension\t\t\npersonal_reality\t\tparent=ability\t\t\ntoaru_kagaku_no_railgun_anime\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_i_anime\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_manga\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_s_anime\t\tparent=verse\t\t\ntoaru_kagaku_no_railgun_t_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_genesis_testament_ranobe\t\tparent=ranobe\t\t\ntoaru_majutsu_no_index_iii_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_ii_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_i_anime\t\tparent=verse\t\t\ntoaru_majutsu_no_index_new_testament_ranobe\t\tparent=ranobe\t\t\ntoaru_majutsu_no_index_old_testament_ranobe\t\tparent=ranobe\t\t\ntoaru_majutsu_no_index_ranobe\t\tparent=verse\t\t\nen\t\tparent=language\t\t\nlanguage\t\tparent=page\t\t\nru\t\tparent=language\t\t\nname\t\tparent=page\t\t\ncreature\t\tparent=type\t\t\ndimension\t\tparent=type\t\t\nfeature\t\tparent=type\t\t\nhappening\t\tparent=type\t\t\ninheritance\t\tparent=type\t\t\nknowledge\t\tparent=type\t\t\nlocation\t\tparent=type\t\t\nneed\t\tparent=type\t\t\nobject\t\tparent=type\t\t\nparent\t\tparent=page\t\t\nperson\t\tparent=type\t\t\nreference\t\tparent=type\t\t\nsociety\t\tparent=type\t\t\ntext\t\tparent=type\t\t\ntype\t\tparent=page\t\t\nurl\t\tparent=type\t\t\nverb\t\tparent=type\t\t\nverse\t\tparent=type\t\t\nanime\t\tparent=source\t\t\ngame\t\tparent=source\t\t\nmanga\t\tparent=source\t\t\nranobe\t\tparent=source\t\t\nsource\t\tparent=page\t\t\nfanwiki\t\tparent=url\t\t\nshikimori\t\tparent=url\t\t\nwiki\t\tparent=url\t\t\naltitude\t\tparent=verse\t\t\nfall\t\tparent=verse\t\t\nrise\t\tparent=verse\t\t\nendarkenment\t\tparent=enenment\t\t\nenenment\t\tparent=verb\t\t\nenlightenment\t\tparent=enenment\t\t\ndarkening\t\tparent=verse\t\t\ninversing\t\tparent=verse\t\t\nlightening\t\tparent=verse\t\t\nundarkenment\t\tparent=verse\t\t\nunenment\t\tparent=verse\t\t\nunlightenment\t\tparent=verse\t\t\naccelerator\t\tparent=esper\t\t\naccelerator_feature\t\tparent=esper_feature\t\t\nmisaka_mikoto\t\tparent=esper\t\t\nteitoku_kakine\t\tparent=esper\t\t\neng\t\tparent=name\t\t\njpn\t\tparent=name\t\t\nlangname\t\tparent=name\t\t\nrus\t\tparent=name\t\t\nabilname\t\tparent=name\t\t\naliasname\t\tparent=name\t\t\nbornname\t\tparent=name\t\t\nepithet\t\tparent=name\t\t\nfalsename\t\tparent=name\t\t\nnickname\t\tparent=name\t\t\ntruename\t\tparent=name\t\t\ncyrl\t\tparent=scriptname\t\t\nhrkt\t\tparent=jpn,scriptname\t\t\njpan\t\tparent=jpn,scriptname\t\t\nlatn\t\tparent=scriptname\t\t\nromaji\t\tparent=jpn,scriptname\t\t\nscriptname\t\tparent=name\t\t\nability\t\tparent=type\t\t\ncomplex\t\tparent=ability\t\t\nskill\t\tparent=ability\t\t\nelement\t\tparent=matter\t\t\nemotion\t\tparent=matter\t\t\nforce\t\tparent=matter\t\t\nform\t\tparent=matter\t\t\nmatter\t\tparent=type\t\t\nsubstance\t\tparent=matter\t\t\n"
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -831,6 +1049,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743796392}
   m_CullTransparentMesh: 0
+--- !u!1 &793752326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793752327}
+  - component: {fileID: 793752329}
+  - component: {fileID: 793752328}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &793752327
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793752326}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2051270467}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &793752328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793752326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &793752329
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793752326}
+  m_CullTransparentMesh: 0
 --- !u!1 &815352078
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +1163,8 @@ RectTransform:
   - {fileID: 224249525}
   - {fileID: 5589078}
   - {fileID: 1297309994}
+  - {fileID: 39901955}
+  - {fileID: 2051270467}
   m_Father: {fileID: 1217827053}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1130,7 +1428,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "amane_misa\t\tparent=person\t\t\nandromedas_nebula\t\tparent=verse\t\t\nantique_charoplet\t\tparent=verse\t\t\nassasins_creed\t\tparent=verse\t\t\natack_on_titan\t\tparent=verse\t\t\natlas_shrugged\t\tparent=verse\t\t\nautostop_to_galaxy\t\tparent=verse\t\t\navatar\t\tparent=verse\t\t\nazimov\t\tparent=verse\t\t\nbattle_royale\t\tparent=verse\t\t\nberserk\t\tparent=verse\t\t\nbioshock\t\tparent=verse\t\t\nblack_mirror\t\tparent=verse\t\t\nbleach\t\tparent=verse\t\t\nblue_exorcist\t\tparent=verse\t\t\nboy_who_conquered_time\t\tparent=verse\t\t\nbulychov\t\tparent=verse\t\t\ncat_leopold\t\tparent=verse\t\t\nchronics_of_narnia\t\tparent=verse\t\t\nclaymore\t\tparent=verse\t\t\ncode_geass\t\tparent=verse\t\t\ncollectioner\t\tparent=verse\t\t\ncompleat_enchanter\t\tparent=verse\t\t\ncthulhu_mythos\t\tparent=verse\t\t\ndark_mage\t\tparent=verse\t\t\ndark_souls\t\tparent=verse\t\t\ndc\t\tparent=verse\t\t\ndeath_note\t\tparent=verse\t\t"
+  m_Text: "andromedas_nebula\t\tparent=verse\t\t\natlas_shrugged\t\tparent=verse\t\t\nautostop_to_galaxy\t\tparent=verse\t\t\nazimov\t\tparent=verse\t\t\nbulychov\t\tparent=verse\t\t\nchronics_of_narnia\t\tparent=verse\t\t\ncompleat_enchanter\t\tparent=verse\t\t\ncthulhu_mythos\t\tparent=verse\t\t\ndark_souls\t\tparent=verse\t\t\ndc\t\tparent=verse\t\t\ndiane_duane\t\tparent=verse\t\t\nelite\t\tparent=verse\t\t\nemerald_town_wizard\t\tparent=verse\t\t\nengineer_hyperboloid_garin\t\tparent=verse\t\t\neyes_of_other_world\t\tparent=verse\t\t\nfirestarter\t\tparent=verse\t\t\ngreen_mile\t\tparent=verse\t\t\nheinlein\t\tparent=verse\t\t\nhyperion\t\tparent=verse\t\t\nlabirints_eho\t\tparent=verse\t\t\nlight_outside_the_window\t\tparent=verse\t\t\nainur\t\tparent=verse\t\t\narda\t\tparent=verse\t\t\nistari\t\tparent=verse\t\t\nlord_of_rings\t\tparent=verse\t\t\nmage\t\tparent=verse\t\t"
 --- !u!222 &1189435182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1178,6 +1476,10 @@ MonoBehaviour:
   create: 0
   index: 0
   field: {fileID: 743796394}
+  search: {fileID: 454401307}
+  keysField: {fileID: 1601876117}
+  searchOutputPathConditionalField: {fileID: 39901956}
+  searchOutputTextConditionalField: {fileID: 2051270468}
   openedName: {fileID: 1893058498}
   maxIters: 4096
   equals: =
@@ -1185,8 +1487,6 @@ MonoBehaviour:
   doubleClickTime: 0.5
   pageNameSymbols: abcdefghijklmnopqrstuvwxyz_
   pageNameIgnoreCase: 1
-  search: {fileID: 454401307}
-  keysField: {fileID: 1601876117}
 --- !u!4 &1211550216
 Transform:
   m_ObjectHideFlags: 0
@@ -1726,6 +2026,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607696557}
   m_CullTransparentMesh: 0
+--- !u!1 &1711493169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711493170}
+  - component: {fileID: 1711493172}
+  - component: {fileID: 1711493171}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1711493170
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711493169}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2051270467}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1711493171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711493169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter text...
+--- !u!222 &1711493172
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711493169}
+  m_CullTransparentMesh: 0
 --- !u!1 &1747812632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,6 +2416,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951443972}
   m_CullTransparentMesh: 0
+--- !u!1 &1958615920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958615921}
+  - component: {fileID: 1958615923}
+  - component: {fileID: 1958615922}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1958615921
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958615920}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 39901955}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1958615922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958615920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: index.temp
+--- !u!222 &1958615923
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958615920}
+  m_CullTransparentMesh: 0
 --- !u!1 &2001457991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,6 +2571,146 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001457991}
+  m_CullTransparentMesh: 0
+--- !u!1 &2051270466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2051270467}
+  - component: {fileID: 2051270470}
+  - component: {fileID: 2051270469}
+  - component: {fileID: 2051270468}
+  m_Layer: 5
+  m_Name: Search Output Text Conditional
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2051270467
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051270466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1711493170}
+  - {fileID: 793752327}
+  m_Father: {fileID: 815352079}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 295.5, y: -211.51001}
+  m_SizeDelta: {x: 591, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2051270468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051270466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2051270469}
+  m_TextComponent: {fileID: 793752328}
+  m_Placeholder: {fileID: 1711493171}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+--- !u!114 &2051270469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051270466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2051270470
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051270466}
   m_CullTransparentMesh: 0
 --- !u!1 &2089190159
 GameObject:

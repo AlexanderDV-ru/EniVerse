@@ -1,0 +1,22 @@
+name="my_level"
+parent=lvl
+verse=my
+need
+	my_lvl0_0
+	my_lvl0_5
+	my_lvl1_0
+	my_lvl1_5
+	my_lvl2_0
+	my_lvl2_5
+	my_lvl3_0
+	my_lvl3_5
+	my_lvl4_0
+	my_lvl4_5
+	my_lvl5_0
+	my_lvl5_5
+	my_lvl6_0
+	my_lvl6_5
+	my_lvl7_0
+	my_lvl7_5
+	my_lvl8_0
+	my_lvl_unrated

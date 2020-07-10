@@ -1,0 +1,5 @@
+name="my_lvl2_5"
+parent=my_lvl
+verse=my
+text
+	"System destroy/create lvl"

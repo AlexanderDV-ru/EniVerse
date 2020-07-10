@@ -13,4 +13,4 @@ name="Accelerator"
 parent=esper
 verse=toaru
 feature=accelerator_feature
-	level=5.5
+lvl=my_lvl5_5

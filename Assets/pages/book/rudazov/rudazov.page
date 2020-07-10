@@ -29,7 +29,7 @@ society
 				@rari	devkatsi
 			1.0!=3	?_-_mech|social!#
 			2.0!=6	?_-_digit|!#
-			3.0!=9	?_-_space|verse_level!#
+			3.0!=9	?_-_space|verse level!#
 			4.0!=12	?_-_?!#
 			5.0!=15	?_-_energy!#
 			6.0!=18	immortal_-_tech|mage|bio!#
@@ -86,8 +86,8 @@ society
 		#number_after_"-"_says_that_this_world_after_apocalipsis,_it_has_tech,_but_cant_create
 	%opened
 		%closed!#don't_know_about_other
-		%half-closed!#thinks_that_other_is_1,2,3..._not_a_lot_of
-		%half-opened!#have_knowledge_about_other
+		%half_closed!#thinks_that_other_is_1,2,3..._not_a_lot_of
+		%half_opened!#have_knowledge_about_other
 		%opened!#have_contacts_with_other
 worlds
 	%types
@@ -369,7 +369,7 @@ objects
 				gate
 			%tech
 				%plonet's
-					hill-9000
+					hill_9000
 		%r-6
 			%grimoires
 				kriabal

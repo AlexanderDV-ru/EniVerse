@@ -1,0 +1,6 @@
+name="my_one"
+parent=my_lvl
+verse=my
+text
+	"1 cube meter destroy/create lvl"
+	"Weakest current ability"

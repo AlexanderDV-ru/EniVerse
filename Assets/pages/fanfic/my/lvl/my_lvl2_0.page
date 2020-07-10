@@ -1,0 +1,6 @@
+name="my_two"
+parent=my_lvl
+verse=my
+text
+	"Room destroy/create lvl"
+	"Weak current ability"

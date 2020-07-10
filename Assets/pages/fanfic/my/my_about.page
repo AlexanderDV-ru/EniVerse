@@ -6,19 +6,19 @@ text
 		height	reality	matter	substance
 		depth	info	time	ether
 	b
-		accelerator max abilities	-	level six
+		accelerator max abilities	-	level_six
 			dimension
 				1	-	time
 				3	-	space
 				8	-	multispace
 				1	-	hyperspace
-			imaginary ether vectors
+			imaginary ether vector
 			speed
-			power
-				weak
-				strong
-				electromagnetic
-				gravitation
+			power of interaction
+				weak_interaction
+				strong_interaction
+				electromagnetic_interaction
+				gravitational_interaction
 			weak-strong-quantum
 				antisubstance	turning
 				cold thermonuclear synthesis

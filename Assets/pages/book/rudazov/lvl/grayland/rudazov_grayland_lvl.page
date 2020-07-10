@@ -1,0 +1,14 @@
+name="Rudazov's Grayland Lvl"
+parent=rudazov_lvl
+verse=rudazov
+need
+	rudazov_buckwheat
+	rudazov_purple
+	rudazov_blue
+	rudazov_lightblue
+	rudazov_green
+	rudazov_yellow
+	rudazov_orange
+	rudazov_red
+	rudazov_gray
+	rudazov_white

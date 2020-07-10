@@ -1,0 +1,6 @@
+name="my_three"
+parent=my_lvl
+verse=my
+text
+	"Building destroy/create lvl"
+	"Middle current ability"

@@ -10,23 +10,32 @@ public class NewPageGen : MonoBehaviour
 	//public
     public string assetsPath="Assets/",pagesPath="pages/",pageVerse="new_verse",pagePath = "",pageName="new_page",pageExtension=".page";
     public string pageParent = "verse";
+
     public bool create;
 	public bool index;
+
 	public InputField field;
+	public InputField search;
+	public InputField keysField;
+	public InputField searchOutputPathConditionalField;
+	public InputField searchOutputTextConditionalField;
+
 	public Text openedName;
 	public int maxIters=4096;
 	public string equals="=";
 	public List<string> pagesHistory=new List<string>();
 	public Dictionary<string, FileInfo> pagesFiles;
 	public float doubleClickTime=0.5f;
-	public string pageNameSymbols="abcdefghijklmnopqrstuvwxyz_";
+	public string pageNamePattern="[abcdefghijklmnopqrstuvwxyz_][abcdefghijklmnopqrstuvwxyz_0123456789]*";
 	public bool pageNameIgnoreCase=true;
-	public InputField search;
-	public InputField keysField;
 
 	//internal
 	string fullText="";
+
 	string lastSearch="";
+	string lastFullText="";
+	string lastPath="";
+
 	string indexed="";
 	float lastClick;
     // Start is called before the first frame update
@@ -113,6 +122,7 @@ public class NewPageGen : MonoBehaviour
 		{
 			field.text=fullText=indexed;
 			openedName.text="Index";
+			lastPath="temp:/index.temp";
 		}
 		else
 		{
@@ -120,7 +130,9 @@ public class NewPageGen : MonoBehaviour
 				pageName=pageName.ToLower();
 			if(!pagesFiles.ContainsKey(pageName))
 				return;
-			pagesHistory.Add(pageName);
+			lastPath=pagesFiles[pageName].FullName;
+			if(pagesHistory.Count==0||pagesHistory[pagesHistory.Count-1]!=pageName)
+				pagesHistory.Add(pageName);
 			using (var reader = pagesFiles[pageName].OpenText())
 			{
 				field.text=fullText=reader.ReadToEnd();
@@ -164,7 +176,7 @@ public class NewPageGen : MonoBehaviour
 		string path=fName!=""?Path.Combine(file.Directory.FullName, fName+pageExtension):file.FullName;
 		string name = path.Replace("\\","/");
 		name=name.Split('/')[name.Split('/').Length - 1];
-		Debug.Log(path+" "+File.Exists(path)+" "+fileParent+" "+fileVerse+" "+fileName+" "+fName+" "+name);
+		Debug.Log(name+" "+!File.Exists(path)+"\t\t"+fileParent+" "+fileVerse+" "+fileName+" "+path);
 		name=name.Substring(0,name.IndexOf("."));
 		if(fileName=="")
 			fileName=name.Replace("_"," ");
@@ -201,31 +213,47 @@ public class NewPageGen : MonoBehaviour
 		writer.Close();
 		DoIndex();
 	}
+	public bool CanBeName(string checking)
+	{
+		foreach(Match match in Regex.Matches(checking,pageNamePattern,pageNameIgnoreCase?RegexOptions.IgnoreCase:RegexOptions.None))
+			if(match.Value==checking)
+				return true;
+		return false;
+	}
     void Update()
     {
 		string path=assetsPath+pagesPath+pagePath+pageName+pageExtension;
-		if(search.text!=lastSearch)
+		if(search.text!=lastSearch||lastFullText!=fullText)
 		{
 			lastSearch=search.text;
+			lastFullText=fullText;
 			string curText="";
-			foreach (Match match in Regex.Matches(fullText, lastSearch, RegexOptions.IgnoreCase))
-				curText+=match.Value;
-			field.text=curText;
+			try
+			{
+				foreach (Match match in Regex.Matches(fullText, lastSearch, RegexOptions.IgnoreCase))
+					curText+=match.Value;
+				if(Regex.Matches(fullText, searchOutputTextConditionalField.text, RegexOptions.IgnoreCase).Count!=0)
+					if(Regex.Matches(lastPath, searchOutputPathConditionalField.text, RegexOptions.IgnoreCase).Count!=0)
+						field.text=curText;
+			}
+			catch
+			{
+				field.text=fullText;
+			}
 		}
 
 		if(Input.GetMouseButtonDown(0)||Input.GetMouseButtonDown(1))
+		if(field.isFocused)
 		{
 			if(Time.time-lastClick<doubleClickTime)
 			{
 				int start=0,end=0;
-				for(int c=field.caretPosition;c>=0;c--)
-					if(pageNameIgnoreCase?pageNameSymbols.ToLower().IndexOf((field.text[c]+"").ToLower())!=-1:pageNameSymbols.IndexOf(field.text[c])!=-1)
+				for(int c=field.caretPosition,cc=0;c>=0&&cc<32;c--,cc++)
+					if(CanBeName(field.text.Substring(c,field.caretPosition-c+1)))
 						start=c;
-					else break;
-				for(int c=field.caretPosition;c<field.text.Length;c++)
-					if(pageNameIgnoreCase?pageNameSymbols.ToLower().IndexOf((field.text[c]+"").ToLower())!=-1:pageNameSymbols.IndexOf(field.text[c])!=-1)
+				for(int c=field.caretPosition,cc=0;c<field.text.Length&&cc<32;c++,cc++)
+					if(CanBeName(field.text.Substring(start,c-start+1)))
 						end=c;
-					else break;
 				if(field.text.Substring(start,end-start+1).Length!=0)
 					if(Input.GetMouseButtonDown(0))
 						Open(field.text.Substring(start,end-start+1));

@@ -1,0 +1,5 @@
+name="my_zero"
+parent=my_lvl
+verse=my
+text
+	"No current ability"
