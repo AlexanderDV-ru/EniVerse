@@ -1,0 +1,8 @@
+name="verb"
+parent=type
+verse=none
+text
+	"Phenomene"
+	"Action"
+	"Event"
+	"Process"

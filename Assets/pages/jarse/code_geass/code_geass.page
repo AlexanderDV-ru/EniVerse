@@ -1,49 +1,60 @@
 name="code_geass"
 parent=verse
 verse=code_geass
-creatures
-	%mind
-		%r-5
-			%human
-				%l3.0
-					roland
-					mao
-				%l5.0
-					lelouch
-					charlz
-					marianna
-					c.c.
-actions
-	%r-5
-		mental
-			geass
-				control
-					@lelouch
-				memory
-					@charlz
-				soul
-					@marianna
-				time_stop
-					@roland
-				love
-					@c.c.
-				?
-					@v.v.
-				telepathy
-					@mao
-			antigeass
-				@jeremia
-	%r-6
-		code_geass
-			@c.c.
-			@v.v.
-			@charlz
+url
+	shikimori
+		https://shikimori.one/animes/1575-code-geass
+	fanwiki
+		en
+			https://codegeass.fandom.com/
+			https://codegeass.fandom.com/wiki/Code_Geass_Wiki
+			https://codegeass.fandom.com/wiki/Code_Geass:_Lelouch_of_the_Rebellion
+		ru
+			https://codegeass.fandom.com/ru/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0
+	wiki
+		en
+			https://en.wikipedia.org/wiki/Code_Geass
+		ja
+			https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%89%E3%82%AE%E3%82%A2%E3%82%B9_%E5%8F%8D%E9%80%86%E3%81%AE%E3%83%AB%E3%83%AB%E3%83%BC%E3%82%B7%E3%83%A5
+		ru
+			https://ru.wikipedia.org/wiki/Code_Geass
+person
+	roland
+	mao
+	lelouch
+	charlz
+	marianna
+	c_c_
+	v_v_
+feature
+	geass
+		control
 			@lelouch
-materials
-	sakuradait
-objects
+		memory
+			@charlz
+		soul
+			@marianna
+		time_stop
+			@roland
+		love
+			@c_c_
+		?
+			@v_v_
+		telepathy
+			@mao
+	antigeass
+		@jeremia
+	geass_code
+		@c_c_
+		@v_v_
+		@charlz
+		@lelouch
+element
+	substance
+		sakuradite
+object
 	%artefacts
 		%r-5
 			%tech
 				%britanian_imperia's
-					%knightmares
+					%knightmare

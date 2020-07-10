@@ -1,7 +1,27 @@
 name="Rudazov-verse"
 	"Metaverse of Rudazov"
 parent=verse
-organizations
+verb
+	enenment
+		enlightenment
+		endarkenment
+	unenment
+		unlightenment
+		undarkenment
+	altitude
+		rise
+		turn
+		fall
+	mind
+		clearing
+		clouding
+	inversing
+		lightening
+		darkening
+	...
+		desecration
+		consecration
+society
 	%levels
 		/universal
 			0.0!=0	primitive_-_?!#
@@ -13,7 +33,7 @@ organizations
 			4.0!=12	?_-_?!#
 			5.0!=15	?_-_energy!#
 			6.0!=18	immortal_-_tech|mage|bio!#
-		/energy
+		/forcal
 			0.3!=1	?_-_?!#mage_ghyldy
 				@earth.-3000	sumer
 			0.7!=2	?_-_?!#magic_schools
@@ -26,12 +46,12 @@ organizations
 			6.0!=18	immortal_-_?!#
 				@infal
 				@jinn
-		/bio
+		/biol
 			0.3!=1	?_-_?!#prirucheniye,_odomashnivaniye
 			0.7!=2	?_-_?!#selection
 				@rari	eist
 			6.0!=18	immortal_-_?!#
-		/tech
+		/techal
 			0.3!=1	?_-_?!#compas,_gun_powder,	books_print
 			0.7!=2	?_-_?!#industrial_revolution
 				@rari	rokush
@@ -107,14 +127,6 @@ worlds
 	proxima_centaura!@original	\n\t\t	proxima_hell!@original	\n\t\t	proxima_heaven!@original
 	dodekaedr!@original
 		@of_yehudin
-verse
-	@type
-		meta
-	original
-@sources
-	supernatural
-		books
-			rudazov
 shells
 	-5!=2|7	magical_body
 	-2!=3	body,_matter_of
@@ -141,13 +153,13 @@ features
 		e+0+2!=spiritual_weapon
 levels
 	/sumer
-		0.0!=nomage
-		1.0!=student
-		2.0!=apprentice
-		3.0!=master
-		4.0!=pastmaster
-		5.0!=archmage
-		6.0!=higher
+		0.0!=rudazov_nomage
+		1.0!=rudazov_student
+		2.0!=rudazov_apprentice
+		3.0!=rudazov_master
+		4.0!=rudazov_pastmaster
+		5.0!=rudazov_archmage
+		6.0!=rudazov_higher
 	/grayland
 		0.0!=buckwheat
 		1.0!=student

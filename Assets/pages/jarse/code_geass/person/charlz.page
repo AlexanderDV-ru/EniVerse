@@ -1,0 +1,6 @@
+name="charlz"
+parent=person
+verse=code_geass
+feature
+	geass
+	geass_code

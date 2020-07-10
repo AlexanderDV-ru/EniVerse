@@ -5,27 +5,19 @@ dimensions
 	n
 		11!=body
 		21!=soul
-verse
-	lotr
-		@original
-	@type
-		uni
-worlds
-	arda
-		@original
-energies
-	%r-5
-		+5!=mana?
-features
+location
+	world
+		arda
+feature
 	%r-7
 		god_1
 		valar
 	%r-6
 		ainur
 	%r-5
-		mage
+		istari
 		nazgul
-creatures
+creature
 	%mind
 		%r-5
 			%human

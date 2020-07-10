@@ -1,0 +1,5 @@
+name="mao"
+parent=person
+verse=code_geass
+feature
+	geass
