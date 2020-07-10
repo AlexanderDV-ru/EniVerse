@@ -1,6 +1,18 @@
 name="code_geass"
 parent=verse
 verse=code_geass
+source
+	anime
+		R1
+		R2
+		rised
+		film
+			1
+			2
+			3
+			4
+			5
+			6
 url
 	shikimori
 		https://shikimori.one/animes/1575-code-geass

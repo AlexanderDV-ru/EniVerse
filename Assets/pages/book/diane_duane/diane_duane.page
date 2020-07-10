@@ -1,3 +1,219 @@
 name="diane_duane"
 parent=verse
-verse=
+verse=diane_duane
+text	diane+...
+	@Authors
+		Diane Duane
+		...
+	@Languages	!	English
+	s/ Harbinger
+		@Comment	!	Действие трилогии The Harbinger, опубликованного Wizards of the Coast, разворачивается во вселенной Star*Drive. Хотя Дуэйн не являлась единственным автором, который писал об этой вселенной, она писала о ней первой.
+		b/ Starrise at Corrivale
+			@Since	!	1998, октябрь
+			@ISBN	!	0-7869-1179-4.
+		b/ Storm at Eldala
+			@Since	!	1999, март
+			@ISBN	!	0-7869-1334-7.
+		b/ Nightfall at Algemron
+			@Since	!	2000, апрель
+			@ISBN	!	0-7869-1563-3.
+	s/ Spiderman
+		@Comment	!	Дуэйн написала несколько романов о Человеке-пауке для Byron-Preiss Multimedia с 1994 по 1998 годы. В число этих произведений входят:
+		b/ The Venom Factor
+			@Since	!	(Venom Factor Book 1)
+			@ISBN	!	1-57297-038-3.
+		b/ The Lizard Sanction
+			@Since	!	(Venom Factor Book 2)
+			@ISBN	!	1-57297-148-7.
+		b/ The Octopus Agenda
+			@Since	!	(Venom Factor Book 3)
+			@ISBN	!	1-57297-279-3.
+	s/ Guardians of the Three
+		b/ Keeper of the City
+			@Since	!	1989.
+		@Comment	!	Вторая книга из серии
+		@Comment	!	в соавторстве с Питером Морвудом
+	s/ SeaQuest DSV
+		SeaQuest DSV: The Novel
+			@Since	!	ISBN 1-85798-205-3.
+	s/ Space Cops
+		b/ Mindblast
+			@Since	!	Avon Books, 1991, июнь
+			@ISBN	!	0-380-75852-0.
+		b/ Kill Station
+			@Since	!	Avon Books, 1992, январь
+			@ISBN	!	0-380-75854-7.
+		b/ High Moon
+			@Since	!	Avon Books, 1992, май
+			@ISBN	!	0-380-75855-5.
+	s/ X-COM
+		b/ UFO Defense
+			@Since	!	1995
+			@ISBN	!	0-7615-0235-2.
+	s/ X-Men
+		b/ Empire's End
+			@Since	!	1995
+			@ISBN	!	0-7615-0235-1.
+	s/ Net Force
+		@Comment	!	В соавторстве с Томом Клэнси и Steve Pieczenik.
+		b/ 1	Virtual Vandals
+		b/ 3	One Is the Loneliest Number
+		b/ 6	End Game
+		b/ 10	Safe House
+		b/ 13	Deathworld
+		b/ 16	Runaways
+		b/ 18	Death Match
+	s/ Rasskazy
+		b/ «Parting Gifts» в Flashing Swords 5: Demons and Daggers
+			@Since	!	1981
+			@Comment	!	выложенный на её сайте[5] как часть International Pixel-Stained Technopeasant Day
+		b/ «Lior and the Sea» в Moonsinger’s Friends
+			@Since	!	1986
+		b/ «Apparitions» в The Further Adventures of Superman
+			@Since	!	1993
+		b/ «The Dovrefell Cat» в Xanadu 2
+			@Since	!	1995
+		b/ «Don’t Put That in Your Mouth, You Don’t Know Where It’s Been» в Don’t Forget Your Space Suit, Dear
+			@Since	!	1996
+		b/ «Recensions» в Amazing Magazine
+			@Since	!	1998
+		b/ «Blank Check» в On Crusade: More Tales of the Knights Templar
+			@Since	!	1998
+		b/ «1-900-nodream» в Perchance to Dream
+			@Since	!	2000
+		b/ «Night Whispers» в Star Trek: Enterprise Logs
+			@Since	!	2000
+		b/ «Herself» в «Emerald Magic»
+			@Since	!	2004
+		b/ «Goths and Robbers» в антологии Doctor Who Short Trips: The Quality of Leadership
+			@Since	!	2008
+	s/ Comics
+		b/ «Ill Wind» — пятичастный рисованный роман/ сериал для STAR TREK: THE NEXT GENERATION, DC Comics, New York
+			@Since	!	осень 1995 — весна 1996.
+		b/ «The Tale of Prince Ivan the Not-Too-Experienced» — шестичастный комикс для THE DREAMERY, Epic Comics
+			@Since	!	с декабря 1987 по август 1988.
+		b/ «The Last Word» STAR TREK 28
+			@Comment	!	одиночный комикс для DC Comics, NYC
+			@Since	!	апрель 1986.
+		b/ «Double Blind» STAR TREK 24-25
+			@Comment	!	двухчастный (юмористический) комикс для DC Comics, NYC
+			@Since	!	январь/ февраль 1986.
+text
+	@Authors	!	Diane Duane
+	@Languages	!	English
+	s/ Young wizards
+		b/ So You Want to be a Wizard
+			@Since	!	Delacorte, 1983
+			@ISBN	!	0-15-204738-7
+		b/ Deep Wizardry
+			@Since	!	Delacorte, 1985
+			@ISBN	!	0-15-216257-7
+		b/ High Wizardry
+			@Since	!	Corgi, 1990
+			@ISBN	!	0-15-216244-5
+		b/ A Wizard Abroad
+			@Since	!	Corgi, 1993
+			@ISBN	!	0-15-216238-0
+		b/ The Wizard's Dilemma
+			@Since	!	Harcourt, 2001
+			@ISBN	!	0-15-202551-0
+		b/ A Wizard Alone
+			@Since	!	2002
+			@ISBN	!	0-15-204562-7
+		b/ Wizard's Holiday
+			@Since	!	2003
+			@ISBN	!	0-15-204771-9
+		b/ Wizards at War
+			@Since	!	2005
+			@ISBN	!	0-15-204772-7
+		b/ A Wizard of Mars
+			@Since	!	2010, апрель
+		b/ Games Wizard's Play
+			@Since	!	2016
+		@Comment	!	Рассказ «Uptown Local», относящийся к той же вселенной, был опубликован также как часть антологии Jane Yolen Dragons and Dreams. Сценарий фильма «Wizards on Call» создавался на сайте https:/ / web.archive.org/ web/ 2007031207583v/ http:/ / wizardsoncall.fanlib.com/ . Читатели имели возможность участвовать в его создании и редактировании. В настоящее время проект приостановлен.
+		@Comment	!	По событиям между девятой и десятой книгой, Диана Дуэйн написала и опубликовала три новеллы "Not On My Patch: a Young Wizards Halloween", "How Lovely Are Thy Branches: a Young Wizards Christmas" и "Young Wizards: Lifeboats". В 2017 году опубликовала три новеллы о прохождении испытания разными персонажами: "On Ordeal: Roshaun ke Nelaid" (весьма колоритный и заносчивый персонаж в седьмой книге), "On Ordeal: Mamvish fsh Wimsih" и "On Ordeal: Ronan Nolan Jnr" (всем известный персонаж из четвертой книги, также он появляется в девятой).
+	s/ Cat-wizards
+		@Comment	!	Серия основывается на кошках-волшебниках, защищающих порталы, которые волшебники используют для путешествий между другими мирами. Действие происходит там же, где и действие романов серии «Юные волшебники».
+		b/ Book of Night With Moon
+			@Since	!	1997
+			@ISBN	!	0-340-69329-0
+		b/ To Visit the Queen
+			@Since	!	1998
+			@ISBN	!	0-446-67318-8
+			@Comment	!	опубликованная в Великобритании как
+				@Authors	!	Diane Duane
+				On Her Majesty's Wizardly Service
+				@Since	!	1998
+				@ISBN	!	0-340-69330-4
+		b/ The Big Meow
+			@Comment	!	пишется как роман, поддерживаемый подписчиками; публикуется в сети отдельными главами
+	s/ Adult wizards
+		@Comment	!	Действие книг о взрослых волшебниках происходит в той же вселенной, что и действие романов серии «Юные волшебники».
+		b/ Short Circuit
+			@Comment	!	в проекте
+		b/ «Theobroma»
+			@Comment	!	включен в Wizards, Inc.
+			@Since	!	ноябрь 2007
+	s/ Alternative worlds
+		@Comment	!	Вселенная, в которой разворачивается действие серии «Юные волшебники», включает в себя несколько альтернативных миров (например в So You Want to Be a Wizard и Book of Night With Moon герои путешествуют по другим мирам для решения проблем). Действие книги Stealing the Elf-King’s Roses
+			@ISBN	!	0-446-60983-8
+			@Comment	!	происходит в нескольких вселенных, изначально упомянутых в So You Want To Be A Wizard.
+	s/ Срединные царства
+		@Comment	!	Также известная как Tale of the Five, эта серия в жанре традиционного фэнтези ждет завершения с 1992 года. В центре книг находятся некоторые из тем, известных по серии «Юные волшебники»; те, кто обладают «голубым огнём», имеют во многом те же обязательства, что и волшебники, и сражаются в той же битве против энтропии. В отличие от других детских книг Дуэйн серия Tale of the Five открыто говорит о теме сексуальности человека. В срединных царствах бисексуальность и полигамия являются нормой. Сейчас Дуэйн работает над последним томом. The Door into Fire и The Door into Shadow были переизданы вместе под названием Tale of Five: The Sword and the Dragon.
+		b/ The Door into Fire
+			@Since	!	1979
+		b/ The Door into Shadow
+			@Since	!	1984
+		b/ The Door into Sunset
+			@Since	!	1992
+		b/ The Door into Starlight
+			@Comment	!	не опубликована
+	s/ Startrack
+		@Comment	!	Она так же была автором романов серии Звездный путь:
+		@Comment	!	The Original Series обозначаются аббревиатурой TOS, The Next Generation — TNG
+		b/ The Wounded Sky
+			@Since	!	1983
+			@Comment	!	Star Trek: TOS 13
+		b/ My Enemy, My Ally
+			@Since	!	1984
+			@Comment	!	Star Trek: TOS 18 (Rihannsu 1)
+		b/ The Romulan Way
+			@Since	!	1987
+			@Comment	!	Star Trek: TOS 35 (Rihannsu 2)
+			@Comment	!	в соавторстве с мужем Питером Морвудом
+		b/ Spock's World
+			@Since	!	1988
+			@Comment	!	Star Trek: TOS
+		b/ Doctor's Orders
+			@Since	!	1990
+			@Comment	!	Star Trek: TOS 50
+		b/ Dark Mirror
+			@Since	!	1993
+			@Comment	!	Star Trek: TNG
+			@ISBN	!	0-671-79377-2
+		b/ Intellivore
+			@Since	!	1997
+			@Comment	!	Star Trek: TNG: 45
+			@ISBN	!	0-671-56832-9
+		b/ Swordhunt
+			@Since	!	2000
+			@Comment	!	Star Trek: TOS 95 (Rihannsu 3)
+			@ISBN	!	0671042092
+		b/ Honor Blade
+			@Since	!	2000
+			@Comment	!	Star Trek: TOS 96 (Rihannsu 4)
+			@ISBN	!	0-671-04210-6
+		b/ Sand and Stars
+			@Since	!	2004
+			@Comment	!	Star Trek: TOS
+			@ISBN	!	0-7434-9658-2
+			@Comment	!	(сборник, включающий Spock’s World и A. C. Crispin Sarek)
+		b/ The Empty Chair
+			@Since	!	2006, октябрь
+			@Comment	!	Star Trek: TOS (Rihannsu 5)
+			@ISBN	!	1416508910
+		b/ Rihannsu: The Bloodwing Voyages
+			@Since	!	2006, октябрь
+			@Comment	!	(Star Trek: TOS)
+			@ISBN	!	1-416-52577-7
+			@Comment	!	Сборник четырёх романов «Rihannsu», содержащий некоторые изменения для связанности и переиздания Swordhunt и Honor Blade.
