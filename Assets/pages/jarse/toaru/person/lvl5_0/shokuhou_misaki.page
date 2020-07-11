@@ -1,0 +1,8 @@
+name="Shoukuhou Misaki"
+	"Mentalout"
+		for feature mentalout
+parent=person
+verse=toaru
+feature
+	esper=mentalout
+		lvl=lvl5_0

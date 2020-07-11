@@ -1,0 +1,13 @@
+name="Esper"
+	japanese
+		kanji="能力者"
+	"Nōryokusha"
+	"lit. Ability User"
+parent=gift
+verse=toaru
+reference
+	aim
+external
+	personal_force
+	psyhic_power
+	natural_magic

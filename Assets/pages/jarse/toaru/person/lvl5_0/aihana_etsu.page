@@ -1,0 +1,6 @@
+name="aihana_etsu"
+parent=person
+verse=toaru
+feature
+	esper
+		lvl=lvl5_0

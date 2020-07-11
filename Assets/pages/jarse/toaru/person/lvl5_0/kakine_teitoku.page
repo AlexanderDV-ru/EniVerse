@@ -1,0 +1,8 @@
+name="kakine_teitoku"
+	"Dark Matter"
+		for feature dark_matter
+parent=person
+verse=toaru
+feature
+	esper=dark_matter
+		lvl=lvl5_0

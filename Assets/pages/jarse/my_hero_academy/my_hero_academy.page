@@ -1,17 +1,15 @@
 name="my_hero_academy"
 parent=verse
 verse=my_hero_academy
-worlds
+world
 	earth
 		paths!tech-energy
-creatures
-	%mind
-		%quirk-human
-			izuku_midoriya
-features
+person
+	izuku_midoriya
+feature
 	%r-5
-		%abilities
-			%/quirk
+		gift
+			quirk
 				one_for_all
 					power_save
 					power_return
@@ -23,7 +21,6 @@ features
 					multiability
 				@ectoplasm
 					shadow_clone
-					izuku_midoriya_anime_portraitizuku
 				@katsuki_bakugo
 					nitroglycerin_generation
 					explosion
@@ -35,7 +32,7 @@ features
 					temperature
 				@fumikage_tokoyami
 				@ochaco_uraraka
-					zero-gravity_field
+					zero_gravity_field
 				@kyoka_jiro
 				@all_might
 				@endeavor
@@ -46,7 +43,7 @@ features
 				@tomura_shigaraki_portal
 				@kurogiri_portal
 				@dabi
-				@hood_high-end
+				@hood_high_end
 				@gentle_criminal
 				@la_brava
 				@racer
@@ -55,7 +52,7 @@ features
 				@kamui
 				@mountain_lady
 			@linkfuncs[nolinkfuncs][children]!(line)=>{ref:line.content.indexof("[nolinkfuncs]")==-1?"https://bokunoheroacademia.fandom.com/wiki/"+line.content.replace(/[@%?"]/g,"").replace(/[_]/g,"_"):false,text:"fandom.com/wiki"}
-				quirk-destroying_drug
+				quirk_destroying_drug
 				#
 				"acid"
 				"acid_sweat"
@@ -109,7 +106,7 @@ features
 				"dog"
 				"double"
 				"dragon"
-				"dupli-arms"
+				"dupli_arms"
 				dust
 				earphone_jack
 				earth_flow
@@ -122,8 +119,8 @@ features
 				erasure
 				eruption
 				explosion
-				extend-o-hair
-				eye-brows
+				extend_o_hair
+				eye_brows
 				fan
 				fat_absorption
 				fiber_master
@@ -146,8 +143,8 @@ features
 				good_ear
 				good_face
 				gyrate
-				hair-raiser
-				half-cold_half-hot
+				hair_raiser
+				half_cold_half_hot
 				hardening
 				heal
 				hedgehog
@@ -219,12 +216,12 @@ features
 				scales
 				scissors
 				search
-				self-detonation
+				self_detonation
 				serpentress
 				shame
 				shield
 				shock_absorption
-				shoulder-mounted_jets
+				shoulder_mounted_jets
 				size
 				slice_(quirk)
 				slide_and_glide
@@ -269,7 +266,7 @@ features
 				whale
 				whirlwind
 				white_line
-				whole-body_lens
+				whole_body_lens
 				wooden_swords_from_his_hands
 				yell
 				zero_gravity

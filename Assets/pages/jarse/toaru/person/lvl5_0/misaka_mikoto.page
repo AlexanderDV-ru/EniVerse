@@ -1,0 +1,14 @@
+name="Misaka Mikoto"
+	"Railgun"
+		for ability railgun
+	"Biri-Biri"
+		by kamijo_touma
+	"Electromaster"
+		for feature electromaster
+parent=person
+verse=toaru
+feature
+	esper=electromaster
+		lvl=lvl5_0
+ability
+	railgun

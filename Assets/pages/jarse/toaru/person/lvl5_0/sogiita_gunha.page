@@ -1,0 +1,6 @@
+name="sogiita_gunha"
+parent=person
+verse=toaru
+feature
+	esper
+		lvl=lvl5_0

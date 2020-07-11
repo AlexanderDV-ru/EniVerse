@@ -1,16 +1,0 @@
-name="Accelerator"
-	japanese
-		kanji="一方通行"
-		katakana="アクセラレータ"
-		romaji="Akuserarēta"
-	"Ippō Tsūkō"
-	"lit. One-Way Road"
-	epithet
-		"The One Who Wields the Power of God"
-		"Number One"
-		"The Strongest"
-		"The Main Plan"
-parent=esper
-verse=toaru
-feature=accelerator_feature
-lvl=my_lvl5_5

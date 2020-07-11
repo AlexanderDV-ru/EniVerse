@@ -1,0 +1,81 @@
+name="Accelerator"
+	jpn
+		jpan="一方通行"
+			romaji="Ippō Tsūkō"
+			"lit. One-Way Road"
+		hrtz="アクセラレータ"
+		romaji="Akuserarēta"
+		latn="Akuserareeta"
+	epithet
+		"The One Who Wields the Power of God"
+		"Number One"
+		"The Strongest"
+		"The Main Plan"
+	"Accelerator"
+		for feature accelerator_feature
+parent=person
+verse=toaru
+feature
+	esper=accelerator_feature
+		lvl=lvl5_0
+ability
+	vector_manipulation
+		redirection
+		motion
+	stock
+		cold
+		hot
+		fire
+		ice
+		fly
+		jump
+		reflection
+		paring
+		stop
+		acceleration
+		wave
+		electrizity
+		water
+		earth
+		resonance
+		air
+		disassembling
+		assembling
+	misc
+		zero-gravity
+		zero-friquency
+		blood_redirection
+		bio_electrizity_change
+		rotation
+		redirection
+		brain_control
+		muscle_control
+		marionette_control
+	plus
+		invisibility
+		quiet
+		spectr_change
+		shunshin
+		explosion
+		laser
+		material_illusion
+			illusor_metamorph
+		light
+			gen
+			holo
+				other
+				henge
+		sound
+			gen
+			syntes
+	max
+		through world
+		dark substance
+		time
+			back
+			stop
+			resume
+		teleport
+			auto
+			other
+		inventory

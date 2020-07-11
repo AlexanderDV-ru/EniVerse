@@ -1,0 +1,5 @@
+name="gift"
+parent=feature
+verse=none
+text
+	"General name for all features, that have one mind, for example [[esper_feature]], [[quirk]], [[mye]]"

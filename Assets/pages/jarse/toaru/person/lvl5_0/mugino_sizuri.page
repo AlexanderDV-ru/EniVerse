@@ -1,0 +1,8 @@
+name="mugino_sizuri"
+	"Meltdowner"
+		for feature meltdowner
+parent=person
+verse=toaru
+feature
+	esper=meltdowner
+		lvl=lvl5_0
