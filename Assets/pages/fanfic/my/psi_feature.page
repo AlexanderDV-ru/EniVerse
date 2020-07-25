@@ -1,0 +1,29 @@
+name="psi_feature"
+parent=feature
+verse=my
+reference
+	esper
+	geass
+	psi
+	psyker
+	mentat
+	gamer_system
+		misc
+			telekinesis
+			mind_thread
+			synethesia
+			memory_index
+			eidethic_memory
+			absolute_memory
+			ideal_memory
+			super_associative_perception
+			empathy
+			mind_reading
+			mind_surface_reading
+			occlumence
+			legilimence
+			mind_magic
+		intellegence_val
+		memory_val
+		wisdom_val
+		will_val

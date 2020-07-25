@@ -1,0 +1,37 @@
+name="momental_displacement"
+parent=ability
+verse=my
+reference
+	teleport
+		hot_teleport
+		cold_teleport
+	super_speed
+	time_change
+		time_stop
+		time_fast
+		time_slow
+		time_loop
+	otherspace_teleport
+		apparation
+		twilight_relocation
+		deep_shadow_relocation
+		deep_shadow_portal
+		shadow_relocation
+		hyperjump
+	space_change
+		portal
+		space_compression
+		space_connection
+		space_imposition
+	quantum_teleport
+	shift
+	toaru_teleport
+	frequencywave_teleport
+	frequencywave_portal
+	location_change
+	shunshin
+	hiraishin
+	exchange
+	chaos_teleport
+	transition
+	summon
