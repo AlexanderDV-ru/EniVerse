@@ -1,0 +1,39 @@
+verse=my
+parent=text
+elements_magic
+	first
+		dark
+		light
+		chaos
+		order
+		death
+		live
+	base
+		fire
+		water
+		ice
+		earth
+		air
+		electricity
+	other
+misc
+	transformation
+		transfiguration
+			"Size and other changing, time effect"
+		transformation
+			"Form, structure and other changing, eternal effect"
+	alchemistry
+		transfiguration
+			"Time, illusory effect"
+		transmutation
+			"Eternal, real effect"
+	artefact
+		enchanted
+			"Time Effect"
+		artefact
+			"Eternal Effect"
+	elixir
+		potion
+			"Time Effect"
+		elixir
+			"Eternal Effect"
