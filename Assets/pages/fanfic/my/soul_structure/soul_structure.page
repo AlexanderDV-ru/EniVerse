@@ -1,0 +1,41 @@
+name="soul_structure"
+parent=misc
+verse=my
+soul_structure
+	god_shell
+	immortal_shell
+	magic_shell
+		magic_system
+			magic_chakra
+			magic_nadya
+	intellegent_shell
+	person_shell
+	astral_shell
+	body_shell
+	core_shell
+	chakra_shell
+		energy=bodily_plus_spiritual
+		chakra_system
+			chakra_channel
+			chakra_hearth
+			chakra_tenketsu
+	wizard_shell
+		energy=mana_plus_ema
+	ki_shell
+		ki_system
+			ki_channel
+			ki_center
+			ki_node
+	sorcery_shell
+		sorcery_system
+			sorcery_channel
+			sorcery_core
+	biofield
+	aura
+	aim_field
+		personal_reality
+		personal_force
+	at_field
+tag
+	soul
+	structure

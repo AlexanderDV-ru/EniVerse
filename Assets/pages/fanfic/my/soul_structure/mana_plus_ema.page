@@ -1,0 +1,10 @@
+name="mana_plus_ema"
+parent=misc
+verse=my
+source energy
+	mana
+	ema
+tag
+	soul
+	structure
+	energy

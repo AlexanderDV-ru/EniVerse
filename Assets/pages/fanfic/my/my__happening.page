@@ -1,0 +1,9 @@
+name="my__happening"
+parent=happening
+verse=my
+text
+	%Notes
+		We are all popadantsy
+	a/ Potteriana
+		%Jokes
+			Valeriyanka for MacCat
